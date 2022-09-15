@@ -1,0 +1,46 @@
+# daily trigger inner jenkins to build iso
+name: iso build
+on:
+  schedule:
+    - cron:  '30 18 * * *'
+  # manually trigger
+  workflow_dispatch:
+  repository_dispatch:
+    types: [iso_build]
+
+jobs:
+  iso-build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arch: ["amd"]
+
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      BRIDGE_TOKEN: ${{ secrets.BRIDGETOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: "linuxdeepin/jenkins-bridge-client"
+          path: jenkins-bridge-client
+
+      - name: Install Client
+        run: |
+          cd $GITHUB_WORKSPACE/jenkins-bridge-client
+          go build .
+          sudo install -Dvm755 jenkins-bridge-client -t /usr/bin/
+
+      - name: Trigger build
+        id: generate-runid
+        run: |
+          echo "::set-output name=RUN_ID::$(jenkins-bridge-client triggerISOBuild --token $BRIDGE_TOKEN --arch ${{ matrix.arch }})"
+
+      - name: Print log
+        run: |
+          jenkins-bridge-client printLog --token "$BRIDGE_TOKEN" --runid "${{ steps.generate-runid.outputs.RUN_ID }}"
+
+      - name: cancelled
+        if: ${{ cancelled() }}
+        run: |
+          jenkins-bridge-client cancelBuild --token "$BRIDGE_TOKEN" --runid "${{ steps.generate-runid.outputs.RUN_ID }}"
