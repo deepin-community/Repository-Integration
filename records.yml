@@ -1,4 +1,8 @@
 records:
+    qt-gstreamer:
+        date: '2022-11-15'
+        pr: 1
+        ver: 1.2.0-5.2
     qtsvg-opensource-src:
         date: '2022-11-15'
         pr: 109
