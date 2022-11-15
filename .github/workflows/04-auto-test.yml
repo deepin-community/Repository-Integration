@@ -1,0 +1,33 @@
+name: auto-test
+
+on:
+  workflow_call:
+    inputs:
+      topic:
+        required: true
+        type: string
+      packages:
+        required: true
+        type: string
+
+env:
+  TOPIC: ${{ inputs.topic }}
+  PACKAGES: ${{ inputs.packages }}
+
+jobs:
+  merge:
+    name: auto test
+    runs-on: ubuntu-latest
+    environment:  ${{ inputs.deploy }}
+    steps:
+      - name: trigger test
+        run: |
+          echo begin auto testing
+
+      - name: testing
+        run: |
+          echo $TASK start auto test on $VERSION
+          DIFF=$((10-50+1))
+          R=$(($(($RANDOM%$DIFF))+X))
+          sleep $R
+          echo done

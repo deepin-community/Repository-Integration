@@ -1,0 +1,49 @@
+name: merge into testing
+
+on:
+  workflow_call:
+    inputs:
+      topic:
+        required: true
+        type: string
+      deploy:
+        required: true
+        type: string
+
+env:
+  TOPIC: ${{ inputs.topic }}
+  BRIDGE_TOKEN: ${{ secrets.BridgeToken }}
+
+jobs:
+  merge:
+    name: merge repo
+    runs-on: ubuntu-latest
+    environment:  ${{ inputs.deploy }}
+    steps:
+      - name: Print Environment
+        run: export
+
+      - uses: actions/checkout@v2
+        with:
+          repository: "linuxdeepin/jenkins-bridge-client"
+          path: jenkins-bridge-client
+
+      - name: Install Client
+        run: |
+          cd $GITHUB_WORKSPACE/jenkins-bridge-client
+          go build .
+          sudo install -Dvm755 jenkins-bridge-client -t /usr/bin/
+
+      - name: Trigger build
+        id: generate-runid
+        run: |
+          echo "RUN_ID=$(jenkins-bridge-client triggerRepoMerge --topic ${{ inputs.topic }} --token $BRIDGE_TOKEN)" >> $GITHUB_OUTPUT
+
+      - name: Print log
+        run: |
+          jenkins-bridge-client printLog --token "$BRIDGE_TOKEN" --runid "${{ steps.generate-runid.outputs.RUN_ID }}"
+
+      - name: cancelled post runs
+        if: cancelled()
+        run: |
+          jenkins-bridge-client cancelBuild --token "$BRIDGE_TOKEN" --runid "${{ steps.generate-runid.outputs.RUN_ID }}"

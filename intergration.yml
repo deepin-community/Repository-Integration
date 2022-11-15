@@ -1,0 +1,6 @@
+message: |
+  Integrated for 23 preview
+repos: 
+  - repo: repo1
+    tag: 1
+    order: 2

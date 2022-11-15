@@ -1,0 +1,52 @@
+name: output message
+
+on:
+  workflow_call:
+
+jobs:
+  ouput_message:
+    name: output
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: download intergration detail
+        uses: actions/download-artifact@v2
+        with:
+          name: intergration-${{ github.event.number }}-detail.md
+
+      - name: create comment
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ github.token }}
+          script: |
+            const fs = require('fs');
+            let rawdata = fs.readFileSync('intergration-${{ github.event.number }}-detail.md');
+            let message = rawdata.toString();
+            if (message.includes("CVE")) {
+              message += "\n @deepin-community/ci CVE detected\n"
+            }
+            const BOT_NAME = "INTERGRATION Bot"
+            const COMMENT_HEAD = "**" + BOT_NAME + "**\n\n"
+            const COMMENT_BODY = "Integration Details: " + message
+            const response = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number
+            })
+            const reg = new RegExp("\\*+" + BOT_NAME + "\\*+")
+            tagBotComment= response.data.find(comment => comment.body.match(reg))
+            if (tagBotComment) {
+              await github.rest.issues.updateComment({
+                  comment_id: tagBotComment.id,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  body: COMMENT_HEAD + COMMENT_BODY
+              })
+            } else {
+              await github.rest.issues.createComment({
+                  issue_number: context.issue.number,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  body: COMMENT_HEAD + COMMENT_BODY
+              })
+            }

@@ -1,0 +1,53 @@
+name: build on jenkins
+
+on:
+  workflow_call:
+    inputs:
+      repo:
+        required: true
+        type: string
+      tag:
+        required: true
+        type: string
+      topic:
+        required: true
+        type: string
+    secrets:
+      BridgeToken:
+        required: true
+
+env:
+  BRIDGE_TOKEN: ${{ secrets.BridgeToken }}
+  SERVER: https://jenkins-bridge-deepin-pre.uniontech.com
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Environment
+        run: export
+
+      - uses: actions/checkout@v2
+        with:
+          repository: "linuxdeepin/jenkins-bridge-client"
+          path: jenkins-bridge-client
+
+      - name: Install Client
+        run: |
+          cd $GITHUB_WORKSPACE/jenkins-bridge-client
+          go build .
+          sudo install -Dvm755 jenkins-bridge-client -t /usr/bin/
+
+      - name: Trigger build
+        id: generate-runid
+        run: |
+          echo "::set-output name=RUN_ID::$(jenkins-bridge-client triggerIntergrationBuild --owner ${{ github.repository_owner }} --repo ${{ inputs.repo }} --tag ${{ inputs.tag }} --topic ${{ inputs.topic }} --token $BRIDGE_TOKEN)"
+
+      - name: Print log
+        run: |
+          jenkins-bridge-client printLog --token "$BRIDGE_TOKEN" --runid "${{ steps.generate-runid.outputs.RUN_ID }}"
+
+      - name: cancelled post runs
+        if: cancelled()
+        run: |
+          jenkins-bridge-client cancelBuild --token "$BRIDGE_TOKEN" --runid "${{ steps.generate-runid.outputs.RUN_ID }}"
