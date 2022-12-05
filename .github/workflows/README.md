@@ -25,3 +25,6 @@ parsec_intergration -> build -> auto test -> merge topic -> update record -> clo
 
 06-deployed.yml
 更新记录并标记此集成已被集成,并关闭pr
+
+07-sync-intergration-info.yml
+处理明道云的集成信息同步
