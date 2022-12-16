@@ -1,4 +1,8 @@
 records:
+    dde-dock:
+        date: '2022-12-16'
+        pr: 2
+        ver: 1.0.0
     qt-gstreamer:
         date: '2022-11-15'
         pr: 1
