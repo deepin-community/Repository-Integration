@@ -7,6 +7,10 @@ records:
         date: '2022-12-28'
         pr: 5
         ver: 5.6.3
+    linuxdeepin/dtkwidget:
+        date: '2022-12-28'
+        pr: 6
+        ver: 5.6.3.8
     linuxdeepin/qt5integration:
         date: '2022-12-23'
         pr: 4
