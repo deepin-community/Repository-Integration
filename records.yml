@@ -7,6 +7,10 @@ records:
         date: '2022-12-28'
         pr: 5
         ver: 5.6.3
+    linuxdeepin/dtkgui:
+        date: '2022-12-28'
+        pr: 7
+        ver: 5.6.3.3
     linuxdeepin/dtkwidget:
         date: '2022-12-28'
         pr: 6
