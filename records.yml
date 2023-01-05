@@ -3,6 +3,10 @@ records:
         date: '2022-12-16'
         pr: 2
         ver: 1.0.0
+    linuxdeepin/deepin-deb-installer:
+        date: '2023-01-05'
+        pr: 8
+        ver: 5.8.26
     linuxdeepin/dtkdeclarative:
         date: '2022-12-28'
         pr: 5
