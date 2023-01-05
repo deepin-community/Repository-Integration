@@ -3,6 +3,10 @@ records:
         date: '2022-12-16'
         pr: 2
         ver: 1.0.0
+    deepin-community/libqapt:
+        date: '2023-01-05'
+        pr: 10
+        ver: 3.0.5.1-1-deepin1
     linuxdeepin/deepin-deb-installer:
         date: '2023-01-05'
         pr: 9
