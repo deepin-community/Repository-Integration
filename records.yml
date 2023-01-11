@@ -24,9 +24,9 @@ records:
         pr: 5
         ver: 5.6.3
     linuxdeepin/dtkgui:
-        date: '2022-12-28'
-        pr: 7
-        ver: 5.6.3.3
+        date: '2023-01-11'
+        pr: 15
+        ver: 5.6.4
     linuxdeepin/dtkwidget:
         date: '2022-12-28'
         pr: 6
