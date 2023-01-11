@@ -11,6 +11,10 @@ records:
         date: '2023-01-05'
         pr: 9
         ver: 5.8.26
+    linuxdeepin/dtkcommon:
+        date: '2023-01-11'
+        pr: 12
+        ver: 5.6.4
     linuxdeepin/dtkdeclarative:
         date: '2022-12-28'
         pr: 5
