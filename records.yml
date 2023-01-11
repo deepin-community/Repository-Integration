@@ -7,6 +7,10 @@ records:
         date: '2023-01-05'
         pr: 10
         ver: 3.0.5.1-1-deepin1
+    deepin-community/qtwayland-opensource-src:
+        date: '2023-01-11'
+        pr: 13
+        ver: 5.15.7.3-1+dde
     linuxdeepin/deepin-deb-installer:
         date: '2023-01-05'
         pr: 9
