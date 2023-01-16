@@ -15,6 +15,10 @@ records:
         date: '2023-01-05'
         pr: 9
         ver: 5.8.26
+    linuxdeepin/deepin-system-monitor:
+        date: '2023-01-16'
+        pr: 20
+        ver: 6.0.4
     linuxdeepin/deepin-terminal:
         date: '2023-01-16'
         pr: 19
