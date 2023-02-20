@@ -1,11 +1,12 @@
 <project name="deepin:CI:TestingIntegration:TOPIC">
   <title/>
   <description/>
-  <person userid="golf66" role="maintainer"/>
+  <person userid="deepin-obs" role="maintainer"/>
   <debuginfo>
     <enable/>
   </debuginfo>
-  <repository name="standard" rebuild="direct">
+  <repository name="testing" rebuild="direct">
+    <path project="deepin:CI" repository="deepin_testing"/>
     <arch>aarch64</arch>
     <arch>x86_64</arch>
   </repository>
