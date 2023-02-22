@@ -95,7 +95,7 @@ jobs:
                   return yaml.load(intergration_file, Loader=yaml.BaseLoader)
 
           def check_tag_exsist(repo, tag):
-              res = requests.get("https://api.github.com/repos/deepin-community/{repo}/git/ref/tags/{tag}".format(repo=repo, tag=tag), headers=header)
+              res = requests.get("https://api.github.com/repos/{repo}/git/ref/tags/{tag}".format(repo=repo, tag=tag), headers=header)
               if res.status_code != 200:
                   illegalTags.append({"repo": repo, "tag": tag})
               if repo in not_allowed_repo:
@@ -148,62 +148,7 @@ jobs:
         with:
           github-token: ${{ github.token }}
           script: |
-            const BOT_NAME = "RepoTagCheck Bot"
-            const COMMENT_HEAD = "**" + BOT_NAME + "**\n\n"
-            illegal_tags = ${{ steps.parsec_intergration.outputs.illegal_tags }}
-            illegal_repos = ${{ steps.parsec_intergration.outputs.illegal_repos }}
-            let COMMENT_BODY = ""
-            if ( illegal_tags !== undefined || illegal_repos !== undefined ) {
-              if ( illegal_tags !== undefined ) {
-                  COMMENT_BODY += "Check failed!\nListed repo and tag pairs are not exists: \n|repo|tag|\n|-|-|\n"
-                  illegal_tags.forEach(tag => {
-                    COMMENT_BODY += "|" + tag["repo"] + "|" + tag["tag"] + "|\n"
-                  })
-                  COMMENT_BODY += "\n"
-              }
-
-              if ( illegal_repos !== undefined ) {
-                  COMMENT_BODY += "Listed repos are not allowed by automatic intergration: \n|repo|\n|-|\n"
-                  illegal_repos.forEach(repo => {
-                    COMMENT_BODY += "|" + repo + "|\n"
-                  })
-              }
-
-            } else {
-              COMMENT_BODY = "All repo and tag pairs check passed!"
-            }
-            const response = await github.rest.issues.listComments({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number
-            })
-            const reg = new RegExp("\\*+" + BOT_NAME + "\\*+")
-            tagBotComment= response.data.find(comment => comment.body.match(reg))
-            if (tagBotComment) {
-              await github.rest.issues.updateComment({
-                  comment_id: tagBotComment.id,
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  body: COMMENT_HEAD + COMMENT_BODY
-              })
-            } else {
-              await github.rest.issues.createComment({
-                  issue_number: context.issue.number,
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  body: COMMENT_HEAD + COMMENT_BODY
-              })
-            }
-
-            if ( illegal_tags !== undefined ) {
-              core.setFailed("some tags are not exsist!")
-            }
-
-            if ( illegal_repos !== undefined) {
-              core.setOutput('DEPLOY', 'MANUALLY')
-            } else {
-              core.setOutput('DEPLOY', 'AUTO')
-            }
+            core.setOutput('DEPLOY', 'MANUALLY')
 
       - name: upload intergration detail
         uses: actions/upload-artifact@v2
