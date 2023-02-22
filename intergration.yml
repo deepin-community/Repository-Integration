@@ -1,6 +1,7 @@
 message: |
   Integrated for 23 preview
 repos: 
-  - repo: repo1
-    tag: 1
-    order: 2
+  - repo: linuxdeepin/examplerepo
+    tag: 5.11.22
+    order: 0
+    tagsha: "********************************"
