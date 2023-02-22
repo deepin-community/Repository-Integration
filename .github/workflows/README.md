@@ -14,8 +14,9 @@ parsec_intergration -> build -> auto test -> merge topic -> update record -> clo
 02-intergration-output.yml
 与build并行运行,主要根据上面的解析结果输出相关信息到pr中,
 
-02-jenkins-build.yml
-为构建job
+02-build-jenkins.yml
+02-build-obs.yml
+为构建job,分别支持jenkins和obs，目前默认支持obs。
 
 04-auto-test.yml
 自动化测试
@@ -27,4 +28,8 @@ parsec_intergration -> build -> auto test -> merge topic -> update record -> clo
 更新记录并标记此集成已被集成,并关闭pr
 
 07-sync-intergration-info.yml
-处理明道云的集成信息同步
+处理pr评论中包含的集成信息，格式列子如下：
+
+    repo: linuxdeepin/deepin-system-monitor
+    tag: 6.0.4
+    tagsha: 1f2cee89ffb6688813291391d0e97abe0fb1118b

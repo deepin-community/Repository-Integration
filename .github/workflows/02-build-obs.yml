@@ -1,0 +1,135 @@
+name: build on obs
+
+on:
+  workflow_call:
+    inputs:
+      repo:
+        required: true
+        type: string
+      tag:
+        required: true
+        type: string
+      tagsha:
+        required: true
+        type: string
+      topic:
+        required: true
+        type: string
+
+env:
+  TOPIC: ${{ inputs.topic }}
+  TAG: ${{ inputs.tag }}
+  REPO: ${{ inputs.repo }}
+  TAGSHA: ${{ inputs.tagsha }}
+  GITHUB_TOKEN: ${{ github.token }}
+  OSCPASS: ${{ secrets.OSCPASS }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      pkgname: ${{ steps.pkgname.outputs.pkgname }}
+      component: ${{ steps.component.outputs.component }}
+      tagsha: ${{ steps.tagsha.outputs.tagsha }}
+    steps:
+      - name: Print Environment
+        run: export
+
+      - name: Install tools
+        run: |
+          sudo apt install -y osc curl
+
+      - name: pkgname
+        id: pkgname
+        run: |
+          echo "pkgname=$(echo ${{ inputs.repo }} |awk -F '/' '{print $2}')" >> $GITHUB_OUTPUT
+
+      - name: component
+        id: component
+        run : |
+          component=community
+          result=$(echo ${{ inputs.repo }}|grep "linuxdeepin")
+          if [ "$result" != "" ];then
+            component=dde
+          else
+            component=$(curl https://raw.githubusercontent.com/${{ inputs.repo }}/master/.obs/workflows.yml |\
+                      grep "source_project"||echo "source_project: deepin:Develop:community"| head -n 1 |awk -F ":" '{print $4}')
+          fi
+          echo "component=$component" >> $GITHUB_OUTPUT
+
+      - name: Testing package prepare (if not exit create it)
+        run: |
+          set -x
+          mkdir -p ~/.config/osc
+          echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
+          pkgname="${{ steps.pkgname.outputs.pkgname }}"
+          component="${{ steps.component.outputs.component }}"
+          osc search ${pkgname}| grep "deepin:Testing"|| \
+            (curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg-meta.tpl
+            sed -i "s#PKGNAME#${pkgname}#g" meta.xml
+            sed -i "s#COMPONENT#${component}#g" meta.xml
+            curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:Testing:$component/$pkgname/_meta"
+            osc co deepin:Testing:${component}/$pkgname && cd $_ && \
+            curl -o _service https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg.tpl && \
+            sed -i "s#REPO#$REPO#g" _service && osc add _service && osc ci -m "init")
+
+      - name: get tag info
+        id: tagsha
+        run: |
+          set -x
+          echo "get tag $TAG information"
+          if [ -z "$TAGSHA" -a "$TAGSHA" != "undefined" ]; then
+            # get sha from repository git tag
+            TAGSHA=$(curl -H "Accept: application/vnd.github+json" \
+                    -H "Authorization: Bearer $GITHUB_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28"  \
+                    https://api.github.com/repos/$REPO/git/ref/tags/$TAG |grep sha|awk -F "\"" '{print $4}')
+            if [ -z "$TAGSHA" ]; then
+              echo "tag invalid"
+              exit 1
+            fi
+          fi
+          echo "tagsha=$TAGSHA" >> $GITHUB_OUTPUT
+
+      - name: Trigger build
+        run: |
+          set -x
+          mkdir -p ~/.config/osc
+          echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
+          component="${{ steps.component.outputs.component }}"
+          pkgname="${{ steps.pkgname.outputs.pkgname }}"
+          TAGSHA="${{ steps.tagsha.outputs.tagsha}}"
+          osc linkpac deepin:Testing:${component} ${pkgname}  deepin:CI:TestingIntegration:${TOPIC} ${pkgname}|| echo "ignore linkpac err"
+          osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
+          needbuild=true
+          if [ -f _branch_request ];then
+            cat _branch_request |grep "${TAGSHA}" && needbuild=false ||echo true
+          fi
+          if [ $needbuild = "true" ];then
+            curl -o _branch_request https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-br.tpl
+            sed -i  "s#REPO#$REPO#g" _branch_request
+            sed -i "s#TAGSHA#$TAGSHA#g" _branch_request
+            osc add _branch_request && osc ci -m "update tag release: $TAGSHA"
+          fi
+
+  log:
+    needs: build
+    strategy:
+      matrix:
+        arch: [aarch64, x86_64]
+
+    runs-on: ubuntu-latest
+    env:
+      ARCH: ${{ matrix.arch }}
+    steps:
+      - name: Install osc
+        run: |
+          sudo apt install -y osc
+
+      - name: build log tracker
+        run: |
+          set -x
+          mkdir -p ~/.config/osc
+          echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
+          pkgname="${{ needs.build.outputs.pkgname }}"
+          osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
+          osc buildlog testing ${ARCH}
