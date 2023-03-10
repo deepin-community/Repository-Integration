@@ -7,10 +7,20 @@ on:
         required: true
         type: string
       tag:
-        required: true
         type: string
       tagsha:
+        type: string
+      topic:
         required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      repo:
+        required: true
+        type: string
+      tag:
+        type: string
+      tagsha:
         type: string
       topic:
         required: true
@@ -47,13 +57,15 @@ jobs:
       - name: component
         id: component
         run : |
+          set +e
+          set -x
           component=community
           result=$(echo ${{ inputs.repo }}|grep "linuxdeepin")
           if [ "$result" != "" ];then
             component=dde
           else
-            component=$(curl https://raw.githubusercontent.com/${{ inputs.repo }}/master/.obs/workflows.yml |\
-                      grep "source_project"||echo "source_project: deepin:Develop:community"| head -n 1 |awk -F ":" '{print $4}')
+            component=`(curl https://raw.githubusercontent.com/${{ inputs.repo }}/master/.obs/workflows.yml |\
+                      grep "source_project"||echo "source_project: deepin:Develop:community")| head -n 1 |awk -F ":" '{print $4}'`
           fi
           echo "component=$component" >> $GITHUB_OUTPUT
 
