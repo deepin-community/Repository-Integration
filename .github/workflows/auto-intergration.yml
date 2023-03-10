@@ -30,10 +30,14 @@ jobs:
     steps:
       - name: obs intergration topic project prepare
         run: |
+          set +e
           set -x
-          curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-proj-meta.tpl
-          sed -i "s#TOPIC#${TOPIC}#g" meta.xml
-          curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC/_meta"
+          result=$(curl -u golf66:$OSCPASS "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC/_meta"|grep "unknown_project")
+          if [ "$result" != "" ];then
+            curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-proj-meta.tpl
+            sed -i "s#TOPIC#${TOPIC}#g" meta.xml
+            curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC/_meta"
+          fi
 
   # https://github.com/actions/runner/issues/491#issuecomment-850884422 reason why use this if
   # :( for this
