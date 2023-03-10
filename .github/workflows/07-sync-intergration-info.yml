@@ -1,8 +1,7 @@
 name: deployed feedback
 
 on:
-  pull_request_target:
-    types: [opened, synchronize, closed]
+  workflow_dispatch:
 
 
 jobs:
