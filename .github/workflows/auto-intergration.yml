@@ -111,7 +111,7 @@ jobs:
       (needs.auto-test.result == 'success')
     with:
       topic: test-intergration-pr-${{ github.event.number }}
-      deploy: ${{ needs.parsec_intergration.outputs.deply }}
+      deploy: ${{ needs.parsec_intergration.outputs.deploy }}
 
   # merge finished and success, closing this pr
   close-pull-request:

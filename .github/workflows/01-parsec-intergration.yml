@@ -36,9 +36,9 @@ on:
       all_build_task:
         description: all build tasks used for
         value: ${{ jobs.parsec_intergration.outputs.all_build_task }}
-      deply:
+      deploy:
         description: deploy way AUTO or MANUALLY
-        value: ${{ jobs.parsec_intergration.outputs.deply }}
+        value: ${{ jobs.parsec_intergration.outputs.deploy }}
 
 jobs:
   parsec_intergration:
@@ -56,7 +56,7 @@ jobs:
       build_matrix_8: ${{ steps.parsec_intergration.outputs.build_matrix_8 }}
       build_matrix_9: ${{ steps.parsec_intergration.outputs.build_matrix_9 }}
       all_build_task: ${{ steps.parsec_intergration.outputs.all_build_task }}
-      deply: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
+      deploy: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
 
     steps:
       - name: checkout_pull_request
