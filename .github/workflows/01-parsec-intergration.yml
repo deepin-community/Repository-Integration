@@ -208,7 +208,8 @@ jobs:
             } else {
               all_build_task = ${{ steps.parsec_intergration.outputs.all_build_task }}
               for (repo of all_build_task) {
-                if (repo.repo.contains("linuxdeepin/")) {
+                console.log(repo)
+                if (repo.repo.includes("linuxdeepin/")) {
                   // 目前linuxdeepin下的项目需要测试介入集成流程，介入方式为对提交的集成pr进行review并提交相应的测试材料
                   core.setOutput('DEPLOY', 'TestingRepoReviewer')
                   break
