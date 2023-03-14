@@ -111,8 +111,10 @@ jobs:
       (needs.build-order-9.result == 'success' || needs.build-order-9.result == 'skipped') &&
       (needs.auto-test.result == 'success')
     with:
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: intergration-pr-${{ github.event.number }}
       deploy: "TestingRepoReviewer"
+      component: ${{ needs.parsec_intergration.outputs.component }}
+      message: ${{ needs.parsec_intergration.outputs.intergration_message }}
 
   # merge finished and success, closing this pr
   close-pull-request:

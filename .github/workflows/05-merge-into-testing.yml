@@ -6,44 +6,92 @@ on:
       topic:
         required: true
         type: string
+      component:
+        required: true
+        type: string
+      message:
+        required: true
+        type: string
+      deploy:
+        required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      topic:
+        required: true
+        type: string
+      component:
+        required: true
+        type: string
+      message:
+        required: true
+        type: string
       deploy:
         required: true
         type: string
 
 env:
   TOPIC: ${{ inputs.topic }}
-  BRIDGE_TOKEN: ${{ secrets.BridgeToken }}
+  COMPONENT: ${{ inputs.component }}
+  MSG: ${{ inputs.message }}
+  OSCPASS: ${{ secrets.OSCPASS }}
 
 jobs:
   merge:
     name: merge repo
     runs-on: ubuntu-latest
-    environment:  ${{ inputs.deploy }}
+    environment:  TestingRepoReviewer
     steps:
       - name: Print Environment
         run: export
 
-      - uses: actions/checkout@v2
+      - name: trigger repo merge
+        id: mergeid
+        run: |
+          set -x
+          sudo apt install -y osc
+          mkdir -p ~/.config/osc
+          echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
+          osc co deepin:CI:TestingIntegration:${TOPIC} && cd $_
+          osc submitrequest --separate-requests deepin:Testing:"$COMPONENT" -m "${MSG}" --yes > sr.output|| true
+          mergeid=$(cat sr.output |grep "created:" |awk '{print $3}')
+          echo "mergeid=$mergeid" >> $GITHUB_OUTPUT
+
+      - name: Return merge status to pr
+        uses: actions/github-script@v6
         with:
-          repository: "linuxdeepin/jenkins-bridge-client"
-          path: jenkins-bridge-client
+          github-token: ${{ github.token }}
+          script: |
+            const BOT_NAME = "TestingRepoMerge Bot"
+            const COMMENT_HEAD = "**" + BOT_NAME + "**\n\n"
+            mergeid = ${{ steps.mergeid.outputs.mergeid }}
+            //mergeid = 77
+            let COMMENT_BODY = ""
+            COMMENT_BODY += "Deepin Testing Repo Merge Info\nType: OBS\nStatus: https://build.deepin.com/request/show/"
+            COMMENT_BODY += mergeid
+            COMMENT_BODY += "\n"
 
-      - name: Install Client
-        run: |
-          cd $GITHUB_WORKSPACE/jenkins-bridge-client
-          go build .
-          sudo install -Dvm755 jenkins-bridge-client -t /usr/bin/
-
-      - name: Trigger build
-        id: generate-runid
-        run: |
-          echo "RUN_ID=$(jenkins-bridge-client triggerRepoMerge --topic ${{ inputs.topic }} --token $BRIDGE_TOKEN)" >> $GITHUB_OUTPUT
-
-      - name: Print log
-        run: |
-          jenkins-bridge-client printLog --token "$BRIDGE_TOKEN" --runid "${{ steps.generate-runid.outputs.RUN_ID }}"
-
-      - name: cancelled post runs
-        if: cancelled()
-        run: |
-          jenkins-bridge-client cancelBuild --token "$BRIDGE_TOKEN" --runid "${{ steps.generate-runid.outputs.RUN_ID }}"
+            if ( context.issue.number != undefined ) {
+              const response = await github.rest.issues.listComments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number
+              })
+              const reg = new RegExp("\\*+" + BOT_NAME + "\\*+")
+              tagBotComment= response.data.find(comment => comment.body.match(reg))
+              if (tagBotComment) {
+                await github.rest.issues.updateComment({
+                    comment_id: tagBotComment.id,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    body: COMMENT_HEAD + COMMENT_BODY
+                })
+              } else {
+                await github.rest.issues.createComment({
+                    issue_number: context.issue.number,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    body: COMMENT_HEAD + COMMENT_BODY
+                })
+              }
+            }
