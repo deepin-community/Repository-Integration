@@ -39,6 +39,12 @@ on:
       deploy:
         description: deploy way AUTO or MANUALLY
         value: ${{ jobs.parsec_intergration.outputs.deploy }}
+      intergration_message:
+        description: intergration message at intergration.yml
+        value: ${{ jobs.parsec_intergration.outputs.intergration_message }}
+      component:
+        description: intergration repos component
+        value: ${{ jobs.parsec_intergration.outputs.component }}
 
 jobs:
   parsec_intergration:
@@ -57,6 +63,8 @@ jobs:
       build_matrix_9: ${{ steps.parsec_intergration.outputs.build_matrix_9 }}
       all_build_task: ${{ steps.parsec_intergration.outputs.all_build_task }}
       deploy: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
+      intergration_message: ${{ steps.parsec_intergration.outputs.intergration_message }}
+      component: ${{ steps.parsec_intergration.outputs.component }}
 
     steps:
       - name: checkout_pull_request
@@ -111,6 +119,7 @@ jobs:
               data = read_intergration()
 
               message = data.get("message", "")
+              set_output("intergration_message", message)
               with open("intergration-${{ github.event.number }}-detail.md", "w+") as intergration_detail:
                   intergration_detail.write(message)
 
@@ -205,17 +214,83 @@ jobs:
             core.setOutput('DEPLOY', 'TestingIntegrationTesterReveiw')
             if ( illegal_tags !== undefined ) {
               core.setFailed("some tags are not invalid!")
-            }/* else {
-              all_build_task = ${{ steps.parsec_intergration.outputs.all_build_task }}
-              for (repo of all_build_task) {
-                console.log(repo)
-                if (repo.repo.includes("linuxdeepin/")) {
-                  // 目前linuxdeepin下的项目需要测试介入集成流程，介入方式为对提交的集成pr进行review并提交相应的测试材料
-                  core.setOutput('DEPLOY', 'TestingIntegrationTesterReveiw')
-                  break
+            }
+
+            // component 检查
+            all_build_task = ${{ steps.parsec_intergration.outputs.all_build_task }}
+            let component = ""
+            for (repo of all_build_task) {
+              console.log(repo)
+              repoinfo = repo.repo.split('/')
+              if (len(repoinfo) == 2) {
+                const {data} = await github.rest.repos.getContent({
+                  owner: repoinfo[0],
+                  repo: repoinfo[1],
+                  path: ".obs/workflows.yml",
+                });
+                datas = Buffer.from(data.content, data.encoding)
+                obsinfo = datas.toString()
+                if (len(obsinfo) > 0) {
+                  if (obsinfo.includes("source_project: deepin:Develop:dde")) {
+                    if (component == "") {
+                      component = "dde"
+                    }
+
+                    if (component != "dde") {
+                      core.setFailed("intergrate multi components repo are not allowed!")
+                      break
+                    }
+
+                  } else if (obsinfo.includes("source_project: deepin:Develop:main")) {
+                    if (component == "") {
+                      component = "main"
+                    }
+
+                    if (component != "main") {
+                      core.setFailed("intergrate multi components repo are not allowed!")
+                      break
+                    }
+
+                  } else if (obsinfo.includes("source_project: deepin:Develop:community")) {
+                    if (component == "") {
+                      component = "community"
+                    }
+
+                    if (component != "community") {
+                      core.setFailed("intergrate multi components repo are not allowed!")
+                      break
+                    }
+
+                  } else if (obsinfo.includes("source_project: deepin:Develop:commercial")) {
+                    if (component == "") {
+                      component = "commercial"
+                    }
+
+                    if (component != "commercial") {
+                      core.setFailed("intergrate multi components repo are not allowed!")
+                      break
+                    }
+                  }
+                } else {
+                  // 默认没有配置obs工作流程的项目组件为community
+                  if (component == "") {
+                    component = "community"
+                  }
+
+                  if (component != "community") {
+                    core.setFailed("intergrate multi components repo are not allowed!")
+                    break
+                  }
                 }
               }
-            }*/
+
+              if (component == "") {
+                // 默认community
+                component = "community"
+              }
+
+              core.setOutput('component', component)
+            }
 
       - name: upload intergration detail
         uses: actions/upload-artifact@v2
