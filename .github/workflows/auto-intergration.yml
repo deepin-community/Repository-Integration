@@ -75,6 +75,7 @@ jobs:
     with:
       topic: test-intergration-pr-${{ github.event.number }}
       packages: ${{ needs.parsec_intergration.outputs.all_build_task }}
+      deploy: ${{ needs.parsec_intergration.outputs.deploy }}
 
   deploy-repo:
     name: merge topic repo
@@ -111,7 +112,7 @@ jobs:
       (needs.auto-test.result == 'success')
     with:
       topic: test-intergration-pr-${{ github.event.number }}
-      deploy: ${{ needs.parsec_intergration.outputs.deploy }}
+      deploy: "TestingRepoReviewer"
 
   # merge finished and success, closing this pr
   close-pull-request:
