@@ -9,6 +9,8 @@ on:
       packages:
         required: true
         type: string
+      deploy:
+        type: string
 
 env:
   TOPIC: ${{ inputs.topic }}
