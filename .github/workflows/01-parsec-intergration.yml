@@ -117,7 +117,12 @@ jobs:
               for repo in data.get("repos"):
                   order = int(repo.get("order",0))
                   order = max(0, order) and min(order , maxSize - 1)
-                  check_tag_exsist(repo.get('repo'), repo.get('tag'))
+                  tagsha = repo.get('tagsha')
+                  tag = repo.get('tag')
+                  if tag and tag != "" and len(tag) > 0:
+                    check_tag_exsist(repo.get('repo'), repo.get('tag'))
+                  if tagsha == "" and len(tagsha) <= 0 and tagsha == "" and len(tagsha) <= 0:
+                    illegalTags.append({"repo": repo, "tag": tag, "tagsha": tagsha})
                   allBuildTasks[order].get("data").get("payload").append(repo)
 
               if len(illegalTags) > 0:
@@ -148,7 +153,68 @@ jobs:
         with:
           github-token: ${{ github.token }}
           script: |
-            core.setOutput('DEPLOY', 'MANUALLY')
+            const BOT_NAME = "RepoTagCheck Bot"
+            const COMMENT_HEAD = "**" + BOT_NAME + "**\n\n"
+            illegal_tags = ${{ steps.parsec_intergration.outputs.illegal_tags }}
+            illegal_repos = ${{ steps.parsec_intergration.outputs.illegal_repos }}
+            let COMMENT_BODY = ""
+            if ( illegal_tags !== undefined || illegal_repos !== undefined ) {
+              if ( illegal_tags !== undefined ) {
+                  COMMENT_BODY += "Check failed!\nListed repo and tag pairs are not exists: \n|repo|tag|\n|-|-|\n"
+                  illegal_tags.forEach(tag => {
+                    COMMENT_BODY += "|" + tag["repo"] + "|" + tag["tag"] + "|\n"
+                  })
+                  COMMENT_BODY += "\n"
+              }
+
+              if ( illegal_repos !== undefined ) {
+                  COMMENT_BODY += "Listed repos are not allowed by automatic intergration: \n|repo|\n|-|\n"
+                  illegal_repos.forEach(repo => {
+                    COMMENT_BODY += "|" + repo + "|\n"
+                  })
+              }
+            } else {
+              COMMENT_BODY = "All repo and tag pairs check passed!"
+            }
+
+            if ( context.issue.number != undefined ) {
+              const response = await github.rest.issues.listComments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number
+              })
+              const reg = new RegExp("\\*+" + BOT_NAME + "\\*+")
+              tagBotComment= response.data.find(comment => comment.body.match(reg))
+              if (tagBotComment) {
+                await github.rest.issues.updateComment({
+                    comment_id: tagBotComment.id,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    body: COMMENT_HEAD + COMMENT_BODY
+                })
+              } else {
+                await github.rest.issues.createComment({
+                    issue_number: context.issue.number,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    body: COMMENT_HEAD + COMMENT_BODY
+                })
+              }
+            }
+
+            core.setOutput('DEPLOY', 'AUTO')
+            if ( illegal_tags !== undefined ) {
+              core.setFailed("some tags are not invalid!")
+            } else {
+              all_build_task = ${{ steps.parsec_intergration.outputs.all_build_task }}
+              all_build_task.forEach(repo => {
+                if (repo.repo.contains("linuxdeepin/")) {
+                  // 目前linuxdeepin下的项目需要测试介入集成流程，介入方式为对提交的集成pr进行review并提交相应的测试材料
+                  core.setOutput('DEPLOY', 'TestingRepoReviewer')
+                  break
+                }
+              })
+            }
 
       - name: upload intergration detail
         uses: actions/upload-artifact@v2
