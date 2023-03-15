@@ -113,7 +113,7 @@ jobs:
     with:
       topic: test-intergration-pr-${{ github.event.number }}
       deploy: "TestingRepoReviewer"
-      component: ${{ needs.parsec_intergration.outputs.component }}
+      component: "community"
       message: ${{ needs.parsec_intergration.outputs.intergration_message }}
 
   # merge finished and success, closing this pr
