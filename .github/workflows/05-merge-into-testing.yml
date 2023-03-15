@@ -56,6 +56,7 @@ jobs:
           osc submitrequest --separate-requests deepin:Testing:"$COMPONENT" -m "${MSG}" --yes > sr.output|| true
           mergeid=$(cat sr.output |grep "created:" |awk '{print $3}')
           echo "mergeid=$mergeid" >> $GITHUB_OUTPUT
+          osc request accept -m "${MSG}" $mergeid
 
       - name: Return merge status to pr
         uses: actions/github-script@v6

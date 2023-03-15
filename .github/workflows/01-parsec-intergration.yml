@@ -230,6 +230,7 @@ jobs:
                 });
                 datas = Buffer.from(data.content, data.encoding)
                 obsinfo = datas.toString()
+                //console.log(obsinfo)
                 if (obsinfo.length > 0) {
                   if (obsinfo.includes("source_project: deepin:Develop:dde")) {
                     if (component == "") {
@@ -283,14 +284,14 @@ jobs:
                   }
                 }
               }
-
-              if (component == "") {
-                // 默认community
-                component = "community"
-              }
-
-              core.setOutput('component', component)
             }
+
+            if (component == "") {
+              // 默认community
+              component = "community"
+            }
+            console.log(component)
+            core.setOutput('component', component)
 
       - name: upload intergration detail
         uses: actions/upload-artifact@v2
