@@ -64,7 +64,7 @@ jobs:
       all_build_task: ${{ steps.parsec_intergration.outputs.all_build_task }}
       deploy: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
       intergration_message: ${{ steps.parsec_intergration.outputs.intergration_message }}
-      component: ${{ steps.parsec_intergration.outputs.component }}
+      component: ${{ steps.illegal_repo_tags.outputs.component }}
 
     steps:
       - name: checkout_pull_request
@@ -222,7 +222,7 @@ jobs:
             for (repo of all_build_task) {
               console.log(repo)
               repoinfo = repo.repo.split('/')
-              if (len(repoinfo) == 2) {
+              if (repoinfo.length == 2) {
                 const {data} = await github.rest.repos.getContent({
                   owner: repoinfo[0],
                   repo: repoinfo[1],
@@ -230,7 +230,8 @@ jobs:
                 });
                 datas = Buffer.from(data.content, data.encoding)
                 obsinfo = datas.toString()
-                if (len(obsinfo) > 0) {
+                //console.log(obsinfo)
+                if (obsinfo.length > 0) {
                   if (obsinfo.includes("source_project: deepin:Develop:dde")) {
                     if (component == "") {
                       component = "dde"
@@ -283,14 +284,14 @@ jobs:
                   }
                 }
               }
-
-              if (component == "") {
-                // 默认community
-                component = "community"
-              }
-
-              core.setOutput('component', component)
             }
+
+            if (component == "") {
+              // 默认community
+              component = "community"
+            }
+            //console.log(component)
+            core.setOutput('component', component)
 
       - name: upload intergration detail
         uses: actions/upload-artifact@v2
