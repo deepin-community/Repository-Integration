@@ -113,7 +113,7 @@ jobs:
     with:
       topic: test-intergration-pr-${{ github.event.number }}
       deploy: "TestingRepoReviewer"
-      component: ${{ steps.illegal_repo_tags.outputs.component }}
+      component: ${{ needs.illegal_repo_tags.outputs.component }}
       message: ${{ needs.parsec_intergration.outputs.intergration_message }}
 
   # merge finished and success, closing this pr
