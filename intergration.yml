@@ -1,5 +1,5 @@
 message: |
-  sshpass 集成
+  sshpass 集成  
 repos: 
   - repo: deepin-community/sshpass
     tag: 
