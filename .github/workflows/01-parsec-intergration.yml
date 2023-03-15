@@ -44,7 +44,7 @@ on:
         value: ${{ jobs.parsec_intergration.outputs.intergration_message }}
       component:
         description: intergration repos component
-        value: ${{ jobs.parsec_intergration.outputs.component }}
+        value: ${{ jobs.illegal_repo_tags.outputs.component }}
 
 jobs:
   parsec_intergration:
@@ -64,7 +64,7 @@ jobs:
       all_build_task: ${{ steps.parsec_intergration.outputs.all_build_task }}
       deploy: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
       intergration_message: ${{ steps.parsec_intergration.outputs.intergration_message }}
-      component: ${{ steps.parsec_intergration.outputs.component }}
+      component: ${{ steps.illegal_repo_tags.outputs.component }}
 
     steps:
       - name: checkout_pull_request
