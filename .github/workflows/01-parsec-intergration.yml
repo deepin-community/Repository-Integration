@@ -222,7 +222,7 @@ jobs:
             for (repo of all_build_task) {
               console.log(repo)
               repoinfo = repo.repo.split('/')
-              if (len(repoinfo) == 2) {
+              if (repoinfo.length == 2) {
                 const {data} = await github.rest.repos.getContent({
                   owner: repoinfo[0],
                   repo: repoinfo[1],
@@ -230,7 +230,7 @@ jobs:
                 });
                 datas = Buffer.from(data.content, data.encoding)
                 obsinfo = datas.toString()
-                if (len(obsinfo) > 0) {
+                if (obsinfo.length > 0) {
                   if (obsinfo.includes("source_project: deepin:Develop:dde")) {
                     if (component == "") {
                       component = "dde"
