@@ -44,7 +44,7 @@ on:
         value: ${{ jobs.parsec_intergration.outputs.intergration_message }}
       component:
         description: intergration repos component
-        value: ${{ jobs.parsec_intergration.outputs.component }}
+        value: ${{ jobs.illegal_repo_tags.outputs.component }}
 
 jobs:
   parsec_intergration:
