@@ -64,7 +64,7 @@ jobs:
       all_build_task: ${{ steps.parsec_intergration.outputs.all_build_task }}
       deploy: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
       intergration_message: ${{ steps.parsec_intergration.outputs.intergration_message }}
-      component: ${{ steps.parsec_intergration.outputs.component }}
+      component: ${{ steps.illegal_repo_tags.outputs.component }}
 
     steps:
       - name: checkout_pull_request
@@ -290,7 +290,7 @@ jobs:
               // 默认community
               component = "community"
             }
-            console.log(component)
+            //console.log(component)
             core.setOutput('component', component)
 
       - name: upload intergration detail
