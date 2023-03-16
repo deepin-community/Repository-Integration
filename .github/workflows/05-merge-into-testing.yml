@@ -53,10 +53,13 @@ jobs:
           mkdir -p ~/.config/osc
           echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
           osc co deepin:CI:TestingIntegration:${TOPIC} && cd $_
-          osc submitrequest --separate-requests deepin:Testing:"$COMPONENT" -m "${MSG}" --yes > sr.output|| true
-          mergeid=$(cat sr.output |grep "created:" |awk '{print $3}')
-          echo "mergeid=$mergeid" >> $GITHUB_OUTPUT
-          osc request accept -m "${MSG}" $mergeid
+          osc submitrequest --separate-requests deepin:Testing:"${COMPONENT}" -m "${MSG}" --yes > sr.output|| true
+          mergeid=$(cat sr.output |grep "created" |awk '{print $4}')
+          cat sr.output
+          if [ $mergeid ];then
+            echo "mergeid=$mergeid" >> $GITHUB_OUTPUT
+            osc request accept -m "${MSG}" $mergeid
+          fi
 
       - name: Return merge status to pr
         uses: actions/github-script@v6

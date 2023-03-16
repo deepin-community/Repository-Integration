@@ -1,7 +1,7 @@
 message: |
-  Integrated for 23 preview
+  sshpass 集成  
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: deepin-community/sshpass
+    tag: 
     order: 0
-    tagsha: "********************************"
+    tagsha: "e86a9edde0adb542b13f672d6ac67a8a4b1f28b9"
