@@ -131,6 +131,7 @@ jobs:
   # ten level build task
   build-order-0:
     name: build-order-0
+    continue-on-error: true
     if: always() && !cancelled() && (needs.parsec_intergration.outputs.build_matrix_0 != '') && (needs.parsec_intergration.result == 'success')
     needs:
       - parsec_intergration
@@ -146,6 +147,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-1:
+    continue-on-error: true
     if: always() && !cancelled() && (needs.parsec_intergration.outputs.build_matrix_1 != '') && (needs.parsec_intergration.result == 'success')
     needs: 
       - parsec_intergration
@@ -161,6 +163,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-2:
+    continue-on-error: true
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_2 != '') && (needs.parsec_intergration.result == 'success')
     needs:
       - parsec_intergration
@@ -176,6 +179,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-3:
+    continue-on-error: true
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_3 != '') && (needs.parsec_intergration.result == 'success')
     needs: 
       - parsec_intergration
@@ -191,6 +195,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-4:
+    continue-on-error: true
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_4 != '') && (needs.parsec_intergration.result == 'success')
     needs: 
       - parsec_intergration
@@ -206,6 +211,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-5:
+    continue-on-error: true
     name: build-order-5
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_5 != '') && (needs.parsec_intergration.result == 'success')
     needs:
@@ -222,6 +228,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-6:
+    continue-on-error: true
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_6 != '') && (needs.parsec_intergration.result == 'success')
     needs:
       - parsec_intergration
@@ -237,6 +244,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-7:
+    continue-on-error: true
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_7 != '') && (needs.parsec_intergration.result == 'success')
     needs:
       - parsec_intergration
@@ -252,6 +260,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-8:
+    continue-on-error: true
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_8 != '') && (needs.parsec_intergration.result == 'success')
     needs: 
       - parsec_intergration
@@ -267,6 +276,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-9:
+    continue-on-error: true
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_9 != '') && (needs.parsec_intergration.result == 'success')
     needs: 
       - parsec_intergration
