@@ -230,7 +230,7 @@ jobs:
                 });
                 datas = Buffer.from(data.content, data.encoding)
                 obsinfo = datas.toString()
-                console.log(obsinfo)
+                //console.log(obsinfo)
                 if (obsinfo.length > 0) {
                   if (obsinfo.includes("source_project: deepin:Develop:dde")) {
                     if (component == "") {
@@ -290,6 +290,7 @@ jobs:
               // 默认community
               component = "community"
             }
+            console.log(component)
             core.setOutput('component', component)
 
       - name: upload intergration detail
