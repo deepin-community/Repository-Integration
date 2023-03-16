@@ -136,6 +136,7 @@ jobs:
       - parsec_intergration
       - build_project_prepare
     strategy:
+      fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_0) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
@@ -151,6 +152,7 @@ jobs:
       - parsec_intergration
       - build-order-0
     strategy:
+      fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_1) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
@@ -166,6 +168,7 @@ jobs:
       - parsec_intergration
       - build-order-1
     strategy:
+      fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_2) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
@@ -181,6 +184,7 @@ jobs:
       - parsec_intergration
       - build-order-2
     strategy:
+      fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_3) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
@@ -196,6 +200,7 @@ jobs:
       - parsec_intergration
       - build-order-3
     strategy:
+      fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_4) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
@@ -212,6 +217,7 @@ jobs:
       - parsec_intergration
       - build-order-4
     strategy:
+      fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_5) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
@@ -222,6 +228,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-6:
+    fail-fast: false
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_6 != '') && (needs.parsec_intergration.result == 'success')
     needs:
       - parsec_intergration
@@ -237,6 +244,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-7:
+    fail-fast: false
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_7 != '') && (needs.parsec_intergration.result == 'success')
     needs:
       - parsec_intergration
@@ -252,6 +260,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-8:
+    fail-fast: false
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_8 != '') && (needs.parsec_intergration.result == 'success')
     needs: 
       - parsec_intergration
@@ -267,6 +276,7 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-9:
+    fail-fast: false
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_9 != '') && (needs.parsec_intergration.result == 'success')
     needs: 
       - parsec_intergration
