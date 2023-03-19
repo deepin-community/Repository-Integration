@@ -228,12 +228,12 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-6:
-    fail-fast: false
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_6 != '') && (needs.parsec_intergration.result == 'success')
     needs:
       - parsec_intergration
       - build-order-5
     strategy:
+      fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_6) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
@@ -244,12 +244,12 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-7:
-    fail-fast: false
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_7 != '') && (needs.parsec_intergration.result == 'success')
     needs:
       - parsec_intergration
       - build-order-6
     strategy:
+      fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_7) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
@@ -260,12 +260,12 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-8:
-    fail-fast: false
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_8 != '') && (needs.parsec_intergration.result == 'success')
     needs: 
       - parsec_intergration
       - build-order-7
     strategy:
+      fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_8) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
@@ -276,12 +276,12 @@ jobs:
       topic: test-intergration-pr-${{ github.event.number }}
 
   build-order-9:
-    fail-fast: false
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_9 != '') && (needs.parsec_intergration.result == 'success')
     needs: 
       - parsec_intergration
       - build-order-8
     strategy:
+      fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_9) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
