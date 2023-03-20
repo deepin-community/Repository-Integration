@@ -92,9 +92,9 @@ jobs:
             sed -i "s#PKGNAME#${pkgname}#g" meta.xml
             sed -i "s#COMPONENT#${component}#g" meta.xml
             curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:Testing:$component/$pkgname/_meta"
-            osc co deepin:Testing:${component}/$pkgname && cd $_ && \
-            curl -o _service https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg.tpl && \
-            sed -i "s#REPO#$REPO#g" _service && osc add _service && osc ci -m "init")
+            #osc co deepin:Testing:${component}/$pkgname && cd $_ && \
+            #curl -o _service https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg.tpl && \
+            #sed -i "s#REPO#$REPO#g" _service && osc add _service && osc ci -m "init")
 
       - name: get tag info
         id: tagsha
@@ -126,6 +126,10 @@ jobs:
           needbuild=true
           if [ -f _branch_request ];then
             cat _branch_request |grep "${TAGSHA}" && needbuild=false ||echo true
+          fi
+          if [ ! -f _service ];then
+            curl -o _service https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg.tpl && \
+            sed -i "s#REPO#$REPO#g" _service && osc add _service && osc ci -m "init")
           fi
           if [ $needbuild = "true" ];then
             curl -o _branch_request https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-br.tpl
