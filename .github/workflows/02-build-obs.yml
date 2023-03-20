@@ -88,9 +88,9 @@ jobs:
           pkgname="${{ steps.pkgname.outputs.pkgname }}"
           component="${{ steps.component.outputs.component }}"
           osc search ${pkgname}| grep "deepin:Testing"|| \
-            (curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg-meta.tpl
-            sed -i "s#PKGNAME#${pkgname}#g" meta.xml
-            sed -i "s#COMPONENT#${component}#g" meta.xml
+            (curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg-meta.tpl \
+            sed -i "s#PKGNAME#${pkgname}#g" meta.xml \ 
+            sed -i "s#COMPONENT#${component}#g" meta.xml \
             curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:Testing:$component/$pkgname/_meta"）
             #osc co deepin:Testing:${component}/$pkgname && cd $_ && \
             #curl -o _service https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg.tpl && \
