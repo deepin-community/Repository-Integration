@@ -1,7 +1,7 @@
 message: |
-  Integrated for 23 preview
+  Integrated for 23 Beta
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: linuxdeepin/deepin-terminal
+    tag: 
     order: 0
-    tagsha: "********************************"
+    tagsha: "3adc55ff5a3ef9751026cc598aeed88c4a3d46e6"
