@@ -1,7 +1,17 @@
 message: |
-  Integrated for 23 preview
+  add kf5 5.90
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: deepin-community/kcontacts
+    tag: 
     order: 0
-    tagsha: "********************************"
+    tagsha: "a58f7c54a2abdff9eb4fc14bbfe47ed6d9ccde73"
+
+  - repo: deepin-community/kded
+    tag: 
+    order: 0
+    tagsha: "b6cb11a7a32ef341b9794911dd2fad40b8a56ac8"
+
+  - repo: deepin-community/kemoticons
+    tag: 
+    order: 0
+    tagsha: "968e2dc962b22f860b9111c16e95201d3278c3dd"
