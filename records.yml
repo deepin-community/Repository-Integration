@@ -24,9 +24,9 @@ records:
         pr: 20
         ver: 6.0.4
     linuxdeepin/deepin-terminal:
-        date: '2023-01-16'
-        pr: 19
-        ver: 6.0.3
+        date: '2023-03-28'
+        pr: 50
+        ver: ''
     linuxdeepin/dtkcommon:
         date: '2023-01-11'
         pr: 12
