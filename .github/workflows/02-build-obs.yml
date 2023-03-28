@@ -121,7 +121,16 @@ jobs:
           component="${{ steps.component.outputs.component }}"
           pkgname="${{ steps.pkgname.outputs.pkgname }}"
           TAGSHA="${{ steps.tagsha.outputs.tagsha}}"
-          osc linkpac deepin:Testing:${component} ${pkgname}  deepin:CI:TestingIntegration:${TOPIC} ${pkgname}|| echo "ignore linkpac err"
+          result=$(osc search ${pkgname}| grep deepin:Testing||echo "")
+          if [ "$result" != "" ];then
+            osc linkpac deepin:Testing:${component} ${pkgname}  deepin:CI:TestingIntegration:${TOPIC} ${pkgname}|| echo "ignore linkpac err"
+          else
+            curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg-meta.tpl
+            sed -i "s#PKGNAME#${pkgname}#g" meta.xml
+            sed -i "s#Testing:COMPONENT#CI:TestingIntegration:${TOPIC}#g" meta.xml
+            curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:${TOPIC}/$pkgname/_meta"  
+          fi
+
           osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
           needbuild=true
           if [ -f _branch_request ];then
