@@ -1,7 +1,7 @@
 message: |
-  Integrated for 23 preview
+  Integrated for 23 Beta
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: deepin-community/network-manager
+    tag: 1.42.4-1
     order: 0
-    tagsha: "********************************"
+    tagsha: "9ebab4e649d1b63071dcfc52c362b89640120988"
