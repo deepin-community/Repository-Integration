@@ -3,6 +3,18 @@ records:
         date: '2022-12-16'
         pr: 2
         ver: 1.0.0
+    deepin-community/kcontacts:
+        date: '2023-03-29'
+        pr: 51
+        ver: ''
+    deepin-community/kded:
+        date: '2023-03-29'
+        pr: 51
+        ver: ''
+    deepin-community/kemoticons:
+        date: '2023-03-29'
+        pr: 51
+        ver: ''
     deepin-community/libqapt:
         date: '2023-01-05'
         pr: 10
