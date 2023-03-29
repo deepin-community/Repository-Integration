@@ -1,7 +1,12 @@
 message: |
-  Integrated for 23 preview
+  Integrated for 23 beta
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: linuxdeepin/dde-file-manager
+    tag: 6.0.12
     order: 0
-    tagsha: "********************************"
+    tagsha: "72e1cbca38d8d4efb7506d856ca82014c2654aa3"
+
+  - repo: linuxdeepin/gio-qt
+    tag: 0.0.12
+    order: 0
+    tagsha: "90b85524492710289862498b33bbb76e5af897f1"
