@@ -7,6 +7,10 @@ records:
         date: '2023-01-05'
         pr: 10
         ver: 3.0.5.1-1-deepin1
+    deepin-community/network-manager:
+        date: '2023-03-29'
+        pr: 53
+        ver: 1.42.4-1
     deepin-community/qtwayland-opensource-src:
         date: '2023-01-11'
         pr: 13
