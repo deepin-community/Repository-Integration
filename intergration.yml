@@ -2,7 +2,7 @@ message: |
   Integrated for 23 beta
 repos: 
   - repo: linuxdeepin/dde-file-manager
-    tag: 6.0.12
+    tag: 
     order: 0
     tagsha: "72e1cbca38d8d4efb7506d856ca82014c2654aa3"
 
