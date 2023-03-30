@@ -16,3 +16,12 @@ repos:
     order: 0
     tagsha: "9000fb4c91eb5e55c0f05c23cd4430c1219fa8cd"
 
+  - repo: linuxdeepin/dde-clipboard
+    tag: 
+    order: 0
+    tagsha: "9a9827358c4cf6b7daf9d71c6458aa5258edecc0"
+
+  - repo: linuxdeepin/deepin-album
+    tag: 
+    order: 0
+    tagsha: "2452391fade19f468015af95bafdc3b5db42ef77"
