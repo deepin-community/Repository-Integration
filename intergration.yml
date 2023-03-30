@@ -7,6 +7,12 @@ repos:
     tagsha: "72e1cbca38d8d4efb7506d856ca82014c2654aa3"
 
   - repo: linuxdeepin/gio-qt
-    tag: 0.0.12
+    tag: 
     order: 0
-    tagsha: "90b85524492710289862498b33bbb76e5af897f1"
+    tagsha: "d7a3283d74b2cb72a5023b7774dd5efe693decca"
+
+  - repo: linuxdeepin/util-dfm
+    tag: 
+    order: 0
+    tagsha: "9000fb4c91eb5e55c0f05c23cd4430c1219fa8cd"
+
