@@ -1,7 +1,17 @@
 message: |
-  Integrated for 23 preview
+  Integrated for 23 beta
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: linuxdeepin/dde-widgets
+    tag: "6.0.10"
+    tagsha: "146a68028cc0e3e1b293ac89cc0d76b1ee5375a6"
     order: 0
-    tagsha: "********************************"
+
+  - repo: linuxdeepin/dde-network-core
+    tag: "2.0.5"
+    tagsha: "9c5e43e9e89b0622322a9111e4cb1452dbc2ffdc"
+    order: 0
+
+  - repo: linuxdeepin/dde-session-shell
+    tag: "6.0.7"
+    tagsha: "ce7098a4929c9123d87491abca615bb10a1b6264"
+    order: 0
