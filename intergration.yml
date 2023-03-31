@@ -4,14 +4,50 @@ message: |
 # Not required, now default is V23-Beta
 milestone: V23-Beta
 # Required
-repos: 
+repos:
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: linuxdeepin/go-gir
+    tag: 3.0.3
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, intergration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: linuxdeepin/go-lib
+    tag: 6.0.4
+    order: 0
+  - repo: linuxdeepin/go-dbus-factory
+    tag: 2.0.3
+    order: 1
+  - repo: linuxdeepin/dde-api
+    tag: 6.0.6
+    order: 2
+  - repo: linuxdeepin/startdde
+    tag: 6.0.5
+    order: 3
+  - repo: linuxdeepin/dde-daemon
+    tag: 6.0.13
+    order: 3
+  - repo: linuxdeepin/dde-session
+    tag: 1.1.0
+    order: 0
+  - repo: linuxdeepin/dde-appearance
+    tag: 1.0.7
+    order: 0
+  - repo: linuxdeepin/dde-introduction
+    tag: 6.0.6
+    order: 0
+  - repo: linuxdeepin/deepin-face
+    tag: 2.0.4
+    order: 0
+  - repo: linuxdeepin/dde-account-faces
+    tag: 1.0.13
+    order: 0
+  - repo: linuxdeepin/dde-cooperation
+    tag: 0.0.7
+    order: 0
+  - repo: linuxdeepin/dde-application-manager
+    tag: 1.0.10
+    order: 0
+  - repo: linuxdeepin/deepin-fcitx5configtool-plugin
+    tag: 5.0.16
+    order: 0
+  - repo: linuxdeepin/dde-control-center
+    tag: 6.0.13
+    order: 0
