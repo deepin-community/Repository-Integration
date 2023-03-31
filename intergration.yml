@@ -20,3 +20,8 @@ repos:
     tag: 
     order: 0
     tagsha: "44eeb58d1b91f116d8eb6e76afe4d6f9e846ce68"  
+
+  - repo: deepin-community/jtreg6
+    tag: 
+    order: 0
+    tagsha: "3adc9d9e3bd52d7fc69787d2f61f728a9cfbc8fc" 
