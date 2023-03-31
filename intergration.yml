@@ -1,7 +1,7 @@
 message: |
-  Integrated for 23 preview
-repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  Integrated for 23 beta
+repos:
+  - repo: linuxdeepin/dde-launcher
+    tag: 6.0.9
     order: 0
-    tagsha: "********************************"
+    tagsha: "bc06ea776e82d979294193db392ef985453f32d8"
