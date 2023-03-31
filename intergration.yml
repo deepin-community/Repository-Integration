@@ -1,7 +1,11 @@
 message: |
-  Integrated for 23 preview
-repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  Integrated for 23 beta
+repos:
+  - repo: linuxdeepin/deepin-kwin
+    tag: 5.25.1
     order: 0
-    tagsha: "********************************"
+    tagsha: "0e5425de6958c244ec0fa4b0e5c136feb79a2503"
+  - repo: linuxdeepin/dwayland
+    tag: 5.25.0
+    order: 0
+    tagsha: "c898653debe11c55268b8fc22172070c40e799af"
