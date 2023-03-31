@@ -1,27 +1,22 @@
 message: |
   Integrated for 23 beta
 repos: 
-  - repo: linuxdeepin/dde-file-manager
+  - repo: deepin-community/edk2
     tag: 
     order: 0
-    tagsha: "72e1cbca38d8d4efb7506d856ca82014c2654aa3"
+    tagsha: "046f648a710a2ed28a0b56c02a6a09f6b669d8bc"
 
-  - repo: linuxdeepin/gio-qt
+  - repo: deepin-community/sshpass
     tag: 
     order: 0
-    tagsha: "d7a3283d74b2cb72a5023b7774dd5efe693decca"
+    tagsha: "e86a9edde0adb542b13f672d6ac67a8a4b1f28b9"
 
-  - repo: linuxdeepin/util-dfm
+  - repo: deepin-community/openjdk-8
     tag: 
     order: 0
-    tagsha: "9000fb4c91eb5e55c0f05c23cd4430c1219fa8cd"
+    tagsha: "92f03ae2dfb21dadd28a0d61f48005da2af46aed"
 
-  - repo: linuxdeepin/dde-clipboard
+  - repo: deepin-community/nemo-qml-plugin-dbus
     tag: 
     order: 0
-    tagsha: "9a9827358c4cf6b7daf9d71c6458aa5258edecc0"
-
-  - repo: linuxdeepin/deepin-album
-    tag: 
-    order: 0
-    tagsha: "2452391fade19f468015af95bafdc3b5db42ef77"
+    tagsha: "44eeb58d1b91f116d8eb6e76afe4d6f9e846ce68"  
