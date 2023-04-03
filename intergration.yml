@@ -1,27 +1,37 @@
 message: |
   Integrated for 23 beta
 repos: 
-  - repo: deepin-community/edk2
+  - repo: deepin-community/openssl
     tag: 
     order: 0
-    tagsha: "046f648a710a2ed28a0b56c02a6a09f6b669d8bc"
+    tagsha: "f85f7f00c0dee300fe1b4dec74d5c5f301179436"
 
-  - repo: deepin-community/sshpass
+  - repo: deepin-community/pulseaudio
     tag: 
     order: 0
-    tagsha: "e86a9edde0adb542b13f672d6ac67a8a4b1f28b9"
+    tagsha: "4de0af208ffa194ac8dc2d936e1ec90bea5bb11e"
 
-  - repo: deepin-community/openjdk-8
+  - repo: deepin-community/mesa
     tag: 
     order: 0
-    tagsha: "92f03ae2dfb21dadd28a0d61f48005da2af46aed"
+    tagsha: "0bad5e6ee0402111a5ccd27a81c3d296e5c80935"
 
-  - repo: deepin-community/nemo-qml-plugin-dbus
+  - repo: deepin-community/opencc
     tag: 
     order: 0
-    tagsha: "44eeb58d1b91f116d8eb6e76afe4d6f9e846ce68"  
+    tagsha: "5eb5f9bc0befa2912e204e6e3e4daa89b0f1442f"  
 
-  - repo: deepin-community/jtreg6
+  - repo: deepin-community/libskk
     tag: 
     order: 0
-    tagsha: "3adc9d9e3bd52d7fc69787d2f61f728a9cfbc8fc" 
+    tagsha: "53eae769a93f370ad1ea77d994f47a96ee8c4161" 
+
+  - repo: deepin-community/libgwenhywfar
+    tag: 
+    order: 0
+    tagsha: "5fbde3858f6e5f3b5aa7daa2beff30291b80306b" 
+
+  - repo: deepin-community/libfuture-io-perl
+    tag: 
+    order: 0
+    tagsha: "b4d702a203734c7cdacc77a337dfb13c6df47361" 
