@@ -1,7 +1,6 @@
 message: |
   Integrated for 23 preview
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: linuxdeepin/deepin-home
+    tagsha: 1e64d577f0737fc15ba01b8e3e9cda1af4b8793d
     order: 0
-    tagsha: "********************************"
