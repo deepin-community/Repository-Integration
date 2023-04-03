@@ -1,7 +1,12 @@
 message: |
-  Integrated for 23 preview
+  Integrated for 23 beta
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: linuxdeepin/deepin-icon-theme
+    tag: 
     order: 0
-    tagsha: "********************************"
+    tagsha: "b45188504e73dcb9eb07f45bb9aab6ec714d086f"
+  - repo: linuxdeepin/deepin-desktop-theme
+    tag: 
+    order: 0
+    tagsha: "ca131253bdb884141d8cc065d06567c18208d7b0"
+  
