@@ -1,37 +1,7 @@
 message: |
   Integrated for 23 beta
 repos: 
-  - repo: deepin-community/openssl
+  - repo: linuxdeepin/deepin-system-monitor
     tag: 
     order: 0
-    tagsha: "f85f7f00c0dee300fe1b4dec74d5c5f301179436"
-
-  - repo: deepin-community/pulseaudio
-    tag: 
-    order: 0
-    tagsha: "4de0af208ffa194ac8dc2d936e1ec90bea5bb11e"
-
-  - repo: deepin-community/mesa
-    tag: 
-    order: 0
-    tagsha: "0bad5e6ee0402111a5ccd27a81c3d296e5c80935"
-
-  - repo: deepin-community/opencc
-    tag: 
-    order: 0
-    tagsha: "5eb5f9bc0befa2912e204e6e3e4daa89b0f1442f"  
-
-  - repo: deepin-community/libskk
-    tag: 
-    order: 0
-    tagsha: "53eae769a93f370ad1ea77d994f47a96ee8c4161" 
-
-  - repo: deepin-community/libgwenhywfar
-    tag: 
-    order: 0
-    tagsha: "5fbde3858f6e5f3b5aa7daa2beff30291b80306b" 
-
-  - repo: deepin-community/libfuture-io-perl
-    tag: 
-    order: 0
-    tagsha: "b4d702a203734c7cdacc77a337dfb13c6df47361" 
+    tagsha: "d4a3e6cd364074a78035d193e89bc3b397fb776b"
