@@ -1,7 +1,32 @@
 message: |
-  Integrated for 23 preview
+  Integrated for 23 beta
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: linuxdeepin/dtkcommon
+    tag: 5.6.9
     order: 0
-    tagsha: "********************************"
+    tagsha: "4eb86d91b84bef3df2577a3c41afe70211f4f053"
+  - repo: linuxdeepin/dtkcore
+    tag: 5.6.9
+    order: 0
+    tagsha: "62bb12cc67fedb63baa202c0881d36d7bfc87ae6"
+  - repo: linuxdeepin/dtkgui
+    tag: 5.6.9
+    order: 0
+    tagsha: "99e450c1cd2e62dda340ecd7dea4692936883d94"
+  - repo: linuxdeepin/dtkwidget
+    tag: 5.6.9
+    order: 0
+    tagsha: "9c56701109231f1f54bb5eea641635ee02d855eb"
+  - repo: linuxdeepin/dtkdeclarative
+    tag: 5.6.9
+    order: 0
+    tagsha: "76bc950be253741f6fb45933d89ad666d9f05cb0"  
+  - repo: linuxdeepin/qt5integration
+    tag: 5.6.9
+    order: 0
+    tagsha: "e7cf22bb26b7f7e1432cc5d3199d40d17c5afb9a"
+  - repo: linuxdeepin/qt5platform-plugins
+    tag: 5.6.9
+    order: 0
+    tagsha: "f89a209664dab07dd99258238178506311ce4652"
+
