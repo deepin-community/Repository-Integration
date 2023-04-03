@@ -1,7 +1,11 @@
 message: |
-  Integrated for 23 preview
+  Integrated for 23 beta, need await https://github.com/deepin-community/Repository-Integration/pull/60
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: linuxdeepin/dde-session-ui
+    tag: 6.0.8
     order: 0
-    tagsha: "********************************"
+    tagsha: "cc107c251012f56833174d49f492ca56b9495fd4"
+  - repo: linuxdeepin/dde-clipboard
+    tag: 6.0.3
+    order: 0
+    tagsha: "848527ca05b37a20ece0e95663f720e947799971"
