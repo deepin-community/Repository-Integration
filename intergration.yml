@@ -4,4 +4,16 @@ repos:
   - repo: deepin-community/golang-github-mdlayher-netlink
     tag: 
     order: 0
-    tagsha: 7cdb7bdce7e0d578f0510dd93ec2445cc4c01943
+    tagsha: "7cdb7bdce7e0d578f0510dd93ec2445cc4c01943"
+
+  - repo: deepin-community/golang-github-mdlayher-socket
+    tag: 
+    order: 0
+    tagsha: "0fc8c6360fd76f40b7b88c8ef76b993178f62918"
+ 
+  - repo: deepin-community/golang-github-josharian-native
+    tag: 
+    order: 0
+    tagsha: "406f8f275315ec1d00f501a2813e9ff5e3be3c53"
+    
+    
