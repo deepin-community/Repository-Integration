@@ -41,3 +41,7 @@ repos:
     order: 0
     tagsha: "feecf20058b3032bb0f5c45ce82db7ec728dfcfb" 
  
+  - repo: deepin-community/udisks2-qt5
+    tag:
+    order: 0
+    tagsha: "05a160b16a0e746bfb5d5330718be13978f07da7" 
