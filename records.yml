@@ -3,6 +3,18 @@ records:
         date: '2022-12-16'
         pr: 2
         ver: 1.0.0
+    deepin-community/golang-github-josharian-native:
+        date: '2023-04-04'
+        pr: 68
+        ver: ''
+    deepin-community/golang-github-mdlayher-netlink:
+        date: '2023-04-04'
+        pr: 68
+        ver: ''
+    deepin-community/golang-github-mdlayher-socket:
+        date: '2023-04-04'
+        pr: 68
+        ver: ''
     deepin-community/kcontacts:
         date: '2023-03-29'
         pr: 51
