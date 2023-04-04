@@ -38,6 +38,6 @@ repos:
  
   - repo: deepin-community/freerdp2
     tag:
-    order:
+    order: 0
     tagsha: "feecf20058b3032bb0f5c45ce82db7ec728dfcfb" 
  
