@@ -4,14 +4,25 @@ message: |
 # Not required, now default is V23-Beta
 milestone: V23-Beta
 # Required
-repos: 
+repos:
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: linuxdeepin/dde-daemon
+    tag: 6.0.13
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, intergration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: 9feba944c0b702a651a361acf2893df3315151d8
+  - repo: linuxdeepin/startdde
+    tag: 6.0.5
+    order: 0
+    tagsha: 42a2a2d0180ceb733d1f2293f66838aaaf656d6e
+  - repo: linuxdeepin/dde-cooperation
+    tag: 0.0.6
+    order: 0
+    tagsha: 4647caeddf213537043ab8cb2c88b2f0dc9b513c
+  - repo: linuxdeepin/dde-application-manager
+    tag: 1.0.9
+    order: 0
+    tagsha: abf322377e892df8fc9afffaf9638e8598d70eb7
+  - repo: linuxdeepin/deepin-fcitx5configtool-plugin
+    tag: 5.0.15
+    order: 0
+    tagsha: 75084db18aa4646b5cf6e55c205df48f9670ca88
