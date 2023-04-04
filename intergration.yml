@@ -1,7 +1,7 @@
 message: |
-  Integrated for 23 preview
+  Integrated for 23 beta
 repos: 
-  - repo: linuxdeepin/examplerepo
-    tag: 5.11.22
+  - repo: deepin-community/golang-github-mdlayher-netlink
+    tag: 
     order: 0
-    tagsha: "********************************"
+    tagsha: 7cdb7bdce7e0d578f0510dd93ec2445cc4c01943
