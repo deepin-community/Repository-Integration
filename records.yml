@@ -3,6 +3,10 @@ records:
         date: '2022-12-16'
         pr: 2
         ver: 1.0.0
+    deepin-community/edk2:
+        date: '2023-04-04'
+        pr: 59
+        ver: ''
     deepin-community/golang-github-josharian-native:
         date: '2023-04-04'
         pr: 68
@@ -14,6 +18,10 @@ records:
     deepin-community/golang-github-mdlayher-socket:
         date: '2023-04-04'
         pr: 68
+        ver: ''
+    deepin-community/jtreg6:
+        date: '2023-04-04'
+        pr: 59
         ver: ''
     deepin-community/kcontacts:
         date: '2023-03-29'
@@ -31,17 +39,25 @@ records:
         date: '2023-01-05'
         pr: 10
         ver: 3.0.5.1-1-deepin1
+    deepin-community/nemo-qml-plugin-dbus:
+        date: '2023-04-04'
+        pr: 59
+        ver: ''
     deepin-community/network-manager:
         date: '2023-03-29'
         pr: 53
         ver: 1.42.4-1
+    deepin-community/openjdk-8:
+        date: '2023-04-04'
+        pr: 59
+        ver: ''
     deepin-community/qtwayland-opensource-src:
         date: '2023-01-11'
         pr: 13
         ver: 5.15.7.3-1+dde
     deepin-community/sshpass:
-        date: '2023-03-16'
-        pr: 41
+        date: '2023-04-04'
+        pr: 59
         ver: ''
     linuxdeepin/dde-launcher:
         date: '2023-04-04'
