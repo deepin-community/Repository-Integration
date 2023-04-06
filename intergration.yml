@@ -1,7 +1,22 @@
 message: |
   Integrated for 23 beta
 repos: 
-  - repo: linuxdeepin/deepin-system-monitor
+  - repo: deepin-community/deepin-desktop-environment
     tag: 
     order: 0
-    tagsha: "d4a3e6cd364074a78035d193e89bc3b397fb776b"
+    tagsha: "d7aa049f075cf1409fca0d896b6d5912b4e7c5b5"
+
+  - repo: deepin-community/systemd
+    tag: 250.4.2-deepin2
+    order: 0
+    tagsha: "173ce948c9e676b2a73a7b62c3036a4e2338ea55"
+
+  - repo: deepin-community/gcc-11
+    tag: 11.2.0-deepin2
+    order: 0
+    tagsha: "2a4ea307f15b41a4c7630cb13d9bc9b362c070de"
+
+  - repo: deepin-community/gdb
+    tag: 11.2-1deepin1
+    order: 0
+    tagsha: "395724c564f4e7495490d4362904e706c3aa212d"
