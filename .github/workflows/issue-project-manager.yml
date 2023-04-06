@@ -1,0 +1,415 @@
+name: update issues and projects workflow
+
+on:
+  workflow_call:
+    inputs:
+      repo:
+        type: string
+        default: linuxdeepin/developer-center
+      issueid:
+        type: string
+        default: undefined
+      project:
+        type: string
+        default: '21'
+      projectitem: #issue关联itme的id
+        type: string
+        default: undefined
+      assignees:
+        type: string
+        default: 'Zeno-sole' #多个标签有', '隔开
+      title:
+        type: string
+        default: 'Deepin Integration auto created issue!'
+      status:
+        type: string
+        default: 'In progress' # ["已推送", "测试中", "驳回&废弃", "测试通过"]
+      milestone:
+        type: string
+        default: 'V23-Beta'
+      labels:
+        type: string
+        default: 'Project:integrated' #多个标签有', '隔开
+      intergrationinfo:
+        type: string
+        default: undefined
+      changelog:
+        type: string
+        default: undefined
+      influence:
+        type: string
+        default: undefined
+      testrepoaddr:
+        type: string
+        default: undefined
+  workflow_dispatch:
+    inputs:
+      repo:
+        type: string
+        default: linuxdeepin/developer-center
+      issueid:
+        type: string
+        default: undefined
+      project:
+        type: string
+        default: '21'
+      projectitem: #issue关联itme的id
+        type: string
+        default: undefined
+      assignees:
+        type: string
+        default: 'Zeno-sole' #多个标签有', '隔开
+      title:
+        type: string
+        default: 'Deepin Integration auto created issue!'
+      status:
+        type: string
+        default: 'In progress' # ["已推送", "测试中", "驳回&废弃", "测试通过"]
+      milestone:
+        type: string
+        default: 'V23-Beta'
+      labels:
+        type: string
+        default: 'Project:integrated' #多个标签有', '隔开
+      intergrationinfo:
+        type: string
+        default: "['包名 | 版本', '--  | --', 'dde-dock | [6.0.10](https://github.com/linuxdeepin/dde-dock/tree/6.0.10)']"
+
+jobs:
+  issue2Project:
+    runs-on: ubuntu-latest
+    outputs:
+      issueid: ${{ steps.issueid-handle.outputs.issueid }}
+    steps:
+      - name: Install depends for load scripts
+        run: |
+          npm install @octokit/rest
+          npm install @octokit/auth-app
+
+      - name: Get token using github-script
+        id: deepin-bot
+        uses: actions/github-script@v6
+        env:
+          APP_ID: ${{ secrets.LINUXDEEPIN_APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.LINUXDEEPIN_APP_PRIVATE_KEY }}
+        with:
+          script: |
+            const { Octokit } = require("@octokit/rest");
+            const { createAppAuth } = require("@octokit/auth-app");
+            repoinfo = "${{ inputs.repo }}".split('/')
+            owner = repoinfo[0]
+            repo = repoinfo[1]
+            const appOctokit = new Octokit({
+              authStrategy: createAppAuth,
+              auth: {
+                appId: process.env.APP_ID,
+                privateKey: process.env.APP_PRIVATE_KEY,
+              }
+            });
+            const app_installation = await appOctokit.rest.apps.getRepoInstallation({
+              owner: owner,
+              repo: repo
+            });
+            const { token } = await appOctokit.auth({
+              type: "installation",
+              installationId: app_installation.data.id
+            });
+            core.setOutput('app_token', token)
+
+      - name: Handle issue
+        id: issue
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ steps.deepin-bot.outputs.app_token }}
+          script: |
+            core.debug("handle issue")
+            issueid = "${{ inputs.issueid }}"
+            repoinfo = "${{ inputs.repo }}".split('/')
+            title = "${{ inputs.title }}"
+            labels = "${{ inputs.labels }}".split(", ")
+            assignees = "${{ inputs.assignees }}".split(", ")
+            milestonestr = "${{ inputs.milestone }}"
+            status = "${{ inputs.status }}"
+
+            intergrationinfo = ""
+            if (Array.isArray(${{ inputs.intergrationinfo }})) {
+              intergrationinfo = ${{ inputs.intergrationinfo }}.join("\n")
+            }
+            console.log("intergrationinfo: ", intergrationinfo)
+            testrepoaddr = "${{ inputs.testrepoaddr }}"
+            changelog = ""
+            if (Array.isArray(${{ inputs.changelog }})) {
+              changelog = ${{ inputs.changelog }}.join("\n")
+            }
+            console.log("changelog: ", changelog)
+            suggestion = "${{ inputs.suggestion }}"
+            influence = ""
+            if (Array.isArray(${{ inputs.influence }})) {
+              influence = ${{ inputs.influence }}.join("\n")
+            }
+            console.log("influence: ", influence)
+            extrainfo = "${{ inputs.extrainfo }}"
+
+            core.debug(repoinfo, labels, assignees)
+            if (repoinfo.length == 2) {
+              owner = repoinfo[0]
+              repo = repoinfo[1]
+              core.debug("repo: ", repo, "owner: ", owner)
+              //get milestone number
+              const msresp = await github.rest.issues.listMilestones({
+                owner: owner,
+                repo: repo,
+              });
+
+              let milestone = 0
+              core.debug("milestone resp: ", msresp, "milestonestr: ", milestonestr)
+              msresp_content = msresp.data
+              core.debug("msresp_content: ", msresp_content)
+              for (var i = 0; i < msresp_content.length; i++) {
+                if (msresp_content[i].title.replace("'", "") == milestonestr) {
+                  milestone = msresp_content[i].number
+                  break
+                }
+              }
+              core.debug("milestone number: ", milestone)
+              if (issueid == "undefined") {
+                // create a new issue
+                let issuse_content = "### Package information | 软件包信息\n\n"
+                issuse_content += intergrationinfo + "\n\n"
+                issuse_content += "### Package repository address | 软件包仓库地址\n\n"
+                issuse_content += testrepoaddr + "\n\n"
+                issuse_content += "### Changelog | 更新信息\n\n"
+                issuse_content += changelog + "\n\n"
+                issuse_content += "### Test suggestion | 测试建议\n\n"
+                issuse_content += suggestion + "\n\n"
+                issuse_content += "### Sphere of influence | 影响范围\n\n"
+                issuse_content += influence + "\n\n"
+                issuse_content += "### ADDITIONAL INFORMATION | 额外补充\n\n"
+                issuse_content += extrainfo + "\n"
+
+                core.debug("start create issue: ", issuse_content)
+
+                const cresp = await github.rest.issues.create({
+                  owner: owner,
+                  repo: repo,
+                  title: title,
+                  body: issuse_content,
+                  assignees: assignees,
+                  milestone: milestone,
+                  labels: labels,
+                });
+
+                issueid = cresp.data.number
+              } else {
+                // update issue
+                core.info("update issue\n")
+                let issuestate = 'open'
+                if (status == "已推送") {
+                  issuestate = 'closed'
+                }
+
+                //TODO: update issue labels and body?
+                /*let issuse_content = "### Package information | 软件包信息\n\n"
+                issuse_content += intergrationinfo + "\n\n"
+                issuse_content += "### Package repository address | 软件包仓库地址\n\n"
+                issuse_content += testrepoaddr + "\n\n"
+                issuse_content += "### Changelog | 更新信息\n\n"
+                issuse_content += changelog + "\n\n"
+                issuse_content += "### Test suggestion | 测试建议\n\n"
+                issuse_content += suggestion + "\n\n"
+                issuse_content += "### Sphere of influence | 影响范围\n\n"
+                issuse_content += influence + "\n\n"
+                issuse_content += "### ADDITIONAL INFORMATION | 额外补充\n\n"
+                issuse_content += extrainfo + "\n"
+                core.debug("update issue body: ", issuse_content)*/
+
+                await github.rest.issues.update({
+                  owner: owner,
+                  repo: repo,
+                  title: title,
+                  //body: issuse_content,
+                  issue_number: issueid,
+                  assignees: assignees,
+                  state: issuestate,
+                  milestone: milestone,
+                  //labels: labels,
+                });
+              }
+
+              //get issue node id
+              const iresp = await github.rest.issues.get({
+                owner: owner,
+                repo: repo,
+                issue_number: issueid,
+              });
+
+              core.setOutput('issuenodeid', iresp.data.node_id)
+              core.setOutput('issueid', issueid)
+
+              core.setOutput('organization', repoinfo[0])
+            } else {
+              console.error("Invalid repository name!!!")
+            }
+
+      - name: Get project data
+        env:
+          GITHUB_TOKEN: ${{ steps.deepin-bot.outputs.app_token }}
+          ORGANIZATION: ${{ steps.issue.outputs.organization }}
+          PROJECT_NUMBER: ${{ inputs.project }}
+        run: |
+          set -x
+          gh api graphql -f query='
+            query($org: String!, $number: Int!) {
+              organization(login: $org){
+                projectV2(number: $number) {
+                  id
+                  fields(first:20) {
+                    nodes {
+                      ... on ProjectV2Field {
+                        id
+                        name
+                      }
+                      ... on ProjectV2SingleSelectField {
+                        id
+                        name
+                        options {
+                          id
+                          name
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }' -f org=$ORGANIZATION -F number=$PROJECT_NUMBER > project_data.json
+
+          cat project_data.json
+          echo 'PROJECT_ID='$(jq '.data.organization.projectV2.id' project_data.json) >> $GITHUB_ENV
+          echo 'STATUS_FIELD_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Status") | .id' project_data.json) >> $GITHUB_ENV
+          echo 'OPTION_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Status") | .options[] | select(.name=="${{ inputs.status }}") |.id' project_data.json) >> $GITHUB_ENV
+
+      - name: Add issue to project
+        env:
+          GITHUB_TOKEN: ${{ steps.deepin-bot.outputs.app_token }}
+          ISSUE_NODE_ID: ${{ steps.issue.outputs.issuenodeid }}
+        run: |
+          set -x
+          if [ "${{ inputs.projectitem }}" != "undefined" ];then
+            echo 'ITEM_ID='${{ inputs.projectitem }} >> $GITHUB_ENV
+          else
+            item_id="$( gh api graphql -f query='
+              mutation($project:ID!, $issue:ID!) {
+                addProjectV2ItemById(input: {projectId: $project, contentId: $issue}) {
+                  item {
+                    id
+                  }
+                }
+              }' -f project=$PROJECT_ID -f issue=$ISSUE_NODE_ID --jq '.data.addProjectV2ItemById.item.id')"
+            echo 'ITEM_ID='$item_id >> $GITHUB_ENV
+          fi
+
+      - name: Set fields(intergration status)
+        env:
+          GITHUB_TOKEN: ${{ steps.deepin-bot.outputs.app_token }}
+        run: |
+          set -x
+          gh api graphql -f query='
+            mutation (
+              $project: ID!
+              $item: ID!
+              $status_field: ID!
+              $status_value: String!
+            ) {
+              set_status: updateProjectV2ItemFieldValue(input: {
+                projectId: $project
+                itemId: $item
+                fieldId: $status_field
+                value: {
+                  singleSelectOptionId: $status_value
+                  }
+              }) {
+                projectV2Item {
+                  id
+                  }
+              }
+            }' -f project=$PROJECT_ID -f item=${{ env.ITEM_ID }} -f status_field=$STATUS_FIELD_ID -f status_value=${{ env.OPTION_ID }} --silent
+
+      - name: Link issue to intergration pr
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ github.token }}
+          script: |
+            const BOT_NAME = "IntegrationProjector Bot"
+            const COMMENT_HEAD = "**" + BOT_NAME + "**\n"
+            issueid = "${{ steps.issue.outputs.issueid }}"
+            projectitemid = "${{ env.ITEM_ID }}"
+            let COMMENT_BODY = ""
+            COMMENT_BODY += "Deepin Testing Integration Project Manager Info\nIssueID: "
+            COMMENT_BODY += issueid + "\n" + "ProjectItemID: " + projectitemid + "\n"
+            COMMENT_BODY += "IssueAddr: https://github.com/linuxdeepin/developer-center/issues/" + issueid + "\n"
+
+            if ( context.issue.number != undefined ) {
+              const response = await github.rest.issues.listComments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number
+              })
+              const reg = new RegExp("\\*+" + BOT_NAME + "\\*+")
+              BotComment= response.data.find(comment => comment.body.match(reg))
+              if (BotComment) {
+                await github.rest.issues.updateComment({
+                    comment_id: BotComment.id,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    body: COMMENT_HEAD + COMMENT_BODY
+                })
+              } else {
+                await github.rest.issues.createComment({
+                    issue_number: context.issue.number,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    body: COMMENT_HEAD + COMMENT_BODY
+                })
+              }
+            }
+
+      - name: Link intergration pr to issue
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ steps.deepin-bot.outputs.app_token }}
+          script: |
+            const BOT_NAME = "IntegrationProjector Bot"
+            const COMMENT_HEAD = "**" + BOT_NAME + "**\n"
+            issueid = "${{ steps.issue.outputs.issueid }}"
+            repoinfo = "${{ inputs.repo }}".split('/')
+            owner = repoinfo[0]
+            repo = repoinfo[1]
+
+            let COMMENT_BODY = ""
+            COMMENT_BODY += "Deepin Testing Integration Project Manager Info\n"
+            COMMENT_BODY += "Link to https://github.com/deepin-community/Repository-Integration/pull/" + context.issue.number + "\n"
+
+            if ( issueid != "undefined" ) {
+              const response = await github.rest.issues.listComments({
+                owner: owner,
+                repo: repo,
+                issue_number: issueid
+              })
+              const reg = new RegExp("\\*+" + BOT_NAME + "\\*+")
+              BotComment= response.data.find(comment => comment.body.match(reg))
+              if (BotComment) {
+                await github.rest.issues.updateComment({
+                    comment_id: BotComment.id,
+                    owner: owner,
+                    repo: repo,
+                    body: COMMENT_HEAD + COMMENT_BODY
+                })
+              } else {
+                await github.rest.issues.createComment({
+                    issue_number: issueid,
+                    owner: owner,
+                    repo: repo,
+                    body: COMMENT_HEAD + COMMENT_BODY
+                })
+              }
+            }
