@@ -39,6 +39,51 @@ jobs:
             curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC/_meta"
           fi
 
+  create_issue_link_project:
+    name: create issue and link project
+    needs:
+      - parsec_intergration
+      - ouput_message
+      - build_project_prepare
+      - build-order-0
+      - build-order-1
+      - build-order-2
+      - build-order-3
+      - build-order-4
+      - build-order-5
+      - build-order-6
+      - build-order-7
+      - build-order-8
+      - build-order-9
+    if: |
+      always() && !cancelled() &&
+      (needs.parsec_intergration.result == 'success') && (needs.ouput_message.result != 'failure' ) &&
+      (needs.build-order-0.result == 'success' || needs.build-order-0.result == 'skipped') &&
+      (needs.build-order-1.result == 'success' || needs.build-order-1.result == 'skipped') &&
+      (needs.build-order-2.result == 'success' || needs.build-order-2.result == 'skipped') &&
+      (needs.build-order-3.result == 'success' || needs.build-order-3.result == 'skipped') &&
+      (needs.build-order-4.result == 'success' || needs.build-order-4.result == 'skipped') &&
+      (needs.build-order-5.result == 'success' || needs.build-order-5.result == 'skipped') &&
+      (needs.build-order-6.result == 'success' || needs.build-order-6.result == 'skipped') &&
+      (needs.build-order-7.result == 'success' || needs.build-order-7.result == 'skipped') &&
+      (needs.build-order-8.result == 'success' || needs.build-order-8.result == 'skipped') &&
+      (needs.build-order-9.result == 'success' || needs.build-order-9.result == 'skipped')
+    uses: deepin-community/Repository-Integration/.github/workflows/issue-project-manager.yml@master
+    secrets: inherit
+    with:
+      repo: linuxdeepin/developer-center
+      #issueid: 3961 #for test
+      project: 21 # https://github.com/orgs/linuxdeepin/projects/21/views/1
+      assignees: "Zeno-sole, hudeng-go"
+      title: "[Deepin Integration]~[${{ needs.parsec_intergration.outputs.milestone }}] ${{ needs.parsec_intergration.outputs.intergration_message }}"
+      status: "In progress"
+      milestone: ${{ needs.parsec_intergration.outputs.milestone }}
+      labels: Project:integrated
+      intergrationinfo: ${{ needs.parsec_intergration.outputs.intergrationinfo }}
+      changelog: ${{ needs.parsec_intergration.outputs.changelog }}
+      influence: ${{ needs.parsec_intergration.outputs.influence }}
+      testrepoaddr: "deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-intergration-pr-${{ github.event.number }}/testing/ ./"
+
   # https://github.com/actions/runner/issues/491#issuecomment-850884422 reason why use this if
   # :( for this
   # this jobs used for merge topic into testing
@@ -58,6 +103,7 @@ jobs:
       - build-order-7
       - build-order-8
       - build-order-9
+      - create_issue_link_project
     uses: deepin-community/Repository-Integration/.github/workflows/04-auto-test.yml@master
     if: |
       always() && !cancelled() &&

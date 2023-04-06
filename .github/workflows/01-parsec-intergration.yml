@@ -45,6 +45,18 @@ on:
       component:
         description: intergration repos component
         value: ${{ jobs.parsec_intergration.outputs.component }}
+      intergrationinfo:
+        description: intergration repos list
+        value: ${{ jobs.parsec_intergration.outputs.intergrationinfo }}
+      changelog:
+        description: intergration pacakge changelog
+        value: ${{ jobs.parsec_intergration.outputs.changelog }}
+      influence:
+        description: intergration package for test influence information
+        value: ${{ jobs.parsec_intergration.outputs.influence }}
+      milestone:
+        description: intergration milestone
+        value: ${{ jobs.parsec_intergration.outputs.milestone }}
 
 jobs:
   parsec_intergration:
@@ -65,6 +77,10 @@ jobs:
       deploy: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
       intergration_message: ${{ steps.parsec_intergration.outputs.intergration_message }}
       component: ${{ steps.illegal_repo_tags.outputs.component }}
+      intergrationinfo: ${{ steps.parsec_intergration.outputs.intergrationinfo }}
+      changelog: ${{ steps.parsec_intergration.outputs.changelog }}
+      influence: ${{ steps.parsec_intergration.outputs.influence }}
+      milestone: ${{ steps.parsec_intergration.outputs.milestone }}
 
     steps:
       - name: checkout_pull_request
@@ -83,6 +99,8 @@ jobs:
           import yaml
           import os
           import logging
+          import base64
+          import json
 
           maxSize = os.environ.get("MAX_TASKS", 10)
           illegalTags = []
@@ -114,6 +132,44 @@ jobs:
               with open(output_file, "a") as output:
                   output.write(name + "=" + value + "\n")
 
+          def read_changelog(repo, commitortag):
+            res = requests.get("https://api.github.com/repos/{repo}/contents/debian/changelog?ref={commit}".format(repo=repo, commit=commitortag), headers=header)
+            repoinfo = repo.split("/")
+            name = repo
+            version = None
+            changelog = []
+            influence = []
+            if len(repoinfo) == 2:
+              name = repoinfo[1]
+
+            #print(res.content)
+            if res.status_code == 200:
+              content = str(base64.b64decode(res.json()["content"]), encoding='utf-8')
+              #print("b64decode: ", str(content))
+              first_line_readed = False
+              for line in content.split("\n"):
+                # read end with newest changelog section
+                if line.startswith(" -- "):
+                  break
+
+                if not first_line_readed:
+                  first_line_readed = True
+                  lineinfo = line.split(" ")
+                  #print(lineinfo)
+                  name = lineinfo[0]
+                  version = lineinfo[1].replace("(", "").replace(")", "")
+                else:
+                  print("get influence information")
+                  lineinfo = line.split(" ")
+                  lineend = lineinfo[len(lineinfo)-1]
+                  if lineend.startswith("(Influence: "):
+                    influence.append(lineend[10:-1])
+
+                changelog.append(line)
+
+            print(name, version, changelog, influence)
+            return name, version, "\n".join(changelog), "\n".join(influence)
+
           try:
               allBuildTasks = [{"order": j,"data":{"payload": []}} for j in range(maxSize)]
               data = read_intergration()
@@ -123,16 +179,41 @@ jobs:
               with open("intergration-${{ github.event.number }}-detail.md", "w+") as intergration_detail:
                   intergration_detail.write(message)
 
+              intergrationInfos = ["包名 | 版本", "--  | --"]
+              changelogs = []
+              influences = []
               for repo in data.get("repos"):
-                  order = int(repo.get("order",0))
-                  order = max(0, order) and min(order , maxSize - 1)
-                  tagsha = repo.get('tagsha')
-                  tag = repo.get('tag')
-                  if tag and tag != "" and len(tag) > 0:
-                    check_tag_exsist(repo.get('repo'), repo.get('tag'))
-                  if tagsha == "" and len(tagsha) <= 0 and tagsha == "" and len(tagsha) <= 0:
-                    illegalTags.append({"repo": repo, "tag": tag, "tagsha": tagsha})
-                  allBuildTasks[order].get("data").get("payload").append(repo)
+                order = int(repo.get("order",0))
+                order = max(0, order) and min(order , maxSize - 1)
+                fullreponame = str(repo.get('repo', ""))
+                tagsha = repo.get('tagsha', "")
+                tag = repo.get('tag', "")
+                if tag and tag != "" and len(tag) > 0:
+                  check_tag_exsist(fullreponame, tag)
+                  name, version, changelog, influence = read_changelog(fullreponame, tag)
+                  #print(name, version, changelog, influence)
+                  intergrationInfos.append("%s | [%s](https://github.com/%s/tree/%s)" % (name, version, fullreponame, tag))
+                  changelogs.append(changelog)
+                  influences.append(influence)
+                elif tagsha and tagsha != "" and len(tagsha) > 0:
+                  name, version, changelog, influence = read_changelog(fullreponame, tagsha)
+                  #print("tagsha: ", name, version, changelog, influence)
+                  intergrationInfos.append("%s | [%s](https://github.com/%s/commit/%s)" % (name, version, fullreponame, tagsha))
+                  changelogs.append(changelog)
+                  influences.append(influence)
+                if tagsha == "" and len(tagsha) <= 0 and tag == "" and len(tag) <= 0:
+                  illegalTags.append({"repo": fullreponame, "tag": tag, "tagsha": tagsha})
+                allBuildTasks[order].get("data").get("payload").append(repo)
+              intergrationinfo = str(intergrationInfos)
+              print("intergrationinfo: " + intergrationinfo)
+              changelog = str(changelogs)
+              influence = str(influences)
+              set_output("intergrationinfo", intergrationinfo)
+              set_output("changelog", changelog)
+              set_output("influence", influence)
+              set_output("milestone", "V23-Beta")
+              if data.get('milestone', "") != "":
+                set_output("milestone", data.get('milestone'))
 
               if len(illegalTags) > 0:
                   set_output("illegal_tags", str(illegalTags))
