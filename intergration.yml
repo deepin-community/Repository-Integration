@@ -1,17 +1,15 @@
-# Required
-message: |
-  Integrated for 23 preview
-# Not required, now default is V23-Beta
-milestone: V23-Beta
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
-    order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, intergration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: open-vm-tools-desktop intergration for V23
+
+repos:
+  - repo: deepin-community/atkmm1.6
+    tag: 2.28.3-1
+    tagsha: e35cc7d883735dfc2c75d6bb72eafef1eb9156be
+  - repo: deepin-community/cairomm
+    tag: 1.14.4-2
+    tagsha: 6315ce277e920eae3644109393c058913fd0e77f
+  - repo: deepin-community/glibmm2.4
+    tag: 2.66.5-2deepin
+    tagsha: ead4880384e609acadbb3148753512672afb80fd
+  - repo: deepin-community/gtkmm3.0
+    tag: 3.24.7-1
+    tagsha: 7a71437c3b8c99c4fd13a9fd72bc9d8f9cc412bb
