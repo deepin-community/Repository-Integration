@@ -63,6 +63,18 @@ records:
         date: '2023-04-04'
         pr: 56
         ver: 6.0.9
+    linuxdeepin/dde-network-core:
+        date: '2023-04-07'
+        pr: 55
+        ver: 2.0.5
+    linuxdeepin/dde-session-shell:
+        date: '2023-04-07'
+        pr: 55
+        ver: 6.0.7
+    linuxdeepin/dde-widgets:
+        date: '2023-04-07'
+        pr: 55
+        ver: 6.0.10
     linuxdeepin/deepin-deb-installer:
         date: '2023-01-05'
         pr: 9
