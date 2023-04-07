@@ -158,6 +158,7 @@ jobs:
                   #print(lineinfo)
                   name = lineinfo[0]
                   version = lineinfo[1].replace("(", "").replace(")", "")
+                  line = "#### " + line
                 else:
                   print("get influence information")
                   lineinfo = line.split(" ")
