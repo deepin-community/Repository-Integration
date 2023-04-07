@@ -1,8 +1,8 @@
 # daily trigger inner jenkins to build iso
 name: iso build
 on:
-  schedule:
-    - cron:  '30 18 * * *'
+#  schedule:
+#    - cron:  '30 18 * * *'
   # manually trigger
   workflow_dispatch:
   repository_dispatch:
