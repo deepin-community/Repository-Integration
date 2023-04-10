@@ -59,6 +59,10 @@ records:
         date: '2023-04-04'
         pr: 59
         ver: ''
+    linuxdeepin/dde-clipboard:
+        date: '2023-04-10'
+        pr: 65
+        ver: 6.0.3
     linuxdeepin/dde-launcher:
         date: '2023-04-04'
         pr: 56
@@ -71,6 +75,10 @@ records:
         date: '2023-04-07'
         pr: 55
         ver: 6.0.7
+    linuxdeepin/dde-session-ui:
+        date: '2023-04-10'
+        pr: 65
+        ver: 6.0.8
     linuxdeepin/dde-widgets:
         date: '2023-04-07'
         pr: 55
