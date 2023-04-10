@@ -3,10 +3,22 @@ records:
         date: '2022-12-16'
         pr: 2
         ver: 1.0.0
+    deepin-community/deepin-desktop-environment:
+        date: '2023-04-10'
+        pr: 70
+        ver: ''
     deepin-community/edk2:
         date: '2023-04-04'
         pr: 59
         ver: ''
+    deepin-community/gcc-11:
+        date: '2023-04-10'
+        pr: 70
+        ver: 11.2.0-deepin2
+    deepin-community/gdb:
+        date: '2023-04-10'
+        pr: 70
+        ver: 11.2-1deepin1
     deepin-community/golang-github-josharian-native:
         date: '2023-04-04'
         pr: 68
@@ -59,14 +71,41 @@ records:
         date: '2023-04-04'
         pr: 59
         ver: ''
+    deepin-community/systemd:
+        date: '2023-04-10'
+        pr: 70
+        ver: 250.4.2-deepin2
+    linuxdeepin/dde-clipboard:
+        date: '2023-04-10'
+        pr: 65
+        ver: 6.0.3
     linuxdeepin/dde-launcher:
         date: '2023-04-04'
         pr: 56
         ver: 6.0.9
+    linuxdeepin/dde-network-core:
+        date: '2023-04-07'
+        pr: 55
+        ver: 2.0.5
+    linuxdeepin/dde-session-shell:
+        date: '2023-04-07'
+        pr: 55
+        ver: 6.0.7
+    linuxdeepin/dde-session-ui:
+        date: '2023-04-10'
+        pr: 65
+        ver: 6.0.8
+    linuxdeepin/dde-widgets:
+        date: '2023-04-07'
+        pr: 55
+        ver: 6.0.10
     linuxdeepin/deepin-deb-installer:
         date: '2023-01-05'
         pr: 9
         ver: 5.8.26
+    linuxdeepin/deepin-home:
+        date: '2023-04-07'
+        pr: 62
     linuxdeepin/deepin-system-monitor:
         date: '2023-01-16'
         pr: 20
