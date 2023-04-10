@@ -2,6 +2,7 @@
   <title/>
   <description/>
   <person userid="deepin-obs" role="maintainer"/>
+  <repository name="testing" rebuild="local">
   <debuginfo>
     <enable/>
   </debuginfo>
