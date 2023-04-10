@@ -1,8 +1,14 @@
 message: |
-  Integrated for 23 Beta add distrobox
+  add apt udisks2
 milestone: V23-Beta
 repos: 
-  - repo: deepin-community/distrobox
-    tag: 
+  - repo: deepin-community/apt
+    tag: 2.6.0-1deepin4
     order: 0
-    tagsha: "9958422450003cd178b02fd833bf9a67c9a8808d"
+    tagsha: "08dce88938d5fab322c9d5c65ae4c357804d0d12"
+    
+  - repo: deepin-community/udisks2
+    tag: 2.9.4-deepin1
+    order: 0
+    tagsha: "f6df8d91df83febccab749888abdabc6c152e512"
+    
