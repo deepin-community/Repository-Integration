@@ -154,6 +154,10 @@ records:
     linuxdeepin/deepin-home:
         date: '2023-04-07'
         pr: 62
+    linuxdeepin/deepin-log-viewer:
+        date: '2023-04-12'
+        pr: 76
+        ver: 6.0.7
     linuxdeepin/deepin-system-monitor:
         date: '2023-04-10'
         pr: 64
