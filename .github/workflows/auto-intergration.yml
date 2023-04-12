@@ -56,7 +56,7 @@ jobs:
       - build-order-8
       - build-order-9
     if: |
-      always() && !cancelled() && (github.event.pull_request.opened || github.event.pull_request.reopened) &&
+      always() && !cancelled() &&
       (needs.parsec_intergration.result == 'success') && (needs.ouput_message.result != 'failure' ) &&
       (needs.build-order-0.result == 'success' || needs.build-order-0.result == 'skipped') &&
       (needs.build-order-1.result == 'success' || needs.build-order-1.result == 'skipped') &&
