@@ -5,20 +5,3 @@ milestone: V23-Beta
 repos:
   - repo: deepin-community/golang-1.20
     tag: 1.20.1-1deepin1
-    order: 0
-  - repo: deepin-community/golang-github-yuin-goldmark
-    tag: 1.5.4-1
-    order: 1
-  - repo: deepin-community/golang-golang-x-sync
-    tag: 0.1.0-1
-    order: 1
-  - repo: deepin-community/golang-mvdan-xurls
-    tag: 2.4.0-1
-    order: 1
-  - repo: deepin-community/golang-golang-x-exp
-    tag: 0.0_git20221028.83b7d23-2
-    order: 1
-  - repo: deepin-community/golang-github-google-go-cmp
-    tag: 0.5.9-1
-    order: 1
-  
