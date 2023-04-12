@@ -208,8 +208,8 @@ jobs:
                   issuestate = 'closed'
                 }
 
-                //TODO: update issue labels and body?
-                /*let issuse_content = "### Package information | 软件包信息\n\n"
+                //TODO: update issue labels?
+                let issuse_content = "### Package information | 软件包信息\n\n"
                 issuse_content += intergrationinfo + "\n\n"
                 issuse_content += "### Package repository address | 软件包仓库地址\n\n"
                 issuse_content += testrepoaddr + "\n\n"
@@ -221,13 +221,13 @@ jobs:
                 issuse_content += influence + "\n\n"
                 issuse_content += "### ADDITIONAL INFORMATION | 额外补充\n\n"
                 issuse_content += extrainfo + "\n"
-                core.debug("update issue body: ", issuse_content)*/
+                core.debug("update issue body: ", issuse_content)
 
                 await github.rest.issues.update({
                   owner: owner,
                   repo: repo,
                   title: title,
-                  //body: issuse_content,
+                  body: issuse_content,
                   issue_number: issueid,
                   assignees: assignees,
                   state: issuestate,
