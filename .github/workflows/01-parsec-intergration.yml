@@ -101,6 +101,7 @@ jobs:
           import logging
           import base64
           import json
+          from requests.utils import requote_uri
 
           maxSize = os.environ.get("MAX_TASKS", 10)
           illegalTags = []
@@ -121,7 +122,9 @@ jobs:
                   return yaml.load(intergration_file, Loader=yaml.BaseLoader)
 
           def check_tag_exsist(repo, tag):
-              res = requests.get("https://api.github.com/repos/{repo}/git/ref/tags/{tag}".format(repo=repo, tag=tag), headers=header)
+              rawurl = requote_uri("https://api.github.com/repos/{repo}/git/ref/tags/{tag}".format(repo=repo, tag=tag))
+              res = requests.get(rawurl.replace("+", "%2B"), headers=header)
+              print(res.content, tag, rawurl.replace("+", "%2B"))
               if res.status_code != 200:
                   illegalTags.append({"repo": repo, "tag": tag})
               if repo in not_allowed_repo:
@@ -133,7 +136,8 @@ jobs:
                   output.write(name + "=" + value + "\n")
 
           def read_changelog(repo, commitortag):
-            res = requests.get("https://api.github.com/repos/{repo}/contents/debian/changelog?ref={commit}".format(repo=repo, commit=commitortag), headers=header)
+            rawurl = "https://api.github.com/repos/{repo}/contents/debian/changelog?ref={commit}".format(repo=repo, commit=commitortag)
+            res = requests.get(rawurl.replace("+", "%2B"), headers=header)
             repoinfo = repo.split("/")
             name = repo
             version = None

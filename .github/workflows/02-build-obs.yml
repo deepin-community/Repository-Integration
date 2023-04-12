@@ -100,12 +100,29 @@ jobs:
         id: tagsha
         run: |
           set -x
+          urlencode() {
+            local LANG=C
+            local length="${#1}"
+            i=0
+            while :
+            do
+            [ $length -gt $i ]&&{
+            local c="${1:$i:1}"
+            case $c in
+            [a-zA-Z0-9.~_-]) printf "$c" ;;
+            *) printf '%%%02X' "'$c" ;;
+            esac
+            }||break
+            let i++
+            done
+          }
+          RAWTAG=$(urlencode $TAG)
           echo "get tag $TAG information"
           if [ -z "$TAGSHA" -a "$TAGSHA" != "undefined" ]; then
             # get sha from repository git tag
             TAGSHA=$(curl -H "Accept: application/vnd.github+json" \
                     -H "Authorization: Bearer $GITHUB_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28"  \
-                    https://api.github.com/repos/$REPO/git/ref/tags/$TAG |grep sha|awk -F "\"" '{print $4}')
+                    https://api.github.com/repos/$REPO/git/ref/tags/$RAWTAG |grep sha|awk -F "\"" '{print $4}')
             if [ -z "$TAGSHA" ]; then
               echo "tag invalid"
               exit 1
