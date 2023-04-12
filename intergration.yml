@@ -1,17 +1,13 @@
-# Required
 message: |
-  Integrated for 23 V23-Bata
-# Not required, now default is V23-Beta
+  add network-manager deepin-desktop-environment
 milestone: V23-Beta
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: deepin-community/network-manager
+    tag: 
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, intergration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: "e1da44d45de620775f990d47c71b674219fbba8e"
+    
+  - repo: deepin-community/deepin-desktop-environment
+    tag: 
+    order: 0
+    tagsha: "a37bc304e30370cb400f992dc9eace2eb7482e4e"
