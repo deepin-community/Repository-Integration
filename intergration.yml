@@ -1,17 +1,24 @@
-# Required
 message: |
-  Integrated for 23 V23-Bata
-# Not required, now default is V23-Beta
+  golang batch intergration for v23-beta
 milestone: V23-Beta
 # Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+repos:
+  - repo: deepin-community/golang-1.20
+    tag: 1.20.1-1deepin1
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, intergration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/golang-github-yuin-goldmark
+    tag: 1.5.4-1
+    order: 1
+  - repo: deepin-community/golang-golang-x-sync
+    tag: 0.1.0-1
+    order: 1
+  - repo: deepin-community/golang-mvdan-xurls
+    tag: 2.4.0-1
+    order: 1
+  - repo: deepin-community/golang-golang-x-exp
+    tag: 0.0~git20221028.83b7d23-2
+    order: 1
+  - repo: deepin-community/golang-github-google-go-cmp
+    tag: 0.5.9-1
+    order: 1
+  
