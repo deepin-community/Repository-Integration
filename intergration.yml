@@ -16,7 +16,7 @@ repos:
     tag: 2.4.0-1
     order: 1
   - repo: deepin-community/golang-golang-x-exp
-    tag: 0.0~git20221028.83b7d23-2
+    tag: 0.0_git20221028.83b7d23-2
     order: 1
   - repo: deepin-community/golang-github-google-go-cmp
     tag: 0.5.9-1
