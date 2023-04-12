@@ -5,3 +5,5 @@ milestone: V23-Beta
 repos:
   - repo: deepin-community/golang-1.20
     tag: 1.20.1-1deepin1
+  - repo: deepin-community/golang-defaults
+    tag: 2%1.20_1
