@@ -11,6 +11,10 @@ records:
         date: '2023-04-10'
         pr: 70
         ver: ''
+    deepin-community/distrobox:
+        date: '2023-04-12'
+        pr: 72
+        ver: ''
     deepin-community/edk2:
         date: '2023-04-04'
         pr: 59
