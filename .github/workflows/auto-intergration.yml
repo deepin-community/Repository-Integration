@@ -27,6 +27,9 @@ jobs:
   build_project_prepare:
     name: build project prepare
     runs-on: ubuntu-latest
+    outputs:
+      issueid: ${{ steps.find-comments.outputs.issueid }}
+      projectItemID: ${{ steps.find-comments.outputs.projectItemID }}
     steps:
       - name: obs intergration topic project prepare
         run: |
@@ -38,6 +41,40 @@ jobs:
             sed -i "s#TOPIC#${TOPIC}#g" meta.xml
             curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC/_meta"
           fi
+
+      - name: find comments
+        id: find-comments
+        uses: actions/github-script@v6
+        with:
+          script: |
+            let issueid = 'undefined'
+            let projectItemID = 'undefined'
+            const BOT_NAME = "IntegrationProjector Bot"
+            const COMMENT_HEAD = "**" + BOT_NAME + "**\n"
+
+            if ( context.issue.number != undefined ) {
+              const response = await github.rest.issues.listComments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number
+              })
+              const reg = new RegExp("\\*+" + BOT_NAME + "\\*+")
+              botComment= response.data.find(comment => comment.body.match(reg))
+
+              if (botComment) {
+                // get issue id
+                comments = botComment.body.split("\n")
+                core.debug(botComment)
+                // console.log(comments.length)
+                if (comments.length > 3) {
+                  issueid = comments[2].replace("IssueID: ", "")
+                  projectItemID = comments[3].replace("ProjectItemID: ", "")
+                }
+              }
+            }
+            console.log('issueid: ', issueid, 'projectItemID: ', projectItemID)
+            core.setOutput('issueid', issueid)
+            core.setOutput('projectItemID', projectItemID)
 
   create_issue_link_project:
     name: create issue and link project
@@ -72,7 +109,7 @@ jobs:
     secrets: inherit
     with:
       repo: linuxdeepin/developer-center
-      #issueid: 3961 #for test
+      issueid:  ${{ needs.build_project_prepare.outputs.issueid }} #for test 3961
       project: 21 # https://github.com/orgs/linuxdeepin/projects/21/views/1
       assignees: "Zeno-sole, hudeng-go"
       title: "[Deepin Integration]~[${{ needs.parsec_intergration.outputs.milestone }}] ${{ needs.parsec_intergration.outputs.intergration_message }}"
