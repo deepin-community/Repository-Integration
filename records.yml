@@ -167,9 +167,9 @@ records:
         pr: 55
         ver: 6.0.10
     linuxdeepin/deepin-deb-installer:
-        date: '2023-01-05'
-        pr: 9
-        ver: 5.8.26
+        date: '2023-04-13'
+        pr: 98
+        ver: 6.0.10
     linuxdeepin/deepin-home:
         date: '2023-04-07'
         pr: 62
