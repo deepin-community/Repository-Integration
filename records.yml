@@ -19,6 +19,14 @@ records:
         date: '2023-04-04'
         pr: 59
         ver: ''
+    deepin-community/fcitx5:
+        date: '2023-04-13'
+        pr: 78
+        ver: 5.0.23-0deepin
+    deepin-community/fcitx5-chinese-addons:
+        date: '2023-04-13'
+        pr: 78
+        ver: 5.0.17-0deepin
     deepin-community/freerdp2:
         date: '2023-04-11'
         pr: 63
