@@ -190,33 +190,33 @@ records:
         pr: 60
         ver: 5.6.9
     linuxdeepin/dtkcore:
-        date: '2023-04-11'
-        pr: 60
-        ver: 5.6.9
+        date: '2023-04-13'
+        pr: 82
+        ver: ''
     linuxdeepin/dtkdeclarative:
-        date: '2023-04-11'
-        pr: 60
-        ver: 5.6.9
+        date: '2023-04-13'
+        pr: 82
+        ver: ''
     linuxdeepin/dtkgui:
-        date: '2023-04-11'
-        pr: 60
-        ver: 5.6.9
+        date: '2023-04-13'
+        pr: 82
+        ver: ''
     linuxdeepin/dtkwidget:
-        date: '2023-04-11'
-        pr: 60
-        ver: 5.6.9
+        date: '2023-04-13'
+        pr: 82
+        ver: ''
     linuxdeepin/linglong:
         date: '2023-01-11'
         pr: 16
         ver: 1.3.5.1-1
     linuxdeepin/qt5integration:
-        date: '2023-04-11'
-        pr: 60
-        ver: 5.6.9
+        date: '2023-04-13'
+        pr: 82
+        ver: ''
     linuxdeepin/qt5platform-plugins:
-        date: '2023-04-11'
-        pr: 60
-        ver: 5.6.9
+        date: '2023-04-13'
+        pr: 82
+        ver: ''
     qt-gstreamer:
         date: '2022-11-15'
         pr: 1
