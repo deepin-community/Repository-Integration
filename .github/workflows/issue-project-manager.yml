@@ -229,7 +229,7 @@ jobs:
                   title: title,
                   body: issuse_content,
                   issue_number: issueid,
-                  assignees: assignees,
+                  //assignees: assignees,
                   state: issuestate,
                   milestone: milestone,
                   //labels: labels,
