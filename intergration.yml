@@ -5,13 +5,7 @@ message: |
 milestone: V23-Beta
 # Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: linuxdeepin/dde-widgets
+    tag: 
+    tagsha: "1db13888ab116787cd0ed3582e90d92db2c9fdc3"
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, intergration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
