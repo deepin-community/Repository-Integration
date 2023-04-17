@@ -202,6 +202,10 @@ records:
         date: '2023-04-13'
         pr: 98
         ver: 6.0.10
+    linuxdeepin/deepin-downloader:
+        date: '2023-04-17'
+        pr: 104
+        ver: ''
     linuxdeepin/deepin-face:
         date: '2023-04-14'
         pr: 58
