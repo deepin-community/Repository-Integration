@@ -202,6 +202,10 @@ records:
         date: '2023-04-13'
         pr: 98
         ver: 6.0.10
+    linuxdeepin/deepin-desktop-theme:
+        date: '2023-04-17'
+        pr: 69
+        ver: ''
     linuxdeepin/deepin-downloader:
         date: '2023-04-17'
         pr: 104
@@ -217,6 +221,10 @@ records:
     linuxdeepin/deepin-home:
         date: '2023-04-07'
         pr: 62
+    linuxdeepin/deepin-icon-theme:
+        date: '2023-04-17'
+        pr: 69
+        ver: ''
     linuxdeepin/deepin-log-viewer:
         date: '2023-04-12'
         pr: 76
