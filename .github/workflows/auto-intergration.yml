@@ -1,4 +1,4 @@
-name: ingegration-request
+name: intergration-request
 
 on: #[push]
   pull_request_target:
