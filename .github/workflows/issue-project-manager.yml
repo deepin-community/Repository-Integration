@@ -387,7 +387,7 @@ jobs:
 
             let COMMENT_BODY = ""
             COMMENT_BODY += "Deepin Testing Integration Project Manager Info\n"
-            COMMENT_BODY += "Link to https://github.com/deepin-community/Repository-Integration/pull/" + context.issue.number + "\n"
+            COMMENT_BODY += "Link to https://github.com/" + context.issue.owner +"/Repository-Integration/pull/" + context.issue.number + "\n"
 
             if ( issueid != "undefined" ) {
               const response = await github.rest.issues.listComments({
