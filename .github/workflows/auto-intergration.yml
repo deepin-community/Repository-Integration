@@ -16,13 +16,13 @@ env:
 
 jobs:
   parsec_intergration:
-    uses: deepin-community/Repository-Integration/.github/workflows/01-parsec-intergration.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/01-parsec-intergration.yml@master
 
   ouput_message:
     name: output intergration
     needs: parsec_intergration
     if: ${{ github.event.pull_request.head.sha }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-intergration-output.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-intergration-output.yml@master
 
   build_project_prepare:
     name: build project prepare
@@ -37,7 +37,7 @@ jobs:
           set -x
           result=$(curl -u golf66:$OSCPASS "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC/_meta"|grep "unknown_project")
           if [ "$result" != "" ];then
-            curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-proj-meta.tpl
+            curl -o meta.xml https://raw.githubusercontent.com/peeweep-test/Repository-Integration/master/.github/workflows/obs-proj-meta.tpl
             sed -i "s#TOPIC#${TOPIC}#g" meta.xml
             curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC/_meta"
           fi
@@ -105,7 +105,7 @@ jobs:
       (needs.build-order-7.result == 'success' || needs.build-order-7.result == 'skipped') &&
       (needs.build-order-8.result == 'success' || needs.build-order-8.result == 'skipped') &&
       (needs.build-order-9.result == 'success' || needs.build-order-9.result == 'skipped')
-    uses: deepin-community/Repository-Integration/.github/workflows/issue-project-manager.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/issue-project-manager.yml@master
     secrets: inherit
     with:
       repo: linuxdeepin/developer-center
@@ -141,7 +141,7 @@ jobs:
       - build-order-8
       - build-order-9
       - create_issue_link_project
-    uses: deepin-community/Repository-Integration/.github/workflows/04-auto-test.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/04-auto-test.yml@master
     if: |
       always() && !cancelled() &&
       (needs.parsec_intergration.result == 'success') && (needs.ouput_message.result != 'failure' ) &&
@@ -177,7 +177,7 @@ jobs:
       - build-order-8
       - build-order-9
       - auto-test
-    uses: deepin-community/Repository-Integration/.github/workflows/05-merge-into-testing.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/05-merge-into-testing.yml@master
     secrets: inherit
     if: |
       always() && !cancelled() &&
@@ -206,7 +206,7 @@ jobs:
       - deploy-repo
       - parsec_intergration
     if: always() && !cancelled() && (needs.deploy-repo.result == 'success')
-    uses: deepin-community/Repository-Integration/.github/workflows/06-deployed.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/06-deployed.yml@master
     secrets: inherit
     with:
       intergrations: ${{ needs.parsec_intergration.outputs.all_build_task }}
@@ -221,7 +221,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_0) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
       repo: ${{ matrix.payload.repo }}
@@ -237,7 +237,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_1) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
       repo: ${{ matrix.payload.repo }}
@@ -253,7 +253,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_2) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
       repo: ${{ matrix.payload.repo }}
@@ -269,7 +269,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_3) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
       repo: ${{ matrix.payload.repo }}
@@ -285,7 +285,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_4) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
       repo: ${{ matrix.payload.repo }}
@@ -302,7 +302,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_5) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
       repo: ${{ matrix.payload.repo }}
@@ -318,7 +318,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_6) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
       repo: ${{ matrix.payload.repo }}
@@ -334,7 +334,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_7) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
       repo: ${{ matrix.payload.repo }}
@@ -350,7 +350,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_8) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
       repo: ${{ matrix.payload.repo }}
@@ -366,7 +366,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.parsec_intergration.outputs.build_matrix_9) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
       repo: ${{ matrix.payload.repo }}
