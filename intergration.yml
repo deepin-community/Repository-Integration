@@ -6,7 +6,7 @@ milestone: V23-Beta
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/deepin-system-upgrade
+  - repo: linuxdeepin/deepin-system-upgrade 
     # Not required
     tag: 6.0.3
     # Not required
@@ -14,7 +14,7 @@ repos:
     # Not required, but need one of tag and tagsha info
     # When use tag info, intergration workflow will check repository tag and build tag version
     # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: a46457f34d19abd715c16eb9cdac797137e8ae9f 
+    tagsha: a46457f34d19abd715c16eb9cdac797137e8ae9f
   - repo: linuxdeepin/dde-polkit-agent
     tag: 6.0.2
     order: 0
@@ -23,4 +23,3 @@ repos:
     tag: 1.0.1
     order: 0
     tagsha: 1dcbd2d3570908b78785986dd7af8756ed24c260
-
