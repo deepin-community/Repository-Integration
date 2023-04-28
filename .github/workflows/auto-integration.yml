@@ -1,9 +1,9 @@
-name: intergration-request
+name: integration-request
 
 on: #[push]
   pull_request_target:
     paths:
-      - "intergration.yml"
+      - "integration.yml"
     types: [ opened, synchronize ]
 
 concurrency:
@@ -11,18 +11,18 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  TOPIC: test-intergration-pr-${{ github.event.number }}
+  TOPIC: test-integration-pr-${{ github.event.number }}
   OSCPASS: ${{ secrets.OSCPASS }}
 
 jobs:
   parsec_intergration:
-    uses: peeweep-test/Repository-Integration/.github/workflows/01-parsec-intergration.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/01-parsec-integration.yml@master
 
   ouput_message:
-    name: output intergration
+    name: output integration
     needs: parsec_intergration
     if: ${{ github.event.pull_request.head.sha }}
-    uses: peeweep-test/Repository-Integration/.github/workflows/02-intergration-output.yml@master
+    uses: peeweep-test/Repository-Integration/.github/workflows/02-integration-output.yml@master
 
   build_project_prepare:
     name: build project prepare
@@ -31,7 +31,7 @@ jobs:
       issueid: ${{ steps.find-comments.outputs.issueid }}
       projectItemID: ${{ steps.find-comments.outputs.projectItemID }}
     steps:
-      - name: obs intergration topic project prepare
+      - name: obs integration topic project prepare
         run: |
           set +e
           set -x
@@ -119,7 +119,7 @@ jobs:
       intergrationinfo: ${{ needs.parsec_intergration.outputs.intergrationinfo }}
       changelog: ${{ needs.parsec_intergration.outputs.changelog }}
       influence: ${{ needs.parsec_intergration.outputs.influence }}
-      testrepoaddr: "    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-intergration-pr-${{ github.event.number }}/testing/ ./"
+      testrepoaddr: "    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}/testing/ ./"
 
   # https://github.com/actions/runner/issues/491#issuecomment-850884422 reason why use this if
   # :( for this
@@ -156,7 +156,7 @@ jobs:
       (needs.build-order-8.result == 'success' || needs.build-order-8.result == 'skipped') &&
       (needs.build-order-9.result == 'success' || needs.build-order-9.result == 'skipped')
     with:
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
       packages: ${{ needs.parsec_intergration.outputs.all_build_task }}
       deploy: ${{ needs.parsec_intergration.outputs.deploy }}
 
@@ -194,7 +194,7 @@ jobs:
       (needs.build-order-9.result == 'success' || needs.build-order-9.result == 'skipped') &&
       (needs.auto-test.result == 'success')
     with:
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
       deploy: "TestingRepoReviewer"
       component: ${{ needs.parsec_intergration.outputs.component }}
       message: ${{ needs.parsec_intergration.outputs.intergration_message }}
@@ -209,7 +209,7 @@ jobs:
     uses: peeweep-test/Repository-Integration/.github/workflows/06-deployed.yml@master
     secrets: inherit
     with:
-      intergrations: ${{ needs.parsec_intergration.outputs.all_build_task }}
+      integrations: ${{ needs.parsec_intergration.outputs.all_build_task }}
 
   # ten level build task
   build-order-0:
@@ -227,7 +227,7 @@ jobs:
       repo: ${{ matrix.payload.repo }}
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
 
   build-order-1:
     if: always() && !cancelled() && (needs.parsec_intergration.outputs.build_matrix_1 != '') && (needs.parsec_intergration.result == 'success')
@@ -243,7 +243,7 @@ jobs:
       repo: ${{ matrix.payload.repo }}
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
 
   build-order-2:
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_2 != '') && (needs.parsec_intergration.result == 'success')
@@ -259,7 +259,7 @@ jobs:
       repo: ${{ matrix.payload.repo }}
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
 
   build-order-3:
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_3 != '') && (needs.parsec_intergration.result == 'success')
@@ -275,7 +275,7 @@ jobs:
       repo: ${{ matrix.payload.repo }}
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
 
   build-order-4:
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_4 != '') && (needs.parsec_intergration.result == 'success')
@@ -291,7 +291,7 @@ jobs:
       repo: ${{ matrix.payload.repo }}
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
 
   build-order-5:
     name: build-order-5
@@ -308,7 +308,7 @@ jobs:
       repo: ${{ matrix.payload.repo }}
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
 
   build-order-6:
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_6 != '') && (needs.parsec_intergration.result == 'success')
@@ -324,7 +324,7 @@ jobs:
       repo: ${{ matrix.payload.repo }}
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
 
   build-order-7:
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_7 != '') && (needs.parsec_intergration.result == 'success')
@@ -340,7 +340,7 @@ jobs:
       repo: ${{ matrix.payload.repo }}
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
 
   build-order-8:
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_8 != '') && (needs.parsec_intergration.result == 'success')
@@ -356,7 +356,7 @@ jobs:
       repo: ${{ matrix.payload.repo }}
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}
 
   build-order-9:
     if: always() && !cancelled() && ( needs.parsec_intergration.outputs.build_matrix_9 != '') && (needs.parsec_intergration.result == 'success')
@@ -372,4 +372,4 @@ jobs:
       repo: ${{ matrix.payload.repo }}
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-intergration-pr-${{ github.event.number }}
+      topic: test-integration-pr-${{ github.event.number }}

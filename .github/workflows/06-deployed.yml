@@ -3,7 +3,7 @@ name: deployed feedback
 on:
   workflow_call:
     inputs:
-      intergrations:
+      integrations:
         required: true
         type: string
 
@@ -51,7 +51,7 @@ jobs:
           github-token: ${{ steps.get-token.outputs.app_token }}
           script: |
             const yaml = require('js-yaml');
-            const newIntergrated = ${{ inputs.intergrations }}
+            const newIntergrated = ${{ inputs.integrations }}
             const {data} = await github.rest.repos.getContent({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
