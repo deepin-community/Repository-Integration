@@ -69,7 +69,7 @@ jobs:
           fi
           echo "component=$component" >> $GITHUB_OUTPUT
 
-      - name: obs intergration topic project prepare
+      - name: obs integration topic project prepare
         run: |
           set +e
           set -x
