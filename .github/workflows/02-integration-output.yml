@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: download intergration detail
+      - name: download integration detail
         uses: actions/download-artifact@v2
         with:
-          name: intergration-${{ github.event.number }}-detail.md
+          name: integration-${{ github.event.number }}-detail.md
 
       - name: create comment
         uses: actions/github-script@v6
@@ -20,12 +20,12 @@ jobs:
           github-token: ${{ github.token }}
           script: |
             const fs = require('fs');
-            let rawdata = fs.readFileSync('intergration-${{ github.event.number }}-detail.md');
+            let rawdata = fs.readFileSync('integration-${{ github.event.number }}-detail.md');
             let message = rawdata.toString();
             if (message.includes("CVE")) {
               message += "\n @deepin-community/ci CVE detected\n"
             }
-            const BOT_NAME = "INTERGRATION Bot"
+            const BOT_NAME = "INTEGRATION Bot"
             const COMMENT_HEAD = "**" + BOT_NAME + "**\n\n"
             const COMMENT_BODY = "Integration Details: " + message
             const response = await github.rest.issues.listComments({

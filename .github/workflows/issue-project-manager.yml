@@ -308,7 +308,7 @@ jobs:
             echo 'ITEM_ID='$item_id >> $GITHUB_ENV
           fi
 
-      - name: Set fields(intergration status)
+      - name: Set fields(integration status)
         env:
           GITHUB_TOKEN: ${{ steps.deepin-bot.outputs.app_token }}
         run: |
@@ -334,7 +334,7 @@ jobs:
               }
             }' -f project=$PROJECT_ID -f item=${{ env.ITEM_ID }} -f status_field=$STATUS_FIELD_ID -f status_value=${{ env.OPTION_ID }} --silent
 
-      - name: Link issue to intergration pr
+      - name: Link issue to integration pr
         uses: actions/github-script@v6
         with:
           github-token: ${{ github.token }}
@@ -373,7 +373,7 @@ jobs:
               }
             }
 
-      - name: Link intergration pr to issue
+      - name: Link integration pr to issue
         uses: actions/github-script@v6
         with:
           github-token: ${{ steps.deepin-bot.outputs.app_token }}

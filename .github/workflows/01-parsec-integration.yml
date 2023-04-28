@@ -1,4 +1,4 @@
-name: parsec intergration
+name: parsec integration
 
 on:
   workflow_call:
@@ -39,28 +39,28 @@ on:
       deploy:
         description: deploy way AUTO or MANUALLY
         value: ${{ jobs.parsec_intergration.outputs.deploy }}
-      intergration_message:
-        description: intergration message at intergration.yml
-        value: ${{ jobs.parsec_intergration.outputs.intergration_message }}
+      integration_message:
+        description: integration message at integration.yml
+        value: ${{ jobs.parsec_integration.outputs.intergration_message }}
       component:
-        description: intergration repos component
+        description: integration repos component
         value: ${{ jobs.parsec_intergration.outputs.component }}
       intergrationinfo:
-        description: intergration repos list
+        description: integration repos list
         value: ${{ jobs.parsec_intergration.outputs.intergrationinfo }}
       changelog:
-        description: intergration pacakge changelog
+        description: integration pacakge changelog
         value: ${{ jobs.parsec_intergration.outputs.changelog }}
       influence:
-        description: intergration package for test influence information
+        description: integration package for test influence information
         value: ${{ jobs.parsec_intergration.outputs.influence }}
       milestone:
-        description: intergration milestone
+        description: integration milestone
         value: ${{ jobs.parsec_intergration.outputs.milestone }}
 
 jobs:
   parsec_intergration:
-    name: parsec intergration
+    name: parsec integration
     runs-on: ubuntu-latest
     outputs:
       build_matrix_0: ${{ steps.parsec_intergration.outputs.build_matrix_0 }}
@@ -118,7 +118,7 @@ jobs:
           }
 
           def read_intergration():
-              with open("intergration.yml", "r+") as intergration_file:
+              with open("integration.yml", "r+") as intergration_file:
                   return yaml.load(intergration_file, Loader=yaml.BaseLoader)
 
           def check_tag_exsist(repo, tag):
@@ -181,7 +181,7 @@ jobs:
 
               message = data.get("message", "")
               set_output("intergration_message", message)
-              with open("intergration-${{ github.event.number }}-detail.md", "w+") as intergration_detail:
+              with open("integration-${{ github.event.number }}-detail.md", "w+") as intergration_detail:
                   intergration_detail.write(message)
 
               intergrationInfos = ["包名 | 版本", "--  | --"]
@@ -263,7 +263,7 @@ jobs:
               }
 
               if ( illegal_repos !== undefined ) {
-                  COMMENT_BODY += "Listed repos are not allowed by automatic intergration: \n|repo|\n|-|\n"
+                  COMMENT_BODY += "Listed repos are not allowed by automatic integration: \n|repo|\n|-|\n"
                   illegal_repos.forEach(repo => {
                     COMMENT_BODY += "|" + repo + "|\n"
                   })
@@ -379,8 +379,8 @@ jobs:
             //console.log(component)
             core.setOutput('component', component)
 
-      - name: upload intergration detail
+      - name: upload integration detail
         uses: actions/upload-artifact@v2
         with:
-          name: intergration-${{ github.event.number }}-detail.md
-          path: intergration-${{ github.event.number }}-detail.md
+          name: integration-${{ github.event.number }}-detail.md
+          path: integration-${{ github.event.number }}-detail.md
