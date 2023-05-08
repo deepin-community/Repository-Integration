@@ -142,6 +142,10 @@ records:
         date: '2023-04-13'
         pr: 95
         ver: 15.0.0-1
+    deepin-community/xkeyboard-config:
+        date: '2023-05-08'
+        pr: 121
+        ver: 2.33-1deepin2
     linuxdeepin/dde-account-faces:
         date: '2023-04-14'
         pr: 58
