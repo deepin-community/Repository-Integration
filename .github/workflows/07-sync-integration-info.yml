@@ -19,7 +19,7 @@ jobs:
         id: get-token
         uses: actions/github-script@v6
         env:
-          APP_ID: 164400
+          APP_ID: 229710
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
         with:
           script: |
