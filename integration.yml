@@ -6,12 +6,11 @@ milestone: V23-Beta
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
+  - repo: linuxdeepin/deepin-font-manager
     # Not required
-    tag: 5.11.22
     # Not required
     order: 0
     # Not required, but need one of tag and tagsha info
     # When use tag info, integration workflow will check repository tag and build tag version
     # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: "870f9fde50c53192a5e6b90a83ce85a3430bd8b7"
