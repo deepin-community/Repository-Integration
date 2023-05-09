@@ -174,6 +174,10 @@ records:
         date: '2023-04-14'
         pr: 58
         ver: 6.0.13
+    linuxdeepin/dde-dock:
+        date: '2023-05-09'
+        pr: 122
+        ver: 6.0.14
     linuxdeepin/dde-introduction:
         date: '2023-04-14'
         pr: 58
