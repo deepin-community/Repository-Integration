@@ -6,12 +6,13 @@ milestone: V23-Beta
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
+  - repo: linuxdeepin/deepin-system-monitor
     # Not required
-    tag: 5.11.22
+    tag: 6.0.7
     # Not required
     order: 0
     # Not required, but need one of tag and tagsha info
     # When use tag info, integration workflow will check repository tag and build tag version
     # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: "ff41520bf1b7a65c43d864d4adfcd5d255363b1b"
+    
