@@ -1,17 +1,13 @@
-# Required
 message: |
-  Integrated for V23-Beta
-# Not required, now default is V23-Beta
+  Integrated deepin-wallpapers
 milestone: V23-Beta
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: linuxdeepin/deepin-wallpapers
+    tag: 1.7.15
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: 
+
+  - repo: deepin-community/deepin-desktop-environment
+    tag: 
+    order: 0
+    tagsha: "31a40b3607d307960528dcfe5d8484d8711069ea"
