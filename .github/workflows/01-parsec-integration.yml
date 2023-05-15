@@ -179,7 +179,7 @@ jobs:
               allBuildTasks = [{"order": j,"data":{"payload": []}} for j in range(maxSize)]
               data = read_intergration()
 
-              message = data.get("message", "")
+              message = data.get("message", "Integrated for V23-Beta")
               set_output("intergration_message", message)
               with open("integration-${{ github.event.number }}-detail.md", "w+") as intergration_detail:
                   intergration_detail.write(message)
