@@ -1,17 +1,18 @@
-# Required
 message: |
   Integrated for V23-Beta
-# Not required, now default is V23-Beta
 milestone: V23-Beta
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: linuxdeepin/deepin-devicemanager
+    tag: 
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: "b120c39d098d5b0f97d000a66c2e17df2af0a706"
+
+  - repo: linuxdeepin/deepin-system-monitor
+    tag: 
+    order: 0
+    tagsha: "ff41520bf1b7a65c43d864d4adfcd5d255363b1b"
+
+  - repo: linuxdeepin/deepin-voice-note
+    tag: 6.0.7
+    order: 0
+    tagsha: 
