@@ -3,13 +3,13 @@
 auto-integration.yml
 
 总体顺序
-parsec_intergration -> build -> auto test -> merge topic -> update record -> close pr
+parsec_integration -> build -> auto test -> merge topic -> update record -> close pr
 
 构建时更具自定义的优先级,相同优先级并发构建,不同优先级先后构建.当前一共提供了10个优先级.
 
 01-parsec-integration.yml
 为解析集成工作流
-主要为对intergration.yml文件的解析,检查并提取集成仓库,tag以及构建顺序.提取集成说明并生成md artifact.
+主要为对integration.yml文件的解析,检查并提取集成仓库,tag以及构建顺序.提取集成说明并生成md artifact.
 
 02-integration-output.yml
 与build并行运行,主要根据上面的解析结果输出相关信息到pr中,

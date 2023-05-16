@@ -5,82 +5,82 @@ on:
     outputs:
       build_matrix_0:
         description: build order 0, build tasks
-        value: ${{ jobs.parsec_intergration.outputs.build_matrix_0 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_0 }}
       build_matrix_1:
         description: build order 1, build tasks
-        value: ${{ jobs.parsec_intergration.outputs.build_matrix_1 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_1 }}
       build_matrix_2:
         description: build order 2, build tasks
-        value: ${{ jobs.parsec_intergration.outputs.build_matrix_2 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_2 }}
       build_matrix_3:
         description: build order 3, build tasks
-        value: ${{ jobs.parsec_intergration.outputs.build_matrix_3 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_3 }}
       build_matrix_4:
         description: build order 4, build tasks
-        value: ${{ jobs.parsec_intergration.outputs.build_matrix_4 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_4 }}
       build_matrix_5:
         description: build order 5, build tasks
-        value: ${{ jobs.parsec_intergration.outputs.build_matrix_5 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_5 }}
       build_matrix_6:
         description: build order 6, build tasks
-        value: ${{ jobs.parsec_intergration.outputs.build_matrix_6 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_6 }}
       build_matrix_7:
         description: build order 7, build tasks
-        value: ${{ jobs.parsec_intergration.outputs.build_matrix_7 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_7 }}
       build_matrix_8:
         description: build order 8, build tasks
-        value: ${{ jobs.parsec_intergration.outputs.build_matrix_8 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_8 }}
       build_matrix_9:
         description: build order 9, build tasks
-        value: ${{ jobs.parsec_intergration.outputs.build_matrix_9 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_9 }}
       all_build_task:
         description: all build tasks used for
-        value: ${{ jobs.parsec_intergration.outputs.all_build_task }}
+        value: ${{ jobs.parsec_integration.outputs.all_build_task }}
       deploy:
         description: deploy way AUTO or MANUALLY
-        value: ${{ jobs.parsec_intergration.outputs.deploy }}
+        value: ${{ jobs.parsec_integration.outputs.deploy }}
       integration_message:
         description: integration message at integration.yml
-        value: ${{ jobs.parsec_integration.outputs.intergration_message }}
+        value: ${{ jobs.parsec_integration.outputs.integration_message }}
       component:
         description: integration repos component
-        value: ${{ jobs.parsec_intergration.outputs.component }}
-      intergrationinfo:
+        value: ${{ jobs.parsec_integration.outputs.component }}
+      integrationinfo:
         description: integration repos list
-        value: ${{ jobs.parsec_intergration.outputs.intergrationinfo }}
+        value: ${{ jobs.parsec_integration.outputs.integrationinfo }}
       changelog:
         description: integration pacakge changelog
-        value: ${{ jobs.parsec_intergration.outputs.changelog }}
+        value: ${{ jobs.parsec_integration.outputs.changelog }}
       influence:
         description: integration package for test influence information
-        value: ${{ jobs.parsec_intergration.outputs.influence }}
+        value: ${{ jobs.parsec_integration.outputs.influence }}
       milestone:
         description: integration milestone
-        value: ${{ jobs.parsec_intergration.outputs.milestone }}
+        value: ${{ jobs.parsec_integration.outputs.milestone }}
 
 jobs:
-  parsec_intergration:
+  parsec_integration:
     name: parsec integration
     runs-on: ubuntu-latest
     outputs:
-      build_matrix_0: ${{ steps.parsec_intergration.outputs.build_matrix_0 }}
-      build_matrix_1: ${{ steps.parsec_intergration.outputs.build_matrix_1 }}
-      build_matrix_2: ${{ steps.parsec_intergration.outputs.build_matrix_2 }}
-      build_matrix_3: ${{ steps.parsec_intergration.outputs.build_matrix_3 }}
-      build_matrix_4: ${{ steps.parsec_intergration.outputs.build_matrix_4 }}
-      build_matrix_5: ${{ steps.parsec_intergration.outputs.build_matrix_5 }}
-      build_matrix_6: ${{ steps.parsec_intergration.outputs.build_matrix_6 }}
-      build_matrix_7: ${{ steps.parsec_intergration.outputs.build_matrix_7 }}
-      build_matrix_8: ${{ steps.parsec_intergration.outputs.build_matrix_8 }}
-      build_matrix_9: ${{ steps.parsec_intergration.outputs.build_matrix_9 }}
-      all_build_task: ${{ steps.parsec_intergration.outputs.all_build_task }}
+      build_matrix_0: ${{ steps.parsec_integration.outputs.build_matrix_0 }}
+      build_matrix_1: ${{ steps.parsec_integration.outputs.build_matrix_1 }}
+      build_matrix_2: ${{ steps.parsec_integration.outputs.build_matrix_2 }}
+      build_matrix_3: ${{ steps.parsec_integration.outputs.build_matrix_3 }}
+      build_matrix_4: ${{ steps.parsec_integration.outputs.build_matrix_4 }}
+      build_matrix_5: ${{ steps.parsec_integration.outputs.build_matrix_5 }}
+      build_matrix_6: ${{ steps.parsec_integration.outputs.build_matrix_6 }}
+      build_matrix_7: ${{ steps.parsec_integration.outputs.build_matrix_7 }}
+      build_matrix_8: ${{ steps.parsec_integration.outputs.build_matrix_8 }}
+      build_matrix_9: ${{ steps.parsec_integration.outputs.build_matrix_9 }}
+      all_build_task: ${{ steps.parsec_integration.outputs.all_build_task }}
       deploy: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
-      intergration_message: ${{ steps.parsec_intergration.outputs.intergration_message }}
+      integration_message: ${{ steps.parsec_integration.outputs.integration_message }}
       component: ${{ steps.illegal_repo_tags.outputs.component }}
-      intergrationinfo: ${{ steps.parsec_intergration.outputs.intergrationinfo }}
-      changelog: ${{ steps.parsec_intergration.outputs.changelog }}
-      influence: ${{ steps.parsec_intergration.outputs.influence }}
-      milestone: ${{ steps.parsec_intergration.outputs.milestone }}
+      integrationinfo: ${{ steps.parsec_integration.outputs.integrationinfo }}
+      changelog: ${{ steps.parsec_integration.outputs.changelog }}
+      influence: ${{ steps.parsec_integration.outputs.influence }}
+      milestone: ${{ steps.parsec_integration.outputs.milestone }}
 
     steps:
       - name: checkout_pull_request
@@ -89,8 +89,8 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
 
-      - name: parsec_intergration
-        id: parsec_intergration
+      - name: parsec_integration
+        id: parsec_integration
         shell: python
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -117,9 +117,9 @@ jobs:
               "Authorization":"Bearer " + os.environ.get("GITHUB_TOKEN")
           }
 
-          def read_intergration():
-              with open("integration.yml", "r+") as intergration_file:
-                  return yaml.load(intergration_file, Loader=yaml.BaseLoader)
+          def read_integration():
+              with open("integration.yml", "r+") as integration_file:
+                  return yaml.load(integration_file, Loader=yaml.BaseLoader)
 
           def check_tag_exsist(repo, tag):
               rawurl = requote_uri("https://api.github.com/repos/{repo}/git/ref/tags/{tag}".format(repo=repo, tag=tag))
@@ -177,14 +177,14 @@ jobs:
 
           try:
               allBuildTasks = [{"order": j,"data":{"payload": []}} for j in range(maxSize)]
-              data = read_intergration()
+              data = read_integration()
 
               message = data.get("message", "Integrated for V23-Beta")
-              set_output("intergration_message", message)
-              with open("integration-${{ github.event.number }}-detail.md", "w+") as intergration_detail:
-                  intergration_detail.write(message)
+              set_output("integration_message", message)
+              with open("integration-${{ github.event.number }}-detail.md", "w+") as integration_detail:
+                  integration_detail.write(message)
 
-              intergrationInfos = ["包名 | 版本", "--  | --"]
+              integrationInfos = ["包名 | 版本", "--  | --"]
               changelogs = []
               influences = []
               for repo in data.get("repos"):
@@ -197,23 +197,23 @@ jobs:
                   check_tag_exsist(fullreponame, tag)
                   name, version, changelog, influence = read_changelog(fullreponame, tag)
                   #print(name, version, changelog, influence)
-                  intergrationInfos.append("%s | [%s](https://github.com/%s/tree/%s)" % (name, version, fullreponame, tag))
+                  integrationInfos.append("%s | [%s](https://github.com/%s/tree/%s)" % (name, version, fullreponame, tag))
                   changelogs.append(changelog)
                   influences.append(influence)
                 elif tagsha and tagsha != "" and len(tagsha) > 0:
                   name, version, changelog, influence = read_changelog(fullreponame, tagsha)
                   #print("tagsha: ", name, version, changelog, influence)
-                  intergrationInfos.append("%s | [%s](https://github.com/%s/commit/%s)" % (name, version, fullreponame, tagsha))
+                  integrationInfos.append("%s | [%s](https://github.com/%s/commit/%s)" % (name, version, fullreponame, tagsha))
                   changelogs.append(changelog)
                   influences.append(influence)
                 if tagsha == "" and len(tagsha) <= 0 and tag == "" and len(tag) <= 0:
                   illegalTags.append({"repo": fullreponame, "tag": tag, "tagsha": tagsha})
                 allBuildTasks[order].get("data").get("payload").append(repo)
-              intergrationinfo = str(intergrationInfos)
-              print("intergrationinfo: " + intergrationinfo)
+              integrationinfo = str(integrationInfos)
+              print("integrationinfo: " + integrationinfo)
               changelog = str(changelogs)
               influence = str(influences)
-              set_output("intergrationinfo", intergrationinfo)
+              set_output("integrationinfo", integrationinfo)
               set_output("changelog", changelog)
               set_output("influence", influence)
               set_output("milestone", "V23-Beta")
@@ -250,8 +250,8 @@ jobs:
           script: |
             const BOT_NAME = "RepoTagCheck Bot"
             const COMMENT_HEAD = "**" + BOT_NAME + "**\n\n"
-            illegal_tags = ${{ steps.parsec_intergration.outputs.illegal_tags }}
-            illegal_repos = ${{ steps.parsec_intergration.outputs.illegal_repos }}
+            illegal_tags = ${{ steps.parsec_integration.outputs.illegal_tags }}
+            illegal_repos = ${{ steps.parsec_integration.outputs.illegal_repos }}
             let COMMENT_BODY = ""
             if ( illegal_tags !== undefined || illegal_repos !== undefined ) {
               if ( illegal_tags !== undefined ) {
@@ -303,7 +303,7 @@ jobs:
             }
 
             // component 检查
-            all_build_task = ${{ steps.parsec_intergration.outputs.all_build_task }}
+            all_build_task = ${{ steps.parsec_integration.outputs.all_build_task }}
             let component = ""
             for (repo of all_build_task) {
               console.log(repo)

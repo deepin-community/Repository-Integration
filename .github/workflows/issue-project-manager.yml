@@ -30,7 +30,7 @@ on:
       labels:
         type: string
         default: 'Project:integrated' #多个标签有', '隔开
-      intergrationinfo:
+      integrationinfo:
         type: string
         default: undefined
       changelog:
@@ -71,7 +71,7 @@ on:
       labels:
         type: string
         default: 'Project:integrated' #多个标签有', '隔开
-      intergrationinfo:
+      integrationinfo:
         type: string
         default: "['包名 | 版本', '--  | --', 'dde-dock | [6.0.10](https://github.com/linuxdeepin/dde-dock/tree/6.0.10)']"
 
@@ -131,11 +131,11 @@ jobs:
             milestonestr = "${{ inputs.milestone }}"
             status = "${{ inputs.status }}"
 
-            intergrationinfo = ""
-            if (Array.isArray(${{ inputs.intergrationinfo }})) {
-              intergrationinfo = ${{ inputs.intergrationinfo }}.join("\n")
+            integrationinfo = ""
+            if (Array.isArray(${{ inputs.integrationinfo }})) {
+              integrationinfo = ${{ inputs.integrationinfo }}.join("\n")
             }
-            console.log("intergrationinfo: ", intergrationinfo)
+            console.log("integrationinfo: ", integrationinfo)
             testrepoaddr = "${{ inputs.testrepoaddr }}"
             changelog = ""
             if (Array.isArray(${{ inputs.changelog }})) {
@@ -175,7 +175,7 @@ jobs:
               if (issueid == "undefined") {
                 // create a new issue
                 let issuse_content = "### Package information | 软件包信息\n\n"
-                issuse_content += intergrationinfo + "\n\n"
+                issuse_content += integrationinfo + "\n\n"
                 issuse_content += "### Package repository address | 软件包仓库地址\n\n"
                 issuse_content += testrepoaddr + "\n\n"
                 issuse_content += "### Changelog | 更新信息\n\n"
@@ -210,7 +210,7 @@ jobs:
 
                 //TODO: update issue labels?
                 let issuse_content = "### Package information | 软件包信息\n\n"
-                issuse_content += intergrationinfo + "\n\n"
+                issuse_content += integrationinfo + "\n\n"
                 issuse_content += "### Package repository address | 软件包仓库地址\n\n"
                 issuse_content += testrepoaddr + "\n\n"
                 issuse_content += "### Changelog | 更新信息\n\n"
