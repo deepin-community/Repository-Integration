@@ -1,17 +1,17 @@
 # Required
 message: |
-  Integrated for V23-Beta
+  Integrated deepin-system-upgrade, dde-polkit-agent, go-x11-client for V23-Beta
 # Not required, now default is V23-Beta
 milestone: V23-Beta
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
+  - repo: linuxdeepin/deepin-system-upgrade 
     # Not required
-    tag: 5.11.22
+    tag: 6.0.5
     # Not required
     order: 0
     # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
+    # When use tag info, intergration workflow will check repository tag and build tag version
     # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: 7b48c0e3c6f65f6023d284d0deafd1975567bd87
