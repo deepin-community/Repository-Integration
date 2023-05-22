@@ -4,3 +4,4 @@ repos:
   - repo: linuxdeepin/deepin-home
     order: 0
     tagsha: 536058d075dddebd43fbd79f30492ff63fbdc8ce
+
