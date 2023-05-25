@@ -191,9 +191,8 @@ records:
         pr: 56
         ver: 6.0.9
     linuxdeepin/dde-network-core:
-        date: '2023-04-07'
-        pr: 55
-        ver: 2.0.5
+        date: '2023-05-25'
+        pr: 151
     linuxdeepin/dde-session:
         date: '2023-04-14'
         pr: 58
