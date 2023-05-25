@@ -230,9 +230,8 @@ records:
         pr: 58
         ver: 5.0.16
     linuxdeepin/deepin-home:
-        date: '2023-04-18'
-        pr: 102
-        ver: 1.0.21
+        date: '2023-05-25'
+        pr: 150
     linuxdeepin/deepin-icon-theme:
         date: '2023-04-17'
         pr: 69
