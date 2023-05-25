@@ -94,6 +94,10 @@ records:
         date: '2023-04-11'
         pr: 63
         ver: ''
+    deepin-community/ncdu:
+        date: '2023-05-25'
+        pr: 152
+        ver: 1.18.1-0deepin1
     deepin-community/nemo-qml-plugin-dbus:
         date: '2023-04-04'
         pr: 59
