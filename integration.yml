@@ -1,8 +1,8 @@
 # Required
 message: |
-  Integrated for V23-Beta
-# Not required, now default is V23-Beta
-milestone: V23-Beta
+  Integrated for V23-Beta2
+# Not required, now default is V23-Beta2
+milestone: V23-Beta2
 # Required
 repos: 
   # Required
