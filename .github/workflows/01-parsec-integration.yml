@@ -179,7 +179,7 @@ jobs:
               allBuildTasks = [{"order": j,"data":{"payload": []}} for j in range(maxSize)]
               data = read_integration()
 
-              message = data.get("message", "Integrated for V23-Beta")
+              message = data.get("message", "Integrated for V23-Beta2")
               set_output("integration_message", message)
               with open("integration-${{ github.event.number }}-detail.md", "w+") as integration_detail:
                   integration_detail.write(message)
@@ -216,7 +216,7 @@ jobs:
               set_output("integrationinfo", integrationinfo)
               set_output("changelog", changelog)
               set_output("influence", influence)
-              set_output("milestone", "V23-Beta")
+              set_output("milestone", "V23-Beta2")
               if data.get('milestone', "") != "":
                 set_output("milestone", data.get('milestone'))
 
