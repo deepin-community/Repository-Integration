@@ -1,17 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta
-# Not required, now default is V23-Beta
-milestone: V23-Beta
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+message: Integrated for V23-Beta2
+milestone: V23-Beta2
+repos:
+  - repo: linuxdeepin/dde-launcher
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: 198453ae5ceebc176a717968a8895370ed10ea44
+timestamp: 1685337892114
