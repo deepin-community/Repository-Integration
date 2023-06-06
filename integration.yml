@@ -1,17 +1,22 @@
 # Required
 message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
-milestone: V23-Beta2
+  Integrated ell and iwd for V23-Beta
+# Not required, now default is V23-Beta
+milestone: V23-Beta
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
+  - repo: deepin-community/ell
     # Not required
-    tag: 5.11.22
+    tag: 0.56-3
     # Not required
     order: 0
     # Not required, but need one of tag and tagsha info
     # When use tag info, integration workflow will check repository tag and build tag version
     # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: "a7d88f8fbe747b15c7d5f1faae8c42c2dcb46344"
+  
+  - repo: deepin-community/iwd
+    tag: 2.3-1
+    order: 0
+    tagsha: "82e7b14cffafc02d3cbabb2f169bff02b2339905"
