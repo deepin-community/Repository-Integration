@@ -1,0 +1,12 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+
+reviewers:
+- Zeno-sole
+- tsic404
+- hudeng-go
+- myml
+- BLumia
+approvers:
+- Zeno-sole
+- hudeng-go
+- myml
