@@ -1,0 +1,15 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+
+reviewers:
+- Zeno-sole
+- tsic404
+- hudeng-go
+- BLumia
+- UTsweetyfish
+- Rabenda
+- zccrs
+approvers:
+- Zeno-sole
+- hudeng-go
+- UTsweetyfish
+- zccrs
