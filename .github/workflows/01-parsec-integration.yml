@@ -307,12 +307,16 @@ jobs:
             let component = ""
             for (repo of all_build_task) {
               console.log(repo)
+              obsWorkflowsPath = ".obs/workflows.yml"
+              if (repo.includes("deepin-community")) {
+                obsWorkflowsPath = "debian/deepin/workflows.yml"
+              }
               repoinfo = repo.repo.split('/')
               if (repoinfo.length == 2) {
                 const {data} = await github.rest.repos.getContent({
                   owner: repoinfo[0],
                   repo: repoinfo[1],
-                  path: ".obs/workflows.yml",
+                  path: obsWorkflowsPath,
                 });
                 datas = Buffer.from(data.content, data.encoding)
                 obsinfo = datas.toString()

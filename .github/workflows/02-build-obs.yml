@@ -64,7 +64,7 @@ jobs:
           if [ "$result" != "" ];then
             component=dde
           else
-            component=`(curl https://raw.githubusercontent.com/${{ inputs.repo }}/master/.obs/workflows.yml |\
+            component=`(curl https://raw.githubusercontent.com/${{ inputs.repo }}/master/debian/deepin/workflows.yml |\
                       grep "source_project"||echo "source_project: deepin:Develop:community")| head -n 1 |awk -F ":" '{print $4}'`
           fi
           echo "component=$component" >> $GITHUB_OUTPUT
