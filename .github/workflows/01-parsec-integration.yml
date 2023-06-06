@@ -308,7 +308,7 @@ jobs:
             for (repo of all_build_task) {
               console.log(repo)
               obsWorkflowsPath = ".obs/workflows.yml"
-              if (repo.includes("deepin-community")) {
+              if (repo.repo.includes("deepin-community")) {
                 obsWorkflowsPath = "debian/deepin/workflows.yml"
               }
               repoinfo = repo.repo.split('/')
