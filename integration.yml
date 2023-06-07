@@ -8,3 +8,14 @@ repos:
     tag: 
     order: 0
     tagsha: "d84d43672b2e781bb3ec460aa8c9e7be5136bff1"
+
+  - repo: deepin-community/texlive-bin
+    tag: 
+    order: 0
+    tagsha: "eafef7830a81246e09f6a5efc3f79d04e96a1a7d"
+    
+
+  - repo: deepin-community/lmodern
+    tag: 
+    order: 0
+    tagsha: "5cb712d468edeab3a17be0e13b81270d63e4bfdb"
