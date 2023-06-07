@@ -8,9 +8,8 @@ records:
         pr: 103
         ver: ''
     deepin-community/deepin-desktop-environment:
-        date: '2023-04-10'
-        pr: 70
-        ver: ''
+        date: '2023-06-07'
+        pr: 163
     deepin-community/distrobox:
         date: '2023-04-12'
         pr: 72
