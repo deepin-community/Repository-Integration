@@ -89,6 +89,10 @@ records:
         date: '2023-04-11'
         pr: 63
         ver: ''
+    deepin-community/lmodern:
+        date: '2023-06-08'
+        pr: 164
+        ver: ''
     deepin-community/mesa:
         date: '2023-04-11'
         pr: 63
@@ -136,6 +140,14 @@ records:
         date: '2023-04-10'
         pr: 70
         ver: 250.4.2-deepin2
+    deepin-community/texlive-base:
+        date: '2023-06-08'
+        pr: 164
+        ver: ''
+    deepin-community/texlive-bin:
+        date: '2023-06-08'
+        pr: 164
+        ver: ''
     deepin-community/udisks2:
         date: '2023-04-10'
         pr: 79
