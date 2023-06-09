@@ -18,6 +18,10 @@ records:
         date: '2023-04-04'
         pr: 59
         ver: ''
+    deepin-community/ell:
+        date: '2023-06-09'
+        pr: 160
+        ver: 0.56-3
     deepin-community/fcitx5:
         date: '2023-04-13'
         pr: 78
@@ -57,6 +61,10 @@ records:
         date: '2023-04-04'
         pr: 68
         ver: ''
+    deepin-community/iwd:
+        date: '2023-06-09'
+        pr: 160
+        ver: 2.3-1
     deepin-community/jtreg6:
         date: '2023-04-04'
         pr: 59
