@@ -13,4 +13,8 @@ repos:
   - repo: deepin-community/meson
     order: 0
     tagsha: 57cec1e57e401cad70ce9746dd4c8a11884e0299
+  - repo: deepin-community/wxwidgets3.2
+    order: 0
+    tagsha: 42ce06e2a9ac4798f4da598c35d3160f53ce4c0b
+    
 timestamp: 1686907501146
