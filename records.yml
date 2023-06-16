@@ -323,8 +323,8 @@ records:
         pr: 58
         ver: 6.0.5
     linuxdeepin/xdg-desktop-portal-dde:
-        date: '2023-06-12'
-        pr: 165
+        date: '2023-06-16'
+        pr: 167
     qt-gstreamer:
         date: '2022-11-15'
         pr: 1
