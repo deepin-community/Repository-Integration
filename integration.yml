@@ -4,4 +4,13 @@ repos:
   - repo: deepin-community/mesa
     order: 0
     tagsha: d00e971912416cc1640c6d870f103e710b26bef0
+  - repo: deepin-community/libdrm
+    order: 0
+    tagsha: b1a5485cea319c35749d39fe6b1d4fe17a896fd6
+  - repo: deepin-community/directx-headers
+    order: 0
+    tagsha: 903f7e16d292bd6c0d9a8a2537cc6f54eca58697
+  - repo: deepin-community/meson
+    order: 0
+    tagsha: 57cec1e57e401cad70ce9746dd4c8a11884e0299
 timestamp: 1686907501146
