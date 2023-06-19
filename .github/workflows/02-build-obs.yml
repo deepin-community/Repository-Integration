@@ -47,7 +47,7 @@ jobs:
 
       - name: Install tools
         run: |
-          sudo apt install -y osc curl
+          sudo apt-get update && apt install -y osc curl
 
       - name: pkgname
         id: pkgname
@@ -172,7 +172,7 @@ jobs:
     steps:
       - name: Install osc
         run: |
-          sudo apt install -y osc
+          sudo apt-get update && apt install -y osc
 
       - name: build log tracker
         run: |

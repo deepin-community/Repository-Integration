@@ -49,7 +49,7 @@ jobs:
         id: mergeid
         run: |
           set -x
-          sudo apt install -y osc
+          sudo apt-get update && apt install -y osc
           mkdir -p ~/.config/osc
           echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
           osc co deepin:CI:TestingIntegration:${TOPIC} && cd $_

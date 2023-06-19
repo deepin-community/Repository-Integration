@@ -26,7 +26,7 @@ on:
         default: 'In progress' # ["已推送", "测试中", "驳回&废弃", "测试通过"]
       milestone:
         type: string
-        default: 'V23-Beta'
+        default: 'V23-Beta2'
       labels:
         type: string
         default: 'Project:integrated' #多个标签有', '隔开
