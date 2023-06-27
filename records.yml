@@ -172,6 +172,9 @@ records:
         date: '2023-05-08'
         pr: 121
         ver: 2.33-1deepin2
+    deepin-community/xorg:
+        date: '2023-06-27'
+        pr: 205
     linuxdeepin/dde-account-faces:
         date: '2023-04-14'
         pr: 58
