@@ -1,10 +1,6 @@
 message: Integrated for V23-Beta2 radeontop
 milestone: V23-Beta2
 repos:
-  - repo: deepin-community/procps
-    order: 0
-    tagsha: dc622c8ab9b525263ee6030aec6c2703b5889ba3
-    
   - repo: deepin-community/radeontop
     order: 0
     tag: 1.4-2
