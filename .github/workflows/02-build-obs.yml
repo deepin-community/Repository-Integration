@@ -181,4 +181,4 @@ jobs:
           echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
           pkgname="${{ needs.build.outputs.pkgname }}"
           osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
-          osc buildlog testing ${ARCH}
+          if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ];then osc buildlog testing ${ARCH}; else echo "${ARCH} build excluded"; fi
