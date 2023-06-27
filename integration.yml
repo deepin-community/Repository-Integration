@@ -1,7 +1,10 @@
-message: Integrated for V23-Beta2
+message: Integrated for V23-Beta2 radeontop
 milestone: V23-Beta2
 repos:
-  - repo: linuxdeepin/deepin-home
+  - repo: deepin-community/procps
     order: 0
-    tagsha: 536058d075dddebd43fbd79f30492ff63fbdc8ce
-
+    tagsha: dc622c8ab9b525263ee6030aec6c2703b5889ba3
+    
+  - repo: deepin-community/radeontop
+    order: 1.4-2
+    tagsha: 
