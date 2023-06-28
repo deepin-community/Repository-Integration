@@ -105,6 +105,10 @@ records:
         date: '2023-04-11'
         pr: 63
         ver: ''
+    deepin-community/meson:
+        date: '2023-06-28'
+        pr: 217
+        ver: 1.1.1-1
     deepin-community/ncdu:
         date: '2023-05-25'
         pr: 152
@@ -129,6 +133,10 @@ records:
         date: '2023-04-11'
         pr: 63
         ver: ''
+    deepin-community/procps:
+        date: '2023-06-28'
+        pr: 217
+        ver: 2%4.0.3-1
     deepin-community/pulseaudio:
         date: '2023-04-11'
         pr: 63
