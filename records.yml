@@ -137,6 +137,10 @@ records:
         date: '2023-01-11'
         pr: 13
         ver: 5.15.7.3-1+dde
+    deepin-community/radeontop:
+        date: '2023-06-28'
+        pr: 219
+        ver: 1.4-2
     deepin-community/shim-signed:
         date: '2023-05-29'
         pr: 157
