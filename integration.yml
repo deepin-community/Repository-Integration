@@ -1,17 +1,64 @@
 # Required
 message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+  Integrated python rebuild
 milestone: V23-Beta2
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: deepin-community/hplip
+    tag: 3.22.10+dfsg0-2
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: 
+    
+  - repo: deepin-community/python-aiohttp
+    tag: 
+    order: 0
+    tagsha: "987fc242cd4eef634ea54cded38f4b8b8dbd77c5"   
+    
+  - repo: deepin-community/audit
+    tag: 1%3.0.9-1
+    order: 0
+    tagsha:  
+
+  - repo: deepin-community/avogadrolibs
+    tag: 
+    order: 0
+    tagsha: "fdfd003ffbb7a0769136f41416969d6a6dbef13e"  
+
+  - repo: deepin-community/btrfs-progs
+    tag: 
+    order: 0
+    tagsha: "07fe49a26067c99b447d580fd307591c778ba683"  
+
+  - repo: deepin-community/python-cbor
+    tag: 
+    order: 0
+    tagsha: "38901707122d3723a357cd553ff0f0bbc701b083"  
+
+  - repo: deepin-community/python-cups
+    tag: 
+    order: 0
+    tagsha: "1fcdb252dced7f289124d99b3919998b2a5ab1ef"  
+
+  - repo: deepin-community/ecmwflibs
+    tag: 
+    order: 0
+    tagsha: "9e014d1dd2ab78b510ac60ad2def065c94808e53"  
+
+  - repo: deepin-community/hamlib
+    tag: 
+    order: 0
+    tagsha: "56cc37a97881952b4effd32691249c52f0004eed"  
+
+  - repo: deepin-community/libimobiledevice
+    tag: 
+    order: 0
+    tagsha: "0f83685c928cdac796083a9f1b731edb5b4adfe9" 
+
+  - repo: deepin-community/ldns
+    tag: 
+    order: 0
+    tagsha: "3683b085a3dd84228a2db7d5116b1ad16c227e1d" 
+
+  - repo: deepin-community/marisa
+    tag: 
+    order: 0
+    tagsha: "c515278d72d798e340f3e2999c313d95e794b334" 
