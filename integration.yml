@@ -62,3 +62,83 @@ repos:
     tag: 
     order: 0
     tagsha: "c515278d72d798e340f3e2999c313d95e794b334" 
+
+  - repo: deepin-community/mypy
+    tag: 
+    order: 0
+    tagsha: "811405ec34c290d85450eac17cabfcbb4d5b3831" 
+
+  - repo: deepin-community/python-nacl
+    tag: 
+    order: 0
+    tagsha: "8ee7d886b1ddd3ba9cd72db75cb1380dfe61f5fd" 
+
+  - repo: deepin-community/netifaces
+    tag: 
+    order: 0
+    tagsha: "cf17da202868e891b18d700f11ec22a0e1e94bb5" 
+
+  - repo: deepin-community/nlopt
+    tag: 
+    order: 0
+    tagsha: "05c3e9b13c9bdbfe97237ff022e62f6a12591eca" 
+
+  - repo: deepin-community/numcodecs
+    tag: 
+    order: 0
+    tagsha: "551d9926acc8ca40a74f91590bde701f3c04082b"     
+
+  - repo: deepin-community/libplist
+    tag: 
+    order: 0
+    tagsha: "deb3187ba90e43491193ef6f4de190e540e27d4a" 
+
+  - repo: deepin-community/python-pylibacl
+    tag: 
+    order: 0
+    tagsha: "b2942673fc482a75a3cb334f1eae761bdab7f1a2" 
+
+  - repo: deepin-community/rrdtool
+    tag: 
+    order: 0
+    tagsha: "381f2eae35f8b0cc2ee1e048d1cc2910c509a660" 
+
+  - repo: deepin-community/python-scrypt
+    tag: 
+    order: 0
+    tagsha: "00dc159cfd80a1462e16242ddb70a7c4dac6c67c" 
+
+  - repo: deepin-community/skimage
+    tag: 
+    order: 0
+    tagsha: "8f221778bd6bfd1fa0dbab81dbfc622a8af942fa" 
+
+  - repo: deepin-community/scikit-learn
+    tag: 
+    order: 0
+    tagsha: "531c62ef6f7c6448125cbc402c10199e78103753" 
+
+  - repo: deepin-community/i2c-tools
+    tag: 
+    order: 0
+    tagsha: "2f60c5649458ac0efa135cda21a0a995b1a3ec18" 
+
+  - repo: deepin-community/i2c-tools
+    tag: 
+    order: 0
+    tagsha: "2f60c5649458ac0efa135cda21a0a995b1a3ec18" 
+
+  - repo: deepin-community/python-systemd
+    tag: 
+    order: 0
+    tagsha: "9cda18d7fd080d18acc7f4b5f3dc1b0eb318a296" 
+
+  - repo: deepin-community/vtk9
+    tag: 
+    order: 0
+    tagsha: "891e3f7b014f42eeda01b125ad6511301fa6ac23" 
+
+  - repo: deepin-community/zbar
+    tag: 
+    order: 0
+    tagsha: "8e84e2232642ff0973270b0ee9d20e03c8539ab6" 
