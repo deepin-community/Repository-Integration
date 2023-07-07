@@ -275,6 +275,9 @@ records:
         date: '2023-04-17'
         pr: 69
         ver: ''
+    linuxdeepin/deepin-kwin:
+        date: '2023-07-07'
+        pr: 238
     linuxdeepin/deepin-log-viewer:
         date: '2023-04-12'
         pr: 76
