@@ -199,8 +199,8 @@ records:
         pr: 58
         ver: 6.0.6
     linuxdeepin/dde-appearance:
-        date: '2023-06-12'
-        pr: 166
+        date: '2023-07-07'
+        pr: 236
     linuxdeepin/dde-application-manager:
         date: '2023-07-07'
         pr: 235
