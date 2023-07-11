@@ -1,17 +1,12 @@
 # Required
 message: |
-  Integrated for V23-Beta2
+  Integrated for Dock Refactor
 # Not required, now default is V23-Beta2
 milestone: V23-Beta2
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
-    order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: linuxdeepin/dde-dock
+    tagsha: e300d35d14919c3a7a16d825d82ef29dc6151bf1
+  - repo: linuxdeepin/dde-application-manager
+    tagsha: efbace3d6af4e7afca35656b282c9b75401e1af6
