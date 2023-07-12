@@ -94,6 +94,7 @@ jobs:
           APP_PRIVATE_KEY: ${{ secrets.LINUXDEEPIN_APP_PRIVATE_KEY }}
         with:
           script: |
+            global["fetch"] = fetch
             const { Octokit } = require("@octokit/rest");
             const { createAppAuth } = require("@octokit/auth-app");
             repoinfo = "${{ inputs.repo }}".split('/')
