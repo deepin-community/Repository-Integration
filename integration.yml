@@ -1,7 +1,7 @@
 message: Integrated for V23-Beta2
 milestone: V23-Beta2
 repos:
-  - repo: linuxdeepin/deepin-font-manager
+  - repo: deepin-community/hplip
     order: 0
-    tagsha: 7c5718cb4eadad091625c423aca2984c0f615245
-timestamp: 1686040539758
+    tagsha: 7c35825e0f65d69eb2c309c18c918e643d18dbc2
+
