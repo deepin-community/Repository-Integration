@@ -7,10 +7,12 @@ milestone: V23-Beta2
 repos: 
   # Required
   - repo: deepin-community/libcompress-raw-lzma-perl
-    tag: 2.204-1
+    tagsha: 'dadd278132b5864e1f5083c41faf0faa7cb5aee6'
+    # tag: 2.204-1
     order: 0
   - repo: deepin-community/libio-compress-brotli-perl
-    tag: 0.004001-2deepin
+    tagsha: '042167d59478f09bc0b8c4a8cec42b61f7f8673c'
+    # tag: 0.004001-2deepin
     order: 0
   - repo: deepin-community/libimage-exiftool-perl
     tag: 12.63+dfsg-2
