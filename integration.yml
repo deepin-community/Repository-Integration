@@ -5,3 +5,6 @@ repos:
     order: 0
     tagsha: 7c35825e0f65d69eb2c309c18c918e643d18dbc2
 
+  - repo: deepin-community/stress
+    order: 0
+    tagsha: b933b22a6760def594656666f9516bfa08805458
