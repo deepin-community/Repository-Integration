@@ -94,6 +94,8 @@ jobs:
         shell: python
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          PR_TITLE: ${{ github.event.issue.title }}
+          PR_AUTHOR: ${{ github.event.issue.user.login }}
         run: |
           import requests
           import yaml
@@ -181,6 +183,10 @@ jobs:
 
               message = data.get("message", "Integrated for V23-Beta2")
               set_output("integration_message", message)
+              if message == "Integrated for V23-Beta2":
+                message = os.environ.get("PR_TITLE")
+
+              message = message + " by " + os.environ.get("PR_AUTHOR")
               with open("integration-${{ github.event.number }}-detail.md", "w+") as integration_detail:
                   integration_detail.write(message)
 
