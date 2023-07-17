@@ -351,7 +351,7 @@ jobs:
                   id
                 }
               }
-            }' -f project=$PROJECT_ID -f item=${{ env.ITEM_ID }} -f status_field=$STATUS_FIELD_ID -f status_value=${{ env.OPTION_ID }} date_field=$DATE_FIELD_ID -f date_value=$DATE --silent
+            }' -f project=$PROJECT_ID -f item=${{ env.ITEM_ID }} -f status_field=$STATUS_FIELD_ID -f status_value=${{ env.OPTION_ID }} -f date_field=$DATE_FIELD_ID -f date_value=$DATE --silent
 
       - name: Link issue to integration pr
         uses: actions/github-script@v6
