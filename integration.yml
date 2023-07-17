@@ -6,12 +6,7 @@ milestone: V23-Beta2
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
-    order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: linuxdeepin/dde-dock
+    tagsha: "77d0e5f5e6e47a2c8ba7a18559f219bd34f1d3d5"
+  - repo: linuxdeepin/dde-application-manager
+    tagsha: "efbace3d6af4e7afca35656b282c9b75401e1af6"
