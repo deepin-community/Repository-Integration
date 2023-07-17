@@ -286,8 +286,12 @@ jobs:
 
           cat project_data.json
           echo 'PROJECT_ID='$(jq '.data.organization.projectV2.id' project_data.json) >> $GITHUB_ENV
+          echo 'DATE_FIELD_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Date Created") | .id' project_data.json) >> $GITHUB_ENV
           echo 'STATUS_FIELD_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Status") | .id' project_data.json) >> $GITHUB_ENV
           echo 'OPTION_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Status") | .options[] | select(.name=="${{ inputs.status }}") |.id' project_data.json) >> $GITHUB_ENV
+
+      - name: Get date
+        run: echo "DATE=$(date +"%Y-%m-%d")" >> $GITHUB_ENV
 
       - name: Add issue to project
         env:
@@ -320,6 +324,8 @@ jobs:
               $item: ID!
               $status_field: ID!
               $status_value: String!
+              $date_field: ID!
+              $date_value: Date!
             ) {
               set_status: updateProjectV2ItemFieldValue(input: {
                 projectId: $project
@@ -333,7 +339,19 @@ jobs:
                   id
                   }
               }
-            }' -f project=$PROJECT_ID -f item=${{ env.ITEM_ID }} -f status_field=$STATUS_FIELD_ID -f status_value=${{ env.OPTION_ID }} --silent
+              set_date_created: updateProjectV2ItemFieldValue(input: {
+                projectId: $project
+                itemId: $item
+                fieldId: $date_field
+                value: {
+                  date: $date_value
+                }
+              }) {
+                projectV2Item {
+                  id
+                }
+              }
+            }' -f project=$PROJECT_ID -f item=${{ env.ITEM_ID }} -f status_field=$STATUS_FIELD_ID -f status_value=${{ env.OPTION_ID }} date_field=$DATE_FIELD_ID -f date_value=$DATE --silent
 
       - name: Link issue to integration pr
         uses: actions/github-script@v6
