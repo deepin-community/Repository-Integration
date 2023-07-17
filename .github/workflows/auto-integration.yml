@@ -154,7 +154,8 @@ jobs:
       (needs.build-order-6.result == 'success' || needs.build-order-6.result == 'skipped') &&
       (needs.build-order-7.result == 'success' || needs.build-order-7.result == 'skipped') &&
       (needs.build-order-8.result == 'success' || needs.build-order-8.result == 'skipped') &&
-      (needs.build-order-9.result == 'success' || needs.build-order-9.result == 'skipped')
+      (needs.build-order-9.result == 'success' || needs.build-order-9.result == 'skipped') &&
+      (needs.create_issue_link_project.result == 'success')
     with:
       topic: test-integration-pr-${{ github.event.number }}
       packages: ${{ needs.parsec_integration.outputs.all_build_task }}
