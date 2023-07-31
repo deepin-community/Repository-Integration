@@ -84,6 +84,9 @@ records:
         date: '2023-03-29'
         pr: 51
         ver: ''
+    deepin-community/libayatana-appindicator:
+        date: '2023-07-31'
+        pr: 282
     deepin-community/libfuture-io-perl:
         date: '2023-04-11'
         pr: 63
