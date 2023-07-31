@@ -10,6 +10,9 @@ records:
     deepin-community/apt-rdepends:
         date: '2023-07-04'
         pr: 227
+    deepin-community/base16384:
+        date: '2023-07-31'
+        pr: 262
     deepin-community/deepin-desktop-environment:
         date: '2023-06-07'
         pr: 163
