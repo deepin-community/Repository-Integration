@@ -112,6 +112,9 @@ records:
         date: '2023-06-28'
         pr: 217
         ver: 1.1.1-1
+    deepin-community/mtr:
+        date: '2023-07-31'
+        pr: 266
     deepin-community/ncdu:
         date: '2023-05-25'
         pr: 152
