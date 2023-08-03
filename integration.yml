@@ -5,5 +5,5 @@ milestone: V23-Beta2
 repos:
   - repo: linuxdeepin/dde-device-formatter
     order: 0
-    tagsha: ba30be6e96b23ef3ca90a190da41bc4f78f88485
+    tag: 0.0.1.15
 timestamp: 1691039986095
