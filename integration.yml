@@ -76,11 +76,15 @@ repos:
   - repo: deepin-community/netifaces
     tag: 
     order: 0
-    tagsha: "cf17da202868e891b18d700f11ec22a0e1e94bb5" 
+    tagsha: "cf17da202868e891b18d700f11ec22a0e1e94bb5"
+
+  - repo: deepin-community/dh-octave
+    tagsha: "724f0cc631eaf4b427f7c58e620361a08a001f3d"
+    order: 0
 
   - repo: deepin-community/nlopt
     tag: 
-    order: 0
+    order: 1
     tagsha: "05c3e9b13c9bdbfe97237ff022e62f6a12591eca" 
 
   - repo: deepin-community/numcodecs
