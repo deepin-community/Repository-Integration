@@ -105,7 +105,7 @@ repos:
   - repo: deepin-community/rrdtool
     tag: 
     order: 0
-    tagsha: "381f2eae35f8b0cc2ee1e048d1cc2910c509a660" 
+    tagsha: "c936c96904304eff2eef67ea29d53bb35676d28e" 
 
   - repo: deepin-community/python-scrypt
     tag: 
