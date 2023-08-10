@@ -1,17 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: >-
+  feat: New keyring white box solution decouples dde-daemon and removes relevant
+  code by chenchongbiao@linuxdeepin/dde-daemon
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+repos:
+  - repo: linuxdeepin/dde-daemon
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: c54166c5eca466d611cf007c7036b27ff704d7c6
+timestamp: 1691653369876
