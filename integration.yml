@@ -112,16 +112,6 @@ repos:
     order: 0
     tagsha: "00dc159cfd80a1462e16242ddb70a7c4dac6c67c" 
 
-  - repo: deepin-community/skimage
-    tag: 
-    order: 0
-    tagsha: "8f221778bd6bfd1fa0dbab81dbfc622a8af942fa" 
-
-  - repo: deepin-community/scikit-learn
-    tag: 
-    order: 0
-    tagsha: "531c62ef6f7c6448125cbc402c10199e78103753" 
-
   - repo: deepin-community/i2c-tools
     tag: 
     order: 0
