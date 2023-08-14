@@ -1,17 +1,20 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: 'chore: update changelog by asterwyx@linuxdeepin/dtkgui'
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+repos:
+  - repo: linuxdeepin/dtkcommon
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: a71824406d45fbe00acb94d1f3f293d4af129c19
+  - repo: linuxdeepin/dtkcore
+    order: 0
+    tagsha: 672d30970c149a0ab26d915f1efc80ab5064e5df
+  - repo: linuxdeepin/dtkwidget
+    order: 0
+    tagsha: ca905d3d1beb154a58b0a29565454e3e42713a67
+  - repo: linuxdeepin/dtkdeclarative
+    order: 0
+    tagsha: 3d624590326984932b09b5f4a2a2df7c6a0f48e2
+  - repo: linuxdeepin/dtkgui
+    order: 0
+    tagsha: b4c2ef13b09acdb5ee0e892a4217e4750219ccbc
+topic: update-dtk
+timestamp: 1691998668992
