@@ -8,4 +8,6 @@ repos:
   # Required
   - repo: deepin-community/sbuild
     tagsha: "bd302782bcc5273c7cffd13eecea42799292914f"
+  - repo: deepin-community/schroot
+    tagsha: "76676e7f7379344567fbfc11b37c46c8d5222e87"
 
