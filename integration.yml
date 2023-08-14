@@ -17,6 +17,9 @@ repos:
   - repo: deepin-community/pipewire
     tag: 0.3.74-1
     order: 2
+  - repo: deepin-community/wireplumber
+    tag: 0.4.14-4
+    order: 3
   - repo: deepin-community/deepin-desktop-environment
     tag: 2023.07.13
-    order: 3
+    order: 4
