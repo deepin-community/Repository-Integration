@@ -4,5 +4,10 @@ repos:
   - repo: linuxdeepin/go-dbus-factory
     order: 0
     tagsha: 4ac40625b41905a24b6323ba7d21b60b44b59ab5
+
+  - repo: linuxdeepin/dde-daemon
+    order: 0
+    tagsha: 55468bb9c3f5881c6c1c59413add7d10042bf141
+    
 topic: topic_daemon
 timestamp: 1691981154143
