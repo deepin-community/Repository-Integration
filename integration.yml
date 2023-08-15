@@ -1,17 +1,11 @@
 # Required
 message: |
   Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
-milestone: V23-Beta2
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: deepin-community/xorg
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: "15c5dc184e0432f05e427b2bf139793e67f445a4"
+
+  - repo: deepin-community/xorgxrdp
+    order: 1
+    tagsha: "b4ce469f9e11ac1633478d3ccc0ae73b83b2459a"
