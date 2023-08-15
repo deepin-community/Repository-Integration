@@ -135,7 +135,10 @@ jobs:
           def set_output(name, value):
               output_file = os.environ.get("GITHUB_OUTPUT")
               with open(output_file, "a") as output:
-                  output.write(name + "=" + value + "\n")
+                  #output.write(name + "=" + value + "\n")
+                  output.write(name + "<<EOF\n")
+                  output.write(value)
+                  output.write('\nEOF\n')
 
           def read_changelog(repo, commitortag):
             rawurl = "https://api.github.com/repos/{repo}/contents/debian/changelog?ref={commit}".format(repo=repo, commit=commitortag)
@@ -182,11 +185,11 @@ jobs:
               data = read_integration()
 
               message = data.get("message", "Integrated for V23-Beta2")
-              set_output("integration_message", message)
               if message == "Integrated for V23-Beta2":
                 message = os.environ.get("PR_TITLE")
 
               message = message + " by " + os.environ.get("PR_AUTHOR")
+              set_output("integration_message", message)
               with open("integration-${{ github.event.number }}-detail.md", "w+") as integration_detail:
                   integration_detail.write(message)
 
