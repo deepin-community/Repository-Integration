@@ -11,7 +11,7 @@ repos:
   - repo: deepin-community/python-aiohttp
     tag: 
     order: 0
-    tagsha: "987fc242cd4eef634ea54cded38f4b8b8dbd77c5"   
+    tagsha: "59665c487d924546289de156395e90e3a5a6cdee"
     
   - repo: deepin-community/audit
     tag: 1%3.0.9-1
@@ -26,7 +26,7 @@ repos:
   - repo: deepin-community/btrfs-progs
     tag: 
     order: 0
-    tagsha: "07fe49a26067c99b447d580fd307591c778ba683"  
+    tagsha: "4f9854c69a1c8a44c3c53c0d7ca84e027fa8d9a3"
 
   - repo: deepin-community/python-cbor
     tag: 
@@ -56,7 +56,7 @@ repos:
   - repo: deepin-community/ldns
     tag: 
     order: 0
-    tagsha: "3683b085a3dd84228a2db7d5116b1ad16c227e1d" 
+    tagsha: "19ea19c234598e77d379ecb830940c9498247c4b"
 
   - repo: deepin-community/marisa
     tag: 
