@@ -25,7 +25,7 @@ repos:
     order: 0
   - repo: deepin-community/golang-github-mattn-go-runewidth
     tag: 0.0.14-1
-    order: 0
+    order: 1
   - repo: deepin-community/golang-github-rivo-uniseg
     tag: 0.4.2-1
     order: 0
@@ -34,13 +34,13 @@ repos:
     order: 0
   - repo: deepin-community/golang-github-tidwall-gjson
     tag: 1.14.4-2
-    order: 0
+    order: 1
   - repo: deepin-community/golang-github-rodaine-table
     tag: 1.1.0-1-0deepin1
-    order: 0
+    order: 2
   - repo: deepin-community/golang-github-lionsoul2014-ip2region-v1.0-binding-golang-ip2region
     tag: 2.11.2-1-0deepin1
     order: 0
   - repo: deepin-community/nexttrace
     tagsha: '4dc83d2d797f55add8661a63334a0084fdfccf80'
-    order: 1
+    order: 3
