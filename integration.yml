@@ -9,7 +9,7 @@ repos:
     tag: 1.4.0-1-0deepin1
     order: 0
   - repo: deepin-community/golang-github-pelletier-go-buffruneio
-    tag: 0.2.0-2
+    tagsha: '66e78837649d978968b15401878428968bc068f5'
     order: 0
   - repo: deepin-community/golang-github-oschwald-maxminddb-golang
     tag: 1.8.0-1
