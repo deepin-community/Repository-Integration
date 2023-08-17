@@ -10,9 +10,9 @@ jobs:
     steps:
 
       - name: download integration detail
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
-          name: integration-${{ github.event.number }}-detail.md
+          name: integration-archive-${{ github.event.number }}
 
       - name: create comment
         uses: actions/github-script@v6
