@@ -94,8 +94,8 @@ jobs:
         shell: python
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          PR_TITLE: ${{ github.event.issue.title }}
-          PR_AUTHOR: ${{ github.event.issue.user.login }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
         run: |
           import requests
           import yaml
@@ -184,12 +184,12 @@ jobs:
               allBuildTasks = [{"order": j,"data":{"payload": []}} for j in range(maxSize)]
               data = read_integration()
 
-              message = data.get("message", "Integrated for V23-Beta2")
+              message = data.get("message", "Integrated for V23-Beta2").replace("\n", "")
               if message == "Integrated for V23-Beta2":
                 message = os.environ.get("PR_TITLE")
 
               message = message + " by " + os.environ.get("PR_AUTHOR")
-              set_output("integration_message", message)
+              set_output("integration_message", message.replace("\n", ""))
               with open("integration-${{ github.event.number }}-detail.md", "w+") as integration_detail:
                   integration_detail.write(message)
 
@@ -218,13 +218,19 @@ jobs:
                 if tagsha == "" and len(tagsha) <= 0 and tag == "" and len(tag) <= 0:
                   illegalTags.append({"repo": fullreponame, "tag": tag, "tagsha": tagsha})
                 allBuildTasks[order].get("data").get("payload").append(repo)
-              integrationinfo = str(integrationInfos)
+              integrationinfo = str("\n".join(integrationInfos))
               print("integrationinfo: " + integrationinfo)
-              changelog = str(changelogs)
-              influence = str(influences)
+              changelog = str("\n".join(changelogs))
+              influence = str("\n".join(influences))
               set_output("integrationinfo", integrationinfo)
+              with open("integration-${{ github.event.number }}-integrationinfo.md", "w+") as f:
+                  f.write(integrationinfo)
               set_output("changelog", changelog)
+              with open("integration-${{ github.event.number }}-changelog.md", "w+") as f:
+                  f.write(changelog)
               set_output("influence", influence)
+              with open("integration-${{ github.event.number }}-influence.md", "w+") as f:
+                  f.write(influence)
               set_output("milestone", "V23-Beta2")
               if data.get('milestone', "") != "":
                 set_output("milestone", data.get('milestone'))
@@ -393,7 +399,11 @@ jobs:
             core.setOutput('component', component)
 
       - name: upload integration detail
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
-          name: integration-${{ github.event.number }}-detail.md
-          path: integration-${{ github.event.number }}-detail.md
+          name: integration-archive-${{ github.event.number }}
+          path: |
+            integration-${{ github.event.number }}-detail.md
+            integration-${{ github.event.number }}-integrationinfo.md
+            integration-${{ github.event.number }}-changelog.md
+            integration-${{ github.event.number }}-influence.md
