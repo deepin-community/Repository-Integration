@@ -3,5 +3,8 @@ message: |
 milestone: V23-Beta2
 repos:
   - repo: linuxdeepin/dde-daemon
-    tagsha: "3049a76035f0aa866c66ef5c2b107c642ee9fb5d"
+    tagsha: "ea21d37d2b48532d2d21045ff59dcacc1f77b1da"
+    order: 0
+  - repo: linuxdeepin/dde-session
+    tagsha: "34af772d2a260dfaacebd65c1888980e11062d8c"
     order: 0
