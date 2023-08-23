@@ -4,4 +4,7 @@ repos:
   - repo: deepin-community/glibc
     order: 0
     tagsha: 136c0b5178c302bec6680b4a082a6fad96086105
+  - repo: deepin-community/glib2.0
+    order: 0
+    tagsha: 597f943c5b594a313ed51d20e0a76d35759a87c8
 timestamp: 1692706225697
