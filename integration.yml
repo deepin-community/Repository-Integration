@@ -5,5 +5,5 @@ milestone: V23-Beta2
 repos:
   - repo: linuxdeepin/dde-control-center
     order: 0
-    tagsha: 4e9b5292e3c0578e3acea833d0a6ed288b6dfaf8
+    tagsha: dc05f45cbd57338b21f243dbc5a1a25cbcd69a0b
 timestamp: 1692755843007
