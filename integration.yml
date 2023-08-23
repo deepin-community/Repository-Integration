@@ -1,17 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: 'chore: update changelog by deepin-ci-robot@linuxdeepin/dtkcommon'
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+repos:
+  - repo: linuxdeepin/dtkdeclarative
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: b19ec4a9717a7cb522ac68e5a374b6911ae5014c
+  - repo: linuxdeepin/dtkcommon
+    order: 0
+    tagsha: ddbb27dc03db85971bf02cf78bf0dc5eaeb0f0d0
+topic: release-5-6-16
+timestamp: 1692781697851
