@@ -7,6 +7,9 @@ repos:
   - repo: deepin-community/glib2.0
     order: 0
     tagsha: 597f943c5b594a313ed51d20e0a76d35759a87c8
+  - repo: deepin-community/meson
+    order: 0
+    tagsha: 904fed7550230448aa26ab424ecc006738331cc6
   - repo: deepin-community/netcdf
     order: 1
     tagsha: fd7805c662bcada8f0c8e76eada44d7b95d7d403
