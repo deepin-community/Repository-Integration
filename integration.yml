@@ -10,4 +10,23 @@ repos:
   - repo: deepin-community/netcdf
     order: 1
     tagsha: fd7805c662bcada8f0c8e76eada44d7b95d7d403
+  - repo: deepin-community/heimdal
+    order: 0
+    tagsha: dd06d2a76510b45090487e90bcb4ba02bd4d7da0
+  - repo: deepin-community/assimp
+    order: 0
+    tagsha: 93f5ceb9bbbec9dd5d8786ca5610268b88abf415
+  - repo: deepin-community/linux-atm
+    order: 0
+    tagsha: 45ff5cf854a325fa9000f8b733e0dc09f261901d
+  - repo: deepin-community/cups
+    order: 0
+    tagsha: 55385ab439b7f06bd62ab6c3c81096a509c387cc
+  - repo: deepin-community/fltk1.3
+    order: 0
+    tagsha: 96709a62622350aa5254044dd90024ea6d08ae72
+  - repo: deepin-community/trilinos
+    order: 0
+    tagsha: b5ac832c3afc035905e78af98e407453891ea059
+
 timestamp: 1692786153
