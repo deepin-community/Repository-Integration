@@ -4,4 +4,9 @@ repos:
   - repo: linuxdeepin/dde-file-manager
     order: 0
     tagsha: 06694e86e5a1bf93bc6e93a0e10741e3babacae3
+
+  - repo: linuxdeepin/util-dfm
+    order: 0
+    tag: 1.2.15
+    
 timestamp: 1692848879947
