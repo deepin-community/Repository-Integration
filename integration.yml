@@ -27,7 +27,7 @@ repos:
     tagsha: 55385ab439b7f06bd62ab6c3c81096a509c387cc
   - repo: deepin-community/fltk1.3
     order: 0
-    tagsha: 96709a62622350aa5254044dd90024ea6d08ae72
+    tagsha: 41e7ebbbc93136090302ca5f19024c85152a23a3
   - repo: deepin-community/trilinos
     order: 0
     tagsha: b5ac832c3afc035905e78af98e407453891ea059
