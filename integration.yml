@@ -1,7 +1,36 @@
-message: Integrated for V23-Beta2
+# Required
+message: |
+  Integrated for V23-Beta2
+# Not required, now default is V23-Beta2
 milestone: V23-Beta2
-repos:
-  - repo: linuxdeepin/deepin-font-manager
+# Required
+repos: 
+  # Required
+  - repo: linuxdeepin/dtkcommon
+    tag: 5.6.16
     order: 0
-    tagsha: 7c5718cb4eadad091625c423aca2984c0f615245
-timestamp: 1686040539758
+    tagsha: ''
+  - repo: linuxdeepin/dtkcore
+    tag: 5.6.16
+    order: 0
+    tagsha: ''
+  - repo: linuxdeepin/dtkgui
+    tag: 5.6.16
+    order: 0
+    tagsha: ''
+  - repo: linuxdeepin/dtkwidget
+    tag: 5.6.16
+    order: 0
+    tagsha: ''
+  - repo: linuxdeepin/dtkdeclarative
+    tag: 5.6.16
+    order: 0
+    tagsha: ''
+  - repo: linuxdeepin/qt5integration
+    tag: 5.6.16
+    order: 0
+    tagsha: ''
+  - repo: linuxdeepin/qt5platform-plugins
+    tag: 5.6.16
+    order: 0
+    tagsha: ''
