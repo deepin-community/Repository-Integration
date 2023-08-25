@@ -34,5 +34,20 @@ repos:
   - repo: deepin-community/valgrind
     order: 0
     tagsha: 0677a6666287947fe1599db303d1644cdf75942a
+  - repo: deepin-community/gloox
+    order: 0
+    tagsha: cb51cd69e3c4f57b79d8d293d68cb2780926fd74
+  - repo: deepin-community/nfs-utils
+    order: 0
+    tagsha: 81382c1a3896c41567e0ed909e5431c19e49eb4a
+  - repo: deepin-community/ismrmrd
+    order: 0
+    tagsha: 15f3c0c3a1527296bcaa1b7c63dcd11f1cdff476
+  - repo: deepin-community/libstrophe
+    order: 0
+    tagsha: 02317390480a4ee583c39da925c15f1bc8a0db23
+  - repo: deepin-community/loudmouth
+    order: 0
+    tagsha: 2569e7133139515acd365463049c22d077f98fdb
 
 timestamp: 1692786153
