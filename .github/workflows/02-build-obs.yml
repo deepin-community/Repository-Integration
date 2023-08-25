@@ -182,3 +182,4 @@ jobs:
           pkgname="${{ needs.build.outputs.pkgname }}"
           osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
           if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ];then osc buildlog testing ${ARCH}; else echo "${ARCH} build excluded"; fi
+          if [[ -z $(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'succeeded' ) ]]; then echo "${ARCH} build failed" && -1; else echo "${ARCH} build succeeded"; fi
