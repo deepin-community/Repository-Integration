@@ -31,5 +31,8 @@ repos:
   - repo: deepin-community/trilinos
     order: 0
     tagsha: b5ac832c3afc035905e78af98e407453891ea059
+  - repo: deepin-community/valgrind
+    order: 0
+    tagsha: 0677a6666287947fe1599db303d1644cdf75942a
 
 timestamp: 1692786153
