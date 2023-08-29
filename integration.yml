@@ -49,5 +49,11 @@ repos:
   - repo: deepin-community/loudmouth
     order: 0
     tagsha: 2569e7133139515acd365463049c22d077f98fdb
+  - repo: deepin-community/dot2tex
+    order: 0
+    tagsha: c42e127bf82d2f6b8b5328e2c608685b85efe410
+  - repo: deepin-community/ecbuild
+    order: 0
+    tagsha: e61fa1cee837a3d106feee36e300f39bb8b1fad2
 
 timestamp: 1692786153
