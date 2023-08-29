@@ -115,7 +115,7 @@ jobs:
       title: "[Deepin Integration]~[${{ needs.parsec_integration.outputs.milestone }}] ${{ needs.parsec_integration.outputs.integration_message }}"
       status: "In progress"
       milestone: ${{ needs.parsec_integration.outputs.milestone }}
-      labels: Project:integrated
+      labels: ${{ needs.parsec_integration.outputs.labels }}
       integrationinfo: ${{ needs.parsec_integration.outputs.integrationinfo }}
       changelog: ${{ needs.parsec_integration.outputs.changelog }}
       influence: ${{ needs.parsec_integration.outputs.influence }}
