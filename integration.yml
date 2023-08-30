@@ -1,17 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: >-
+  feat: Implementations of graphical tool to diff and merge files by
+  boulevard-h@deepin-community/meld
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+repos:
+  - repo: deepin-community/meld
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: e3a9d39fe3e996e91c30a5dd9f1ff9b87f7cebad
+timestamp: 1693376109455
