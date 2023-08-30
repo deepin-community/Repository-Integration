@@ -5,10 +5,9 @@ repos:
   - repo: deepin-community/flit
     tag: 3.9.0-1
     order: 0
-# community
-#  - repo: deepin-community/flit-scm
-#    tag: 1.6.2-1
-#    order: 0
+  - repo: deepin-community/flit-scm
+    tag: 1.6.2-1
+    order: 0
   - repo: deepin-community/fonttools
     tagsha: 'b793f0557432868adb6ed9d85e51437577121935'
     order: 0
