@@ -1,17 +1,14 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: 'chore: new tag by Decodetalkers@linuxdeepin/deepin-deepinid-plugin'
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+repos:
+  - repo: linuxdeepin/dde-control-center
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: a6120684e97acc2e418ed985858afa30a3b8ad84
+  - repo: linuxdeepin/deepin-deepinid-client
+    order: 0
+    tagsha: 954099524c7778310a143a3eeb091cb04c0c7aaa
+  - repo: linuxdeepin/deepin-deepinid-plugin
+    order: 0
+    tagsha: e6bfdf387b01fd38320edd6eb1cb410a24361982
+topic: control-center
+timestamp: 1693359972140
