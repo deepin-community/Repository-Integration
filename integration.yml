@@ -1,17 +1,17 @@
 # Required
-message: |
+message: fix pcie id error |
   Integrated for V23-Beta2
 # Not required, now default is V23-Beta2
 milestone: V23-Beta2
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
+  - repo: deepin-community/pci.ids
     # Not required
-    tag: 5.11.22
+    tag: 0.0_2023.07.30-1
     # Not required
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+
+  - repo: deepin-community/pciutils
+    order: 0
+    tagsha: "16308b150c4811b51ada1b0ef0e4066bc153287d"
