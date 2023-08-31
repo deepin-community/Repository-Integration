@@ -55,5 +55,9 @@ repos:
   - repo: deepin-community/ecbuild
     order: 0
     tagsha: e61fa1cee837a3d106feee36e300f39bb8b1fad2
+  - repo: deepin-community/dh-lua
+    order: 0
+    tag: 29
+
 
 timestamp: 1692786153
