@@ -1,17 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: 'chore: bump version 6.0.20 by tsic404@linuxdeepin/dde-dock'
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+repos:
+  - repo: linuxdeepin/dde-dock
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: 67c0f3d4fafc0385a150baef08a2c018d6d23cd8
+timestamp: 1692927864626
