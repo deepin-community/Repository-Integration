@@ -20,6 +20,9 @@ repos:
   - repo: deepin-community/fonts-atarismall
     tag: 2.2-5
     order: 1
+  - repo: deepin-community/fonts-agave
+    tagsha: '2f707256a64c3b4f08a23e3ee7648a6be9d908ad'
+    order: 1
   - repo: deepin-community/cool-retro-term
     tag: 1.2.0+ds2-1
     order: 2
