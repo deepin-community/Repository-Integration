@@ -1,17 +1,28 @@
-# Required
 message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+  Integrated for cool-retro-term
 milestone: V23-Beta2
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: deepin-community/vfit
+    tag: 2.1.0-3
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/qmltermwidget
+    tag: 0.2+git20220109.6322802-2
+    order: 0
+  - repo: deepin-community/3270font
+    tag: 3.0.1-1
+    order: 1
+  - repo: deepin-community/fonts-homecomputer
+    tag: 1.0-2
+    order: 1
+  - repo: deepin-community/fonts-pc
+    tag: 1.0-2
+    order: 1
+  - repo: deepin-community/fonts-atarismall
+    tag: 2.2-5
+    order: 1
+  - repo: deepin-community/fonts-agave
+    tagsha: '2f707256a64c3b4f08a23e3ee7648a6be9d908ad'
+    order: 1
+  - repo: deepin-community/cool-retro-term
+    tag: 1.2.0+ds2-1
+    order: 2
