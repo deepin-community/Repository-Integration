@@ -5,7 +5,7 @@ repos:
   - repo: deepin-community/vfit
     tag: 2.1.0-3
     order: 0
-  - repo: deepin-community/qml-module-termwidget
+  - repo: deepin-community/qmltermwidget
     tag: 0.2+git20220109.6322802-2
     order: 0
   - repo: deepin-community/3270font
