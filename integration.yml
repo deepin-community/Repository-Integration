@@ -1,17 +1,46 @@
-# Required
 message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+  Integrated for V23-Beta2: add package nexttrace
 milestone: V23-Beta2
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: deepin-community/golang-github-gorilla-websocket
+    tag: 1.5.0-2
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/golang-github-akamensky-argparse
+    tag: 1.4.0-1-0deepin1
+    order: 0
+  - repo: deepin-community/golang-github-pelletier-go-buffruneio
+    tagsha: '66e78837649d978968b15401878428968bc068f5'
+    order: 0
+  - repo: deepin-community/golang-github-oschwald-maxminddb-golang
+    tag: 1.8.0-1
+    order: 0
+  - repo: deepin-community/golang-gocapability
+    tag: 0.0+git20200815.42c35b4-2
+    order: 0
+  - repo: deepin-community/golang-github-tidwall-pretty
+    tag: 1.0.5-1
+    order: 0
+  - repo: deepin-community/golang-github-tidwall-match
+    tag: 1.1.1-2
+    order: 0
+  - repo: deepin-community/golang-github-mattn-go-runewidth
+    tag: 0.0.14-1
+    order: 1
+  - repo: deepin-community/golang-github-rivo-uniseg
+    tag: 0.4.2-1
+    order: 0
+  - repo: deepin-community/gopacket
+    tag: 1.1.19-3
+    order: 0
+  - repo: deepin-community/golang-github-tidwall-gjson
+    tag: 1.14.4-2
+    order: 1
+  - repo: deepin-community/golang-github-rodaine-table
+    tag: 1.1.0-1-0deepin1
+    order: 2
+  - repo: deepin-community/golang-github-lionsoul2014-ip2region-v1.0-binding-golang-ip2region
+    tag: 2.11.2-1-0deepin1
+    order: 0
+  - repo: deepin-community/nexttrace
+    tagsha: '4dc83d2d797f55add8661a63334a0084fdfccf80'
+    order: 3
