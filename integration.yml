@@ -1,17 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: 2023.08.07 by UTsweetyfish@linuxdeepin/default-settings
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+repos:
+  - repo: linuxdeepin/default-settings
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: 4f6467b2aa0585dae99a4b15aa3d3ac8f2aac559
+timestamp: 1691379554699
