@@ -8,7 +8,7 @@ repos:
   - repo: deepin-community/qml-module-termwidget
     tag: 0.2+git20220109.6322802-2
     order: 0
-  - repo: deepin-community/3270fonts
+  - repo: deepin-community/3270font
     tag: 3.0.1-1
     order: 1
   - repo: deepin-community/fonts-homecomputer
