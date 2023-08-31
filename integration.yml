@@ -63,16 +63,6 @@ repos:
     order: 0
     tagsha: "c515278d72d798e340f3e2999c313d95e794b334" 
 
-  - repo: deepin-community/mypy
-    tag: 
-    order: 0
-    tagsha: "811405ec34c290d85450eac17cabfcbb4d5b3831" 
-
-  - repo: deepin-community/python-nacl
-    tag: 
-    order: 0
-    tagsha: "8ee7d886b1ddd3ba9cd72db75cb1380dfe61f5fd" 
-
   - repo: deepin-community/netifaces
     tag: 
     order: 0
