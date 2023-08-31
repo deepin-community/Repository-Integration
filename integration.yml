@@ -1,17 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: >-
+  fix: Display issues with the right-click menu of the LineEdit in the … by
+  LiHua000@linuxdeepin/dde-device-formatter
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+repos:
+  - repo: linuxdeepin/dde-device-formatter
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tag: 0.0.1.15
+timestamp: 1691039986095
