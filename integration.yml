@@ -34,9 +34,6 @@ repos:
   - repo: deepin-community/valgrind
     order: 0
     tagsha: 0677a6666287947fe1599db303d1644cdf75942a
-  - repo: deepin-community/gloox
-    order: 0
-    tagsha: cb51cd69e3c4f57b79d8d293d68cb2780926fd74
   - repo: deepin-community/nfs-utils
     order: 0
     tagsha: 81382c1a3896c41567e0ed909e5431c19e49eb4a
