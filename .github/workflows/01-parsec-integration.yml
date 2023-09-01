@@ -57,6 +57,9 @@ on:
       milestone:
         description: integration milestone
         value: ${{ jobs.parsec_integration.outputs.milestone }}
+      labels:
+        description: integration repos with issue labels
+        value: ${{ jobs.parsec_integration.outputs.labels }}
 
 jobs:
   parsec_integration:
@@ -81,6 +84,7 @@ jobs:
       changelog: ${{ steps.parsec_integration.outputs.changelog }}
       influence: ${{ steps.parsec_integration.outputs.influence }}
       milestone: ${{ steps.parsec_integration.outputs.milestone }}
+      labels: ${{ steps.illegal_repo_tags.outputs.labels }}
 
     steps:
       - name: checkout_pull_request
@@ -108,6 +112,7 @@ jobs:
           maxSize = os.environ.get("MAX_TASKS", 10)
           illegalTags = []
           illegalRepos = []
+          noChangelogs = []
 
           permissions = None
           with open("permissions.yml") as permissions_file:
@@ -139,6 +144,20 @@ jobs:
                   output.write(name + "<<EOF\n")
                   output.write(value)
                   output.write('\nEOF\n')
+
+          def check_changelog_changed(repo, commitortag):
+            rawurl = "https://api.github.com/repos/{repo}/commits/{commit}".format(repo=repo, commit=commitortag)
+            res = requests.get(rawurl.replace("+", "%2B"), headers=header)
+            if res.status_code == 200:
+              files = res.json()["files"]
+              #print(files)
+              for file in files:
+                if file["filename"] == "debian/changelog":
+                  return True
+              return False
+            else:
+              print("Warn: get changelog files failed!!!")
+              return False
 
           def read_changelog(repo, commitortag):
             rawurl = "https://api.github.com/repos/{repo}/contents/debian/changelog?ref={commit}".format(repo=repo, commit=commitortag)
@@ -209,12 +228,16 @@ jobs:
                   integrationInfos.append("%s | [%s](https://github.com/%s/tree/%s)" % (name, version, fullreponame, tag))
                   changelogs.append(changelog)
                   influences.append(influence)
+                  if not check_changelog_changed(fullreponame, tag):
+                    noChangelogs.append({"repo": fullreponame, "tag": tag, "tagsha": tagsha})
                 elif tagsha and tagsha != "" and len(tagsha) > 0:
                   name, version, changelog, influence = read_changelog(fullreponame, tagsha)
                   #print("tagsha: ", name, version, changelog, influence)
                   integrationInfos.append("%s | [%s](https://github.com/%s/commit/%s)" % (name, version, fullreponame, tagsha))
                   changelogs.append(changelog)
                   influences.append(influence)
+                  if not check_changelog_changed(fullreponame, tagsha):
+                    noChangelogs.append({"repo": fullreponame, "tag": tagsha, "tagsha": tagsha})
                 if tagsha == "" and len(tagsha) <= 0 and tag == "" and len(tag) <= 0:
                   illegalTags.append({"repo": fullreponame, "tag": tag, "tagsha": tagsha})
                 allBuildTasks[order].get("data").get("payload").append(repo)
@@ -245,6 +268,11 @@ jobs:
               else:
                   set_output("illegal_repos", "undefined")
 
+              if len(noChangelogs) > 0:
+                  set_output("no_changelogs", str(noChangelogs))
+              else:
+                  set_output("no_changelogs", "undefined")
+
               allRepos = []
               for order in allBuildTasks:
                   for repo in order.get("data").get("payload"):
@@ -267,6 +295,8 @@ jobs:
             const COMMENT_HEAD = "**" + BOT_NAME + "**\n\n"
             illegal_tags = ${{ steps.parsec_integration.outputs.illegal_tags }}
             illegal_repos = ${{ steps.parsec_integration.outputs.illegal_repos }}
+            no_changelogs = ${{ steps.parsec_integration.outputs.no_changelogs }}
+            core.setOutput('labels', "Project:integrated")
             let COMMENT_BODY = ""
             if ( illegal_tags !== undefined || illegal_repos !== undefined ) {
               if ( illegal_tags !== undefined ) {
@@ -283,6 +313,13 @@ jobs:
                     COMMENT_BODY += "|" + repo + "|\n"
                   })
               }
+            } else if ( no_changelogs !== undefined ) {
+              core.setOutput('labels', "Project:Pre-integrated")
+              COMMENT_BODY += "Listed repo integration are not modified changelog: \n|repo|tagOrsha|\n|-|-|\n"
+              no_changelogs.forEach(tag => {
+                COMMENT_BODY += "|" + tag["repo"] + "|" + tag["tag"] + "|\n"
+              })
+              COMMENT_BODY += "\n"
             } else {
               COMMENT_BODY = "All repo and tag pairs check passed!"
             }
