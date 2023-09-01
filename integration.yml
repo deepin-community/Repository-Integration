@@ -1,17 +1,13 @@
-# Required
 message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+  Integrated for prismlauncher
 milestone: V23-Beta2
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: deepin-community/tomlplusplus
+    tag: 3.3.0+ds-1
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/libquazip1-qt6
+    tag: 1.4-1
+    order: 0
+  - repo: deepin-community/prismlauncher
+    tag: 7.2+ds-1deepin1
+    order: 1
