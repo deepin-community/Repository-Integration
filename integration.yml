@@ -1,17 +1,10 @@
-# Required
 message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+  Integrated for cataclysm
 milestone: V23-Beta2
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: deepin-community/architecture-properties
+    tag: 0.1.1
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/cataclysm-dda
+    tagsha: '24ba5bda67b5ad3d4a06fa05bbd752b9eb6d3520'
+    order: 1
