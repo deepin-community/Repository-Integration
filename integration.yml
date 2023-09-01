@@ -57,7 +57,8 @@ repos:
     tagsha: e61fa1cee837a3d106feee36e300f39bb8b1fad2
   - repo: deepin-community/dh-lua
     order: 0
-    tag: 29
+    tagsha: be7657ec15ee586e8eab715cbfa4b12c29f1e40a
+
 
 
 timestamp: 1692786153
