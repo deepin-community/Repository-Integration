@@ -5,13 +5,87 @@ message: |
 milestone: V23-Beta2
 # Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: deepin-community/qt6-3d
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: "9ea95b9f8559583c3b8120df233680351cf1460f"
+  - repo: deepin-community/qt6-5compat
+    order: 0
+    tagsha: "738d9fde3817161d70d0ae70cf6b7012ab1feaf9"
+  - repo: deepin-community/qt6-base
+    order: 0
+    tagsha: "62d5f4050c2c7741ee391d68a92f7595c0a140b6"
+  - repo: deepin-community/qt6-charts
+    order: 0
+    tagsha: "455454109403ffa27998f309de72a03ecf7d5e86"
+  - repo: deepin-community/qt6-connectivity
+    order: 0
+    tagsha: "1713b46f8db8c3f60c597ed029a3662c93a8917f"
+  - repo: deepin-community/qt6-datavis3d
+    order: 0
+    tagsha: "5302fadfd68eec805c049b85641175c5b2d19b5d"
+  - repo: deepin-community/qt6-declarative
+    order: 0
+    tagsha: "2555c6dadafca4619063a94cf4f719ac94219e24"
+  - repo: deepin-community/qt6-imageformats
+    order: 0
+    tagsha: "320114fc53720ffd6dac645e29a3140df5e22730"
+  - repo: deepin-community/qt6-languageserver
+    order: 0
+    tagsha: "163bed1acd5ed7d1b4b223ced8636d6e73494b56"
+  - repo: deepin-community/qt6-lottie
+    order: 0
+    tagsha: "165a2ef7d17eecf072941364710b949aed70eeb8"
+  - repo: deepin-community/qt6-multimedia
+    order: 0
+    tagsha: "d939d6174a704b3efffe4bf561471b88b94ed0fb"
+  - repo: deepin-community/qt6-networkauth
+    order: 0
+    tagsha: "718a22060255f77d67bcbc29b4674541946ca873"
+  - repo: deepin-community/qt6-positioning
+    order: 0
+    tagsha: "e1679595f1e1f6a1d104942b4ec5d0915a2926c1"
+  - repo: deepin-community/qt6-quick3d
+    order: 0
+    tagsha: "9aaa11c50f261895c7b4e6aec8f80f69a479dd5f"
+  - repo: deepin-community/qt6-quicktimeline
+    order: 0
+    tagsha: "32dafcd0405257dc80fccf5fdcfe46e294d1f7f3"
+  - repo: deepin-community/qt6-remoteobjects
+    order: 0
+    tagsha: "84a7e206b653e7c04b2a12af7f9012ddd8e73c2e"
+  - repo: deepin-community/qt6-scxml
+    order: 0
+    tagsha: "da6b86d3e184ecbf8e515015262e09610a0d277f"
+  - repo: deepin-community/qt6-sensors
+    order: 0
+    tagsha: "dc9a166b8b1cd841bbc7a4be6c09638caf8a68c7"
+  - repo: deepin-community/qt6-serialbus
+    order: 0
+    tagsha: "c4d9db1fba8e09c34048b44adf86f74cad3af7a4"
+  - repo: deepin-community/qt6-serialport
+    order: 0
+    tagsha: "06a079f281f6b4d65bc7dc1bdd4702f355098542"
+  - repo: deepin-community/qt6-shadertools
+    order: 0
+    tagsha: "f43ebe475dac9d396da44ac8123c155ded1ae6a1"
+  - repo: deepin-community/qt6-svg
+    order: 0
+    tagsha: "b552a4f344c61de1b8ea2f056f089419d86bda4c"
+  - repo: deepin-community/qt6-tools
+    order: 0
+    tagsha: "b8b70b298f86f6b5ecbbcc6cf41f64bf5a420759"
+  - repo: deepin-community/qt6-translations
+    order: 0
+    tagsha: "e6ac34af0401c341841cfdc09bd204c2d9f124d1"
+  - repo: deepin-community/qt6-virtualkeyboard
+    order: 0
+    tagsha: "a13ab9cdb68754f3bc0556f1d9325a1add34de0b"
+  - repo: deepin-community/qt6-wayland
+    order: 0
+    tagsha: "a989084d1f0dcabba72192e0da512b7a1225019c"
+  - repo: deepin-community/qt6-webchannel
+    order: 0
+    tagsha: "41974a04a0a23cb371a039f780df7405858e5f23"
+  - repo: deepin-community/qt6-websockets
+    order: 0
+    tagsha: "0ad481c892b4a5c826d0da76c93449e4743682fd"
