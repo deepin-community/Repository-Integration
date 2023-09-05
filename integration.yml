@@ -41,7 +41,7 @@ repos:
   - repo: deepin-community/ecmwflibs
     tag: 
     order: 0
-    tagsha: "9e014d1dd2ab78b510ac60ad2def065c94808e53"  
+    tagsha: "13bfc7630652fe4317417353bfe673070084bdce"  
 
   - repo: deepin-community/hamlib
     tag: 
