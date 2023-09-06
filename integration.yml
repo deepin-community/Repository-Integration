@@ -104,10 +104,9 @@ repos:
   - repo: deepin-community/python-pytest-benchmark
     tag: 3.2.2-4
     order: 0
-# community
-#  - repo: deepin-community/python-tomli-w
-#    tag: 1.0.0-2
-#    order: 0
+  - repo: deepin-community/python-tomli-w
+    tagsha: 'c8e128ea3f2859538ff3d126fc831c4ef4788eec'
+    order: 0
   - repo: deepin-community/python-tomlkit
     tag: 0.11.7-1
     order: 0
