@@ -118,7 +118,7 @@ repos:
     tag: 66.1.1-1
     order: 0
   - repo: deepin-community/setuptools-scm
-    tag: 7.1.0-4
+    tagsha: 'c6db811c7d10e51f8cebdf0af4cef76ef427d317'
     order: 0
   - repo: deepin-community/sphinx-basic-ng
     tag: 1.0.0_beta1-3
