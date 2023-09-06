@@ -137,10 +137,9 @@ repos:
   - repo: deepin-community/tox
     tag: 3.28.0-2
     order: 0
-# community
-#  - repo: deepin-community/trove-classifiers
-#    tag: 2023.7.6-1
-#    order: 0
+  - repo: deepin-community/trove-classifiers
+    tagsha: 'f04d52f13289c3a982b92e775e47c05656e435d2'
+    order: 0
   - repo: deepin-community/ufolib2
     tag: 0.14.0+dfsg1-1
     order: 0
