@@ -113,6 +113,9 @@ repos:
   - repo: deepin-community/python-unicodedata2
     tag: 14.0.0+ds2-1
     order: 0
+  - repo: deepin-community/python-virtualenv
+    tag: 20.23.0+ds-2
+    order: 0
   - repo: deepin-community/setuptools
     tag: 66.1.1-1
     order: 0
