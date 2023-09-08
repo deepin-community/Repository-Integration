@@ -1,17 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: >-
+  chore: release dcc-insider-plugin 0.0.1 by
+  BLumia@linuxdeepin/dcc-insider-plugin
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+repos:
+  - repo: linuxdeepin/dcc-insider-plugin
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: d6a5194c1776d10e4726df8d0b0c15fff3fa2041
+timestamp: 1694155519977
