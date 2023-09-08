@@ -11,3 +11,5 @@ repos:
       tagsha: 5cbc82f9e523a47394dcc7804374597260819b2d
     - repo: peeweep-test/template-repository
       tagsha: 5ff421da2876fe8ec0490e93f6b0fb31ec45ed6d
+    - repo: peeweep-test/Repository-Integration
+      tagsha: 7455b55349e26d2b7c330a10e0f9bb55a0ab60cb
