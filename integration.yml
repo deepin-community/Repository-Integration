@@ -5,3 +5,9 @@ repos:
       tagsha: 8e3dd66d7a09206971abdcdfe9182fd13bed46f8
     - repo: peeweep-test/dtk6core
       tagsha: d73b503a683dd1004c9fb01ff5c500988e54efd4
+    - repo: peeweep-test/dtk6core
+      tagsha: db358b9da3d40c99cdd5da50111aaa3c8f77e5d2
+    - repo: peeweep-test/iptsd
+      tagsha: 5cbc82f9e523a47394dcc7804374597260819b2d
+    - repo: peeweep-test/template-repository
+      tagsha: 5ff421da2876fe8ec0490e93f6b0fb31ec45ed6d
