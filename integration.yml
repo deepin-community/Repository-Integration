@@ -149,4 +149,27 @@ repos:
   - repo: deepin-community/wheel
     tag: 0.38.4-2
     order: 0
- 
+  - repo: deepin-community/gdal
+    tagsha: '397ebe7dca0353f817360d7e994aaba2c5f6bf6a'
+    order: 0
+  - repo: deepin-community/libgeotiff
+    tagsha: 'd5a7e9f0460ee679fdf0a3a3f9bfeb869fcee0e8'
+    order: 0
+  - repo: deepin-community/magicsplusplus
+    tagsha: '88ab5d51f2ea598f8d22cd912ecead37867b3b20'
+    order: 0
+  - repo: deepin-community/proj
+    tagsha: '292a1e53ae634ea33ceec0a35dfc6b072b80054d'
+    order: 0
+  - repo: deepin-community/python-cartopy
+    tagsha: '90b2f5495fb5bfd1f184a19beea116726a77b046'
+    order: 0
+  - repo: deepin-community/python-pyproj
+    tagsha: '7cd829032c9764f5facd9e25fcfa66d531fe4f01'
+    order: 0
+  - repo: deepin-community/spatialite
+    tagsha: '25dc74619e01cb2125cd08df605e429b5770621d'
+    order: 0
+  - repo: deepin-community/vtk9
+    tagsha: '8a8e63919469c5383702c17bfde52f5d51c528e6'
+    order: 0
