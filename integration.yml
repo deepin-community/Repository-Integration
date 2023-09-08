@@ -1,3 +1,5 @@
 message: 'Auto integrate from topic: project1 by @hudeng-go'
 milestone: V23-Beta2
-repos: []
+repos:
+    - repo: peeweep-test/dtk6core
+      tagsha: 8e3dd66d7a09206971abdcdfe9182fd13bed46f8
