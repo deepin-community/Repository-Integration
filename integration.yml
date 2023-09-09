@@ -89,3 +89,8 @@ repos:
   - repo: deepin-community/qt6-websockets
     order: 0
     tagsha: "0ad481c892b4a5c826d0da76c93449e4743682fd"
+  # Rebuild fcitx5-qt against qt6
+  - repo: deepin-community/fcitx5-qt
+    order: 0
+    tagsha: "f1c5fbf1d6e732a35eceea8ddd40cef4d388193d"
+
