@@ -55,7 +55,12 @@ repos:
   - repo: deepin-community/dh-lua
     order: 0
     tagsha: be7657ec15ee586e8eab715cbfa4b12c29f1e40a
-
+  - repo: deepin-community/chrony
+    order: 0
+    tagsha: c712d9b4ca7f6b8703543e82e412b08d5cb35099
+  - repo: deepin-community/openldap
+    order: 0
+    tagsha: e5d9310cfb9db37f2984dc7dfc835a9e45cd024f
 
 
 timestamp: 1692786153
