@@ -59,7 +59,7 @@ jobs:
                 issue_number: context.issue.number
               })
               const reg = new RegExp("\\*+" + BOT_NAME + "\\*+")
-              botComment= response.data.find(comment => comment.body.match(reg))
+              botComment = response.data.find(comment => comment.body.match(reg))
 
               if (botComment) {
                 // get issue id
@@ -67,8 +67,16 @@ jobs:
                 core.debug(botComment)
                 // console.log(comments.length)
                 if (comments.length > 3) {
-                  issueid = comments[2].replace("IssueID: ", "")
-                  projectItemID = comments[3].replace("ProjectItemID: ", "")
+                  id = comments[2].replace("IssueID: ", "")
+                  const res = await github.rest.issues.get({
+                    owner: "linuxdeepin",
+                    repo: "developer-center",
+                    issue_number: id
+                  })
+                  if (res.data.state != "closed") {
+                    issueid = id
+                    projectItemID = comments[3].replace("ProjectItemID: ", "")
+                  }
                 }
               }
             }
