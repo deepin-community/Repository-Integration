@@ -1,17 +1,31 @@
-# Required
 message: |
   Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
 milestone: V23-Beta2
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+  - repo: deepin-community/debiandoc-sgml
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: "83b820aaba0712fc8694349fcbdb7a38007c3926"
+  
+  - repo: deepin-community/mono
+    order: 1
+    tagsha: "501007f5987452e564957d7ca8cf397c9f1c120c"
+
+  - repo: deepin-community/gi-docgen
+    order: 2
+    tagsha: "1f3122719be29db5306292d3129f13cf3d51217b"
+
+  - repo: deepin-community/gdk-pixbuf
+    order: 3
+    tagsha: "677da43c5925f6f309aac9e87dc6a6b8405086a6"
+
+  - repo: deepin-community/gtk-sharp2
+    order: 4
+    tagsha: "a83783a917863b8ce6dc9c5bfded551d7ac95ed8"
+
+  - repo: deepin-community/gtk-sharp3
+    order: 5
+    tagsha: "7ab47ad99486dcb80568eb653e40f272ec98cf07"
+
+  - repo: deepin-community/libayatana-appindicator
+    order: 6
+    tagsha: "174b30329455ba35d4049944486073a8c35bf82a"
