@@ -1,6 +1,9 @@
 message: 'feat: update gcc-11 to 11.4.0 by UTsweetyfish@deepin-community/gcc-11'
 milestone: V23-Beta2
 repos:
+  - repo: deepin-community/gcc-12
+    order: 0
+    tagsha: c7896e35d4535e64d002189bfee60ffc50673fe8
   - repo: deepin-community/gcc-11
     order: 0
     tagsha: 3ccddac487a6af4a691bcc6c74c155452f422bfb
