@@ -4,4 +4,7 @@ repos:
   - repo: deepin-community/libsdl2
     order: 0
     tagsha: d825e7f0a8c0bf84e82ad2849157930fec62fb55
-timestamp: 1694741026635
+  - repo: deepin-community/libdecor-0
+    order: 0
+    tagsha: 7c59583611307f3fe8d7bb5eafd1d6ce9ff88cd3
+
