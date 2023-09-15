@@ -1,3 +1,5 @@
 message: 'Auto integrate from topic: project-beta1 by @hudeng-go'
 milestone: V23-Beta2
-repos: []
+repos:
+    - repo: peeweep-test/iptsd
+      tagsha: 5cbc82f9e523a47394dcc7804374597260819b2d
