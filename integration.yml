@@ -1,17 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: 'Auto integrate from topic: neovim by @xzl01'
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
-    order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libvterm
+      tagsha: 895fcf64c420544a3b4379e6b35bfdb981bef951
+    - repo: deepin-community/neovim
+      tagsha: 11e3106a5f2b53a29f17e8de0caebb948aac4eae
+    - repo: deepin-community/python-pynvim
+      tagsha: 14d5640c8224ef82644213cae5990a709b418a48
+    - repo: deepin-community/tree-sitter
+      tagsha: 0d26ec4dcefd4ee0bbfbb6f51e4289cad055573e
