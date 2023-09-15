@@ -1,8 +1,6 @@
 message: 'Auto integrate from topic: neovim by @xzl01'
 milestone: V23-Beta2
 repos:
-    - repo: deepin-community/libvterm
-      tagsha: 895fcf64c420544a3b4379e6b35bfdb981bef951
     - repo: deepin-community/neovim
       tagsha: 11e3106a5f2b53a29f17e8de0caebb948aac4eae
     - repo: deepin-community/python-pynvim
