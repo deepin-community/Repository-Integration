@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: neovim by @xzl01'
 milestone: V23-Beta2
 repos:
     - repo: deepin-community/neovim
-      tagsha: 11e3106a5f2b53a29f17e8de0caebb948aac4eae
+      tagsha: 4c0aea679d66dbac2a700b8ca8a8f356a0c441ef
     - repo: deepin-community/python-pynvim
       tagsha: 14d5640c8224ef82644213cae5990a709b418a48
     - repo: deepin-community/tree-sitter
