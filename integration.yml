@@ -3,5 +3,5 @@ milestone: V23-Beta2
 repos:
   - repo: deepin-community/fcitx5-pinyin-zhwiki
     order: 0
-    tagsha: b2ab83a9969625faab8c9602c94419ca4417ddc7
+    tagsha: 5a74b580162fe9476ead8e624cae5974e60d5232
 timestamp: 1695006007003
