@@ -1,17 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
-milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+message: 'Bump verson: 1.31 -> 1.32 by wineee@deepin-community/wayland-protocols'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/wayland-protocols
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: 325facd57c7b344d92e1f83e7df77d530a86f052
+timestamp: 1695107949989
