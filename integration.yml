@@ -7,5 +7,3 @@ repos:
       tagsha: 03833cdb61bd208f9a4cc231f01c8b9ac54bc9f0
     - repo: deepin-community/libdisplay-info
       tagsha: 6d0867fd0801ce8eadc206b11e753d4d84a2cd03
-    - repo: deepin-community/wayland-protocols
-      tagsha: 325facd57c7b344d92e1f83e7df77d530a86f052
