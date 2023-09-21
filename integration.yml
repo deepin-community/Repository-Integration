@@ -1,17 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
+message: 'Auto integrate from topic: wlroots-git by @justforlxz'
 milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
-    order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/wlroots-git
+      tagsha: 0bc1a4c284931ce25b0de4677a00c9d92c2efdd5
+    - repo: deepin-community/libliftoff
+      tagsha: 03833cdb61bd208f9a4cc231f01c8b9ac54bc9f0
+    - repo: deepin-community/libdisplay-info
+      tagsha: 6d0867fd0801ce8eadc206b11e753d4d84a2cd03
