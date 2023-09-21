@@ -13,4 +13,7 @@ repos:
   - repo: deepin-community/python-pefile
     order: 0
     tagsha: 6e81adf01b95a3cb4f8a10c6925fcaae0f7319cb
+  - repo: deepin-community/less
+    order: 0
+    tagsha: fbd70da5e614e0af06861a497dec8236c9ee9493
 timestamp: 1695264885120
