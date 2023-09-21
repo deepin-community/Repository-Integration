@@ -7,4 +7,7 @@ repos:
   - repo: deepin-community/package-notes
     order: 0
     tagsha: abd18916f611b56fa6b1e9a0a61f6e906a8799c3
+  - repo: deepin-community/dh-nss
+    order: 0
+    tagsha: 8f1e935c25dbff8f23539862c79e0f5300c3f5b2
 timestamp: 1695264885120
