@@ -10,4 +10,7 @@ repos:
   - repo: deepin-community/dh-nss
     order: 0
     tagsha: 8f1e935c25dbff8f23539862c79e0f5300c3f5b2
+  - repo: deepin-community/python-pefile
+    order: 0
+    tagsha: 6e81adf01b95a3cb4f8a10c6925fcaae0f7319cb
 timestamp: 1695264885120
