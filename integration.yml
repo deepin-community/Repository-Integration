@@ -1,17 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
-milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+message: 'chore: update to 254 by xzl01@deepin-community/systemd'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/systemd
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: e5b8b4aef386ed6b3b15e1b642f0f1a45ad802de
+  - repo: deepin-community/package-notes
+    order: 0
+    tagsha: abd18916f611b56fa6b1e9a0a61f6e906a8799c3
+  - repo: deepin-community/dh-nss
+    order: 0
+    tagsha: 8f1e935c25dbff8f23539862c79e0f5300c3f5b2
+  - repo: deepin-community/python-pefile
+    order: 0
+    tagsha: 6e81adf01b95a3cb4f8a10c6925fcaae0f7319cb
+  - repo: deepin-community/less
+    order: 0
+    tagsha: fbd70da5e614e0af06861a497dec8236c9ee9493
+timestamp: 1695264885120
