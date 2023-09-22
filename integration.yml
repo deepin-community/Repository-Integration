@@ -7,6 +7,9 @@ repos:
   - repo: deepin-community/freeglut
     order: 0
     tagsha: 93576d3a2075989fc7c2b93b2aad762bfb73f919
+  - repo: deepin-community/libpng1.6
+    order: 0
+    tagsha: bc75423b23470fb0e4220e7ab473bd08865d57b3
   # - repo: deepin-community/chafa
   #   order: 0
   # - repo: deepin-community/chromium
