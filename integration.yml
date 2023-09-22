@@ -7,4 +7,95 @@ repos:
   - repo: deepin-community/freeglut
     order: 0
     tagsha: 93576d3a2075989fc7c2b93b2aad762bfb73f919
+  # - repo: deepin-community/chafa
+  #   order: 0
+  # - repo: deepin-community/chromium
+  #   order: 0
+  - repo: deepin-community/efl
+    order: 0
+    tagsha: 0b7e6ac956f0acf95723828775620f5dc9554665
+  - repo: deepin-community/ffmpeg
+    order: 0
+    tagsha: 4af4847e6aa59812040d27fee49b98764e8896ee
+  - repo: deepin-community/freeimage
+    order: 0
+    tagsha: c860e50f29a435c21d9b3affa1649225592d64fb
+  - repo: deepin-community/gdal
+    order: 0
+    tagsha: 397ebe7dca0353f817360d7e994aaba2c5f6bf6a
+  # - repo: deepin-community/geeqie
+  #   order: 0
+  - repo: deepin-community/gegl
+    order: 0
+    tagsha: 0c6e6a2c51f542608f93554c6427e66f3aa3a2d0
+  # - repo: deepin-community/gimp # community
+  #   order: 0
+  #   tagsha: 835eb50fd727c7dc5384112e4310b827abbbaa90
+  - repo: deepin-community/graphicsmagick
+    order: 0
+    tagsha: 0a9ea2a7d4d1bd170867ad1a85aa0f821233e05a
+  - repo: deepin-community/graphviz
+    order: 0
+    tagsha: 9ec55a2d3077b5679b5fd3f448463ece6996e572
+  - repo: deepin-community/gst-plugins-bad1.0
+    order: 0
+    tagsha: 7891e73fb6fef17900ea7c12bd7b9abdc3774656
+  # - repo: deepin-community/imagemagick
+  #   order: 0
+  - repo: deepin-community/imlib2
+    order: 0
+    tagsha: f549bce0a94f65f29809334b3a5efc96fd2c7aee
+  - repo: deepin-community/leptonlib
+    order: 0
+    tagsha: 4d243b6f78b86b1a4c498caa8ffe46bbd5370319
+  - repo: deepin-community/libgd2
+    order: 0
+    tagsha: 04f022a7fc7a384c1614934e6d1372fee2c90188
+  # - repo: deepin-community/libreoffice
+  #   order: 0
+  - repo: deepin-community/libsdl2-image
+    order: 0
+    tagsha: 6e3bf30576cfc6bc105fd2b2655c3e0ffb717354
+  # - repo: deepin-community/opencv
+  #   order: 0
+  - repo: deepin-community/pillow
+    order: 0
+    tagsha: 8e62bb41f93a2497e3f494ff17383743d77a9649
+  - repo: deepin-community/qt6-imageformats
+    order: 0
+    tagsha: 320114fc53720ffd6dac645e29a3140df5e22730
+  # - repo: deepin-community/qt6-webengine
+  #   order: 0
+  # - repo: deepin-community/qtimageformats-opensource-src # 5.15.8
+  #   order: 0
+  - repo: deepin-community/qtwebengine-opensource-src
+    order: 0
+    tagsha: f6dd64f2fc205a09db220ceda17d0e0f4d82134c
+  - repo: deepin-community/qtwebkit-opensource-src
+    order: 0
+    tagsha: e9e8d98697e8f67ebd51d99442a1f99760695fad
+  - repo: deepin-community/sdl-image1.2
+    order: 0
+    tagsha: e244d3900800572f21f753e3e92ebc872c84a878
+  - repo: deepin-community/simple-scan
+    order: 0
+    tagsha: 82d5bfcbb429f12f6aa30221b4213f85617d4e33
+  - repo: deepin-community/tiff
+    order: 0
+    tagsha: c96bfb43f96535431809071654b019f2bac5afc2
+  - repo: deepin-community/vips
+    order: 0
+    tagsha: c9f422798e7cdefa9a1b50e3f454af389acdfb91
+  - repo: deepin-community/webkit2gtk # needs more work
+    order: 0
+    tagsha: 9e5963ca225356a35da92a57e4ecaacbbfde3755
+  - repo: deepin-community/weston
+    order: 0
+    tagsha: 1e2c0230beec04e1adbf1aa27fa632ff3be27085
+  # - repo: deepin-community/wpewebkit
+  #   order: 0
+  # - repo: deepin-community/xpra
+  #   order: 0
+
+
 timestamp: 1695398460318
