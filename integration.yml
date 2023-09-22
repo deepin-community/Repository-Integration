@@ -4,4 +4,7 @@ repos:
   - repo: deepin-community/libwebp
     order: 0
     tagsha: 36ca64ba78cacd4f641b5623d2f7926cafa0abb7
+  - repo: deepin-community/freeglut
+    order: 0
+    tagsha: 93576d3a2075989fc7c2b93b2aad762bfb73f919
 timestamp: 1695398460318
