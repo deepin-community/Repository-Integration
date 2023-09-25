@@ -41,7 +41,7 @@ repos:
     order: 0
     tagsha: 9ec55a2d3077b5679b5fd3f448463ece6996e572
   - repo: deepin-community/gst-plugins-bad1.0
-    order: 0
+    order: 1
     tagsha: 7891e73fb6fef17900ea7c12bd7b9abdc3774656
   # - repo: deepin-community/imagemagick
   #   order: 0
@@ -62,7 +62,7 @@ repos:
   # - repo: deepin-community/opencv
   #   order: 0
   - repo: deepin-community/pillow
-    order: 0
+    order: 1
     tagsha: 8e62bb41f93a2497e3f494ff17383743d77a9649
   - repo: deepin-community/qt6-imageformats
     order: 0
@@ -96,8 +96,11 @@ repos:
     order: 0
     tagsha: 9e5963ca225356a35da92a57e4ecaacbbfde3755
   - repo: deepin-community/weston
-    order: 0
+    order: 1
     tagsha: 1e2c0230beec04e1adbf1aa27fa632ff3be27085
+  - repo: deepin-community/neatvnc # build-dependency of weston
+    order: 0
+    tagsha: 0138e144f4820002022ceee3699e7114f7ee7d9d
   # - repo: deepin-community/wpewebkit
   #   order: 0
   # - repo: deepin-community/xpra
