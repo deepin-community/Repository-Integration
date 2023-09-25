@@ -110,6 +110,7 @@ repos:
   #   order: 0
   - repo: deepin-community/libjpeg-turbo
     tagsha: 1adde5ea233a907c2ea0cb0de2261afd02711676
-
+  - repo: deepin-community/ffmpeg # Rebuild against libtesseract5
+    tagsha: 4af4847e6aa59812040d27fee49b98764e8896ee
 
 timestamp: 1695398460318
