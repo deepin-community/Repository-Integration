@@ -99,10 +99,13 @@ repos:
     order: 0
     tagsha: 9e5963ca225356a35da92a57e4ecaacbbfde3755
   - repo: deepin-community/weston
-    order: 1
+    order: 2
     tagsha: 1e2c0230beec04e1adbf1aa27fa632ff3be27085
-  - repo: deepin-community/neatvnc # build-dependency of weston
+  - repo: deepin-community/aml
     order: 0
+    tagsha: 0e25a1851434166f64cb9436785dda8fff61de41
+  - repo: deepin-community/neatvnc # build-dependency of weston
+    order: 1
     tagsha: 0138e144f4820002022ceee3699e7114f7ee7d9d
   # - repo: deepin-community/wpewebkit
   #   order: 0
