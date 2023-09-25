@@ -14,9 +14,9 @@ repos:
   #   order: 0
   # - repo: deepin-community/chromium
   #   order: 0
-  - repo: deepin-community/efl
+  - repo: deepin-community/efl # PR-1
     order: 0
-    tagsha: 0b7e6ac956f0acf95723828775620f5dc9554665
+    tagsha: 91f8866325242f74512d19ab19db802cd60fe1b2
   - repo: deepin-community/ffmpeg
     order: 0
     tagsha: 4af4847e6aa59812040d27fee49b98764e8896ee
@@ -80,9 +80,12 @@ repos:
   - repo: deepin-community/sdl-image1.2
     order: 0
     tagsha: e244d3900800572f21f753e3e92ebc872c84a878
-  - repo: deepin-community/simple-scan
+  - repo: deepin-community/simple-scan # PR-1
+    order: 1
+    tagsha: c19c3e804625a0e882ded5714aab47f853b4caf9
+  - repo: deepin-community/libhandy-1 # B-Dependency of simple-scan
     order: 0
-    tagsha: 82d5bfcbb429f12f6aa30221b4213f85617d4e33
+    tagsha: 15f5f284767bdff3e892d475e626443cae5ceb9c
   - repo: deepin-community/tiff
     order: 0
     tagsha: c96bfb43f96535431809071654b019f2bac5afc2
