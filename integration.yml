@@ -155,9 +155,9 @@ repos:
   - repo: deepin-community/libgeotiff
     tagsha: 'd5a7e9f0460ee679fdf0a3a3f9bfeb869fcee0e8'
     order: 0
-  - repo: deepin-community/magicsplusplus
-    tagsha: '88ab5d51f2ea598f8d22cd912ecead37867b3b20'
-    order: 0
+#  - repo: deepin-community/magicsplusplus
+#    tagsha: '88ab5d51f2ea598f8d22cd912ecead37867b3b20'
+#    order: 0
   - repo: deepin-community/proj
     tagsha: '292a1e53ae634ea33ceec0a35dfc6b072b80054d'
     order: 0
