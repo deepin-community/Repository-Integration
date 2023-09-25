@@ -1,17 +1,119 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
-milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+message: 'fix: libwebp 1.3.2 by UTsweetyfish@deepin-community/libwebp'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/libwebp
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: 36ca64ba78cacd4f641b5623d2f7926cafa0abb7
+  - repo: deepin-community/freeglut
+    order: 0
+    tagsha: 93576d3a2075989fc7c2b93b2aad762bfb73f919
+  - repo: deepin-community/libpng1.6
+    order: 0
+    tagsha: bc75423b23470fb0e4220e7ab473bd08865d57b3
+  # - repo: deepin-community/chafa
+  #   order: 0
+  # - repo: deepin-community/chromium
+  #   order: 0
+  - repo: deepin-community/efl # PR-1
+    order: 0
+    tagsha: 91f8866325242f74512d19ab19db802cd60fe1b2
+  - repo: deepin-community/ffmpeg
+    order: 0
+    tagsha: 4af4847e6aa59812040d27fee49b98764e8896ee
+  - repo: deepin-community/freeimage
+    order: 0
+    tagsha: c860e50f29a435c21d9b3affa1649225592d64fb
+  - repo: deepin-community/gdal
+    order: 0
+    tagsha: 397ebe7dca0353f817360d7e994aaba2c5f6bf6a
+  # - repo: deepin-community/geeqie
+  #   order: 0
+  - repo: deepin-community/gegl
+    order: 0
+    tagsha: 0c6e6a2c51f542608f93554c6427e66f3aa3a2d0
+  # - repo: deepin-community/gimp # community
+  #   order: 0
+  #   tagsha: 835eb50fd727c7dc5384112e4310b827abbbaa90
+  - repo: deepin-community/graphicsmagick
+    order: 0
+    tagsha: 0a9ea2a7d4d1bd170867ad1a85aa0f821233e05a
+  - repo: deepin-community/graphviz
+    order: 0
+    tagsha: 9ec55a2d3077b5679b5fd3f448463ece6996e572
+  - repo: deepin-community/gst-plugins-bad1.0
+    order: 1
+    tagsha: 7891e73fb6fef17900ea7c12bd7b9abdc3774656
+  # - repo: deepin-community/imagemagick
+  #   order: 0
+  - repo: deepin-community/imlib2
+    order: 0
+    tagsha: f549bce0a94f65f29809334b3a5efc96fd2c7aee
+  - repo: deepin-community/leptonlib
+    order: 0
+    tagsha: 4d243b6f78b86b1a4c498caa8ffe46bbd5370319
+  - repo: deepin-community/libgd2
+    order: 0
+    tagsha: 04f022a7fc7a384c1614934e6d1372fee2c90188
+  # - repo: deepin-community/libreoffice
+  #   order: 0
+  - repo: deepin-community/libsdl2-image
+    order: 0
+    tagsha: 6e3bf30576cfc6bc105fd2b2655c3e0ffb717354
+  # - repo: deepin-community/opencv
+  #   order: 0
+  - repo: deepin-community/sphinx-inline-tabs # Build dependency of pillow
+    order: 0
+    tagsha: 066500667de3e8e0efb20e9c977058c12d1e1309
+  - repo: deepin-community/pillow
+    order: 1
+    tagsha: 8e62bb41f93a2497e3f494ff17383743d77a9649
+  - repo: deepin-community/qt6-imageformats
+    order: 0
+    tagsha: 320114fc53720ffd6dac645e29a3140df5e22730
+  # - repo: deepin-community/qt6-webengine
+  #   order: 0
+  # - repo: deepin-community/qtimageformats-opensource-src # 5.15.8
+  #   order: 0
+  - repo: deepin-community/qtwebengine-opensource-src
+    order: 0
+    tagsha: f6dd64f2fc205a09db220ceda17d0e0f4d82134c
+  - repo: deepin-community/qtwebkit-opensource-src
+    order: 0
+    tagsha: e9e8d98697e8f67ebd51d99442a1f99760695fad
+  - repo: deepin-community/sdl-image1.2
+    order: 0
+    tagsha: e244d3900800572f21f753e3e92ebc872c84a878
+  - repo: deepin-community/simple-scan # PR-1
+    order: 1
+    tagsha: c19c3e804625a0e882ded5714aab47f853b4caf9
+  - repo: deepin-community/libhandy-1 # B-Dependency of simple-scan
+    order: 0
+    tagsha: 15f5f284767bdff3e892d475e626443cae5ceb9c
+  - repo: deepin-community/tiff
+    order: 0
+    tagsha: c96bfb43f96535431809071654b019f2bac5afc2
+  - repo: deepin-community/vips
+    order: 0
+    tagsha: c9f422798e7cdefa9a1b50e3f454af389acdfb91
+  - repo: deepin-community/webkit2gtk # needs more work
+    order: 0
+    tagsha: 9e5963ca225356a35da92a57e4ecaacbbfde3755
+  - repo: deepin-community/weston
+    order: 2
+    tagsha: 1e2c0230beec04e1adbf1aa27fa632ff3be27085
+  - repo: deepin-community/aml
+    order: 0
+    tagsha: 39447e39c03b6fd15e33e6816b4f9630ecd1567b
+  - repo: deepin-community/neatvnc # build-dependency of weston
+    order: 1
+    tagsha: 0138e144f4820002022ceee3699e7114f7ee7d9d
+  # - repo: deepin-community/wpewebkit
+  #   order: 0
+  # - repo: deepin-community/xpra
+  #   order: 0
+  - repo: deepin-community/libjpeg-turbo
+    tagsha: 1adde5ea233a907c2ea0cb0de2261afd02711676
+  - repo: deepin-community/ffmpeg # Rebuild against libtesseract5
+    tagsha: 4af4847e6aa59812040d27fee49b98764e8896ee
+
+timestamp: 1695398460318
