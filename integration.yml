@@ -99,6 +99,8 @@ repos:
   #   order: 0
   # - repo: deepin-community/xpra
   #   order: 0
+  - repo: deepin-community/libjpeg-turbo
+    tagsha: 1adde5ea233a907c2ea0cb0de2261afd02711676
 
 
 timestamp: 1695398460318
