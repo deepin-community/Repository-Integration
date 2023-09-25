@@ -103,7 +103,7 @@ repos:
     tagsha: 1e2c0230beec04e1adbf1aa27fa632ff3be27085
   - repo: deepin-community/aml
     order: 0
-    tagsha: 0e25a1851434166f64cb9436785dda8fff61de41
+    tagsha: 39447e39c03b6fd15e33e6816b4f9630ecd1567b
   - repo: deepin-community/neatvnc # build-dependency of weston
     order: 1
     tagsha: 0138e144f4820002022ceee3699e7114f7ee7d9d
