@@ -61,6 +61,9 @@ repos:
     tagsha: 6e3bf30576cfc6bc105fd2b2655c3e0ffb717354
   # - repo: deepin-community/opencv
   #   order: 0
+  - repo: deepin-community/sphinx-inline-tabs # Build dependency of pillow
+    order: 0
+    tagsha: 066500667de3e8e0efb20e9c977058c12d1e1309
   - repo: deepin-community/pillow
     order: 1
     tagsha: 8e62bb41f93a2497e3f494ff17383743d77a9649
