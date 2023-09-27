@@ -1,17 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta2
-# Not required, now default is V23-Beta2
-milestone: V23-Beta2
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required
+message: 'feat: update gdb-13.2 by Zeno-sole@deepin-community/gdb'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/gdb
     order: 0
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: 49769e7d84594256d858778b7fecb4a463055bdb
+timestamp: 1695779960851
