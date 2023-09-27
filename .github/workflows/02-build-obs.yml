@@ -39,7 +39,6 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       pkgname: ${{ steps.pkgname.outputs.pkgname }}
-      component: ${{ steps.component.outputs.component }}
       tagsha: ${{ steps.tagsha.outputs.tagsha }}
     steps:
       - name: Print Environment
@@ -54,21 +53,6 @@ jobs:
         run: |
           echo "pkgname=$(echo ${{ inputs.repo }} |awk -F '/' '{print $2}')" >> $GITHUB_OUTPUT
 
-      - name: component
-        id: component
-        run : |
-          set +e
-          set -x
-          component=community
-          result=$(echo ${{ inputs.repo }}|grep "linuxdeepin")
-          if [ "$result" != "" ];then
-            component=dde
-          else
-            component=`(curl https://raw.githubusercontent.com/${{ inputs.repo }}/master/debian/deepin/workflows.yml |\
-                      grep "source_project"||echo "source_project: deepin:Develop:community")| head -n 1 |awk -F ":" '{print $4}'`
-          fi
-          echo "component=$component" >> $GITHUB_OUTPUT
-
       - name: obs integration topic project prepare
         run: |
           set +e
@@ -79,22 +63,6 @@ jobs:
             sed -i "s#TOPIC#${TOPIC}#g" meta.xml
             curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC/_meta"
           fi
-
-      #- name: Testing package prepare (if not exit create it)
-      #  run: |
-      #    set -x
-      #    mkdir -p ~/.config/osc
-      #    echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
-      #    pkgname="${{ steps.pkgname.outputs.pkgname }}"
-      #    component="${{ steps.component.outputs.component }}"
-      #    osc search ${pkgname}| grep "deepin:Testing"|| \
-      #      (curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg-meta.tpl
-      #      sed -i "s#PKGNAME#${pkgname}#g" meta.xml
-      #      sed -i "s#COMPONENT#${component}#g" meta.xml
-      #      curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:Testing:$component/$pkgname/_meta")
-      #      #osc co deepin:Testing:${component}/$pkgname && cd $_ && \
-      #      #curl -o _service https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg.tpl && \
-      #      #sed -i "s#REPO#$REPO#g" _service && osc add _service && osc ci -m "init")
 
       - name: get tag info
         id: tagsha
@@ -135,7 +103,6 @@ jobs:
           set -x
           mkdir -p ~/.config/osc
           echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
-          component="${{ steps.component.outputs.component }}"
           pkgname="${{ steps.pkgname.outputs.pkgname }}"
           TAGSHA="${{ steps.tagsha.outputs.tagsha}}"
 
