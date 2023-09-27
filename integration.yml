@@ -152,8 +152,8 @@ repos:
   - repo: deepin-community/gdal
     tagsha: '397ebe7dca0353f817360d7e994aaba2c5f6bf6a'
     order: 0
-  - repo: deepin-community/libgeotiff
-    tagsha: 'd5a7e9f0460ee679fdf0a3a3f9bfeb869fcee0e8'
+  - repo: deepin-community/libgeotiff # PR-1
+    tagsha: '3f8b42b125244d8438d8bc980a861e313bc24ad9'
     order: 0
 #  - repo: deepin-community/magicsplusplus
 #    tagsha: '88ab5d51f2ea598f8d22cd912ecead37867b3b20'
