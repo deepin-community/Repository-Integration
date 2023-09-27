@@ -173,3 +173,6 @@ repos:
   - repo: deepin-community/vtk9
     tagsha: '8a8e63919469c5383702c17bfde52f5d51c528e6'
     order: 0
+  - repo: deepin-community/fiona
+    tagsha: 'f488e71cea693deef8b9c0d0fae96a18ce94a821'
+    order: 0
