@@ -161,9 +161,12 @@ repos:
   - repo: deepin-community/proj
     tagsha: '292a1e53ae634ea33ceec0a35dfc6b072b80054d'
     order: 0
+  - repo: deepin-community/pytest-mpl
+    tagsha: '79b5cf166819b6d92ff500dc98c55798f8876492'
+    order: 0
   - repo: deepin-community/python-cartopy
     tagsha: '854eaf99522169664c4cae5d06a79ea48d78d81f'
-    order: 0
+    order: 1
   - repo: deepin-community/python-pyproj
     tagsha: '7cd829032c9764f5facd9e25fcfa66d531fe4f01'
     order: 0
