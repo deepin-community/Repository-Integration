@@ -203,8 +203,8 @@ jobs:
               allBuildTasks = [{"order": j,"data":{"payload": []}} for j in range(maxSize)]
               data = read_integration()
 
-              message = data.get("message", "Integrated for V23-Beta2").replace("\n", "")
-              if message == "Integrated for V23-Beta2":
+              message = data.get("message", "Integrated for V23-Beta3").replace("\n", "")
+              if message == "Integrated for V23-Beta3":
                 message = os.environ.get("PR_TITLE")
 
               message = message + " by " + os.environ.get("PR_AUTHOR")
