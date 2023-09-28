@@ -3,36 +3,9 @@ name: parsec integration
 on:
   workflow_call:
     outputs:
-      build_matrix_0:
+      build_matrix:
         description: build order 0, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_0 }}
-      build_matrix_1:
-        description: build order 1, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_1 }}
-      build_matrix_2:
-        description: build order 2, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_2 }}
-      build_matrix_3:
-        description: build order 3, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_3 }}
-      build_matrix_4:
-        description: build order 4, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_4 }}
-      build_matrix_5:
-        description: build order 5, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_5 }}
-      build_matrix_6:
-        description: build order 6, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_6 }}
-      build_matrix_7:
-        description: build order 7, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_7 }}
-      build_matrix_8:
-        description: build order 8, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_8 }}
-      build_matrix_9:
-        description: build order 9, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_9 }}
+        value: ${{ jobs.parsec_integration.outputs.build_matrix }}
       all_build_task:
         description: all build tasks used for
         value: ${{ jobs.parsec_integration.outputs.all_build_task }}
@@ -66,16 +39,7 @@ jobs:
     name: parsec integration
     runs-on: ubuntu-latest
     outputs:
-      build_matrix_0: ${{ steps.parsec_integration.outputs.build_matrix_0 }}
-      build_matrix_1: ${{ steps.parsec_integration.outputs.build_matrix_1 }}
-      build_matrix_2: ${{ steps.parsec_integration.outputs.build_matrix_2 }}
-      build_matrix_3: ${{ steps.parsec_integration.outputs.build_matrix_3 }}
-      build_matrix_4: ${{ steps.parsec_integration.outputs.build_matrix_4 }}
-      build_matrix_5: ${{ steps.parsec_integration.outputs.build_matrix_5 }}
-      build_matrix_6: ${{ steps.parsec_integration.outputs.build_matrix_6 }}
-      build_matrix_7: ${{ steps.parsec_integration.outputs.build_matrix_7 }}
-      build_matrix_8: ${{ steps.parsec_integration.outputs.build_matrix_8 }}
-      build_matrix_9: ${{ steps.parsec_integration.outputs.build_matrix_9 }}
+      build_matrix: ${{ steps.parsec_integration.outputs.build_matrix }}
       all_build_task: ${{ steps.parsec_integration.outputs.all_build_task }}
       deploy: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
       integration_message: ${{ steps.parsec_integration.outputs.integration_message }}
