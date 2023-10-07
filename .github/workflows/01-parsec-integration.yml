@@ -242,7 +242,7 @@ jobs:
                   for repo in order.get("data").get("payload"):
                       allRepos.append(repo)
                   if len(order.get("data").get("payload")) > 0:
-                      set_output("build_matrix_" + str(order['order']), str(order.get("data")))
+                      set_output("build_matrix", str(order.get("data")))
               set_output("all_build_task", str(allRepos))
 
           except BaseException as e:

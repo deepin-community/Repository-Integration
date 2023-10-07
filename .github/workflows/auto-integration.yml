@@ -142,13 +142,13 @@ jobs:
   # build task
   builds:
     name: builds
-    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix_0 != '') && (needs.parsec_integration.result == 'success')
+    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix != '') && (needs.parsec_integration.result == 'success')
     needs:
       - parsec_integration
       - build_project_prepare
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_0) }}
+      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
