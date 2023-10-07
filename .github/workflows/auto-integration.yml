@@ -133,7 +133,9 @@ jobs:
     needs:
       - parsec_integration
       - pass_integration
-    if: always() && !cancelled()
+    if: |
+      always() && !cancelled() &&
+      (needs.pass_integration.result == 'success')
     uses: deepin-community/Repository-Integration/.github/workflows/06-deployed.yml@master
     secrets: inherit
     with:
