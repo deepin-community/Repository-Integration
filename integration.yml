@@ -37,8 +37,6 @@ repos:
     tagsha: e61fa1cee837a3d106feee36e300f39bb8b1fad2
   - repo: deepin-community/dh-lua
     tagsha: be7657ec15ee586e8eab715cbfa4b12c29f1e40a
-  - repo: deepin-community/chrony
-    tagsha: c712d9b4ca7f6b8703543e82e412b08d5cb35099
   - repo: deepin-community/openldap
     tagsha: e5d9310cfb9db37f2984dc7dfc835a9e45cd024f
 
