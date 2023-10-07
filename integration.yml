@@ -2,7 +2,7 @@ message: update glibc to 2.35-4 by UTsweetyfish@deepin-community/glibc
 milestone: V23-Beta2
 repos:
   - repo: deepin-community/glibc
-    tagsha: a9a7e70b03aed6d27be0d03d30347144deaa9ff7
+    tagsha: c4efc9e2c4c31f956fc2c18e1edc37b27151b318
   - repo: deepin-community/glib2.0
     tagsha: 597f943c5b594a313ed51d20e0a76d35759a87c8
   - repo: deepin-community/meson
