@@ -71,6 +71,10 @@ repos:
     tagsha: dfc055958713bb46d33837f9453df3335c121abe
   - repo: deepin-community/krb5
     tagsha: 2701e068f6a91c78c10ddb091e7bc6e78710f7c5
+  - repo: deepin-community/python-kdcproxy
+    tagsha: 4c5908ad8a52da49e96d3ad2f942e182bc60638c
+  - repo: deepin-community/pyrad
+    tagsha: a62537275f2e68e1aa442fad7e10152aa08a53d8
   - repo: deepin-community/libnfsidmap
     tagsha: eed727cec3cb93765af56afddb803b2e972aeb2b
   # - repo: deepin-community/libreoffice
