@@ -99,6 +99,7 @@ repos:
     tagsha: c7e7de44d95651fef2967c9e1623bb204f250bb3
   - repo: deepin-community/strongswan
     tagsha: 81b7583cecd10342f081bcdd0e8d71d0dc698e9d
-
+  - repo: deepin-community/dee
+    tagsha: 14127523050b149c61449b34682df04c1a18ae0f
 
 timestamp: 1692786153
