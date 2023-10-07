@@ -2,64 +2,44 @@ message: update glibc to 2.35-4 by UTsweetyfish@deepin-community/glibc
 milestone: V23-Beta2
 repos:
   - repo: deepin-community/glibc
-    order: 0
     tagsha: a9a7e70b03aed6d27be0d03d30347144deaa9ff7
   - repo: deepin-community/glib2.0
-    order: 0
     tagsha: 597f943c5b594a313ed51d20e0a76d35759a87c8
   - repo: deepin-community/meson
-    order: 0
     tagsha: 904fed7550230448aa26ab424ecc006738331cc6
   - repo: deepin-community/netcdf
-    order: 1
     tagsha: fd7805c662bcada8f0c8e76eada44d7b95d7d403
   - repo: deepin-community/heimdal
-    order: 0
     tagsha: dd06d2a76510b45090487e90bcb4ba02bd4d7da0
   - repo: deepin-community/assimp
-    order: 0
     tagsha: 93f5ceb9bbbec9dd5d8786ca5610268b88abf415
   - repo: deepin-community/linux-atm
-    order: 0
     tagsha: 45ff5cf854a325fa9000f8b733e0dc09f261901d
   - repo: deepin-community/cups
-    order: 0
     tagsha: 55385ab439b7f06bd62ab6c3c81096a509c387cc
   - repo: deepin-community/fltk1.3
-    order: 0
     tagsha: 41e7ebbbc93136090302ca5f19024c85152a23a3
   - repo: deepin-community/trilinos
-    order: 0
     tagsha: b5ac832c3afc035905e78af98e407453891ea059
   - repo: deepin-community/valgrind
-    order: 0
     tagsha: 0677a6666287947fe1599db303d1644cdf75942a
   - repo: deepin-community/nfs-utils
-    order: 0
     tagsha: 81382c1a3896c41567e0ed909e5431c19e49eb4a
   - repo: deepin-community/ismrmrd
-    order: 0
     tagsha: 15f3c0c3a1527296bcaa1b7c63dcd11f1cdff476
   - repo: deepin-community/libstrophe
-    order: 0
     tagsha: 02317390480a4ee583c39da925c15f1bc8a0db23
   - repo: deepin-community/loudmouth
-    order: 0
     tagsha: 2569e7133139515acd365463049c22d077f98fdb
   - repo: deepin-community/dot2tex
-    order: 0
     tagsha: c42e127bf82d2f6b8b5328e2c608685b85efe410
   - repo: deepin-community/ecbuild
-    order: 0
     tagsha: e61fa1cee837a3d106feee36e300f39bb8b1fad2
   - repo: deepin-community/dh-lua
-    order: 0
     tagsha: be7657ec15ee586e8eab715cbfa4b12c29f1e40a
   - repo: deepin-community/chrony
-    order: 0
     tagsha: c712d9b4ca7f6b8703543e82e412b08d5cb35099
   - repo: deepin-community/openldap
-    order: 0
     tagsha: e5d9310cfb9db37f2984dc7dfc835a9e45cd024f
 
 
