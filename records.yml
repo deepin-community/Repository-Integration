@@ -48,6 +48,10 @@ records:
         date: '2023-04-10'
         pr: 70
         ver: 11.2-1deepin1
+    deepin-community/glibc:
+        date: '2023-10-07'
+        pr: 540
+        ver: 2.37-12deepin1
     deepin-community/golang-1.20:
         date: '2023-04-13'
         pr: 93
