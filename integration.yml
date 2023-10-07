@@ -39,6 +39,60 @@ repos:
     tagsha: be7657ec15ee586e8eab715cbfa4b12c29f1e40a
   - repo: deepin-community/openldap
     tagsha: e5d9310cfb9db37f2984dc7dfc835a9e45cd024f
+  - repo: deepin-community/apache2
+    tagsha: 6c03d6096fb817e85ab1883a133bf6ca02cc2e3a
+  - repo: deepin-community/apr-util
+    tagsha: 4087acbc76ac36458ecf5aaa4e4bb56faccad5cc
+  - repo: deepin-community/audit
+    tagsha: 094a739fdfdfa789b4e054363110db35b8c90b30
+  - repo: deepin-community/ceph
+    tagsha: 69cde47b4c9e1d99e78288879484c982cc0c1396
+  - repo: deepin-community/courier-authlib
+    tagsha: 161941f7d2e97ec1e521e9f247288b0aeb50c3f3
+  - repo: deepin-community/cups-filters
+    tagsha: ad7a75a818a285f0fc3ee9651045cfcf12367918
+  - repo: deepin-community/curl
+    tagsha: d57489fe67321d7dd0aa8e0c294035e30087abfa
+  - repo: deepin-community/cyrus-sasl2
+    tagsha: 7a455899dccb42b3211a8f3054e3c9f2febf8f1c
+  - repo: deepin-community/evolution
+    tagsha: df801e512561ee6bbbae36d1ea55703a702ae1ae
+  - repo: deepin-community/evolution-data-server
+    tagsha: b3d44c6ca7cbbe3dea8265f21b75258777793c2e
+  - repo: deepin-community/gconf
+    tagsha: 1bcdc5da52b45984f3fdde7377fe78963cdfa33b
+  - repo: deepin-community/gnupg2
+    tagsha: 22fd7e6e1415f7ab97f0a557b138c9a16a7f6abc
+  - repo: deepin-community/isc-dhcp
+    tagsha: dcfcd9388091b417860129e45dd30abbedbe77c8
+  - repo: deepin-community/kldap
+    tagsha: dfc055958713bb46d33837f9453df3335c121abe
+  - repo: deepin-community/krb5
+    tagsha: 2701e068f6a91c78c10ddb091e7bc6e78710f7c5
+  - repo: deepin-community/libnfsidmap
+    tagsha: eed727cec3cb93765af56afddb803b2e972aeb2b
+  # - repo: deepin-community/libreoffice
+  #   tagsha: 
+  - repo: deepin-community/libreswan
+    tagsha: 50ea50e926a3613ed03df7af8f2315579e1e858e
+  - repo: deepin-community/php7.4
+    tagsha: 33fb6b3a51ef185c37f2b7e6cd822b08ca398ed5
+  - repo: deepin-community/postgresql-14
+    tagsha: 0645d0b5882e441378028fb49b2aca5cc8401fa1
+  - repo: deepin-community/postgresql-15
+    tagsha: 4056d5a5556a6b3d9abd039287a479e400cbad50
+  - repo: deepin-community/python-ldap
+    tagsha: a586bb477ef5e0e0cbfd71fce6fa229dd65a2ea6
+  - repo: deepin-community/quota
+    tagsha: 46ec1f66d3186bee55c78f26739f36b94fb1384a
+  - repo: deepin-community/samba
+    tagsha: 63523a446abf0a9a28d6f4a41a0440759972fd99
+  - repo: deepin-community/seahorse
+    tagsha: 8ff90db7c0c057cd00f46c5e3834c52f17cad032
+  - repo: deepin-community/sendmail
+    tagsha: c7e7de44d95651fef2967c9e1623bb204f250bb3
+  - repo: deepin-community/strongswan
+    tagsha: 81b7583cecd10342f081bcdd0e8d71d0dc698e9d
 
 
 timestamp: 1692786153
