@@ -41,6 +41,8 @@ repos:
     tagsha: e5d9310cfb9db37f2984dc7dfc835a9e45cd024f
   - repo: deepin-community/apache2
     tagsha: 6c03d6096fb817e85ab1883a133bf6ca02cc2e3a
+  - repo: deepin-community/apr
+    tagsha: 76cca71eb5285971a73e27559f0dbfa26958114e
   - repo: deepin-community/apr-util
     tagsha: 4087acbc76ac36458ecf5aaa4e4bb56faccad5cc
   - repo: deepin-community/audit
