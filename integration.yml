@@ -55,6 +55,8 @@ repos:
     tagsha: ad7a75a818a285f0fc3ee9651045cfcf12367918
   - repo: deepin-community/curl
     tagsha: d57489fe67321d7dd0aa8e0c294035e30087abfa
+  - repo: deepin-community/libtool
+    tagsha: 595740fbef24dd7dc337d0724ac7e55c75492fd5
   - repo: deepin-community/cyrus-sasl2
     tagsha: 7a455899dccb42b3211a8f3054e3c9f2febf8f1c
   - repo: deepin-community/evolution
