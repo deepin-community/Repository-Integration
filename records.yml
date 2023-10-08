@@ -3,6 +3,15 @@ records:
         date: '2022-12-16'
         pr: 2
         ver: 1.0.0
+    deepin-community/apache2:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/apr:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/apr-util:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/apt:
         date: '2023-04-17'
         pr: 103
@@ -10,16 +19,49 @@ records:
     deepin-community/apt-rdepends:
         date: '2023-07-04'
         pr: 227
+    deepin-community/assimp:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/audit:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/base16384:
         date: '2023-07-31'
         pr: 262
+    deepin-community/ceph:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/courier-authlib:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/cups:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/cups-filters:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/curl:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/cyrus-sasl2:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/deepin-desktop-environment:
         date: '2023-06-07'
         pr: 163
+    deepin-community/dh-lua:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/distrobox:
         date: '2023-04-12'
         pr: 72
         ver: ''
+    deepin-community/dot2tex:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/ecbuild:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/edk2:
         date: '2023-04-04'
         pr: 59
@@ -28,6 +70,12 @@ records:
         date: '2023-06-09'
         pr: 160
         ver: 0.56-3
+    deepin-community/evolution:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/evolution-data-server:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/fcitx5:
         date: '2023-04-13'
         pr: 78
@@ -36,6 +84,9 @@ records:
         date: '2023-04-13'
         pr: 78
         ver: 5.0.17-0deepin
+    deepin-community/fltk1.3:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/freerdp2:
         date: '2023-04-11'
         pr: 63
@@ -44,10 +95,22 @@ records:
         date: '2023-04-10'
         pr: 70
         ver: 11.2.0-deepin2
+    deepin-community/gconf:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/gdb:
         date: '2023-04-10'
         pr: 70
         ver: 11.2-1deepin1
+    deepin-community/glib2.0:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/glibc:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/gnupg2:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/golang-1.20:
         date: '2023-04-13'
         pr: 93
@@ -67,6 +130,15 @@ records:
         date: '2023-04-04'
         pr: 68
         ver: ''
+    deepin-community/heimdal:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/isc-dhcp:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/ismrmrd:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/iwd:
         date: '2023-06-09'
         pr: 160
@@ -87,6 +159,12 @@ records:
         date: '2023-03-29'
         pr: 51
         ver: ''
+    deepin-community/kldap:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/krb5:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/libayatana-appindicator:
         date: '2023-07-31'
         pr: 282
@@ -98,26 +176,40 @@ records:
         date: '2023-04-11'
         pr: 63
         ver: ''
+    deepin-community/libnfsidmap:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/libqapt:
         date: '2023-01-05'
         pr: 10
         ver: 3.0.5.1-1-deepin1
+    deepin-community/libreswan:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/libskk:
         date: '2023-04-11'
         pr: 63
         ver: ''
+    deepin-community/libstrophe:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/linux-atm:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/lmodern:
         date: '2023-06-08'
         pr: 164
         ver: ''
+    deepin-community/loudmouth:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/mesa:
         date: '2023-04-11'
         pr: 63
         ver: ''
     deepin-community/meson:
-        date: '2023-06-28'
-        pr: 217
-        ver: 1.1.1-1
+        date: '2023-10-07'
+        pr: 349
     deepin-community/mtr:
         date: '2023-07-31'
         pr: 266
@@ -129,10 +221,16 @@ records:
         date: '2023-04-04'
         pr: 59
         ver: ''
+    deepin-community/netcdf:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/network-manager:
         date: '2023-03-29'
         pr: 53
         ver: 1.42.4-1
+    deepin-community/nfs-utils:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/opencc:
         date: '2023-04-11'
         pr: 63
@@ -141,10 +239,22 @@ records:
         date: '2023-04-04'
         pr: 59
         ver: ''
+    deepin-community/openldap:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/openssl:
         date: '2023-04-11'
         pr: 63
         ver: ''
+    deepin-community/php7.4:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/postgresql-14:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/postgresql-15:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/procps:
         date: '2023-06-28'
         pr: 217
@@ -153,14 +263,35 @@ records:
         date: '2023-04-11'
         pr: 63
         ver: ''
+    deepin-community/pyrad:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/python-kdcproxy:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/python-ldap:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/qtwayland-opensource-src:
         date: '2023-01-11'
         pr: 13
         ver: 5.15.7.3-1+dde
+    deepin-community/quota:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/radeontop:
         date: '2023-06-28'
         pr: 219
         ver: 1.4-2
+    deepin-community/samba:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/seahorse:
+        date: '2023-10-07'
+        pr: 349
+    deepin-community/sendmail:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/shim-signed:
         date: '2023-05-29'
         pr: 157
@@ -168,6 +299,9 @@ records:
         date: '2023-04-04'
         pr: 59
         ver: ''
+    deepin-community/strongswan:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/systemd:
         date: '2023-04-10'
         pr: 70
@@ -180,6 +314,9 @@ records:
         date: '2023-06-08'
         pr: 164
         ver: ''
+    deepin-community/trilinos:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/udisks2:
         date: '2023-04-10'
         pr: 79
@@ -192,6 +329,9 @@ records:
         date: '2023-04-13'
         pr: 95
         ver: 15.0.0-1
+    deepin-community/valgrind:
+        date: '2023-10-07'
+        pr: 349
     deepin-community/xkeyboard-config:
         date: '2023-05-08'
         pr: 121
