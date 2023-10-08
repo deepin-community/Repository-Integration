@@ -93,6 +93,8 @@ repos:
     tagsha: ed30c50c453f8c54c4ca551363347d5d0edb6ceb
   - repo: deepin-community/postgresql-common
     tagsha: b0fe4440cb05f89685094aa69161d956df49a9fd
+  - repo: deepin-community/llvm-toolchain-15
+    tagsha: a2aae891bbef3010a48bb5d37a8c6c8fafb0e304
   - repo: deepin-community/python-ldap
     tagsha: a586bb477ef5e0e0cbfd71fce6fa229dd65a2ea6
   - repo: deepin-community/quota
