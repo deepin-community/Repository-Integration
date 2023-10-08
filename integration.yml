@@ -128,6 +128,17 @@ repos:
     tagsha: 06ad6b0eb090314ac6e014b9b711aedf287db634
   - repo: deepin-community/ocaml-ctypes
     tagsha: ffea9bc5d2ea5aabccb03faaff209451652d22d5
-
+  - repo: deepin-community/ounit
+    tagsha: 7f165f84184972e20b2ec9543464b1dbff6ed42c
+  - repo: deepin-community/ppxlib
+    tagsha: 44be844af36f4a8e467d8a1d12f8c0d49b57850b
+  - repo: deepin-community/react
+    tagsha: 111331affc16c42926eaa8e918e65d960559762a
+  - repo: deepin-community/ocaml-result
+    tagsha: b5c431a9a14c12b1a6f0a01b4a1dff354b39bc46
+  - repo: deepin-community/ocaml-mmap
+    tagsha: 61cc28aa2251ddb7fea121342038bbfb2ce28ad3
+  - repo: deepin-community/ocplib-endian
+    tagsha: 895405884007f7ab13c253e33a59b258313c101f
 
 timestamp: 1692786153
