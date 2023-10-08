@@ -140,5 +140,13 @@ repos:
     tagsha: 61cc28aa2251ddb7fea121342038bbfb2ce28ad3
   - repo: deepin-community/ocplib-endian
     tagsha: 895405884007f7ab13c253e33a59b258313c101f
+  - repo: deepin-community/ocaml-topkg
+    tagsha: 81681a614cfbc940c063d7bfb847db63740ecc29
+  - repo: deepin-community/janest-ocaml-compiler-libs
+    tagsha: f8d74cff008e66ed03b36430570cff07015ea418
+  - repo: deepin-community/ocaml-sexplib0
+    tagsha: 2942e51737193890378a8dfc086bbce73732f1b1
+  - repo: deepin-community/ppx-derivers
+    tagsha: 5b1468bf568cfc6433991704984ff6be05d09304
 
 timestamp: 1692786153
