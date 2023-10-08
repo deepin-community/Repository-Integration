@@ -95,6 +95,8 @@ repos:
     tagsha: b0fe4440cb05f89685094aa69161d956df49a9fd
   - repo: deepin-community/spirv-llvm-translator-14
     tagsha: 7b3d68a3ca77aeeaff81449dbb3cc9c6a7c15afd
+  - repo: deepin-community/spirv-headers
+    tagsha: f27dd31f6f6966ecb6520676d1a63f4693d48269
   - repo: deepin-community/llvm-toolchain-15
     tagsha: a2aae891bbef3010a48bb5d37a8c6c8fafb0e304
   - repo: deepin-community/python-ldap
