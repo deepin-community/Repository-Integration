@@ -139,7 +139,7 @@ repos:
   - repo: deepin-community/ocaml-mmap
     tagsha: 652d7c5b14c566f8eb71801824daa6ce207bd2de
   - repo: deepin-community/ocplib-endian
-    tagsha: 895405884007f7ab13c253e33a59b258313c101f
+    tagsha: 012f1b88731f97294c96391c7ad2e047a7235d91
   - repo: deepin-community/ocaml-topkg
     tagsha: 81681a614cfbc940c063d7bfb847db63740ecc29
   - repo: deepin-community/janest-ocaml-compiler-libs
