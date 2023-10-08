@@ -143,9 +143,9 @@ repos:
   - repo: deepin-community/ocaml-topkg
     tagsha: 81681a614cfbc940c063d7bfb847db63740ecc29
   - repo: deepin-community/janest-ocaml-compiler-libs
-    tagsha: f8d74cff008e66ed03b36430570cff07015ea418
+    tagsha: d5c184666bf4c8c252a45f2f61a2d18798e0276f
   - repo: deepin-community/ocaml-sexplib0
-    tagsha: 2942e51737193890378a8dfc086bbce73732f1b1
+    tagsha: f1347771a142d4681079a691d2d4735148ae6ce5
   - repo: deepin-community/ppx-derivers
     tagsha: 5b1468bf568cfc6433991704984ff6be05d09304
   - repo: deepin-community/dh-ocaml
