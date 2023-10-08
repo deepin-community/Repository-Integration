@@ -110,6 +110,8 @@ repos:
   - repo: deepin-community/dee
     tagsha: 14127523050b149c61449b34682df04c1a18ae0f
     # ocaml 4.13
+  - repo: deepin-community/ocaml
+    tagsha: 3a5a1f4452f7fb14e01784d23e0b2c583009680e
   - repo: deepin-community/findlib
     tagsha: 3d48eb2eed8f5069935120f64f7e3d701672c2d8
   - repo: deepin-community/ocamlbuild
