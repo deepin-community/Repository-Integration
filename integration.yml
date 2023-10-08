@@ -85,10 +85,14 @@ repos:
     tagsha: 50ea50e926a3613ed03df7af8f2315579e1e858e
   - repo: deepin-community/php7.4
     tagsha: 33fb6b3a51ef185c37f2b7e6cd822b08ca398ed5
-  - repo: deepin-community/postgresql-14
-    tagsha: 0645d0b5882e441378028fb49b2aca5cc8401fa1
+  # - repo: deepin-community/postgresql-14
+  #   tagsha: 0645d0b5882e441378028fb49b2aca5cc8401fa1
   - repo: deepin-community/postgresql-15
     tagsha: 4056d5a5556a6b3d9abd039287a479e400cbad50
+  - repo: deepin-community/postgresql-16
+    tagsha: ed30c50c453f8c54c4ca551363347d5d0edb6ceb
+  - repo: deepin-community/postgresql-common
+    tagsha: b0fe4440cb05f89685094aa69161d956df49a9fd
   - repo: deepin-community/python-ldap
     tagsha: a586bb477ef5e0e0cbfd71fce6fa229dd65a2ea6
   - repo: deepin-community/quota
