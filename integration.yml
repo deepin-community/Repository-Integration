@@ -117,7 +117,7 @@ repos:
   - repo: deepin-community/ocamlbuild
     tagsha: 7590cff3c9fd2572af1332d11840f7c7477a2f22
   - repo: deepin-community/cppo
-    tagsha: a35f5e3595d39f20b511edff65517f6cb5e205a3
+    tagsha: bbf2df0ee8260de44a6b6b2a966dd79c28d45ea1
   - repo: deepin-community/ocaml-csexp
     tagsha: f7def7585eb507bc7a7bea1f5fe9338f194b3672
   - repo: deepin-community/ocaml-dune
@@ -135,9 +135,9 @@ repos:
   - repo: deepin-community/react
     tagsha: 111331affc16c42926eaa8e918e65d960559762a
   - repo: deepin-community/ocaml-result
-    tagsha: b5c431a9a14c12b1a6f0a01b4a1dff354b39bc46
+    tagsha: d78d323d428760b207194c43ced83f5f19fade53
   - repo: deepin-community/ocaml-mmap
-    tagsha: 61cc28aa2251ddb7fea121342038bbfb2ce28ad3
+    tagsha: 652d7c5b14c566f8eb71801824daa6ce207bd2de
   - repo: deepin-community/ocplib-endian
     tagsha: 895405884007f7ab13c253e33a59b258313c101f
   - repo: deepin-community/ocaml-topkg
@@ -148,5 +148,10 @@ repos:
     tagsha: 2942e51737193890378a8dfc086bbce73732f1b1
   - repo: deepin-community/ppx-derivers
     tagsha: 5b1468bf568cfc6433991704984ff6be05d09304
+  - repo: deepin-community/dh-ocaml
+    tagsha: 008fb7db167e54259205c160b8f310a1f27608ef
+  - repo: deepin-community/ocaml-bigarray-compat
+    tagsha: e47d0bfa00854f5e07d72826890a847096d823a2
+
 
 timestamp: 1692786153
