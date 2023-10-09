@@ -127,7 +127,7 @@ repos:
   - repo: deepin-community/ocaml-dune
     tagsha: 4e750943de20ed2b14013c497af8f02d5df31322
   - repo: deepin-community/ocaml-integers
-    tagsha: 3f830e70cf06d782f238f8dfd8fb01f005de4eaf
+    tagsha: 925c024677b07e827dc2d017623ef4dc8b3da7ab
   - repo: deepin-community/lwt
     tagsha: 06ad6b0eb090314ac6e014b9b711aedf287db634
   - repo: deepin-community/ocaml-ctypes
