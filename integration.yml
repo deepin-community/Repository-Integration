@@ -123,7 +123,7 @@ repos:
   - repo: deepin-community/cppo
     tagsha: bbf2df0ee8260de44a6b6b2a966dd79c28d45ea1
   - repo: deepin-community/ocaml-csexp
-    tagsha: f7def7585eb507bc7a7bea1f5fe9338f194b3672
+    tagsha: 0d121cf5d3f30e9571dd6c5df5311e77dc64ab6a
   - repo: deepin-community/ocaml-dune
     tagsha: 4e750943de20ed2b14013c497af8f02d5df31322
   - repo: deepin-community/ocaml-integers
