@@ -59,8 +59,8 @@ repos:
     tagsha: 595740fbef24dd7dc337d0724ac7e55c75492fd5
   - repo: deepin-community/cyrus-sasl2
     tagsha: 7a455899dccb42b3211a8f3054e3c9f2febf8f1c
-  - repo: deepin-community/evolution
-    tagsha: df801e512561ee6bbbae36d1ea55703a702ae1ae
+  # - repo: deepin-community/evolution
+  #   tagsha: df801e512561ee6bbbae36d1ea55703a702ae1ae
   - repo: deepin-community/evolution-data-server
     tagsha: b3d44c6ca7cbbe3dea8265f21b75258777793c2e
   - repo: deepin-community/gconf
