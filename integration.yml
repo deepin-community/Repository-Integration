@@ -4,4 +4,7 @@ repos:
   - repo: deepin-community/fastfetch
     order: 0
     tagsha: f4b890f5035ad0e58473b8914dd6e531a7b31582
+  - repo: deepin-community/yyjson
+    order: 0
+    tagsha: 962da9fb5dbd29bf44665cc72b1895ebaff9e99f
 timestamp: 1696987728646
