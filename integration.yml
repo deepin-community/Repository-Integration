@@ -1,15 +1,12 @@
 # Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'No password unlock by Decodetalkers@linuxdeepin/dde-session-shell'
 milestone: V23-Beta3
 # Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-session-shell
+    order: 0
+    tagsha: a4a9fc243601f5c50f2467fa16503508f1eda92e
+  - repo: linuxdeepin/dde-control-center
+    order: 1
+    tagsha: 4827404315bf5d4b45e9f26e89d6907740fa6349
+
