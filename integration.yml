@@ -4,9 +4,7 @@ milestone: V23-Beta3
 # Required
 repos:
   - repo: linuxdeepin/dde-session-shell
-    order: 0
     tagsha: a4a9fc243601f5c50f2467fa16503508f1eda92e
   - repo: linuxdeepin/dde-control-center
-    order: 1
     tagsha: 4827404315bf5d4b45e9f26e89d6907740fa6349
 
