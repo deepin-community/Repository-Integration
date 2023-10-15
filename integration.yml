@@ -4,4 +4,7 @@ repos:
   - repo: deepin-community/nss
     order: 0
     tagsha: 3e4b0f4ee5b703cd61903905ee0387fdcb3ea1fb
+  - repo: deepin-community/nspr
+    order: 0
+    tagsha: f8f037d9552c537ef412169ce01fb6e7ff57a6bf
 timestamp: 1697356019821
