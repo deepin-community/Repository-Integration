@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: >-
+  feat: allow set pausePlayer availablity by
+  Decodetalkers@linuxdeepin/dde-control-center
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-daemon
+    order: 0
+    tagsha: 3685e6f25692e91c58db2d76684bd9cc6f4c3486
+  - repo: linuxdeepin/dde-control-center
+    order: 0
+    tagsha: 0e08b904f58daab660ebf34bb8087b91bd190736
+topic: pause
+timestamp: 1697434252686
