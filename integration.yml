@@ -5,11 +5,9 @@ message: |
 milestone: V23-Beta3
 # Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/nexttrace
+    tag: 1.2.2.2-0
+  - repo: deepin-community/golang-github-akamensky-argparse
+    tag: 1.4.0-1-0deepin2
+  - repo: deepin-community/golang-github-tsosunchia-powclient
+    tag: 0.1.4-1
