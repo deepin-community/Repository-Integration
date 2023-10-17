@@ -11,3 +11,4 @@ repos:
     tag: 1.4.0-1-0deepin2
   - repo: deepin-community/golang-github-tsosunchia-powclient
     tag: 0.1.4-1
+
