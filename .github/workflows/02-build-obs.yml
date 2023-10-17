@@ -13,6 +13,9 @@ on:
       topic:
         required: true
         type: string
+      component:
+        type: string
+        default: "main"
   workflow_dispatch:
     inputs:
       repo:
@@ -25,9 +28,13 @@ on:
       topic:
         required: true
         type: string
+      component:
+        type: string
+        default: "main"
 
 env:
   TOPIC: ${{ inputs.topic }}
+  COMPONENT: ${{ inputs.component }}
   TAG: ${{ inputs.tag }}
   REPO: ${{ inputs.repo }}
   TAGSHA: ${{ inputs.tagsha }}
@@ -62,6 +69,17 @@ jobs:
             curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-proj-meta.tpl
             sed -i "s#TOPIC#${TOPIC}#g" meta.xml
             curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC/_meta"
+          fi
+
+          # create obs component project
+          if [ "$COMPONENT" != "main" ]; then
+            result=$(curl -u golf66:$OSCPASS "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC:$COMPONENT/_meta"|grep "unknown_project")
+            if [ "$result" != "" ];then
+              curl -o meta1.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-proj-component-meta.tpl
+              sed -i "s#TOPIC#${TOPIC}#g" meta1.xml
+              sed -i "s#COMPONENT#${COMPONENT}#g" meta1.xml
+              curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta1.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC:$COMPONENT/_meta"
+            fi
           fi
 
       - name: get tag info
@@ -108,10 +126,16 @@ jobs:
 
           curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg-meta.tpl
           sed -i "s#PKGNAME#${pkgname}#g" meta.xml
-          sed -i "s#Testing:COMPONENT#CI:TestingIntegration:${TOPIC}#g" meta.xml
-          curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:${TOPIC}/$pkgname/_meta"
+          if [ "$COMPONENT" = "main" ]; then
+            sed -i "s#Testing:COMPONENT#CI:TestingIntegration:${TOPIC}#g" meta.xml
+            curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:${TOPIC}/$pkgname/_meta"
+            osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
+          else
+            sed -i "s#Testing:COMPONENT#CI:TestingIntegration:${TOPIC}:${COMPONENT}#g" meta.xml
+            curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/$pkgname/_meta"
+            osc co deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/${pkgname} && cd $_
+          fi
 
-          osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
           needbuild=true
           if [ -f _branch_request ];then
             cat _branch_request |grep "${TAGSHA}" && needbuild=false ||echo true
@@ -147,7 +171,14 @@ jobs:
           mkdir -p ~/.config/osc
           echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
           pkgname="${{ needs.build.outputs.pkgname }}"
-          osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
-          if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ];then osc buildlog testing ${ARCH}; else echo "${ARCH} build excluded"; fi
-          if [ "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'succeeded')" = "" -a "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'finished')" = "" ];\
-          then echo "${ARCH} build failed" && -1; else echo "${ARCH} build succeeded"; fi
+          if [ "$COMPONENT" = "main" ]; then
+            osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
+            if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ];then osc buildlog testing ${ARCH}; else echo "${ARCH} build excluded"; fi
+            if [ "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'succeeded')" = "" -a "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'finished')" = "" ];\
+            then echo "${ARCH} build failed" && -1; else echo "${ARCH} build succeeded"; fi
+          else
+            osc co deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/${pkgname} && cd $_
+            if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ];then osc buildlog testing ${ARCH}; else echo "${ARCH} build excluded"; fi
+            if [ "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/testing/${ARCH}/${pkgname}/_status |grep 'succeeded')" = "" -a "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'finished')" = "" ];\
+            then echo "${ARCH} build failed" && -1; else echo "${ARCH} build succeeded"; fi
+          fi

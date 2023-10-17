@@ -137,7 +137,6 @@ jobs:
             assignees = "${{ inputs.assignees }}".split(", ")
             milestonestr = "${{ inputs.milestone }}"
             status = "${{ inputs.status }}"
-            testrepoaddr = "${{ inputs.testrepoaddr }}"
 
             let integrationinfodata = fs.readFileSync('integration-${{ github.event.number }}-integrationinfo.md')
             let integrationinfo = integrationinfodata.toString()
@@ -150,6 +149,9 @@ jobs:
             let influencedata = fs.readFileSync('integration-${{ github.event.number }}-influence.md')
             let influence = influencedata.toString()
             console.log("influence: ", influence)
+            let testrepoaddrdata = fs.readFileSync('integration-${{ github.event.number }}-testrepoaddr.md')
+            let testrepoaddr = testrepoaddrdata.toString()
+            console.log("testrepoaddr: ", testrepoaddr)
             extrainfo = "${{ inputs.extrainfo }}"
 
             core.debug(repoinfo, labels, assignees)
