@@ -3,21 +3,27 @@ name: parsec integration
 on:
   workflow_call:
     outputs:
-      build_matrix:
-        description: build order 0, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix }}
+      build_matrix_main:
+        description: deepin main build tasks
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_main }}
+      build_matrix_dde:
+        description: build tasks
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_dde }}
+      build_matrix_community:
+        description: build tasks
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_community }}
       all_build_task:
         description: all build tasks used for
         value: ${{ jobs.parsec_integration.outputs.all_build_task }}
+      testrepoaddr:
+        description: testing repositories addresses
+        value: ${{ jobs.parsec_integration.outputs.testrepoaddr }}
       deploy:
         description: deploy way AUTO or MANUALLY
         value: ${{ jobs.parsec_integration.outputs.deploy }}
       integration_message:
         description: integration message at integration.yml
         value: ${{ jobs.parsec_integration.outputs.integration_message }}
-      component:
-        description: integration repos component
-        value: ${{ jobs.parsec_integration.outputs.component }}
       integrationinfo:
         description: integration repos list
         value: ${{ jobs.parsec_integration.outputs.integrationinfo }}
@@ -39,11 +45,13 @@ jobs:
     name: parsec integration
     runs-on: ubuntu-latest
     outputs:
-      build_matrix: ${{ steps.parsec_integration.outputs.build_matrix }}
+      build_matrix_main: ${{ steps.parsec_integration.outputs.build_matrix_main }}
+      build_matrix_dde: ${{ steps.parsec_integration.outputs.build_matrix_dde }}
+      build_matrix_community: ${{ steps.parsec_integration.outputs.build_matrix_community }}
       all_build_task: ${{ steps.parsec_integration.outputs.all_build_task }}
+      testrepoaddr: ${{ steps.parsec_integration.outputs.testrepoaddr }}
       deploy: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
       integration_message: ${{ steps.parsec_integration.outputs.integration_message }}
-      component: ${{ steps.illegal_repo_tags.outputs.component }}
       integrationinfo: ${{ steps.parsec_integration.outputs.integrationinfo }}
       changelog: ${{ steps.parsec_integration.outputs.changelog }}
       influence: ${{ steps.parsec_integration.outputs.influence }}
@@ -73,7 +81,6 @@ jobs:
           import json
           from requests.utils import requote_uri
 
-          maxSize = os.environ.get("MAX_TASKS", 10)
           illegalTags = []
           illegalRepos = []
           noChangelogs = []
@@ -163,8 +170,25 @@ jobs:
             print(name, version, changelog, influence)
             return name, version, "\n".join(changelog), "\n".join(influence)
 
+          def get_component(repo):
+            print("get component")
+            component = "main"
+            if "linuxdeepin/" in repo:
+              component = "dde"
+            else:
+              rawurl = "https://raw.githubusercontent.com/{repo}/master/debian/deepin/workflows.yml".format(repo=repo)
+              res = requests.get(rawurl.replace("+", "%2B"))
+              if res.status_code == 200:
+                if "deepin:Develop:community" in str(res.content):
+                  component = "community"
+              else:
+                print("Warn: get workflows.yml content failed!!!")
+                component = "community"
+            return component
+
           try:
-              allBuildTasks = [{"order": j,"data":{"payload": []}} for j in range(maxSize)]
+              components = ["main", "dde", "community"]
+              allBuildTasks = [{"component": j,"data":{"payload": []}} for j in components]
               data = read_integration()
 
               message = data.get("message", "Integrated for V23-Beta3").replace("\n", "")
@@ -180,9 +204,14 @@ jobs:
               changelogs = []
               influences = []
               for repo in data.get("repos"):
-                order = int(repo.get("order",0))
-                order = max(0, order) and min(order , maxSize - 1)
                 fullreponame = str(repo.get('repo', ""))
+                component = get_component(fullreponame)
+                component_index = 0
+                if component == "dde":
+                  component_index = 1
+                if component == "community":
+                  component_index = 2
+                print("component: %s" % component)
                 tagsha = repo.get('tagsha', "")
                 tag = repo.get('tag', "")
                 if tag and tag != "" and len(tag) > 0:
@@ -204,7 +233,7 @@ jobs:
                     noChangelogs.append({"repo": fullreponame, "tag": tagsha, "tagsha": tagsha})
                 if tagsha == "" and len(tagsha) <= 0 and tag == "" and len(tag) <= 0:
                   illegalTags.append({"repo": fullreponame, "tag": tag, "tagsha": tagsha})
-                allBuildTasks[order].get("data").get("payload").append(repo)
+                allBuildTasks[component_index].get("data").get("payload").append(repo)
               integrationinfo = str("\n".join(integrationInfos))
               print("integrationinfo: " + integrationinfo)
               changelog = str("\n".join(changelogs))
@@ -238,12 +267,27 @@ jobs:
                   set_output("no_changelogs", "undefined")
 
               allRepos = []
-              for order in allBuildTasks:
-                  for repo in order.get("data").get("payload"):
+              testrepoaddr = ""
+              for c in allBuildTasks:
+                  print(c)
+                  print(c.get("component"))
+                  for repo in c.get("data").get("payload"):
                       allRepos.append(repo)
-                  if len(order.get("data").get("payload")) > 0:
-                      set_output("build_matrix", str(order.get("data")))
+                  if len(c.get("data").get("payload")) > 0:
+                      set_output("build_matrix_" + str(c.get("component")), str(c.get("data")))
+                      if str(c.get("component")) == "main":
+                        if testrepoaddr != "":
+                          testrepoaddr = testrepoaddr + "\n    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}/testing/ ./"
+                        else:
+                          testrepoaddr ="    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}/testing/ ./"
+                      else:
+                        if testrepoaddr != "":
+                          testrepoaddr = testrepoaddr + "\n    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}:/" + str(c.get("component")) + "/testing/ ./"
+                        else:
+                          testrepoaddr ="    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}:/" + str(c.get("component")) + "/testing/ ./"
               set_output("all_build_task", str(allRepos))
+              print(testrepoaddr)
+              set_output("testrepoaddr", str(testrepoaddr))
 
           except BaseException as e:
               logging.error(e)
@@ -317,87 +361,6 @@ jobs:
             if ( illegal_tags !== undefined ) {
               core.setFailed("some tags are not invalid!")
             }
-
-            // component 检查
-            all_build_task = ${{ steps.parsec_integration.outputs.all_build_task }}
-            let component = ""
-            for (repo of all_build_task) {
-              console.log(repo)
-              obsWorkflowsPath = ".obs/workflows.yml"
-              if (repo.repo.includes("deepin-community")) {
-                obsWorkflowsPath = "debian/deepin/workflows.yml"
-              }
-              repoinfo = repo.repo.split('/')
-              if (repoinfo.length == 2) {
-                const {data} = await github.rest.repos.getContent({
-                  owner: repoinfo[0],
-                  repo: repoinfo[1],
-                  path: obsWorkflowsPath,
-                });
-                datas = Buffer.from(data.content, data.encoding)
-                obsinfo = datas.toString()
-                //console.log(obsinfo)
-                if (obsinfo.length > 0) {
-                  if (obsinfo.includes("source_project: deepin:Develop:dde")) {
-                    if (component == "") {
-                      component = "dde"
-                    }
-
-                    if (component != "dde") {
-                      core.setFailed("intergrate multi components repo are not allowed!")
-                      break
-                    }
-
-                  } else if (obsinfo.includes("source_project: deepin:Develop:main")) {
-                    if (component == "") {
-                      component = "main"
-                    }
-
-                    if (component != "main") {
-                      core.setFailed("intergrate multi components repo are not allowed!")
-                      break
-                    }
-
-                  } else if (obsinfo.includes("source_project: deepin:Develop:community")) {
-                    if (component == "") {
-                      component = "community"
-                    }
-
-                    if (component != "community") {
-                      core.setFailed("intergrate multi components repo are not allowed!")
-                      break
-                    }
-
-                  } else if (obsinfo.includes("source_project: deepin:Develop:commercial")) {
-                    if (component == "") {
-                      component = "commercial"
-                    }
-
-                    if (component != "commercial") {
-                      core.setFailed("intergrate multi components repo are not allowed!")
-                      break
-                    }
-                  }
-                } else {
-                  // 默认没有配置obs工作流程的项目组件为community
-                  if (component == "") {
-                    component = "community"
-                  }
-
-                  if (component != "community") {
-                    core.setFailed("intergrate multi components repo are not allowed!")
-                    break
-                  }
-                }
-              }
-            }
-
-            if (component == "") {
-              // 默认community
-              component = "community"
-            }
-            //console.log(component)
-            core.setOutput('component', component)
 
       - name: upload integration detail
         uses: actions/upload-artifact@v3

@@ -7,7 +7,7 @@
   </debuginfo>
   <repository name="testing" rebuild="local">
     <path project="deepin:CI" repository="deepin_testing"/>
-    <path project="deepin:TestingIntegration:TOPIC" repository="testing"/>
+    <path project="deepin:CI:TestingIntegration:TOPIC" repository="testing"/>
     <arch>aarch64</arch>
     <arch>x86_64</arch>
   </repository>

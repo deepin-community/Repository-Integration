@@ -90,11 +90,15 @@ jobs:
       - parsec_integration
       - ouput_message
       - build_project_prepare
-      - builds
+      - build_main
+      - build_dde
+      - build_community
     if: |
       always() && !cancelled() &&
       (needs.parsec_integration.result == 'success') && (needs.ouput_message.result != 'failure' ) &&
-      (needs.builds.result == 'success' || needs.builds.result == 'skipped')
+      (needs.build_main.result == 'success' || needs.build_main.result == 'skipped') &&
+      (needs.build_dde.result == 'success' || needs.build_dde.result == 'skipped') &&
+      (needs.build_community.result == 'success' || needs.build_community.result == 'skipped')
     uses: deepin-community/Repository-Integration/.github/workflows/issue-project-manager.yml@master
     secrets: inherit
     with:
@@ -109,7 +113,7 @@ jobs:
       integrationinfo: ${{ needs.parsec_integration.outputs.integrationinfo }}
       changelog: ${{ needs.parsec_integration.outputs.changelog }}
       influence: ${{ needs.parsec_integration.outputs.influence }}
-      testrepoaddr: "    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}/testing/ ./"
+      testrepoaddr: ${{ needs.parsec_integration.outputs.testrepoaddr }}
 
   pass_integration:
     name: pass integration
@@ -142,15 +146,15 @@ jobs:
       integrations: ${{ needs.parsec_integration.outputs.all_build_task }}
 
   # build task
-  builds:
-    name: builds
-    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix != '') && (needs.parsec_integration.result == 'success')
+  build_main:
+    name: build_main
+    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix_main != '') && (needs.parsec_integration.result == 'success')
     needs:
       - parsec_integration
       - build_project_prepare
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix) }}
+      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_main) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
@@ -158,3 +162,39 @@ jobs:
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
       topic: test-integration-pr-${{ github.event.number }}
+
+  build_dde:
+    name: build_dde
+    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix_dde != '') && (needs.parsec_integration.result == 'success')
+    needs:
+      - parsec_integration
+      - build_project_prepare
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_dde) }}
+    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    secrets: inherit
+    with:
+      repo: ${{ matrix.payload.repo }}
+      tag: ${{ matrix.payload.tag }}
+      tagsha: ${{ matrix.payload.tagsha }}
+      topic: test-integration-pr-${{ github.event.number }}
+      component: "dde"
+
+  build_community:
+    name: build_community
+    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix_community != '') && (needs.parsec_integration.result == 'success')
+    needs:
+      - parsec_integration
+      - build_project_prepare
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_community) }}
+    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    secrets: inherit
+    with:
+      repo: ${{ matrix.payload.repo }}
+      tag: ${{ matrix.payload.tag }}
+      tagsha: ${{ matrix.payload.tagsha }}
+      topic: test-integration-pr-${{ github.event.number }}
+      component: "community"
