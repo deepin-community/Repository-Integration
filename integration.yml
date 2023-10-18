@@ -3,7 +3,7 @@ message: |
 milestone: V23-Beta3
 repos: 
   - repo: deepin-community/nexttrace
-    tag: 1.2.2.2-1
+    tag: 1.2.2.2-2
   - repo: deepin-community/golang-github-akamensky-argparse
     tag: 1.4.0-1-0deepin2
   - repo: deepin-community/golang-github-tsosunchia-powclient
