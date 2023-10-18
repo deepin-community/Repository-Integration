@@ -5,7 +5,4 @@ repos:
   - repo: linuxdeepin/deepin-im
     order: 0
     tagsha: 374b36ace6ca9de79bf8a4b9852db14590aa5524
-  - repo: linuxdeepin/dtk6core
-    order: 0
-    tag: 6.0.6
 timestamp: 1697607836510
