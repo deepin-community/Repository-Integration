@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'chore: update version to 5.1.0 by dengbo11@deepin-community/fcitx5-qt'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/fcitx5-qt
+    order: 0
+    tagsha: f1c5fbf1d6e732a35eceea8ddd40cef4d388193d
+timestamp: 1697700330957
