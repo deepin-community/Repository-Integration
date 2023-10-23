@@ -4,4 +4,6 @@ repos:
   - repo: deepin-community/krfb
     order: 0
     tagsha: de4b0bb0a8901d319b32c7cc2da6ff1f0bbc6820
+  - repo: deepin-community/kpipewire
+    tagsha: 02ac39c26f7db23bf5881e56c29c6d8ed4631765
 timestamp: 1698035330562
