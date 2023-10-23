@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'chore: bump version to 1.0.24 by kegechen@linuxdeepin/dde-app-services'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-app-services
+    order: 0
+    tagsha: ae2435943f73edd0edf096e36a18f3e5a4bcc3a7
+timestamp: 1698045636607
