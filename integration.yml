@@ -4,5 +4,8 @@ repos:
   - repo: deepin-community/tzdata
     order: 0
     tagsha: cba7ce1806ca4e68df48bd06daf8ce473a6bda69
+  - repo: deepin-community/natsort
+    order: 0
+    tagsha: 82b93d4dc6b3007f9fccb2b7fb44ce76fe25ed14   
 topic: timedate
 timestamp: 1698118458282
