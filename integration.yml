@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
-milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: launchpad-qt6-dtk6 by @hudeng-go'
+milestone: "V23-Beta3"
+repos:
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: e9f68829037b3a5b826d80bb7ac161974efa7771
+    - repo: linuxdeepin/dtk6core
+      tagsha: 402d493ea5ea7c4a9cc0ed59971f6c8d4776b446
+    - repo: linuxdeepin/dtk6gui
+      tagsha: 6d259a4da71389544605cd470a980550fab3ea52
+    - repo: linuxdeepin/dtk6declarative
+      tagsha: 56fc0783dc47b37ca8e5658e17aac1c27ff2da5f
