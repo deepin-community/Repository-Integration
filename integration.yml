@@ -1,5 +1,5 @@
-message: 'Auto integrate from topic: launchpad-qt6-dtk6 by @hudeng-go'
-milestone: "V23-Beta3"
+message: 'Auto integrate from topic: launchpad-qt6-dtk6 by @BLumia'
+milestone: ""
 repos:
     - repo: linuxdeepin/dde-launchpad
       tagsha: e9f68829037b3a5b826d80bb7ac161974efa7771
