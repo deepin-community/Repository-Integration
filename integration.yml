@@ -8,4 +8,4 @@ repos:
     - repo: linuxdeepin/dtk6gui
       tagsha: 6d259a4da71389544605cd470a980550fab3ea52
     - repo: linuxdeepin/dtk6declarative
-      tagsha: 56fc0783dc47b37ca8e5658e17aac1c27ff2da5f
+      tagsha: dfe1faa78f180957e669f605469e992a4b82ace5
