@@ -1,5 +1,5 @@
 message: 'Auto integrate from topic: mm by @xzl01'
-milestone: ""
+milestone: "V23-Beta3"
 repos:
     - repo: deepin-community/modemmanager
       tagsha: 4faaef69962a92d602a4191a79e58f8e240a6f90
