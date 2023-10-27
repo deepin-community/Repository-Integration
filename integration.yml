@@ -2,5 +2,5 @@ message: |
   Integrated for minetest
 milestone: V23-Beta3
 repos: 
-  - repo: deepin-community
+  - repo: deepin-community/minetest
     tagsha: '9320d6a3bae28c12d5aeccd524d1294c764586eb'
