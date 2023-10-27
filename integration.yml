@@ -3,4 +3,4 @@ message: |
 milestone: V23-Beta3
 repos: 
   - repo: deepin-community
-    tag: 5.6.1+dfsg+_1.9.0mt8+dfsg-2
+    tag: '5.6.1+dfsg+_1.9.0mt8+dfsg-2'
