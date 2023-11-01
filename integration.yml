@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: legacy-am-compat by @BLumia'
+message: 'Auto integrate from topic: legacy-am-compat by @BLumia to '
 milestone: ""
 repos:
     - repo: linuxdeepin/lastore-daemon
