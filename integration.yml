@@ -1,5 +1,5 @@
-message: 'Auto integrate from topic: upower by @hudeng-go to '
-milestone: ""
+message: 'Auto integrate from topic: upower by @hudeng-go to V23-Beta3'
+milestone: V23-Beta3
 repos:
     - repo: deepin-community/libgudev
       tagsha: f6081759012081dce0ca548bcc92118fb0851121
