@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: upower by @xzl01'
+message: 'Auto integrate from topic: upower by @hudeng-go to '
 milestone: ""
 repos:
     - repo: deepin-community/libgudev
