@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: vioken by @wineee to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/waylib
+      tagsha: c62cf1ac6201dfa7888d3eae20f49531f7b4d088
+    - repo: deepin-community/treeland
+      tagsha: 41ad61cb4130e1cef9019694a878e6e9f539b2cd
+    - repo: deepin-community/qwlroots
+      tagsha: 71ee61721bc78e0027b8cbb2b0a6c12b1fda7bce
