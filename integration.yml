@@ -1,9 +1,5 @@
 message: 'Auto integrate from topic: vioken by @wineee to V23-Beta3'
 milestone: V23-Beta3
 repos:
-    - repo: deepin-community/waylib
-      tagsha: c62cf1ac6201dfa7888d3eae20f49531f7b4d088
-    - repo: deepin-community/treeland
-      tagsha: 41ad61cb4130e1cef9019694a878e6e9f539b2cd
-    - repo: deepin-community/qwlroots
-      tagsha: 71ee61721bc78e0027b8cbb2b0a6c12b1fda7bce
+    - repo: linuxdeepin/dcc-insider-plugin
+      tagsha: c72636750576b5838e2cdbad612e8c4d9f2e1c51
