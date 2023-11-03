@@ -21,3 +21,5 @@ repos:
       tagsha: 28ec49d1eef192b6828bc103ad7b84223ebbdb5a
     - repo: deepin-community/waylandpp
       tagsha: 49d10dc8c6bf26275913b8da29a157a57d0c7c20
+    - repo: deepin-community/fstrcmp
+      tagsha: 0d46e101aa0f3a31a4c9cdea484d3ae308c87e5e
