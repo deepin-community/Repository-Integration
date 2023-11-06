@@ -173,12 +173,20 @@ jobs:
           pkgname="${{ needs.build.outputs.pkgname }}"
           if [ "$COMPONENT" = "main" ]; then
             osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
-            if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ];then osc buildlog testing ${ARCH}; else echo "${ARCH} build excluded"; fi
-            if [ "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'succeeded')" = "" -a "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'finished')" = "" ];\
-            then echo "${ARCH} build failed" && -1; else echo "${ARCH} build succeeded"; fi
+            if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ]; then
+              osc buildlog testing ${ARCH}
+              if [ "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'succeeded')" = "" -a "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'finished')" = "" ];\
+              then echo "${ARCH} build failed" && -1; else echo "${ARCH} build succeeded"; fi
+            else
+              echo "${ARCH} build excluded"
+            fi
           else
             osc co deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/${pkgname} && cd $_
-            if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ];then osc buildlog testing ${ARCH}; else echo "${ARCH} build excluded"; fi
-            if [ "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/testing/${ARCH}/${pkgname}/_status |grep 'succeeded')" = "" -a "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/testing/${ARCH}/${pkgname}/_status |grep 'finished')" = "" ];\
-            then echo "${ARCH} build failed" && -1; else echo "${ARCH} build succeeded"; fi
+            if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ]; then
+              osc buildlog testing ${ARCH}
+              if [ "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/testing/${ARCH}/${pkgname}/_status |grep 'succeeded')" = "" -a "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/testing/${ARCH}/${pkgname}/_status |grep 'finished')" = "" ];\
+              then echo "${ARCH} build failed" && -1; else echo "${ARCH} build succeeded"; fi
+            else
+              echo "${ARCH} build excluded"
+            fi
           fi
