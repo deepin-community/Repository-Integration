@@ -106,8 +106,8 @@ records:
         date: '2023-10-07'
         pr: 349
     deepin-community/glibc:
-        date: '2023-10-07'
-        pr: 349
+        date: '2023-11-06'
+        pr: 542
     deepin-community/gnupg2:
         date: '2023-10-07'
         pr: 349
