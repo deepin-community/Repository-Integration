@@ -6,6 +6,6 @@ repos:
     - repo: linuxdeepin/deepin-desktop-theme
       tagsha: 94f368f29233af82ba99e4efe9b12e9bd7428a84
     - repo: linuxdeepin/dde-daemon
-      tagsha: b738cf8132330702ee2c96ce0b1e0e7dc78f16c3
+      tagsha: 98450469c4d5ee14293bea689a0ff636462b61c3
     - repo: linuxdeepin/dde-control-center
       tagsha: 6e2b800a39770b4452caf2a379ba38cf2044ccba
