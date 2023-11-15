@@ -6,10 +6,16 @@ milestone: V23-Beta3
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/qt6-base
+    tagsha: "553880335dd2e4fb9a1d2039e269ffb153b65129"
+  - repo: deepin-community/qt6-languageserver
+    tagsha: "516b503a0b18b8838af00e40295180f6fde92349"
+  - repo: deepin-community/qt6-shadertools
+    tagsha: "4e3f3ef4fa05e58414c07481f62573e78bf9260d"
+  - repo: deepin-community/qt6-declarative
+    tagsha: "808a1d8dcb3bc224c601a34f71e0a293b9299d0e"
+  - repo: deepin-community/qt6-tools
+    tagsha: "26b3775176ba27bb53362359435df53c2226b696"
+  - repo: deepin-community/qt6-wayland
+    tagsha: "089822b3da980016b7967ebe98ed3f3cb58f4b0f"
+
