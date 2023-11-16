@@ -1,5 +1,11 @@
-message: 'Auto integrate from topic: dcc by @Zeno-sole to V23-Beta3'
+message: 'Auto integrate from topic: dcc by @chenchongbiao to V23-Beta3'
 milestone: V23-Beta3
 repos:
-    - repo: deepin-community/deepin-desktop-environment
-      tagsha: fd309c1a3714278b672adf17a8b8174f1014db4a
+    - repo: linuxdeepin/dde-control-center
+      tagsha: f98c01cf3d944ebb0c9f94e4a4d282cf9788037d
+    - repo: linuxdeepin/deepin-desktop-theme
+      tagsha: ea31a5a5e04e9c247be5ad9080fcb880e35f579a
+    - repo: linuxdeepin/dde-daemon
+      tagsha: 42b388dfc0513ede481481fba2ff5774e67f31bc
+    - repo: linuxdeepin/deepin-icon-theme
+      tagsha: 6a00ef96d58ec8962d4ed148e980f2ab0c42a9e8
