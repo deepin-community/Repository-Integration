@@ -13,7 +13,7 @@ repos:
   - repo: deepin-community/qt6-shadertools
     tagsha: "4e3f3ef4fa05e58414c07481f62573e78bf9260d"
   - repo: deepin-community/qt6-declarative
-    tagsha: "808a1d8dcb3bc224c601a34f71e0a293b9299d0e"
+    tagsha: "6e10fafc84215c45c20ad79c32869047b608dad5"
   - repo: deepin-community/qt6-svg
     tagsha: "3023ffb286e4d14dd50c76932d72daf1efcb1466"
   - repo: deepin-community/qt6-tools
