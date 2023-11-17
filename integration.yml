@@ -7,7 +7,7 @@ milestone: V23-Beta3
 repos: 
   # Required
   - repo: deepin-community/qt6-base
-    tagsha: "553880335dd2e4fb9a1d2039e269ffb153b65129"
+    tagsha: "349b997afb6e0d3f55cbcf45f25530324d2dbb60"
   - repo: deepin-community/qt6-languageserver
     tagsha: "516b503a0b18b8838af00e40295180f6fde92349"
   - repo: deepin-community/qt6-shadertools
