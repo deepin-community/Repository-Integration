@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: dde-shell-notification by @18202781743 to V
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-shell
-      tagsha: 3cff5a7a236e9239e0c3b93d6203d0cb614e429c
+      tagsha: 17ac4cb1e12f10b9066221f854059661423b70ff
     - repo: linuxdeepin/dde-session-ui
-      tagsha: bbeafdd107f8101874c8b4af89ca373abcf6fef7
+      tagsha: c0dd46ba3cc9a99397a822d6655a95752078d94e
