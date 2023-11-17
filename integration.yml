@@ -14,6 +14,8 @@ repos:
     tagsha: "4e3f3ef4fa05e58414c07481f62573e78bf9260d"
   - repo: deepin-community/qt6-declarative
     tagsha: "808a1d8dcb3bc224c601a34f71e0a293b9299d0e"
+  - repo: deepin-community/qt6-svg
+    tagsha: "3023ffb286e4d14dd50c76932d72daf1efcb1466"
   - repo: deepin-community/qt6-tools
     tagsha: "26b3775176ba27bb53362359435df53c2226b696"
   - repo: deepin-community/qt6-wayland
