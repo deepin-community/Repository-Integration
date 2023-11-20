@@ -2,7 +2,7 @@ message: 'fix: NoDisplay pulseaudio app by xzl01@deepin-community/pulseaudio'
 milestone: V23-Beta3
 repos:
   - repo: deepin-community/pulseaudio
-    tagsha: 3972a7ea54b239e97bfd94880e0838605e399089
+    tagsha: 58c97fc5c43869607c587f09d348db1c2f2492ff
   - repo: deepin-community/gstreamer1.0
     tagsha: a3e6d8defefdf28842749107d668f611f18455a0
   - repo: deepin-community/libunwind
