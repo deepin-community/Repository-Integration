@@ -5,4 +5,6 @@ repos:
     tagsha: 3972a7ea54b239e97bfd94880e0838605e399089
   - repo: deepin-community/gstreamer1.0
     tagsha: a3e6d8defefdf28842749107d668f611f18455a0
+  - repo: deepin-community/libunwind
+    tagsha: cbb1b65c1079de69b4125e171370daba7704188c
 timestamp: 1700039021776
