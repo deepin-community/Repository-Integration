@@ -1,5 +1,5 @@
 message: 'Auto integrate from topic: dbus by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
-    - repo: linuxdeepin/dde-session-ui
-      tagsha: 903329e3a4f2b10710e6a9f4112ffcd252cecf47
+    - repo: deepin-community/deepin-desktop-environment
+      tagsha: 9a59e3cd0b84db76fc03272e991063173cc5ce65
