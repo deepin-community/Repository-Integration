@@ -4,6 +4,6 @@ repos:
     - repo: linuxdeepin/dde-session-ui
       tagsha: 903329e3a4f2b10710e6a9f4112ffcd252cecf47
     - repo: linuxdeepin/dde-session
-      tagsha: d4a4f745d96caf5c589c0b11ca1b78a5814c3784
+      tagsha: 45827b96fa38e71c53638bfa0aecd5d6d2627f52
     - repo: linuxdeepin/startdde
       tagsha: 64b9949a60564de2435198b2eb22ca4de79b29a2
