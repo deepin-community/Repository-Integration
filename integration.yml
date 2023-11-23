@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: deepin-community/multistrap
       tagsha: bf7debe2e886286096a5fb81c80ac253ee885fda
+    - repo: deepin-community/libparse-debian-packages-perl
+      tagsha: ac7be984d9ff8b0481a08e3c8783af69e451a7d9
