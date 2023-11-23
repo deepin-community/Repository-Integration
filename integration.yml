@@ -1,15 +1,30 @@
 # Required
 message: |
-  Integrated for V23-Beta3
+  Integrate qt 6.6 for V23-Beta3
 # Not required, now default is V23-Beta3
 milestone: V23-Beta3
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/qt6-5compat
+    tagsha: "9a7cb2e2ac8dbbd74a604ed4c9b8cfe4abc74b37"
+  - repo: deepin-community/qt6-imageformats
+    tagsha: "c6aa497794e5d73df39bb209fa5337903596fea9"
+  - repo: deepin-community/qt6-serialbus
+    tagsha: "47d1d93572a44418f83ff58b8728f17c0d4dead8"
+  - repo: deepin-community/qt6-serialport
+    tagsha: "ddf75352745e24f5932ecea974c02893fa417ada"
+  - repo: deepin-community/qt6-connectivity
+    tagsha: "0e5575d7178e0115afdf3722dcc6ac90479b4520"
+  - repo: deepin-community/qt6-positioning
+    tagsha: "4763135c1cc2c7defbf40fe79c67bcab7891e668"
+  - repo: deepin-community/qt6-quicktimeline
+    tagsha: "7323f6dab8fe046b0b8286ec7fcfcae4c703b00d"
+  - repo: deepin-community/qt6-translations
+    tagsha: "e678de9212595111bff32cfe72f2155ac11fe4c7"
+  - repo: deepin-community/qt6-webchannel
+    tagsha: "5ee19c14e76a0cc31f2cb61488f947a1d7c5a3ce"
+  - repo: deepin-community/qt6-websockets
+    tagsha: "3d0c02584aa18f42c50a7d0dad7b25f9a57a1c5e"
+  - repo: deepin-community/fcitx5-qt
+    tagsha: "f1c5fbf1d6e732a35eceea8ddd40cef4d388193d"
