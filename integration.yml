@@ -7,3 +7,5 @@ repos:
       tagsha: 45827b96fa38e71c53638bfa0aecd5d6d2627f52
     - repo: linuxdeepin/startdde
       tagsha: 64b9949a60564de2435198b2eb22ca4de79b29a2
+    - repo: linuxdeepin/dde-appearance
+      tagsha: aee7b317e440e97544d257e7d3b2de5c58e0dddf
