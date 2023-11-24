@@ -9,3 +9,5 @@ repos:
       tagsha: 64b9949a60564de2435198b2eb22ca4de79b29a2
     - repo: linuxdeepin/dde-appearance
       tagsha: aee7b317e440e97544d257e7d3b2de5c58e0dddf
+    - repo: linuxdeepin/dde-appearance
+      tagsha: 7bc1e88d02061e0389ba615a1cf8a5a3494c9e16
