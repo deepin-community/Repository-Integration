@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: master by @chenchongbiao to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/erofs-utils
+      tagsha: 0f31ab648980f1c1e90390b9ec9b13d3f7d2ff69
+    - repo: deepin-community/libvirt-python
+      tagsha: c962a1c7371e3f7130c94993389fe0b0380b676d
+    - repo: deepin-community/virt-manager
+      tagsha: 6f8d2233bdccb431ca66d59e1d35c74c7f2d588a
+    - repo: deepin-community/osinfo-db
+      tagsha: 4c0c4a3bc21198ea0f8703f21c406c0db0f828d1
+    - repo: deepin-community/duktape
+      tagsha: 501d7f4231f1f42e3ddf508d953b9414a1ed10b3
+    - repo: deepin-community/libvirt
+      tagsha: a4279f111fa3825afe6066e9bffa507d5b483a73
+    - repo: deepin-community/spice-gtk
+      tagsha: 197a59eb433ba3c78d150d399c0e0931c5fb79e9
+    - repo: deepin-community/virt-viewer
+      tagsha: c97d3b98d88296e4da040eaafeda0a88fab30dfa
