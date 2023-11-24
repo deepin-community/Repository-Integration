@@ -16,4 +16,4 @@ repos:
     - repo: deepin-community/spice-gtk
       tagsha: 197a59eb433ba3c78d150d399c0e0931c5fb79e9
     - repo: deepin-community/virt-viewer
-      tagsha: c97d3b98d88296e4da040eaafeda0a88fab30dfa
+      tagsha: c2101fe252be79181ee87087d1a6d8e8a7f4d363
