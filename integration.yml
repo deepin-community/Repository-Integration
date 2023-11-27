@@ -5,3 +5,5 @@ repos:
       tagsha: b7f32be061a4562688191b461abe02d88e625e36
     - repo: linuxdeepin/dde-control-center
       tagsha: c028be1cfe4b3dcbeb3aeeca65ba048e50276ea8
+    - repo: linuxdeepin/go-dbus-factory
+      tagsha: 5cc5ddf23c385c543dcd7aadc26c8b31fe414d67
