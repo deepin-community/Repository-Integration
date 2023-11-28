@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'chore: release go-dbus-factory 2.0.8 by dengbo11@linuxdeepin/go-dbus-factory'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-daemon
+    tagsha: 993291c20c025253cf5aaa29561c59616390003c
+  - repo: linuxdeepin/dde-control-center
+    tagsha: c3c5441e54d9192ba14e2e77793e0944a9d041eb
+  - repo: linuxdeepin/dde-session
+    tagsha: 2774fc736d6153e0cf4ef1f757e68015060e7c9a
+  - repo: linuxdeepin/go-dbus-factory
+    tagsha: 77ac5d6251aaf1648fbdaa431b68eeb441a592aa
+topic: daemon
+timestamp: 1701153186601
