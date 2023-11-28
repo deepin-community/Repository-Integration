@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: >-
+  fix: XDG_SESSION_TYPE is error when switch display manager environment by
+  dengbo11@linuxdeepin/dde-session
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-session
+    tagsha: 02929544cf9758ef46603a80ea728cd53f9301a9
+timestamp: 1701148115881
