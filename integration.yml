@@ -3,4 +3,6 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/usrmerge
     tagsha: c12828b32d9ebb7016d315788ecb4534447fad57
+  - repo: deepin-community/glibc
+    tagsha: c46e1c5ed31c83d2222ddb1f616a4f005c8620c7
 timestamp: 1701167512102
