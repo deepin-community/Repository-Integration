@@ -7,4 +7,8 @@ repos:
     tagsha: c46e1c5ed31c83d2222ddb1f616a4f005c8620c7
   - repo: deepin-community/gcc-13
     tagsha: 4410c1e3f1b06fa2f55c497e72ed42a184daf329
+  - repo: deepin-community/gcc-12
+    tagsha: b3410cbd2aa0028d29693556014591c8fb31cce2
+  - repo: deepin-community/gcc-11
+    tagsha: 27b7bfd22381dcb13f831960057c78df14626c1c
 timestamp: 1701167512102
