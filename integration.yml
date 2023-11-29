@@ -5,4 +5,6 @@ repos:
     tagsha: c12828b32d9ebb7016d315788ecb4534447fad57
   - repo: deepin-community/glibc
     tagsha: c46e1c5ed31c83d2222ddb1f616a4f005c8620c7
+  - repo: deepin-community/gcc-13
+    tagsha: 4410c1e3f1b06fa2f55c497e72ed42a184daf329
 timestamp: 1701167512102
