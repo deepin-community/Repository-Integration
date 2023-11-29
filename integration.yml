@@ -21,3 +21,5 @@ repos:
       tagsha: c4aadca287ef30f057830a0af7e15247171d0e62
     - repo: deepin-community/pycangjie
       tagsha: 9d867306e45f637d89962d67ae6c558e137fa246
+    - repo: deepin-community/xkeyboard-config
+    - tagsha: 91aae1afd18e54447c7fcd76f0d8a2f3e65b9e23
