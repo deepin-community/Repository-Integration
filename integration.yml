@@ -5,3 +5,5 @@ repos:
       tagsha: 74f3fb82e4916d98730f61efee9f9a7e20fd9bb1
     - repo: deepin-community/libfilezilla
       tagsha: 808aaede4e25c5cec624fbb2d32dc115bf1ecacd
+    - repo: deepin-community/boost1.81
+      tagsha: 7807ac0e39b1d3924fad210208d302091d558121
