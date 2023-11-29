@@ -23,3 +23,5 @@ repos:
       tagsha: 9d867306e45f637d89962d67ae6c558e137fa246
     - repo: deepin-community/xkeyboard-config
       tagsha: 91aae1afd18e54447c7fcd76f0d8a2f3e65b9e23
+    - repo: deepin-community/libcangjie
+      tagsha: 84a96183ec9051ee6911f6ee4168918ebcdc3103
