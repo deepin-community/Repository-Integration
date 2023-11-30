@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: fcitx5 by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/fcitx5
+      tagsha: 9b2a9f78c3349b077745e2a74b997b02245d08b6
+    - repo: deepin-community/xcb-imdkit
+      tagsha: 5abef8cd39ecf88dae5403fde9b43b0598a069d6
+    - repo: deepin-community/enchant-2
+      tagsha: 5eeebe9a6d74a70d0f5781ba35c9a5459ec3906e
+    - repo: deepin-community/fcitx-qt5
+      tagsha: 0fbdff5dd3d99766cd48dd83c7330a2690f1e6d0
+    - repo: deepin-community/fcitx5-qt
+      tagsha: e37db21deeee98247082f937bcad9119a94acd09
+    - repo: deepin-community/fcitx5-chinese-addons
+      tagsha: 60aa9dc5c59a91f31e7929ff1cd49c9c39f3ff87
+    - repo: deepin-community/libime
+      tagsha: 2a4f294ed390fd3d59c20dec1554b987fcd73030
