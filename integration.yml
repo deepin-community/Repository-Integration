@@ -10,7 +10,7 @@ repos:
     - repo: deepin-community/fcitx-qt5
       tagsha: 0fbdff5dd3d99766cd48dd83c7330a2690f1e6d0
     - repo: deepin-community/fcitx5-qt
-      tagsha: e37db21deeee98247082f937bcad9119a94acd09
+      tagsha: cf973563ac9babb7ec447a7d8bff9bc6a3ee7379
     - repo: deepin-community/fcitx5-chinese-addons
       tagsha: 60aa9dc5c59a91f31e7929ff1cd49c9c39f3ff87
     - repo: deepin-community/libime
