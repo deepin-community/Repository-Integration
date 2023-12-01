@@ -4,12 +4,41 @@ message: |
 # Not required, now default is V23-Beta3
 milestone: V23-Beta3
 # Required
-repos: 
+repos:
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/gmbal
+    order: 0
+    tagsha: "c197bff318da61e8eaac1303d7e5fcd090c01a6b"
+  - repo: deepin-community/gmbal-commons
+    order: 0
+    tagsha: "1d46e373cb8398082c4940012587b622fceaa5ae"
+  - repo: deepin-community/gmbal-pfl
+    order: 0
+    tagsha: "a4a20b705ce5b5a4dd76f91a37139eeee9cb9b7f"
+  - repo: deepin-community/gsoap
+    order: 0
+    tagsha: "cda67d36b939793295793bb93528b0ce59a7933b"
+  - repo: deepin-community/jaxws
+    order: 0
+    tagsha: "2af5f394e09ee5f95a32cfc1d92e93df1b5fcd10"
+  - repo: deepin-community/kbuild
+    order: 0
+    tagsha: "0c593d94e7e96bfc310742a32975b224df588743"
+  - repo: deepin-community/makeself
+    order: 0
+    tagsha: "34292c45699022439746d2f42ad0aeebe1584d58"
+  - repo: deepin-community/maven-debian-helper
+    order: 0
+    tagsha: "f2ac6cecf0e68650f6bc765d948387635863c29b"
+  - repo: deepin-community/metro-policy
+    order: 0
+    tagsha: "02713f5a3908d11fefac8f154a84c53b3f784fac"
+  - repo: deepin-community/mimepull
+    order: 0
+    tagsha: "0879416a42616a1eb0dc1a426b94013b62543d59"
+  - repo: deepin-community/saaj-ri
+    order: 0
+    tagsha: "995d32e0fd686752ee72ffce6fd998a4ca3d5649"
+  - repo: deepin-community/virtualbox
+    order: 0
+    tagsha: "9760241ee1bb9b993a662a6aec3b6cb61f0ffc74"
