@@ -41,4 +41,4 @@ repos:
     tagsha: "995d32e0fd686752ee72ffce6fd998a4ca3d5649"
   - repo: deepin-community/virtualbox
     order: 0
-    tagsha: "9760241ee1bb9b993a662a6aec3b6cb61f0ffc74"
+    tagsha: "2d31a3f7443024971a32b45f2651a0c9fa0c7d86"
