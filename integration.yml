@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: qemu by @chenchongbiao to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/qemu
+      tagsha: 5339ef3e4d498d156767a15a40a027d0ab500258
+    - repo: deepin-community/gcc-arm-none-eabi
+      tagsha: 668ae3b2db2036d532eef9ff032846b6dc83f6dc
+    - repo: deepin-community/binutils-arm-none-eabi
+      tagsha: 355fb952ea0d4dd03f173f9ccb7a91af80296b34
