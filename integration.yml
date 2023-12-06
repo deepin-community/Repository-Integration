@@ -2,8 +2,8 @@ message: 'Auto integrate from topic: qemu by @chenchongbiao to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/qemu
-      tagsha: 5339ef3e4d498d156767a15a40a027d0ab500258
+      tagsha: 050de730bf690addda3cb0a25ca81cc540982aa0
     - repo: deepin-community/gcc-arm-none-eabi
-      tagsha: 668ae3b2db2036d532eef9ff032846b6dc83f6dc
+      tagsha: 604ef6c98e9ef4973199806185157066316665fd
     - repo: deepin-community/binutils-arm-none-eabi
-      tagsha: 355fb952ea0d4dd03f173f9ccb7a91af80296b34
+      tagsha: 24a3943a42494e3f724278069fe6709e14bae227
