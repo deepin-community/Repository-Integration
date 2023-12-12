@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: deepin-community/libqtxdg
       tagsha: 03cb784e1e81890c8597c328c03c509c4d3d7bb6
+    - repo: deepin-community/lxqt-build-tools
+      tagsha: 4f416ae807aa6a5b4f22d6e19e7760c6f32c1ea9
