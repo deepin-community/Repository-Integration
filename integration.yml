@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'chore: new tag to 2023.12.13 by Decodetalkers@linuxdeepin/deepin-icon-theme'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-dock
+    tagsha: 05f0eca57eca0ff70ef1e6e02e61466336154a77
+  - repo: linuxdeepin/deepin-icon-theme
+    tagsha: 48864322b28caafc3e9663d72d08808b729805b6
+topic: dde-dock-new
+timestamp: 1702457578957
