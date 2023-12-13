@@ -7,3 +7,5 @@ repos:
       tagsha: b9ce3360541f6d637cdc6883edc4c970992c0b21
     - repo: deepin-community/reuse
       tagsha: 2b88ca05e5f8a1d67ca92242d98355b6711ab4e5
+    - repo: deepin-community/binaryornot
+      tagsha: c4500b64fa7db36225ccaeb9c20be3985718092b
