@@ -5,3 +5,5 @@ repos:
       tagsha: 986269038e17ad3be68e4ba356ae3ceec6da647f
     - repo: deepin-community/waylib
       tagsha: 035c50f88347276b9bc363f45291e8caf6f84387
+    - repo: deepin-community/wlroots
+      tagsha: 37b8cf7a30c1d72eb5589f89178cbd2074321caa
