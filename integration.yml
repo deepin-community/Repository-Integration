@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: reuse by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/python-license-expression
+      tagsha: 37742e86146418f9a8b2ce9a775db599ff94efbf
+    - repo: deepin-community/python-boolean.py
+      tagsha: b9ce3360541f6d637cdc6883edc4c970992c0b21
+    - repo: deepin-community/reuse
+      tagsha: 2b88ca05e5f8a1d67ca92242d98355b6711ab4e5
