@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: >-
+  Release new version to reslove conflict with wlroots-git by
+  wineee@deepin-community/wlroots
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/wlroots
+    tagsha: 37b8cf7a30c1d72eb5589f89178cbd2074321caa
+  - repo: deepin-community/gulkan
+    tagsha: 728acc51ad5ebef0ad3fc9e80c9bd2fd9e19b433
+  - repo: deepin-community/libinput
+    tagsha: 16e6b5815c30f1b09308166095facc75eb5af06a
+  - repo: deepin-community/vulkan-volk
+    tagsha: fcc99d2848a90f98016bc09ba21e3a5039be60da
+  - repo: deepin-community/vkfft
+    tagsha: 1537d2c22672f32673651a6b20030509829245eb
+  - repo: deepin-community/xdg-desktop-portal-wlr
+    tagsha: cbae9ba9c92b46ccef807abad6a512ab6ffe3112
+topic: deepin-im-fcitx5
+timestamp: 1702452247527
