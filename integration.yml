@@ -1,7 +1,9 @@
-message: 'Auto integrate from topic: inter-dtk-plugins by @justforlxz to V23-Beta3'
+message: 'Auto integrate from topic: inter-dtk-plugins by @hudeng-go to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/qt5platform-plugins
       tagsha: e35ab682cc7e06a4876b9fac6dc6b2878419613c
     - repo: linuxdeepin/qt5integration
       tagsha: 421be3d43f3c7cda16eff05688d9550d499f9a8b
+    - repo: linuxdeepin/deepin-kwin
+      tagsha: 592d8020c53d44b32a54a87141c3a5c9466be826
