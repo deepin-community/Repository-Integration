@@ -3,4 +3,8 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/ostree
     tagsha: 5af59472024985419bb11bf9c3d1242e2dc5523a
+  - repo: deepin-community/libsoup3
+    tagsha: a7a769f31afc7e3ec23c3ecb864b6626d9381dc2
+  - repo: deepin-community/debhelper
+    tagsha: e103ba86ab14fa1155fdbfd3e8df10186b5c9c3f
 timestamp: 1702891447753
