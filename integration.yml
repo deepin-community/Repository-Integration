@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: dde-shell-0.0.2 by @hudeng-go to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-shell
-      tagsha: 231eaed6f035902f173c92af1b4c5424524f2507
+      tagsha: b365d32c5048f4cbfff00548f271712354532504
     - repo: linuxdeepin/dde-session-ui
       tagsha: 294f48d46bbe1628a565fbd7cfa313cbcb0b5949
