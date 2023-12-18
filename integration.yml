@@ -7,4 +7,6 @@ repos:
     tagsha: a7a769f31afc7e3ec23c3ecb864b6626d9381dc2
   - repo: deepin-community/debhelper
     tagsha: e103ba86ab14fa1155fdbfd3e8df10186b5c9c3f
+  - repo: deepin-community/quart
+    tagsha: 6089ffd9648bdcf9ca70c02a4e37faa883c35717
 timestamp: 1702891447753
