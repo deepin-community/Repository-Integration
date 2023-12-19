@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: codeblocks by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/gamin
+      tagsha: e598e1d04621e248537272b56addbc4261f89746
+    - repo: deepin-community/codeblocks
+      tagsha: f829ca7bd3ec8474acfabf7f9f10231e4bb0c3f5
+    - repo: deepin-community/astyle
+      tagsha: 0ebf4cc0baef9c04c4153d5a8a73f2c4dca030e6
