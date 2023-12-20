@@ -3,4 +3,6 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/openssh
     tagsha: fa4c82035fa66ca4eb3c0a97c75e1ebf9cd1e1ef
+  - repo: deepin-community/debhelper
+    tagsha: e103ba86ab14fa1155fdbfd3e8df10186b5c9c3f
 timestamp: 1703060836335
