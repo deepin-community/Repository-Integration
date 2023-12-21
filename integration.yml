@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-daemon
       tagsha: a9a0ccdbffef2ad3027eefe5d5e66d94a5b299d6
+    - repo: linuxdeepin/dde-control-center
+      tagsha: e8e94485091bd8b8dc14ecf6da9bfea378528d93
