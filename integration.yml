@@ -5,3 +5,5 @@ repos:
       tagsha: a9a0ccdbffef2ad3027eefe5d5e66d94a5b299d6
     - repo: linuxdeepin/dde-control-center
       tagsha: e8e94485091bd8b8dc14ecf6da9bfea378528d93
+    - repo: linuxdeepin/dde-appearance
+      tagsha: 8ac88c935b25d195048882e4d2abb1b3a1d4ab54
