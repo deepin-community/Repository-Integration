@@ -1,7 +1,7 @@
-message: 'Auto integrate from topic: dde-daemon-596 by @dengbo11 to V23-Beta3'
+message: 'Auto integrate from topic: dde-daemon-596 by @Decodetalkers to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-daemon
       tagsha: 7556dc583843bcd118ee510018784933fb67fac9
     - repo: linuxdeepin/dde-control-center
-      tagsha: dbc8a8062a6c1a175591738cde7740f4d0c761cd
+      tagsha: 75c8f8fdb737f4340e20bc41a17fe037c64a97b7
