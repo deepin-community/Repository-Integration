@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: dde-daemon-596 by @hudeng-go to V23-Beta3'
+message: 'Auto integrate from topic: dde-daemon-596 by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-daemon
@@ -7,3 +7,7 @@ repos:
       tagsha: 75c8f8fdb737f4340e20bc41a17fe037c64a97b7
     - repo: linuxdeepin/startdde
       tagsha: 0efce7be6ef8ad035fbac6cd3dc3ab1c41501cb3
+    - repo: linuxdeepin/dde-account-faces
+      tagsha: 98672ec314ecde76fce64db8318c5e9b7cf438cf
+    - repo: linuxdeepin/dde-appearance
+      tagsha: c9aa7aa5c96e9660ce9c731eb12138f14fb202ee
