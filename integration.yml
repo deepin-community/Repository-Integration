@@ -3,4 +3,14 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/ocppi
     tagsha: 43f10da91dbac502ee10d7f3d36fedb768bf3b15
+  - repo: deepin-community/googletest
+    tagsha: eb93b79a63df4639b065eda996cd9205cea056c0
+  - repo: deepin-community/semver
+    tagsha: 0d0df57fdd23dd8693a13ec4193ff6ec6ea7a53e
+  - repo: deepin-community/nlohmann-json3
+    tagsha: 5df5a1471b2f7a3e6432001caeb9d0decccad525
+  - repo: deepin-community/tl-expected
+    tagsha: 308e36b2440fb551b82e8b054bd7745a1fe6e303
+  - repo: deepin-community/docopt.cpp
+    tagsha: c7dd759d71b857696696e9a8ee44b67e89565b1e
 timestamp: 1703569800604
