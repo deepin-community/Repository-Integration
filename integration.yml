@@ -11,3 +11,7 @@ repos:
       tagsha: fcb1d34f6101ab4d4a85c67902a07c4f9d3132d3
     - repo: deepin-community/python-glad
       tagsha: 70b605639debc9c8b0edefbe1d6c373b46c91124
+    - repo: deepin-community/librist
+      tagsha: 8141b6c2cb241f022f786049b336e834905429ef
+    - repo: deepin-community/jpeg-xl
+      tagsha: d67a49c37ce31eb171df3c29ccd528ad0a00f16d
