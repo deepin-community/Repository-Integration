@@ -2,7 +2,7 @@ message: 'fix: add missing depends by black-desk@deepin-community/ocppi'
 milestone: V23-Beta3
 repos:
   - repo: deepin-community/ocppi
-    tagsha: 43f10da91dbac502ee10d7f3d36fedb768bf3b15
+    tagsha: 0bffef3de89ef7870380812925c13ad0c36de33d
   - repo: deepin-community/googletest
     tagsha: eb93b79a63df4639b065eda996cd9205cea056c0
   - repo: deepin-community/semver
