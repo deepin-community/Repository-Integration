@@ -4,7 +4,7 @@ repos:
     - repo: linuxdeepin/dde-daemon
       tagsha: 7556dc583843bcd118ee510018784933fb67fac9
     - repo: linuxdeepin/dde-control-center
-      tagsha: 75c8f8fdb737f4340e20bc41a17fe037c64a97b7
+      tagsha: 95bdee6249354df803bbc8a6f93b1a96129b4b7e
     - repo: linuxdeepin/startdde
       tagsha: 0efce7be6ef8ad035fbac6cd3dc3ab1c41501cb3
     - repo: linuxdeepin/dde-account-faces
