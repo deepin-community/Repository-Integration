@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: ffmpeg by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/highway
+      tagsha: bd25f3c0781b45ebfb0c8571cd2d38373eb5f79f
+    - repo: deepin-community/ffmpeg
+      tagsha: 667c17261c48c73abda1ba8902e652827aa54e0d
+    - repo: deepin-community/libplacebo
+      tagsha: c64004c9a1a636968065a35d364d1ecef2d7fc08
+    - repo: deepin-community/onevpl
+      tagsha: fcb1d34f6101ab4d4a85c67902a07c4f9d3132d3
+    - repo: deepin-community/python-glad
+      tagsha: 70b605639debc9c8b0edefbe1d6c373b46c91124
