@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: >-
+  chore: use dde-launchpad by default by
+  BLumia@deepin-community/deepin-desktop-environment
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/deepin-desktop-environment
+    tagsha: 60abd5b69e2903392bc2ddf05e9e3704f292c8f2
+timestamp: 1703646492809
