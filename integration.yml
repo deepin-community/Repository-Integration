@@ -3,4 +3,6 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/wireshark
     tagsha: 581577faa99c9039a87c6a5426b1ff1edbbf307d
+  - repo: deepin-community/nghttp3
+    tagsha: f68aa3288cf2167578626d054177a310c4d2297d
 timestamp: 1703668929392
