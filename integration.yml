@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: >-
+  feat: Optimize holiday query, change the return type to QJsonArray  by
+  myml@linuxdeepin/dde-calendar
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-calendar
+    tagsha: 838672368fcc88d72d762d856d35bea70fdc99ab
+timestamp: 1703731472657
