@@ -2,8 +2,8 @@ message: 'Auto integrate from topic: codeblocks by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/gamin
-      tagsha: e598e1d04621e248537272b56addbc4261f89746
+      tagsha: 6898161708bcf56f717c1390f62b574ac21af600
     - repo: deepin-community/codeblocks
-      tagsha: f829ca7bd3ec8474acfabf7f9f10231e4bb0c3f5
+      tagsha: a31cc35938e0885cab0a787f86f86598e2e42944
     - repo: deepin-community/astyle
-      tagsha: 0ebf4cc0baef9c04c4153d5a8a73f2c4dca030e6
+      tagsha: 9c1f500619c2d5d328a42065f9414b4fbfc0a808
