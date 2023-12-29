@@ -4,4 +4,4 @@ repos:
     - repo: linuxdeepin/linglong-box
       tagsha: 3907448d517333a1954e10546eb428a7d664bd18
     - repo: linuxdeepin/linglong
-      tagsha: 2a34d2dfb43d29e6c155033319842e7faac01430
+      tagsha: 936872b918f3f3641998a205868761e922a1d8d0
