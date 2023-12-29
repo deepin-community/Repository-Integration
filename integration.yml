@@ -5,3 +5,5 @@ repos:
       tagsha: 050ef8b78bc25373319b0874642232f4e17b1228
     - repo: linuxdeepin/dtkwidget
       tagsha: 52ccbf9b6ce55c1c4e7256165f2c1802e36cef42
+    - repo: linuxdeepin/dtkgui
+      tagsha: d8656aff1c45e56be08b8d12bc44d00327a453a0
