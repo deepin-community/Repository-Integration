@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtkcore
       tagsha: 050ef8b78bc25373319b0874642232f4e17b1228
+    - repo: linuxdeepin/dtkwidget
+      tagsha: 52ccbf9b6ce55c1c4e7256165f2c1802e36cef42
