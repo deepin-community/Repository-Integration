@@ -3,4 +3,6 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/httpie
     tagsha: 87817e5afffd7b4aee155743dccb392e89cdecc7
+  - repo: deepin-community/python-charset-normalizer
+    tagsha: 8e9fdcd2b96a5436e37394936a1e77aca345da7b
 timestamp: 1703820230917
