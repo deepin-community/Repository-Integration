@@ -15,3 +15,5 @@ repos:
       tagsha: 539d149387f6235be1a43c55576421dad4021ec4
     - repo: linuxdeepin/dtk6declarative
       tagsha: 845f2ff9f22cf20e9a842652b879fe269a2ae8c7
+    - repo: linuxdeepin/dtk6widget
+      tagsha: 1ec873fb003dc7e4742bfea62f4fce73a24be229
