@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: proxy-env by @dengbo11 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/go-lib
+      tagsha: 116a2fdabb7d896d45d2c1cc4af95fe6a689cbd2
+    - repo: linuxdeepin/dde-daemon
+      tagsha: fbc5c2a3afdcd3c41e22400218dd3a53c7748989
+    - repo: linuxdeepin/startdde
+      tagsha: 27985a9248ebb77e00f777840f57a0ac441490e2
