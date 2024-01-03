@@ -11,3 +11,5 @@ repos:
       tagsha: 275cbfc646c3159b1d2a8009d1b9c91add9465bd
     - repo: deepin-community/reiser4progs
       tagsha: d964b2afe4197e047c5b16a47044a04895c414f3
+    - repo: deepin-community/ntfs-3g
+      tagsha: 9bbddbfa250f48c319666317008fba4b2abc77c1
