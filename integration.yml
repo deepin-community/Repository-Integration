@@ -9,3 +9,5 @@ repos:
       tagsha: 2d9ffa3e30b5d362261f8a66c9172ac816a87ab9
     - repo: deepin-community/partclone
       tagsha: 275cbfc646c3159b1d2a8009d1b9c91add9465bd
+    - repo: deepin-community/reiser4progs
+      tagsha: d964b2afe4197e047c5b16a47044a04895c414f3
