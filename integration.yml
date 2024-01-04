@@ -5,4 +5,6 @@ repos:
     tagsha: 87817e5afffd7b4aee155743dccb392e89cdecc7
   - repo: deepin-community/python-charset-normalizer
     tagsha: 8e9fdcd2b96a5436e37394936a1e77aca345da7b
+  - repo: deepin-community/python-socksipy
+    tagsha: 1083b2cf29df6c159bebb64d321d14960953879e
 timestamp: 1703820230917
