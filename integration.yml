@@ -13,3 +13,5 @@ repos:
       tagsha: d964b2afe4197e047c5b16a47044a04895c414f3
     - repo: deepin-community/ntfs-3g
       tagsha: 9bbddbfa250f48c319666317008fba4b2abc77c1
+    - repo: deepin-community/pixz
+      tagsha: 71b9570f17fc726d407d09241778b49c49e21c97
