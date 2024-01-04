@@ -17,3 +17,5 @@ repos:
       tagsha: 71b9570f17fc726d407d09241778b49c49e21c97
     - repo: deepin-community/ipcalc
       tagsha: 40322252cf2a0b9233378f58b2b26085cecad8ca
+    - repo: deepin-community/cppcheck
+      tagsha: 69bd498fa8d462f4eccc5f857f54278900177bfa
