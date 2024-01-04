@@ -17,3 +17,5 @@ repos:
       tagsha: 845f2ff9f22cf20e9a842652b879fe269a2ae8c7
     - repo: linuxdeepin/dtk6widget
       tagsha: 1ec873fb003dc7e4742bfea62f4fce73a24be229
+    - repo: linuxdeepin/qt6integration
+      tagsha: e0f03c2275b7e3a6fadab8d8b9e69b10593b20b7
