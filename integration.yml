@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/deepin-im
       tagsha: 545196afd22a6573ceced0d554e165aa6fc070c9
+    - repo: linuxdeepin/dcc-insider-plugin
+      tagsha: 1988dbfbbc39adf6efac9ba850752fb5e7a6a709
