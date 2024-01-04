@@ -15,3 +15,5 @@ repos:
       tagsha: 9bbddbfa250f48c319666317008fba4b2abc77c1
     - repo: deepin-community/pixz
       tagsha: 71b9570f17fc726d407d09241778b49c49e21c97
+    - repo: deepin-community/ipcalc
+      tagsha: 40322252cf2a0b9233378f58b2b26085cecad8ca
