@@ -4,4 +4,4 @@ repos:
     - repo: linuxdeepin/deepin-im
       tagsha: 545196afd22a6573ceced0d554e165aa6fc070c9
     - repo: linuxdeepin/dcc-insider-plugin
-      tagsha: 037e9eb945c8c3ca57594f45be12b3821afa301b
+      tagsha: 5ecaff813988e3562b52637165abda97c00b1058
