@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: dtk-5621 by @kegechen to V23-Beta3'
+message: 'Auto integrate from topic: dtk-5621 by @18202781743 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtkcore
@@ -19,3 +19,5 @@ repos:
       tagsha: 1ec873fb003dc7e4742bfea62f4fce73a24be229
     - repo: linuxdeepin/qt6integration
       tagsha: e0f03c2275b7e3a6fadab8d8b9e69b10593b20b7
+    - repo: linuxdeepin/qt6platform-plugins
+      tagsha: e28aaab30f5f479975b5ec9aa897ccb070b89076
