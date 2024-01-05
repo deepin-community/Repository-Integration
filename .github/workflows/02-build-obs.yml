@@ -47,6 +47,7 @@ jobs:
     outputs:
       pkgname: ${{ steps.pkgname.outputs.pkgname }}
       tagsha: ${{ steps.tagsha.outputs.tagsha }}
+      targeturl: ${{ steps.build.outputs.targeturl }}
     steps:
       - name: Print Environment
         run: export
@@ -117,6 +118,7 @@ jobs:
           echo "tagsha=$TAGSHA" >> $GITHUB_OUTPUT
 
       - name: Trigger build
+        id: build
         run: |
           set -x
           mkdir -p ~/.config/osc
@@ -126,15 +128,19 @@ jobs:
 
           curl -o meta.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg-meta.tpl
           sed -i "s#PKGNAME#${pkgname}#g" meta.xml
+          targeturl="https://build.deepin.com/project/show/deepin:CI:TestingIntegration:${TOPIC}"
           if [ "$COMPONENT" = "main" ]; then
             sed -i "s#Testing:COMPONENT#CI:TestingIntegration:${TOPIC}#g" meta.xml
             curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:${TOPIC}/$pkgname/_meta"
             osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
+            targeturl="https://build.deepin.com/package/live_build_log/deepin:CI:TestingIntegration:${TOPIC}/$pkgname/testing/"
           else
             sed -i "s#Testing:COMPONENT#CI:TestingIntegration:${TOPIC}:${COMPONENT}#g" meta.xml
             curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/$pkgname/_meta"
             osc co deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/${pkgname} && cd $_
+            targeturl="https://build.deepin.com/package/live_build_log/deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/$pkgname/testing/"
           fi
+          echo "targeturl=$targeturl" >> $GITHUB_OUTPUT
 
           needbuild=true
           if [ -f _branch_request ];then
@@ -161,32 +167,70 @@ jobs:
     env:
       ARCH: ${{ matrix.arch }}
     steps:
-      - name: Install osc
-        run: |
-          sudo apt-get update && sudo apt install -y osc
+      - name: Set commit status as pending
+        uses: myrotvorets/set-commit-status-action@master
+        with:
+          token: ${{ github.token }}
+          status: pending
+          context: "${{ needs.build.outputs.pkgname }} ${{ matrix.arch }} testing repository building"
+          targetUrl: "${{ needs.build.outputs.targeturl }}${{ matrix.arch }}"
+          sha: ${{ github.event.pull_request.head.sha }}
 
-      - name: build log tracker
+      - name: Wait for build to succeed
+        uses: fountainhead/action-wait-for-check@v1.1.0
+        id: wait-for-build
+        with:
+          token: ${{ github.token }}
+          checkName: "${{ needs.build.outputs.pkgname }} ${{ matrix.arch }} testing repository building"
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          timeoutSeconds: 3600 #1h,超时后可以/retest 重试
+
+      - name: Do something with a build time out
+        if: steps.wait-for-build.outputs.conclusion == 'timed_out'
+        id: wait_time_out
         run: |
           set -x
+          sudo apt-get update && sudo apt install -y osc
           mkdir -p ~/.config/osc
           echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
           pkgname="${{ needs.build.outputs.pkgname }}"
           if [ "$COMPONENT" = "main" ]; then
             osc co deepin:CI:TestingIntegration:${TOPIC}/${pkgname} && cd $_
-            if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ]; then
-              osc buildlog testing ${ARCH}
-              if [ "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'succeeded')" = "" -a "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}/testing/${ARCH}/${pkgname}/_status |grep 'finished')" = "" ];\
-              then echo "${ARCH} build failed" && -1; else echo "${ARCH} build succeeded"; fi
-            else
-              echo "${ARCH} build excluded"
-            fi
           else
             osc co deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/${pkgname} && cd $_
-            if [ -z $(osc buildinfo testing ${ARCH} |grep "<error>excluded</error>") ]; then
-              osc buildlog testing ${ARCH}
-              if [ "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/testing/${ARCH}/${pkgname}/_status |grep 'succeeded')" = "" -a "$(osc api -X GET /build/deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT}/testing/${ARCH}/${pkgname}/_status |grep 'finished')" = "" ];\
-              then echo "${ARCH} build failed" && -1; else echo "${ARCH} build succeeded"; fi
-            else
-              echo "${ARCH} build excluded"
-            fi
           fi
+
+          timeouturl="${{ needs.build.outputs.targeturl }}${{ matrix.arch }}"
+          description="wait build complete timeout"
+          status="pending"
+          buildresult=$(osc results -a ${ARCH} -r testing |awk '{print $3}')
+          if [ "$buildresult" = "succeeded" ];then
+            status="success"
+            description=""
+          elif [ "$buildresult" = "excluded" ]; then
+            status="success"
+            description="build excluded"
+            timeouturl=""
+          elif [ "$buildresult" = "failed" ]; then
+            status="failure"
+            description=""
+          fi
+          echo "timeouturl=$timeouturl" >> $GITHUB_OUTPUT
+          echo "description=$description" >> $GITHUB_OUTPUT
+          echo "status=$status" >> $GITHUB_OUTPUT
+
+      - name: Update status build status as timeout
+        if: steps.wait-for-build.outputs.conclusion == 'timed_out'
+        uses: myrotvorets/set-commit-status-action@master
+        with:
+          token: ${{ github.token }}
+          status: ${{ steps.wait_time_out.outputs.status }}
+          context: "${{ needs.build.outputs.pkgname }} ${{ matrix.arch }} testing repository building"
+          targetUrl: ${{ steps.wait_time_out.outputs.timeouturl }}
+          sha: ${{ github.event.pull_request.head.sha }}
+          description: ${{ steps.wait_time_out.outputs.description }}
+
+      - name: report build error at action
+        if: steps.wait_time_out.outputs.status != 'success' || steps.wait-for-build.outputs.conclusion == 'failure'
+        run: |
+          exit -1
