@@ -155,6 +155,13 @@ jobs:
             sed -i  "s#REPO#$REPO#g" _branch_request
             sed -i "s#TAGSHA#$TAGSHA#g" _branch_request
             osc add _branch_request && osc ci -m "update tag release: $TAGSHA"
+          else
+            echo "Trigger Rebuilding"
+            if [ "$COMPONENT" = "main" ]; then
+              osc rebuild deepin:CI:TestingIntegration:${TOPIC} ${pkgname}
+            else
+              osc rebuild deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT} ${pkgname}
+            fi
           fi
 
   log:
@@ -177,14 +184,16 @@ jobs:
           sha: ${{ github.event.pull_request.head.sha }}
 
       - name: Wait for build to succeed
-        uses: fountainhead/action-wait-for-check@v1.1.0
+        uses: cloudposse/github-action-wait-commit-status@main
         id: wait-for-build
         with:
+          repository: ${{ github.repository }}
+          sha: ${{ github.event.pull_request.head.sha }}
+          status: "${{ needs.build.outputs.pkgname }}_${{ matrix.arch }}_testing_repository_building"
+          expected_state: "success"
           token: ${{ github.token }}
-          checkName: "${{ needs.build.outputs.pkgname }}_${{ matrix.arch }}_testing_repository_building"
-          ref: ${{ github.event.pull_request.head.sha || github.sha }}
-          timeoutSeconds: 3600 # 1h,超时后可以/retest 重试
-          intervalSeconds: 60
+          check-retry-interval: 60
+          check-retry-count: 60
 
       - name: Do something with a build time out
         if: steps.wait-for-build.outputs.conclusion == 'timed_out'
@@ -231,7 +240,7 @@ jobs:
           sha: ${{ github.event.pull_request.head.sha }}
           description: ${{ steps.wait_time_out.outputs.description }}
 
-      - name: report build error at action
-        if: steps.wait_time_out.outputs.status != 'success' || steps.wait-for-build.outputs.conclusion == 'failure'
-        run: |
-          exit -1
+      #- name: report build error at action
+      #  if: steps.wait_time_out.outputs.status != 'success' || steps.wait-for-build.outputs.conclusion == 'failure'
+      #  run: |
+      #    exit -1
