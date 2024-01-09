@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'chore: release dde-daemon 6.0.27 by dengbo11@linuxdeepin/dde-daemon'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/go-lib
+    tagsha: 4293d3d112f78e090b88ffbc9dc3bc3a6f7fd6b4
+  - repo: linuxdeepin/go-dbus-factory
+    tagsha: 908f2bc17763869545b4af89f73eb0c440191358
+  - repo: linuxdeepin/dde-daemon
+    tagsha: cebbe93907476544028f8dcdd413c810f7b4ccc4
+topic: adapt-new-am-normal
+timestamp: 1699258877321
