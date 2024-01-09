@@ -1,15 +1,161 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
-milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: update glibc to 2.35-4 by UTsweetyfish@deepin-community/glibc
+milestone: V23-Beta2
+repos:
+  - repo: deepin-community/glibc
+    tagsha: c4efc9e2c4c31f956fc2c18e1edc37b27151b318
+  - repo: deepin-community/glib2.0
+    tagsha: 597f943c5b594a313ed51d20e0a76d35759a87c8
+  - repo: deepin-community/meson
+    tagsha: 904fed7550230448aa26ab424ecc006738331cc6
+  - repo: deepin-community/netcdf
+    tagsha: fd7805c662bcada8f0c8e76eada44d7b95d7d403
+  - repo: deepin-community/heimdal
+    tagsha: dd06d2a76510b45090487e90bcb4ba02bd4d7da0
+  - repo: deepin-community/assimp
+    tagsha: 93f5ceb9bbbec9dd5d8786ca5610268b88abf415
+  - repo: deepin-community/linux-atm
+    tagsha: 45ff5cf854a325fa9000f8b733e0dc09f261901d
+  - repo: deepin-community/cups
+    tagsha: 55385ab439b7f06bd62ab6c3c81096a509c387cc
+  - repo: deepin-community/fltk1.3
+    tagsha: 41e7ebbbc93136090302ca5f19024c85152a23a3
+  - repo: deepin-community/trilinos
+    tagsha: b5ac832c3afc035905e78af98e407453891ea059
+  - repo: deepin-community/valgrind
+    tagsha: 0677a6666287947fe1599db303d1644cdf75942a
+  - repo: deepin-community/nfs-utils
+    tagsha: 81382c1a3896c41567e0ed909e5431c19e49eb4a
+  - repo: deepin-community/ismrmrd
+    tagsha: 15f3c0c3a1527296bcaa1b7c63dcd11f1cdff476
+  - repo: deepin-community/libstrophe
+    tagsha: 02317390480a4ee583c39da925c15f1bc8a0db23
+  - repo: deepin-community/loudmouth
+    tagsha: 2569e7133139515acd365463049c22d077f98fdb
+  - repo: deepin-community/dot2tex
+    tagsha: c42e127bf82d2f6b8b5328e2c608685b85efe410
+  - repo: deepin-community/ecbuild
+    tagsha: e61fa1cee837a3d106feee36e300f39bb8b1fad2
+  - repo: deepin-community/dh-lua
+    tagsha: be7657ec15ee586e8eab715cbfa4b12c29f1e40a
+  - repo: deepin-community/openldap
+    tagsha: e5d9310cfb9db37f2984dc7dfc835a9e45cd024f
+  - repo: deepin-community/apache2
+    tagsha: 6c03d6096fb817e85ab1883a133bf6ca02cc2e3a
+  - repo: deepin-community/apr
+    tagsha: 76cca71eb5285971a73e27559f0dbfa26958114e
+  - repo: deepin-community/apr-util
+    tagsha: 4087acbc76ac36458ecf5aaa4e4bb56faccad5cc
+  - repo: deepin-community/audit
+    tagsha: 094a739fdfdfa789b4e054363110db35b8c90b30
+  - repo: deepin-community/ceph
+    tagsha: 69cde47b4c9e1d99e78288879484c982cc0c1396
+  - repo: deepin-community/courier-authlib
+    tagsha: 161941f7d2e97ec1e521e9f247288b0aeb50c3f3
+  - repo: deepin-community/cups-filters
+    tagsha: ad7a75a818a285f0fc3ee9651045cfcf12367918
+  - repo: deepin-community/curl
+    tagsha: d57489fe67321d7dd0aa8e0c294035e30087abfa
+  - repo: deepin-community/libtool
+    tagsha: 595740fbef24dd7dc337d0724ac7e55c75492fd5
+  - repo: deepin-community/cyrus-sasl2
+    tagsha: 7a455899dccb42b3211a8f3054e3c9f2febf8f1c
+  # - repo: deepin-community/evolution
+  #   tagsha: df801e512561ee6bbbae36d1ea55703a702ae1ae
+  - repo: deepin-community/evolution-data-server
+    tagsha: b3d44c6ca7cbbe3dea8265f21b75258777793c2e
+  - repo: deepin-community/gconf
+    tagsha: 1bcdc5da52b45984f3fdde7377fe78963cdfa33b
+  - repo: deepin-community/gnupg2
+    tagsha: 22fd7e6e1415f7ab97f0a557b138c9a16a7f6abc
+  - repo: deepin-community/isc-dhcp
+    tagsha: dcfcd9388091b417860129e45dd30abbedbe77c8
+  - repo: deepin-community/kldap
+    tagsha: dfc055958713bb46d33837f9453df3335c121abe
+  - repo: deepin-community/krb5
+    tagsha: 2701e068f6a91c78c10ddb091e7bc6e78710f7c5
+  - repo: deepin-community/python-kdcproxy
+    tagsha: 4c5908ad8a52da49e96d3ad2f942e182bc60638c
+  - repo: deepin-community/pyrad
+    tagsha: a62537275f2e68e1aa442fad7e10152aa08a53d8
+  - repo: deepin-community/libnfsidmap
+    tagsha: eed727cec3cb93765af56afddb803b2e972aeb2b
+  # - repo: deepin-community/libreoffice
+  #   tagsha: 
+  - repo: deepin-community/libreswan
+    tagsha: 50ea50e926a3613ed03df7af8f2315579e1e858e
+  - repo: deepin-community/php7.4
+    tagsha: 33fb6b3a51ef185c37f2b7e6cd822b08ca398ed5
+  # - repo: deepin-community/postgresql-14
+  #   tagsha: 0645d0b5882e441378028fb49b2aca5cc8401fa1
+  - repo: deepin-community/postgresql-15
+    tagsha: 4056d5a5556a6b3d9abd039287a479e400cbad50
+  - repo: deepin-community/postgresql-16
+    tagsha: ed30c50c453f8c54c4ca551363347d5d0edb6ceb
+  - repo: deepin-community/postgresql-common
+    tagsha: b0fe4440cb05f89685094aa69161d956df49a9fd
+  - repo: deepin-community/spirv-llvm-translator-14
+    tagsha: 7b3d68a3ca77aeeaff81449dbb3cc9c6a7c15afd
+  - repo: deepin-community/spirv-headers
+    tagsha: f27dd31f6f6966ecb6520676d1a63f4693d48269
+  - repo: deepin-community/llvm-toolchain-15
+    tagsha: a2aae891bbef3010a48bb5d37a8c6c8fafb0e304
+  - repo: deepin-community/python-ldap
+    tagsha: a586bb477ef5e0e0cbfd71fce6fa229dd65a2ea6
+  - repo: deepin-community/quota
+    tagsha: 46ec1f66d3186bee55c78f26739f36b94fb1384a
+  - repo: deepin-community/samba
+    tagsha: 63523a446abf0a9a28d6f4a41a0440759972fd99
+  - repo: deepin-community/seahorse
+    tagsha: 8ff90db7c0c057cd00f46c5e3834c52f17cad032
+  - repo: deepin-community/sendmail
+    tagsha: c7e7de44d95651fef2967c9e1623bb204f250bb3
+  - repo: deepin-community/strongswan
+    tagsha: 81b7583cecd10342f081bcdd0e8d71d0dc698e9d
+  - repo: deepin-community/dee
+    tagsha: 14127523050b149c61449b34682df04c1a18ae0f
+    # ocaml 4.13
+  - repo: deepin-community/ocaml
+    tagsha: 3a5a1f4452f7fb14e01784d23e0b2c583009680e
+  - repo: deepin-community/findlib
+    tagsha: 3d48eb2eed8f5069935120f64f7e3d701672c2d8
+  - repo: deepin-community/ocamlbuild
+    tagsha: 7590cff3c9fd2572af1332d11840f7c7477a2f22
+  - repo: deepin-community/cppo
+    tagsha: bbf2df0ee8260de44a6b6b2a966dd79c28d45ea1
+  - repo: deepin-community/ocaml-csexp
+    tagsha: 0d121cf5d3f30e9571dd6c5df5311e77dc64ab6a
+  - repo: deepin-community/ocaml-dune
+    tagsha: 4e750943de20ed2b14013c497af8f02d5df31322
+  - repo: deepin-community/ocaml-integers
+    tagsha: 925c024677b07e827dc2d017623ef4dc8b3da7ab
+  - repo: deepin-community/lwt
+    tagsha: 06ad6b0eb090314ac6e014b9b711aedf287db634
+  - repo: deepin-community/ocaml-ctypes
+    tagsha: ffea9bc5d2ea5aabccb03faaff209451652d22d5
+  - repo: deepin-community/ounit
+    tagsha: 7f165f84184972e20b2ec9543464b1dbff6ed42c
+  - repo: deepin-community/ppxlib
+    tagsha: 44be844af36f4a8e467d8a1d12f8c0d49b57850b
+  - repo: deepin-community/react
+    tagsha: 111331affc16c42926eaa8e918e65d960559762a
+  - repo: deepin-community/ocaml-result
+    tagsha: d78d323d428760b207194c43ced83f5f19fade53
+  - repo: deepin-community/ocaml-mmap
+    tagsha: 652d7c5b14c566f8eb71801824daa6ce207bd2de
+  - repo: deepin-community/ocplib-endian
+    tagsha: 012f1b88731f97294c96391c7ad2e047a7235d91
+  - repo: deepin-community/ocaml-topkg
+    tagsha: 81681a614cfbc940c063d7bfb847db63740ecc29
+  - repo: deepin-community/janest-ocaml-compiler-libs
+    tagsha: d5c184666bf4c8c252a45f2f61a2d18798e0276f
+  - repo: deepin-community/ocaml-sexplib0
+    tagsha: f1347771a142d4681079a691d2d4735148ae6ce5
+  - repo: deepin-community/ppx-derivers
+    tagsha: 5b1468bf568cfc6433991704984ff6be05d09304
+  - repo: deepin-community/dh-ocaml
+    tagsha: 008fb7db167e54259205c160b8f310a1f27608ef
+  - repo: deepin-community/ocaml-bigarray-compat
+    tagsha: e47d0bfa00854f5e07d72826890a847096d823a2
+
+
+timestamp: 1692786153
