@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: >-
+  feat: support balance_performance by
+  Decodetalkers@linuxdeepin/dde-control-center
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-control-center
+    tagsha: 2c60c40520cb8c8bf1851f56a2e51733881cd4b0
+  - repo: linuxdeepin/dde-daemon
+    tagsha: 778259e17ca193d8b6e4c49297a9bb8e509d2c54
+topic: battery_balance_performance
+timestamp: 1698312625439
