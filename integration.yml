@@ -1,15 +1,10 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'feat: update httpie to by xzl01@deepin-community/httpie'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/httpie
+    tagsha: 87817e5afffd7b4aee155743dccb392e89cdecc7
+  - repo: deepin-community/python-charset-normalizer
+    tagsha: 8e9fdcd2b96a5436e37394936a1e77aca345da7b
+  - repo: deepin-community/python-socksipy
+    tagsha: 1083b2cf29df6c159bebb64d321d14960953879e
+timestamp: 1703820230917
