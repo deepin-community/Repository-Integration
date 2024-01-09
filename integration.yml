@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'feat: support ibus input method entry switch by dengbo11@linuxdeepin/deepin-im'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+repos:
+  - repo: linuxdeepin/deepin-im
+    order: 0
+    tagsha: 374b36ace6ca9de79bf8a4b9852db14590aa5524
+timestamp: 1697607836510
