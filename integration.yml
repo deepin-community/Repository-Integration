@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: update-qtxdg by @ArchieMeng to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libqtxdg
+      tagsha: 03cb784e1e81890c8597c328c03c509c4d3d7bb6
+    - repo: deepin-community/lxqt-build-tools
+      tagsha: 4f416ae807aa6a5b4f22d6e19e7760c6f32c1ea9
