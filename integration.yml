@@ -1,15 +1,16 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'feat: update to 0.9.4  by xzl01@deepin-community/neovim'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/neovim
+    tagsha: e0f4cc5eb47d0de765a20c6690e071aa2cf72ee7
+  - repo: deepin-community/tree-sitter
+    tagsha: 90b7bb42c028d576d2531afdf8429a8cb87a445a
+  - repo: deepin-community/libvterm
+    tagsha: 472dd574819d65de693594307c1f4f45e5a79920
+  - repo: deepin-community/libmpack-lua
+    tagsha: 036b7b472cd07e5d3c210a9a3c2d8da54d7cdffa
+  - repo: deepin-community/lua-nvim
+    tagsha: 16522ecc53eaecee37b4e5a3e0ce08ba300e339d
+  - repo: deepin-community/luajit
+    tagsha: a72383dc94b3283467ae05e5a0d33c38e3874c12
+timestamp: 1698210107396
