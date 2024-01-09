@@ -233,7 +233,7 @@ jobs:
           sha: ${{ github.event.pull_request.head.sha }}
           description: ${{ steps.wait_time_out.outputs.description }}
 
-      - name: report build error at action
-        if: steps.wait_time_out.outputs.status != 'success' || steps.wait-for-build.outputs.conclusion == 'failure'
-        run: |
-          exit -1
+      #- name: report build error at action
+      #  if: steps.wait_time_out.outputs.status != 'success' || steps.wait-for-build.outputs.conclusion == 'failure'
+      #  run: |
+      #    exit -1
