@@ -5,4 +5,6 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/network-manager-integration-plugins
     tagsha: e0fc7a44a1b41a10d30a3d79109ab617260a2e9f
+  - repo: deepin-community/libreswan
+    tagsha: d30284fbd19fd4f52e233bf8536127388e2c1ee1
 timestamp: 1705039836311
