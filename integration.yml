@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: xmake by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/xmake
+      tagsha: dbd825b4cea04c6d292130f71604ee3d5a2c2fd6
+    - repo: deepin-community/libsv
+      tagsha: 6e53486e9dd4bfcaad8235a890107c1563388d7a
+    - repo: deepin-community/tbox
+      tagsha: d56ac0096327dcc13a365ebee2c79ebdc8b67b12
