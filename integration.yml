@@ -1,15 +1,14 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'chore: new tag publish by Decodetalkers@linuxdeepin/go-dbus-factory'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-control-center
+    order: 0
+    tagsha: ee67fa02e3cd800d1dd8d570af1e494f9691b348
+  - repo: linuxdeepin/dde-daemon
+    order: 0
+    tagsha: 62d8dc7419c574ecdbb421b59b8c4f509ecc8c24
+  - repo: linuxdeepin/go-dbus-factory
+    order: 0
+    tagsha: 8b27d46bc5822980a5d1bba6985f465d579a756c
+topic: lowbatteryconfig
+timestamp: 1696990366072
