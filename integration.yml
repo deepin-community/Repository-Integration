@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: dbus by @dengbo11 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dde-session-ui
+      tagsha: 903329e3a4f2b10710e6a9f4112ffcd252cecf47
+    - repo: linuxdeepin/dde-session
+      tagsha: 335201eb731463f3ce0214d7624f865f2d88a473
+    - repo: linuxdeepin/startdde
+      tagsha: 64b9949a60564de2435198b2eb22ca4de79b29a2
+    - repo: linuxdeepin/dde-appearance
+      tagsha: aee7b317e440e97544d257e7d3b2de5c58e0dddf
+    - repo: linuxdeepin/dde-appearance
+      tagsha: 7bc1e88d02061e0389ba615a1cf8a5a3494c9e16
