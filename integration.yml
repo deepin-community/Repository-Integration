@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: timezone by @dengbo11 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dde-daemon
+      tagsha: b7f32be061a4562688191b461abe02d88e625e36
+    - repo: linuxdeepin/dde-control-center
+      tagsha: c028be1cfe4b3dcbeb3aeeca65ba048e50276ea8
+    - repo: linuxdeepin/go-dbus-factory
+      tagsha: 5cc5ddf23c385c543dcd7aadc26c8b31fe414d67
