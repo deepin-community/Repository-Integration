@@ -1,15 +1,10 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'fix: NoDisplay pulseaudio app by xzl01@deepin-community/pulseaudio'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/pulseaudio
+    tagsha: 58c97fc5c43869607c587f09d348db1c2f2492ff
+  - repo: deepin-community/gstreamer1.0
+    tagsha: a3e6d8defefdf28842749107d668f611f18455a0
+  - repo: deepin-community/libunwind
+    tagsha: cbb1b65c1079de69b4125e171370daba7704188c
+timestamp: 1700039021776
