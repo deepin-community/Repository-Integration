@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'fix: keybinding action cmd error by dengbo11@linuxdeepin/dde-daemon'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-daemon
+    order: 0
+    tagsha: e44000511c2d278ac938e8156164c9ab58a300b6
+timestamp: 1696907555759
