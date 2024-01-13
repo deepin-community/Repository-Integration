@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
-milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: mm by @xzl01'
+milestone: "V23-Beta3"
+repos:
+    - repo: deepin-community/modemmanager
+      tagsha: 4faaef69962a92d602a4191a79e58f8e240a6f90
+    - repo: deepin-community/libmbim
+      tagsha: 750f7b0e8e1f35e8f6eb2fdc3fe83c5c89e00b8a
+    - repo: deepin-community/libqmi
+      tagsha: 4a1b031a27cfd3e7ad423d900fa0d932dfc862e9
+    - repo: deepin-community/libqrtr-glib
+      tagsha: 476d4c008468f0efe9675d46fb1e32e6909f807b
