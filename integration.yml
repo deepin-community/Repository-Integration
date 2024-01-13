@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: add-keybinding by @dengbo11 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dde-daemon
+      tagsha: a9a0ccdbffef2ad3027eefe5d5e66d94a5b299d6
+    - repo: linuxdeepin/dde-control-center
+      tagsha: e8e94485091bd8b8dc14ecf6da9bfea378528d93
+    - repo: linuxdeepin/dde-appearance
+      tagsha: 8ac88c935b25d195048882e4d2abb1b3a1d4ab54
