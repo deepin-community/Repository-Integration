@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'feat: update openssh to 1:9.6p1-1 by UTsweetyfish@deepin-community/openssh'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/openssh
+    tagsha: ceb478ca89dd807eedd81cb3f8598e9bf0aa08a1
+  - repo: deepin-community/debhelper
+    tagsha: e103ba86ab14fa1155fdbfd3e8df10186b5c9c3f
+timestamp: 1703060836335
