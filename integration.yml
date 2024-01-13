@@ -1,15 +1,25 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: kodi by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/kodi
+      tagsha: 3c7e654b458486e9af7f05a22be785b60c876aab
+    - repo: deepin-community/flatbuffers
+      tagsha: b3bb84af2f9bc4864af4200c9756d9ba3cf18a3c
+    - repo: deepin-community/fonts-android
+      tagsha: 857579db41854c77f803d6dfa33a7131dd81c42a
+    - repo: deepin-community/howardhinnant-date
+      tagsha: 0fd45b1d10cd47d9772e3b23030579f5d114a985
+    - repo: deepin-community/kissfft
+      tagsha: 00d8fea479d624bd2f49150de362427e57cb0232
+    - repo: deepin-community/libcec
+      tagsha: c110deb151a25430d3117d211804ca43656ce702
+    - repo: deepin-community/libftdi1
+      tagsha: 1937b033611ade6d942cc371e8c23b342a1fe1be
+    - repo: deepin-community/lirc
+      tagsha: e0e5aa603e7d4b038ca1cc4c9a07b4b0a6ff1817
+    - repo: deepin-community/shairplay
+      tagsha: 28ec49d1eef192b6828bc103ad7b84223ebbdb5a
+    - repo: deepin-community/waylandpp
+      tagsha: 49d10dc8c6bf26275913b8da29a157a57d0c7c20
+    - repo: deepin-community/fstrcmp
+      tagsha: 0d46e101aa0f3a31a4c9cdea484d3ae308c87e5e
