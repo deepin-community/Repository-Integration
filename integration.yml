@@ -6,4 +6,4 @@ repos:
     - repo: linuxdeepin/treeland
       tagsha: 70ce1023434fda1d60d52b11c191c239bb64deb6
     - repo: linuxdeepin/dde-shell
-      tagsha: b875a0913d9b50ad3d98af47b44594b1bb7c188d
+      tagsha: 6a87f085d8c2d9c6049c0558f0253ab333a99ecf
