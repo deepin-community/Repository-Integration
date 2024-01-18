@@ -4,7 +4,7 @@ repos:
     - repo: linuxdeepin/dtk6systemsettings
       tagsha: 3803e6a3b73fa8ca8ae7613611d7307ef82d806c
     - repo: linuxdeepin/treeland
-      tagsha: bbcd29b5dde9b45a2889833da6a94462191d2b22
+      tagsha: 1e70ea317550ae065c2843cd307c0075ebd9dc88
     - repo: linuxdeepin/dde-shell
       tagsha: 625fae7487c280103956b2cba6e36a0fbf2a7a1a
     - repo: linuxdeepin/dde-launchpad
