@@ -7,3 +7,5 @@ repos:
       tagsha: bbcd29b5dde9b45a2889833da6a94462191d2b22
     - repo: linuxdeepin/dde-shell
       tagsha: 625fae7487c280103956b2cba6e36a0fbf2a7a1a
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: ebd6f1c033bf35bfd144e1e27acae07927f73258
