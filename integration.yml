@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-session
       tagsha: 1c535c2717b9c5ea8d7329f3a027e9317df0087d
+    - repo: linuxdeepin/dde-session-shell
+      tagsha: 7bcdced8c0382a760c383ece10b9c916e5210ebd
