@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: fix-lock-screen by @dengbo11 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dde-session
+      tagsha: 1c535c2717b9c5ea8d7329f3a027e9317df0087d
+    - repo: linuxdeepin/dde-session-shell
+      tagsha: 7bcdced8c0382a760c383ece10b9c916e5210ebd
