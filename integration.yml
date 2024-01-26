@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: git-review by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/git-review
+      tagsha: cc1941aba17a8f8648b9880bf14fd4a663f9d6fb
+    - repo: deepin-community/python-hacking
+      tagsha: 28e7878c06732717005a9a445e6ef0ca1ca084bf
+    - repo: deepin-community/python-reno
+      tagsha: 6014f3865fce77d4d7cebf916ddf9418a53d9cf2
+    - repo: deepin-community/python-stestr
+      tagsha: 6e7660c86681dba3b6d132970dab8a7662a36498
+    - repo: deepin-community/python-cliff
+      tagsha: f27dd972e70a650bf6578aebe43dc9f284784d2c
+    - repo: deepin-community/stevedore
+      tagsha: e84212848edd40f6073fd31afa79cf8dba13644a
