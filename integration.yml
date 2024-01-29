@@ -23,3 +23,5 @@ repos:
       tagsha: 65e2f1256881523da9d5271e2079d07daab3e902
     - repo: deepin-community/libmoosex-types-path-class-perl
       tagsha: d78bc61d4d5a90b8dbcab47ff4d088c9421ef70e
+    - repo: deepin-community/libmoosex-types-common-perl
+      tagsha: b9eb247f076692df0f58bea77f64b00d950e7908
