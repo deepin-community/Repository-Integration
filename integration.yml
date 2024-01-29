@@ -1,15 +1,27 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: lintian by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libmoosex-getopt-perl
+      tagsha: f85b7b1afcf66a89101741c2bd5a50cc7d6dc8de
+    - repo: deepin-community/libmoosex-configfromfile-perl
+      tagsha: 22a8d1653db5addf395b4757b6e9751a7b538ef2
+    - repo: deepin-community/libmoosex-role-parameterized-perl
+      tagsha: 16855afcb3824f161fa3b8ef3391be69a00ba205
+    - repo: deepin-community/libmoosex-simpleconfig-perl
+      tagsha: 13148bd398b7fbadeb06d819c3e9e08463f5c800
+    - repo: deepin-community/libmoosex-strictconstructor-perl
+      tagsha: 757210bbc7238812bd50997d99a0b7a189cc59e8
+    - repo: deepin-community/libmoosex-types-perl
+      tagsha: 20ff2584f80c6ab9f04bfe6ea9219141c17d2e22
+    - repo: deepin-community/libmodule-find-perl
+      tagsha: e05b5da7d2d4794243bb13a4fff2a4959e732fc5
+    - repo: deepin-community/libmoosex-role-withoverloading-perl
+      tagsha: 95e8271a6416daf64b62804f2e79b0a0c13a6d98
+    - repo: deepin-community/libmoosex-types-path-tiny-perl
+      tagsha: 043ec09f2f49456154d57b639d1897d4864a470a
+    - repo: deepin-community/libmoosex-types-stringlike-perl
+      tagsha: 65e2f1256881523da9d5271e2079d07daab3e902
+    - repo: deepin-community/libmoosex-types-path-class-perl
+      tagsha: d78bc61d4d5a90b8dbcab47ff4d088c9421ef70e
+    - repo: deepin-community/libmoosex-types-common-perl
+      tagsha: b9eb247f076692df0f58bea77f64b00d950e7908
