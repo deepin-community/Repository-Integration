@@ -16,4 +16,4 @@ repos:
     - repo: deepin-community/d-shlibs
       tagsha: f6f4d55a2808244cc9375bd25aa90c24bbd96ecb
     - repo: deepin-community/pyasn1
-      tagsha: b5c18aaf01c952b20bdfba5091262eee4a0cbfcc
+      tagsha: a7355ef48b614f7106a747c778c92ad02e921858
