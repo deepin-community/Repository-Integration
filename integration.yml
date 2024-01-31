@@ -7,4 +7,6 @@ repos:
     tagsha: 16522ecc53eaecee37b4e5a3e0ce08ba300e339d
   - repo: deepin-community/libmousex-types-perl
     tagsha: 1709ab8efd3147e874971c338784c8f616084a08
+  - repo: deepin-community/libany-moose-perl
+    tagsha: 536ee539545bff01eaec5024a339a59260bc667f
 timestamp: 1706684742016
