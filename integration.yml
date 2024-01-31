@@ -3,4 +3,8 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/msgpack-c
     tagsha: 297b5375938751675a56739f009daf59e73a8445
+  - repo: deepin-community/lua-nvim
+    tagsha: 16522ecc53eaecee37b4e5a3e0ce08ba300e339d
+  - repo: deepin-community/libmousex-types-perl
+    tagsha: 1709ab8efd3147e874971c338784c8f616084a08
 timestamp: 1706684742016
