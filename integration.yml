@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: multimedia-20240131 by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/image-editor
+      tagsha: 6d6b306ca5dc73baa717e5d202634a386cb4b31c
+    - repo: linuxdeepin/deepin-music
+      tagsha: f2d26f9f892925c20fd475f258bc03f338d42a0c
+    - repo: linuxdeepin/deepin-image-viewer
+      tagsha: f15bc65cb0db6980593afa1c5f362b3b2f15ebe7
+    - repo: linuxdeepin/deepin-album
+      tagsha: 51e53494e0c4980d7f70469d187ff1731f2d1de3
