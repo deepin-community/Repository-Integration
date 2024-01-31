@@ -7,3 +7,5 @@ repos:
       tagsha: f2d26f9f892925c20fd475f258bc03f338d42a0c
     - repo: linuxdeepin/deepin-image-viewer
       tagsha: f15bc65cb0db6980593afa1c5f362b3b2f15ebe7
+    - repo: linuxdeepin/deepin-album
+      tagsha: 51e53494e0c4980d7f70469d187ff1731f2d1de3
