@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: sidebar by @Decodetalkers to V23-Beta3'
+message: 'Auto integrate from topic: sidebar by @kegechen to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtkwidget
