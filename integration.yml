@@ -4,4 +4,4 @@ repos:
     - repo: linuxdeepin/dde-network-core
       tagsha: 1bc393a134d95e86a767b960da4f84eb9fdfc436
     - repo: linuxdeepin/dde-session-shell
-      tagsha: 2ce8249ccc95a19c2a2c04128b178b37e97481fa
+      tagsha: d3979e2a8c6d8edb97086fac1951c6c5efd96d17
