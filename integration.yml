@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: 240131 by @BLumia to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dtkdeclarative
+      tagsha: 1cebbd2fc0b9f6e106a931b98c8cf8239984055a
+    - repo: linuxdeepin/dtk6declarative
+      tagsha: c10df5d3652f2a3b06966fe0f979cfd907d60bbd
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: 2cc84990e8f99e713d03978b73328d9e27149d7e
