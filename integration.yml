@@ -1,7 +1,9 @@
-message: 'Auto integrate from topic: sidebar by @FeiWang1119 to V23-Beta3'
+message: 'Auto integrate from topic: sidebar by @justforlxz to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtkwidget
       tagsha: 4b6fd841ff327c2f3e42b9a0cf4e6eef5678c1ca
     - repo: linuxdeepin/dde-control-center
       tagsha: 59e5c758a78cb07712e90777d1761b37ab03af31
+    - repo: linuxdeepin/deepin-kwin
+      tagsha: cb4b6cf5937339f06101779e7de97aca7399a68b
