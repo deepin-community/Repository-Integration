@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/image-editor
       tagsha: 6d6b306ca5dc73baa717e5d202634a386cb4b31c
+    - repo: linuxdeepin/deepin-music
+      tagsha: f2d26f9f892925c20fd475f258bc03f338d42a0c
