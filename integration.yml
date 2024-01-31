@@ -4,4 +4,4 @@ repos:
     - repo: linuxdeepin/dtkwidget
       tagsha: 4b6fd841ff327c2f3e42b9a0cf4e6eef5678c1ca
     - repo: linuxdeepin/dde-control-center
-      tagsha: de30d58bc8d45c5355fde3a1be94e6a95a1312f9
+      tagsha: e532bc952e52c8a14039fd5f4e4428e511aaa0a3
