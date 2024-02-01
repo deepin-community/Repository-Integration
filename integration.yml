@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: 240131 by @BLumia to V23-Beta3'
+message: 'Auto integrate from topic: 240131 by @18202781743 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtkdeclarative
@@ -9,3 +9,5 @@ repos:
       tagsha: 93b5bb95446a74cd7d93845d24cfd93752adb636
     - repo: linuxdeepin/dtk6gui
       tagsha: 193023daf00dcbdcbd10b39678961187ebee5f74
+    - repo: linuxdeepin/deepin-kwin
+      tagsha: cb4b6cf5937339f06101779e7de97aca7399a68b
