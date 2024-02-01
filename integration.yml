@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: sidebar by @FeiWang1119 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dtkwidget
+      tagsha: 4b6fd841ff327c2f3e42b9a0cf4e6eef5678c1ca
+    - repo: linuxdeepin/dde-control-center
+      tagsha: c00fdfde2909e299a661fac2cc07cd408aaa79c8
+    - repo: linuxdeepin/deepin-kwin
+      tagsha: cb4b6cf5937339f06101779e7de97aca7399a68b
