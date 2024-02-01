@@ -8,6 +8,6 @@ repos:
     - repo: linuxdeepin/dde-launchpad
       tagsha: 93b5bb95446a74cd7d93845d24cfd93752adb636
     - repo: linuxdeepin/dtk6gui
-      tagsha: 193023daf00dcbdcbd10b39678961187ebee5f74
+      tagsha: 7f21c07bf49f26a6ac93fd66381d81764137f2a5
     - repo: linuxdeepin/deepin-kwin
       tagsha: cb4b6cf5937339f06101779e7de97aca7399a68b
