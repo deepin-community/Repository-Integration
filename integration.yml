@@ -5,4 +5,4 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/cross-toolchain-base
     tagsha: 4b1c588925c4ae29f73ea735ad83611133183454
-timestamp: 1708410434001
+timestamp: 1708480955000
