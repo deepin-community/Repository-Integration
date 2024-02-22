@@ -5,4 +5,6 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/python3.10
     tagsha: 5668c39c86efbba66420e91706e90123d5c9b14f
-timestamp: 1708580744395
+  - repo: deepin-community/mpdecimal
+    tagsha: 64fdd345aaab64cad42256e08c83ee4dfa015ef2
+timestamp: 1708583711013
