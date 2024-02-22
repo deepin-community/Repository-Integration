@@ -168,7 +168,7 @@ jobs:
     needs: build
     strategy:
       matrix:
-        arch: [aarch64, x86_64]
+        arch: [aarch64, x86_64, i386, loong64, riscv64]
 
     runs-on: ubuntu-latest
     env:

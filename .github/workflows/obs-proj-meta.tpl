@@ -9,5 +9,8 @@
     <path project="deepin:CI" repository="deepin_testing"/>
     <arch>aarch64</arch>
     <arch>x86_64</arch>
+    <arch>i386</arch>
+    <arch>loong64</arch>
+    <arch>riscv64</arch>
   </repository>
 </project>
