@@ -1,15 +1,67 @@
 # Required
 message: |
-  Integrated for V23-Beta3
+  Topic: node-202402
 # Not required, now default is V23-Beta3
 milestone: V23-Beta3
 # Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/node-got
+    tagsha: 8ea6a68787757da30713895e460968be3e59e38c
+
+  - repo: deepin-community/node-err-code
+    tagsha: 7ba0186c4b22deb69b887688dc12df77e913ec3b
+
+  - repo: deepin-community/node-ajv
+    tagsha: 554e096ea94e88e889345029721d002ab1554e26
+
+  - repo: deepin-community/node-config-chain
+    tagsha: 856b142b90cec3bc8276f7ab653445291ec0f09e
+
+  - repo: deepin-community/eslint
+    tagsha: 328c65e2f98162e2084dc899f464c40a3e10a239
+
+  - repo: deepin-community/node-schema-utils
+    tagsha: 8c248b94f2bd37471e04f4db4de99de0e42cf0a9
+
+  - repo: deepin-community/node-ajv-keywords
+    tagsha: 53cff8f3392a69011087ae9d3ec4cde798825cf0
+
+  - repo: deepin-community/node-graphlibrary
+    tagsha: f5e4b132dc0e36487889791fc0f861230374fd3f
+
+  - repo: deepin-community/node-basic-auth
+    tagsha: 51328782aee0ef1ecc66a641c60f094eb3b2f111
+
+  - repo: deepin-community/node-csstype
+    tagsha: 352e92c0859ba1b176bb69712a71c535dd96fb13
+
+  - repo: deepin-community/node-fast-safe-stringify
+    tagsha: 27741c83b1578e51b615b057c1a15486570ee218
+
+  - repo: deepin-community/node-morgan
+    tagsha: 4beff6ce5c1af4ee51a75f8717f42dc62f78727f
+
+  - repo: deepin-community/node-css-tree
+    tagsha: fa9b76ff74d36eb386a5a5be36e6f073a598754c
+
+  - repo: deepin-community/node-turndown
+    tagsha: c0461b0eb890290e294e494996ddf12b9d43226e
+
+  - repo: deepin-community/node-domino
+    tagsha: 3b196d81f902741b657a937597d84e2f3970821e
+
+  - repo: deepin-community/node-mdn-data
+    tagsha: 9b6633160f97a17ac2bf81ec17ac32b0921101c6
+
+  - repo: deepin-community/node-body-parser
+    tagsha: eab6c96976426079623fb04483c30e612ee02d71
+
+  - repo: deepin-community/node-raw-body
+    tagsha: 97110e0b327f86c4ae4385bce203487973835d4c
+
+  - repo: deepin-community/node-encodeurl
+    tagsha: 3cfce684208e53134080263718dbcd9c8d1a5c3d
+
+  - repo: deepin-community/node-proto-list
+    tagsha: 00f45c022f9160d602569e4d2afc0d7a85543d51
+
