@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: seafile by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/curl
+      tagsha: 8d246455d47cd8a8360970158ca70c180963d692
+    - repo: deepin-community/libquazip
+      tagsha: 21d4d2d9004885962232432e249f20c91dd390bb
+    - repo: deepin-community/seafile
+      tagsha: 237d809ba22d357a525035e20066c989dbc211bf
+    - repo: deepin-community/libsearpc
+      tagsha: 8ffb8dff677b930c9eedadb08b07503399463163
+    - repo: deepin-community/libwebsockets
+      tagsha: 30a181ac416440ae1cbca9f9d7a598db3548a802
+    - repo: deepin-community/libev
+      tagsha: 4f62547dbee1dd578c080a3220726524cb8e3f32
+    - repo: deepin-community/d-shlibs
+      tagsha: f6f4d55a2808244cc9375bd25aa90c24bbd96ecb
+    - repo: deepin-community/pyasn1
+      tagsha: a7355ef48b614f7106a747c778c92ad02e921858
