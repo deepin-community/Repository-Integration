@@ -67,3 +67,6 @@ repos:
 
   - repo: deepin-community/node-js-beautify
     tagsha: bcb13d8df0a128e18757d5e1443c4f6683e3f4ac
+
+  - repo: deepin-community/node-jest
+    tagsha: 136ee777a19d3743b5bc1fe41c97e69fa73614ba
