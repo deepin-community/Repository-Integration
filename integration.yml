@@ -70,3 +70,6 @@ repos:
 
   - repo: deepin-community/node-jest
     tagsha: 136ee777a19d3743b5bc1fe41c97e69fa73614ba
+
+  - repo: deepin-community/node-yargs
+    tagsha: e655209ac78e5c1fcd89aa8524d6d8883614b89f
