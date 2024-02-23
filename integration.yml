@@ -65,3 +65,5 @@ repos:
   - repo: deepin-community/node-proto-list
     tagsha: 00f45c022f9160d602569e4d2afc0d7a85543d51
 
+  - repo: deepin-community/node-js-beautify
+    tagsha: bcb13d8df0a128e18757d5e1443c4f6683e3f4ac
