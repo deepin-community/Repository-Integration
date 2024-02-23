@@ -73,3 +73,6 @@ repos:
 
   - repo: deepin-community/node-yargs
     tagsha: e655209ac78e5c1fcd89aa8524d6d8883614b89f
+
+  - repo: deepin-community/node-mdn-browser-compat-data
+    tagsha: e53ad1f8957be7309275b2c702796013b49af6e7
