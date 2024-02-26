@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: treeland-0.2.0 by @justforlxz to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dtk6systemsettings
+      tagsha: 3803e6a3b73fa8ca8ae7613611d7307ef82d806c
+    - repo: linuxdeepin/treeland
+      tagsha: cbefbb758a92c4b208d503de600e9473cf1b414a
+    - repo: linuxdeepin/dde-shell
+      tagsha: 625fae7487c280103956b2cba6e36a0fbf2a7a1a
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: ebd6f1c033bf35bfd144e1e27acae07927f73258
