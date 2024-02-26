@@ -76,3 +76,6 @@ repos:
 
   - repo: deepin-community/node-mdn-browser-compat-data
     tagsha: e53ad1f8957be7309275b2c702796013b49af6e7
+
+  - repo: deepin-community/node-compare-versions
+    tagsha: c652611bf8dd646a739cf6ec61af0015767bb4eb
