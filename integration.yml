@@ -5,3 +5,5 @@ repos:
       tagsha: 33d6da030ece610238415ca0b9114d1ece3d7e45
     - repo: deepin-community/claws-mail
       tagsha: bc9719bde5591a1c7f6ff0e696e139d35156263b
+    - repo: deepin-community/gumbo-parser
+      tagsha: 32e15da48cc8f3c764c1d85a38e44f38a4300ba0
