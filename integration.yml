@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: claws by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libcompface
+      tagsha: 33d6da030ece610238415ca0b9114d1ece3d7e45
+    - repo: deepin-community/claws-mail
+      tagsha: bc9719bde5591a1c7f6ff0e696e139d35156263b
