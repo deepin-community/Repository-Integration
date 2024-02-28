@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
-milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'fix: disable auto_enable by asterwyx@deepin-community/bluez'
+milestone: v23-Release
+repos:
+  - repo: deepin-community/bluez
+    tagsha: 03520535f364b470a52f9bec74e0227b4a6d61f2
+timestamp: 1709114060837
