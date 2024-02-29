@@ -1,15 +1,10 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: >-
+  feat: update python3.10 to 3.10.13-1 by
+  deepin-community-bot[bot]@deepin-community/python3.10
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/python3.10
+    tagsha: 5668c39c86efbba66420e91706e90123d5c9b14f
+  - repo: deepin-community/mpdecimal
+    tagsha: 64fdd345aaab64cad42256e08c83ee4dfa015ef2
+timestamp: 1708583711013
