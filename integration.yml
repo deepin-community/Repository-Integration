@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'feat: update wireshark to 4.2.0 by xzl01@deepin-community/wireshark'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/wireshark
+    tagsha: 581577faa99c9039a87c6a5426b1ff1edbbf307d
+  - repo: deepin-community/nghttp3
+    tagsha: f68aa3288cf2167578626d054177a310c4d2297d
+timestamp: 1703668929392
