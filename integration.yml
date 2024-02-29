@@ -105,4 +105,6 @@ repos:
     tagsha: "4f2d8da1b1c0ad91c2f3f059693e21111c30c155"
   - repo: deepin-community/xfsprogs
     tagsha: "6990eb54038986db57d3b6d2a96b7ae2ee51df19"
+  - repo: deepin-community/recode
+    tagsha: "8ce25a1792563e188ade617c24bbb764aadc3e9d"
 timestamp: 1709192642734
