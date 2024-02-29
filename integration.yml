@@ -43,8 +43,6 @@ repos:
     tagsha: "56aabdfc0004986fb26636dbf552cb600b111e94"
   - repo: deepin-community/libqxp
     tagsha: "687334c78555d8b1cd13b84a95f2dff387a3e8e3"
-  - repo: deepin-community/libreoffice
-    tagsha: ""
   - repo: deepin-community/librime
     tagsha: "66d060241f741a573a07f660197f2ca31fa54eff"
   - repo: deepin-community/libvisio
