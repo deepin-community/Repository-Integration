@@ -2,5 +2,109 @@ message: 'feat: update icu to 74.2-1 by deepin-community-bot[bot]@deepin-communi
 milestone: V23-Beta3
 repos:
   - repo: deepin-community/icu
-    tagsha: 9ab48daa6b854010e241e071003002e32b75704e
-timestamp: 1708919500624
+    tagsha: "9ab48daa6b854010e241e071003002e32b75704e"
+  - repo: deepin-community/boost1.74
+    tagsha: "6e5661dd2f93bfd0b97e6b28226df766e59c3977"
+  - repo: deepin-community/boost1.81
+    tagsha: "67b4e195421ed6fe571905fbd5e57263bb77f155"
+  - repo: deepin-community/boost1.83
+    tagsha: "233a017bf397fd8976d3c32139aa1a94b046fd57"
+  - repo: deepin-community/brltty
+    tagsha: "380d730094f31f040bf40ba118291f442511a412"
+  - repo: deepin-community/dee
+    tagsha: "20c1d45b00e7713e75a3e25f4372defedad9669a"
+  - repo: deepin-community/evolution-data-server
+    tagsha: "b3d44c6ca7cbbe3dea8265f21b75258777793c2e"
+  - repo: deepin-community/firebird3.0
+    tagsha: "4fc99055171bac6be6bbda12ad17ef89ac337033"
+  - repo: deepin-community/freerdp2
+    tagsha: "8013866120aab87bdc42f714bc86d9e92626ecea"
+  - repo: deepin-community/gdb
+    tagsha: "9e582d29a1c7f254781f7f41bbee3a7c66736387"
+  - repo: deepin-community/gnustep-base
+    tagsha: "5b6e29864c2d23d57edc492bca4ce27d04dfb421"
+  - repo: deepin-community/gspell
+    tagsha: "b100e9bc443c84806fd8fe9d0a04e18ee52b1a0f"
+  - repo: deepin-community/harfbuzz
+    tagsha: "c796f54f62fc4d972ce3873b1c22084a0550c76b"
+  - repo: deepin-community/hfst-ospell
+    tagsha: "95681eb66a86a8d3c7f38de21023570bb4a40767"
+  - repo: deepin-community/icu
+    tagsha: "38bc1bee1f48e7fc7f40287d998df9fa20184420"
+  - repo: deepin-community/libcdr
+    tagsha: "3e0690c3fbf908c49eb0c9bf7fec0b73830e6b84"
+  - repo: deepin-community/libe-book
+    tagsha: "564c665389c5561517fc72648a8eae73d492e83c"
+  - repo: deepin-community/libical3
+    tagsha: "e36fba4fc2f40e8225ae524278861aa6ffa43283"
+  - repo: deepin-community/libmspub
+    tagsha: "3c7ff27843e97ac673b5bb768d4e56107dc38903"
+  - repo: deepin-community/libphonenumber
+    tagsha: "1fcd1742884278fdc21dbd247f800ed276ecd934"
+  - repo: deepin-community/libqxp
+    tagsha: "5cbb4c0a9d6c63a5185da751f6609cbf6e93c92e"
+  - repo: deepin-community/libreoffice
+    tagsha: ""
+  - repo: deepin-community/librime
+    tagsha: "11bdbc59d4d2c3d1e0963a927e0b491323c2791b"
+  - repo: deepin-community/libvisio
+    tagsha: "4e157cb1a049060dbdb039e2a458513f1f9b342a"
+  - repo: deepin-community/libxml2
+    tagsha: "c8e4b0f504406a581d1183faa3d00ff17c42826e"
+  - repo: deepin-community/libzmf
+    tagsha: "6e4149dac118d7e9c0970ac9ffd42ba728849648"
+  - repo: deepin-community/littler
+    tagsha: "39cf0f7810a513dcbd82c1599b2cb2187d79e4de"
+  - repo: deepin-community/luceneplusplus
+    tagsha: "33994ef2fd81089a556a6bb7568dcf95ba4e898c"
+  - repo: deepin-community/mongo-c-driver
+    tagsha: "c9b9b5f2b16d90e6f8f969dc4215efd6497f41a0"
+  - repo: deepin-community/nodejs
+    tagsha: "4794c12b80c3b014d3cd411b0ea351fb0ed18659"
+  - repo: deepin-community/php7.4
+    tagsha: "6c50edc2826483a4ceb6b896a72b27707d9dd781"
+  - repo: deepin-community/postgresql-16
+    tagsha: "e26b38481619cf787a0b8f1908d042817a0dc411"
+  - repo: deepin-community/qt6-5compat
+    tagsha: "9a7cb2e2ac8dbbd74a604ed4c9b8cfe4abc74b37"
+  - repo: deepin-community/qt6-base
+    tagsha: "27bcddb241d8f9b01ebfbca575491740b58ae4b2"
+  - repo: deepin-community/qt6-webengine
+    tagsha: "725f6f7098c83bbf575520df6098ea184d1f4b9b"
+  - repo: deepin-community/qtbase-opensource-src
+    tagsha: "057be8a8f62be215fbc15e167ba105b9c9579ebd"
+  - repo: deepin-community/qtlocation-opensource-src
+    tagsha: "021e749dbbf42b6b231747ad6d450576c3fd38bc"
+  - repo: deepin-community/qtwebengine-opensource-src
+    tagsha: "55fcbc6e5a73cf6115561bd9a4e3d4eb4f1b034c"
+  - repo: deepin-community/qtwebkit-opensource-src
+    tagsha: "e9e8d98697e8f67ebd51d99442a1f99760695fad"
+  - repo: deepin-community/raptor2
+    tagsha: "86ccd58aa5b87f6fcc21e1f820efbdcef3ad67c4"
+  - repo: deepin-community/r-base
+    tagsha: "280b520799dfc5e6368c1337da3ae6d9354ceed4"
+  - repo: deepin-community/rpy2
+    tagsha: "c387274bb91276d2805dba6d7397eaeb736c267c"
+  - repo: deepin-community/samba
+    tagsha: "63523a446abf0a9a28d6f4a41a0440759972fd99"
+  - repo: deepin-community/source-highlight
+    tagsha: "756bbf2045700bbc977623b986319e0d49cc2949"
+  - repo: deepin-community/tesseract
+    tagsha: "808c18162149cc89b4a4aa67e09f91860aa9b22c"
+  - repo: deepin-community/texlive-bin
+    tagsha: "eafef7830a81246e09f6a5efc3f79d04e96a1a7d"
+  - repo: deepin-community/unar
+    tagsha: "1b0374ba7ce93b325ebf790035f0cfbd3fb4428a"
+  - repo: deepin-community/vte2.91
+    tagsha: "306fd636bf68058a81ee4bfe679dfe4ba00dc033"
+  - repo: deepin-community/webkit2gtk
+    tagsha: "dda9506c686bb264e707fec9d8814509f07a32d3"
+  - repo: deepin-community/wpewebkit
+    tagsha: "96406993d7f3648e129e6a827ca2ee010127f221"
+  - repo: deepin-community/xalan
+    tagsha: "eeefd7a64cccc545408085c5f19bac7374c9cb97"
+  - repo: deepin-community/xerces-c
+    tagsha: "aa0eadcc8eec0d26907758c76043b9e461df85a6"
+  - repo: deepin-community/xfsprogs
+    tagsha: "efd3cfeb95f03e5a5b9086f966b9b38c80eeaaf8"
+timestamp: 1709192642734
