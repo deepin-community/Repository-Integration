@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: dde-daemon-596 by @Decodetalkers to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dde-daemon
+      tagsha: 999a7df46c060a13456e0810f0b21caffd93a5fc
+    - repo: linuxdeepin/dde-control-center
+      tagsha: 3bca8b84ed77289e38a52a2490679747517536c6
+    - repo: linuxdeepin/startdde
+      tagsha: 0efce7be6ef8ad035fbac6cd3dc3ab1c41501cb3
+    - repo: linuxdeepin/dde-account-faces
+      tagsha: 31f91b5b1fc9f7990b4e54d28bf1bfac63c73185
+    - repo: linuxdeepin/dde-appearance
+      tagsha: c9aa7aa5c96e9660ce9c731eb12138f14fb202ee
