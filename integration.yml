@@ -1,15 +1,12 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'feat: upgrade package by YukariChiba@deepin-community/ostree'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/ostree
+    tagsha: 5af59472024985419bb11bf9c3d1242e2dc5523a
+  - repo: deepin-community/libsoup3
+    tagsha: a7a769f31afc7e3ec23c3ecb864b6626d9381dc2
+  - repo: deepin-community/debhelper
+    tagsha: e103ba86ab14fa1155fdbfd3e8df10186b5c9c3f
+  - repo: deepin-community/quart
+    tagsha: 6089ffd9648bdcf9ca70c02a4e37faa883c35717
+timestamp: 1702891447753
