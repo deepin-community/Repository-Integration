@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: filezilla by @hudeng-go to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/filezilla
+      tagsha: 74f3fb82e4916d98730f61efee9f9a7e20fd9bb1
+    - repo: deepin-community/libfilezilla
+      tagsha: 808aaede4e25c5cec624fbb2d32dc115bf1ecacd
+    - repo: deepin-community/boost1.81
+      tagsha: 7807ac0e39b1d3924fad210208d302091d558121
