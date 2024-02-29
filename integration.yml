@@ -1,15 +1,27 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'Auto integrate from topic: ibus by @chenchongbiao to V23-Beta3'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/automake-1.16
+      tagsha: 223a1c56b4fbfbe794dc6e1d2e7e96cf845b3d2a
+    - repo: deepin-community/libpyzy
+      tagsha: 327bf0d95cb54d2f96292b656cbc253bdf707a88
+    - repo: deepin-community/ibus-chewing
+      tagsha: 2b43a4b000e2c07543566c6012466fd01c901078
+    - repo: deepin-community/ibus-cangjie
+      tagsha: 93ec0935e5c9466eb93cb0590d97cab8eb617c92
+    - repo: deepin-community/ibus-pinyin
+      tagsha: d158325263bd502d0545a0702c1c4b9feb0802b6
+    - repo: deepin-community/ibus-sunpinyin
+      tagsha: bfcca482e56c9913b5b7b85b88922d9ee58e0ef8
+    - repo: deepin-community/ibus
+      tagsha: bffd7a43f9354a8f9d6eab115afd2782637799ba
+    - repo: deepin-community/cmake-fedora
+      tagsha: 7b0ba4f95a4be183727c6e4be40f09c2aa5580ff
+    - repo: deepin-community/gob2
+      tagsha: c4aadca287ef30f057830a0af7e15247171d0e62
+    - repo: deepin-community/pycangjie
+      tagsha: 9d867306e45f637d89962d67ae6c558e137fa246
+    - repo: deepin-community/xkeyboard-config
+      tagsha: 91aae1afd18e54447c7fcd76f0d8a2f3e65b9e23
+    - repo: deepin-community/libcangjie
+      tagsha: 84a96183ec9051ee6911f6ee4168918ebcdc3103
