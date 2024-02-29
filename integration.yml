@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
-milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'feat: update policykit-1 to 123 by UTsweetyfish@deepin-community/policykit-1'
+milestone: v23-Release
+repos:
+  - repo: deepin-community/policykit-1
+    tagsha: e89f2c20130dd7e493bb88936d86f3b6e43ac7e4
+timestamp: 1709174389794
