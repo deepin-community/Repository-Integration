@@ -1,15 +1,16 @@
-# Required
-message: |
-  Integrated for V23-Beta3
-# Not required, now default is V23-Beta3
+message: 'fix: add missing depends by black-desk@deepin-community/ocppi'
 milestone: V23-Beta3
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/ocppi
+    tagsha: 0bffef3de89ef7870380812925c13ad0c36de33d
+  - repo: deepin-community/googletest
+    tagsha: eb93b79a63df4639b065eda996cd9205cea056c0
+  - repo: deepin-community/semver
+    tagsha: 0d0df57fdd23dd8693a13ec4193ff6ec6ea7a53e
+  - repo: deepin-community/nlohmann-json3
+    tagsha: 5df5a1471b2f7a3e6432001caeb9d0decccad525
+  - repo: deepin-community/tl-expected
+    tagsha: 308e36b2440fb551b82e8b054bd7745a1fe6e303
+  - repo: deepin-community/docopt.cpp
+    tagsha: c7dd759d71b857696696e9a8ee44b67e89565b1e
+timestamp: 1703569800604
