@@ -2,8 +2,14 @@ message: 'Auto integrate from topic: claws by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/libcompface
-      tagsha: 33d6da030ece610238415ca0b9114d1ece3d7e45
+      tagsha: 1b2bef5df112d4c9188fbcd4114869c5ec1ed18f
     - repo: deepin-community/claws-mail
-      tagsha: bc9719bde5591a1c7f6ff0e696e139d35156263b
+      tagsha: ccfbb458ea4120079bbf911c3e566e4b00b63e3b
     - repo: deepin-community/gumbo-parser
-      tagsha: 32e15da48cc8f3c764c1d85a38e44f38a4300ba0
+      tagsha: a2a12bd9477c61c84ca90d79dc303ac05a51247d
+    - repo: deepin-community/dillo
+      tagsha: e96c9b6cd28e34612e9af1ec3cd836f99a559dda
+    - repo: deepin-community/ruby-sdbm
+      tagsha: b70d028bc828af77984ebae39ef6cf3eea4cbf11
+    - repo: deepin-community/bsfilter
+      tagsha: 787552ec44fda8a30bbb572e6890f52a8ce4e39b
