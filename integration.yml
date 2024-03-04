@@ -56,7 +56,7 @@ repos:
   - repo: deepin-community/mongo-c-driver
     tagsha: "6b977a14a5294983567a3663953ea2369713f51e"
   - repo: deepin-community/nodejs
-    tagsha: "e91f041d1a35728562d47268ea7bac61b00f6342"
+    tagsha: "3d45e6dbee4a430926b5a31637eb0cd50d1fab84"
   - repo: deepin-community/php7.4
     tagsha: "33fb6b3a51ef185c37f2b7e6cd822b08ca398ed5"
   - repo: deepin-community/postgresql-16
