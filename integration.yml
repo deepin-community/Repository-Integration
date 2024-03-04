@@ -4,7 +4,7 @@ repos:
   - repo: deepin-community/icu
     tagsha: "9ab48daa6b854010e241e071003002e32b75704e"
   - repo: deepin-community/boost1.74
-    tagsha: "0cc44327cc4ca236173827be5c9e9a6e41c7d65a"
+    tagsha: "93b20e30e5c8be7cfd872406be15bcbe835a97c4"
   - repo: deepin-community/boost1.81
     tagsha: "7807ac0e39b1d3924fad210208d302091d558121"
   - repo: deepin-community/boost1.83
