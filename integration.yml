@@ -29,8 +29,6 @@ repos:
     tagsha: "9b258a83d4f5f50c69843678bbefe45009ba433d"
   - repo: deepin-community/hfst-ospell
     tagsha: "acf493e87ad960066d0020fb418c071a3f648239"
-  - repo: deepin-community/icu
-    tagsha: "2a51196384b031eee5b54b04808bfccadb083314"
   - repo: deepin-community/libcdr
     tagsha: "45b6faad0c69e9653a3fd36bc7da6c41708d950f"
   - repo: deepin-community/libe-book
