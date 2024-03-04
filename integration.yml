@@ -1,6 +1,6 @@
-message: 'Auto integrate from topic: claws by @xzl01 to V23-Beta3'
-milestone: V23-Beta3
-repos:
+message: 'Auto integrate from topic: claws by @xzl01 to V23-Release'
+milestone: V23-Release
+repos: 
     - repo: deepin-community/libcompface
       tagsha: 1b2bef5df112d4c9188fbcd4114869c5ec1ed18f
     - repo: deepin-community/claws-mail
