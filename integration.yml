@@ -25,3 +25,5 @@ repos:
       tagsha: e85843826cbb2d8fc0f6abb4ae2a6e9ebb14bca7
     - repo: linuxdeepin/deepin-devicemanager
       tagsha: a969e7a6d7301be6d68e77bc71517f902fdbf72a
+    - repo: linuxdeepin/image-editor
+      tagsha: a2ac8a8a8f87055ee215df92542d5d590f4d8d0f
