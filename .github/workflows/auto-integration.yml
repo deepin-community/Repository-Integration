@@ -120,8 +120,10 @@ jobs:
                   ref: "${{ github.event.pull_request.head.sha }}",
                 })
 
-                const successStatuses = statuses.filter((status) => status.state === "success");
-                if (successStatuses.length == statuses.length) {
+
+                buildStatuses = statuses.filter((status) => status.context.includes("testing_repository_building"));
+                const successStatuses = buildStatuses.filter((status) => status.state === "success");
+                if (successStatuses.length == buildStatuses.length) {
                   console.log(`All build commit statuses is now a success.`);
                   break;
                 }
@@ -133,7 +135,7 @@ jobs:
 
                 attemptCount++;
 
-                console.log(`Waiting for commit status to become a success...`);
+                console.log(`Waiting for commit statuses to become a success...`);
                 await sleep(60000)
               }
             }
