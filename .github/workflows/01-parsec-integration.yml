@@ -3,48 +3,27 @@ name: parsec integration
 on:
   workflow_call:
     outputs:
-      build_matrix_0:
-        description: build order 0, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_0 }}
-      build_matrix_1:
-        description: build order 1, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_1 }}
-      build_matrix_2:
-        description: build order 2, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_2 }}
-      build_matrix_3:
-        description: build order 3, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_3 }}
-      build_matrix_4:
-        description: build order 4, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_4 }}
-      build_matrix_5:
-        description: build order 5, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_5 }}
-      build_matrix_6:
-        description: build order 6, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_6 }}
-      build_matrix_7:
-        description: build order 7, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_7 }}
-      build_matrix_8:
-        description: build order 8, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_8 }}
-      build_matrix_9:
-        description: build order 9, build tasks
-        value: ${{ jobs.parsec_integration.outputs.build_matrix_9 }}
+      build_matrix_main:
+        description: deepin main build tasks
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_main }}
+      build_matrix_dde:
+        description: build tasks
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_dde }}
+      build_matrix_community:
+        description: build tasks
+        value: ${{ jobs.parsec_integration.outputs.build_matrix_community }}
       all_build_task:
         description: all build tasks used for
         value: ${{ jobs.parsec_integration.outputs.all_build_task }}
+      testrepoaddr:
+        description: testing repositories addresses
+        value: ${{ jobs.parsec_integration.outputs.testrepoaddr }}
       deploy:
         description: deploy way AUTO or MANUALLY
         value: ${{ jobs.parsec_integration.outputs.deploy }}
       integration_message:
         description: integration message at integration.yml
         value: ${{ jobs.parsec_integration.outputs.integration_message }}
-      component:
-        description: integration repos component
-        value: ${{ jobs.parsec_integration.outputs.component }}
       integrationinfo:
         description: integration repos list
         value: ${{ jobs.parsec_integration.outputs.integrationinfo }}
@@ -57,30 +36,27 @@ on:
       milestone:
         description: integration milestone
         value: ${{ jobs.parsec_integration.outputs.milestone }}
+      labels:
+        description: integration repos with issue labels
+        value: ${{ jobs.parsec_integration.outputs.labels }}
 
 jobs:
   parsec_integration:
     name: parsec integration
     runs-on: ubuntu-latest
     outputs:
-      build_matrix_0: ${{ steps.parsec_integration.outputs.build_matrix_0 }}
-      build_matrix_1: ${{ steps.parsec_integration.outputs.build_matrix_1 }}
-      build_matrix_2: ${{ steps.parsec_integration.outputs.build_matrix_2 }}
-      build_matrix_3: ${{ steps.parsec_integration.outputs.build_matrix_3 }}
-      build_matrix_4: ${{ steps.parsec_integration.outputs.build_matrix_4 }}
-      build_matrix_5: ${{ steps.parsec_integration.outputs.build_matrix_5 }}
-      build_matrix_6: ${{ steps.parsec_integration.outputs.build_matrix_6 }}
-      build_matrix_7: ${{ steps.parsec_integration.outputs.build_matrix_7 }}
-      build_matrix_8: ${{ steps.parsec_integration.outputs.build_matrix_8 }}
-      build_matrix_9: ${{ steps.parsec_integration.outputs.build_matrix_9 }}
+      build_matrix_main: ${{ steps.parsec_integration.outputs.build_matrix_main }}
+      build_matrix_dde: ${{ steps.parsec_integration.outputs.build_matrix_dde }}
+      build_matrix_community: ${{ steps.parsec_integration.outputs.build_matrix_community }}
       all_build_task: ${{ steps.parsec_integration.outputs.all_build_task }}
+      testrepoaddr: ${{ steps.parsec_integration.outputs.testrepoaddr }}
       deploy: ${{ steps.illegal_repo_tags.outputs.DEPLOY }}
       integration_message: ${{ steps.parsec_integration.outputs.integration_message }}
-      component: ${{ steps.illegal_repo_tags.outputs.component }}
       integrationinfo: ${{ steps.parsec_integration.outputs.integrationinfo }}
       changelog: ${{ steps.parsec_integration.outputs.changelog }}
       influence: ${{ steps.parsec_integration.outputs.influence }}
       milestone: ${{ steps.parsec_integration.outputs.milestone }}
+      labels: ${{ steps.illegal_repo_tags.outputs.labels }}
 
     steps:
       - name: checkout_pull_request
@@ -94,6 +70,8 @@ jobs:
         shell: python
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
         run: |
           import requests
           import yaml
@@ -103,9 +81,9 @@ jobs:
           import json
           from requests.utils import requote_uri
 
-          maxSize = os.environ.get("MAX_TASKS", 10)
           illegalTags = []
           illegalRepos = []
+          noChangelogs = []
 
           permissions = None
           with open("permissions.yml") as permissions_file:
@@ -133,7 +111,24 @@ jobs:
           def set_output(name, value):
               output_file = os.environ.get("GITHUB_OUTPUT")
               with open(output_file, "a") as output:
-                  output.write(name + "=" + value + "\n")
+                  #output.write(name + "=" + value + "\n")
+                  output.write(name + "<<EOF\n")
+                  output.write(value)
+                  output.write('\nEOF\n')
+
+          def check_changelog_changed(repo, commitortag):
+            rawurl = "https://api.github.com/repos/{repo}/commits/{commit}".format(repo=repo, commit=commitortag)
+            res = requests.get(rawurl.replace("+", "%2B"), headers=header)
+            if res.status_code == 200:
+              files = res.json()["files"]
+              #print(files)
+              for file in files:
+                if file["filename"] == "debian/changelog":
+                  return True
+              return False
+            else:
+              print("Warn: get changelog files failed!!!")
+              return False
 
           def read_changelog(repo, commitortag):
             rawurl = "https://api.github.com/repos/{repo}/contents/debian/changelog?ref={commit}".format(repo=repo, commit=commitortag)
@@ -175,12 +170,33 @@ jobs:
             print(name, version, changelog, influence)
             return name, version, "\n".join(changelog), "\n".join(influence)
 
+          def get_component(repo):
+            print("get component")
+            component = "main"
+            if "linuxdeepin/" in repo:
+              component = "dde"
+            else:
+              rawurl = "https://raw.githubusercontent.com/{repo}/master/debian/deepin/workflows.yml".format(repo=repo)
+              res = requests.get(rawurl.replace("+", "%2B"))
+              if res.status_code == 200:
+                if "deepin:Develop:community" in str(res.content):
+                  component = "community"
+              else:
+                print("Warn: get workflows.yml content failed!!!")
+                component = "community"
+            return component
+
           try:
-              allBuildTasks = [{"order": j,"data":{"payload": []}} for j in range(maxSize)]
+              components = ["main", "dde", "community"]
+              allBuildTasks = [{"component": j,"data":{"payload": []}} for j in components]
               data = read_integration()
 
-              message = data.get("message", "Integrated for V23-Beta2")
-              set_output("integration_message", message)
+              message = data.get("message", "Integrated for V23-Release").replace("\n", "")
+              if message == "Integrated for V23-Release":
+                message = os.environ.get("PR_TITLE")
+
+              message = message + " by " + os.environ.get("PR_AUTHOR")
+              set_output("integration_message", message.replace("\n", ""))
               with open("integration-${{ github.event.number }}-detail.md", "w+") as integration_detail:
                   integration_detail.write(message)
 
@@ -188,9 +204,14 @@ jobs:
               changelogs = []
               influences = []
               for repo in data.get("repos"):
-                order = int(repo.get("order",0))
-                order = max(0, order) and min(order , maxSize - 1)
                 fullreponame = str(repo.get('repo', ""))
+                component = get_component(fullreponame)
+                component_index = 0
+                if component == "dde":
+                  component_index = 1
+                if component == "community":
+                  component_index = 2
+                print("component: %s" % component)
                 tagsha = repo.get('tagsha', "")
                 tag = repo.get('tag', "")
                 if tag and tag != "" and len(tag) > 0:
@@ -200,22 +221,32 @@ jobs:
                   integrationInfos.append("%s | [%s](https://github.com/%s/tree/%s)" % (name, version, fullreponame, tag))
                   changelogs.append(changelog)
                   influences.append(influence)
+                  if not check_changelog_changed(fullreponame, tag):
+                    noChangelogs.append({"repo": fullreponame, "tag": tag, "tagsha": tagsha})
                 elif tagsha and tagsha != "" and len(tagsha) > 0:
                   name, version, changelog, influence = read_changelog(fullreponame, tagsha)
                   #print("tagsha: ", name, version, changelog, influence)
                   integrationInfos.append("%s | [%s](https://github.com/%s/commit/%s)" % (name, version, fullreponame, tagsha))
                   changelogs.append(changelog)
                   influences.append(influence)
+                  if not check_changelog_changed(fullreponame, tagsha):
+                    noChangelogs.append({"repo": fullreponame, "tag": tagsha, "tagsha": tagsha})
                 if tagsha == "" and len(tagsha) <= 0 and tag == "" and len(tag) <= 0:
                   illegalTags.append({"repo": fullreponame, "tag": tag, "tagsha": tagsha})
-                allBuildTasks[order].get("data").get("payload").append(repo)
-              integrationinfo = str(integrationInfos)
+                allBuildTasks[component_index].get("data").get("payload").append(repo)
+              integrationinfo = str("\n".join(integrationInfos))
               print("integrationinfo: " + integrationinfo)
-              changelog = str(changelogs)
-              influence = str(influences)
+              changelog = str("\n".join(changelogs))
+              influence = str("\n".join(influences))
               set_output("integrationinfo", integrationinfo)
+              with open("integration-${{ github.event.number }}-integrationinfo.md", "w+") as f:
+                  f.write(integrationinfo)
               set_output("changelog", changelog)
+              with open("integration-${{ github.event.number }}-changelog.md", "w+") as f:
+                  f.write(changelog)
               set_output("influence", influence)
+              with open("integration-${{ github.event.number }}-influence.md", "w+") as f:
+                  f.write(influence)
               set_output("milestone", "V23-Beta2")
               if data.get('milestone', "") != "":
                 set_output("milestone", data.get('milestone'))
@@ -230,13 +261,35 @@ jobs:
               else:
                   set_output("illegal_repos", "undefined")
 
+              if len(noChangelogs) > 0:
+                  set_output("no_changelogs", str(noChangelogs))
+              else:
+                  set_output("no_changelogs", "undefined")
+
               allRepos = []
-              for order in allBuildTasks:
-                  for repo in order.get("data").get("payload"):
+              testrepoaddr = ""
+              for c in allBuildTasks:
+                  print(c)
+                  print(c.get("component"))
+                  for repo in c.get("data").get("payload"):
                       allRepos.append(repo)
-                  if len(order.get("data").get("payload")) > 0:
-                      set_output("build_matrix_" + str(order['order']), str(order.get("data")))
+                  if len(c.get("data").get("payload")) > 0:
+                      set_output("build_matrix_" + str(c.get("component")), str(c.get("data")))
+                      if str(c.get("component")) == "main":
+                        if testrepoaddr != "":
+                          testrepoaddr = testrepoaddr + "\n    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}/testing/ ./"
+                        else:
+                          testrepoaddr ="    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}/testing/ ./"
+                      else:
+                        if testrepoaddr != "":
+                          testrepoaddr = testrepoaddr + "\n    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}:/" + str(c.get("component")) + "/testing/ ./"
+                        else:
+                          testrepoaddr ="    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}:/" + str(c.get("component")) + "/testing/ ./"
               set_output("all_build_task", str(allRepos))
+              print(testrepoaddr)
+              set_output("testrepoaddr", str(testrepoaddr))
+              with open("integration-${{ github.event.number }}-testrepoaddr.md", "w+") as f:
+                f.write(testrepoaddr)
 
           except BaseException as e:
               logging.error(e)
@@ -252,6 +305,8 @@ jobs:
             const COMMENT_HEAD = "**" + BOT_NAME + "**\n\n"
             illegal_tags = ${{ steps.parsec_integration.outputs.illegal_tags }}
             illegal_repos = ${{ steps.parsec_integration.outputs.illegal_repos }}
+            no_changelogs = ${{ steps.parsec_integration.outputs.no_changelogs }}
+            core.setOutput('labels', "Project:integrated")
             let COMMENT_BODY = ""
             if ( illegal_tags !== undefined || illegal_repos !== undefined ) {
               if ( illegal_tags !== undefined ) {
@@ -268,6 +323,13 @@ jobs:
                     COMMENT_BODY += "|" + repo + "|\n"
                   })
               }
+            } else if ( no_changelogs !== undefined ) {
+              core.setOutput('labels', "Project:Pre-integrated")
+              COMMENT_BODY += "Listed repo integration are not modified changelog: \n|repo|tagOrsha|\n|-|-|\n"
+              no_changelogs.forEach(tag => {
+                COMMENT_BODY += "|" + tag["repo"] + "|" + tag["tag"] + "|\n"
+              })
+              COMMENT_BODY += "\n"
             } else {
               COMMENT_BODY = "All repo and tag pairs check passed!"
             }
@@ -297,94 +359,18 @@ jobs:
               }
             }
 
-            core.setOutput('DEPLOY', 'TestingIntegrationTesterReveiw')
+            core.setOutput('DEPLOY', 'TestingIntegrationTesterReview')
             if ( illegal_tags !== undefined ) {
               core.setFailed("some tags are not invalid!")
             }
 
-            // component 检查
-            all_build_task = ${{ steps.parsec_integration.outputs.all_build_task }}
-            let component = ""
-            for (repo of all_build_task) {
-              console.log(repo)
-              obsWorkflowsPath = ".obs/workflows.yml"
-              if (repo.repo.includes("deepin-community")) {
-                obsWorkflowsPath = "debian/deepin/workflows.yml"
-              }
-              repoinfo = repo.repo.split('/')
-              if (repoinfo.length == 2) {
-                const {data} = await github.rest.repos.getContent({
-                  owner: repoinfo[0],
-                  repo: repoinfo[1],
-                  path: obsWorkflowsPath,
-                });
-                datas = Buffer.from(data.content, data.encoding)
-                obsinfo = datas.toString()
-                //console.log(obsinfo)
-                if (obsinfo.length > 0) {
-                  if (obsinfo.includes("source_project: deepin:Develop:dde")) {
-                    if (component == "") {
-                      component = "dde"
-                    }
-
-                    if (component != "dde") {
-                      core.setFailed("intergrate multi components repo are not allowed!")
-                      break
-                    }
-
-                  } else if (obsinfo.includes("source_project: deepin:Develop:main")) {
-                    if (component == "") {
-                      component = "main"
-                    }
-
-                    if (component != "main") {
-                      core.setFailed("intergrate multi components repo are not allowed!")
-                      break
-                    }
-
-                  } else if (obsinfo.includes("source_project: deepin:Develop:community")) {
-                    if (component == "") {
-                      component = "community"
-                    }
-
-                    if (component != "community") {
-                      core.setFailed("intergrate multi components repo are not allowed!")
-                      break
-                    }
-
-                  } else if (obsinfo.includes("source_project: deepin:Develop:commercial")) {
-                    if (component == "") {
-                      component = "commercial"
-                    }
-
-                    if (component != "commercial") {
-                      core.setFailed("intergrate multi components repo are not allowed!")
-                      break
-                    }
-                  }
-                } else {
-                  // 默认没有配置obs工作流程的项目组件为community
-                  if (component == "") {
-                    component = "community"
-                  }
-
-                  if (component != "community") {
-                    core.setFailed("intergrate multi components repo are not allowed!")
-                    break
-                  }
-                }
-              }
-            }
-
-            if (component == "") {
-              // 默认community
-              component = "community"
-            }
-            //console.log(component)
-            core.setOutput('component', component)
-
       - name: upload integration detail
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
-          name: integration-${{ github.event.number }}-detail.md
-          path: integration-${{ github.event.number }}-detail.md
+          name: integration-archive-${{ github.event.number }}
+          path: |
+            integration-${{ github.event.number }}-detail.md
+            integration-${{ github.event.number }}-integrationinfo.md
+            integration-${{ github.event.number }}-changelog.md
+            integration-${{ github.event.number }}-influence.md
+            integration-${{ github.event.number }}-testrepoaddr.md

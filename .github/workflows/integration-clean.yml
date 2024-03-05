@@ -1,0 +1,25 @@
+name: integration-request
+
+on:
+  pull_request_target:
+    paths:
+      - "integration.yml"
+    types: [ closed ]
+
+env:
+  PROJECT: deepin:CI:TestingIntegration:test-integration-pr-${{ github.event.number }}
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install tools
+        run: |
+          sudo apt-get update && sudo apt install -y osc curl
+
+      - name: Clean unused integration project
+        run: |
+          set -x
+          mkdir -p ~/.config/osc
+          echo "${{ secrets.OSCRC }}" > ~/.config/osc/oscrc
+          osc rdelete -f -r ${PROJECT} -m "Clean for integration end by github action" || true

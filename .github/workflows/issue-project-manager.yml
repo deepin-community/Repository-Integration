@@ -26,7 +26,7 @@ on:
         default: 'In progress' # ["已推送", "测试中", "驳回&废弃", "测试通过"]
       milestone:
         type: string
-        default: 'V23-Beta2'
+        default: 'V23-Release'
       labels:
         type: string
         default: 'Project:integrated' #多个标签有', '隔开
@@ -94,6 +94,7 @@ jobs:
           APP_PRIVATE_KEY: ${{ secrets.LINUXDEEPIN_APP_PRIVATE_KEY }}
         with:
           script: |
+            global["fetch"] = fetch
             const { Octokit } = require("@octokit/rest");
             const { createAppAuth } = require("@octokit/auth-app");
             repoinfo = "${{ inputs.repo }}".split('/')
@@ -116,13 +117,19 @@ jobs:
             });
             core.setOutput('app_token', token)
 
+      - name: Download integration files
+        uses: actions/download-artifact@v3
+        with:
+          name: integration-archive-${{ github.event.number }}
+
       - name: Handle issue
         id: issue
-        uses: actions/github-script@v6
+        uses: actions/github-script@v6.4.1
         with:
           github-token: ${{ steps.deepin-bot.outputs.app_token }}
           script: |
             core.debug("handle issue")
+            const fs = require('fs');
             issueid = "${{ inputs.issueid }}"
             repoinfo = "${{ inputs.repo }}".split('/')
             title = "${{ inputs.title }}"
@@ -131,23 +138,20 @@ jobs:
             milestonestr = "${{ inputs.milestone }}"
             status = "${{ inputs.status }}"
 
-            integrationinfo = ""
-            if (Array.isArray(${{ inputs.integrationinfo }})) {
-              integrationinfo = ${{ inputs.integrationinfo }}.join("\n")
-            }
+            let integrationinfodata = fs.readFileSync('integration-${{ github.event.number }}-integrationinfo.md')
+            let integrationinfo = integrationinfodata.toString()
             console.log("integrationinfo: ", integrationinfo)
-            testrepoaddr = "${{ inputs.testrepoaddr }}"
-            changelog = ""
-            if (Array.isArray(${{ inputs.changelog }})) {
-              changelog = ${{ inputs.changelog }}.join("\n")
-            }
+
+            let changelogdata = fs.readFileSync('integration-${{ github.event.number }}-changelog.md')
+            let changelog = changelogdata.toString()
             console.log("changelog: ", changelog)
             suggestion = "${{ inputs.suggestion }}"
-            influence = ""
-            if (Array.isArray(${{ inputs.influence }})) {
-              influence = ${{ inputs.influence }}.join("\n")
-            }
+            let influencedata = fs.readFileSync('integration-${{ github.event.number }}-influence.md')
+            let influence = influencedata.toString()
             console.log("influence: ", influence)
+            let testrepoaddrdata = fs.readFileSync('integration-${{ github.event.number }}-testrepoaddr.md')
+            let testrepoaddr = testrepoaddrdata.toString()
+            console.log("testrepoaddr: ", testrepoaddr)
             extrainfo = "${{ inputs.extrainfo }}"
 
             core.debug(repoinfo, labels, assignees)
@@ -285,8 +289,12 @@ jobs:
 
           cat project_data.json
           echo 'PROJECT_ID='$(jq '.data.organization.projectV2.id' project_data.json) >> $GITHUB_ENV
+          echo 'DATE_FIELD_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Date Created") | .id' project_data.json) >> $GITHUB_ENV
           echo 'STATUS_FIELD_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Status") | .id' project_data.json) >> $GITHUB_ENV
           echo 'OPTION_ID='$(jq '.data.organization.projectV2.fields.nodes[] | select(.name== "Status") | .options[] | select(.name=="${{ inputs.status }}") |.id' project_data.json) >> $GITHUB_ENV
+
+      - name: Get date
+        run: echo "DATE=$(date +"%Y-%m-%d")" >> $GITHUB_ENV
 
       - name: Add issue to project
         env:
@@ -319,6 +327,8 @@ jobs:
               $item: ID!
               $status_field: ID!
               $status_value: String!
+              $date_field: ID!
+              $date_value: Date!
             ) {
               set_status: updateProjectV2ItemFieldValue(input: {
                 projectId: $project
@@ -332,7 +342,19 @@ jobs:
                   id
                   }
               }
-            }' -f project=$PROJECT_ID -f item=${{ env.ITEM_ID }} -f status_field=$STATUS_FIELD_ID -f status_value=${{ env.OPTION_ID }} --silent
+              set_date_created: updateProjectV2ItemFieldValue(input: {
+                projectId: $project
+                itemId: $item
+                fieldId: $date_field
+                value: {
+                  date: $date_value
+                }
+              }) {
+                projectV2Item {
+                  id
+                }
+              }
+            }' -f project=$PROJECT_ID -f item=${{ env.ITEM_ID }} -f status_field=$STATUS_FIELD_ID -f status_value=${{ env.OPTION_ID }} -f date_field=$DATE_FIELD_ID -f date_value=$DATE --silent
 
       - name: Link issue to integration pr
         uses: actions/github-script@v6

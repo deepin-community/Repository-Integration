@@ -59,7 +59,7 @@ jobs:
                 issue_number: context.issue.number
               })
               const reg = new RegExp("\\*+" + BOT_NAME + "\\*+")
-              botComment= response.data.find(comment => comment.body.match(reg))
+              botComment = response.data.find(comment => comment.body.match(reg))
 
               if (botComment) {
                 // get issue id
@@ -67,8 +67,16 @@ jobs:
                 core.debug(botComment)
                 // console.log(comments.length)
                 if (comments.length > 3) {
-                  issueid = comments[2].replace("IssueID: ", "")
-                  projectItemID = comments[3].replace("ProjectItemID: ", "")
+                  id = comments[2].replace("IssueID: ", "")
+                  const res = await github.rest.issues.get({
+                    owner: "linuxdeepin",
+                    repo: "developer-center",
+                    issue_number: id
+                  })
+                  if (res.data.state != "closed") {
+                    issueid = id
+                    projectItemID = comments[3].replace("ProjectItemID: ", "")
+                  }
                 }
               }
             }
@@ -76,35 +84,56 @@ jobs:
             core.setOutput('issueid', issueid)
             core.setOutput('projectItemID', projectItemID)
 
+  wait_build_pending_status:
+    name: wait build pending status
+    runs-on: ubuntu-latest
+    steps:
+      - name: wait build pending status
+        uses: actions/github-script@v6
+        with:
+          script: |
+            retryCount = 30
+            if ( context.issue.number != undefined ) {
+              while (true) {
+                const { data: statuses } = await github.rest.repos.listCommitStatusesForRef({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  ref: pull.data.head.sha,
+                })
+
+                const successStatuses = statuses.filter((status) => status.state === "success");
+                if (successStatuses.length == statuses.length) {
+                    console.log(`All build commit statuses is now a success.`);
+                    return true;
+                }
+
+                if (attemptCount >= retryCount) {
+                    console.log(`Exceeded maximum retry count. Exiting...`);
+                    return false;
+                }
+
+                attemptCount++;
+
+                console.log(`Waiting for commit status to become a success...`);
+                sleep(3600);
+              }
+            }
+
   create_issue_link_project:
     name: create issue and link project
     needs:
       - parsec_integration
       - ouput_message
       - build_project_prepare
-      - build-order-0
-      - build-order-1
-      - build-order-2
-      - build-order-3
-      - build-order-4
-      - build-order-5
-      - build-order-6
-      - build-order-7
-      - build-order-8
-      - build-order-9
+      - build_main
+      - build_dde
+      - build_community
     if: |
       always() && !cancelled() &&
       (needs.parsec_integration.result == 'success') && (needs.ouput_message.result != 'failure' ) &&
-      (needs.build-order-0.result == 'success' || needs.build-order-0.result == 'skipped') &&
-      (needs.build-order-1.result == 'success' || needs.build-order-1.result == 'skipped') &&
-      (needs.build-order-2.result == 'success' || needs.build-order-2.result == 'skipped') &&
-      (needs.build-order-3.result == 'success' || needs.build-order-3.result == 'skipped') &&
-      (needs.build-order-4.result == 'success' || needs.build-order-4.result == 'skipped') &&
-      (needs.build-order-5.result == 'success' || needs.build-order-5.result == 'skipped') &&
-      (needs.build-order-6.result == 'success' || needs.build-order-6.result == 'skipped') &&
-      (needs.build-order-7.result == 'success' || needs.build-order-7.result == 'skipped') &&
-      (needs.build-order-8.result == 'success' || needs.build-order-8.result == 'skipped') &&
-      (needs.build-order-9.result == 'success' || needs.build-order-9.result == 'skipped')
+      (needs.build_main.result == 'success' || needs.build_main.result == 'skipped') &&
+      (needs.build_dde.result == 'success' || needs.build_dde.result == 'skipped') &&
+      (needs.build_community.result == 'success' || needs.build_community.result == 'skipped')
     uses: deepin-community/Repository-Integration/.github/workflows/issue-project-manager.yml@master
     secrets: inherit
     with:
@@ -115,112 +144,52 @@ jobs:
       title: "[Deepin Integration]~[${{ needs.parsec_integration.outputs.milestone }}] ${{ needs.parsec_integration.outputs.integration_message }}"
       status: "In progress"
       milestone: ${{ needs.parsec_integration.outputs.milestone }}
-      labels: Project:integrated
+      labels: ${{ needs.parsec_integration.outputs.labels }}
       integrationinfo: ${{ needs.parsec_integration.outputs.integrationinfo }}
       changelog: ${{ needs.parsec_integration.outputs.changelog }}
       influence: ${{ needs.parsec_integration.outputs.influence }}
-      testrepoaddr: "    deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI:/TestingIntegration:/test-integration-pr-${{ github.event.number }}/testing/ ./"
+      testrepoaddr: ${{ needs.parsec_integration.outputs.testrepoaddr }}
 
-  # https://github.com/actions/runner/issues/491#issuecomment-850884422 reason why use this if
-  # :( for this
-  # this jobs used for merge topic into testing
-  auto-test:
-    name: auto test
+  pass_integration:
+    name: pass integration
     needs:
       - parsec_integration
       - ouput_message
       - build_project_prepare
-      - build-order-0
-      - build-order-1
-      - build-order-2
-      - build-order-3
-      - build-order-4
-      - build-order-5
-      - build-order-6
-      - build-order-7
-      - build-order-8
-      - build-order-9
       - create_issue_link_project
     uses: deepin-community/Repository-Integration/.github/workflows/04-auto-test.yml@master
     if: |
       always() && !cancelled() &&
-      (needs.parsec_integration.result == 'success') && (needs.ouput_message.result != 'failure' ) &&
-      (needs.build-order-0.result == 'success' || needs.build-order-0.result == 'skipped') &&
-      (needs.build-order-1.result == 'success' || needs.build-order-1.result == 'skipped') &&
-      (needs.build-order-2.result == 'success' || needs.build-order-2.result == 'skipped') &&
-      (needs.build-order-3.result == 'success' || needs.build-order-3.result == 'skipped') &&
-      (needs.build-order-4.result == 'success' || needs.build-order-4.result == 'skipped') &&
-      (needs.build-order-5.result == 'success' || needs.build-order-5.result == 'skipped') &&
-      (needs.build-order-6.result == 'success' || needs.build-order-6.result == 'skipped') &&
-      (needs.build-order-7.result == 'success' || needs.build-order-7.result == 'skipped') &&
-      (needs.build-order-8.result == 'success' || needs.build-order-8.result == 'skipped') &&
-      (needs.build-order-9.result == 'success' || needs.build-order-9.result == 'skipped')
+      (needs.create_issue_link_project.result == 'success')
     with:
       topic: test-integration-pr-${{ github.event.number }}
       packages: ${{ needs.parsec_integration.outputs.all_build_task }}
       deploy: ${{ needs.parsec_integration.outputs.deploy }}
 
-  deploy-repo:
-    name: merge topic repo
-    needs:
-      - parsec_integration
-      - ouput_message
-      - build_project_prepare
-      - build-order-0
-      - build-order-1
-      - build-order-2
-      - build-order-3
-      - build-order-4
-      - build-order-5
-      - build-order-6
-      - build-order-7
-      - build-order-8
-      - build-order-9
-      - auto-test
-    uses: deepin-community/Repository-Integration/.github/workflows/05-merge-into-testing.yml@master
-    secrets: inherit
-    if: |
-      always() && !cancelled() &&
-      (needs.parsec_integration.result == 'success') && (needs.ouput_message.result != 'failure') &&
-      (needs.build-order-0.result == 'success' || needs.build-order-0.result == 'skipped') &&
-      (needs.build-order-1.result == 'success' || needs.build-order-1.result == 'skipped') &&
-      (needs.build-order-2.result == 'success' || needs.build-order-2.result == 'skipped') &&
-      (needs.build-order-3.result == 'success' || needs.build-order-3.result == 'skipped') &&
-      (needs.build-order-4.result == 'success' || needs.build-order-4.result == 'skipped') &&
-      (needs.build-order-5.result == 'success' || needs.build-order-5.result == 'skipped') &&
-      (needs.build-order-6.result == 'success' || needs.build-order-6.result == 'skipped') &&
-      (needs.build-order-7.result == 'success' || needs.build-order-7.result == 'skipped') &&
-      (needs.build-order-8.result == 'success' || needs.build-order-8.result == 'skipped') &&
-      (needs.build-order-9.result == 'success' || needs.build-order-9.result == 'skipped') &&
-      (needs.auto-test.result == 'success')
-    with:
-      topic: test-integration-pr-${{ github.event.number }}
-      deploy: "TestingRepoReviewer"
-      component: ${{ needs.parsec_integration.outputs.component }}
-      message: ${{ needs.parsec_integration.outputs.integration_message }}
-
   # merge finished and success, closing this pr
   close-pull-request:
     name: close this pull request
     needs:
-      - deploy-repo
       - parsec_integration
-    if: always() && !cancelled() && (needs.deploy-repo.result == 'success')
+      - pass_integration
+    if: |
+      always() && !cancelled() &&
+      (needs.pass_integration.result == 'success')
     uses: deepin-community/Repository-Integration/.github/workflows/06-deployed.yml@master
     secrets: inherit
     with:
       integrations: ${{ needs.parsec_integration.outputs.all_build_task }}
 
-  # ten level build task
-  build-order-0:
-    name: build-order-0
-    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix_0 != '') && (needs.parsec_integration.result == 'success')
+  # build task
+  build_main:
+    name: build_main
+    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix_main != '') && (needs.parsec_integration.result == 'success')
     needs:
       - parsec_integration
       - build_project_prepare
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_0) }}
+      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_main) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
@@ -229,30 +198,15 @@ jobs:
       tagsha: ${{ matrix.payload.tagsha }}
       topic: test-integration-pr-${{ github.event.number }}
 
-  build-order-1:
-    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix_1 != '') && (needs.parsec_integration.result == 'success')
-    needs: 
-      - parsec_integration
-      - build-order-0
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_1) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
-    secrets: inherit
-    with:
-      repo: ${{ matrix.payload.repo }}
-      tag: ${{ matrix.payload.tag }}
-      tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-integration-pr-${{ github.event.number }}
-
-  build-order-2:
-    if: always() && !cancelled() && ( needs.parsec_integration.outputs.build_matrix_2 != '') && (needs.parsec_integration.result == 'success')
+  build_dde:
+    name: build_dde
+    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix_dde != '') && (needs.parsec_integration.result == 'success')
     needs:
       - parsec_integration
-      - build-order-1
+      - build_project_prepare
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_2) }}
+      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_dde) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
@@ -260,48 +214,17 @@ jobs:
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
       topic: test-integration-pr-${{ github.event.number }}
+      component: "dde"
 
-  build-order-3:
-    if: always() && !cancelled() && ( needs.parsec_integration.outputs.build_matrix_3 != '') && (needs.parsec_integration.result == 'success')
-    needs: 
-      - parsec_integration
-      - build-order-2
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_3) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
-    secrets: inherit
-    with:
-      repo: ${{ matrix.payload.repo }}
-      tag: ${{ matrix.payload.tag }}
-      tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-integration-pr-${{ github.event.number }}
-
-  build-order-4:
-    if: always() && !cancelled() && ( needs.parsec_integration.outputs.build_matrix_4 != '') && (needs.parsec_integration.result == 'success')
-    needs: 
-      - parsec_integration
-      - build-order-3
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_4) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
-    secrets: inherit
-    with:
-      repo: ${{ matrix.payload.repo }}
-      tag: ${{ matrix.payload.tag }}
-      tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-integration-pr-${{ github.event.number }}
-
-  build-order-5:
-    name: build-order-5
-    if: always() && !cancelled() && ( needs.parsec_integration.outputs.build_matrix_5 != '') && (needs.parsec_integration.result == 'success')
+  build_community:
+    name: build_community
+    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix_community != '') && (needs.parsec_integration.result == 'success')
     needs:
       - parsec_integration
-      - build-order-4
+      - build_project_prepare
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_5) }}
+      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_community) }}
     uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
     secrets: inherit
     with:
@@ -309,67 +232,4 @@ jobs:
       tag: ${{ matrix.payload.tag }}
       tagsha: ${{ matrix.payload.tagsha }}
       topic: test-integration-pr-${{ github.event.number }}
-
-  build-order-6:
-    if: always() && !cancelled() && ( needs.parsec_integration.outputs.build_matrix_6 != '') && (needs.parsec_integration.result == 'success')
-    needs:
-      - parsec_integration
-      - build-order-5
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_6) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
-    secrets: inherit
-    with:
-      repo: ${{ matrix.payload.repo }}
-      tag: ${{ matrix.payload.tag }}
-      tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-integration-pr-${{ github.event.number }}
-
-  build-order-7:
-    if: always() && !cancelled() && ( needs.parsec_integration.outputs.build_matrix_7 != '') && (needs.parsec_integration.result == 'success')
-    needs:
-      - parsec_integration
-      - build-order-6
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_7) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
-    secrets: inherit
-    with:
-      repo: ${{ matrix.payload.repo }}
-      tag: ${{ matrix.payload.tag }}
-      tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-integration-pr-${{ github.event.number }}
-
-  build-order-8:
-    if: always() && !cancelled() && ( needs.parsec_integration.outputs.build_matrix_8 != '') && (needs.parsec_integration.result == 'success')
-    needs: 
-      - parsec_integration
-      - build-order-7
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_8) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
-    secrets: inherit
-    with:
-      repo: ${{ matrix.payload.repo }}
-      tag: ${{ matrix.payload.tag }}
-      tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-integration-pr-${{ github.event.number }}
-
-  build-order-9:
-    if: always() && !cancelled() && ( needs.parsec_integration.outputs.build_matrix_9 != '') && (needs.parsec_integration.result == 'success')
-    needs: 
-      - parsec_integration
-      - build-order-8
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_9) }}
-    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
-    secrets: inherit
-    with:
-      repo: ${{ matrix.payload.repo }}
-      tag: ${{ matrix.payload.tag }}
-      tagsha: ${{ matrix.payload.tagsha }}
-      topic: test-integration-pr-${{ github.event.number }}
+      component: "community"
