@@ -79,3 +79,6 @@ repos:
 
   - repo: deepin-community/node-compare-versions
     tagsha: c652611bf8dd646a739cf6ec61af0015767bb4eb
+
+  - repo: deepin-community/node-undici
+    tagsha: a7e2ae8e932585850be9eb1fd79ec0dd2a86c63a
