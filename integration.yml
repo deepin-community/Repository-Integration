@@ -82,3 +82,6 @@ repos:
 
   - repo: deepin-community/node-undici
     tagsha: a7e2ae8e932585850be9eb1fd79ec0dd2a86c63a
+
+  - repo: deepin-community/node-formidable
+    tagsha: a659e21d2ceafff373cdd2544cf7585874f96a6d
