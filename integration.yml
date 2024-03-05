@@ -29,3 +29,5 @@ repos:
       tagsha: a2ac8a8a8f87055ee215df92542d5d590f4d8d0f
     - repo: linuxdeepin/deepin-picker
       tagsha: 6ab549583e9de057a34f3cede692222e08a28e0b
+    - repo: linuxdeepin/deepin-system-monitor
+      tagsha: e578a249f170959ecbde8ac055d0f20bdd7813fe
