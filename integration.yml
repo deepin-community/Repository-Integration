@@ -95,4 +95,4 @@ repos:
   - repo: deepin-community/node-formidable
     tagsha: a659e21d2ceafff373cdd2544cf7585874f96a6d
   - repo: deepin-community/node-recast
-    tagsha: 9f4d42b926b235e8ee751fd84fb6d15825e8fa5a
+    tagsha: a3de91ca6afb46a32e929e3aa1b6b7240eaf190f
