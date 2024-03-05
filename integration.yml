@@ -9,3 +9,5 @@ repos:
       tagsha: 3f6ae0ed4bcec54fc67ea3739eb76a5040ccef65
     - repo: linuxdeepin/dde-cooperation
       tagsha: c891ddf7974cfe8987822dbc69a37f835a78fafd
+    - repo: linuxdeepin/deepin-diskmanager
+      tagsha: cc11020660ba02d84b94e280b856f6b54307fdfd
