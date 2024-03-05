@@ -98,7 +98,7 @@ jobs:
                 const { data: statuses } = await github.rest.repos.listCommitStatusesForRef({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
-                  ref: pull.data.head.sha,
+                  ref: ${{ github.event.pull_request.head.sha }},
                 })
 
                 const successStatuses = statuses.filter((status) => status.state === "success");
@@ -128,12 +128,14 @@ jobs:
       - build_main
       - build_dde
       - build_community
+      - wait_build_pending_status
     if: |
       always() && !cancelled() &&
       (needs.parsec_integration.result == 'success') && (needs.ouput_message.result != 'failure' ) &&
       (needs.build_main.result == 'success' || needs.build_main.result == 'skipped') &&
       (needs.build_dde.result == 'success' || needs.build_dde.result == 'skipped') &&
-      (needs.build_community.result == 'success' || needs.build_community.result == 'skipped')
+      (needs.build_community.result == 'success' || needs.build_community.result == 'skipped') &&
+      needs.wait_build_pending_status == 'success'
     uses: deepin-community/Repository-Integration/.github/workflows/issue-project-manager.yml@master
     secrets: inherit
     with:
