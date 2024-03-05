@@ -84,6 +84,41 @@ jobs:
             core.setOutput('issueid', issueid)
             core.setOutput('projectItemID', projectItemID)
 
+  wait_build_pending_status:
+    name: wait build pending status
+    runs-on: ubuntu-latest
+    steps:
+      - name: wait build pending status
+        uses: actions/github-script@v6
+        with:
+          script: |
+            retryCount = 30
+            if ( context.issue.number != undefined ) {
+              while (true) {
+                const { data: statuses } = await github.rest.repos.listCommitStatusesForRef({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  ref: pull.data.head.sha,
+                })
+
+                const successStatuses = statuses.filter((status) => status.state === "success");
+                if (successStatuses.length == statuses.length) {
+                    console.log(`All build commit statuses is now a success.`);
+                    return true;
+                }
+
+                if (attemptCount >= retryCount) {
+                    console.log(`Exceeded maximum retry count. Exiting...`);
+                    return false;
+                }
+
+                attemptCount++;
+
+                console.log(`Waiting for commit status to become a success...`);
+                sleep(3600);
+              }
+            }
+
   create_issue_link_project:
     name: create issue and link project
     needs:
