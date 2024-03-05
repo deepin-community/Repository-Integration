@@ -96,3 +96,5 @@ repos:
     tagsha: a659e21d2ceafff373cdd2544cf7585874f96a6d
   - repo: deepin-community/node-recast
     tagsha: a3de91ca6afb46a32e929e3aa1b6b7240eaf190f
+  - repo: deepin-community/node-seq
+    tagsha: cbd65283bd263d0eb1b09bd9dd48a609139e012a
