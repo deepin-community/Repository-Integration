@@ -105,7 +105,9 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            retryCount = 30
+
+            let retryCount = 30;
+            let attemptCount = 0;
             if ( context.issue.number != undefined ) {
               while (true) {
                 const { data: statuses } = await github.rest.repos.listCommitStatusesForRef({
