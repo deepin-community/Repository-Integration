@@ -120,7 +120,6 @@ jobs:
                   ref: "${{ github.event.pull_request.head.sha }}",
                 })
 
-
                 buildStatuses = statuses.filter((status) => status.context.includes("testing_repository_building"));
                 const successStatuses = buildStatuses.filter((status) => status.state === "success");
                 if (successStatuses.length == buildStatuses.length) {
@@ -156,7 +155,8 @@ jobs:
       (needs.build_main.result == 'success' || needs.build_main.result == 'skipped') &&
       (needs.build_dde.result == 'success' || needs.build_dde.result == 'skipped') &&
       (needs.build_community.result == 'success' || needs.build_community.result == 'skipped') &&
-      needs.wait_build_pending_status == 'success'
+      needs.wait_build_pending_status != 'failure'
+
     uses: deepin-community/Repository-Integration/.github/workflows/issue-project-manager.yml@master
     secrets: inherit
     with:
