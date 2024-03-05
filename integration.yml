@@ -7,3 +7,5 @@ repos:
       tagsha: 1834b08faddf3936cb0d0bdcfd1bdbd74ca9885d
     - repo: linuxdeepin/dde-file-manager
       tagsha: 3f6ae0ed4bcec54fc67ea3739eb76a5040ccef65
+    - repo: linuxdeepin/dde-cooperation
+      tagsha: c891ddf7974cfe8987822dbc69a37f835a78fafd
