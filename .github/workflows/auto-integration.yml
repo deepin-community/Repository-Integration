@@ -109,26 +109,29 @@ jobs:
             let attemptCount = 0;
             if ( context.issue.number != undefined ) {
               while (true) {
-                const { data: statuses } = await github.rest.repos.listCommitStatusesForRef({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  ref: "${{ github.event.pull_request.head.sha }}",
-                })
+                setInterval(function() {
+                  const { data: statuses } = await github.rest.repos.listCommitStatusesForRef({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    ref: "${{ github.event.pull_request.head.sha }}",
+                  })
 
-                const successStatuses = statuses.filter((status) => status.state === "success");
-                if (successStatuses.length == statuses.length) {
-                  console.log(`All build commit statuses is now a success.`);
-                  break;
+                  const successStatuses = statuses.filter((status) => status.state === "success");
+                  if (successStatuses.length == statuses.length) {
+                    console.log(`All build commit statuses is now a success.`);
+                    break;
+                  }
+
+                  if (attemptCount >= retryCount) {
+                    core.setFailed(`Exceeded maximum retry count. Exiting...`);
+                    break;
+                  }
+
+                  attemptCount++;
+
+                  console.log(`Waiting for commit status to become a success...`);
                 }
-
-                if (attemptCount >= retryCount) {
-                  core.setFailed(`Exceeded maximum retry count. Exiting...`);
-                }
-
-                attemptCount++;
-
-                setTimeout(() => console.log(`Waiting for commit status to become a success...`), 3600);
-              }
+              }, 3600000)
             }
 
   create_issue_link_project:
