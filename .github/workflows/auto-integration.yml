@@ -87,6 +87,19 @@ jobs:
   wait_build_pending_status:
     name: wait build pending status
     runs-on: ubuntu-latest
+    needs:
+      - parsec_integration
+      - ouput_message
+      - build_project_prepare
+      - build_main
+      - build_dde
+      - build_community
+    if: |
+      always() && !cancelled() &&
+      (needs.parsec_integration.result == 'success') && (needs.ouput_message.result != 'failure' ) &&
+      (needs.build_main.result == 'success' || needs.build_main.result == 'skipped') &&
+      (needs.build_dde.result == 'success' || needs.build_dde.result == 'skipped') &&
+      (needs.build_community.result == 'success' || needs.build_community.result == 'skipped')
     steps:
       - name: wait build pending status
         uses: actions/github-script@v6
@@ -98,7 +111,7 @@ jobs:
                 const { data: statuses } = await github.rest.repos.listCommitStatusesForRef({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
-                  ref: ${{ github.event.pull_request.head.sha }},
+                  ref: "${{ github.event.pull_request.head.sha }}",
                 })
 
                 const successStatuses = statuses.filter((status) => status.state === "success");
