@@ -23,3 +23,5 @@ repos:
       tagsha: eb6db7fb0c30e9b19a0dd88d3ff3eaa9db6d3d1f
     - repo: linuxdeepin/deepin-camera
       tagsha: e85843826cbb2d8fc0f6abb4ae2a6e9ebb14bca7
+    - repo: linuxdeepin/deepin-devicemanager
+      tagsha: a969e7a6d7301be6d68e77bc71517f902fdbf72a
