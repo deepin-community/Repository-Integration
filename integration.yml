@@ -85,3 +85,13 @@ repos:
 
   - repo: deepin-community/node-formidable
     tagsha: a659e21d2ceafff373cdd2544cf7585874f96a6d
+
+  # - repo: deepin-community/node-chainsaw
+  - repo: deepin-community/node-create-hmac
+    tagsha: 7efb99723fd1d971df1207543c7bd36766aeb372
+  - repo: deepin-community/node-external-editor
+    tagsha: c7c4409864feeb205231a7642b61550e533de454
+  - repo: deepin-community/node-formidable
+    tagsha: a659e21d2ceafff373cdd2544cf7585874f96a6d
+  - repo: deepin-community/node-recast
+    tagsha: 9f4d42b926b235e8ee751fd84fb6d15825e8fa5a
