@@ -13,3 +13,5 @@ repos:
       tagsha: cc11020660ba02d84b94e280b856f6b54307fdfd
     - repo: linuxdeepin/deepin-album
       tagsha: 0f21b9ec71ab2d91e33d1016b30c6c67442607f9
+    - repo: linuxdeepin/deepin-editor
+      tagsha: 6c7ece5030d3603e8db8696b0e16dad768d4141b
