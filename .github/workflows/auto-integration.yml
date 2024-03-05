@@ -105,7 +105,6 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-
             let retryCount = 30;
             let attemptCount = 0;
             if ( context.issue.number != undefined ) {
@@ -128,8 +127,7 @@ jobs:
 
                 attemptCount++;
 
-                console.log(`Waiting for commit status to become a success...`);
-                sleep(3600);
+                setTimeout(() => console.log(`Waiting for commit status to become a success...`), 3600);
               }
             }
 
