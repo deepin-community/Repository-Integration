@@ -84,8 +84,9 @@ jobs:
             core.setOutput('issueid', issueid)
             core.setOutput('projectItemID', projectItemID)
 
-  create_issue_link_project:
-    name: create issue and link project
+  wait_build_pending_status:
+    name: wait build pending status
+    runs-on: ubuntu-latest
     needs:
       - parsec_integration
       - ouput_message
@@ -99,6 +100,55 @@ jobs:
       (needs.build_main.result == 'success' || needs.build_main.result == 'skipped') &&
       (needs.build_dde.result == 'success' || needs.build_dde.result == 'skipped') &&
       (needs.build_community.result == 'success' || needs.build_community.result == 'skipped')
+    steps:
+      - name: wait build pending status
+        uses: actions/github-script@v6
+        with:
+          script: |
+            retryCount = 30
+            if ( context.issue.number != undefined ) {
+              while (true) {
+                const { data: statuses } = await github.rest.repos.listCommitStatusesForRef({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  ref: ${{ github.event.pull_request.head.sha }},
+                })
+
+                const successStatuses = statuses.filter((status) => status.state === "success");
+                if (successStatuses.length == statuses.length) {
+                    console.log(`All build commit statuses is now a success.`);
+                    return true;
+                }
+
+                if (attemptCount >= retryCount) {
+                    console.log(`Exceeded maximum retry count. Exiting...`);
+                    return false;
+                }
+
+                attemptCount++;
+
+                console.log(`Waiting for commit status to become a success...`);
+                sleep(3600);
+              }
+            }
+
+  create_issue_link_project:
+    name: create issue and link project
+    needs:
+      - parsec_integration
+      - ouput_message
+      - build_project_prepare
+      - build_main
+      - build_dde
+      - build_community
+      - wait_build_pending_status
+    if: |
+      always() && !cancelled() &&
+      (needs.parsec_integration.result == 'success') && (needs.ouput_message.result != 'failure' ) &&
+      (needs.build_main.result == 'success' || needs.build_main.result == 'skipped') &&
+      (needs.build_dde.result == 'success' || needs.build_dde.result == 'skipped') &&
+      (needs.build_community.result == 'success' || needs.build_community.result == 'skipped') &&
+      needs.wait_build_pending_status == 'success'
     uses: deepin-community/Repository-Integration/.github/workflows/issue-project-manager.yml@master
     secrets: inherit
     with:
