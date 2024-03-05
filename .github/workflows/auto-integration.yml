@@ -116,13 +116,12 @@ jobs:
 
                 const successStatuses = statuses.filter((status) => status.state === "success");
                 if (successStatuses.length == statuses.length) {
-                    console.log(`All build commit statuses is now a success.`);
-                    return true;
+                  console.log(`All build commit statuses is now a success.`);
+                  break;
                 }
 
                 if (attemptCount >= retryCount) {
-                    console.log(`Exceeded maximum retry count. Exiting...`);
-                    return false;
+                  core.setFailed(`Exceeded maximum retry count. Exiting...`);
                 }
 
                 attemptCount++;
