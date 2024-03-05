@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: sympy by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/sympy
+      tagsha: f0630a3a043d20e83bcc6ec7bf2425c185c29099
+    - repo: deepin-community/inotify-tools
+      tagsha: f7aeb765d71663e0b09619bbd54844a200ef22be
+    - repo: deepin-community/uc-micro-py
+      tagsha: 1bc7cd229f8971bee5a6c46cd4cdc5c8f369f557
+    - repo: deepin-community/linkify-it-py
+      tagsha: 0b74fd375cb5dfc10410f0db14759d43b92fc090
+    - repo: deepin-community/sphinx-reredirects
+      tagsha: 886b291683284763ac0a94bc22eb3b55958bbc31
