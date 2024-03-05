@@ -48,6 +48,7 @@ jobs:
       pkgname: ${{ steps.pkgname.outputs.pkgname }}
       tagsha: ${{ steps.tagsha.outputs.tagsha }}
       targeturl: ${{ steps.build.outputs.targeturl }}
+      needbuild: ${{ steps.build.outputs.needbuild }}
     steps:
       - name: Print Environment
         run: export
@@ -154,15 +155,12 @@ jobs:
             curl -o _branch_request https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-br.tpl
             sed -i  "s#REPO#$REPO#g" _branch_request
             sed -i "s#TAGSHA#$TAGSHA#g" _branch_request
-            osc add _branch_request && osc ci -m "update tag release: $TAGSHA"
+            osc add _branch_request && osc ci -m "Update tag release: $TAGSHA"
           else
-            echo "Trigger Rebuilding"
-            if [ "$COMPONENT" = "main" ]; then
-              osc rebuild deepin:CI:TestingIntegration:${TOPIC} ${pkgname}
-            else
-              osc rebuild deepin:CI:TestingIntegration:${TOPIC}:${COMPONENT} ${pkgname}
-            fi
+            echo "$REPO source unchanged, skip!!!"
           fi
+
+          echo "needbuild=$needbuild" >> $GITHUB_OUTPUT
 
   log:
     needs: build
@@ -175,6 +173,7 @@ jobs:
       ARCH: ${{ matrix.arch }}
     steps:
       - name: Set commit status as pending
+        if: ${{ needs.build.outputs.needbuild }} == "true"
         uses: myrotvorets/set-commit-status-action@master
         with:
           token: ${{ github.token }}
