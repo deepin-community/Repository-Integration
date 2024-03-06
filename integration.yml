@@ -2,5 +2,5 @@ message: 'feat: update policykit-1 to 123 by UTsweetyfish@deepin-community/polic
 milestone: v23-Release
 repos:
   - repo: deepin-community/policykit-1
-    tagsha: e89f2c20130dd7e493bb88936d86f3b6e43ac7e4
+    tagsha: b11cdbe4f035119f213b7abb28eac3197081ec8b
 timestamp: 1709174389794
