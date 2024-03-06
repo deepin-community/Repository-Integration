@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: dtk-5.6.25 by @kegechen to V23-Release'
+message: 'Auto integrate from topic: dtk-5.6.25 by @hudeng-go to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dtkgui
@@ -11,3 +11,5 @@ repos:
       tagsha: 1d034b39df644f001efa894db0e637c57e4307ba
     - repo: linuxdeepin/qt5platform-plugins
       tagsha: fe849f1a6df01226dd8a913a8f0c909f3d843ed7
+    - repo: linuxdeepin/dtkcore
+      tagsha: de6afef2f3a7128da2bb72632154fe741689814e
