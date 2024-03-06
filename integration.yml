@@ -105,3 +105,6 @@ repos:
   # lld (>= 1:16)
   - repo: deepin-community/llvm-defaults
     tagsha: fdbe200501bab1b6a7f5576c41541384db0eaf84
+  # loong64 only
+  - repo: deepin-community/golang-github-evanw-esbuild
+    tagsha: a476e1693f0dc2c693e4b627140daaa1e9196dd9
