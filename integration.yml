@@ -102,3 +102,6 @@ repos:
     tagsha: e74943f50bff2a7e79d30df4d5491ec13be2aea2
   - repo: deepin-community/node-tmp
     tagsha: b41c4a96c2dd6f691acd691ec146d950e7f6ffa0
+  # lld (>= 1:16)
+  - repo: deepin-community/llvm-defaults
+    tagsha: fdbe200501bab1b6a7f5576c41541384db0eaf84
