@@ -113,3 +113,6 @@ repos:
 
   - repo: deepin-community/node-mimic-response
     tagsha: a99459bdc00f6675d353e8774c6e1642f800df33
+
+  - repo: deepin-community/node-express
+    tagsha: fd509d846dfc77a69afc4ae040c3dc245559d56d
