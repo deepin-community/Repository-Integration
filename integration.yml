@@ -98,3 +98,7 @@ repos:
     tagsha: 60fafd8e5cf5af5c1b7f219a1745f86ab1a20f05
   - repo: deepin-community/node-seq
     tagsha: cbd65283bd263d0eb1b09bd9dd48a609139e012a
+  - repo: deepin-community/node-es6-shim
+    tagsha: e74943f50bff2a7e79d30df4d5491ec13be2aea2
+  - repo: deepin-community/node-tmp
+    tagsha: 3c307b8c4cf154e7b573052210b3d04818be3b73
