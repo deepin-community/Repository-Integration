@@ -91,7 +91,7 @@ repos:
   - repo: deepin-community/node-create-hmac
     tagsha: 4f4b429733b2486d7137340478da522c45edafc4
   - repo: deepin-community/node-external-editor
-    tagsha: c7c4409864feeb205231a7642b61550e533de454
+    tagsha: d22ba91e4a276b8d8e0ab5273d79fed68a1379ab
   - repo: deepin-community/node-formidable
     tagsha: a659e21d2ceafff373cdd2544cf7585874f96a6d
   - repo: deepin-community/node-recast
