@@ -116,3 +116,5 @@ repos:
 
   - repo: deepin-community/node-express
     tagsha: fd509d846dfc77a69afc4ae040c3dc245559d56d
+  - repo: deepin-community/node-ipaddr.js
+    tagsha: a0a2b3c0c87ec7674ce62075e2db05485c7229c8
