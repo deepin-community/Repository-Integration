@@ -1,7 +1,7 @@
-message: 'Auto integrate from topic: cursorSize by @hudeng-go to V23-Release'
+message: 'Auto integrate from topic: cursorSize by @Zeno-sole to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dde-appearance
-      tagsha: 569f8d89ebd4ac886567169bd83a07b991d31ff0
+      tagsha: a916b8a79128309f5225dde138f0b3424c4d9ec8
     - repo: linuxdeepin/startdde
-      tagsha: 85eb6680b1c3b6c77663962d1de200d0f210ce37
+      tagsha: af7a49c9e26c9ece48caa7e93a32557ce1e72c2d
