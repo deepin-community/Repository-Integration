@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: dtk-5.6.25 by @hudeng-go to V23-Release'
+message: 'Auto integrate from topic: dtk-5.6.25 by @FeiWang1119 to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dtkgui
