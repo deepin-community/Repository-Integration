@@ -2,14 +2,14 @@ message: 'Auto integrate from topic: dtk-6.0.5 by @FeiWang1119 to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dtk6core
-      tagsha: e94962dff04f8e59cce3a28e8cf941a127a5085d
+      tagsha: 9e2e76de770bbcdc676f89293bd1b7cf2758bf3d
     - repo: linuxdeepin/dtk6gui
-      tagsha: f77406299b9f01b452225e001ac1455592949c8f
+      tagsha: 6cdb271f53e11ce290a7cb00f73f24c5038e9d4c
     - repo: linuxdeepin/dtk6widget
-      tagsha: d61faafebb39afa08dccb6821791ad15f6390fff
+      tagsha: e10482f524692dcf0656efa898729a254b93c669
     - repo: linuxdeepin/dtk6declarative
-      tagsha: 19ff90c9c527c6b66e4411f57ff661396431652b
+      tagsha: cab78424f401b1055225db23f7948ec8b238b7af
     - repo: linuxdeepin/qt6integration
-      tagsha: c156f6c11653c273eb204891a6e57bde7c4f548e
+      tagsha: 3b638e5dbdf17de2ecbbf1a18e62e24dfc5d3573
     - repo: linuxdeepin/qt6platform-plugins
-      tagsha: a8fa5322a6249f936883cbe60d1fa8ad18783446
+      tagsha: 076c4d791571523298d899730864d50c307f8aa4
