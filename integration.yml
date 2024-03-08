@@ -72,7 +72,7 @@ repos:
   - repo: deepin-community/qtlocation-opensource-src
     tagsha: "977db2ad0fe5549e2ad9dac9e164aa3a8449d535"
   - repo: deepin-community/qtwebengine-opensource-src
-    tagsha: "1db4519c583c2c4bb6b5da13e1b7775e4c1d97e5"
+    tagsha: "33d7587cb3d97dc2f3e8447db1329f024302c1f6"
   - repo: deepin-community/qtwebkit-opensource-src
     tagsha: "2b18e0a28a15dfee9d9feaf85323df35975233d7"
   - repo: deepin-community/raptor2
