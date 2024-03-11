@@ -129,19 +129,13 @@ repos:
     tagsha: 0145db897bf39480ebfcefdbff19bea56bd293a3
   - repo: deepin-community/liborcus
     tagsha: 0d49192e2a5a218f036951d7d6d21698e70b1b46
-  - repo: deepin-community/luceneplusplus
-    tagsha: f0fb368389a31c90d440080fc9c1f9a0a55bbd4b
   - repo: deepin-community/schroedinger-maeparser
     tagsha: f5956d1a90ad6d6c9a320dba7d4abf851728a050
-  - repo: deepin-community/source-highlight
-    tagsha: 67eaa8dab7c15efc589c1dc9c5c07e3505abcd91
   # community
   - repo: deepin-community/galera-3
     tagsha: 007ed413146a4127c1800d89833436e12c4fe35d
   # - repo: deepin-community/libreoffice
   #   tagsha:
-  - repo: deepin-community/librime
-    tagsha: 66d060241f741a573a07f660197f2ca31fa54eff
   - repo: deepin-community/schroot
     tagsha: 76676e7f7379344567fbfc11b37c46c8d5222e87
 
