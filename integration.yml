@@ -2,5 +2,5 @@ message: 'feat: update os-prober to 1.81 by xzl01@deepin-community/os-prober'
 milestone: V23-Release
 repos:
   - repo: deepin-community/os-prober
-    tagsha: fafcc17230894817d6f6267475db9f2e5d38fdfb
+    tagsha: 9215fa291464783196bb694b8c1887c9b8eb6b22
 timestamp: 1709806251367
