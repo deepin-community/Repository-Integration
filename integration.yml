@@ -138,5 +138,6 @@ repos:
   #   tagsha:
   - repo: deepin-community/schroot
     tagsha: 76676e7f7379344567fbfc11b37c46c8d5222e87
-
+  - repo: deepin-community/lib2geom
+    tagsha: 6df7a52ababb06e285b2e16a03e4a8509eb9e724
 timestamp: 1709192642734
