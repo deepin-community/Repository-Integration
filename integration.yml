@@ -105,4 +105,44 @@ repos:
     tagsha: "6990eb54038986db57d3b6d2a96b7ae2ee51df19"
   - repo: deepin-community/recode
     tagsha: "8ce25a1792563e188ade617c24bbb764aadc3e9d"
+  - repo: deepin-community/aptitude
+    tagsha: 3d82456027e811c100441c380070b67a14e7e12d
+  - repo: deepin-community/cryfs
+    tagsha: 6142450c64e5d4f846c96f43d3214dabc1688340
+  - repo: deepin-community/fcitx5-chinese-addons
+    tagsha: 99fb380dcae1c635cb615eca88160c49b12db1aa
+  - repo: deepin-community/galera-4
+    tagsha: aa02590838d3d5512fea19e396b1b89b295dc3dc
+  - repo: deepin-community/imath
+    tagsha: fee953cab4c6e66dcb4896f5eb7b96fc39d162fb
+  - repo: deepin-community/inkscape
+    tagsha: 9efe6a39f818871970b338156dc6aa0f3b2ff1b9
+  - repo: deepin-community/ismrmrd
+    tagsha: 15f3c0c3a1527296bcaa1b7c63dcd11f1cdff476
+  - repo: deepin-community/kig
+    tagsha: 028959cd319880b5188a2bcfe94c28ccc771759c
+  - repo: deepin-community/libappimage
+    tagsha: 3ffef8961cb347ff0514c3c798b04b81003fc144
+  - repo: deepin-community/libcmis
+    tagsha: beb3cf97483799127782233b6d2194a50f94843a
+  - repo: deepin-community/libime
+    tagsha: 0145db897bf39480ebfcefdbff19bea56bd293a3
+  - repo: deepin-community/liborcus
+    tagsha: 0d49192e2a5a218f036951d7d6d21698e70b1b46
+  - repo: deepin-community/luceneplusplus
+    tagsha: f0fb368389a31c90d440080fc9c1f9a0a55bbd4b
+  - repo: deepin-community/schroedinger-maeparser
+    tagsha: f5956d1a90ad6d6c9a320dba7d4abf851728a050
+  - repo: deepin-community/source-highlight
+    tagsha: 67eaa8dab7c15efc589c1dc9c5c07e3505abcd91
+  # community
+  - repo: deepin-community/galera-3
+    tagsha: 007ed413146a4127c1800d89833436e12c4fe35d
+  # - repo: deepin-community/libreoffice
+  #   tagsha:
+  - repo: deepin-community/librime
+    tagsha: 66d060241f741a573a07f660197f2ca31fa54eff
+  - repo: deepin-community/schroot
+    tagsha: 76676e7f7379344567fbfc11b37c46c8d5222e87
+
 timestamp: 1709192642734
