@@ -140,4 +140,10 @@ repos:
     tagsha: 76676e7f7379344567fbfc11b37c46c8d5222e87
   - repo: deepin-community/lib2geom
     tagsha: 6df7a52ababb06e285b2e16a03e4a8509eb9e724
+
+  - repo: deepin-community/ceph
+    tagsha: 25fa93b203b3eb00da7234e2ebba7d217200f949
+
+  - repo: deepin-community/thrift
+    tagsha: a5da985bdadadb56f0e242e75cf1025add1889b9
 timestamp: 1709192642734
