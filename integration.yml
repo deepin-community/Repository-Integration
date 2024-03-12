@@ -5,10 +5,12 @@ repos:
     tagsha: "9ab48daa6b854010e241e071003002e32b75704e"
   - repo: deepin-community/boost1.74
     tagsha: "93b20e30e5c8be7cfd872406be15bcbe835a97c4"
-  - repo: deepin-community/boost1.81
+  - repo: deepin-community/boost1.81 #community
     tagsha: "7807ac0e39b1d3924fad210208d302091d558121"
   - repo: deepin-community/boost1.83
     tagsha: "e57738e99b07dfe7b82a027942530ecefe08f21b"
+  - repo: deepin-community/boost-defaults
+    tagsha: "f5236d7ea0a7c97bd1c354d032e81395cacbd366"
   - repo: deepin-community/brltty
     tagsha: "63fa1d2033832df29a231fb469178c707e0490bf"
   - repo: deepin-community/dee
