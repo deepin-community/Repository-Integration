@@ -149,4 +149,11 @@ repos:
 
   - repo: deepin-community/thrift
     tagsha: a5da985bdadadb56f0e242e75cf1025add1889b9
+
+  - repo: deepin-community/jaraco.classes
+    tagsha: 0353b7541aa1b5c339709890d4111edbde2e75eb
+  - repo: deepin-community/python-tz
+    tagsha: 839876f9851353125cb0029ce26c8e4cea1e4034
+  - repo: deepin-community/python-tempora
+    tagsha: 4166b55610d87bd2184e8e0c932bfbebf114e4c1
 timestamp: 1709192642734
