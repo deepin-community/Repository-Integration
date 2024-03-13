@@ -7,3 +7,5 @@ repos:
       tagsha: 1294f176195784f939bfc6d313612e3591438e9b
     - repo: deepin-community/libjsoncpp
       tagsha: 852eb3b85703649340e07eb70375bce007a518da
+    - repo: deepin-community/cppdap
+      tagsha: f14ae042d73aa14e831be567888a0cdccb2e1e7f
