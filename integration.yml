@@ -143,8 +143,9 @@ repos:
   - repo: deepin-community/lib2geom
     tagsha: 6df7a52ababb06e285b2e16a03e4a8509eb9e724
 
+  # deepin-community/ceph/pull/6
   - repo: deepin-community/ceph
-    tagsha: 25fa93b203b3eb00da7234e2ebba7d217200f949
+    tagsha: c594c95601a5855b7f8171c6ab343739f86f6214
 
   - repo: deepin-community/thrift
     tagsha: a5da985bdadadb56f0e242e75cf1025add1889b9
