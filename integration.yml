@@ -124,7 +124,7 @@ repos:
   - repo: deepin-community/kig
     tagsha: 028959cd319880b5188a2bcfe94c28ccc771759c
   - repo: deepin-community/libappimage
-    tagsha: 3ffef8961cb347ff0514c3c798b04b81003fc144
+    tagsha: 23c742fa7d5c0e9f9a8aff8474cdfc60c0be8da2
   - repo: deepin-community/libcmis
     tagsha: beb3cf97483799127782233b6d2194a50f94843a
   - repo: deepin-community/libime
