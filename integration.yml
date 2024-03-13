@@ -3,4 +3,6 @@ milestone: V23-Release
 repos:
   - repo: deepin-community/d-spy
     tagsha: efc186f134cdac17635fa322cfcace078157adba
+  - repo: deepin-community/libadwaita-1
+    tagsha: d2e46d9f24fdf380fa2fa2baa01017eb52ea14f9
 timestamp: 1710237472175
