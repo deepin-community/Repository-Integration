@@ -17,7 +17,7 @@ on:
         default: undefined
       assignees:
         type: string
-        default: 'Zeno-sole' #多个标签有', '隔开
+        default: 'Zeno-sole' #多个用', '隔开
       title:
         type: string
         default: 'Deepin Integration auto created issue!'
@@ -29,7 +29,7 @@ on:
         default: 'V23-Release'
       labels:
         type: string
-        default: 'Project:integrated' #多个标签有', '隔开
+        default: 'Project:integrated' #多个标签用', '隔开
       integrationinfo:
         type: string
         default: undefined
@@ -58,7 +58,7 @@ on:
         default: undefined
       assignees:
         type: string
-        default: 'Zeno-sole' #多个标签有', '隔开
+        default: 'Zeno-sole' #多个用', '隔开
       title:
         type: string
         default: 'Deepin Integration auto created issue!'
@@ -70,7 +70,7 @@ on:
         default: 'V23-Beta'
       labels:
         type: string
-        default: 'Project:integrated' #多个标签有', '隔开
+        default: 'Project:integrated' #多个标签用', '隔开
       integrationinfo:
         type: string
         default: "['包名 | 版本', '--  | --', 'dde-dock | [6.0.10](https://github.com/linuxdeepin/dde-dock/tree/6.0.10)']"
