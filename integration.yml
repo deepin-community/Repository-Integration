@@ -159,4 +159,7 @@ repos:
 
   - repo: deepin-community/scipy
     tagsha: 21b66f7fd6c3d4629a6e0b659b2a2b564cfae205
+
+  - repo: deepin-community/openmpi
+    tagsha: 47f137863f4363ba2515b11b5c9bd8e5383a103b
 timestamp: 1709192642734
