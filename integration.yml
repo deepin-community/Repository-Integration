@@ -156,4 +156,7 @@ repos:
     tagsha: 839876f9851353125cb0029ce26c8e4cea1e4034
   - repo: deepin-community/python-tempora
     tagsha: 4166b55610d87bd2184e8e0c932bfbebf114e4c1
+
+  - repo: deepin-community/scipy
+    tagsha: 21b66f7fd6c3d4629a6e0b659b2a2b564cfae205
 timestamp: 1709192642734
