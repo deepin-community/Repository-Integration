@@ -207,13 +207,7 @@ jobs:
                 issuse_content += "### Package repository address | 软件包仓库地址\n\n"
                 issuse_content += testrepoaddr + "\n\n"
                 issuse_content += "### Changelog | 更新信息\n\n"
-                issuse_content += changelog + "\n\n"
-                issuse_content += "### Test suggestion | 测试建议\n\n"
-                issuse_content += suggestion + "\n\n"
-                issuse_content += "### Influence | 影响范围\n\n"
-                issuse_content += influence + "\n\n"
-                issuse_content += "### ADDITIONAL INFORMATION | 额外补充\n\n"
-                issuse_content += extrainfo + "\n"
+                issuse_content += changelog + "\n"
                 core.debug("update issue body: ", issuse_content)
 
                 await github.rest.issues.update({
@@ -389,6 +383,7 @@ jobs:
         with:
           github-token: ${{ steps.deepin-bot.outputs.app_token }}
           script: |
+            const fs = require('fs');
             const BOT_NAME = "Integration Test Info"
             const COMMENT_HEAD = "**" + BOT_NAME + "**\n"
             issueid = "${{ steps.issue.outputs.issueid }}"
