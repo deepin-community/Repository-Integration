@@ -114,6 +114,20 @@ jobs:
 
             if ( context.issue.number != undefined ) {
               while (true) {
+                // Get the latest information about the Pull Request
+                const pullRequest = await github.rest.pulls.get({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: context.issue.number,
+                });
+
+                // Check if the Pull Request has the '/integrate-testing' label
+                const hasLabel = pullRequest.data.labels.some(label => label.name === 'integrate-testing')
+                if (hasLabel) {
+                  console.log(`All build commit statuses is now a success by manual`)
+                  break
+                }
+
                 const { data: statuses } = await github.rest.repos.getCombinedStatusForRef({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
