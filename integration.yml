@@ -70,7 +70,7 @@ repos:
   - repo: deepin-community/qt6-webengine
     tagsha: "12a34113017d159dfc0bd56c27ace176461e5b3e"
   - repo: deepin-community/qtbase-opensource-src
-    tagsha: "1c78d92a4c0930615032512b24884ac342ef4cdb"
+    tagsha: "08e182ee40a654438cc57a308e2966071e746c11"
   - repo: deepin-community/qtlocation-opensource-src
     tagsha: "977db2ad0fe5549e2ad9dac9e164aa3a8449d535"
   - repo: deepin-community/qtwebengine-opensource-src
