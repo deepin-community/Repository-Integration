@@ -162,4 +162,29 @@ repos:
 
   - repo: deepin-community/openmpi
     tagsha: 47f137863f4363ba2515b11b5c9bd8e5383a103b
+
+  # 6.0.45
+  - repo: linuxdeepin/dde-control-center
+    tagsha: 790546f9cd9a797b7e63ab47b0e839f58d17493c
+  # 6.0.41
+  - repo: linuxdeepin/dde-file-manager
+    tagsha: 3f6ae0ed4bcec54fc67ea3739eb76a5040ccef65
+  # 5.4.5
+  - repo: linuxdeepin/dde-grand-search
+    tagsha: af9d33f33b8a07833de029d7c0a117f877031b47
+  # 6.0.16
+  - repo: linuxdeepin/deepin-editor
+    tagsha: 6c7ece5030d3603e8db8696b0e16dad768d4141b
+  # 6.1.13
+  - repo: linuxdeepin/deepin-log-viewer
+    tagsha: 4cd6b8a423e6b17ead37d7d3bf05744d3b9949de
+  # 6.2.39
+  - repo: linuxdeepin/deepin-music
+    tagsha: 96aa815c40c0a52b122e4efcd6eead472285e581
+  # 1.0.2
+  - repo: linuxdeepin/deepin-pdfium
+    tagsha: 3abb57fb3ee24b55819b69db3588294ce323d1f7
+  # 6.0.15
+  - repo: linuxdeepin/deepin-system-monitor
+    tagsha: e578a249f170959ecbde8ac055d0f20bdd7813fe
 timestamp: 1709192642734
