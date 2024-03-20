@@ -163,9 +163,9 @@ repos:
   - repo: deepin-community/openmpi
     tagsha: 47f137863f4363ba2515b11b5c9bd8e5383a103b
 
-  # 6.0.45
+  # 6.0.46 (https://github.com/linuxdeepin/developer-center/issues/7512)
   - repo: linuxdeepin/dde-control-center
-    tagsha: 790546f9cd9a797b7e63ab47b0e839f58d17493c
+    tagsha: ffab600946243ecb773eab29f3eb5c7948a1673c
   # 6.0.41
   - repo: linuxdeepin/dde-file-manager
     tagsha: 3f6ae0ed4bcec54fc67ea3739eb76a5040ccef65
