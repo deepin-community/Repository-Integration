@@ -9,3 +9,5 @@ repos:
       tagsha: 52221f6841618d2e68074ce179b6bb097d8bbf95
     - repo: linuxdeepin/dtkdeclarative
       tagsha: d3d97bdb3bc1d441f18982313b2864fa23604f20
+    - repo: linuxdeepin/qt5platform-plugins
+      tagsha: 8a65238f7a1f78a587c757efef21b4dad9561f52
