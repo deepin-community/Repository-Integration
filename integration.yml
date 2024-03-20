@@ -11,3 +11,5 @@ repos:
       tagsha: d3d97bdb3bc1d441f18982313b2864fa23604f20
     - repo: linuxdeepin/qt5platform-plugins
       tagsha: 8a65238f7a1f78a587c757efef21b4dad9561f52
+    - repo: linuxdeepin/qt5integration
+      tagsha: 4a1952a58677f5c14905489f78b0925b8fe3f1a9
