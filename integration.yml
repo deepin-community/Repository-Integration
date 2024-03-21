@@ -7,3 +7,5 @@ repos:
       tagsha: 78892d2c9082217b3903b282cdf32cd9edc9aa19
     - repo: deepin-community/libva
       tagsha: b8b2a97ddb21ee79eb6ea8248fe8c1d73f7a738a
+    - repo: deepin-community/mesa
+      tagsha: 72977ca0dcc080d55a1fcaed40f4f7f6a057b66c
