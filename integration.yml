@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: mesa24 by @hudeng-go to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/directx-headers
+      tagsha: ed166f871003a0d3de2080e657ebde52d5ce7b9b
+    - repo: deepin-community/libdrm
+      tagsha: 78892d2c9082217b3903b282cdf32cd9edc9aa19
+    - repo: deepin-community/libva
+      tagsha: b8b2a97ddb21ee79eb6ea8248fe8c1d73f7a738a
