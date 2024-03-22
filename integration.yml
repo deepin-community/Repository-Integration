@@ -9,3 +9,5 @@ repos:
       tagsha: 71d9a187f59e96c3cfb98f582dffe11a5c1fb0db
     - repo: deepin-community/gutenprint
       tagsha: 5f4727e08d873f772e1dd28bf9c9df285b90a57a
+    - repo: deepin-community/lensfun
+      tagsha: 13c7b096820d197ed09441cfe2f3bc21f4a57310
