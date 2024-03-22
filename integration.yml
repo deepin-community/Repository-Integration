@@ -3,3 +3,5 @@ milestone: V23-Release
 repos:
     - repo: deepin-community/babl
       tagsha: 631e0db9b08946ba7b87f46182f2aba66c5459fc
+    - repo: deepin-community/gobject-introspection
+      tagsha: c4a980cdcfe01a50b20a60d816441d2fb13b4cbd
