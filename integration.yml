@@ -5,3 +5,5 @@ repos:
       tagsha: 631e0db9b08946ba7b87f46182f2aba66c5459fc
     - repo: deepin-community/gobject-introspection
       tagsha: c4a980cdcfe01a50b20a60d816441d2fb13b4cbd
+    - repo: deepin-community/gimp
+      tagsha: 71d9a187f59e96c3cfb98f582dffe11a5c1fb0db
