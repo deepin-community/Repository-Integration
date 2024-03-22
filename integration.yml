@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  [DCBOT-TEST] feat: update network-manager to 1.44.2-7 by
+  deepin-community-bot[bot]@deepin-community/network-manager
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/network-manager
+    tagsha: 33f71753512e7386f75c4cc086b8e6cd10453ec3
+timestamp: 1710226034896
