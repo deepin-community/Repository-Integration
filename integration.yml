@@ -6,6 +6,6 @@ repos:
     - repo: deepin-community/spirv-llvm-translator-17
       tagsha: c5c814e0b9c7501436f65d835fa668d656b6891a
     - repo: deepin-community/llvm-toolchain-17
-      tagsha: cf5a266659f34a5aefdbcd63ea08a45eb103aea7
+      tagsha: 713eb16bb086b9dc0ce864653978129250108b21
     - repo: deepin-community/re2
       tagsha: 137d2f707c3bdcded82e185dcb89882fab6d1378
