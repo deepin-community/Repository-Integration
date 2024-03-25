@@ -8,6 +8,6 @@ repos:
     - repo: deepin-community/libva
       tagsha: b8b2a97ddb21ee79eb6ea8248fe8c1d73f7a738a
     - repo: deepin-community/mesa
-      tagsha: 72977ca0dcc080d55a1fcaed40f4f7f6a057b66c
+      tagsha: 4cb4225955563277df0102929a9dfd27e0a764bc
     - repo: deepin-community/meson
       tagsha: d8f57ba5be7711fa9e5a9e5ac437d1720e7cd53e
