@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: dde-qml-240326 by @justforlxz to V23-Release'
+message: 'Auto integrate from topic: dde-qml-240326 by @BLumia to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dde-launchpad
