@@ -7,3 +7,5 @@ repos:
       tagsha: ccf8c930531e6d8a07793f29dca2f0f1e7a95ee6
     - repo: linuxdeepin/deepin-diskmanager
       tagsha: 4d9ee32e0572f860b0b2c60001afe9242f59d549
+    - repo: linuxdeepin/deepin-compressor
+      tagsha: 477995647007726897422b49ad1c4d9926b982af
