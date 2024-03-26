@@ -3,3 +3,5 @@ milestone: V23-Release
 repos:
     - repo: linuxdeepin/util-dfm
       tagsha: f856c26e7e8abaa09ee3b5c801441e09634f9aeb
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 1be63de464753af4307cc5060a2a8d72c72c0f49
