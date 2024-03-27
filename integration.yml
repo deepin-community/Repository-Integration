@@ -4,7 +4,7 @@ repos:
     - repo: deepin-community/directx-headers
       tagsha: ed166f871003a0d3de2080e657ebde52d5ce7b9b
     - repo: deepin-community/libdrm
-      tagsha: 78892d2c9082217b3903b282cdf32cd9edc9aa19
+      tagsha: c3ad9e39d9a07fc4950853d329fe6622657baf24
     - repo: deepin-community/libva
       tagsha: b8b2a97ddb21ee79eb6ea8248fe8c1d73f7a738a
     - repo: deepin-community/mesa
