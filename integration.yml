@@ -7,3 +7,5 @@ repos:
       tagsha: 0571091ae0d2b192434c2aedfad0ffe401a0571d
     - repo: linuxdeepin/docparser
       tagsha: 66ac20d8cd6520eb95aea06f37e1ffd717b98c92
+    - repo: linuxdeepin/deepin-diskmanager
+      tagsha: 19412c846215d4050277c0267b8859a0d7f2467a
