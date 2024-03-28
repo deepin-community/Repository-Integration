@@ -9,3 +9,5 @@ repos:
       tagsha: 66ac20d8cd6520eb95aea06f37e1ffd717b98c92
     - repo: linuxdeepin/deepin-diskmanager
       tagsha: 19412c846215d4050277c0267b8859a0d7f2467a
+    - repo: linuxdeepin/deepin-devicemanager
+      tagsha: d4937302ba8c370991897c1e3411dfaf13507288
