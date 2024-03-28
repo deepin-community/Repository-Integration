@@ -13,3 +13,5 @@ repos:
       tagsha: d4937302ba8c370991897c1e3411dfaf13507288
     - repo: linuxdeepin/deepin-compressor
       tagsha: bb047fd87e91d3dff9dc6e1cc03243d14b623496
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: c485f77639f904a623741849ab23050a759a96d6
