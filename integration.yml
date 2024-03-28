@@ -11,3 +11,5 @@ repos:
       tagsha: 19412c846215d4050277c0267b8859a0d7f2467a
     - repo: linuxdeepin/deepin-devicemanager
       tagsha: d4937302ba8c370991897c1e3411dfaf13507288
+    - repo: linuxdeepin/deepin-compressor
+      tagsha: bb047fd87e91d3dff9dc6e1cc03243d14b623496
