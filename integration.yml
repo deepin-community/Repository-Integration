@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: dde-qml-240326 by @BLumia to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: 18d1ae82637517c387df0f53e85fa64db4833738
+    - repo: linuxdeepin/deepin-kwin
+      tagsha: ae288bfed342738a221ef68c488f69aff91b8a47
+    - repo: linuxdeepin/default-settings
+      tagsha: e25fd7017a76921ac342e1c3a6956cdcd851eee9
+    - repo: linuxdeepin/dde-application-manager
+      tagsha: b9d92f12548841fcb176a4a522d04d5d272e368f
