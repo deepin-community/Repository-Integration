@@ -1,5 +1,7 @@
-message: 'Auto integrate from topic: cdapp-20240328 by @max-lvs to V23-Release'
+message: 'Auto integrate from topic: cdapp-20240328 by @Zeno-sole to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/deepin-screen-recorder
       tagsha: c706e635b8d47dc5286951e7d733545875aec1e7
+    - repo: linuxdeepin/util-dfm
+      tagsha: 0571091ae0d2b192434c2aedfad0ffe401a0571d
