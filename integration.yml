@@ -5,3 +5,5 @@ repos:
       tagsha: c706e635b8d47dc5286951e7d733545875aec1e7
     - repo: linuxdeepin/util-dfm
       tagsha: 0571091ae0d2b192434c2aedfad0ffe401a0571d
+    - repo: linuxdeepin/docparser
+      tagsha: 66ac20d8cd6520eb95aea06f37e1ffd717b98c92
