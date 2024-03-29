@@ -2,6 +2,10 @@ message: 'Auto integrate from topic: new-dock-ui by @tsic404 to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dde-shell
-      tagsha: ab803b34334ae4c9ef02e37bae265adfbb0b1617
+      tagsha: c6df007cc3753ab1f650a0745b0de8fc9d70da92
     - repo: linuxdeepin/dde-session
-      tagsha: 7561d88a17fcce6138564ea137636220a689a01a
+      tagsha: becffc90ec3e70130a13a2485df242c9908b636b
+    - repo: deepin-community/deepin-desktop-environment
+      tagsha: 54883f34a59f78a485e22c32c1871bee0f09ca87
+    - repo: deepin-community/qt6-wayland
+      tagsha: 2170216cc8fb7b098c3b12736368bb9e8a764f51
