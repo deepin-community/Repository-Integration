@@ -1,11 +1,19 @@
-message: 'Auto integrate from topic: dde-qml-240326 by @justforlxz to V23-Release'
+message: 'Auto integrate from topic: dde-qml-240326 by @BLumia to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dde-launchpad
-      tagsha: 18d1ae82637517c387df0f53e85fa64db4833738
+      tagsha: ff580234cc4362db3ed4fccb77f84fa894250efd
     - repo: linuxdeepin/deepin-kwin
       tagsha: 8346361717af882e5d95d456f1d27507a96c9827
     - repo: linuxdeepin/default-settings
       tagsha: e25fd7017a76921ac342e1c3a6956cdcd851eee9
     - repo: linuxdeepin/dde-application-manager
       tagsha: b9d92f12548841fcb176a4a522d04d5d272e368f
+    - repo: linuxdeepin/dde-application-manager
+      tagsha: 6ccad824fa25125c668170686b558e2bb98eb388
+    - repo: linuxdeepin/dtk6core
+      tagsha: 25baa1a92323fada9e660a3c95cc832425c8656a
+    - repo: linuxdeepin/dtk6declarative
+      tagsha: e5f7abe7778259f61036f55d4767b4f5ca68f360
+    - repo: linuxdeepin/dtk6gui
+      tagsha: ae3b1a0d46cfe1c815f0f3399a214985268e87cd
