@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: dde-qml-launchpad-0401 by @18202781743 to V
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dde-shell
-      tagsha: f3dfd87fed0e0cf160bb9ee17f703cf8684bd3c2
+      tagsha: c6df007cc3753ab1f650a0745b0de8fc9d70da92
     - repo: linuxdeepin/dde-launchpad
       tagsha: 99367985104032bc4dac1ddad939b6e255f53457
