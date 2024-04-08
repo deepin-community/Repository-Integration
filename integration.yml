@@ -1,15 +1,165 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: ecmwf-202401 by @xzl01 to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/magicsplusplus
+      tagsha: 03d0ae912de950bb6b18c314ae10bc7c187724c0
+    - repo: deepin-community/dh-fortran-mod
+      tagsha: 434b2e8c3ab04771955fbb22a9b1df0fdcab68ca
+    - repo: deepin-community/findlibs
+      tagsha: d4f36fe5d43096c2affa51e740fdc6c5741f77c1
+    - repo: deepin-community/openblas
+      tagsha: d832194f4f75a8e844829d73b0e4bdba3bb48c0c
+    - repo: deepin-community/lapack
+      tagsha: 38df377f99b52289cf2b874b6a84a754dd5d675c
+    - repo: deepin-community/odc
+      tagsha: 7380503664679ec3b5dd14df1940de1a076f1b56
+    - repo: deepin-community/hdf5
+      tagsha: 290b8cfc7ce042464081df5b5f000b0769d68794
+    - repo: deepin-community/libhamcrest-java
+      tagsha: 2c5aab51e0e907842bd2a647730303aec1a54b2e
+    - repo: deepin-community/gradle-debian-helper
+      tagsha: 6f74bbd1bc61f1ced36f4bc029b30156807abc8b
+    - repo: deepin-community/gradle
+      tagsha: 93608e28f6c16e2f03bedafff26ab01a6126e69e
+    - repo: deepin-community/jansi1
+      tagsha: 01c66f739a2703103c78d6ff54f1de9232405c04
+    - repo: deepin-community/jansi
+      tagsha: 382f9ee1ba36b0cbb1c5151248eba5f7d6812345
+    - repo: deepin-community/maven
+      tagsha: 871656225b2da370f44b2f0546d486d294ce56f9
+    - repo: deepin-community/plexus-sec-dispatcher
+      tagsha: ca9bb62304a73970d0a873fb2361ddf64518a9d1
+    - repo: deepin-community/maven-resolver
+      tagsha: 288be9218c0a4ac6e37cf16bc7dbbfbf7798e515
+    - repo: deepin-community/picocli
+      tagsha: 9805ffe1f4f2c0442dbb84bf46c104419a5b3b1d
+    - repo: deepin-community/junit5
+      tagsha: 11e1d30ac230d27d39618b51103fd23a220f79c4
+    - repo: deepin-community/opentest4j-reporting
+      tagsha: 971d5f7449d6a6678a8a49ba596c516c187eb39c
+    - repo: deepin-community/univocity-parsers
+      tagsha: 8f15d37d3f740be2c8b9c49076da6495235467dc
+    - repo: deepin-community/hawtjni
+      tagsha: 02d5740c77222567d4bf5da82219daffb5930181
+    - repo: deepin-community/jansi-native
+      tagsha: a1c9b29c7c04c04d08c286d32a8794ca5969d10f
+    - repo: deepin-community/maven-clean-plugin
+      tagsha: 31d42a2c80a47535cecd4833a19104c7be7ba08e
+    - repo: deepin-community/maven-compiler-plugin
+      tagsha: 5efeaeac82a8deea629eb31a84e123c72f6e51a1
+    - repo: deepin-community/maven-jar-plugin
+      tagsha: 08a9196b1093d2f83701a5709a869c98b95a65e7
+    - repo: deepin-community/maven-resources-plugin
+      tagsha: e3ab3ce3956b39e5be778549eb321f8bcb7d1280
+    - repo: deepin-community/maven-site-plugin
+      tagsha: dfb6f8cbb2809ac4a5f6e21f3832223f9ed98c03
+    - repo: deepin-community/surefire
+      tagsha: b5f27bb9a8b323b5ec1a2a5be29bcc9c6147b09f
+    - repo: deepin-community/plexus-languages
+      tagsha: fb183c926372419ab533e8014f8921f2d9ce7faf
+    - repo: deepin-community/maven-archiver
+      tagsha: f8b56300d002b2975d5012ff268f41ce2a185f35
+    - repo: deepin-community/maven-filtering
+      tagsha: 6bb37f465c62f068b4cd7f0ff29dbbb467f537d1
+    - repo: deepin-community/doxia
+      tagsha: 2292caaf6564a5625513d69c8a9e30166b083800
+    - repo: deepin-community/doxia-sitetools
+      tagsha: 1c3e79e2180fd729a0eb99be0e50070779d3c55e
+    - repo: deepin-community/maven-doxia-tools
+      tagsha: df086ebf07771e6a3178ae4a838a81bd6715c221
+    - repo: deepin-community/assertj-core
+      tagsha: c6696ed09f1f42d5da44f2f2deffd38b709f1605
+    - repo: deepin-community/plexus-archiver
+      tagsha: 348dec5a01632b95bb06928d5cf4825189e26c9f
+    - repo: deepin-community/maven-parent
+      tagsha: a1fda497b1c9352d2e8f1b04f9b2ea19fbc8ca03
+    - repo: deepin-community/commons-text
+      tagsha: c13cdd965d6ba4267765dfd3c0a51f423b8908ef
+    - repo: deepin-community/libcommons-lang3-java
+      tagsha: 988f666c447780c20e500b35b9d06da6f5644ba5
+    - repo: deepin-community/easymock
+      tagsha: 4f0e5885d7087495f50f6321fb5201b4ae7b5e32
+    - repo: deepin-community/byte-buddy
+      tagsha: 9888a5a6a846237d390f34fb6dc01c06f982ef63
+    - repo: deepin-community/lombok
+      tagsha: 0f29bb94d5a7f4b6a0b703eb52436068f32cec64
+    - repo: deepin-community/libspi-java
+      tagsha: 29fa8c3ec9f4247d852b5743ccbf7f4b299cbef2
+    - repo: deepin-community/ivyplusplus
+      tagsha: 50430b8526b4436cbf06e6fd4d51e221890ae85e
+    - repo: deepin-community/ivy-debian-helper
+      tagsha: 7d34eb2dea71a83a4da484da7d9bcfec13e746a6
+    - repo: deepin-community/lombok-patcher
+      tagsha: 884d063f40551e6c27b5d6199ed2970c677ad7c3
+    - repo: deepin-community/cmdreader
+      tagsha: f85da3e0c4dfc3e7e604eb4593e5685d579b4868
+    - repo: deepin-community/maven-bundle-plugin
+      tagsha: 429b90c2dc57b3e9dbc71269298cb5c8de17742c
+    - repo: deepin-community/maven-shared-utils
+      tagsha: 29d408a58e4902e384b177e0a666c0cc88fd6874
+    - repo: deepin-community/maven-bundle-plugin
+      tagsha: ffc52eaecddaf9a91c98ad6e3476b98c24c273ce
+    - repo: deepin-community/maven-shade-plugin
+      tagsha: 360ac25650299468b5d2d1c7fff49b0097df20b7
+    - repo: deepin-community/maven-plugin-tools
+      tagsha: c5ec7b228657c7f0d6973d979dc9aed2e03972cc
+    - repo: deepin-community/plexus-testing
+      tagsha: 46b4ebee9a1ecaff59bb70b65f57dd1ce3b7fed6
+    - repo: deepin-community/plexus-utils2
+      tagsha: 75fdbd9827793f492c6dee5101290f0e89757c5c
+    - repo: deepin-community/maven-artifact-transfer
+      tagsha: 9925be7adfa6ea62a2a8f088b4c268fbaaa75ccd
+    - repo: deepin-community/felix-framework
+      tagsha: f48a6f968a4bedc60230e6ef4b2cbd31f3a6640e
+    - repo: deepin-community/plexus-compiler
+      tagsha: 7e1f23cff19aac107e95c9b3b48f34bb2be9d94f
+    - repo: deepin-community/plexus-containers
+      tagsha: 944c165b844eb986ca4869040765ee0be6095216
+    - repo: deepin-community/plexus-classworlds
+      tagsha: dcd2d7030cb55f4bc79fa655e3e9a8957a5bf362
+    - repo: deepin-community/maven-javadoc-plugin
+      tagsha: 0aad3d40f2ade56e5423bcf34a3c72129bc99dd3
+    - repo: deepin-community/httpcomponents-client
+      tagsha: 5ce4fab0a6a220406f0ba55120351b3817c2c155
+    - repo: deepin-community/httpcomponents-core
+      tagsha: 2b24c94219281556d124f7a467e1049d1a9cd6d3
+    - repo: deepin-community/maven-common-artifact-filters
+      tagsha: 87b668416c6122175f170b866f0037f9ef43bd76
+    - repo: deepin-community/maven-invoker
+      tagsha: 8ed8c5a21abfcfd8917b471fef907e6dfbdd1611
+    - repo: deepin-community/maven-reporting-api
+      tagsha: 3b18f5ef2f5db7e8e40f709c2dd5416b566cb792
+    - repo: deepin-community/plexus-interactivity-api
+      tagsha: f046600d8484e537ca9374a5bb51f949ba7553d7
+    - repo: deepin-community/wagon
+      tagsha: e32b7ee3fccf53ab4f231c2369fd1c3408b1fbaa
+    - repo: deepin-community/commons-parent
+      tagsha: 05c0c159bf7b2e1b447343b87014a1a40a7f9026
+    - repo: deepin-community/jsoup
+      tagsha: d30ce4bf5c635a85e90f074e2f471ed086b9e7ef
+    - repo: deepin-community/maven-reporting-impl
+      tagsha: fc43e34a3cd580155e679a234a26aa4475137699
+    - repo: deepin-community/spymemcached
+      tagsha: af8724f9f4d7b2ff439926630e8b6c79a7c5bc26
+    - repo: deepin-community/guava-libraries
+      tagsha: a85690ea09c3d339715cccde77911c4bf223e78f
+    - repo: deepin-community/error-prone-java
+      tagsha: 58f57b2a55693f1ff6b56acc1b9e762a77aa9226
+    - repo: deepin-community/maven-dependency-analyzer
+      tagsha: 2ea07267ab0f20548ac9e3ab87a92b394d650bb7
+    - repo: deepin-community/maven-dependency-plugin
+      tagsha: 38a8ddb96bd3442e82ca5f7d70926e7a92f11883
+    - repo: deepin-community/maven-dependency-tree
+      tagsha: 67b9ed43716cd1b8b31dc1fb3537d0146c2407d7
+    - repo: deepin-community/maven-deploy-plugin
+      tagsha: fc7f2ff879465e07b0ba0d42ddb7f9d30e544010
+    - repo: deepin-community/maven-enforcer
+      tagsha: 50824754bd74f1dcb8cdab9c59ced265b33a9a04
+    - repo: deepin-community/maven-install-plugin
+      tagsha: 9f0015c7fe8c39839508d960b30f1da5c7fa4abd
+    - repo: deepin-community/maven-reporting-exec
+      tagsha: f9f7a2250d29e3d340166fc3f53a33457a671e87
+    - repo: deepin-community/maven-shared-io
+      tagsha: b182dc7a3f23c9558c73175b3f6f51037b5c4262
+    - repo: deepin-community/libslf4j-java
+      tagsha: 725fd89f2edb0ea4b0009e7681f1e09cefdceab1
