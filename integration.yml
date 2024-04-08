@@ -163,3 +163,11 @@ repos:
       tagsha: b182dc7a3f23c9558c73175b3f6f51037b5c4262
     - repo: deepin-community/libslf4j-java
       tagsha: 725fd89f2edb0ea4b0009e7681f1e09cefdceab1
+    - repo: deepin-community/jtreg7
+      tagsha: 95a5ea0ccd7704420862d35b7ce3608360147f94
+    - repo: deepin-community/testng7
+      tagsha: 6ac8f11468ecd293f09e73d3066ad62854025b24
+    - repo: deepin-community/asmtools
+      tagsha: 0457f87f1b9524cdc374e59b2900b11027298f8f
+    - repo: deepin-community/openjdk-17
+      tagsha: 8560b4627b62289b643900a014ee645a3fe1c357
