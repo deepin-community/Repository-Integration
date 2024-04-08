@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: ecmwf by @xzl01 to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/jtreg7
+      tagsha: 95a5ea0ccd7704420862d35b7ce3608360147f94
+    - repo: deepin-community/testng7
+      tagsha: 6ac8f11468ecd293f09e73d3066ad62854025b24
+    - repo: deepin-community/asmtools
+      tagsha: 0457f87f1b9524cdc374e59b2900b11027298f8f
