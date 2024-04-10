@@ -5,4 +5,6 @@ milestone: V23-Release
 repos:
   - repo: deepin-community/glibc
     tagsha: a22292d9ad1765280436594e819161790457ea76
+  - repo: deepin-community/policykit-1
+    tagsha: 65411b74f9f18706946ff3d920f40fa7c066bef7
 timestamp: 1712559363275
