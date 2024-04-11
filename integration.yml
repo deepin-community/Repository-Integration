@@ -5,3 +5,5 @@ repos:
       tagsha: 066c43ce706d425393dffa73c279c884ba071c63
     - repo: linuxdeepin/deepin-camera
       tagsha: 90dc3d20785d2ed5cb1ad23978f7b2bc560fc7a7
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: 47940c721cdb7b58b77611d6ca6262936c01b2e4
