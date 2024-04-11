@@ -3,3 +3,5 @@ milestone: V23-Release
 repos:
     - repo: linuxdeepin/deepin-log-viewer
       tagsha: 066c43ce706d425393dffa73c279c884ba071c63
+    - repo: linuxdeepin/deepin-camera
+      tagsha: 90dc3d20785d2ed5cb1ad23978f7b2bc560fc7a7
