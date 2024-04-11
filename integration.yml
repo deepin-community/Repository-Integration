@@ -7,3 +7,5 @@ repos:
       tagsha: 90dc3d20785d2ed5cb1ad23978f7b2bc560fc7a7
     - repo: linuxdeepin/deepin-movie-reborn
       tagsha: 47940c721cdb7b58b77611d6ca6262936c01b2e4
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 01495ca2d870bc1b354e563e5d248d53eb4f6f28
