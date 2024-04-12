@@ -9,3 +9,5 @@ repos:
       tagsha: 47940c721cdb7b58b77611d6ca6262936c01b2e4
     - repo: linuxdeepin/dde-file-manager
       tagsha: 01495ca2d870bc1b354e563e5d248d53eb4f6f28
+    - repo: linuxdeepin/deepin-music
+      tagsha: 30687f7746127a076c40b8dcddc17e6aaa02f89e
