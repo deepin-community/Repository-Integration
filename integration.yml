@@ -3,3 +3,5 @@ milestone: V23-Release
 repos:
     - repo: linuxdeepin/go-x11-client
       tagsha: 033f84e1daa4e4cf94e136f38f00480cf1fd4aa2
+    - repo: linuxdeepin/dde-daemon
+      tagsha: 7a185f623f37ef628737f7b42722be6f7e53763a
