@@ -15,3 +15,5 @@ repos:
       tagsha: 3c8b86dcfaea65c359d4f3edf3b4e52a4f0bc75c
     - repo: linuxdeepin/deepin-movie-reborn
       tagsha: d6f935c050762bf9839d9e10c41dab8d8607a4fd
+    - repo: linuxdeepin/deepin-music
+      tagsha: 13b77cd6eac9031bca6e128b72b76f5c4fe0ea05
