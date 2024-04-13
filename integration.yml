@@ -13,3 +13,5 @@ repos:
       tagsha: 30687f7746127a076c40b8dcddc17e6aaa02f89e
     - repo: linuxdeepin/deepin-log-viewer
       tagsha: 3c8b86dcfaea65c359d4f3edf3b4e52a4f0bc75c
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: d6f935c050762bf9839d9e10c41dab8d8607a4fd
