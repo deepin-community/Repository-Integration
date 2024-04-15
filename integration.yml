@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: cdapp-240411 by @Zeno-sole to V23-Release'
+message: 'Auto integrate from topic: cdapp-240411 by @max-lvs to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/deepin-log-viewer
@@ -17,3 +17,5 @@ repos:
       tagsha: d6f935c050762bf9839d9e10c41dab8d8607a4fd
     - repo: linuxdeepin/deepin-music
       tagsha: 13b77cd6eac9031bca6e128b72b76f5c4fe0ea05
+    - repo: linuxdeepin/deepin-camera
+      tagsha: f1601fba4c09144467b83b746f584c7d53574736
