@@ -19,3 +19,5 @@ repos:
       tagsha: 13b77cd6eac9031bca6e128b72b76f5c4fe0ea05
     - repo: linuxdeepin/deepin-camera
       tagsha: f1601fba4c09144467b83b746f584c7d53574736
+    - repo: linuxdeepin/dde-device-formatter
+      tagsha: 50c13b12ebf8e81e845950aac1693182d912680c
