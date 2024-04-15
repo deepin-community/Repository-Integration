@@ -4,4 +4,4 @@ repos:
     - repo: linuxdeepin/go-x11-client
       tagsha: 033f84e1daa4e4cf94e136f38f00480cf1fd4aa2
     - repo: linuxdeepin/dde-daemon
-      tagsha: 198a5c51769e7995e8693604947f07c0445d4c1b
+      tagsha: 86dee978b9680e717082574b5e968bb733fc0606
