@@ -5,4 +5,6 @@ milestone: V23-Release
 repos:
   - repo: deepin-community/putty
     tagsha: aa30ba5bb326a358a5058ba251c3dc238ef80fd7
+  - repo: deepin-community/halibut
+    tagsha: aec067ebe56089b8c705f7da8a004ec1b93a895a
 timestamp: 1713238540952
