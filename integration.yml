@@ -7,3 +7,5 @@ repos:
       tagsha: 23da11c96267ad08bec5fa94747d4bf20c8f3dc5
     - repo: deepin-community/malcontent
       tagsha: 5c25fdb441d50575d9b5fb55c67926c86ce6405e
+    - repo: deepin-community/accountsservice
+      tagsha: a9118281c57863e25e4d22e9a24b7299b8059542
