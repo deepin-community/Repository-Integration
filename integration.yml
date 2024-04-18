@@ -8,4 +8,4 @@ repos:
     - repo: deepin-community/malcontent
       tagsha: 5c25fdb441d50575d9b5fb55c67926c86ce6405e
     - repo: deepin-community/accountsservice
-      tagsha: a9118281c57863e25e4d22e9a24b7299b8059542
+      tagsha: 08f0858512fb90d3998d5d0aa69e144d780cb84c
