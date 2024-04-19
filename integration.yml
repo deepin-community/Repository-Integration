@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update qtremoteobjects-everywhere-src to 5.15.10-3 by
+  deepin-community-bot[bot]@deepin-community/qtremoteobjects-everywhere-src
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/qtremoteobjects-everywhere-src
+    tagsha: e61515e89453f25ca5114400421fa9c8bca44e0e
+timestamp: 1713514605950
