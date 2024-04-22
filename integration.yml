@@ -173,3 +173,5 @@ repos:
       tagsha: 8560b4627b62289b643900a014ee645a3fe1c357
     - repo: deepin-community/objenesis
       tagsha: abd2a7dc39d077f8a518e8f4e5839af178f4c48f
+    - repo: deepin-community/libcommons-cli-java
+      tagsha: 54adbdcb956749828ad4682d783ad770a4382abb
