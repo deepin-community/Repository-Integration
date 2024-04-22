@@ -175,3 +175,7 @@ repos:
       tagsha: abd2a7dc39d077f8a518e8f4e5839af178f4c48f
     - repo: deepin-community/libcommons-cli-java
       tagsha: 54adbdcb956749828ad4682d783ad770a4382abb
+    - repo: deepin-community/plexus-cipher
+      tagsha: e823570e3e995c19984064eac5b854463472eb12
+    - repo: deepin-community/sisu-mojos
+      tagsha: 8929b7bee7a86575de734e67e92dc77fbe9fc2de
