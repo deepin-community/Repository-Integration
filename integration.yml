@@ -423,3 +423,5 @@ repos:
       tagsha: 9370880b4033b8af755b4a0962e3e899cf7df677
     - repo: deepin-community/containerd
       tagsha: e8fa3bad9d9871b802f45238641fe10feb5cb296
+    - repo: deepin-community/dh-golang
+      tagsha: 0d848080dcf4dc3f4f341262d78a342535ffe12f
