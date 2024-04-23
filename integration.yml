@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  fix: Return correct mimetype and default app for directories by
+  ArchieMeng@linuxdeepin/dde-application-manager
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-daemon
+    tagsha: 3bab59f69241249a9d32573af4d9e5e7da70f92b
+  - repo: linuxdeepin/dde-application-manager
+    tagsha: 60965359cbc3f8258a2b81a64cd2c0a459d51f3e
+topic: default-file-manager
+timestamp: 1713840338394
