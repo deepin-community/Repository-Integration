@@ -176,6 +176,8 @@ repos:
     - repo: deepin-community/mpich
       tagsha: d3584ccbcc87a1a4dd3aa5e327bb86b81490d14d
     - repo: deepin-community/libspring-java
-      tagsha: 6e07c1afd1caeaee5dadf72bdb816740822ed914
+      tagsha: 198fdbe339d6377f43a8b602d5360223dfa5e6d3
     - repo: deepin-community/eclipse-platform-text
       tagsha: fd4b26b85ef3b322a86af40a1a628bae884848e9
+    - repo: deepin-community/eclipse-jdt-ui
+      tagsha: 6c15e386c0a2118af2949286de2600a12d7d9f9e
