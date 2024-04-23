@@ -425,3 +425,7 @@ repos:
       tagsha: e8fa3bad9d9871b802f45238641fe10feb5cb296
     - repo: deepin-community/dh-golang
       tagsha: 0d848080dcf4dc3f4f341262d78a342535ffe12f
+    - repo: deepin-community/golang-google-cloud
+      tagsha: 71c39937daf49d43f8d5bca8d094a12c6aac3f9c
+    - repo: deepin-community/golang-github-eapache-go-xerial-snappy
+      tagsha: 37ee93f62dc7daf5863b4864e81a8acff63ca361
