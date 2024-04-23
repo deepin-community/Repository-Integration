@@ -8,4 +8,4 @@ repos:
     - repo: linuxdeepin/dde-launchpad
       tagsha: cdc72a6d8421db6f0e873cb504dc7c0561dee142
     - repo: linuxdeepin/dde-launchpad
-      tagsha: 6057d7c0653a0d30639fd95f3f788f355431e003
+      tagsha: afce0ab5de8b8bef9d43c90117e0aa7426490d3e
