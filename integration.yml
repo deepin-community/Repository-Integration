@@ -2,14 +2,14 @@ message: 'Auto integrate from topic: dtk-5627 by @kegechen to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dtkcore
-      tagsha: 48cf42e22d770b07a58b31aa24c1b329a45a20d9
+      tagsha: 5e93ad12c9001fae9d849a0ab7868348b8ffd9a8
     - repo: linuxdeepin/dtkgui
-      tagsha: 877b0c1bf8863bb80d0f1fcfdf019bf9f4ce4732
+      tagsha: f9607e01a482c6662cfbb2d2bae670e2f6017a76
     - repo: linuxdeepin/dtkwidget
-      tagsha: ea59f9bca0168ab07d055921861e0a8af6f85c84
+      tagsha: 33e531f73439fac4f1739d6893f43932bde97dcb
     - repo: linuxdeepin/dtkdeclarative
-      tagsha: e5d1b6d3c0fd58769dfb177bb7628594740f246b
+      tagsha: ed68cc826bb3dfdea1fb6c494995cd4094e7355f
     - repo: linuxdeepin/qt5integration
-      tagsha: 5e6a8c91421b200cc7cd7879e113c1fc431ffa68
+      tagsha: 0684d44d7a6084bdcafafd1e120ba21a4258100f
     - repo: linuxdeepin/qt5platform-plugins
-      tagsha: 229db9176f69574e53a14a0633cab60a5f28a90a
+      tagsha: 7cc019b86e9dc48215f25ac1ee3f9f0f9dcebd38
