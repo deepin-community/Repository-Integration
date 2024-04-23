@@ -1,7 +1,7 @@
-message: 'Auto integrate from topic: dde-shell by @BLumia to V23-Release'
+message: 'Auto integrate from topic: dde-shell by @tsic404 to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dde-shell
-      tagsha: 7ea6c87ab63663ba1b1a9ca72cfacbd3bc4e2f38
+      tagsha: 916111c4fbfeb257c18fe62e03b04964af707289
     - repo: linuxdeepin/dde-launchpad
       tagsha: a95695bc98e258a652fbee44cfe3f65ee3b208ee
