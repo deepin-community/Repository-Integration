@@ -173,3 +173,9 @@ repos:
       tagsha: e823570e3e995c19984064eac5b854463472eb12
     - repo: deepin-community/libreflectasm-java
       tagsha: e05a3532da053d806eea45fa8dd202d7b2e9e3b5
+    - repo: deepin-community/mpich
+      tagsha: d3584ccbcc87a1a4dd3aa5e327bb86b81490d14d
+    - repo: deepin-community/libspring-java
+      tagsha: 6e07c1afd1caeaee5dadf72bdb816740822ed914
+    - repo: deepin-community/eclipse-platform-text
+      tagsha: fd4b26b85ef3b322a86af40a1a628bae884848e9
