@@ -181,3 +181,5 @@ repos:
       tagsha: fd4b26b85ef3b322a86af40a1a628bae884848e9
     - repo: deepin-community/eclipse-jdt-ui
       tagsha: 6c15e386c0a2118af2949286de2600a12d7d9f9e
+    - repo: deepin-community/rxtx
+      tagsha: b23d408e04e4e15fa3ea6b06345a3cc302da5742
