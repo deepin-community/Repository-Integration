@@ -5,3 +5,5 @@ repos:
       tagsha: 5c8545dd7f6a9bfc467d7718c69cffc43ff61717
     - repo: linuxdeepin/deepin-system-monitor
       tagsha: c29f67a747a23fa3966fda7696a8de7da469461e
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 9602761054d91b57189e13159c76743ad4c70d9c
