@@ -1,5 +1,7 @@
-message: 'Auto integrate from topic: dde-session-x11 by @hudeng-go to V23-Release'
+message: 'Auto integrate from topic: dde-session-x11 by @justforlxz to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/deepin-kwin
-      tagsha: f98fad0f3dcbbd1366666a9e02580cab1b21e18d
+      tagsha: 75512371120565c9e9fb9b4395276080e23e64b4
+    - repo: linuxdeepin/dde-session
+      tagsha: d3c0305a8fb8fd7813c798618c4149ea9921da7e
