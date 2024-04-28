@@ -3,3 +3,13 @@ milestone: V23-Release
 repos:
     - repo: linuxdeepin/dtkcore
       tagsha: 3641a9d0840f1d5eb14cd1baffbe4ca41da98d14
+    - repo: linuxdeepin/dtkwidget
+      tagsha: fc9cace5a95946417c668baac2ec9b384b7551e1
+    - repo: linuxdeepin/dtkgui
+      tagsha: 02316555f5662d31e6b77d632ea19a6311317ce7
+    - repo: linuxdeepin/dtkdeclarative
+      tagsha: ace2bd8959b3d95987f8d6b8eb90b69927e27ae3
+    - repo: linuxdeepin/qt5integration
+      tagsha: fc5fc20b64ed1648d2713aa732f750692fd315bd
+    - repo: linuxdeepin/qt5platform-plugins
+      tagsha: 97157b78114bab67d1998fb447b053ba7d8a8b2b
