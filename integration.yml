@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: cdapp-240426 by @max-lvs to V23-Release'
+message: 'Auto integrate from topic: cdapp-240426 by @Zeno-sole to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/deepin-camera
@@ -9,3 +9,5 @@ repos:
       tagsha: 9602761054d91b57189e13159c76743ad4c70d9c
     - repo: linuxdeepin/deepin-movie-reborn
       tagsha: 88682f5b57f7e9812fe11876a987c08dcb54da3e
+    - repo: linuxdeepin/deepin-camera
+      tagsha: 8b423d8fd9bc929dab1553d97f3c92f4272fd496
