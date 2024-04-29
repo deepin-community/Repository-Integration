@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: dtk-5.6.28 by @Zeno-sole to V23-Release'
+message: 'Auto integrate from topic: dtk-5.6.28 by @asterwyx to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dtkcore
