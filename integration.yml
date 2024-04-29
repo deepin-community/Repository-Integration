@@ -1,17 +1,17 @@
-message: 'Auto integrate from topic: dtk-5.6.28 by @hudeng-go to V23-Release'
+message: 'Auto integrate from topic: dtk-5.6.28 by @Zeno-sole to V23-Release'
 milestone: V23-Release
 repos:
     - repo: linuxdeepin/dtkcore
-      tagsha: 3641a9d0840f1d5eb14cd1baffbe4ca41da98d14
+      tagsha: 333bce4f638327e7f651e46577df63de146b5e58
     - repo: linuxdeepin/dtkwidget
-      tagsha: fc9cace5a95946417c668baac2ec9b384b7551e1
+      tagsha: bc08976f4ccdb2c8ca668aff5fb935e86e77bdd8
     - repo: linuxdeepin/dtkgui
-      tagsha: 02316555f5662d31e6b77d632ea19a6311317ce7
+      tagsha: c3654d0309bd6e20ef527898de5daa9475d67520
     - repo: linuxdeepin/dtkdeclarative
-      tagsha: ace2bd8959b3d95987f8d6b8eb90b69927e27ae3
+      tagsha: 34c7c8d0d6cd7d9e1b666dbabbcab920a07a5382
     - repo: linuxdeepin/qt5integration
-      tagsha: fc5fc20b64ed1648d2713aa732f750692fd315bd
+      tagsha: 68e6fb983fca29f54831f9804dc29967a4195507
     - repo: linuxdeepin/qt5platform-plugins
-      tagsha: 97157b78114bab67d1998fb447b053ba7d8a8b2b
+      tagsha: b9e6b97ec3eb0ea279278d181e001f935c9b8847
     - repo: linuxdeepin/dtkcommon
-      tagsha: 88b9c516eb680d341b1df529ba31b9374bfabec4
+      tagsha: 3f7a8dfbfb899f7aaa44ea4d48e2fdf36d024c04
