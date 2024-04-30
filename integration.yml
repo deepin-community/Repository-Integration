@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update wasi-libc to 0.0~git20230113.4362b18-3 by
+  deepin-community-bot[bot]@deepin-community/wasi-libc
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/wasi-libc
+    tagsha: 65b8d0c37df0caca3c1dbf7f7b242dc206dfa3e2
+timestamp: 1714461384542
