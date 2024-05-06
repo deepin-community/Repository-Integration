@@ -1,7 +1,9 @@
-message: 'Auto integrate from topic: shell0506 by @Zeno-sole to V23-Beta3'
+message: 'Auto integrate from topic: shell0506 by @asterwyx to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-shell
       tagsha: 692d5c453660116f11227bb02a32d87e41bc66e4
     - repo: linuxdeepin/deepin-desktop-theme
       tagsha: bf93353bcce8a26051ddf05043da700d4297de77
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: 5dad3f732578ffb4c2568b53006541866647323c
