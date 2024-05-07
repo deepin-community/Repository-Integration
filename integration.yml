@@ -1,4 +1,4 @@
-message: 'feat: update less to 643-1 by deepin-community-bot[bot]@deepin-community/less'
+message: 'feat: CVE-2024-32487 update less to 643-1 by deepin-community-bot[bot]@deepin-community/less'
 milestone: V23-Release
 repos:
   - repo: deepin-community/less
