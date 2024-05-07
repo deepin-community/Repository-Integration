@@ -11,3 +11,5 @@ repos:
       tagsha: e0eaddb7d5a016159fa826a43349425247717944
     - repo: deepin-community/python-mistletoe
       tagsha: d89fde1c668c1a7a4ddb075896e525a3c0761097
+    - repo: deepin-community/markdown-it-py
+      tagsha: aa2d2bdacb62802fcf05fd2ba785ef32bf357542
