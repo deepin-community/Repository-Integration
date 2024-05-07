@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: glib-2.80 by @UTsweetyfish to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/glib2.0
-      tagsha: 15b54183feda679d94ce5757b77537afb672cc0f
+      tagsha: aa1b2a2f3e33ffeef667e104682efe8e9b6c6989
     - repo: deepin-community/gobject-introspection
       tagsha: 129227c9ed05e513f87b9cc39835b4fd274d0841
     - repo: deepin-community/gi-docgen
