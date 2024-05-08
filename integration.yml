@@ -1,5 +1,5 @@
-message: 'Auto integrate from topic: ecmwf-202401 by @xzl01 to V23-Release'
-milestone: V23-Release
+message: 'Auto integrate from topic: ecmwf-202401 by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
 repos:
     - repo: deepin-community/magicsplusplus
       tagsha: 03d0ae912de950bb6b18c314ae10bc7c187724c0
@@ -164,15 +164,15 @@ repos:
     - repo: deepin-community/libslf4j-java
       tagsha: 725fd89f2edb0ea4b0009e7681f1e09cefdceab1
     - repo: deepin-community/objenesis
-      tagsha: abd2a7dc39d077f8a518e8f4e5839af178f4c48f
+      tagsha: 25c81cd8a3545d0fcae194c1766b3ece24095c3a
     - repo: deepin-community/libcommons-cli-java
       tagsha: 54adbdcb956749828ad4682d783ad770a4382abb
     - repo: deepin-community/sisu-mojos
-      tagsha: 8929b7bee7a86575de734e67e92dc77fbe9fc2de
+      tagsha: d71490e24852dd250cb7f28b3ec812cd853897d9
     - repo: deepin-community/plexus-cipher
       tagsha: e823570e3e995c19984064eac5b854463472eb12
     - repo: deepin-community/libreflectasm-java
-      tagsha: e05a3532da053d806eea45fa8dd202d7b2e9e3b5
+      tagsha: 6e16c28ad8bc73eb86d9d0d1c22a8c1387d7bc11
     - repo: deepin-community/mpich
       tagsha: d3584ccbcc87a1a4dd3aa5e327bb86b81490d14d
     - repo: deepin-community/libspring-java
@@ -182,4 +182,16 @@ repos:
     - repo: deepin-community/eclipse-jdt-ui
       tagsha: 6c15e386c0a2118af2949286de2600a12d7d9f9e
     - repo: deepin-community/rxtx
-      tagsha: b23d408e04e4e15fa3ea6b06345a3cc302da5742
+      tagsha: a74e778fb0f74f9564eb0dce02f7875427aeea24
+    - repo: deepin-community/libapache-poi-java
+      tagsha: 72b1736124b8c67675b923370f756479e7aa2c7d
+    - repo: deepin-community/derby
+      tagsha: 241b67e01ad71d95fe237c0bd08edaade207b71d
+    - repo: deepin-community/tomcat10
+      tagsha: a6a0ebc8da53fcbd030993ec133c98d09813190a
+    - repo: deepin-community/tomcat-native
+      tagsha: 6765de77778bef1345e5df9abee0b048c78ac6ec
+    - repo: deepin-community/xmlbeans
+      tagsha: 38708d5746ebac849f0bbd6cdb82a0e206139205
+    - repo: deepin-community/libpgjava
+      tagsha: f9de084bab5444ae9f3abf8f2e6b3fa61250f7b8
