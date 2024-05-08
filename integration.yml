@@ -195,3 +195,15 @@ repos:
       tagsha: 38708d5746ebac849f0bbd6cdb82a0e206139205
     - repo: deepin-community/libpgjava
       tagsha: f9de084bab5444ae9f3abf8f2e6b3fa61250f7b8
+    - repo: deepin-community/saxonhe
+      tagsha: 5686240762e11e184b192d19609aeb9b3be7f2fe
+    - repo: deepin-community/javacc
+      tagsha: 3b97e1df4ea9b9012a130bc22ced8f109e28c298
+    - repo: deepin-community/maven-invoker-plugin
+      tagsha: 3a3b4b7af1fe13f8e836d095e23482674eaa25e1
+    - repo: deepin-community/maven-script-interpreter
+      tagsha: 07c04293a0c426eb4cc7c741566a17d9ebe00e04
+    - repo: deepin-community/javaparser
+      tagsha: deedeecdd7a908322f75c39ca1723febbeb531f4
+    - repo: deepin-community/templating-maven-plugin
+      tagsha: 06db8286d242d2b864056fc4e16e5e9b8cc26796
