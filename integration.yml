@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: godelve by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/golang-github-derekparker-trie
+      tagsha: 1589230b5221336fdd99144ad6cfda9c413faca2
+    - repo: deepin-community/golang-github-go-delve-liner
+      tagsha: 55d0f92ce60f0ab878ed94005d6d0b2593ba26db
+    - repo: deepin-community/golang-github-google-go-dap
+      tagsha: 5c667b47fd7911920951a9ecf1c8b193226269f3
+    - repo: deepin-community/golang-starlark
+      tagsha: c9941a07f703c4d2e57fdac73a3bd14ec8005683
+    - repo: deepin-community/golang-github-cosiner-argv
+      tagsha: 3237500c66796b4e5e414a2c1ed77244578c1b6c
+    - repo: deepin-community/delve
+      tagsha: c25a61a1e91bb966b1cc73418ce5dceac0d6d8be
