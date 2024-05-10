@@ -2,4 +2,4 @@ message: 'Auto integrate from topic: linglong-rc by @dengbo11 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/linglong
-      tagsha: 069adfaf5ceaf516d9ab808669c470d21f884441
+      tagsha: 1828ff163c1c69d97b03a27015b76b6282a275fb
