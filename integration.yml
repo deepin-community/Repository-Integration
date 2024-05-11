@@ -1,5 +1,5 @@
-message: 'Auto integrate from topic: dam by @hudeng-go to V23-Beta3'
+message: 'Auto integrate from topic: dam by @kegechen to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-application-manager
-      tagsha: 3d41d977a1bcf6ca2ac4a20a04c274f546a969b9
+      tagsha: e228d6019ffef1960d1dc0959f143c3bb8f3e1be
