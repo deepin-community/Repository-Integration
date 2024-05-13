@@ -8,7 +8,7 @@ repos:
     - repo: linuxdeepin/qt6integration
       tagsha: f38fa08683f97c78faee0fa93509ad57d0ba95f0
     - repo: linuxdeepin/dtk6declarative
-      tagsha: 265be4c4200db6747a13c221943f3a7f74150f8d
+      tagsha: b9271086451d7cdd264df2bad30bc1720929eb75
     - repo: linuxdeepin/dtk6widget
       tagsha: ca78fbf757f43b45e1b88911fdeb5fde536c46be
     - repo: linuxdeepin/dtk6gui
