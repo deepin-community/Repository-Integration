@@ -2,4 +2,4 @@ message: 'Auto integrate from topic: dcc-6054 by @kegechen to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-control-center
-      tagsha: eadbc3122422c8761add9d9096dbc5e552a1d581
+      tagsha: 4a329c5892f9ca90bdab790f7624700d83ce1f74
