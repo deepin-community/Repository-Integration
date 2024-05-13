@@ -11,3 +11,5 @@ repos:
       tagsha: 1e7449fef284950d8741462ec88eeda93012c645
     - repo: deepin-community/websocket-client
       tagsha: 3b071ded3a2ae6396999988228a3cdd5bfbd3ef2
+    - repo: deepin-community/docopt
+      tagsha: 567665b2bca249751e3a9328ade00c2f2128f1ca
