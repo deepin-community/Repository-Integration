@@ -12,4 +12,4 @@ repos:
     - repo: linuxdeepin/dtk6widget
       tagsha: ca78fbf757f43b45e1b88911fdeb5fde536c46be
     - repo: linuxdeepin/dtk6gui
-      tagsha: 3bf9770bcfdf538be2c2c7a4174be6c995220b67
+      tagsha: 257d1e1f7fb7493329a55ec950b2d343839cc5f4
