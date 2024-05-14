@@ -5,3 +5,5 @@ repos:
       tagsha: 99a8d164b4405b00200cf8806624b47fb7ca1faf
     - repo: deepin-community/patool
       tagsha: 493707e0df126827e312b8e2e9c45a1aa0f3c2f5
+    - repo: deepin-community/cabextract
+      tagsha: c1e1d9a4d5b2e72a149b08435e19f97f72e2eed0
