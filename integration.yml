@@ -1,8 +1,6 @@
 message: 'Auto integrate from topic: WineAssistant by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
-    - repo: deepin-community/texttable
-      tagsha: 99a8d164b4405b00200cf8806624b47fb7ca1faf
     - repo: deepin-community/patool
       tagsha: 493707e0df126827e312b8e2e9c45a1aa0f3c2f5
     - repo: deepin-community/cabextract
