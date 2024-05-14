@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'chore: Bump version to 6.2.40 by rb-union@linuxdeepin/deepin-music'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/deepin-music
+    tagsha: 11ea90a2589575ad4b9e8d6f81e0c0d74d8b1d8e
+timestamp: 1715653577202
