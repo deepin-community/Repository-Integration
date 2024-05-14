@@ -3,4 +3,6 @@ milestone: V23-Release
 repos:
   - repo: deepin-community/urwid
     tagsha: 6d07490192eca9852a7a075ad1ff5036a0b54b4d
+  - repo: deepin-community/twisted
+    tagsha: 6e74f71c8abc00a20489f0f63ece628b3ab129ff
 timestamp: 1715675724030
