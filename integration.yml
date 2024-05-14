@@ -4,7 +4,7 @@ repos:
     - repo: linuxdeepin/dtkgui
       tagsha: 47f3b9af75819cca106beb361f04deb325fcac34
     - repo: linuxdeepin/dtkcore
-      tagsha: e830150e9bf6ab9f5155784edc873922a1de1932
+      tagsha: c6f652db46721369addb95dfa99a060d4d40347f
     - repo: linuxdeepin/dtkwidget
       tagsha: c2f92ee00d44dc0a7c678386fa18888b5b9e0991
     - repo: linuxdeepin/qt5integration
