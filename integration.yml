@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: 6016 by @kegechen to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtk6core
-      tagsha: a4ad8aa96aa84204c853b93773dbbbf211b46d83
+      tagsha: be9a65b0a8f3b7a978d6031cd7d7e74f801d23cf
     - repo: linuxdeepin/qt6platform-plugins
       tagsha: 98c5be3dc8f9b43700ef770a478e7ee987206b47
     - repo: linuxdeepin/qt6integration
