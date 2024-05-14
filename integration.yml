@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: cdapp-240509 by @max-lvs to V23-Beta3'
+message: 'Auto integrate from topic: cdapp-240509 by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/util-dfm
@@ -7,3 +7,5 @@ repos:
       tagsha: 04d33a8ba4891f0e1f919643a3d9776f8099ce2a
     - repo: linuxdeepin/dde-cooperation
       tagsha: 5612a8befc4189edf0a7a239fdae6c50463f2be6
+    - repo: linuxdeepin/deepin-compressor
+      tagsha: 85e583665d1bcca2cd58f7af0bd22ffd715476dc
