@@ -7,5 +7,3 @@ repos:
       tagsha: 43499f5df439647f0952d319aebddbfadfd97841
     - repo: deepin-community/flatpak
       tagsha: 25fccba8accf91b6582d3773ff2adff8d576332a
-    - repo: deepin-community/libadwaita-1
-      tag: 1.4.0-2deepin1
