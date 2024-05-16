@@ -13,5 +13,7 @@ repos:
     tagsha: 162d94b5f564b5286ac38bf92ca5013be4b521c7
   - repo: deepin-community/python-pkginfo
     tagsha: 8c7ae62abff658317f827652a4b3b1cc02143cff
+  - repo: deepin-community/jquery-throttle-debounce
+    tagsha: 6ad583b4a1f3ab0092cea83ee79962060a078387
 timestamp: 1715675724030
 
