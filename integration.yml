@@ -8,4 +8,4 @@ repos:
     - repo: deepin-community/flatpak
       tagsha: 25fccba8accf91b6582d3773ff2adff8d576332a
     - repo: deepin-community/libadwaita-1
-      tagsha: d8a1bd23e5a961624820033e7c4237c46ad3535d
+      tag: 1.4.0-2deepin1
