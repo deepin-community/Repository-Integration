@@ -15,5 +15,7 @@ repos:
     tagsha: 8c7ae62abff658317f827652a4b3b1cc02143cff
   - repo: deepin-community/jquery-throttle-debounce
     tagsha: 6ad583b4a1f3ab0092cea83ee79962060a078387
+  - repo: deepin-community/uglifyjs
+    tagsha: df13a6549dfc32cf4fdb36cc86b08be9292528cd
 timestamp: 1715675724030
 
