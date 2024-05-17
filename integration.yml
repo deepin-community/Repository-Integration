@@ -11,3 +11,5 @@ repos:
       tagsha: ebf857b8eba02fbb9ea4b9bc61d36c5c148188f1
     - repo: deepin-community/appstream-glib
       tagsha: c1bdf805673f3a58819b197dbf2f9e91bb1ef6ce
+    - repo: deepin-community/malcontent
+      tagsha: c3ffcfeb38bacf8f6914d330e7c8ddfb72680d8f
