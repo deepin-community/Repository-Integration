@@ -3,3 +3,9 @@ milestone: V23-Beta3
 repos:
     - repo: deepin-community/imagemagick
       tagsha: 09857a0c94fd13115cdf55a0285ac90f29ce9ee8
+    - repo: deepin-community/pam
+      tagsha: c0f5c845a0af651b858322f656a151c92cddd154
+    - repo: deepin-community/gnupg2
+      tagsha: 6fbda9e84339d83ce814558e322fb63333aa44cb
+    - repo: deepin-community/sudo
+      tagsha: ca0c1e19b4effdd21681bbb500ebb73803f48f0a
