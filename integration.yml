@@ -1,8 +1,6 @@
 message: 'Auto integrate from topic: batch-202405 by @UTsweetyfish to V23-Beta3'
 milestone: V23-Beta3
 repos:
-    - repo: deepin-community/imagemagick
-      tagsha: 09857a0c94fd13115cdf55a0285ac90f29ce9ee8
     - repo: deepin-community/pam
       tagsha: c0f5c845a0af651b858322f656a151c92cddd154
     - repo: deepin-community/gnupg2
