@@ -9,3 +9,5 @@ repos:
       tagsha: 1c7a9dc0b71840cebbb421cdd055312bbda5eca1
     - repo: deepin-community/samba
       tagsha: 8422bcd823ae2352f717cf210293470813ea00ad
+    - repo: deepin-community/cifs-utils
+      tagsha: df5e6c7b114c6040412a390be799ccc9186450c7
