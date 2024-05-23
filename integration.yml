@@ -5,4 +5,6 @@ milestone: V23-Release
 repos:
   - repo: deepin-community/libbibtex-parser-perl
     tagsha: 202dc523c652908c028a9cecc44438be1272f27c
+  - repo: deepin-community/liblatex-tounicode-perl
+    tagsha: 433e066cba38d1eec66133ab96e9b2e643461f93
 timestamp: 1716447718840
