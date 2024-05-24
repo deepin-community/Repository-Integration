@@ -2,12 +2,12 @@ message: 'Auto integrate from topic: sympy by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/sympy
-      tagsha: f0630a3a043d20e83bcc6ec7bf2425c185c29099
-    - repo: deepin-community/inotify-tools
-      tagsha: f7aeb765d71663e0b09619bbd54844a200ef22be
-    - repo: deepin-community/uc-micro-py
-      tagsha: 1bc7cd229f8971bee5a6c46cd4cdc5c8f369f557
-    - repo: deepin-community/linkify-it-py
-      tagsha: 0b74fd375cb5dfc10410f0db14759d43b92fc090
+      tagsha: b6a37c0eb67e464c6e1126cc7877962700eb63c1
     - repo: deepin-community/sphinx-reredirects
-      tagsha: 886b291683284763ac0a94bc22eb3b55958bbc31
+      tagsha: da666072e938e5a420d1cf792e68a5ad4d8e29e4
+    - repo: deepin-community/linkify-it-py
+      tagsha: cf55630218e245080d9c1f03c8c1485166eb431b
+    - repo: deepin-community/uc-micro-py
+      tagsha: fae8d3ef71a1064942078f12e67c9235c4d1be2e
+    - repo: deepin-community/inotify-tools
+      tagsha: bc6a2dd8af7b9bdb30328f969e2f5665d2fd20bb
