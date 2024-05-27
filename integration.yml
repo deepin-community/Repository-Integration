@@ -5,4 +5,6 @@ milestone: V23-Release
 repos:
   - repo: deepin-community/btrfs-progs
     tagsha: 02fc4f9bf0c4b23e4699f878d1eb6d254a5f69da
+  - repo: deepin-community/reiserfsprogs
+    tagsha: e32b57971dc6658ab10ce4b62f07f7c47ca5cc05
 timestamp: 1716626927366
