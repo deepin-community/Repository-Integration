@@ -7,4 +7,6 @@ repos:
     tagsha: daa9de9580da412072194a9994b2175797b7ebc9
   - repo: deepin-community/uutf
     tagsha: 851ce2d992d43ad43219773ca319a4499d2e62c7
+  - repo: deepin-community/ocaml-topkg
+    tagsha: 9b0b389ceaf3dd6629837d03237e9953f09f78db
 timestamp: 1716868053164
