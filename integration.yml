@@ -29,4 +29,6 @@ repos:
     tagsha: bc0a11e16f8a467495707b3c847d34d10f7cfc88
   - repo: deepin-community/glpk
     tagsha: a6dcef00c8b73e4bb87e14282b940083f08e4b39
+  - repo: deepin-community/js-of-ocaml
+    tagsha: ad48046ae0767205769d8af62ae64470922fed27
 timestamp: 1716868053164
