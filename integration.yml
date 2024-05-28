@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: multimedia-0305 by @Zeno-sole to V23-Beta3'
+message: 'Auto integrate from topic: multimedia-0305 by @pengfeixx to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/docparser
@@ -10,7 +10,7 @@ repos:
     - repo: linuxdeepin/dde-cooperation
       tagsha: c891ddf7974cfe8987822dbc69a37f835a78fafd
     - repo: linuxdeepin/deepin-diskmanager
-      tagsha: cc11020660ba02d84b94e280b856f6b54307fdfd
+      tagsha: fdc299bf3fd1b53bec851d77581594675b177a21
     - repo: linuxdeepin/deepin-album
       tagsha: 0f21b9ec71ab2d91e33d1016b30c6c67442607f9
     - repo: linuxdeepin/deepin-editor
@@ -31,3 +31,5 @@ repos:
       tagsha: 6ab549583e9de057a34f3cede692222e08a28e0b
     - repo: linuxdeepin/deepin-system-monitor
       tagsha: e578a249f170959ecbde8ac055d0f20bdd7813fe
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: cda25f3a3a973e5de67d18cf2cecb862aa718d5c
