@@ -5,4 +5,6 @@ milestone: V23-Release
 repos:
   - repo: deepin-community/tyxml
     tagsha: daa9de9580da412072194a9994b2175797b7ebc9
+  - repo: deepin-community/uutf
+    tagsha: 851ce2d992d43ad43219773ca319a4499d2e62c7
 timestamp: 1716868053164
