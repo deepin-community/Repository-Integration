@@ -13,4 +13,8 @@ repos:
     tagsha: 792941d87e2d11145352b55ed34f633a84511235
   - repo: deepin-community/dose3
     tagsha: aa3998a893be75e0db382ee6b18afbdadf1e1dc0
+  - repo: deepin-community/ocamlgraph
+    tagsha: fe90b513c9ed64d9b28a68bc9296cb7b6d1081a4
+  - repo: deepin-community/ocaml-base64
+    tagsha: 815a8b94ea2080ade87889213a16ef66b9bcd508
 timestamp: 1716868053164
