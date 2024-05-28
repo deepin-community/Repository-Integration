@@ -9,4 +9,6 @@ repos:
     tagsha: 851ce2d992d43ad43219773ca319a4499d2e62c7
   - repo: deepin-community/ocaml-topkg
     tagsha: 9b0b389ceaf3dd6629837d03237e9953f09f78db
+  - repo: deepin-community/opam
+    tagsha: 792941d87e2d11145352b55ed34f633a84511235
 timestamp: 1716868053164
