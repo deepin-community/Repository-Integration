@@ -23,4 +23,6 @@ repos:
     tagsha: 1822d8634906e2ce0ab8620d9ec37d62ee865980
   - repo: deepin-community/ocaml-crunch
     tagsha: b7a7fb445dbf7063ac0ee9b1fc165282124fdfa1
+  - repo: deepin-community/ocaml-ptime
+    tagsha: 681abb5795ababcca8bb80e2c8c5b2b72b4c563d
 timestamp: 1716868053164
