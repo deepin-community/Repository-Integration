@@ -17,4 +17,6 @@ repos:
     tagsha: fe90b513c9ed64d9b28a68bc9296cb7b6d1081a4
   - repo: deepin-community/ocaml-base64
     tagsha: 815a8b94ea2080ade87889213a16ef66b9bcd508
+  - repo: deepin-community/ocaml-odoc
+    tagsha: a7d33b65849b79b68d743f8d653c68b846576e09
 timestamp: 1716868053164
