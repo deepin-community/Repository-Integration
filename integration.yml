@@ -19,4 +19,8 @@ repos:
     tagsha: 815a8b94ea2080ade87889213a16ef66b9bcd508
   - repo: deepin-community/ocaml-odoc
     tagsha: a7d33b65849b79b68d743f8d653c68b846576e09
+  - repo: deepin-community/ocaml-dune
+    tagsha: 1822d8634906e2ce0ab8620d9ec37d62ee865980
+  - repo: deepin-community/ocaml-crunch
+    tagsha: b7a7fb445dbf7063ac0ee9b1fc165282124fdfa1
 timestamp: 1716868053164
