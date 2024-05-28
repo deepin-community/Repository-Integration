@@ -26,7 +26,7 @@ repos:
   - repo: deepin-community/ocaml-ptime
     tagsha: 681abb5795ababcca8bb80e2c8c5b2b72b4c563d
   - repo: deepin-community/ocaml-mccs
-    tagsha: 165139cb78576c1592017ab32685a9d5d8759338
+    tagsha: bc0a11e16f8a467495707b3c847d34d10f7cfc88
   - repo: deepin-community/glpk
     tagsha: a6dcef00c8b73e4bb87e14282b940083f08e4b39
 timestamp: 1716868053164
