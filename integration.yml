@@ -10,7 +10,7 @@ repos:
   - repo: deepin-community/ocaml-topkg
     tagsha: 9b0b389ceaf3dd6629837d03237e9953f09f78db
   - repo: deepin-community/opam
-    tagsha: 792941d87e2d11145352b55ed34f633a84511235
+    tagsha: 681bbe32cb5ec91b130a4ac0689e4e076839d4a4
   - repo: deepin-community/dose3
     tagsha: aa3998a893be75e0db382ee6b18afbdadf1e1dc0
   - repo: deepin-community/ocamlgraph
