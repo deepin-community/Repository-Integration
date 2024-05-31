@@ -4,6 +4,6 @@ repos:
     - repo: deepin-community/fprintd
       tagsha: 1d8a8d8c4b9077bc97f290131eda9106bbeccbfc
     - repo: deepin-community/libfprint
-      tagsha: 1a6826af7cd78d3ae2725b4889f02eab5f471f88
+      tagsha: f17433e3a1ef04461a5b87bb68c173403b58e086
     - repo: deepin-community/libgusb
       tagsha: 761054bb77b010d863597906cdfdda4ed08d6fa7
