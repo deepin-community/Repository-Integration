@@ -4,4 +4,4 @@ repos:
     - repo: linuxdeepin/deepin-wayland-protocols
       tagsha: c9eaa0c875668a1090778c817b84ed474cb61d1d
     - repo: linuxdeepin/deepin-kwin
-      tagsha: c991a30c7181e9e1e5a18c4ed65d4dffc8bc67ea
+      tagsha: 6d4f020a5f32af5ab580bbd45b453785febb1b07
