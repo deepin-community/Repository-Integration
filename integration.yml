@@ -1,15 +1,169 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: rclone by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/golang-bazil-fuse
+      tagsha: 20c301e592ed110b0e57eeec723743ed0e95c7b5
+    - repo: deepin-community/golang-github-a8m-tree
+      tagsha: e24098b4661b0dcaa59cd34bb549030afaf36546
+    - repo: deepin-community/golang-github-aalpar-deheap
+      tagsha: ed02ad3f75a72393431169bbb8996fa9f62a8c84
+    - repo: deepin-community/golang-github-abbot-go-http-auth
+      tagsha: 88cd64da53dd3e06657818d13394c60d44f98f32
+    - repo: deepin-community/golang-github-anacrolix-dms
+      tagsha: 5a8abc068cbc4ed48f9604199458c70d8ca8331f
+    - repo: deepin-community/golang-github-artyom-mtab
+      tagsha: 659d9710bcadc9b9f278f78fe6c28ad4e59b363e
+    - repo: deepin-community/golang-github-atotto-clipboard
+      tagsha: 38b72a108dfa68a36fb0255275d6ec0741572ccb
+    - repo: deepin-community/golang-github-aws-aws-sdk-go
+      tagsha: 6c02c64678f0ac35acbdc3be9b1e27f12887834e
+    - repo: deepin-community/golang-github-azure-azure-pipeline-go
+      tagsha: 6602b88ee290c95d925a47422e81958370b0cb29
+    - repo: deepin-community/golang-github-azure-azure-storage-blob-go
+      tagsha: 75573fe8a2cf1a4e8f716d9adba20440318ddf60
+    - repo: deepin-community/golang-github-azure-go-autorest
+      tagsha: 199fba802aadd84cbf832f196ac35d5ece49fcf6
+    - repo: deepin-community/golang-github-azure-go-ntlmssp
+      tagsha: 6682fb032f57bbcf8032c4f76065ec045b4c1fdc
+    - repo: deepin-community/golang-github-buengese-sgzip
+      tagsha: 05ea70a3afc0db7460a0504465c0c14b0758d726
+    - repo: deepin-community/golang-github-colinmarc-hdfs
+      tagsha: 29547eebbb7f83dd88e1e218bf9f1836f9fa067d
+    - repo: deepin-community/golang-github-djherbis-times
+      tagsha: 1a2d320826a9b0de1ddc565b34863c280da0b0a0
+    - repo: deepin-community/golang-github-dop251-scsu
+      tagsha: 708f08e880991af2c282aea6b7100a2ffdc16314
+    - repo: deepin-community/golang-github-dropbox-dropbox-sdk-go-unofficial
+      tagsha: 319bf750b167ff0ff2ab5f43fee2252f8bbc07b3
+    - repo: deepin-community/golang-github-gabriel-vasile-mimetype
+      tagsha: cf6092156a63d0a0fbeeffe1cdcdc487b73e0093
+    - repo: deepin-community/golang-github-gdamore-tcell.v2
+      tagsha: e3c5f73f4809967c6abd1f62dcc82cc0eb0d7d08
+    - repo: deepin-community/golang-github-go-chi-chi
+      tagsha: e442a659ba59fb4cb7a002fb25b771c81e654040
+    - repo: deepin-community/golang-github-hanwen-go-fuse
+      tagsha: 2c27d49a0580a381327ee99cc3cd5bd98ba5024d
+    - repo: deepin-community/golang-github-hirochachacha-go-smb2
+      tagsha: cf4f4480234e5ac319cc4e08dab69526239b223b
+    - repo: deepin-community/golang-github-iguanesolutions-go-systemd
+      tagsha: d61f80956f192aab160a997575dbd545e2ca622f
+    - repo: deepin-community/golang-github-jlaffaye-ftp
+      tagsha: 9dbf312e457ad4d135d646eeee7e80b6f4cd34a5
+    - repo: deepin-community/golang-github-jcmturner-gokrb5.v8
+      tagsha: 6e7f814875ac7f58a16052d7008293c7a123e603
+    - repo: deepin-community/golang-github-jzelinskie-whirlpool
+      tagsha: fe8494cb113a842561763ccf27e648f3db866fea
+    - repo: deepin-community/golang-github-koofr-go-httpclient
+      tagsha: 5993a92b9eaebc2a3075040e6f8d235f2b9830b5
+    - repo: deepin-community/golang-github-koofr-go-koofrclient
+      tagsha: a86de29024dbf6c7b42d7a1525f403779cfeea2b
+    - repo: deepin-community/golang-github-max-sum-base32768
+      tagsha: 1984b6899a385cda2eb9e650efef39307947628d
+    - repo: deepin-community/golang-github-ncw-go-acd
+      tagsha: 617cbe95e849ae156457c2063b4a3c6a574b0cba
+    - repo: deepin-community/golang-github-ncw-swift-v2
+      tagsha: d35f1336b6fec7bee68ddd802bf613823c49eb45
+    - repo: deepin-community/golang-github-nsf-termbox-go
+      tagsha: 54ca3e3d6ae8bb6152d509f79d2b3c426565303e
+    - repo: deepin-community/golang-github-okzk-sdnotify
+      tagsha: 6525357adf95cfe12d59bd4c1f4f8252e893a7df
+    - repo: deepin-community/rclone
+      tagsha: 3cf435eb009174c03874196e6e0f50970f545061
+    - repo: deepin-community/golang-github-patrickmn-go-cache
+      tagsha: 83f56ec455ced6055f3a82bfbe96fbf4720796d6
+    - repo: deepin-community/golang-github-pkg-xattr
+      tagsha: 4f05c4e54799266d0b269994dbc9cd9435fa771e
+    - repo: deepin-community/golang-github-protonmail-go-crypto
+      tagsha: 47a170e41c3457e6ee7620ade5c754d3c31cc34e
+    - repo: deepin-community/golang-github-putdotio-go-putio
+      tagsha: 044e7752d04007934044b8280ee615c1ca25fa85
+    - repo: deepin-community/golang-github-rclone-ftp
+      tagsha: c90cdb32ecc700b0a9a7981394981403bb803b8c
+    - repo: deepin-community/golang-github-rfjakob-eme
+      tagsha: 448e8e49d493b10c60af64a9cb95bd02fbc32ec7
+    - repo: deepin-community/golang-github-sevlyar-go-daemon
+      tagsha: fd751625ac4256f47d59764359bce17f7b5bccc6
+    - repo: deepin-community/golang-github-shirou-gopsutil
+      tagsha: 5b950bce5ac4ba0335983aee1baac99644be8b29
+    - repo: deepin-community/golang-github-skratchdot-open-golang
+      tagsha: 2ca873a58b534c158f093ad702d068f4e1c08a41
+    - repo: deepin-community/golang-github-unknwon-goconfig
+      tagsha: 0fdb77f2f4044fad2d78aab354c21c855feb73b3
+    - repo: deepin-community/golang-github-xanzy-ssh-agent
+      tagsha: b4561a5b32339cfb3a794c24d6c8d151ed06f850
+    - repo: deepin-community/golang-github-youmark-pkcs8
+      tagsha: c2785c169b06dcad7d8e992163a13b75eace5fd9
+    - repo: deepin-community/golang-golang-x-net
+      tagsha: 805e92d712d739a04d5c38896b68c4d464f7b2ce
+    - repo: deepin-community/golang-github-hashicorp-go-multierror
+      tagsha: 5e7039aa79793b2d67773abf88ad4cde5e29b6bc
+    - repo: deepin-community/golang-github-coreos-semver
+      tagsha: 31bbb33b39f9e0f09cb3f09907637757ec025672
+    - repo: deepin-community/golang-github-spf13-viper
+      tagsha: c44ce72b1006fae425700a3718e1ea1142e345f9
+    - repo: deepin-community/golang-golang-x-sys
+      tagsha: ab7147adda69c8086abbd511b80562876b357574
+    - repo: deepin-community/golang-golang-x-term
+      tagsha: 394f999d62bf9938839c7e9dd4abbda52f03c321
+    - repo: deepin-community/golang-golang-x-text
+      tagsha: 712dcfc98dc72976355b0c17aa09528e78ff899e
+    - repo: deepin-community/publicsuffix
+      tagsha: c54deccbcd791e710a2264cb4b8d663e7a6900d3
+    - repo: deepin-community/golang-github-gdamore-encoding
+      tagsha: 460f63369d1d388c2770638a1ed0ad8fb67d6fad
+    - repo: deepin-community/golang-github-mattn-go-ieproxy
+      tagsha: ed83556db0dc78631b0eb205a107840556dde779
+    - repo: deepin-community/golang-github-geoffgarside-ber
+      tagsha: 930f0a1fd8c49feb50276e612284edd56b7dc112
+    - repo: deepin-community/golang-github-pborman-getopt
+      tagsha: 12d9be607712dc59f841b3122180e0ebd85eacfb
+    - repo: deepin-community/golang-github-dimchansky-utfbom
+      tagsha: 6a34c23e88ef5353c3bb12f26c10ee0b2242a468
+    - repo: deepin-community/golang-github-lucasb-eyer-go-colorful
+      tagsha: 41d482f230e14ecb893c662428db894fe8716b98
+    - repo: deepin-community/golang-github-gorilla-sessions
+      tagsha: f3510f6bd19ce04060347af313c7549cf62b2f1a
+    - repo: deepin-community/golang-github-cloudflare-circl
+      tagsha: 40821801b0ccb926fd7e355125b2b4e20ee32297
+    - repo: deepin-community/golang-github-anacrolix-ffprobe
+      tagsha: 1325fa08d00f9c5645027d0fefc73e1757c78eeb
+    - repo: deepin-community/golang-github-anacrolix-log
+      tagsha: 5a7aa979372cc435e4bec5483542a46b5be29964
+    - repo: deepin-community/golang-github-jcmturner-aescts.v2
+      tagsha: 399c0ef97d21af101e1efdf13bb6673464121565
+    - repo: deepin-community/golang-github-tklauser-go-sysconf
+      tagsha: 55cc5f29c6004a4b983c5c1a87bfb366b0a59b94
+    - repo: deepin-community/golang-github-jcmturner-goidentity.v6
+      tagsha: ecaf112a1917446dc7d84592648eadca1ba2f3c8
+    - repo: deepin-community/golang-github-anacrolix-envpprof
+      tagsha: 7fc56dc8326a82bac942c3299e6bd898fda5bf2f
+    - repo: deepin-community/golang-github-gorilla-securecookie
+      tagsha: 21928342dad0cb632c26ba14ca9d8dee74e304f3
+    - repo: deepin-community/golang-github-tklauser-numcpus
+      tagsha: 83bcda9154e6c2c487bc099f34c0e362974625e8
+    - repo: deepin-community/golang-github-bwesterb-go-ristretto
+      tagsha: 7bfcf94ce770a213a5ed778fff18a586c50e860f
+    - repo: deepin-community/golang-github-data-dog-go-sqlmock
+      tagsha: 66b17ccdff0ac306d9bb46a8e52c78cf4d44b149
+    - repo: deepin-community/golang-github-jcmturner-dnsutils.v2
+      tagsha: 5e9cef3fbec59c05d7eeaebfcf47e4f00e8544b3
+    - repo: deepin-community/golang-github-jcmturner-rpc.v2
+      tagsha: c30c62384316e87b2a8ae9d298407de780fec0c3
+    - repo: deepin-community/golang-github-anacrolix-missinggo
+      tagsha: 195532dbc4d8afc7c5d1cb9d16df7412ce3363cc
+    - repo: deepin-community/golang-github-mmcloughlin-avo
+      tagsha: 9f6f80eb8b97fc0c2af7161e6ac8854f80331812
+    - repo: deepin-community/golang-github-bradfitz-iter
+      tagsha: 898a925659b1545647bf73cc7fc31b7195fd5e34
+    - repo: deepin-community/golang-github-huandu-xstrings
+      tagsha: a2221654763b03a4e069503b5c7cbc6866d53f0a
+    - repo: deepin-community/golang-github-roaringbitmap-roaring
+      tagsha: bf1d8d8a928e2b52c9d8c44273cb052ce9ed0171
+    - repo: deepin-community/golang-github-ryszard-goskiplist
+      tagsha: 6a5e106492a0fb416114d621bea6fc072b14311d
+    - repo: deepin-community/golang-github-glycerine-go-unsnap-stream
+      tagsha: abb0a12046daa2b5069e8b6f7949b25ae95972ad
+    - repo: deepin-community/golang-github-bits-and-blooms-bitset
+      tagsha: 817ab7f0cbbf0cbfde0f90848fea4979fe3ddd01
+    - repo: deepin-community/golang-github-anacrolix-tagflag
+      tagsha: 320e07a5d68d6a3117cfb0378cc415aa26cf9afa
