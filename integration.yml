@@ -1,15 +1,71 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: v25sync by @hudeng-go to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/r-cran-mass
+      tagsha: dfdc6b917a17b82ab24b39385e77e91eec893339
+    - repo: deepin-community/lirc
+      tagsha: b80d72ceb87e12229990198969e4dc83305c9f28
+    - repo: deepin-community/socat
+      tagsha: 29fef9fff5928285865a9418d5d5504d1185fef8
+    - repo: deepin-community/gjs
+      tagsha: d3f3ea605092f5538ae5ae3988751bd4c73d996b
+    - repo: deepin-community/mozjs115
+      tagsha: 41712161bb1ee6f9af3e6f17502f5c5c87c0a88f
+    - repo: deepin-community/glyphsinfo
+      tagsha: 719993269850c746cee43577de80bfea53fe4e7c
+    - repo: deepin-community/python-openstep-plist
+      tagsha: 0aefcb2d867ab9f9e30097f19921283350b1365f
+    - repo: deepin-community/cffsubr
+      tagsha: 9b5707af63f7d70d2e1448d8a537c3d7c301c1d2
+    - repo: deepin-community/glyphslib
+      tagsha: bdbb8845e29950cabe9f8395e8048805b702bb0d
+    - repo: deepin-community/strip-nondeterminism
+      tagsha: e7d781ae6a8d339278108463d01aea5cae206fdc
+    - repo: deepin-community/jquery-typeahead.js
+      tagsha: 17a83684443859bb52676636df6e9f5a0cef4f7f
+    - repo: deepin-community/python-pyscss
+      tagsha: ccc68e6d32dc469af1c7fc036009df4aafe07600
+    - repo: deepin-community/codemirror-js
+      tagsha: 6f73343412a694307fb695fdacbbda9b61acaabe
+    - repo: deepin-community/python-argon2
+      tagsha: bd6a5d1a85b579ace75c80a54dbe3f2acfbafb86
+    - repo: deepin-community/libmoose-autobox-perl
+      tagsha: c3d7a1b915ef0a2aca1b7bacc714e5471e215666
+    - repo: deepin-community/fuse3
+      tagsha: 450278e4cce3ee8c42cd72ba501339827659c528
+    - repo: deepin-community/m4
+      tagsha: 529fdd86feed3498ba4a8a9eaf6bb87442bfff8f
+    - repo: deepin-community/spirv-headers
+      tagsha: 88949ff4f2a167e550effea1b4583e219d7b6629
+    - repo: deepin-community/spirv-tools
+      tagsha: 7682f3b998516eeafadcdd5746f699adafa8e263
+    - repo: deepin-community/wdiff
+      tagsha: bc25bb91c780d3b2345ccc00ee2a5b9a28a819cd
+    - repo: deepin-community/flite
+      tagsha: 6b7661f86b317955c129b94ca84637f09e838123
+    - repo: deepin-community/mgcv
+      tagsha: 03f5083a5f8036555ede507eb8598d2a1d677b3b
+    - repo: deepin-community/r-cran-spatial
+      tagsha: 395756ee682d5840e28f5fd3bdcfa7a4ca27311f
+    - repo: deepin-community/liblatex-tounicode-perl
+      tagsha: 433e066cba38d1eec66133ab96e9b2e643461f93
+    - repo: deepin-community/survival
+      tagsha: 0b201e5baccd80fb88fd623941b96814f9daa874
+    - repo: deepin-community/nlme
+      tagsha: eddf482858c95ef9d8d0816f56b9804a9ee64046
+    - repo: deepin-community/r-cran-nnet
+      tagsha: d703ec8daa05b6aabbddb32b193020960ad8f0f9
+    - repo: deepin-community/r-cran-class
+      tagsha: 3758232f6342fb6b1732cb8ff33517cef075165c
+    - repo: deepin-community/alsa-utils
+      tagsha: fd7171e02961c100c4022a484a69943e095c21ff
+    - repo: deepin-community/geoclue-2.0
+      tagsha: 4aa90141631350dc45967ea8ade8357bd2d2654d
+    - repo: deepin-community/strongswan
+      tagsha: 74a215a7e56324a60bcba5a2b57bf4bfb8dc49de
+    - repo: deepin-community/lvm2
+      tagsha: bc2f48d3773cdeadaf5584b029b37310daa6b073
+    - repo: deepin-community/python-zipp
+      tagsha: c1ed6a69c539877b99bde806741fa6b840dd01ef
+    - repo: deepin-community/ufo2ft
+      tagsha: ecf2791ca6ea48903e3da67f8d4d9b942d43d24a
