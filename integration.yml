@@ -5,3 +5,5 @@ repos:
       tagsha: edd7bc185c5dd88037c1e4a13b7be36b29b4fa40
     - repo: deepin-community/golang-defaults
       tagsha: ff82bf43827b491fed43723c242fb96c4fcd241e
+    - repo: deepin-community/golang-1.21
+      tagsha: 97caa221e976d70fa0482067c865d9600d110797
