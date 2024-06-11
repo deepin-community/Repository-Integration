@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: deepin-community/flameshot
       tagsha: 1826010a70cbbb392a9d23f6d856cf29313a8fca
+    - repo: deepin-community/singleapplication
+      tagsha: aefad2d5d83cfbed62a5103b64982f94e58ee90e
