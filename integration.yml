@@ -8,4 +8,8 @@ repos:
     - repo: deepin-community/rtaudio
       tagsha: 9fbd98c74f50133b6af599acf32d540a339e4a8c
     - repo: deepin-community/sdl12-compat
-      tagsha: f8e3305b1c5126b4a81e545d07541039efa8c896
+      tagsha: c54c5e750e1ac3419725df8407edbab768df93be
+    - repo: deepin-community/xine-lib-1.2
+      tagsha: f79d599da7a15fc9a8d9d91e46b84789b55e492e
+    - repo: deepin-community/graphicsmagick
+      tagsha: fc944f1c9f500a6754b997d053fabf9cdbfd37ea
