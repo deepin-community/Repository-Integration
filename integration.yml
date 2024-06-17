@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtkcore
       tagsha: f0e5f2a7479fbfa3641c1b5131e7329f40404265
+    - repo: linuxdeepin/deepin-fcitx5configtool-plugin
+      tagsha: 7f74b87c83f134d1341051f98989707d052564d5
