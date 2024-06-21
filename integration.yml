@@ -4,4 +4,4 @@ repos:
     - repo: linuxdeepin/dde-api
       tagsha: 97a1fa113a29ed1c095768e8ed0f8f195befa5d7
     - repo: linuxdeepin/dde-daemon
-      tagsha: e39a44715f664d2e3979a664be7c8469f15ac1b2
+      tagsha: 66b0ee3428438ff432ff9c4df1e1fa3c4d5787b1
