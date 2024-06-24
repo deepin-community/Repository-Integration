@@ -4,7 +4,7 @@ repos:
     - repo: deepin-community/opencl-clang-15
       tagsha: ad5c02bf5a6234ade320864e383cf6773632bdf1
     - repo: deepin-community/level-zero
-      tagsha: 957c9fb3cae8e6e3da345413d423d5fdd35920cb
+      tagsha: 48999141b4dada0187317b8e00b7c123189dc90e
     - repo: deepin-community/intel-vc-intrinsics
       tagsha: b43a6cd74a959433d2f4ccdff548dd94f282b435
     - repo: deepin-community/intel-compute-runtime
