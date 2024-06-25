@@ -4,7 +4,7 @@ repos:
     - repo: linuxdeepin/dtk6core
       tagsha: 880f598382e6b56e95c51f239569088a5ef04b60
     - repo: linuxdeepin/dtk6declarative
-      tagsha: c94cc9dc9466a349191a3633344ed2766e791fcf
+      tagsha: e09fbd6be5142bd46d0783183bad52ab1207701a
     - repo: linuxdeepin/dtk6gui
       tagsha: d349649e9585c822b80770a4a186c6f698a53527
     - repo: linuxdeepin/dtk6widget
