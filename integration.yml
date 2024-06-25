@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: dtk5631 by @mhduiy to V23-Beta3'
+message: 'Auto integrate from topic: dtk5631 by @kegechen to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtkcommon
@@ -6,7 +6,7 @@ repos:
     - repo: linuxdeepin/dtkcore
       tagsha: f64a86c4a0bbcec009c5f4054c61ad5570840f63
     - repo: linuxdeepin/dtkdeclarative
-      tagsha: 60a0613e16511e1c802b92c50f1809359fe03ea6
+      tagsha: c6db66e2220d54b2196a6f1e61b55ec6d4d5a4e8
     - repo: linuxdeepin/dtkgui
       tagsha: 613f68c23bcc0567c3cacb7cb5cd368f1a121474
     - repo: linuxdeepin/dtkwidget
