@@ -11,3 +11,5 @@ repos:
       tagsha: fc86543a87ef58c4f19d588166d778b0b9d348a5
     - repo: linuxdeepin/deepin-draw
       tagsha: 4d9a32e39c33e72b8fba4c5699b62f274bf1758a
+    - repo: linuxdeepin/deepin-devicemanager
+      tagsha: 367ff567f7f9b78062fe31f6b345cc5fa243c747
