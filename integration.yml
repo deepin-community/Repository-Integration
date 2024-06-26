@@ -13,3 +13,5 @@ repos:
       tagsha: 4d9a32e39c33e72b8fba4c5699b62f274bf1758a
     - repo: linuxdeepin/deepin-devicemanager
       tagsha: 367ff567f7f9b78062fe31f6b345cc5fa243c747
+    - repo: linuxdeepin/deepin-system-monitor
+      tagsha: 4d2def724e2df54bc8532df42821aa9b9f98452d
