@@ -7,3 +7,5 @@ repos:
       tagsha: 87e2695fba92c5de759196b6bf06e7664c6e7eac
     - repo: linuxdeepin/image-editor
       tagsha: 785931c0833835d4c610aa1d334890ab1e915a37
+    - repo: linuxdeepin/deepin-image-viewer
+      tagsha: fc86543a87ef58c4f19d588166d778b0b9d348a5
