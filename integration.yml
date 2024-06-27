@@ -1,7 +1,7 @@
-message: 'Auto integrate from topic: shell-loader by @FeiWang1119 to V23-Beta3'
+message: 'Auto integrate from topic: shell-loader by @tsic404 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-tray-loader
-      tagsha: 5355f54e4c231051829474742f05d6eb4e069f64
+      tagsha: 94add8e0218f34cbd28a6c94ca8ee25d94e72bd1
     - repo: linuxdeepin/dde-shell
       tagsha: a895a0333bdeec6f1db6fd267404867d2f726cbc
