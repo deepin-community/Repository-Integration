@@ -6,6 +6,6 @@ repos:
     - repo: linuxdeepin/dde-session
       tagsha: 8589fcad1a725617bdf6c19f514807da4e3cb498
     - repo: linuxdeepin/treeland
-      tagsha: bd79a92a1dd3ead6ea764db1a970c869bc270098
+      tagsha: 3d3fb290612f323881213eb1d987d2d913afb122
     - repo: linuxdeepin/ddm
       tagsha: 5e005994841b835e31a00430fe6ced88cadc8fcb
