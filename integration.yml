@@ -63,3 +63,5 @@ repos:
       tagsha: ab41e092208587f20f30ce46661a4912d2952cf5
     - repo: deepin-community/modsecurity
       tagsha: b94811271c013f27faf9c0c0c2f2d4b793690ee9
+    - repo: deepin-community/geoip
+      tagsha: d11d5f4900f747ef7f557948297a77ebfc13b964
