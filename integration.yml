@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: nginx-1.26 by @hudeng-go to V23-Beta3'
+message: 'Auto integrate from topic: nginx-1.26 by @UTsweetyfish to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/libnginx-mod-http-auth-pam
@@ -59,3 +59,7 @@ repos:
       tagsha: cd10f0d45501c221de79f2b4c44c9745e7ee0da4
     - repo: deepin-community/libnginx-mod-http-uploadprogress
       tagsha: 33866a7fb598793b26b036e61163ca04dde01958
+    - repo: deepin-community/modsecurity
+      tagsha: ab41e092208587f20f30ce46661a4912d2952cf5
+    - repo: deepin-community/modsecurity
+      tagsha: b94811271c013f27faf9c0c0c2f2d4b793690ee9
