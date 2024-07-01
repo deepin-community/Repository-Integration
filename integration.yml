@@ -1,5 +1,7 @@
-message: 'Auto integrate from topic: 20240701-linglong by @Zeno-sole to V23-Beta3'
+message: 'Auto integrate from topic: 20240701-linglong by @dengbo11 to V23-Beta3'
 milestone: V23-Beta3
 repos:
-    - repo: deepin-community/linglong
-      tagsha: b22aba39dbf82d2baf168017265dbd0dd4a72f94
+    - repo: linuxdeepin/linglong-pica
+      tagsha: 148b223088511dc23ca2817ce1da2c8ca8ec53a1
+    - repo: linuxdeepin/linglong
+      tagsha: e595e0668db1ae6a8561282daeea7060822bb8ac
