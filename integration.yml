@@ -5,3 +5,5 @@ repos:
       tagsha: c9eaa0c875668a1090778c817b84ed474cb61d1d
     - repo: linuxdeepin/deepin-kwin
       tagsha: 6c9ed1109145740f60df4cfa6e3dd9aa87d544a0
+    - repo: linuxdeepin/dde-appearance
+      tagsha: 06811e8568849da50cd29f3d66edcc6e4f5be8af
