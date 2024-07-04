@@ -4,7 +4,7 @@ repos:
     - repo: linuxdeepin/deepin-wayland-protocols
       tagsha: c9eaa0c875668a1090778c817b84ed474cb61d1d
     - repo: linuxdeepin/deepin-kwin
-      tagsha: 6c9ed1109145740f60df4cfa6e3dd9aa87d544a0
+      tagsha: 419138f082d29dae338b262645f681e6ac49ef4f
     - repo: linuxdeepin/dde-appearance
       tagsha: d2c500ffa2fdbf12a9a5cd87284479f144a52b08
     - repo: linuxdeepin/dde-session
