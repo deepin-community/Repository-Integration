@@ -94,12 +94,14 @@ jobs:
       - build_main
       - build_dde
       - build_community
+      - build_commercial
     if: |
       always() && !cancelled() &&
       (needs.parsec_integration.result == 'success') && (needs.ouput_message.result != 'failure' ) &&
       (needs.build_main.result == 'success' || needs.build_main.result == 'skipped') &&
       (needs.build_dde.result == 'success' || needs.build_dde.result == 'skipped') &&
-      (needs.build_community.result == 'success' || needs.build_community.result == 'skipped')
+      (needs.build_community.result == 'success' || needs.build_community.result == 'skipped') &&
+      (needs.build_commercial.result == 'success' || needs.build_commercial.result == 'skipped')
     steps:
       - name: wait build pending status
         uses: actions/github-script@v6
@@ -172,6 +174,7 @@ jobs:
       - build_main
       - build_dde
       - build_community
+      - build_commercial
       - wait_build_pending_status
     if: |
       always() && !cancelled() &&
@@ -179,6 +182,7 @@ jobs:
       (needs.build_main.result == 'success' || needs.build_main.result == 'skipped') &&
       (needs.build_dde.result == 'success' || needs.build_dde.result == 'skipped') &&
       (needs.build_community.result == 'success' || needs.build_community.result == 'skipped') &&
+      (needs.build_commercial.result == 'success' || needs.build_commercial.result == 'skipped') &&
       needs.wait_build_pending_status.result == 'success'
     uses: deepin-community/Repository-Integration/.github/workflows/issue-project-manager.yml@master
     secrets: inherit
@@ -279,3 +283,22 @@ jobs:
       tagsha: ${{ matrix.payload.tagsha }}
       topic: test-integration-pr-${{ github.event.number }}
       component: "community"
+
+  build_commercial:
+    name: build_commercial
+    if: always() && !cancelled() && (needs.parsec_integration.outputs.build_matrix_commercial != '') && (needs.parsec_integration.result == 'success')
+    needs:
+      - parsec_integration
+      - build_project_prepare
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.parsec_integration.outputs.build_matrix_commercial) }}
+    uses: deepin-community/Repository-Integration/.github/workflows/02-build-obs.yml@master
+    secrets: inherit
+    with:
+      repo: ${{ matrix.payload.repo }}
+      tag: ${{ matrix.payload.tag }}
+      tagsha: ${{ matrix.payload.tagsha }}
+      topic: test-integration-pr-${{ github.event.number }}
+      component: "commercial"
+      gitaddr: ${{ matrix.payload.gitaddr }}

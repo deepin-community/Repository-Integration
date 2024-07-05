@@ -16,6 +16,8 @@ on:
       component:
         type: string
         default: "main"
+      gitaddr:
+        type: string
   workflow_dispatch:
     inputs:
       repo:
@@ -40,6 +42,7 @@ env:
   TAGSHA: ${{ inputs.tagsha }}
   GITHUB_TOKEN: ${{ github.token }}
   OSCPASS: ${{ secrets.OSCPASS }}
+  GITADDR: ${{ inputs.gitaddr }}
 
 jobs:
   build:
@@ -80,6 +83,10 @@ jobs:
               curl -o meta1.xml https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-proj-component-meta.tpl
               sed -i "s#TOPIC#${TOPIC}#g" meta1.xml
               sed -i "s#COMPONENT#${COMPONENT}#g" meta1.xml
+              if [ "$COMPONENT" = "commercial" ]; then
+                echo "commercail project, disable access!!!"
+                sed -i '4a \ \ <sourceaccess>\n\ \ \ \ <disable/>\n\ \ </sourceaccess>\n\ \ <access>\n\ \ \ \ <disable/>\n\ \ </access>' meta1.xml
+              fi
               curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta1.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC:$COMPONENT/_meta"
             fi
           fi
@@ -157,6 +164,14 @@ jobs:
           if [ ! -f _service ];then
             curl -o _service https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-pkg.tpl && \
             sed -i "s#REPO#$REPO#g" _service
+            if [ "$COMPONENT" = "commercial" ]; then
+              echo "commercial package, need use private git ssh address!!!"
+              new_content="    <param name=\"url\">${GITADDR}</param>"
+              sed -i "3c ${new_content}" _service
+              echo "commercial package, disable build source!!!"
+              echo "exec dpkg-buildpackage -us -uc --build=any,all  \"\$@\"" > build.script
+              curl -X PUT -u golf66:$OSCPASS -d @build.script -s "$uploadurl/build.script"
+            fi
             curl -X PUT -u golf66:$OSCPASS -d @_service -s "$uploadurl/_service"
           fi
           if [ $needbuild = "true" ];then
