@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: dtklog-001 by @kegechen to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtklog
-      tagsha: a1eb07be5fce1ac81dde282ad32ddd8d4aefd6bd
+      tagsha: cb87b5ec8a855355d96691496cc50609876174c8
     - repo: linuxdeepin/dtk6log
-      tagsha: 01efb83a8d08f4235d5ff66c997055d7de6c4985
+      tagsha: 0eb3eaf87423799e0738a0d1e764ee792c1ec29d
