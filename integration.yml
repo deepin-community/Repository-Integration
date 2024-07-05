@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtklog
       tagsha: 2104cf26460c7dd9170aea4497f3b41f370010d8
+    - repo: linuxdeepin/dtk6log
+      tagsha: 7e214cd85a7a584e0f89ab4f4917b70c8bc3340a
