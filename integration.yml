@@ -6,7 +6,7 @@ repos:
     - repo: linuxdeepin/deepin-kwin
       tagsha: 419138f082d29dae338b262645f681e6ac49ef4f
     - repo: linuxdeepin/dde-appearance
-      tagsha: d2c500ffa2fdbf12a9a5cd87284479f144a52b08
+      tagsha: 703b049b69ed99d9fb357376ee1f0c6a86e90483
     - repo: linuxdeepin/dde-session
       tagsha: 6aaa8cb99623a9c12a6c09b9eecb71a2e51afeea
     - repo: linuxdeepin/dde-shell
