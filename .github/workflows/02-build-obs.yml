@@ -168,13 +168,15 @@ jobs:
               echo "commercial package, need use private git ssh address!!!"
               new_content="    <param name=\"url\">${GITADDR}</param>"
               sed -i "3c ${new_content}" _service
+              revision="    <param name=\"revision\">${TAGSHA}</param>"
+              sed -i "3a ${revision}" _service
               echo "commercial package, disable build source!!!"
               echo "exec dpkg-buildpackage -us -uc --build=any,all  \"\$@\"" > build.script
               curl -X PUT -u golf66:$OSCPASS -d @build.script -s "$uploadurl/build.script"
             fi
             curl -X PUT -u golf66:$OSCPASS -d @_service -s "$uploadurl/_service"
           fi
-          if [ $needbuild = "true" ];then
+          if [ $needbuild = "true" -a "$COMPONENT" != "commercial" ];then
             curl -o _branch_request https://raw.githubusercontent.com/deepin-community/Repository-Integration/master/.github/workflows/obs-br.tpl
             sed -i  "s#REPO#$REPO#g" _branch_request
             sed -i "s#TAGSHA#$TAGSHA#g" _branch_request
