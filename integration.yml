@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: texstudio by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/qtermwidget
+      tagsha: ca5c7a88f352b7f66fea281e8448640f2f52ddf6
+    - repo: deepin-community/libquazip1-qt5
+      tagsha: edc087f3340a660d529547ddd1992c0c208c6e70
+    - repo: deepin-community/texstudio
+      tagsha: a04d47c21b89283c75bfaa09ddced741ece10c95
+    - repo: deepin-community/python-parameterized
+      tagsha: e0eaddb7d5a016159fa826a43349425247717944
+    - repo: deepin-community/python-mistletoe
+      tagsha: d89fde1c668c1a7a4ddb075896e525a3c0761097
+    - repo: deepin-community/markdown-it-py
+      tagsha: aa2d2bdacb62802fcf05fd2ba785ef32bf357542
