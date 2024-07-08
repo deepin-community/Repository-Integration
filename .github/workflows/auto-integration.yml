@@ -187,9 +187,9 @@ jobs:
     uses: deepin-community/Repository-Integration/.github/workflows/issue-project-manager.yml@master
     secrets: inherit
     with:
-      repo: linuxdeepin/developer-center
+      repo: deepin-community/Repository-Integration
       issueid:  ${{ needs.build_project_prepare.outputs.issueid }} #for test 3961
-      project: 21 # https://github.com/orgs/linuxdeepin/projects/21/views/1
+      project: 153 # https://github.com/orgs/deepin-community/projects/153/views/1
       assignees: "Zeno-sole, hudeng-go"
       title: "[Deepin Integration]~[${{ needs.parsec_integration.outputs.milestone }}] ${{ needs.parsec_integration.outputs.integration_message }}"
       status: "In progress"
