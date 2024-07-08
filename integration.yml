@@ -1,15 +1,10 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update glibc to 2.38-6deepin1 by
+  deepin-community-bot[bot]@deepin-community/glibc
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/glibc
+    tagsha: a22292d9ad1765280436594e819161790457ea76
+  - repo: deepin-community/policykit-1
+    tagsha: 65411b74f9f18706946ff3d920f40fa7c066bef7
+timestamp: 1712559363275
