@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: openvino by @hudeng-go to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/opencl-clang-15
+      tagsha: ad5c02bf5a6234ade320864e383cf6773632bdf1
+    - repo: deepin-community/level-zero
+      tagsha: 48999141b4dada0187317b8e00b7c123189dc90e
+    - repo: deepin-community/intel-vc-intrinsics
+      tagsha: b43a6cd74a959433d2f4ccdff548dd94f282b435
+    - repo: deepin-community/intel-compute-runtime
+      tagsha: 3e801b4068c5c9742ecd3270e5ce1878bdaa57ba
+    - repo: deepin-community/intel-graphics-compiler
+      tagsha: 36495eb32349ef27b1c3b5a0c2b02f6a6f80e66a
