@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: kwin-1070 by @justforlxz to V23-Beta3'
+message: 'Auto integrate from topic: kwin-1070 by @wineee to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/deepin-wayland-protocols
