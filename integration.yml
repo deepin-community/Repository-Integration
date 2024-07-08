@@ -1,15 +1,69 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: nginx-1.26 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/libnginx-mod-http-auth-pam
+      tagsha: 0bc0906c2fdff4fc432ee33cf04d4639759d6194
+    - repo: deepin-community/libnginx-mod-http-dav-ext
+      tagsha: 97928a620600d4cc8c2f9bca3e2b695144c55938
+    - repo: deepin-community/libnginx-mod-http-cache-purge
+      tagsha: 63c12f3fba5b3400c6b893518c555e7fd2b1886b
+    - repo: deepin-community/libnginx-mod-http-headers-more-filter
+      tagsha: 279f40cbb90a60292651e8fc422dcdfa611e7b1f
+    - repo: deepin-community/libnginx-mod-js
+      tagsha: 4ef89274090a95ba4fae5aa48bec6cf57ab7f560
+    - repo: deepin-community/libnginx-mod-http-set-misc
+      tagsha: 9031c90d8f9eeded67df95b6dc54702f0e8922a4
+    - repo: deepin-community/libnginx-mod-http-geoip2
+      tagsha: b6f3563a8b201737c85cf38273043c9444966a34
+    - repo: deepin-community/libnginx-mod-http-srcache-filter
+      tagsha: 2fd1982036f6cc89e27cb2152d31fcf8933d61d3
+    - repo: deepin-community/libnginx-mod-http-fancyindex
+      tagsha: 9bb05a3093c711be311ac6fae55e27cadb73b212
+    - repo: deepin-community/libnginx-mod-rtmp
+      tagsha: 647446c4b0ea45455ea06804b6db5fac42744e64
+    - repo: deepin-community/libnginx-mod-http-upstream-fair
+      tagsha: 7e4b9b6be56150bdc0a559fb467c1753c13abaf8
+    - repo: deepin-community/libnginx-mod-http-echo
+      tagsha: 6ec59f2e7b6d3d09a41c721b3490326259e68526
+    - repo: deepin-community/libnginx-mod-nchan
+      tagsha: e1d88bc3eee727e54af64ee7bfe1a4329d0ba773
+    - repo: deepin-community/libnginx-mod-http-modsecurity
+      tagsha: 5ddcbbde35b2e1b17cec926f3a379d5a326ea9c0
+    - repo: deepin-community/libnginx-mod-http-memc
+      tagsha: d178831ec6ce1e3937e1b3134dcfc097b9727c02
+    - repo: deepin-community/libnginx-mod-http-subs-filter
+      tagsha: b45bf4ec28be8a3c9b305af02459aa3a52d04202
+    - repo: deepin-community/libnginx-mod-http-lua
+      tagsha: f96d8f311ee5933d1bb4642bc8e44c87899c660b
+    - repo: deepin-community/nginx
+      tagsha: 21c935ab1fbaf5fad3a32115d2ea09cb18b5f4df
+    - repo: deepin-community/lua-nginx-cookie
+      tagsha: 10f4a3a9556663456d3a5e22db026d8a83c2eb7f
+    - repo: deepin-community/lua-nginx-dns
+      tagsha: 85848e999a82884025f2ef9ab5f5e30327c4acb6
+    - repo: deepin-community/lua-nginx-redis
+      tagsha: 6b81d6527c5587c97e8c10caeee7372db595d33e
+    - repo: deepin-community/lua-nginx-websocket
+      tagsha: 07fc8c96b0e6d67f78bf7115f34db2cdf3be3658
+    - repo: deepin-community/lua-nginx-kafka
+      tagsha: 53a253d88ccfb3128df2a55355c4540baafb65c3
+    - repo: deepin-community/lua-nginx-memcached
+      tagsha: c4fabe71dafdf127aec2021c449c06c1a1355c18
+    - repo: deepin-community/lua-nginx-redis-connector
+      tagsha: f71aff3036920063dda67049960ca0f800b7abd0
+    - repo: deepin-community/lua-nginx-string
+      tagsha: 0a3a586305d2b09f405e3024b1ac0748118e8058
+    - repo: deepin-community/libnginx-mod-http-brotli
+      tagsha: 057ed69cf5268c3b2e66f52492a3ad773d3937d2
+    - repo: deepin-community/libnginx-mod-http-ndk
+      tagsha: cd10f0d45501c221de79f2b4c44c9745e7ee0da4
+    - repo: deepin-community/libnginx-mod-http-uploadprogress
+      tagsha: 33866a7fb598793b26b036e61163ca04dde01958
+    - repo: deepin-community/modsecurity
+      tagsha: ab41e092208587f20f30ce46661a4912d2952cf5
+    - repo: deepin-community/modsecurity
+      tagsha: b94811271c013f27faf9c0c0c2f2d4b793690ee9
+    - repo: deepin-community/geoip
+      tagsha: d11d5f4900f747ef7f557948297a77ebfc13b964
+    - repo: deepin-community/ssdeep
+      tagsha: c5aec7d5b16c019e42c908138af60c5cd31f50d1
