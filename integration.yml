@@ -1,15 +1,10 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update libbibtex-parser-perl to 1.04+dfsg-1 by
+  deepin-community-bot[bot]@deepin-community/libbibtex-parser-perl
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libbibtex-parser-perl
+    tagsha: 202dc523c652908c028a9cecc44438be1272f27c
+  - repo: deepin-community/liblatex-tounicode-perl
+    tagsha: 433e066cba38d1eec66133ab96e9b2e643461f93
+timestamp: 1716447718840
