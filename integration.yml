@@ -26,7 +26,7 @@ repos:
     - repo: linuxdeepin/dtk6widget
       tagsha: 3de41a07a2a1bf2a67e958c03744ebe657513688
     - repo: linuxdeepin/dtk6declarative
-      tagsha: 4cebd08d8cc5da560e1981f1ede9a0d6ab0f3273
+      tagsha: c2c45972f0011bd225da1bc82bdc3b1358fba6cf
     - repo: linuxdeepin/qt6integration
       tagsha: 0254a9188816f34f7139656947c9bc9340192d89
     - repo: linuxdeepin/qt6platform-plugins
