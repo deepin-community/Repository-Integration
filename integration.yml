@@ -6,7 +6,7 @@ repos:
     - repo: linuxdeepin/dtk6log
       tagsha: 5cb78f83003301f2a6457f367f9acbf05e7dde1a
     - repo: linuxdeepin/dtk6core
-      tagsha: 55de3ffbe30905220a703d40ecf123bfcb658ce4
+      tagsha: bf6e4ae449fda4ae913aba4af3a46ef4ad792c06
     - repo: linuxdeepin/dtkcommon
       tagsha: 14b2ac9170ff37889e882de1946cc38fc3342570
     - repo: linuxdeepin/dtkcore
