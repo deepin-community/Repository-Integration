@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: Fix 7321 && bump to 6.0.11 by kegechen@linuxdeepin/deepin-system-upgrade
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/deepin-system-upgrade
+    tagsha: 05f0d15b538e7712c2477f7f02e47a83468aa7b5
+timestamp: 1710300514158
