@@ -4,9 +4,9 @@ repos:
     - repo: linuxdeepin/dde-tray-loader
       tagsha: 3f638efcd617751350e14220fb93b2b745db8efd
     - repo: linuxdeepin/dde-shell
-      tagsha: 996ee5e0931a7a8e04d217ea1014e9f5100ae094
+      tagsha: 544003149a9eae1c4e7fea3335fcfbbab55deef3
     - repo: linuxdeepin/dde-control-center
-      tagsha: 27f0bf4838eec2b786cf09a8122a98dc5d028e2f
+      tagsha: d988e24091249b945145c434dc9ad01e812cde8b
     - repo: linuxdeepin/startdde
       tagsha: 744b6333f7a1a248c235b603b0f5612084887486
     - repo: linuxdeepin/dde-api-proxy
