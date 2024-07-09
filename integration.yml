@@ -1,9 +1,15 @@
-message: >-
-  chore: add dde-file-manager-dev build depends by
-  hudeng-go@linuxdeepin/deepin-font-manager
-milestone: V23-Beta3
-repos:
-  - repo: linuxdeepin/deepin-font-manager
-    order: 0
-    tagsha: e846a0acae4eb54d327832b08c3e2db275d0c67f
-timestamp: 1697779968484
+# Required
+message: |
+  Integrated for V23-Release
+# Not required, now default is V23-Release
+milestone: V23-Release
+# Required
+repos: 
+  # Required
+  - repo: linuxdeepin/deepin-mail
+    # Not required
+    # Not required, but need one of tag and tagsha info
+    # When use tag info, integration workflow will check repository tag and build tag version
+    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
+    tagsha: "release/v6.4.6"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-mail"
