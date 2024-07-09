@@ -2,9 +2,9 @@ message: 'Auto integrate from topic: shell-tray-loader by @FeiWang1119 to V23-Be
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-tray-loader
-      tagsha: 3f638efcd617751350e14220fb93b2b745db8efd
+      tagsha: b445d6f55ab2c7afe470835d256434504da339f9
     - repo: linuxdeepin/dde-shell
-      tagsha: 544003149a9eae1c4e7fea3335fcfbbab55deef3
+      tagsha: 1af9ba5c168e728d9443142bbdb7dad98d2106ea
     - repo: linuxdeepin/dde-control-center
       tagsha: d988e24091249b945145c434dc9ad01e812cde8b
     - repo: linuxdeepin/startdde
