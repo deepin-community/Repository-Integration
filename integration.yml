@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: kwin-1070 by @justforlxz to V23-Beta3'
+message: 'Auto integrate from topic: kwin-1070 by @zsien to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/deepin-wayland-protocols
@@ -12,4 +12,4 @@ repos:
     - repo: linuxdeepin/dde-shell
       tagsha: 102f100acd73642712961e4ef702189ef25f2d87
     - repo: linuxdeepin/dde-launchpad
-      tagsha: b20287b2fba29e576a28cff9dc6f786d7c4c251f
+      tagsha: 9ad377a6b7849878a8d534f3f2396ca45a37d705
