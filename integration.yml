@@ -11,3 +11,7 @@ repos:
       tagsha: 42ff4cbd0e680eba6402f10209daef6cb900027b
     - repo: deepin-community/rst2pdf
       tagsha: dc0385d72bc2b479a3a515de185f98a2e27f4f3a
+    - repo: deepin-community/python-svglib
+      tagsha: e9642e6068ee51314a9f88d4e655cc89dcc5cf73
+    - repo: deepin-community/pymupdf
+      tagsha: 7c6e8bc5458411848496a7b87e7c28b6701fff5a
