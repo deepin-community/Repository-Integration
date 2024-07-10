@@ -9,3 +9,5 @@ repos:
       tagsha: 5b09e362cf0325604b5f7f04e468d69726c9ed28
     - repo: deepin-community/gutenprint
       tagsha: 42ff4cbd0e680eba6402f10209daef6cb900027b
+    - repo: deepin-community/rst2pdf
+      tagsha: dc0385d72bc2b479a3a515de185f98a2e27f4f3a
