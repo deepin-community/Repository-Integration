@@ -23,3 +23,5 @@ repos:
       tagsha: bffeb09a630b968e1ac5fb6230511200647b8af7
     - repo: deepin-community/fonts-sil-charis
       tagsha: 5eb7bb5e0e3a4b64e7525133a3c5ac46018ea48e
+    - repo: deepin-community/mujs
+      tagsha: f5de586bfb973ed8d2ba6c91558aaad9884aaa04
