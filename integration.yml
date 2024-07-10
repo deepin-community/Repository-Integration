@@ -7,3 +7,5 @@ repos:
       tagsha: fd2026fed24076e85df43c40cd6540e99a71bbd5
     - repo: linuxdeepin/deepin-system-monitor
       tagsha: 1018558f8d710961a589c2e51e20425fe009c55b
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: 8b6d25271ce7c1adbea184dad8e662b2fb5a68d0
