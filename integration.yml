@@ -15,3 +15,7 @@ repos:
       tagsha: e9642e6068ee51314a9f88d4e655cc89dcc5cf73
     - repo: deepin-community/pymupdf
       tagsha: 7c6e8bc5458411848496a7b87e7c28b6701fff5a
+    - repo: deepin-community/jbig2dec
+      tagsha: cd836d64e4bfec7b6ff74fe97686dbb671ad5f9e
+    - repo: deepin-community/mupdf
+      tagsha: 82d41b63331b10a3d29f36db986e7b1c0b6cc59e
