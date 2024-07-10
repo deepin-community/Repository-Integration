@@ -21,3 +21,5 @@ repos:
       tagsha: 82d41b63331b10a3d29f36db986e7b1c0b6cc59e
     - repo: deepin-community/afdko
       tagsha: bffeb09a630b968e1ac5fb6230511200647b8af7
+    - repo: deepin-community/fonts-sil-charis
+      tagsha: 5eb7bb5e0e3a4b64e7525133a3c5ac46018ea48e
