@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: gs10 by @UTsweetyfish to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/ghostscript
-      tagsha: 5d2be2a8586d802dd0fd30e44989cf52629c71ef
+      tagsha: 63ef1fb4dc255afe6cf2e9c3055092057fb0193a
     - repo: deepin-community/libspectre
       tagsha: 3c93f47be7a254c611036ac9ea4062a77c447a47
     - repo: deepin-community/gimp
