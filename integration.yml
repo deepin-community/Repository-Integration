@@ -15,8 +15,6 @@ repos:
       tagsha: e9642e6068ee51314a9f88d4e655cc89dcc5cf73
     - repo: deepin-community/jbig2dec
       tagsha: cd836d64e4bfec7b6ff74fe97686dbb671ad5f9e
-    - repo: deepin-community/mupdf
-      tagsha: 6474708d73ee94293e66604455fa2defa4446852
     - repo: deepin-community/afdko
       tagsha: bffeb09a630b968e1ac5fb6230511200647b8af7
     - repo: deepin-community/fonts-sil-charis
@@ -26,4 +24,4 @@ repos:
     - repo: deepin-community/pymupdf
       tagsha: a034f9b19ba7bf6f6ae537d1e20602cbc9565456
     - repo: deepin-community/mupdf
-      tagsha: 561c804c67e3adf47ac4be5b54b6bfe4fe86e1b7
+      tagsha: 3d39a50ac2d2dc05cbb3770cf84060b521ef3818
