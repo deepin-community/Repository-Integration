@@ -13,8 +13,6 @@ repos:
       tagsha: dc0385d72bc2b479a3a515de185f98a2e27f4f3a
     - repo: deepin-community/python-svglib
       tagsha: e9642e6068ee51314a9f88d4e655cc89dcc5cf73
-    - repo: deepin-community/pymupdf
-      tagsha: 7c6e8bc5458411848496a7b87e7c28b6701fff5a
     - repo: deepin-community/jbig2dec
       tagsha: cd836d64e4bfec7b6ff74fe97686dbb671ad5f9e
     - repo: deepin-community/mupdf
@@ -25,3 +23,5 @@ repos:
       tagsha: 5eb7bb5e0e3a4b64e7525133a3c5ac46018ea48e
     - repo: deepin-community/mujs
       tagsha: f5de586bfb973ed8d2ba6c91558aaad9884aaa04
+    - repo: deepin-community/pymupdf
+      tagsha: a034f9b19ba7bf6f6ae537d1e20602cbc9565456
