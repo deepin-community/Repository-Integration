@@ -11,5 +11,5 @@ repos:
     # Not required, but need one of tag and tagsha info
     # When use tag info, integration workflow will check repository tag and build tag version
     # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "03e695b4724c854c0d9a42665dd6ac19a29202b9"
+    tagsha: "7777abb7c662adc5efbad95acdffdc5abae8fbc0"
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-mail"
