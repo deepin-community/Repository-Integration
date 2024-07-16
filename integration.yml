@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: easyeffects by @YukariChiba to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/zita-convolver
+      tagsha: cc029451a99293aff370391f50bce25f3bae51a0
+    - repo: deepin-community/libsigcplusplus-3.0
+      tagsha: e760373b7934586a4ce096669ba9b3a2f2f4a5db
+    - repo: deepin-community/easyeffects
+      tagsha: 9c3c41cbfa0edc6e1288de8494a82fa0331103aa
