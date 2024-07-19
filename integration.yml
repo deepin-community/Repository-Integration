@@ -1,15 +1,45 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: FixBuildFailure-glider by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/glider
+      tagsha: 68edb87df980cf569332210b13755b36186f5166
+    - repo: deepin-community/golang-github-aead-chacha20
+      tagsha: 61d27e6386d48ea219fba3343047a39afca998c6
+    - repo: deepin-community/golang-github-dgryski-go-camellia
+      tagsha: f5303944996175018baacc4f0529ead156270df1
+    - repo: deepin-community/golang-github-dgryski-go-idea
+      tagsha: 4a7d694fe2f954e5cf698eef653ba3be94dafeab
+    - repo: deepin-community/golang-github-dgryski-go-rc2
+      tagsha: c0085970fb2656264b24c7460399a48577440452
+    - repo: deepin-community/golang-github-insomniacslk-dhcp
+      tagsha: c78483c02a607a50b679a3730f21dfad302387d6
+    - repo: deepin-community/golang-github-jsimonetti-rtnetlink
+      tagsha: 1154405a88329ac1394c1da6dc7dd35ab4d5fb22
+    - repo: deepin-community/golang-github-klauspost-cpuid
+      tagsha: 989bfc609ed8d6bc87d8eac69352c2cc3652372f
+    - repo: deepin-community/golang-github-klauspost-reedsolomon
+      tagsha: ed239150cd2480978e6f5a70fb084e0dbf3734b8
+    - repo: deepin-community/golang-github-mdlayher-ethernet
+      tagsha: 5418fff2e8b04b874b1eaf67a832453a94cf6b90
+    - repo: deepin-community/golang-github-mdlayher-netlink
+      tagsha: 6264c196af2814a399aef9c3779d9635c84d7804
+    - repo: deepin-community/golang-github-mdlayher-packet
+      tagsha: bfcea5a6ab5ba1f50a507fea4e3cdfaab05ee7bb
+    - repo: deepin-community/golang-github-mdlayher-socket
+      tagsha: 8751cd514ed3e679fe2fd1add8fce8e417f72c26
+    - repo: deepin-community/golang-github-nadoo-conflag
+      tagsha: 0126a081ec79715dc9392f12871a72947837c414
+    - repo: deepin-community/golang-github-nadoo-ipset
+      tagsha: 334faf9d863ed8061f6d91edb349f830cb7d1d13
+    - repo: deepin-community/golang-github-templexxx-cpu
+      tagsha: b960d85f3ed6052b0de0eac06a772a26e8692a86
+    - repo: deepin-community/golang-github-templexxx-xorsimd
+      tagsha: cec73e13a1b6599bd54292bd5f7e60ed2b16138b
+    - repo: deepin-community/golang-github-u-root-uio
+      tagsha: 20499135b604461be85f610ff283a3b594c7d478
+    - repo: deepin-community/golang-github-xtaci-kcp
+      tagsha: e27ed1283c276998c02c85014e0d643a6bc791df
+    - repo: deepin-community/golang-github-ebfe-rc2
+      tagsha: 6d5a793cad22e9f1475a1b3ed73175523e47e5e1
+    - repo: deepin-community/golang-github-mdlayher-raw
+      tagsha: 3d17a7aa085e64d3a97a2d90073e94b2a6431f08
