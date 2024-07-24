@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: shell-testing-20240724 by @yixinshark to V2
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-shell
-      tagsha: 6f4571009fd0eead0d400973374b7ad7bbfbb3a0
+      tagsha: 86323c60272a77344cdf54a6638d6cca073bbfd5
     - repo: linuxdeepin/dde-tray-loader
       tagsha: 9268abeec0581019db6c33f1281b74e4f162a5b7
     - repo: linuxdeepin/deepin-network-displays
