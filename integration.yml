@@ -23,3 +23,5 @@ repos:
       tagsha: af6a5ef85053c272923cea4ec668e6f9698748d6
     - repo: linuxdeepin/dde-qt-dbus-factory
       tagsha: b6a8305ddc268df981930f806307039a9337d2de
+    - repo: linuxdeepin/deepin-screen-recorder
+      tagsha: 32a2627b3abed7760af2883f7e18e4805b5957c5
