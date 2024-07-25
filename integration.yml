@@ -31,3 +31,5 @@ repos:
       tagsha: 3db8eaef8c718240fe0542920a15e2ae7371dc65
     - repo: linuxdeepin/deepin-icon-theme
       tagsha: cb869c6a50e7211fb71159211b36d466ee20147b
+    - repo: linuxdeepin/dde-tray-loader
+      tagsha: 2abfd0b3017970e4c321b936942782fbaf374770
