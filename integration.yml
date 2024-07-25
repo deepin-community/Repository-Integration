@@ -27,3 +27,5 @@ repos:
       tagsha: 05727daed56a93852dcdd8a739e01049e65f9c4f
     - repo: linuxdeepin/startdde
       tagsha: 5e34e4a0fa11cef485f8fbe2f9b4dac178682c03
+    - repo: linuxdeepin/dde-session-ui
+      tagsha: 3db8eaef8c718240fe0542920a15e2ae7371dc65
