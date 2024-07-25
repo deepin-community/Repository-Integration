@@ -2,26 +2,28 @@ message: 'Auto integrate from topic: shell-testing-20240724 by @yixinshark to V2
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-shell
-      tagsha: ebaca66fc2d19d16a4e30a480f6fc24f6c972f5a
+      tagsha: 96f5a7e48995f9a2975b5b0e6e3272da3189adb3
     - repo: linuxdeepin/dde-tray-loader
-      tagsha: 9268abeec0581019db6c33f1281b74e4f162a5b7
+      tagsha: a28320a6603d4685a019137206268574b0ff0369
     - repo: linuxdeepin/deepin-network-displays
-      tagsha: 17b5bc5babd8eb293475be6f37448a7cc723e221
+      tagsha: 944c4f7387c6a10279dd34185324a159439a9aea
     - repo: linuxdeepin/deepin-deepinid-plugin
-      tagsha: f5c70d0e57f8147d6f94c54118ebdb4b7ba7a938
+      tagsha: b8b873a08c4ac7ecc4251973bdb785984ab23063
     - repo: linuxdeepin/dde-control-center
-      tagsha: 872254c7afe0bab1e74bb9a3fd273dfeebd2dbe1
+      tagsha: 1afe2c1a08a994508e03c994c542d60b89f17818
     - repo: linuxdeepin/dde-api-proxy
-      tagsha: df6e04036fee02e24af543cf8a9b66d701f24f1b
+      tagsha: 295c4190a8e5045e318a288b7fb727c1d06ef7cb
     - repo: linuxdeepin/deepin-desktop-theme
-      tagsha: 5409201db2749b152ba3ae791c70430254841fcf
+      tagsha: 8a0bdb1cb4cff446ba4b1b1ebddbed92f5f35ae4
     - repo: linuxdeepin/dde-launchpad
-      tagsha: c99efb581e6f15f75cec13d18d55ead7dcbac51f
+      tagsha: 7bed30bd86acf0c678aeeb4064c441b71c118aeb
     - repo: linuxdeepin/dde-daemon
-      tagsha: c03249527e07cde246cfb939b7d6d6b73a675320
+      tagsha: 18a92c89fd3b532e3ecb08c9199c14c9460b2702
     - repo: linuxdeepin/dde-network-core
-      tagsha: af6a5ef85053c272923cea4ec668e6f9698748d6
+      tagsha: 5ff035b73fc3ac1153cbc2f1a768112264eb4246
     - repo: linuxdeepin/dde-qt-dbus-factory
       tagsha: b6a8305ddc268df981930f806307039a9337d2de
     - repo: linuxdeepin/deepin-screen-recorder
-      tagsha: 32a2627b3abed7760af2883f7e18e4805b5957c5
+      tagsha: 05727daed56a93852dcdd8a739e01049e65f9c4f
+    - repo: linuxdeepin/startdde
+      tagsha: 5e34e4a0fa11cef485f8fbe2f9b4dac178682c03
