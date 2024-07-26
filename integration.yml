@@ -4,4 +4,4 @@ repos:
     - repo: linuxdeepin/treeland.private
       tagsha: 743e00d07b836b39725e0ee03242d3e6eb35a68a
     - repo: linuxdeepin/ddm
-      tagsha: c15c659eed59b1e655cc6c9624cd8b139ebbed9a
+      tagsha: 54ed8337d1f9d3ad90d2f3436143b05733880bb1
