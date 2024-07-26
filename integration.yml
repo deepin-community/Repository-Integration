@@ -20,7 +20,7 @@ repos:
     - repo: deepin-community/golang-github-dlclark-regexp2
       tagsha: d967dda2aef65a415ae8a21cea6f151995d9b6b0
     - repo: deepin-community/golang-github-gorilla-handlers
-      tagsha: d86886b60e12f6d4b342dd29ebfa4876edb72478
+      tagsha: a3da66fb20bb57f6bb8b36472be1905f4f26a158
     - repo: deepin-community/golang-github-gorilla-mux
       tagsha: 98d68eecdafe998937b7cf00ca906b8c5b647a61
     - repo: deepin-community/golang-github-mattn-go-colorable
