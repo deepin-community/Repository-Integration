@@ -32,8 +32,10 @@ repos:
     - repo: linuxdeepin/deepin-icon-theme
       tagsha: cb869c6a50e7211fb71159211b36d466ee20147b
     - repo: linuxdeepin/dde-tray-loader
-      tagsha: 80900fab952babf17f2f0d0ab8ffab351d206ca9
+      tagsha: 6cd566a1781fc60c844085609a44e5fb53fd033e
     - repo: linuxdeepin/dde-shell
-      tagsha: a3caf8d88d032879451ea01768d24d63a6a9d8b8
+      tagsha: 12b166ad3c048e656846f2922498268c749e246b
     - repo: linuxdeepin/dde-api-proxy
       tagsha: 67a64d30f2ab056011f1a9b1214a4168af2b960d
+    - repo: linuxdeepin/dde-shell
+      tagsha: 4bacbe5d69eaa3c0f235f970b05fa2230877dd2c
