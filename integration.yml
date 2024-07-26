@@ -39,3 +39,5 @@ repos:
       tagsha: 67a64d30f2ab056011f1a9b1214a4168af2b960d
     - repo: linuxdeepin/dde-shell
       tagsha: 4bacbe5d69eaa3c0f235f970b05fa2230877dd2c
+    - repo: linuxdeepin/dde-network-core
+      tagsha: 8ca29ae67c9a3ec3e5759f8cdddf6aa4f1610566
