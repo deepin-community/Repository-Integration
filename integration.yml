@@ -2,4 +2,4 @@ message: 'Auto integrate from topic: system-monitor-testing-20240729 by @fly602 
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/deepin-system-monitor
-      tagsha: 92bca16b5203c38984c4202fd07b52e5d888b71c
+      tagsha: cbbcd54783a2688215ecc5c09b634a52565f8bdf
