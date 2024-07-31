@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: shell-testing-20240731 by @yixinshark to V2
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-shell
-      tagsha: 4ce3271f62cc999c8ef8023d8642ef3c14cc4dd6
+      tagsha: a3952533ed1392e53c69da8903a96e3042dbb01a
     - repo: linuxdeepin/deepin-desktop-theme
       tagsha: fa414aa3cfc72aeeb9f4cd15deaf69db8a74dedf
     - repo: linuxdeepin/dde-appearance
@@ -12,7 +12,7 @@ repos:
     - repo: linuxdeepin/deepin-icon-theme
       tagsha: c1a8caa10fee7d09b86b7b53ac2de694317ed568
     - repo: linuxdeepin/dde-tray-loader
-      tagsha: b1cd7e4175498aa54c2e1489a39a920767fbf6ad
+      tagsha: c2f9e9396c67ed978bcd1f7be8d7b49d1947561a
     - repo: linuxdeepin/dde-control-center
       tagsha: e8b029b57d056f5bd2c543d16b5140dbf67783d9
     - repo: linuxdeepin/dde-launchpad
