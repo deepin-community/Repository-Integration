@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: jdk by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/openjdk-21
+      tagsha: dac0838f555ba0f5c512b22b82c29d1f1dee816c
+    - repo: deepin-community/openjdk-20
+      tagsha: 356e07dc76b5440f8f55373f69fc6d3a7086e841
+    - repo: deepin-community/openjdk-19
+      tagsha: 31b7e3502d8458d323585218ccbdfdf503682c21
+    - repo: deepin-community/openjdk-18
+      tagsha: d8cf7aa96eaa1e476fac8dd31b71ca91a67be1f5
