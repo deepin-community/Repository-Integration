@@ -8,4 +8,6 @@ repos:
     - repo: deepin-community/openjdk-19
       tagsha: 31b7e3502d8458d323585218ccbdfdf503682c21
     - repo: deepin-community/openjdk-18
-      tagsha: d8cf7aa96eaa1e476fac8dd31b71ca91a67be1f5
+      tagsha: 516b834821dd37ef079e8063bb566c55fc424b8e
+    - repo: deepin-community/libxfce4ui
+      tagsha: 975fe6b27cbc376490f639adbb6e51f5a9b64216
