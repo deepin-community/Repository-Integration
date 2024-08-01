@@ -11,3 +11,5 @@ repos:
       tagsha: 516b834821dd37ef079e8063bb566c55fc424b8e
     - repo: deepin-community/libxfce4ui
       tagsha: 975fe6b27cbc376490f639adbb6e51f5a9b64216
+    - repo: deepin-community/libxfce4util
+      tagsha: ee709c29639e91aab18d7334dd99d5f5d3f23fe3
