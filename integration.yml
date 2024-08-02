@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: brasero1 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/brasero
+      tagsha: a6a98461126b22a3845667b15a9269dedc1f69ef
+    - repo: deepin-community/libdmapsharing
+      tagsha: 7f44378dae3eac0605da9e0fcfe30b967ba60381
+    - repo: deepin-community/grilo
+      tagsha: f95ac06c7d50b2e8235e99d440efcf961cb94d31
+    - repo: deepin-community/tracker
+      tagsha: f83d55b3516d65380b49fbf86992625a2862b3ac
+    - repo: deepin-community/rhythmbox
+      tagsha: 75b835dbf1b16477be5737c83e59f833bed9b82c
