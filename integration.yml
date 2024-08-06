@@ -13,3 +13,5 @@ repos:
       tagsha: a89505d09b5dd34c24a1d170dab22b0325a8333e
     - repo: linuxdeepin/dde-launchpad
       tagsha: 5bfdcc2341d6d273e410c76fc22c275c65fed02d
+    - repo: linuxdeepin/dde-appearance
+      tagsha: d887248a113bacbc7008e6eb1ed4a9be870e650f
