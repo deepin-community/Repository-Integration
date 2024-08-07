@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/deepin-desktop-theme
       tagsha: 614f2a1f750bfc763f467de070d11eb39430a048
+    - repo: linuxdeepin/dde-appearance
+      tagsha: 3318ad128f435fa3a4ed8671f14003188a8f360f
