@@ -6,10 +6,10 @@ milestone: V23-Release
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/deepin-installer-reborn
+  - repo: linuxdeepin/uos-ai
     # Not required
     # Not required, but need one of tag and tagsha info
     # When use tag info, integration workflow will check repository tag and build tag version
     # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "develop/snipe"
-    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-installer"
+    tagsha: "1.3.4"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/uos-ai"
