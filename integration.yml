@@ -17,7 +17,7 @@ repos:
     tagsha: "e1e6f256af702e0036adfa87695061abf0fe6d92"
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/imagetoolkit"
   - repo: linuxdeepin/uos-ai-rag
-    tagsha: "5a60e485d2bff6e35e2c837ec5d154570f5e1d88"
+    tagsha: "54efb6fe1c492f791c17adce70064098f1a0547f"
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/base/uos-ai-rag"
   - repo: linuxdeepin/deepin-modelhub
     tagsha: "0.0.13"
