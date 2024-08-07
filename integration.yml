@@ -19,13 +19,10 @@ repos:
   - repo: linuxdeepin/uos-ai-rag
     tagsha: "1.0.4"
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/base/uos-ai-rag"
-  - repo: linuxdeepin/deepin-ai-models
-    tagsha: "1.0.4"
-    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-ai-models"
   - repo: linuxdeepin/deepin-modelhub
     tagsha: "0.0.13"
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-ai-models"
   - repo: linuxdeepin/dde-grand-search
     tagsha: b02827fcb0908fd96b716eb300bd1a034b11a524
-  - repo: linuxdeepin/dde-grand-search
-    tagsha: b02827fcb0908fd96b716eb300bd1a034b11a524
+  - repo: linuxdeepin/deepin-ai-daemon
+    tagsha: 80185a51754d62d0b407763acca56d7f28e71c5a
