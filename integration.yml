@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: defaultfont by @zsien to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/deepin-desktop-theme
-      tagsha: 614f2a1f750bfc763f467de070d11eb39430a048
+      tagsha: b31a7331851be697c682fae8c0ab8a6a294e82d8
     - repo: linuxdeepin/dde-appearance
       tagsha: 3318ad128f435fa3a4ed8671f14003188a8f360f
