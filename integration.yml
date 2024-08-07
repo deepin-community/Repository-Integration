@@ -14,7 +14,7 @@ repos:
     tagsha: "1.3.5"
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/uos-ai"
   - repo: linuxdeepin/imagetoolkits 
-    tagsha: "0.0.8"
+    tagsha: "e1e6f256af702e0036adfa87695061abf0fe6d92"
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/imagetoolkit"
   - repo: linuxdeepin/uos-ai-rag
     tagsha: "1.0.4"
