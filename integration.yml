@@ -11,5 +11,21 @@ repos:
     # Not required, but need one of tag and tagsha info
     # When use tag info, integration workflow will check repository tag and build tag version
     # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "1.3.4"
+    tagsha: "1.3.5"
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/uos-ai"
+  - repo: linuxdeepin/imagetoolkits 
+    tagsha: "0.0.8"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/imagetoolkit"
+  - repo: linuxdeepin/uos-ai-rag
+    tagsha: "1.0.4"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/base/uos-ai-rag"
+  - repo: linuxdeepin/deepin-ai-models
+    tagsha: "1.0.4"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-ai-models"
+  - repo: linuxdeepin/deepin-modelhub
+    tagsha: "0.0.13"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-ai-models"
+  - repo: linuxdeepin/dde-grand-search
+    tagsha: b02827fcb0908fd96b716eb300bd1a034b11a524
+  - repo: linuxdeepin/dde-grand-search
+    tagsha: b02827fcb0908fd96b716eb300bd1a034b11a524
