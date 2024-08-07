@@ -1,6 +1,6 @@
 # Required
-message: chore:integration dde-grand-search
+message: chore:integration deepin-ai-daemon
 milestone: V23-Release
 repos: 
-  - repo: linuxdeepin/dde-grand-search
-    tagsha: b02827fcb0908fd96b716eb300bd1a034b11a524
+  - repo: linuxdeepin/deepin-ai-daemon
+    tagsha: b141d89ba4ed11742902c440485517f175ea9f84
