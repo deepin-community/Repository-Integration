@@ -2,4 +2,4 @@ message: 'Auto integrate from topic: gcc-12 by @UTsweetyfish to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/gcc-defaults
-      tagsha: 42aa5dced4f4a2fb667d90c681ab63121c7bceed
+      tagsha: 0f1d616ada70321af868df38928d780ae2a466a2
