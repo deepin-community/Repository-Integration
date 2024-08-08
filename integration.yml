@@ -22,6 +22,9 @@ repos:
   - repo: linuxdeepin/deepin-modelhub
     tagsha: "0.0.13"
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-modelhub"
+  - repo: linuxdeepin/deepin-ai-models
+    tagsha: "1.0.4"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-ai-models"    
   - repo: linuxdeepin/dde-grand-search
     tagsha: b02827fcb0908fd96b716eb300bd1a034b11a524
   - repo: linuxdeepin/deepin-ai-daemon
