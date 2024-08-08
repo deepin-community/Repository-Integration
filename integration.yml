@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-file-manager
       tagsha: 5853085b8dcc3af634691bbfdfa2fa4492d71d94
+    - repo: linuxdeepin/deepin-diskmanager
+      tagsha: 69c4812365937d5ea7829127b8193ff6edbd7c2f
