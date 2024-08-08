@@ -9,3 +9,5 @@ repos:
       tagsha: 4a94e79fd846d6881e2b01fbb6544ac639dcb093
     - repo: linuxdeepin/deepin-camera
       tagsha: 1698f2b68eaefa139c02bde1f8c7d1e4c2115eb3
+    - repo: linuxdeepin/util-dfm
+      tagsha: ac244da192f60981ad85a5fb583d033d05a95231
