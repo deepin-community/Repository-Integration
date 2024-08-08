@@ -8,7 +8,7 @@ repos:
     - repo: linuxdeepin/dde-appearance
       tagsha: b17cd29330f1d366014167996364f9321f747abb
     - repo: linuxdeepin/dde-shell
-      tagsha: 59a3a29bd4e0ed80eb942df6bcba081e5a42e407
+      tagsha: 727d44e6c7ad74a487e721dc007cbf7e097061e2
     - repo: linuxdeepin/dde-tray-loader
       tagsha: 27808c931e28515ed5864a594d6862c144c43dfa
     - repo: linuxdeepin/dde-network-core
