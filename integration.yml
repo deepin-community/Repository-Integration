@@ -6,10 +6,28 @@ milestone: V23-Release
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
+  - repo: linuxdeepin/uos-ai
     # Not required
-    tag: 5.11.22
     # Not required, but need one of tag and tagsha info
     # When use tag info, integration workflow will check repository tag and build tag version
     # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    tagsha: "1.3.5"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/uos-ai"
+  - repo: linuxdeepin/imagetoolkits 
+    tagsha: "e1e6f256af702e0036adfa87695061abf0fe6d92"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/imagetoolkit"
+  - repo: linuxdeepin/uos-ai-rag
+    tagsha: "54efb6fe1c492f791c17adce70064098f1a0547f"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/base/uos-ai-rag"
+  - repo: linuxdeepin/deepin-modelhub
+    tagsha: "0.0.13"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-modelhub"
+  - repo: linuxdeepin/deepin-ai-models
+    tagsha: "1.0.4"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-ai-models"    
+  - repo: linuxdeepin/dde-grand-search
+    tagsha: b02827fcb0908fd96b716eb300bd1a034b11a524
+  - repo: linuxdeepin/deepin-ai-daemon
+    tagsha: 80185a51754d62d0b407763acca56d7f28e71c5a
+  - repo: linuxdeepin/dtkmultimedia
+    tagsha: eab06c3e54aa373a1c998833a435bccf09515c00
