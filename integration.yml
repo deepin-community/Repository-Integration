@@ -13,3 +13,5 @@ repos:
       tagsha: 8cc5ffb561264b602f82fcfe23d985aa91c9d230
     - repo: linuxdeepin/dde-network-core
       tagsha: aae5dfa0700cf0dcd85eeaf235014db7e62e4ac8
+    - repo: linuxdeepin/deepin-osconfig
+      tagsha: b9cb18a1f29461c9fb8838cbbe6f5ab0617b2dee
