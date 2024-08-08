@@ -29,3 +29,5 @@ repos:
     tagsha: b02827fcb0908fd96b716eb300bd1a034b11a524
   - repo: linuxdeepin/deepin-ai-daemon
     tagsha: 80185a51754d62d0b407763acca56d7f28e71c5a
+  - repo: linuxdeepin/dtkmultimedia
+    tagsha: eab06c3e54aa373a1c998833a435bccf09515c00
