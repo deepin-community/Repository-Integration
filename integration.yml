@@ -4,7 +4,7 @@ repos:
     - repo: linuxdeepin/dde-api-proxy
       tagsha: 56cbb8826527e6e114789968eefc29e4e7c5cc48
     - repo: linuxdeepin/dde-launchpad
-      tagsha: ec27303b9baa80ad8073a7b6bfc0289e417d88f7
+      tagsha: 34f17211fff206fb75cecb7ed6eca878ce40d22e
     - repo: linuxdeepin/dde-appearance
       tagsha: b17cd29330f1d366014167996364f9321f747abb
     - repo: linuxdeepin/dde-shell
