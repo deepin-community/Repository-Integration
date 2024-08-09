@@ -1,15 +1,21 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: shell-testing-20240808 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dde-api-proxy
+      tagsha: 56cbb8826527e6e114789968eefc29e4e7c5cc48
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: 6e221b5e2b2c8bcde4a5d351260c032daaa68e80
+    - repo: linuxdeepin/dde-appearance
+      tagsha: b17cd29330f1d366014167996364f9321f747abb
+    - repo: linuxdeepin/dde-shell
+      tagsha: 06a4766eda233db7f7d6a61339575777edbe5cea
+    - repo: linuxdeepin/dde-tray-loader
+      tagsha: 170c3b3e503abd27355b10bbaff2da46ec80d61d
+    - repo: linuxdeepin/dde-network-core
+      tagsha: aae5dfa0700cf0dcd85eeaf235014db7e62e4ac8
+    - repo: linuxdeepin/deepin-osconfig
+      tagsha: b9cb18a1f29461c9fb8838cbbe6f5ab0617b2dee
+    - repo: linuxdeepin/dde-session
+      tagsha: aa3689edfddee6f1103a65bbc454fcc6190ac805
+    - repo: linuxdeepin/deepin-screen-recorder
+      tagsha: 5068dda837485fb72803c7f48f8b05dc035daec7
