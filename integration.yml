@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: hiredis-1.2.0 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/hiredis
+      tagsha: 9a0c3cc86e4349216eddfb2260420c4266bb741b
+    - repo: deepin-community/ccache
+      tagsha: 359e23becb3916b1e132a0c8126bf6a56327a171
+    - repo: deepin-community/ruby-hiredis
+      tagsha: cc303ea4da445f21c830c51f3100f21c38169ad9
+    - repo: deepin-community/rsyslog
+      tagsha: 8a1ef688121c143742387549402a15ff421187fc
+    - repo: deepin-community/python-hiredis
+      tagsha: 4a933829a47c7fed08c9de20f02a4c54484b29ed
