@@ -1,15 +1,23 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: gstreamer-1.24.6 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/gstreamer1.0
+      tagsha: 34d12232598b60f2cd2727e23864ce938c4e7238
+    - repo: deepin-community/gst-rtsp-server1.0
+      tagsha: 08b729bfadd8620db0e9d214b4a0344e7ac94246
+    - repo: deepin-community/gst-plugins-ugly1.0
+      tagsha: ea0049850026423a6a57493deeec60f9d6e9c2a2
+    - repo: deepin-community/gstreamer-vaapi
+      tagsha: 15cb181f4c2d44be99874b3f4c8ef5c60eab154d
+    - repo: deepin-community/gst-python1.0
+      tagsha: 8b5fce71bb15c4b02db1cce414cccd44263cbb25
+    - repo: deepin-community/gst-libav1.0
+      tagsha: 8ba099c912e65d537344fba29503b9c57fd6c8d2
+    - repo: deepin-community/gstreamer-editing-services1.0
+      tagsha: 357cfd4d1aef91c3fedd41147a97986fe750486e
+    - repo: deepin-community/gst-plugins-good1.0
+      tagsha: d9774578597b36cb011dd66f26f077fa7f9becdf
+    - repo: deepin-community/gst-plugins-base1.0
+      tagsha: ae1d71c73d9e6c0e9f68c0bc21528a8e15e96294
+    - repo: deepin-community/gst-plugins-bad1.0
+      tagsha: 62b02176906a77de6225e6f22ba5176b1624d062
