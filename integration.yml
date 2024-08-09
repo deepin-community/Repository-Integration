@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: desktop-20240808 by @Zeno-sole to V23-Beta3
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/default-settings
-      tagsha: bb9667bdfe1765d5b18fc2ec2149b9bc46fe0c8d
+      tagsha: 04a595168fa2782dba84a2c882435032605c56cd
     - repo: linuxdeepin/deepin-home
-      tagsha: d1a66c88f344f9eacd742b7431ffab4154ea10f4
+      tagsha: 22660b796303412bd657a5fd0eb94883d483f691
