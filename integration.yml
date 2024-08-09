@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: vioken-0.2.0-alpha2+git+20240808-deepin by 
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/qwlroots
-      tagsha: 53def498202411dbd73beddf76878757b9fc0376
+      tagsha: c9c29af337981ae9ed5576b510f3f5b3ca2f769c
     - repo: deepin-community/waylib
-      tagsha: b2c9a93b002054f065ccab7909cd27eab292ac11
+      tagsha: 86d11dd3d13b39ae986357ee764f23b1874d625a
