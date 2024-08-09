@@ -17,3 +17,5 @@ repos:
       tagsha: b9cb18a1f29461c9fb8838cbbe6f5ab0617b2dee
     - repo: linuxdeepin/dde-session
       tagsha: aa3689edfddee6f1103a65bbc454fcc6190ac805
+    - repo: linuxdeepin/deepin-screen-recorder
+      tagsha: 5068dda837485fb72803c7f48f8b05dc035daec7
