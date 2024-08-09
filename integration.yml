@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: shell-testing-20240808 by @yixinshark to V23-Beta3'
+message: 'Auto integrate from topic: shell-testing-20240808 by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-api-proxy
