@@ -9,3 +9,5 @@ repos:
       tagsha: cc303ea4da445f21c830c51f3100f21c38169ad9
     - repo: deepin-community/rsyslog
       tagsha: 8a1ef688121c143742387549402a15ff421187fc
+    - repo: deepin-community/python-hiredis
+      tagsha: 4a933829a47c7fed08c9de20f02a4c54484b29ed
