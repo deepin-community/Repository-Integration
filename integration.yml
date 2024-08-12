@@ -6,7 +6,7 @@ repos:
     - repo: linuxdeepin/dde-launchpad
       tagsha: 6e221b5e2b2c8bcde4a5d351260c032daaa68e80
     - repo: linuxdeepin/dde-appearance
-      tagsha: b17cd29330f1d366014167996364f9321f747abb
+      tagsha: 879a91305a1ebc1fc1faea24766cda65772afef5
     - repo: linuxdeepin/dde-shell
       tagsha: 0f6b9ff4fb77f17251f985631c7e970a0c7fab02
     - repo: linuxdeepin/dde-tray-loader
