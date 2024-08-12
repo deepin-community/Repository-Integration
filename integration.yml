@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: shell-testing-20240808 by @ArchieMeng to V23-Beta3'
+message: 'Auto integrate from topic: shell-testing-20240808 by @yixinshark to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-api-proxy
@@ -10,7 +10,7 @@ repos:
     - repo: linuxdeepin/dde-shell
       tagsha: 0f6b9ff4fb77f17251f985631c7e970a0c7fab02
     - repo: linuxdeepin/dde-tray-loader
-      tagsha: 11d474f77f5adbbfe3096edc572fe4f2273d24d6
+      tagsha: bdb6fcd1f2c521df30f9f04398d14549ee2590e0
     - repo: linuxdeepin/dde-network-core
       tagsha: aae5dfa0700cf0dcd85eeaf235014db7e62e4ac8
     - repo: linuxdeepin/deepin-osconfig
@@ -23,3 +23,5 @@ repos:
       tagsha: b161d399029271be05b199ee3dd419ab3052b37d
     - repo: linuxdeepin/deepin-deepinid-plugin
       tagsha: 372880cc1190feeb72e26fa4ac91452812636903
+    - repo: linuxdeepin/dde-tray-loader
+      tagsha: b44f8421c8cae856573ec3dadbbb0f2df6a23174
