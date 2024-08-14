@@ -6,6 +6,6 @@ repos:
     - repo: linuxdeepin/dde-control-center
       tagsha: e50e8a8643fdf85feccccdd48d6504b7e8a4f275
     - repo: linuxdeepin/dde-shell
-      tagsha: 6b536af4133c82d25d921d1faa91072745ad3195
+      tagsha: b8dc267c8d7eb8bcab0267f4c6dfc62b14474c0e
     - repo: linuxdeepin/deepin-screen-recorder
       tagsha: afc8cf7927bbe6ca161789aecec1f8125a91685f
