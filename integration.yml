@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: shell-vectory-20240821 by @yixinshark to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dde-tray-loader
+      tagsha: 85704957f9b9ba310767789f1b0a5f276f43ec9d
+    - repo: linuxdeepin/dde-shell
+      tagsha: 236ccf0bcb52a5ba25c18b7600e87c47d7fb9e5e
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: a1b8ae80243f3c8aa676e243e3d918b67ded1128
