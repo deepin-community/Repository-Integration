@@ -1,7 +1,9 @@
-message: 'Auto integrate from topic: treeland-0.3 by @justforlxz to V23-Beta3'
+message: 'Auto integrate from topic: treeland-0.3 by @tsic404 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/treeland.private
-      gitaddr: "git@github.com:linuxdeepin/treeland.private.git"
+      tagsha: 87a8ad5c46af91425f32239ed27fa452b73cde07
+    - repo: linuxdeepin/ddm
+      tagsha: db788585836f3f554af1bf0a4e33049b68b3be43
     - repo: linuxdeepin/dde-shell
-      tagsha: 2a61e13321532db11c974a9ed52e313fce280cfc
+      tagsha: 8ec2656b274eab2f1e47bec8798953a03547d011
