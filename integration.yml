@@ -1,15 +1,23 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: normalize-20240827 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/zinnia
+      tagsha: 913dcb41ce9c8538a63a95ff9c5dc3807c49e131
+    - repo: deepin-community/kyotocabinet
+      tagsha: cead559defcb26499f165dbd77f781e7d483582c
+    - repo: deepin-community/kscreenlocker
+      tagsha: 8f21c7b08f4dc79570865890b01af82c2a312f15
+    - repo: deepin-community/blur-effect
+      tagsha: 77eccba903b72eee71c9d8fda9584aca7d4af32b
+    - repo: deepin-community/seetaface-boxes
+      tagsha: 5ee0c0b5e7170a4f034fd6212bf7996628a304a9
+    - repo: deepin-community/opencc
+      tagsha: efb7ce84f111f9835a5b3a80e2a70d30e97a7f52
+    - repo: deepin-community/seetaface-authorize
+      tagsha: cce35a43162b829d1434bd623da42edd051715aa
+    - repo: deepin-community/sunpinyin
+      tagsha: d333c4455e4504f95ac114143ce0befcc8be1949
+    - repo: deepin-community/x265
+      tagsha: 8d8286986c9da78ca47519960cd898b781eb8539
+    - repo: deepin-community/keyman-keyboardprocessor
+      tagsha: 4e89bb79e4e247fc54f9137d4b1c2eb7e6afc980
