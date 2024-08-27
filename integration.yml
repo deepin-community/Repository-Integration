@@ -3,8 +3,6 @@ milestone: V23-Beta3
 repos:
     - repo: deepin-community/zinnia
       tagsha: 913dcb41ce9c8538a63a95ff9c5dc3807c49e131
-    - repo: deepin-community/kyotocabinet
-      tagsha: cead559defcb26499f165dbd77f781e7d483582c
     - repo: deepin-community/kscreenlocker
       tagsha: 8f21c7b08f4dc79570865890b01af82c2a312f15
     - repo: deepin-community/blur-effect
@@ -21,3 +19,5 @@ repos:
       tagsha: 8d8286986c9da78ca47519960cd898b781eb8539
     - repo: deepin-community/keyman-keyboardprocessor
       tagsha: 4e89bb79e4e247fc54f9137d4b1c2eb7e6afc980
+    - repo: deepin-community/kyotocabinet
+      tagsha: 8387a7501e844a0b77e8423d4057bef4d3cde6ee
