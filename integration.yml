@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: shell-vectory-20240828 by @mhduiy to V23-Beta3'
+message: 'Auto integrate from topic: shell-vectory-20240828 by @yixinshark to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-daemon
@@ -13,3 +13,5 @@ repos:
       tagsha: 996409298ade69b855d6c96f142e6eace1044198
     - repo: linuxdeepin/dde-launchpad
       tagsha: a8dd235ede43c2f4f83033803c17bfabef7cf895
+    - repo: linuxdeepin/dde-shell
+      tagsha: d9589898ea8cdba8317c45f0d2c5fedee48f9d95
