@@ -17,3 +17,5 @@ repos:
       tagsha: d9589898ea8cdba8317c45f0d2c5fedee48f9d95
     - repo: linuxdeepin/dde-control-center
       tagsha: a5bef5a91c327b1e7933285c7cd80db671c69103
+    - repo: linuxdeepin/dde-clipboard
+      tagsha: fccf128cb306663aa041ee413b4722aa598cd8c8
