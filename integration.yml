@@ -15,3 +15,5 @@ repos:
       tagsha: a8dd235ede43c2f4f83033803c17bfabef7cf895
     - repo: linuxdeepin/dde-shell
       tagsha: d9589898ea8cdba8317c45f0d2c5fedee48f9d95
+    - repo: linuxdeepin/dde-control-center
+      tagsha: a5bef5a91c327b1e7933285c7cd80db671c69103
