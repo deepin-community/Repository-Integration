@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update generate-ninja to 0.0~git20240813.54f5b53-1 by
+  deepin-community-bot[bot]@deepin-community/generate-ninja
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/generate-ninja
+    tagsha: e7fa4b935ba60f73f80b0a46bcd982ca00235d00
+timestamp: 1725010850224
