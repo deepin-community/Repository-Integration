@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: Fix serif fontconfig by Red54@linuxdeepin/default-settings
+milestone: V23-Beta3
+repos:
+  - repo: linuxdeepin/default-settings
+    tagsha: 34d4679e5678adaced006178b4fd9e06aa0d4cf2
+timestamp: 1725268655543
