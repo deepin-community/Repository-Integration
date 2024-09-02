@@ -5,3 +5,5 @@ repos:
       tagsha: 37985989dc23f7716f14f1790f04981245460313
     - repo: linuxdeepin/deepin-devicemanager
       tagsha: a2e4e571183b0932a4699a5dc63fa414994a47f6
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 0edd84737e7316caee15bc03123b9fbe3369e125
