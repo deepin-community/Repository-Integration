@@ -2,8 +2,10 @@ message: 'Auto integrate from topic: microcode by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/iucode-tool
-      tagsha: 7c2c2483d685f15837ee3b6e939735678e4cb817
+      tagsha: 6552ab8ffcf553ec0b0a91dca62bd117f99ae791
     - repo: deepin-community/amd64-microcode
-      tagsha: d0be87fb1f1b7a5069b27f716abf490edbbba892
+      tagsha: 2e1531a8352f1e5ddd51db82c77a2371d0b75786
     - repo: deepin-community/intel-microcode
-      tagsha: 62ee5b7645c764bf0691f2a9fcb41578383a3390
+      tagsha: f4c750c68ac24795284793ee1ba11d3a3fc3423b
+    - repo: deepin-community/deepin-desktop-environment
+      tagsha: e8acc793cb89584179e1540bf2fae8a94ec4674f
