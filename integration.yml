@@ -6,12 +6,6 @@ repos:
     - repo: deepin-community/fcitx5
       tagsha: 2711e007b4c7ba2af4f33f0d0b9a358e656db602
     - repo: deepin-community/fcitx5-chinese-addons
-      tagsha: 19805aeca30e9040797c9f2cbbe1645af7e602a1
-    - repo: deepin-community/opencc
-      tagsha: 1de44077e4106a26e3560a420c8e4487c83edbcf
-    - repo: deepin-community/fcitx5-chinese-addons
-      tagsha: de659e9c8ac4156ef063e9b489a20c4f16c74df4
-    - repo: deepin-community/fcitx5-chinese-addons
       tagsha: c5e5ce570811cd9cb2bb06aa8046a5bd365710c0
     - repo: deepin-community/libime
       tagsha: 366cf4002b9e6e05ab4d8df1620e29c19d39152a
