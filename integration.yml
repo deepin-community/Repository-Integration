@@ -1,15 +1,237 @@
-# Required
 message: |
   Integrated for V23-Release
-# Not required, now default is V23-Release
 milestone: V23-Release
-# Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/akonadi
+    tag: 4:21.08.1-deepin1
+  - repo: deepin-community/apt
+    tag: 2.8.0deepin2
+  - repo: deepin-community/aptitude
+    tag: 0.8.13.1-5deepin
+  - repo: deepin-community/asymptote
+    tag: 2.70+ds-deepin1
+  - repo: deepin-community/avogadrolibs
+    tag: 1.95.1-5
+  - repo: deepin-community/binutils
+    tag: 2.41-6deepin3
+  - repo: deepin-community/blur-effect
+    tag: 1.1.3-deepin1
+  - repo: deepin-community/boost1.74
+    tag: 1.74.0+ds1-23deepin1
+  - repo: deepin-community/boost1.83
+    tag: 1.83.0-2
+  - repo: deepin-community/bullet
+    tag: 3.06+dfsg-deepin1
+  - repo: deepin-community/capnproto
+    tag: 0.9.2-2deepin1
+  - repo: deepin-community/castxml
+    tag: 0.6.2-2deepin1
+  - repo: deepin-community/ceph
+    tag: 18.2.1+ds-1deepin1
+  - repo: deepin-community/clucene-core
+    tag: 2.3.3.4.1-deepin1
+  - repo: deepin-community/courier-authlib
+    tag: 0.71.1-2
+  - repo: deepin-community/cryfs
+    tag: 0.11.4-1
+  - repo: deepin-community/cups-filters
+    tag: 1.28.17-3.1~deepin1
+  - repo: deepin-community/eccodes
+    tag: 2.35.0-1deepin1
+  - repo: deepin-community/elfutils
+    tag: 0.188-2.1deepin1
+  - repo: deepin-community/evolution-data-server
+    tag: 3.50.1-1
+  - repo: deepin-community/fcitx5
+    tag: 5.1.10-1deepin4
+  - repo: deepin-community/fcitx5-configtool
+    tag: 5.1.2-1deepin6
+  - repo: deepin-community/fcitx5-qt
+    tag: 5.1.3-1deepin1
+  - repo: deepin-community/galera-4
+    tag: 26.4.16-2
+  - repo: deepin-community/gcc-13
+    tag: 13.2.0-3deepin3
+  - repo: deepin-community/gdcm
+    tag: 3.0.22-2deepin1
+  - repo: deepin-community/glibmm2.4
+    tag: 2.66.6-1deepin1
+  - repo: deepin-community/gpgme1.0
+    tag: 1.18.0-4deepin1
+  - repo: deepin-community/graphviz
+    tag: 2.42.2-9deepin1
+  - repo: deepin-community/gringo
+    tag: 5.6.2-1deepin1
+  - repo: deepin-community/grpc
+    tag: 1.51.1-4deepin3
+  - repo: deepin-community/imath
+    tag: 3.1.9-3
+  - repo: deepin-community/intel-mediasdk
+    tag: 22.5.4-1deepin1
+  - repo: deepin-community/ismrmrd
+    tag: 1.8.0-2
+  - repo: deepin-community/keyman-keyboardprocessor
+    tag: 11.0.101-4deepin1
+  - repo: deepin-community/kig
+    tag: 4:21.08.0-1
+  - repo: deepin-community/kscreenlocker
+    tag: 5.24.3-2deepin1
+  - repo: deepin-community/kuserfeedback
+    tag: 1.0.0-3deepin1
+  - repo: deepin-community/libcdr
+    tag: 0.1.7-1
+  - repo: deepin-community/libcmis
+    tag: 0.6.2-2
+  - repo: deepin-community/libe-book
+    tag: 0.1.3-3
+  - repo: deepin-community/libfm-qt
+    tag: 0.16.0-3.2+deepin1
+  - repo: deepin-community/libgzstream
+    tag: 1.5+git20171107.9a20658-deepin1
+  - repo: deepin-community/libixion
+    tag: 0.19.0-4deepin1
+  - repo: deepin-community/libkf5libkleo
+    tag: 4:21.08.1-deepin2
+  - repo: deepin-community/libksysguard
+    tag: 4:5.23.3.1-deepin1
+  - repo: deepin-community/libmspub
+    tag: 0.1.4-deepin1
+  - repo: deepin-community/libopenraw
+    tag: 0.1.2-0-deepin1
+  - repo: deepin-community/liborcus
+    tag: 0.19.2-3
+  - repo: deepin-community/libphonenumber
+    tag: 8.12.16-deepin
+  - repo: deepin-community/libqapt
+    tag: 3.0.5.2-deepin2
+  - repo: deepin-community/libqtxdg
+    tag: 3.12.0-1deepin1
+  - repo: deepin-community/libqxp
+    tag: 0.0.2-deepin1
+  - repo: deepin-community/libreoffice
+    tag: 4:24.2.0-1deepin2
+  - repo: deepin-community/librevenge
+    tag: 0.0.4-deepin1
+  - repo: deepin-community/libspatialaudio
+    tag: 0.3.0+git20180730+dfsg1-deepin1
+  - repo: deepin-community/libvisio
+    tag: 0.1.7-deepin1
+  - repo: deepin-community/libzmf
+    tag: 0.0.2-deepin1
+  - repo: deepin-community/litehtml
+    tag: 0.6-1deepin1
+  - repo: deepin-community/llvm-toolchain-15
+    tag: 1:15.0.7-10deepin1
+  - repo: deepin-community/llvm-toolchain-16
+    tag: 1:16.0.6-18deepin1
+  - repo: deepin-community/llvmlite
+    tag: 0.43.0-0deepin1
+  - repo: deepin-community/luceneplusplus
+    tag: 3.0.8-deepin1
+  - repo: deepin-community/lyx
+    tag: 2.3.6.1-deepin1
+  - repo: deepin-community/maildrop
+    tag: 2.9.3-deepin1
+  - repo: deepin-community/marisa
+    tag: 0.2.6.1-1+deepin17
+  - repo: deepin-community/mecab
+    tag: 0.996-deepin1
+  - repo: deepin-community/mpdecimal
+    tag: 2.5.1-2deepin1
+  - repo: deepin-community/ncnn
+    tag: 1.0.20230223-0deepin1
+  - repo: deepin-community/omniorb-dfsg
+    tag: 4.2.5+ds1-1deepin1
+  - repo: deepin-community/onboard
+    tag: 1.4.1.1-deepin7
+  - repo: deepin-community/opam
+    tag: 2.1.5-1deepin1
+  - repo: deepin-community/open-vm-tools
+    tag: 2:12.4.0-1deepin1
+  - repo: deepin-community/openbabel
+    tag: 3.1.1.1+dfsg-10deepin1
+  - repo: deepin-community/openjdk-21
+    tag: 21.0.4+7-2deepin1
+  - repo: deepin-community/presage
+    tag: 0.9.1-2.2-deepin1
+  - repo: deepin-community/protobuf
+    tag: 3.21.12-8deepin1
+  - repo: deepin-community/pstoedit
+    tag: 3.77-1deepin1
+  - repo: deepin-community/qqwing
+    tag: 1.3.4-1-deepin1
+  - repo: deepin-community/qt6-3d
+    tag: 6.6.1+dfsg-1deepin1
+  - repo: deepin-community/qt6-base
+    tag: 6.6.1+dfsg-5deepin3
+  - repo: deepin-community/qt6-declarative
+    tag: 6.6.1+dfsg-1deepin7
+  - repo: deepin-community/qt6-webengine
+    tag: 6.6.3-0deepin5
+  - repo: deepin-community/qtbase-opensource-src
+    tag: 5.15.8-1+deepin9
+  - repo: deepin-community/qtcreator
+    tag: 12.0.1-1deepin1
+  - repo: deepin-community/qtlocation-opensource-src
+    tag: 5.15.8-2deepin1
+  - repo: deepin-community/r-cran-minqa
+    tag: 1.2.4-1-deepin1
+  - repo: deepin-community/ragel
+    tag: 6.10-1-deepin1
+  - repo: deepin-community/rdfind
+    tag: 1.5.0-1.1deepin1
+  - repo: deepin-community/recoll
+    tag: 1.31.0-1deepin1
+  - repo: deepin-community/rustc
+    tag: 1.76.0+dfsg0ubuntu1-0ubuntu1deepin0
+  - repo: deepin-community/sane-backends
+    tag: 1.2.1-5deepin1
+  - repo: deepin-community/schroedinger-maeparser
+    tag: 1.2.4-deepin1
+  - repo: deepin-community/schroot
+    tag: 1.6.13-3
+  - repo: deepin-community/scim
+    tag: 1.4.18-2-deepin1
+  - repo: deepin-community/seetaface-authorize
+    tag: 1.0.0.1-2deepin1
+  - repo: deepin-community/seetaface-boxes
+    tag: 1.0.0.1-2deepin1
+  - repo: deepin-community/seetaface-tennis
+    tag: 1.0.1-0deepin1
+  - repo: deepin-community/sidplay-libs
+    tag: 2.1.1-deepin1
+  - repo: deepin-community/source-highlight
+    tag: 3.1.9-deepin2
+  - repo: deepin-community/subversion
+    tag: 1.14.3-1deepin1
+  - repo: deepin-community/sunpinyin
+    tag: 3.0.0~rc2.1-deepin1
+  - repo: deepin-community/superlu-dist
+    tag: 7.2.0+dfsg1-2
+  - repo: deepin-community/tesseract
+    tag: 5.3.0-2deepin1
+  - repo: deepin-community/thrift
+    tag: 0.19.0-2deepin1
+  - repo: deepin-community/unittestplusplus
+    tag: 2.0.0-3deepin1
+  - repo: deepin-community/vprerex
+    tag: 1:6.5.1-deepin1
+  - repo: deepin-community/vtk9
+    tag: 9.1.0+really9.1.0+dfsg2-7deepin1
+  - repo: deepin-community/wxwidgets3.0
+    tag: 3.0.5.1+dfsg-deepin1
+  - repo: deepin-community/x265
+    tag: 3.5-deepin1
+  - repo: deepin-community/xalan
+    tag: 1.12-6
+  - repo: deepin-community/xdmf
+    tag: 3.0+git20190531-10deepin1
+  - repo: deepin-community/xerces-c
+    tag: 3.2.3.1-deepin
+  - repo: deepin-community/z3
+    tag: 4.8.12-deepin2
+  - repo: deepin-community/zinnia
+    tag: 0.06-7deepin1
+  - repo: deepin-community/zxing-cpp
+    tag: 1.4.0-3deepin1
