@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  cheat: usec: adapting for umac of usec. by
+  luxinyou@deepin-community/util-linux
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/util-linux
+    tagsha: 52de30434c2ff676e75fb1b1bea1b960b446fc32
+timestamp: 1725428613096
