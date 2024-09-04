@@ -10,7 +10,7 @@ repos:
     - repo: deepin-community/seetaface-boxes
       tagsha: 5ee0c0b5e7170a4f034fd6212bf7996628a304a9
     - repo: deepin-community/opencc
-      tagsha: efb7ce84f111f9835a5b3a80e2a70d30e97a7f52
+      tagsha: d1dcc9d39f8ea95b69269cbc3ddd54963df71f70
     - repo: deepin-community/seetaface-authorize
       tagsha: cce35a43162b829d1434bd623da42edd051715aa
     - repo: deepin-community/x265
@@ -20,4 +20,4 @@ repos:
     - repo: deepin-community/kyotocabinet
       tagsha: 8387a7501e844a0b77e8423d4057bef4d3cde6ee
     - repo: deepin-community/sunpinyin
-      tagsha: 42d288c75eebcc9ce5d347aae55f0474870366e9
+      tagsha: c52f64916d12d2d8756b76c98ae1a885ee42cdf7
