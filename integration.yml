@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update egl-wayland to 1:1.1.15-1 by
+  deepin-community-bot[bot]@deepin-community/egl-wayland
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/egl-wayland
+    tagsha: bb38a7a33af2280031ae99ee8f8830c219f1ca0e
+timestamp: 1725515031060
