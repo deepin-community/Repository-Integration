@@ -15,8 +15,8 @@ repos:
     tagsha: 96e75af383e0e2e165437110de7a5812f160b094
   - repo: deepin-community/binutils
     tag: 2.41-6deepin3
-  - repo: deepin-community/blur-effect
-    tag: 1.1.3-deepin1
+  # - repo: deepin-community/blur-effect
+  #   tag: 1.1.3-deepin1
   - repo: deepin-community/boost1.74
     tag: 1.74.0+ds1-23deepin1
   - repo: deepin-community/boost1.83
@@ -67,16 +67,16 @@ repos:
     tagsha: 451235343ed94b85f7ff49ed0c35c98bf5fbc1d1
   - repo: deepin-community/imath
     tag: 3.1.9-3
-  - repo: deepin-community/intel-mediasdk
-    tag: 22.5.4-1deepin1
+  # - repo: deepin-community/intel-mediasdk
+  #   tag: 22.5.4-1deepin1
   - repo: deepin-community/ismrmrd
     tag: 1.8.0-2
-  - repo: deepin-community/keyman-keyboardprocessor
-    tag: 11.0.101-4deepin1
+  # - repo: deepin-community/keyman-keyboardprocessor
+  #   tag: 11.0.101-4deepin1
   - repo: deepin-community/kig
     tagsha: 028959cd319880b5188a2bcfe94c28ccc771759c
-  - repo: deepin-community/kscreenlocker
-    tag: 5.24.3-2deepin1
+  # - repo: deepin-community/kscreenlocker
+  #   tag: 5.24.3-2deepin1
   - repo: deepin-community/kuserfeedback
     tag: 1.0.0-3deepin1
   - repo: deepin-community/libcdr
@@ -109,8 +109,8 @@ repos:
     tag: 3.12.0-1deepin1
   - repo: deepin-community/libqxp
     tagsha: 687334c78555d8b1cd13b84a95f2dff387a3e8e3
-  - repo: deepin-community/libreoffice
-    tag: 4:24.2.0-1deepin2
+  # - repo: deepin-community/libreoffice
+  #   tag: 4:24.2.0-1deepin2
   - repo: deepin-community/librevenge
     tagsha: ae8f7c26a6d5c7b656b9ee047f6cc8376427f8d5
   - repo: deepin-community/libspatialaudio
@@ -151,8 +151,8 @@ repos:
     tagsha: 7f0b35b962bdd11285a95b6a16265d680c3e367c
   - repo: deepin-community/openbabel
     tagsha: 8e7f6aa2259fec226d2754daeda006bfa1c5ec9f
-  - repo: deepin-community/openjdk-21
-    tag: 21.0.4+7-2deepin1
+  # - repo: deepin-community/openjdk-21
+  #   tag: 21.0.4+7-2deepin1
   - repo: deepin-community/presage
     tagsha: 5ce48c84d6359a900a6619d174c8774d754c80eb
   - repo: deepin-community/protobuf
@@ -183,8 +183,8 @@ repos:
     tag: 1.5.0-1.1deepin1
   - repo: deepin-community/recoll
     tag: 1.31.0-1deepin1
-  - repo: deepin-community/rustc
-    tag: 1.76.0+dfsg0ubuntu1-0ubuntu1deepin0
+  # - repo: deepin-community/rustc
+  #   tag: 1.76.0+dfsg0ubuntu1-0ubuntu1deepin0
   - repo: deepin-community/sane-backends
     tag: 1.2.1-5deepin1
   - repo: deepin-community/schroedinger-maeparser
@@ -193,10 +193,10 @@ repos:
     tag: 1.6.13-3
   - repo: deepin-community/scim
     tagsha: 4865a89e895ed0f5037a055bd705d3ae1ffea5ad
-  - repo: deepin-community/seetaface-authorize
-    tag: 1.0.0.1-2deepin1
-  - repo: deepin-community/seetaface-boxes
-    tag: 1.0.0.1-2deepin1
+  # - repo: deepin-community/seetaface-authorize
+  #   tag: 1.0.0.1-2deepin1
+  # - repo: deepin-community/seetaface-boxes
+  #   tag: 1.0.0.1-2deepin1
   - repo: deepin-community/seetaface-tennis
     tag: 1.0.1-0deepin1
   - repo: deepin-community/sidplay-libs
@@ -205,24 +205,24 @@ repos:
     tag: 3.1.9-deepin2
   - repo: deepin-community/subversion
     tag: 1.14.3-1deepin1
-  - repo: deepin-community/sunpinyin
-    tag: 3.0.0~rc2.1-deepin1
+  # - repo: deepin-community/sunpinyin
+  #   tag: 3.0.0~rc2.1-deepin1
   - repo: deepin-community/superlu-dist
     tagsha: c7f194777e859be17de499155ca53bea81079dd2
   - repo: deepin-community/tesseract
     tag: 5.3.0-2deepin1
   - repo: deepin-community/thrift
     tagsha: a5da985bdadadb56f0e242e75cf1025add1889b9
-  - repo: deepin-community/unittestplusplus
-    tag: 2.0.0-3deepin1
+  # - repo: deepin-community/unittestplusplus
+  #   tag: 2.0.0-3deepin1
   - repo: deepin-community/vprerex
     tagsha: 7d26e0e9234fd4b89a20c35f232154de1b1b01b7
   - repo: deepin-community/vtk9
     tag: 9.1.0+really9.1.0+dfsg2-7deepin1
   - repo: deepin-community/wxwidgets3.0
     tagsha: 64effecc81a22eb8dd98f31c4c907f89aa49f9a8
-  - repo: deepin-community/x265
-    tag: 3.5-deepin1
+  # - repo: deepin-community/x265
+  #   tag: 3.5-deepin1
   - repo: deepin-community/xalan
     tagsha: cae777d92781636e718b4cde22d56422f9b8aac4
   - repo: deepin-community/xdmf
@@ -231,7 +231,7 @@ repos:
     tagsha: 4f2d8da1b1c0ad91c2f3f059693e21111c30c155
   - repo: deepin-community/z3
     tag: 4.8.12-deepin2
-  - repo: deepin-community/zinnia
-    tag: 0.06-7deepin1
+  # - repo: deepin-community/zinnia
+  #   tag: 0.06-7deepin1
   - repo: deepin-community/zxing-cpp
     tag: 1.4.0-3deepin1
