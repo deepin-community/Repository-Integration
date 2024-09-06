@@ -2,7 +2,6 @@ message: |
   Integrated for V23-Release
 milestone: V23-Release
 repos: 
-  # Required
   - repo: deepin-community/akonadi
     tagsha: c6e8b3d975c11f515baee3b1eebdede04c5c34ab
   - repo: deepin-community/apt
