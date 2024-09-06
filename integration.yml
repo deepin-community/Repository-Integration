@@ -140,7 +140,7 @@ repos:
   - repo: deepin-community/mpdecimal
     tag: 2.5.1-2deepin1
   - repo: deepin-community/ncnn
-    tag: 1.0.20230223-0deepin1
+    tagsha: 991ed57906bc8df37c6eaf117c81f48e143b2018
   - repo: deepin-community/omniorb-dfsg
     tag: 4.2.5+ds1-1deepin1
   - repo: deepin-community/onboard
@@ -190,7 +190,7 @@ repos:
   - repo: deepin-community/schroedinger-maeparser
     tagsha: f5956d1a90ad6d6c9a320dba7d4abf851728a050
   - repo: deepin-community/schroot
-    tag: 1.6.13-3
+    tagsha: 338bd9dbda764c34ed5a845ba73830dab441548b
   - repo: deepin-community/scim
     tagsha: 4865a89e895ed0f5037a055bd705d3ae1ffea5ad
   # - repo: deepin-community/seetaface-authorize
@@ -220,7 +220,7 @@ repos:
   - repo: deepin-community/vtk9
     tag: 9.1.0+really9.1.0+dfsg2-7deepin1
   - repo: deepin-community/wxwidgets3.0
-    tagsha: 64effecc81a22eb8dd98f31c4c907f89aa49f9a8
+    tagsha: 3acc7a850268b93ebc2f01dff36bd8e2902f3b5a
   # - repo: deepin-community/x265
   #   tag: 3.5-deepin1
   - repo: deepin-community/xalan
