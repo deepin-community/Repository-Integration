@@ -10,6 +10,6 @@ repos:
     - repo: linuxdeepin/dde-tray-loader
       tagsha: df5ade84c54a0c2edad3df78ed5f77708c9015ca
     - repo: linuxdeepin/dde-shell
-      tagsha: 5165f3ec1bc9b1c9e313d87f3c01e51bf6007cd5
+      tagsha: c7fd952d623491d8fa0f0c4766a465f9e3f503a5
     - repo: linuxdeepin/deepin-deepinid-client
       tagsha: 6afb33ac55fcf9a260d2fe7aa70e0b43a35af346
