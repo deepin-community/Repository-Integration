@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update gcc-12-cross to 19 by
+  deepin-community-bot[bot]@deepin-community/gcc-12-cross
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/gcc-12-cross
+    tagsha: 6d2ebf8c22a7236664c70aed7f7abaca5f25c40f
+timestamp: 1725876684607
