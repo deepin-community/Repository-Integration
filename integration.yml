@@ -11,3 +11,5 @@ repos:
       tagsha: d2098bd5cc81186fd1560c2f7d06bd7a126444ce
     - repo: deepin-community/embree
       tagsha: 9720f587ff03f82b1acec4c1e515b12980c92105
+    - repo: deepin-community/opencolorio
+      tagsha: 897efcd56bee2ad6da28208a967d8dc1cba4297b
