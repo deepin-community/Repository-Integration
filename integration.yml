@@ -2,8 +2,6 @@ message: |
   Integrated for V23-Release
 milestone: V23-Release
 repos: 
-  - repo: deepin-community/akonadi
-    tagsha: c6e8b3d975c11f515baee3b1eebdede04c5c34ab
   - repo: deepin-community/apt
     tag: 2.8.0deepin2
   - repo: deepin-community/aptitude
@@ -32,8 +30,6 @@ repos:
     tag: 2.3.3.4.1-deepin1
   - repo: deepin-community/courier-authlib
     tagsha: 161941f7d2e97ec1e521e9f247288b0aeb50c3f3
-  - repo: deepin-community/cryfs
-    tag: 0.11.4-1
   - repo: deepin-community/cups-filters
     tagsha: 93a635a8df1091cf67401c86b6b30be14744219f
   - repo: deepin-community/eccodes
