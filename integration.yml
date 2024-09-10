@@ -4,7 +4,7 @@ repos:
     - repo: deepin-community/ispc
       tagsha: 9a283194a6eea453c4009874900332b283846a5c
     - repo: deepin-community/openvdb
-      tagsha: 63601d1c66e0d472a3ea9ef1c4938b09d8e5c34a
+      tagsha: 90b4f4be4c6232cfc82500e738214c60e47d89de
     - repo: deepin-community/openimageio
       tagsha: 51345559b03ad5fff0a3f3b0f525fce24bf8a4c9
     - repo: deepin-community/blender
@@ -13,3 +13,5 @@ repos:
       tagsha: 9720f587ff03f82b1acec4c1e515b12980c92105
     - repo: deepin-community/opencolorio
       tagsha: 897efcd56bee2ad6da28208a967d8dc1cba4297b
+    - repo: deepin-community/pystring
+      tagsha: 3193d99e387f7b6b1f366fd4b76a4eb0dcfe76ce
