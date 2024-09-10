@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: blender by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/ispc
+      tagsha: 9a283194a6eea453c4009874900332b283846a5c
+    - repo: deepin-community/openvdb
+      tagsha: 63601d1c66e0d472a3ea9ef1c4938b09d8e5c34a
+    - repo: deepin-community/openimageio
+      tagsha: 51345559b03ad5fff0a3f3b0f525fce24bf8a4c9
+    - repo: deepin-community/blender
+      tagsha: d2098bd5cc81186fd1560c2f7d06bd7a126444ce
+    - repo: deepin-community/embree
+      tagsha: 9720f587ff03f82b1acec4c1e515b12980c92105
