@@ -50,8 +50,6 @@ repos:
     tag: 5.1.3-1deepin1
   - repo: deepin-community/galera-4
     tagsha: aa02590838d3d5512fea19e396b1b89b295dc3dc
-  - repo: deepin-community/gcc-13
-    tag: 13.2.0-3deepin3
   - repo: deepin-community/gdcm
     tag: 3.0.22-2deepin1
   - repo: deepin-community/glibmm2.4
