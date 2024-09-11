@@ -6,7 +6,7 @@ repos:
     - repo: linuxdeepin/deepin-deepinid-client
       tagsha: bc9cdbcec5b91f8d4ad0a24ab1a610ae60c8ecbd
     - repo: linuxdeepin/dde-shell
-      tagsha: af80176c1368460bc719df2e85c82bc4074b1435
+      tagsha: ec397442cf628a2b3bc954c513782c54934a59ba
     - repo: linuxdeepin/dde-launchpad
       tagsha: 8e5f68b86a5979b5bdad9eb38e8be5525287c486
     - repo: linuxdeepin/dde-network-core
