@@ -4,7 +4,7 @@ repos:
     - repo: deepin-community/ispc
       tagsha: 9a283194a6eea453c4009874900332b283846a5c
     - repo: deepin-community/openvdb
-      tagsha: f9f6a9afeb4e261fd0edb33e114cc509d3138725
+      tagsha: 7af3cf029a548db906f186c5caedb3f5571916ea
     - repo: deepin-community/openimageio
       tagsha: 51345559b03ad5fff0a3f3b0f525fce24bf8a4c9
     - repo: deepin-community/blender
