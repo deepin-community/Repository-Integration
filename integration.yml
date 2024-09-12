@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: fix-bug-testing-20240911 by @FeiWang1119 to V23-Beta3'
+message: 'Auto integrate from topic: fix-bug-testing-20240911 by @ArchieMeng to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-clipboard
@@ -10,4 +10,4 @@ repos:
     - repo: linuxdeepin/dde-launchpad
       tagsha: 8e5f68b86a5979b5bdad9eb38e8be5525287c486
     - repo: linuxdeepin/dde-network-core
-      tagsha: c57289a48bb44d0d5bf08b675e06ce1487218b3f
+      tagsha: 775a630ed32790b0c2c05287995477095653a475
