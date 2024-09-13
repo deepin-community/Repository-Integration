@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: vioken-0.3.0 by @justforlxz to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/qwlroots
-      tagsha: 265b054a63b1f38b9d96fe94545326aa3a0fecd2
+      tagsha: 1801772c0c675f418482be4cd13b786ce054a15c
     - repo: deepin-community/waylib
-      tagsha: e194b191a70cdfec0c91d7b4d80022bc977f8979
+      tagsha: b0671421ce770b991e01e54c93c21ce6b89d7389
