@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: curl-8.10.0 by @UTsweetyfish to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/curl
-      tagsha: 7c9bf330726264d3a67f5b2adcb140361a5f0ba5
+      tagsha: 4d329e06cd7fb173ae37b0575761fc91f1e2eb93
     - repo: deepin-community/libvirt-python
       tagsha: 2675c8cdd49adcd71b1f6a7002a99cd3f5e65d2a
     - repo: deepin-community/libvirt
