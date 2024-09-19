@@ -13,3 +13,5 @@ repos:
       tagsha: 8e0abe63ebaed9cbcc59d9ea5a4732058afbce63
     - repo: deepin-community/wireshark
       tagsha: 98020018f8f2bd9d00e726460f64d349906f4d8b
+    - repo: deepin-community/mdevctl
+      tagsha: 46fd867d560092b07398a9ffcbf65fc4041130fb
