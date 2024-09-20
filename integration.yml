@@ -1,15 +1,605 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: gcc-12-20240919 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/ann
+      tagsha: ea38f016475004aaba9b8c5ceb80edfd4f1f1cc5
+    - repo: deepin-community/aria2
+      tagsha: 5790b27df86f6d8e0c1d8ed2b2b021c3b4600ab2
+    - repo: deepin-community/ark
+      tagsha: 744ed8c0a8c1e72df5309a047b64f6740f2f660e
+    - repo: deepin-community/aspcud
+      tagsha: 716b2e4850be02fb8fe89373ffac2960581ff775
+    - repo: deepin-community/assimp
+      tagsha: 8383b377911886baab15ff48b5ad067d2af8c5a9
+    - repo: deepin-community/atf
+      tagsha: 54de3b89a8b8ee2fb23123d091d44bda50f2791f
+    - repo: deepin-community/audacity
+      tagsha: 90363e57a66200037faf280f31fc59099763a825
+    - repo: deepin-community/baloo-kf5
+      tagsha: 528b4a486ddf963bfb454babc738f2bfb34511b0
+    - repo: deepin-community/baloo-widgets
+      tagsha: fadedb5dd9dc2760ef9f1260df0477daf1c298e1
+    - repo: deepin-community/bctoolbox
+      tagsha: fc8d3359ce935ddfb1eebada220b5cfb8dc44506
+    - repo: deepin-community/belr
+      tagsha: 063122e43a2872073a2a779d0d1c3a1832a0d48e
+    - repo: deepin-community/benchmark
+      tagsha: 22dc94528f67d7e292abdb2bc05ff2269353fe71
+    - repo: deepin-community/botan
+      tagsha: bf8dda3b5fef4c091ea91445c3ccb5f1eea0a3df
+    - repo: deepin-community/brlaser
+      tagsha: b67aecc69c8fd708c51c07a771be54fff32493e1
+    - repo: deepin-community/cairomm
+      tagsha: 53b9cf47c4818759851a9c1f8bc96a0198dbd99f
+    - repo: deepin-community/cdrdao
+      tagsha: c8c5af4c708dac90625c034cddb72cb9c6fd2bf7
+    - repo: deepin-community/chromaprint
+      tagsha: 99d02bb6ac513edd1c5f5c37fd578c75c2422948
+    - repo: deepin-community/clasp
+      tagsha: 25df671ec30edb7117cf340186d6035c72fab52b
+    - repo: deepin-community/cln
+      tagsha: d63a95f55f57d1924ac3a66dce70050b5a494014
+    - repo: deepin-community/clp
+      tagsha: 1b0e630790a348b7aade9b47736ce376b77ea288
+    - repo: deepin-community/cmake
+      tagsha: ab6e13170cc0cca4538a1123c3542f840e72c1cd
+    - repo: deepin-community/coinmp
+      tagsha: e8b63cbf81fe197199279e1aabc05fd43e32587d
+    - repo: deepin-community/coinor-cbc
+      tagsha: f586d338abdba2f8b3ec1528eceb08c225fda408
+    - repo: deepin-community/coinor-cgl
+      tagsha: 8803dc6cc64148ad5c5787621145eab5ddc2ee4a
+    - repo: deepin-community/coinor-osi
+      tagsha: 498db7ab59260b634d03cefa173adea36c793089
+    - repo: deepin-community/coinutils
+      tagsha: 878b93365f310cce06f2982b916855d77192dd77
+    - repo: deepin-community/combblas
+      tagsha: c9ddc3907f11d47da07841ce3fc339708402d938
+    - repo: deepin-community/compreffor
+      tagsha: a9cccbb7d676e4ec53ecd5b18dd5e2362bb9f667
+    - repo: deepin-community/contourpy
+      tagsha: 2a3c571eda33b7741edb209ed4b69bfe4d139982
+    - repo: deepin-community/cppunit
+      tagsha: 9cce9904e9f8c57ad3669b5a4fdb14867c7d7679
+    - repo: deepin-community/crossguid
+      tagsha: e69120949b51d49307dd4eb509580589f8e75544
+    - repo: deepin-community/darts
+      tagsha: 1f8f0619bc8b2e3f4187d386e8751b12b38a58e3
+    - repo: deepin-community/db5.3
+      tagsha: 40e543ebbc0bff4831ff4dff6c04720a5b093022
+    - repo: deepin-community/dbus-cplusplus
+      tagsha: a8948981f8600ccb24aff7f4887f822d59c3b00f
+    - repo: deepin-community/alglib
+      tagsha: 55c3d10ce940c66b8fb9bb939975219a018ef648
+    - repo: deepin-community/dcmtk
+      tagsha: aed186c5cdf0ac184bfec3680167cef55c2f3efe
+    - repo: deepin-community/debconf-kde
+      tagsha: 5c46e162f5887ae3b01d3b63b6fa623637a0727d
+    - repo: deepin-community/directfb
+      tagsha: c453369c46ed88159e4adb37514b8fa7294aa798
+    - repo: deepin-community/docopt.cpp
+      tagsha: 022f3999de44531c67e664f0087c2b78302eb989
+    - repo: deepin-community/dolphin
+      tagsha: cbf355fc3adc4e27d88ee9c3127e137759e2c47d
+    - repo: deepin-community/doxygen
+      tagsha: 211ecfbae796895b13cf1a29625cb5986e64f8b5
+    - repo: deepin-community/draco
+      tagsha: 373460496e20c7fc52420efd3fdcb15d95b16113
+    - repo: deepin-community/drbd-utils
+      tagsha: 63d4b27a4b1df5d4f4385be7d01e9a6c6742ba8e
+    - repo: deepin-community/dvgrab
+      tagsha: dcbf15e1aa640300763422a8503781d588b1d720
+    - repo: deepin-community/dxflib
+      tagsha: 79e750e4337e571e56893fee2d6454892c275a31
+    - repo: deepin-community/edb-debugger
+      tagsha: 443e7c6a4641710819133987978aba918254dd68
+    - repo: deepin-community/efl
+      tagsha: 61ba0ec01b6338e56fed10ab7905da8de6cbc49e
+    - repo: deepin-community/exempi
+      tagsha: 7507e13cb23785e1ed68e2236ef13068b48d62a0
+    - repo: deepin-community/exiv2
+      tagsha: 09a8bd663c488d47e345876a8ad46237f5d1d5c6
+    - repo: deepin-community/fbreader
+      tagsha: 2565c5e7494cda504df06955dc70cc4debfcc7cd
+    - repo: deepin-community/fcitx5-anthy
+      tagsha: c84622e0e6bac6d319071d8a891faa60249080fc
+    - repo: deepin-community/fcitx5-chewing
+      tagsha: 5e1764d32cb284808f6c8b94659617f4267ddd5f
+    - repo: deepin-community/fcitx5-chinese-addons
+      tagsha: 56ccad206c560493a683fd73fb82ad7db3c7beb0
+    - repo: deepin-community/fcitx5-gtk
+      tagsha: 86bea18a3c3a4076d04fc906da9a2a781ea12f10
+    - repo: deepin-community/fcitx5-hangul
+      tagsha: 246586656fed7d393d12b5f8269bd7170b6c3cad
+    - repo: deepin-community/fcitx5-keyman
+      tagsha: 7381607bd129b1300c3b151477411d76bde59d7d
+    - repo: deepin-community/fcitx5-kkc
+      tagsha: 11f1fb518eafae61ac50175aeac7aada5a92a679
+    - repo: deepin-community/fcitx5-libthai
+      tagsha: c35a47482bb9b36459d65cf09d1b1b0c0c608863
+    - repo: deepin-community/fcitx5-lua
+      tagsha: 39ebcfb2337bd08c227d56c886402519852be777
+    - repo: deepin-community/fcitx5-m17n
+      tagsha: 98817fe32b6b78e662fdc914e263a5b67a2b1437
+    - repo: deepin-community/fcitx5-sayura
+      tagsha: a63ac59ec7ae7208c889308fd7297f0ca4e8c478
+    - repo: deepin-community/fcitx5-skk
+      tagsha: 13bf1efa325db6656a2ba3ed7be09dd6706374db
+    - repo: deepin-community/festival
+      tagsha: 4d8ddaf08dc7ea9c9dfb5d7d573e516732a39007
+    - repo: deepin-community/ffmpeg
+      tagsha: 798c09efb8b09124a25b0992244a030374dfd3ee
+    - repo: deepin-community/ffmpegthumbnailer
+      tagsha: 4547a4a90822621b65dc7ffeb55413c7376e97bb
+    - repo: deepin-community/ffms2
+      tagsha: f01a1e2cc96dc539651278fb97105bad613e2180
+    - repo: deepin-community/filelight
+      tagsha: aef6a519cc2038dbd3eb530d0202d4eadcc8f3a3
+    - repo: deepin-community/filezilla
+      tagsha: 483b93f83f90aabe26afdd263093fa4ea8ef1323
+    - repo: deepin-community/freeimage
+      tagsha: e09e65aa16dad6faf0f55fe4ef59c0fe329a6bd9
+    - repo: deepin-community/frei0r
+      tagsha: d59b37f6d6f19ea84aadc9647621085f17ec672f
+    - repo: deepin-community/ftgl
+      tagsha: bec7c9dc44fada7875c18730850a60cd4e5d4f84
+    - repo: deepin-community/galera-3
+      tagsha: 421506423232954a5a7553a5c680700525d8fc81
+    - repo: deepin-community/gdal
+      tagsha: d6901536ea8101cfe36a4d5df813402e21d30005
+    - repo: deepin-community/gdisk
+      tagsha: 1d4428071a6ed265d6e9754de56bd5c2d3d6d815
+    - repo: deepin-community/gegl
+      tagsha: f76473ffa2f510777960f9dbe3faeb9d91c18802
+    - repo: deepin-community/gengetopt
+      tagsha: 0f6268fa53098be8b82fdb045a55a1cefbaa478a
+    - repo: deepin-community/geos
+      tagsha: 9decddbc91bd091f8db3e5e64edbf50fc84ec553
+    - repo: deepin-community/gettext
+      tagsha: c6897f7c36378f451c17eab644c2baedafc1d1f1
+    - repo: deepin-community/gexiv2
+      tagsha: c157ff021a2ad4161c2e795adfd2e592a40429e9
+    - repo: deepin-community/gflags
+      tagsha: eea38aeea6552af2583b82c74539cf5ef2b892a6
+    - repo: deepin-community/glslang
+      tagsha: e012bea377516006876d67bb38e69bd9783e6457
+    - repo: deepin-community/gmp
+      tagsha: 7c3d3cfe6b0ee9b378fc76f2eed89096cc81de2f
+    - repo: deepin-community/gnuplot
+      tagsha: 350dd36eee363514b6bb75ff1ee3ec1d60455e02
+    - repo: deepin-community/gparted
+      tagsha: 4364c45dd225cad37c759601a2c17389b29c961f
+    - repo: deepin-community/grub-customizer
+      tagsha: 7700bb39ab7d29c6592417ae890851d261a66ca6
+    - repo: deepin-community/gstreamermm-1.0
+      tagsha: bbe44a635b5e83624819c89a08cf16f69b3ae51b
+    - repo: deepin-community/hdf5
+      tagsha: 9e22eb8905938d0803fc5b34aeaa61c35f913019
+    - repo: deepin-community/hfst-ospell
+      tagsha: 56f580a17a099cee0400c0e10f29d8517daa0dbb
+    - repo: deepin-community/highlight
+      tagsha: 5b9e2542e2b87336b5795a0d1ba3e44793012a47
+    - repo: deepin-community/hoichess
+      tagsha: 8d9fb7d8d3244e1a359e91df6db1a22aac9b9a8d
+    - repo: deepin-community/hsail-tools
+      tagsha: 0c1833a55e75d0f65a152316437849627409a019
+    - repo: deepin-community/html2text
+      tagsha: ecb66ff69552dc954850fffa691a866f86d1e0d9
+    - repo: deepin-community/htmlcxx
+      tagsha: 82ea47d2358869168a68cdea9c7c25cba7a84871
+    - repo: deepin-community/ibus-unikey
+      tagsha: d1c6256b422a9e69ae10608df7379a2ecac82b70
+    - repo: deepin-community/icecc
+      tagsha: bc7e374bb57dd4afd752282ae3a7d6ba87585dc4
+    - repo: deepin-community/icu
+      tagsha: 8d77a8be2897da5d3cad2ae412755f76331ac15c
+    - repo: deepin-community/id3lib3.8.3
+      tagsha: 5066fa8256d592b5729faab242aa0981d9fcb988
+    - repo: deepin-community/ilmbase
+      tagsha: a402f8dff6979131d3fa4856c380fb41b138393d
+    - repo: deepin-community/inkscape
+      tagsha: 0a4b0d559ce8a68bea972b8398aad8246e8f2f9f
+    - repo: deepin-community/intel-gmmlib
+      tagsha: 84d68c0bdfa8d3bdca494e039db04734e2d72502
+    - repo: deepin-community/jack-audio-connection-kit
+      tagsha: a150314b184144e9eb17a98f730efccdaf58d63c
+    - repo: deepin-community/jackd2
+      tagsha: a4e0d33b2b928e99f773e5504af69839a00ac0c8
+    - repo: deepin-community/jpeg-xl
+      tagsha: ffbbdfeebce631bfa774c8c1fd48c53a3255f3e2
+    - repo: deepin-community/juk
+      tagsha: 7ede975f8731b6a361e43f701fd01328a711f76c
+    - repo: deepin-community/kalzium
+      tagsha: 1b227c775fcf15c24eb8ca5a22b6ddb78d3211c2
+    - repo: deepin-community/kasumi
+      tagsha: 445efb8396446fdb12af6878e4b1135d13051c30
+    - repo: deepin-community/kate
+      tagsha: b3160656a2b61ea615e931d4160a078f6f8ab3c7
+    - repo: deepin-community/kcolorchooser
+      tagsha: 68d5a9e25ee93bffe48cf55cae6775e1dc4380de
+    - repo: deepin-community/kconfig
+      tagsha: f2c2f43b5b76d7174d325b21f17ee33b08bdd8a9
+    - repo: deepin-community/kcoreaddons
+      tagsha: 220a164e4b1f960046604ee4e093aff88be68d84
+    - repo: deepin-community/kdiagram
+      tagsha: 2ed5999199a37a61470622fadb96aecd7119eb6b
+    - repo: deepin-community/kdialog
+      tagsha: 86485699d284ac3efb0c21f5094a87629f52d87d
+    - repo: deepin-community/kfilemetadata-kf5
+      tagsha: b33bbeb3724d43b2d86e652db5119c652101f045
+    - repo: deepin-community/kgamma5
+      tagsha: e3c611cb6e733dddde3b36d3b4e6651fa3b90cbc
+    - repo: deepin-community/khelpcenter
+      tagsha: 19734d80c5e9d5d7a8171a73c2ec74a16003c35a
+    - repo: deepin-community/kholidays
+      tagsha: 6477143b9d2d92a760e3a1f91313608631a3090c
+    - repo: deepin-community/kimageformats
+      tagsha: 11ae23d5d85f865c1403d5df3d765755bbff401f
+    - repo: deepin-community/kimagemapeditor
+      tagsha: a916c86a1d19c72350d96c6d5d3f6148328f05a9
+    - repo: deepin-community/kio
+      tagsha: 5dc8215b720b510ffdafcfaaf4dafc8134767683
+    - repo: deepin-community/kiten
+      tagsha: 349e9643f3c45165a4bfa2f0f76a24a24fe56b34
+    - repo: deepin-community/kiwisolver
+      tagsha: f817d96fa37f880801e0162b85776c6eaf65b780
+    - repo: deepin-community/kjs
+      tagsha: ff6ffe2749102d42bf774e4534e37488d7b803bc
+    - repo: deepin-community/kleopatra
+      tagsha: b82cece574670ff118fad93fdf6eac96e82c0c9a
+    - repo: deepin-community/kmix
+      tagsha: f76d786b13fb90cab49f016995ab27dc71a038d1
+    - repo: deepin-community/kmousetool
+      tagsha: 7445cfad13223922bbcf8a7b04ce9560f7e9b3ab
+    - repo: deepin-community/kpackage
+      tagsha: 69eb8a8740ebae611f4569c6427c7560f806b319
+    - repo: deepin-community/kross
+      tagsha: 677def3c44834d774973d5d2f9d28a8c4b86512a
+    - repo: deepin-community/ksyntax-highlighting
+      tagsha: 1f1c0a1b1634e56350db11ea367c06bbae678f59
+    - repo: deepin-community/ktexteditor
+      tagsha: 9869f8096e96111862d63323710e6789d53af7b9
+    - repo: deepin-community/kturtle
+      tagsha: 7dfe691626038b4f622355c56622d44be15cd13e
+    - repo: deepin-community/kwallet-kf5
+      tagsha: 60cd8cb314ad81e4ce4c2213a71caafcd122fa78
+    - repo: deepin-community/kyotocabinet
+      tagsha: 69593f3289e6ed6953cf206a9d335dd0c249db7f
+    - repo: deepin-community/kyua
+      tagsha: df8aa42d7818934796dc9faa6f0b9c9b7cfb8a04
+    - repo: deepin-community/lib2geom
+      tagsha: 7062b6b7e35598f6e079bee60c66d4b76d770d17
+    - repo: deepin-community/libabw
+      tagsha: 41806f3a979802bc987f595173031ea6e522a1b2
+    - repo: deepin-community/libcaca
+      tagsha: 2ef4a180a89cd23a1db0fc3720eb5cfc305cab3d
+    - repo: deepin-community/libcamera
+      tagsha: 845048cf409b3a0410ce2140111bc51c7254b8b4
+    - repo: deepin-community/libcryptoplusplus
+      tagsha: 920c438c68a2a9fa3ab16b4e3c0cd93757f8bd2a
+    - repo: deepin-community/libdap
+      tagsha: 87871f9ca350d686fee735b062b5986fe7cd2e67
+    - repo: deepin-community/libde265
+      tagsha: e5499264e50c4f7cf4de998d620cac202607ca4a
+    - repo: deepin-community/libdecor-0
+      tagsha: 7295320687c3692eb7afae4cca2a97950dc61d6c
+    - repo: deepin-community/libebml
+      tagsha: b33a2e39db58bc3e1038f327f9fa382245bbb8d9
+    - repo: deepin-community/libecap
+      tagsha: 35ae666baf0bec235baeeffdd5d7129b89712e13
+    - repo: deepin-community/libemf
+      tagsha: 07c83c74fdb74ac4bef3174a3c8c393facaf9d8a
+    - repo: deepin-community/libept
+      tagsha: a0078dfe77cf2d307ffdd588bcf51a1f550ef0ba
+    - repo: deepin-community/libetonyek
+      tagsha: 8d6c7469be8b2a38d68b24b530188cb0f00ea484
+    - repo: deepin-community/libfcgi
+      tagsha: cfc59b9d3d69826aa3e58e6caed8640f0ebd7ebd
+    - repo: deepin-community/libffado
+      tagsha: 152e1596c5cda3a7bbc744b5a87400720c498fa6
+    - repo: deepin-community/libfilezilla
+      tagsha: 0450fe2c9608e41f70ffed7dc528eb7ef5a80797
+    - repo: deepin-community/libheif
+      tagsha: 9f682834471649edc5c8f5d8e91a7cb19dda14e8
+    - repo: deepin-community/libmwaw
+      tagsha: 1f3ad8410ce7941aa615e1e8f76ab3b2a1722600
+    - repo: deepin-community/libnumbertext
+      tagsha: c1909cfbecc4dbe4e3941b8394c293f4bc4864d7
+    - repo: deepin-community/libofa
+      tagsha: c9533aee8505ad61111b4a200a349b84c2668641
+    - repo: deepin-community/libofx
+      tagsha: a4cac15d3f457f93f2b1257f03c4d82ccb7b799e
+    - repo: deepin-community/libopenmpt
+      tagsha: 71c86132d2d166657cf87e57383628342b775c9e
+    - repo: deepin-community/libopenmpt-modplug
+      tagsha: 4a8e96cd169968ea78c68c2301f7f5b030f5c070
+    - repo: deepin-community/libopenshot-audio
+      tagsha: 9dce95dbfc09a6e57b9e5bf15b7a69c43b454f4b
+    - repo: deepin-community/libpagemaker
+      tagsha: 5d57445aed200b0eb4bf58433516806fcc676049
+    - repo: deepin-community/libplacebo
+      tagsha: ac3d0bc7233b27370cc99c957a9de22c65f4c146
+    - repo: deepin-community/libproxy
+      tagsha: 2011e033c03994eef03cea256bd815018b6ed5ee
+    - repo: deepin-community/libpst
+      tagsha: 184b444c3e4d3cc6a20274c090cf1f8030b3900e
+    - repo: deepin-community/librdkafka
+      tagsha: 5fbb86a9531f16a74ef3df5deb65e43de2ae7bf0
+    - repo: deepin-community/libsass
+      tagsha: 24e255808254582592b095c705a419009885427f
+    - repo: deepin-community/libsfml
+      tagsha: 326d19726bd8d6fd57e95577cc5dbba1f6fa48d4
+    - repo: deepin-community/libsidplay
+      tagsha: 0a95bab5290ceb13df58edbe2a9faac6449c9b08
+    - repo: deepin-community/libsidplayfp
+      tagsha: 81f0b2f2c48fb9cd211d48a873423a3fa417bd42
+    - repo: deepin-community/libstaroffice
+      tagsha: 9b0ba6da3aa9a65d38454ae44feb5658abfe351b
+    - repo: deepin-community/libterralib
+      tagsha: cc939d2c12133a8b4c312206291c5f03ae7cd866
+    - repo: deepin-community/libvoikko
+      tagsha: cb2fe6a2dc6d196374a5406fc7a0e3ad22c6851b
+    - repo: deepin-community/libwpd
+      tagsha: 08d213f590ec19b59c4924b77ec919d40f859bec
+    - repo: deepin-community/libwpg
+      tagsha: 0f734df34c163964e155e79a1f80f56711b2e4b0
+    - repo: deepin-community/libwps
+      tagsha: c74941b8e95ef849b7cdf723ded299f2cf87d7f6
+    - repo: deepin-community/libxmlplusplus2.6
+      tagsha: 5bb4386738b7fd1ae7e8e264f25c39c09e7a5082
+    - repo: deepin-community/lme4
+      tagsha: dfcca59705f0dcb553414fb293bbfa06cf4210ce
+    - repo: deepin-community/log4shib
+      tagsha: dcd555e8d18964ba1d3c02aea7b3f128fc8dceaf
+    - repo: deepin-community/lokalize
+      tagsha: ad1971e9be1f3a88dba9729ddc9ece97d7728a49
+    - repo: deepin-community/lshw
+      tagsha: 4b9b675bfc69a4005d465e4df1e9c5818dd3f1c1
+    - repo: deepin-community/lximage-qt
+      tagsha: 452375ac5acd61f24dbcaca9a70b9f2516980dec
+    - repo: deepin-community/lxqt-config
+      tagsha: 0816a3f21fa0bf06df98da11e6065d77751e001c
+    - repo: deepin-community/lxqt-runner
+      tagsha: 79fff07a2bba325967d5a2f1d810a77ef595890b
+    - repo: deepin-community/lxqt-sudo
+      tagsha: bc585b00edbb3fcfe647bea43417eb1812fb2a0b
+    - repo: deepin-community/lzma
+      tagsha: 7044b445502276d6df53825f4e9f581101dd8752
+    - repo: deepin-community/magicsplusplus
+      tagsha: e4a881f7774afb4121df26d5f40d1bfdb5c38d93
+    - repo: deepin-community/marble
+      tagsha: 02503c29647849892ab6ee290fd9f9d22ccd5eab
+    - repo: deepin-community/mariadb
+      tagsha: 416a3c3f2a58a0081ab7af79a45acfdaeda23973
+    - repo: deepin-community/matplotlib
+      tagsha: 265ea53605c4c0cddfc661809aa43fcc14542632
+    - repo: deepin-community/mediainfo
+      tagsha: 882fe4089298f53024044331f2072a03bc6d01e2
+    - repo: deepin-community/mimetic
+      tagsha: 32af84b8146f7fd3380516537721b14c2c281f7c
+    - repo: deepin-community/mjpegtools
+      tagsha: e46608c5c3ca08c8c6b3465ddb7bb63072213932
+    - repo: deepin-community/modsecurity
+      tagsha: d091e0dfd14c882cdbdaf1176e876f7f27e04ee2
+    - repo: deepin-community/mozjs115
+      tagsha: dd5e83975a99af52145abce0615a2caf6b3754e5
+    - repo: deepin-community/mrmpi
+      tagsha: bc094851624ea93fc00c7e3c2ec7d92bbcf6e653
+    - repo: deepin-community/muparser
+      tagsha: 584cbb2a37734ca05b662b33ffdb5fa99e3796b3
+    - repo: deepin-community/nghttp2
+      tagsha: f7f986b591a7dab2391145dc1483de1a3568d29b
+    - repo: deepin-community/ninja-build
+      tagsha: 8441cd35eb2d2fd3702e749d217cd296b6c92711
+    - repo: deepin-community/nodejs
+      tagsha: b322a5fa527306167cffb043b2aa4410308081cb
+    - repo: deepin-community/numba
+      tagsha: 316ecdd858af366d91a85915b670187eec7bfc63
+    - repo: deepin-community/nvptx-tools
+      tagsha: 668ee4ab37ec6bd31aaf618ba00c70fb9f193072
+    - repo: deepin-community/ocaml-mccs
+      tagsha: ab6312d80c5a4e3ed135c74c645cd9f5155b326a
+    - repo: deepin-community/odc
+      tagsha: 8367105becba2c515b8280efc078ef435b071662
+    - repo: deepin-community/okular
+      tagsha: 8dea91efe584473e1d487711ba899ecc9ac54dd2
+    - repo: deepin-community/onevpl
+      tagsha: 23e69ba9878583face51ea486ddc9f8de5bd07c6
+    - repo: deepin-community/opencc
+      tagsha: b0555b2d709cd4e83e4aafb6d1e4556bd325a5e7
+    - repo: deepin-community/openexr
+      tagsha: 82817cc7af1f7af8aba8b75d73ca469ad0574078
+    - repo: deepin-community/openmpi
+      tagsha: 22a7d041a9a9df1f31d33e9a8fb20516a169bacf
+    - repo: deepin-community/openni2
+      tagsha: 60052e4bf06c66fa7b3ae8676075c056cb7a5635
+    - repo: deepin-community/ortp
+      tagsha: bec5b8c5e18aa4b127863c163eaa0e3c708fa8a3
+    - repo: deepin-community/oxygen
+      tagsha: a2f37c465ff4b34a806ae966987f35aa9d236b31
+    - repo: deepin-community/packagekit
+      tagsha: 44d44a5a3da12f60195414ce05e02042f7a42846
+    - repo: deepin-community/palapeli
+      tagsha: 39c4bc67f410477dcc11c41f93f24e92e74f4abe
+    - repo: deepin-community/pcre3
+      tagsha: c0ed3b1d8d9f7059512e30910cbb788b1412365d
+    - repo: deepin-community/pikepdf
+      tagsha: a7db3eb37e7109388abe838475044c979384ff3d
+    - repo: deepin-community/plotutils
+      tagsha: a090f20b6b3506af45d00f6a88f047fa281f29f8
+    - repo: deepin-community/poppler
+      tagsha: efa2ac15e21c70513a3b5ccadb549a0d18273287
+    - repo: deepin-community/portsmf
+      tagsha: 9de966eae31ba5709a38ba406c221a2933fc1771
+    - repo: deepin-community/poxml
+      tagsha: 047689cbba49d521acefa69123546496979ce453
+    - repo: deepin-community/proj
+      tagsha: b1fd417b386ff0ccdf812b7f00d9f5980eb3451c
+    - repo: deepin-community/protobuf-c
+      tagsha: d212dc3cd744d1ea7397b01e026b9d4abd760c35
+    - repo: deepin-community/python-apt
+      tagsha: 1d3a04db2ea53cd4f5646c59a536ac1c0794ec63
+    - repo: deepin-community/qca2
+      tagsha: 552462182aebb8300cc34724d6f314d91955e666
+    - repo: deepin-community/qhull
+      tagsha: 11a011cf57fddfed6c6564b04f1c51a6ec95f346
+    - repo: deepin-community/qm-dsp
+      tagsha: 5eba92d82a52eebbdfff2df70010e1774b66ef34
+    - repo: deepin-community/qpdf
+      tagsha: 09ca76cf07f0b9655eeec455e1a1a9b8c192f646
+    - repo: deepin-community/qps
+      tagsha: 5794a4e6cdcc7b29e7e2cdd6a347fba12038b1f6
+    - repo: deepin-community/qt6-grpc
+      tagsha: 3012213972134b897f75eeb2ebab3077475764a9
+    - repo: deepin-community/qt6-languageserver
+      tagsha: 91fccc26214afffb6c87da3b6d2ec212f3d2cd14
+    - repo: deepin-community/qt6-multimedia
+      tagsha: d2f6f3a5e7515032cb6be8163227089fab1fe29a
+    - repo: deepin-community/qt6-positioning
+      tagsha: 72f180eee030c333fe97a18dc1089cb0458c607a
+    - repo: deepin-community/qt6-quick3d
+      tagsha: b175e84a1f00789494196eb54f159b8cc78ab0da
+    - repo: deepin-community/qt6-quick3dphysics
+      tagsha: aab68db5856df2e7fd5dc336473c81b2707fa594
+    - repo: deepin-community/qt6-scxml
+      tagsha: e285230832779ccbe3780f202c385091ed8bbdbf
+    - repo: deepin-community/qt6-shadertools
+      tagsha: ca79e1db75578ac1e46d01716445114d15ea6e20
+    - repo: deepin-community/qtermwidget
+      tagsha: 76d253e6d4023a27d5d613b9bf37f1753a93ca4d
+    - repo: deepin-community/qxmpp
+      tagsha: 2ed09e9962fb268d6d1c8ffaf6056c7b16817eae
+    - repo: deepin-community/r-cran-isoband
+      tagsha: b0759474ed128f6053bc5dd7a0fd2c3daefa5a93
+    - repo: deepin-community/rapidfuzz
+      tagsha: 4ed58f64011da0a62f645c77cc1e1e8001b2ef5f
+    - repo: deepin-community/rcpp
+      tagsha: 3415a0a88fc86dc117b354496065348c05d85700
+    - repo: deepin-community/re2c
+      tagsha: a969fc93cefa250e562017f4d49de0efd8a75c29
+    - repo: deepin-community/rocs
+      tagsha: 21ed0d31653fd08720157c878d743712d9ebbda0
+    - repo: deepin-community/rtaudio
+      tagsha: e931b8ea449e8f683254f1e8c9768963140a59fc
+    - repo: deepin-community/rtmidi
+      tagsha: dfc331008d6d614aea036b9f6e300fb022fbea30
+    - repo: deepin-community/rubberband
+      tagsha: 5d6eba318aca779b3a45577a05e42d99f37dd553
+    - repo: deepin-community/schroedinger-coordgenlibs
+      tagsha: 4fca37d731d02d3b8c4248ac9e37a3dc9951d28e
+    - repo: deepin-community/scipy
+      tagsha: f09d0d232038d07459b7bb43cfd987ff1d6469d9
+    - repo: deepin-community/sddm
+      tagsha: 6ff4ecf3749f442b8d828dd5235e4d45778f350d
+    - repo: deepin-community/seetaface-open-role-zoo
+      tagsha: 017731eba665f02988501ab2e449382934fb8f4a
+    - repo: deepin-community/shaderc
+      tagsha: ec06650459fbef3a01d092ebb565a3ebb613c565
+    - repo: deepin-community/signond
+      tagsha: d24e3f39adcc169cc315e7830921da700b5a2486
+    - repo: deepin-community/slim
+      tagsha: b351c49b75dfa364c9a526a6eda5362959871ee3
+    - repo: deepin-community/snacc
+      tagsha: 894b10cd662da7d43467c76276849fcdf1df16f9
+    - repo: deepin-community/socketplusplus
+      tagsha: 34c4df6d8f1dd63177cc27f3e44938c07c93944e
+    - repo: deepin-community/softhsm2
+      tagsha: 5c84154b3ad197573e6ebabfc156594fc33816da
+    - repo: deepin-community/solid
+      tagsha: 2b6dabf253348d3283785c0c634b642978ddb1e0
+    - repo: deepin-community/spatialindex
+      tagsha: eae1a900d99a952dec19b52ed83b601b399c893c
+    - repo: deepin-community/speech-tools
+      tagsha: 4bfa6f9e9f4eb46ea140d76b7461a67cac295ac7
+    - repo: deepin-community/spirv-tools
+      tagsha: 721c36b7f54b9977563bedda96f5f0a6ca97a11b
+    - repo: deepin-community/srt
+      tagsha: 629f4c5e42d9ca6c464bc069c6f9e46cb61b503a
+    - repo: deepin-community/ssdeep
+      tagsha: a53074d88b94b770749d5f88a600bc5df5fc5770
+    - repo: deepin-community/subunit
+      tagsha: b5b6388897f8094fbeb8fd3d0c87af0b93b1d844
+    - repo: deepin-community/suitesparse
+      tagsha: 7190a454f3143e5e6306a71a141ed1bd880d320c
+    - repo: deepin-community/swig
+      tagsha: 5f21e83e5ea7d50ac874ffe73713bc76bb1987a2
+    - repo: deepin-community/taglib
+      tagsha: ef0d846b266e327a6dc7c2cd428eb9d61de53f56
+    - repo: deepin-community/taskflow
+      tagsha: 1d99f7a5c04b4c9eaa9629c2d1949c2540b09c18
+    - repo: deepin-community/texlive-bin
+      tagsha: b8d0298cd295c4e4e78c140d924a51e405693dba
+    - repo: deepin-community/teckit
+      tagsha: 222ac5df46f270cf3099fab3a0bcd4655a69eb9a
+    - repo: deepin-community/tiff
+      tagsha: c4a0138f667b06dcc711dc85d7d31c0c6956a5a5
+    - repo: deepin-community/tinyxml
+      tagsha: 8fecdb071c5e07c215f050a692503164155fb47e
+    - repo: deepin-community/tmispell-voikko
+      tagsha: eefc481ed3a13156384a0e4822de18ddc9dd07f7
+    - repo: deepin-community/uchardet
+      tagsha: 62bfafd4ae0ee9caae5eb84d006162bdb93ee59f
+    - repo: deepin-community/ucx
+      tagsha: d5e31ec608cddd31261bdedbf1092ab02e57a36d
+    - repo: deepin-community/unalz
+      tagsha: 44bfae9552677a861d22376a4c5d078320758256
+    - repo: deepin-community/v4l-utils
+      tagsha: dda2e26301eae41175dab94763e8739699a2c417
+    - repo: deepin-community/vamp-plugin-sdk
+      tagsha: 0eca659ca15b0e0bbad4016b920984eb1c5f8888
+    - repo: deepin-community/viewnior
+      tagsha: ea738b0517116ff97e7ee8e5f7700eb7eff0c5b7
+    - repo: deepin-community/wasmedge
+      tagsha: bdd00a896dff21ddc4d5137f3e736b532e94ff27
+    - repo: deepin-community/wkhtmltopdf
+      tagsha: ebb782520e61d0ce98bd662a80de3b691483ba04
+    - repo: deepin-community/wlcs
+      tagsha: d0bf15c3fff6824ba048496ec312b21efbbafa68
+    - repo: deepin-community/wpewebkit
+      tagsha: 57ab09fbbd8418adf9a5d68db5e460bd8fdfcabc
+    - repo: deepin-community/wxsqlite3
+      tagsha: dd7e3454be48a7b45ca71aa22febbc8bba8a8492
+    - repo: deepin-community/wxwidgets3.2
+      tagsha: 268f7e0a5fcc6317d1e5435c2a95f596f3dd7972
+    - repo: deepin-community/xapian-bindings
+      tagsha: 29726a44d20d814b978f66f74ad61277fae40fa5
+    - repo: deepin-community/xapian-core
+      tagsha: c818840de35675b1c25ac571ddd97271e521e85f
+    - repo: deepin-community/xdg-utils-cxx
+      tagsha: 663301a9eb9541d37a9ed3b6bc69d925cd18d6ad
+    - repo: deepin-community/xml-security-c
+      tagsha: d90c529475ed1a5332b3e3f455ea96d0c3597920
+    - repo: deepin-community/xmltooling
+      tagsha: 3222e1a2ac5e02b07995c87962410b59b9ae9cfd
+    - repo: deepin-community/xsd
+      tagsha: f43388c4153b6825ff89cae05f77790e7b3d92a9
+    - repo: deepin-community/yaml-cpp
+      tagsha: 3344925fe8bec318885395c37e60b58bbe097e5f
+    - repo: deepin-community/yodl
+      tagsha: 632cc85a6d4e31a57d36b45159a497ccbc8a199c
+    - repo: deepin-community/zaz
+      tagsha: eba4955524a876f96cca426d755b92dc0209153c
+    - repo: deepin-community/zopfli
+      tagsha: 7390603b8cf3e6e7e1ff20ec8de3418ea49e20aa
+    - repo: deepin-community/libime
+      tagsha: 3f1e91887ca0a1a188750b0660973b2613ae1aed
+    - repo: deepin-community/libjsoncpp
+      tagsha: 8af801c5d1102f61cf17d9fc5f2a66a95c73f1b9
+    - repo: deepin-community/libkf5kexiv2
+      tagsha: 2a2f636fbb5da45c25bea8e0383fdae3566a7f1e
+    - repo: deepin-community/libkml
+      tagsha: 0813f64542085d390e7457a49c51e461787fe2d2
+    - repo: deepin-community/libkomparediff2
+      tagsha: a93560f96569d6b104a2912488cffbde13857d5b
+    - repo: deepin-community/libktorrent
+      tagsha: eec7ef7595f3680b1f15abbc84c31866dc8b12ce
+    - repo: deepin-community/libmediainfo
+      tagsha: 44f9d88abd9fd738ae74f2260636eb67a2f6d1f6
+    - repo: deepin-community/libmemcached
+      tagsha: 0b620abc50a911d796dbfd244106a488555385ae
+    - repo: deepin-community/wxpython4.0
+      tagsha: 8a359dcf1ae776cdfbb1de049c4613f43ba1d11a
+    - repo: deepin-community/vlc
+      tagsha: 0d371c58ec66cfb4d7a46298c80023db21174085
+    - repo: deepin-community/libopencsd
+      tagsha: 74c929cc558fbe5883a72279a4ba54e57a1e0909
