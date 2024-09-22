@@ -11,3 +11,8 @@ repos:
       tagsha: 8bd85e13f06469efb037a6a5af81693c119cdd88
     - repo: linuxdeepin/deepin-font-manager
       tagsha: cbf5d0229471b9fdd5ef1357aeb76892542b42ef
+    - repo: linuxdeepin/deepin-reader
+      tagsha: a50d1f98f54d1016b5941fa085d42d8a45cffe90    
+    - repo: linuxdeepin/dde-cooperation
+      tagsha: 90a79edc6e686553d0e97bd9a98b7556b28cfa59    
+
