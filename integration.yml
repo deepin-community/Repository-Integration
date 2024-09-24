@@ -5,4 +5,6 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/debugpy
     tagsha: 0667e572d4ddecea1edd33f404b6497ad267b5dd
+  - repo: deepin-community/python-pytest-retry
+    tagsha: e4748fbf8342c66462a60aa46fc5577656379cfd
 timestamp: 1727171706556
