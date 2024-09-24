@@ -3,10 +3,7 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/treeland.private
       tagsha: 07cf2c8b4640e193a9efdffa1468cc20040f5e99
-    - repo: linuxdeepin/ddm
-      tagsha: db788585836f3f554af1bf0a4e33049b68b3be43
-    - repo: linuxdeepin/dde-shell
-      tagsha: 7d34222ebcf2a73dc37ca7ac6961d849f27820f1
+      gitaddr: "git@github.com:linuxdeepin/treeland.private.git"
     - repo: linuxdeepin/ddm
       tagsha: 901948573ec3172084a4b9e71d6157d413ef4df4
     - repo: linuxdeepin/dde-shell
