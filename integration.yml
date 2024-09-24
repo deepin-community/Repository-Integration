@@ -2,4 +2,4 @@ message: 'Auto integrate from topic: mozc by @UTsweetyfish to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/mozc
-      tagsha: 68a74d66164d643a36820560c152a6b5de979a61
+      tagsha: c46493b263f51c998d060c8218b50ae979ec0db4
