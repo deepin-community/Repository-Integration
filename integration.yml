@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: kwin-1070 by @justforlxz to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/deepin-wayland-protocols
+      tagsha: c9034bdfa9c64cd6713d5e3d27baf8bf41c4da41
+    - repo: linuxdeepin/deepin-kwin
+      tagsha: 06ce1b2f754ccb4a227e03ef3d379a8d6681e511
+    - repo: linuxdeepin/dde-appearance
+      tagsha: e2352fe100a7b66b824bb9f381d77c806b72ce3b
+    - repo: linuxdeepin/dde-session
+      tagsha: cc48e8ebca6b3ce13722812a6206cff78513cac6
+    - repo: linuxdeepin/dde-shell
+      tagsha: e541ec84a25265c6a810cf804541ef2e93193a2d
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: 51f58f4cb5744618a151caeafdec032fa16a9441
+    - repo: linuxdeepin/deepin-kwin
+      tagsha: e711964a605b47fed99497d055220075d258d52f
