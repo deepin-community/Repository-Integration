@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: feat-compactMode by @mhduiy to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dde-control-center
+      tagsha: 596098eade11eaf1df47e2504ae89d7539e351dc
+    - repo: linuxdeepin/startdde
+      tagsha: 84347fd99ec9718fce9b0febe9b75466ebf409ce
+    - repo: linuxdeepin/dde-appearance
+      tagsha: a73dbf6e9e758cf7bced1f76c8f5e35007d3b209
