@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  chore: use treelad protocols instead vendor a protocols file by
+  tsic404@linuxdeepin/dde-shell
+milestone: V23-Beta3
+repos:
+  - repo: linuxdeepin/dde-shell
+    tagsha: 23af6a7a3501215f9b5e4cd26a6442a86cdc9393
+timestamp: 1727142716678
