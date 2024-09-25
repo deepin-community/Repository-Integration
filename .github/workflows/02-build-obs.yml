@@ -85,7 +85,7 @@ jobs:
               sed -i "s#COMPONENT#${COMPONENT}#g" meta1.xml
               if [ "$COMPONENT" = "commercial" ]; then
                 echo "commercail project, disable access!!!"
-                sed -i '4a \ \ <sourceaccess>\n\ \ \ \ <disable/>\n\ \ </sourceaccess>\n\ \ <access>\n\ \ \ \ <disable/>\n\ \ </access>' meta1.xml
+                sed -i '4a \ \ <sourceaccess>\n\ \ \ \ <disable/>\n\ \ </sourceaccess>' meta1.xml
               fi
               curl -X PUT -u golf66:$OSCPASS -H "Content-type: text/xml" -d @meta1.xml "https://build.deepin.com/source/deepin:CI:TestingIntegration:$TOPIC:$COMPONENT/_meta"
             fi
