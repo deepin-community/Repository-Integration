@@ -4,4 +4,4 @@ repos:
     - repo: deepin-community/qwlroots
       tagsha: ba028f7536cbf23bbf5033593eb02aa00d08cdeb
     - repo: deepin-community/waylib
-      tagsha: 1b8c04ff7579bca5876a9aea6cb1b7149131bfc4
+      tagsha: 4a0f0a8f8a5a34ad1867154fdf87c61b7dc8874e
