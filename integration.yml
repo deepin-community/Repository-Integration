@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: fix-bug-testing-20240925 by @xionglinlin to V23-Beta3'
+message: 'Auto integrate from topic: fix-bug-testing-20240925 by @ArchieMeng to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-launchpad
@@ -15,3 +15,5 @@ repos:
       tagsha: 1c5782bd01b1cd703fcc48d51c73694bdcaa9a29
     - repo: linuxdeepin/dde-widgets
       tagsha: 071f7732ea4162c9d890e8e5a72eac2730e3fdea
+    - repo: linuxdeepin/deepin-fcitx5configtool-plugin
+      tagsha: dd110e7b0a9e2b82ed862a338fac7c64d6822f90
