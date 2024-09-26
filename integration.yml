@@ -12,7 +12,7 @@ repos:
     - repo: deepin-community/moreutils
       tagsha: 59133a1d9f1e2e3dd868051c4ee1a82f28f08f8b
     - repo: deepin-community/jose
-      tagsha: d09e321736e05260c9fa492dd760deb2ad9b5cbc
+      tagsha: d479d37abd397c9f0d110de545b2c3c01fb03180
     - repo: deepin-community/libtracefs
       tagsha: ffae8d314e8ac7e28aa364a2742e1ed545babfca
     - repo: deepin-community/golang-github-charlievieth-fastwalk
@@ -22,7 +22,7 @@ repos:
     - repo: deepin-community/sssd
       tagsha: a8f7fbeef10f74de0aba33dd8d2494c8bb00bce6
     - repo: deepin-community/kerberos-configs
-      tagsha: 5a93b9543b61bc956b29e11fc5b2953d916a29fb
+      tagsha: 33816a26911b0efd79036a02bcb04815431a6ba7
     - repo: deepin-community/libtraceevent
       tagsha: 801403df4428305af1c3a95aef5c24a42f7d52ed
     - repo: deepin-community/golang-github-rivo-uniseg
