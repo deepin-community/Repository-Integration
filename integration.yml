@@ -1,5 +1,7 @@
-message: 'Auto integrate from topic: cdapp-20240927 by @majing2022 to V23-Beta3'
+message: 'Auto integrate from topic: cdapp-20240927 by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-file-manager
       tagsha: 3af323183b330e97a487150c49c60f2601489a2a
+    - repo: linuxdeepin/deepin-system-monitor
+      tagsha: 4233ef368e1427e9d286f42b6321b3af47ca82b2
