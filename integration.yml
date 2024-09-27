@@ -6,7 +6,7 @@ milestone: V23-Release
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/uos-recovery"
+  - repo: linuxdeepin/uos-recovery
     # Not required
     # Not required, but need one of tag and tagsha info
     # When use tag info, integration workflow will check repository tag and build tag version
