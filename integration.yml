@@ -1,15 +1,21 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: dpkyx by @hudeng-go to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/hdparm
+      tagsha: 62d68ee484b07c9cb4b918559d5e99525f28deda
+    - repo: deepin-community/libarchive
+      tagsha: 78bd24e54c2363fb74407c2e660bc444be7d21e2
+    - repo: deepin-community/libassuan
+      tagsha: 3549c225002d1f96b164f3fb72ee2a813edb7530
+    - repo: deepin-community/libcap-ng
+      tagsha: e2f2d1cf2d69636216998b011f6dddb8b67ad157
+    - repo: deepin-community/libestr
+      tagsha: 64b76c85ef0bdaea07e588443448b1da9fd1b1af
+    - repo: deepin-community/libksba
+      tagsha: bb9b75488e54b93049216b21a486d69243232981
+    - repo: deepin-community/libffi
+      tagsha: 8070e2e33f40d8b0733b21462611ece161b38e7f
+    - repo: deepin-community/libmnl
+      tagsha: 0d49b5ad642ab7dc2e683de229149341367498a6
+    - repo: deepin-community/libnetfilter-conntrack
+      tagsha: c22ca30297184ef4feea90e68c64703d08da5283
