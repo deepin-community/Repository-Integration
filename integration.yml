@@ -1,15 +1,15 @@
 # Required
-message: |
-  Integrated for V23-Release
+message: integration uos ai
 # Not required, now default is V23-Release
 milestone: V23-Release
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: linuxdeepin/uos-ai
+    tagsha: 5f325d826c91651b56a52fc6059a97165c122926
+  - repo: linuxdeepin/deepin-ai-daemon
+    tagsha: 6fbbb1e665878275ccb98cdd20073982e6b8b56d
+  - repo: linuxdeepin/deepin-systemassistant-knowledge
+    tagsha: 73a820c449743045dbaf24f6afafff8dc28acdba
+  - repo: linuxdeepin/deepin-modelhub
+    tagsha: f220a8505ab451d602b0d1bc9a136b9a8dfa535a
