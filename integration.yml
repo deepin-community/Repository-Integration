@@ -7,9 +7,11 @@ repos:
   # Required
   - repo: linuxdeepin/uos-ai
     tagsha: 5f325d826c91651b56a52fc6059a97165c122926
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/uos-ai"
   - repo: linuxdeepin/deepin-ai-daemon
     tagsha: 6fbbb1e665878275ccb98cdd20073982e6b8b56d
   - repo: linuxdeepin/deepin-systemassistant-knowledge
     tagsha: 73a820c449743045dbaf24f6afafff8dc28acdba
   - repo: linuxdeepin/deepin-modelhub
     tagsha: f220a8505ab451d602b0d1bc9a136b9a8dfa535a
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-modelhub"
