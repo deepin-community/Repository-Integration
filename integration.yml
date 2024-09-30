@@ -10,8 +10,10 @@ repos:
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/uos-ai"
   - repo: linuxdeepin/deepin-ai-daemon
     tagsha: 6fbbb1e665878275ccb98cdd20073982e6b8b56d
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/base/deepin-ai-daemon"
   - repo: linuxdeepin/deepin-systemassistant-knowledge
     tagsha: 73a820c449743045dbaf24f6afafff8dc28acdba
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/base/deepin-systemassistant-knowledge"
   - repo: linuxdeepin/deepin-modelhub
     tagsha: f220a8505ab451d602b0d1bc9a136b9a8dfa535a
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-modelhub"
