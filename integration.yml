@@ -6,7 +6,7 @@ milestone: V23-Release
 repos: 
   # Required
   - repo: linuxdeepin/uos-ai
-    tagsha: 5f325d826c91651b56a52fc6059a97165c122926
+    tagsha: e4ef0d430d3330ed24cb7ce5f3b437954bed7eba
     gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/uos-ai"
   - repo: linuxdeepin/deepin-ai-daemon
     tagsha: 6fbbb1e665878275ccb98cdd20073982e6b8b56d
