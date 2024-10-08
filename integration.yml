@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: feat-compactMode by @mhduiy to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-control-center
-      tagsha: 596098eade11eaf1df47e2504ae89d7539e351dc
+      tagsha: ebaeb25d3b956661f7a21df6fbc6f3fca50a67d4
     - repo: linuxdeepin/startdde
       tagsha: 84347fd99ec9718fce9b0febe9b75466ebf409ce
     - repo: linuxdeepin/dde-appearance
