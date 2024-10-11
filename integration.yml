@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'feat: update elfutils to 0.191 by xzl01@deepin-community/elfutils'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/elfutils
+    tagsha: 1c88ec3a1069be3485dd2e9c342ac5bcf88967ab
+timestamp: 1728612772006
