@@ -19,3 +19,5 @@ repos:
       tagsha: b4cb65713724f513c788ca251b291d7cdde829be
     - repo: deepin-community/python-wadllib
       tagsha: ea0c4b7ede3a0072b3228a32b9e63eed803cdaf6
+    - repo: deepin-community/lazr.restfulclient
+      tagsha: 935d49a8968208bdd3b07f01e63f414d4844c495
