@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: dtk5-5.6.35 by @mhduiy to V23-Beta3'
+message: 'Auto integrate from topic: dtk5-5.6.35 by @FeiWang1119 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtkcommon
@@ -14,4 +14,4 @@ repos:
     - repo: linuxdeepin/qt5platform-plugins
       tagsha: a5f32ad7970e07eb926321e8295c52bfc3c56b08
     - repo: linuxdeepin/dtkdeclarative
-      tagsha: 6d18650e7af7d1b1e5e2d8f1bf072dd46ca31840
+      tagsha: 880a5ff1159bfa720015753ea974edea16a819a8
