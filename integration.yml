@@ -7,3 +7,5 @@ repos:
       tagsha: 58dcba4780dab5a7ecd93302b3c422f6455a474b
     - repo: deepin-community/libtest2-suite-perl
       tagsha: ea42a81eeb3f1bc0983fc6aa738d3698b0da9917
+    - repo: deepin-community/libxs-parse-keyword-perl
+      tagsha: 6069d170e556b521c55b3ff1be8fa92ca0ab554d
