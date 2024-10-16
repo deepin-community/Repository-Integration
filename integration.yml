@@ -1,5 +1,7 @@
-message: 'Auto integrate from topic: dummyapp-integration by @RigoLigoRLC to V23-Beta3'
+message: 'Auto integrate from topic: dummyapp-integration by @BLumia to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/deepin-dummyapps
       tagsha: 5b1e984044dbcb7bba54b71b96a7ba49f397ac76
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: c33533c6fa79529c34ed9fd4c414b3c982082b1e
