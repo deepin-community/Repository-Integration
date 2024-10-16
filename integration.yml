@@ -1,15 +1,37 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: node-proxy-agents-20240926 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/node-proxy-agents
+      tagsha: ec9b8cc8c349a96492ea954a2224e91905a6b8d5
+    - repo: deepin-community/node-lru-cache
+      tagsha: 80767b3c9d3876b676a684caa294052197041389
+    - repo: deepin-community/node-netmask
+      tagsha: 27ededa9513679956c7ef655e7c0ccd66f527d8c
+    - repo: deepin-community/node-socks
+      tagsha: 05a3844e8ebc3e4964ce035a06e39e6d25303854
+    - repo: deepin-community/htmlmin
+      tagsha: 20d06eba2f2bf956a393438ddb22eface46b7375
+    - repo: deepin-community/node-smart-buffer
+      tagsha: 95579eaf26d506d1dfc912d162d3e2b4668f1e83
+    - repo: deepin-community/node-quickjs-emscripten
+      tagsha: 3e6e03dc610f81b864dce5fedbd149c59baf44c7
+    - repo: deepin-community/wabt
+      tagsha: 6bcdd6871b5876ad850ebd50687c398b33f6cdff
+    - repo: deepin-community/binaryen
+      tagsha: d3f00cd38acac7eb534427a1d9fa60de8a98efcf
+    - repo: deepin-community/emscripten
+      tagsha: a4c1df7b9e497c7929bf0427d338857de90b9f65
+    - repo: deepin-community/node-ip
+      tagsha: c834e31efdc6f9984db32677c2141ba80993b133
+    - repo: deepin-community/emscripten
+      tagsha: cc71a04c757d75e24181b0968a93ef30d01151e4
+    - repo: deepin-community/node-babel7
+      tagsha: 2217b7426198d8a108606433a9c67ca97d840283
+    - repo: deepin-community/node-ws
+      tagsha: 3f595fbd727c8ed97bfe3d16ac17feda9dd5c9ee
+    - repo: deepin-community/node-fetch
+      tagsha: 7c3af3fe4189fb66d5cc4ed6601ce8f2db60a309
+    - repo: deepin-community/node-rollup-plugin-inject
+      tagsha: 7ca21d8d71fa3642c7a803eb54d2ac8ad1882c01
+    - repo: deepin-community/node-jsdom
+      tagsha: 229d293d621c8a35e592915fba9d9e6c700d280c
