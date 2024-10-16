@@ -1,17 +1,17 @@
-message: 'Auto integrate from topic: dtk5-5.6.35 by @FeiWang1119 to V23-Beta3'
+message: 'Auto integrate from topic: dtk5-5.6.35 by @mhduiy to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dtkcommon
-      tagsha: 1939d573023f270ad3d2906680400da9a3bd53c2
+      tagsha: 817ebfd6be85f84f7805ff58398b7ac0ec15f61a
     - repo: linuxdeepin/dtkcore
-      tagsha: 907b204f476413889944ecfbb6e77be8baa6bce8
+      tagsha: 7669dc10aad5bbd3e05cbb6213357272e7cb3e96
     - repo: linuxdeepin/dtkgui
-      tagsha: 467bf400dbb8c0a76512f8755f24ea876d1bd885
+      tagsha: 06eb99de1cc6a0550950bb5d3e5a3e525c6c80a3
     - repo: linuxdeepin/dtkwidget
-      tagsha: 823722cf589efc312669810c5b9221d80919c4fd
+      tagsha: 65f4eb12113ebf49d0a042a4a2167047b9a2b291
     - repo: linuxdeepin/qt5integration
-      tagsha: 40e6ca7aa60aedec64cc243b0543d798c3c42722
+      tagsha: 3d9d2361a8033ab0c3855609c81864961e163da9
     - repo: linuxdeepin/qt5platform-plugins
-      tagsha: 3c2575a0e7305c9e97f4cb52dd2ed4ce9fe3c5a6
+      tagsha: a5f32ad7970e07eb926321e8295c52bfc3c56b08
     - repo: linuxdeepin/dtkdeclarative
-      tagsha: 989906b9c49ac48b1e73f09f8c6b50e413fefdc6
+      tagsha: 6d18650e7af7d1b1e5e2d8f1bf072dd46ca31840
