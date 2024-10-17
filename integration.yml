@@ -4,4 +4,4 @@ repos:
     - repo: linuxdeepin/deepin-dummyapps
       tagsha: 5b1e984044dbcb7bba54b71b96a7ba49f397ac76
     - repo: linuxdeepin/dde-launchpad
-      tagsha: 40355cc22144aa48e3505b959c261c75b4848d6f
+      tagsha: 7440274c7454d779714af8557cd2aa3e85003e58
