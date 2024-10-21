@@ -13,3 +13,7 @@ repos:
       tagsha: 2ee864dd10f83389028bd731d061ddfe6cb1c117
     - repo: deepin-community/rtkit
       tagsha: ffb3b3b72e60ab3e134d82b018a3df611ed874fd
+    - repo: deepin-community/alsa-topology-conf
+      tagsha: 34cf9be5f6e909c81f39810acd8bf3902eeb83fa
+    - repo: deepin-community/alsa-ucm-conf
+      tagsha: 114ac87f0aec7e8376920a7651e0bd62fed3f28e
