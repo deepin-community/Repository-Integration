@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  fix: ensure update boot configuration for each deployment by
+  zhaohui42@deepin-community/ostree
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/ostree
+    tagsha: c79bdaa4470c44414673da521d0bdc0f60816de8
+timestamp: 1729739180550
