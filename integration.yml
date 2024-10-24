@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: init repo && sync with upstream 1.5.0 by alphagocc@deepin-community/zycore-c
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/zycore-c
+    tagsha: b6f7a74269e3462ed1401f2130bcfc6c61cf9a5b
+timestamp: 1729738578497
