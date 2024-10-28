@@ -1,10 +1,8 @@
 message: 'Auto integrate from topic: compact_10.25 by @mhduiy to V23-Beta3'
 milestone: V23-Beta3
 repos:
-    - repo: linuxdeepin/startdde
-      tagsha: e9f7808ddc083dfc1fcf34d96e4e02cb875176eb
     - repo: linuxdeepin/dde-appearance
-      tagsha: d7525ba85d8557e36cfaebd40f4633363cd2070c
+      tagsha: 0ae3a46a30717098e525b38f878f4d0311e1ffb4
     - repo: linuxdeepin/dde-control-center
       tagsha: c258150264bd173c551d3b8d328ec508a6f38d17
     - repo: linuxdeepin/deepin-terminal
