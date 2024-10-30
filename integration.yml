@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update polkit-qt-1 to 0.200.0-1 by
+  deepin-community-bot[bot]@deepin-community/polkit-qt-1
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/polkit-qt-1
+    tagsha: e07760d6aff9d8212b18ec7361bcdf49c65b8029
+timestamp: 1730257494823
