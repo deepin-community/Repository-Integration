@@ -6,4 +6,4 @@ repos:
     - repo: linuxdeepin/dde-network-core
       tagsha: e4482ba74f31eed237bf5490edecebef3da433ec
     - repo: linuxdeepin/dcc-insider-plugin
-      tagsha: 95fa866bc840a8569875920f9748b62423cf6826
+      tagsha: 9fa88cddadca2b2404ded41640e05d0d0369b05f
