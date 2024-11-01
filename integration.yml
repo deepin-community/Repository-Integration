@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/deepin-dummyapps
       tagsha: ad99bac622556d55ce288c911bd65e4db37ead3e
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: fe5cb531eb7ae47c0d3a1f906d5cb5f7a6aa9a38
