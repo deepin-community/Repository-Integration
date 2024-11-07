@@ -1,15 +1,83 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: v25stage4 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/zfs-linux
+      tagsha: acedb9b841122c49c107607222cc6ca051161105
+    - repo: deepin-community/yapf
+      tagsha: 2fdcad2f4150e36540cee8870c4d0ab3ab54f269
+    - repo: deepin-community/xonsh
+      tagsha: f8de3f0da6704b4fc4de958b51334c3b8ff7fa65
+    - repo: deepin-community/zope.testing
+      tagsha: 9cb0cc6aa9190eba48138fea3e14080559faac17
+    - repo: deepin-community/vcr.py
+      tagsha: a18ed5412894b5f964d622f652a5bb04c2406c0f
+    - repo: deepin-community/snapd-glib
+      tagsha: 53b7309cc6392e36bc619a270562a6f522cc3921
+    - repo: deepin-community/signon-kwallet-extension
+      tagsha: 16eabe6686c003b0e5f3bb91403c3788f9c5356b
+    - repo: deepin-community/spice-vdagent
+      tagsha: b457ceef4e2d88e2d4c9776b88cfd151e8c8ef17
+    - repo: deepin-community/thrift
+      tagsha: 7e25c1a9ccd04a3b9d8d32a75279f6330c320cc0
+    - repo: deepin-community/stdeb
+      tagsha: 81deea98a30f89db50f04c0e6034aa85cc27cfbd
+    - repo: deepin-community/umockdev
+      tagsha: d54fe3e74df5ebcc5f03841de91913432fa91533
+    - repo: deepin-community/signond
+      tagsha: c100f598d530552eca5a79c9ab74f3cc3552372e
+    - repo: deepin-community/r-cran-nloptr
+      tagsha: bf712eefaf3d34f4303e5c18c9b6989e2e34a2bf
+    - repo: deepin-community/libcryptui
+      tagsha: 5058f0a059dc1bc3739cc016a86028cc8ece13b2
+    - repo: deepin-community/uim
+      tagsha: fbdcc7d1981fbffffbd998a9f4b625a6b340685e
+    - repo: deepin-community/tracker
+      tagsha: 96aea76b7d300144cda1a044942c3c78e645433d
+    - repo: deepin-community/speech-dispatcher
+      tagsha: 779bb5b45ecfd824056a79f28b84975e27431add
+    - repo: deepin-community/snapd
+      tagsha: 0ef25e3266eae9d0890e94b9c81ef8cb54b6b2b3
+    - repo: deepin-community/r-base
+      tagsha: 7203051b5e8dfd939034ed28b9db184c4247fa45
+    - repo: deepin-community/node-terser
+      tagsha: d61d3454311c76505f3fa626630387a2faa2ba1a
+    - repo: deepin-community/zope.testrunner
+      tagsha: a30adc0299554fe4eaddc0978bceb492e592f042
+    - repo: deepin-community/zope.exceptions
+      tagsha: f1946555ccc8db273f06755a54adaefcf80711c1
+    - repo: deepin-community/r-cran-rcppeigen
+      tagsha: bb90a3e1e2a85840ffc209a0db873abba70f0614
+    - repo: deepin-community/glib2.0
+      tagsha: ccb8dcee4df6c180368fa60cc1da0a2520b035b5
+    - repo: deepin-community/architecture-properties
+      tagsha: a9f2def94a3b3c4af6a82fd50f56646f135a863c
+    - repo: deepin-community/python-botocore
+      tagsha: 3bc12a7674d257f68d6cfd103cf862fc4e21bd61
+    - repo: deepin-community/r-base
+      tagsha: 25d37f456bc29d476cc0a75bb3d1ea96d437db5a
+    - repo: deepin-community/nlopt
+      tagsha: 6910a1c50d32f1f201d3aa4f52c189c6ab067b09
+    - repo: deepin-community/dh-octave
+      tagsha: 57aec6a12240bd09a5137b7fed1dc99a89575cd2
+    - repo: deepin-community/octave
+      tagsha: 360911d258108aed1f1036ede2247d0fbc9e9ffa
+    - repo: deepin-community/r-cran-cli
+      tagsha: 7f0a16e0d7ab293c5bbc429a84e234426dcb7fd0
+    - repo: deepin-community/r-cran-digest
+      tagsha: 1da90f308936287f0d9f96e0790c4f925deae69d
+    - repo: deepin-community/r-cran-lifecycle
+      tagsha: 3f6c1de092d836f19596c210c802af0120caa628
+    - repo: deepin-community/r-cran-magrittr
+      tagsha: c39fd2dc311760b591a28dc1461d86e839c853af
+    - repo: deepin-community/r-cran-rlang
+      tagsha: 2f99790a78fa9a291771d79fac3143c5f6cfcc82
+    - repo: deepin-community/r-cran-withr
+      tagsha: 07fb48cd65b577d7135ed25bd77d2879c78ca587
+    - repo: deepin-community/rcpp
+      tagsha: c3fb8667f2a23cb3a46528d261f1e083eaff34d6
+    - repo: deepin-community/suitesparse
+      tagsha: 4b4e64de3763207218e6b6a9bec911ce07a3c877
+    - repo: deepin-community/petsc
+      tagsha: 17f7f2f4283597303e382504cec3dc754d80273a
+    - repo: deepin-community/golang-github-acarl005-stripansi
+      tagsha: ed2e63f38790cbb550587ba7f66fb30f8e6f8896
