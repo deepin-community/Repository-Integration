@@ -5,3 +5,5 @@ repos:
       tagsha: 0334d5ca59bb0b92ddba843cf8e765d5b9b8109f
     - repo: deepin-community/node-istextorbinary
       tagsha: bfffe84625ab241cad4e4b8fe15f9cd6c7f70af0
+    - repo: deepin-community/node-puka
+      tagsha: 3880be907a49ed88ba3a4dd25979331fc7d7791e
