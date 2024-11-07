@@ -1,15 +1,43 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: shell-testing-20240724 by @yixinshark to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dde-shell
+      tagsha: 96f5a7e48995f9a2975b5b0e6e3272da3189adb3
+    - repo: linuxdeepin/dde-tray-loader
+      tagsha: a28320a6603d4685a019137206268574b0ff0369
+    - repo: linuxdeepin/deepin-network-displays
+      tagsha: 944c4f7387c6a10279dd34185324a159439a9aea
+    - repo: linuxdeepin/deepin-deepinid-plugin
+      tagsha: b8b873a08c4ac7ecc4251973bdb785984ab23063
+    - repo: linuxdeepin/dde-control-center
+      tagsha: 1afe2c1a08a994508e03c994c542d60b89f17818
+    - repo: linuxdeepin/dde-api-proxy
+      tagsha: 295c4190a8e5045e318a288b7fb727c1d06ef7cb
+    - repo: linuxdeepin/deepin-desktop-theme
+      tagsha: 8a0bdb1cb4cff446ba4b1b1ebddbed92f5f35ae4
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: 7bed30bd86acf0c678aeeb4064c441b71c118aeb
+    - repo: linuxdeepin/dde-daemon
+      tagsha: 18a92c89fd3b532e3ecb08c9199c14c9460b2702
+    - repo: linuxdeepin/dde-network-core
+      tagsha: 5ff035b73fc3ac1153cbc2f1a768112264eb4246
+    - repo: linuxdeepin/dde-qt-dbus-factory
+      tagsha: b6a8305ddc268df981930f806307039a9337d2de
+    - repo: linuxdeepin/deepin-screen-recorder
+      tagsha: 05727daed56a93852dcdd8a739e01049e65f9c4f
+    - repo: linuxdeepin/startdde
+      tagsha: 5e34e4a0fa11cef485f8fbe2f9b4dac178682c03
+    - repo: linuxdeepin/dde-session-ui
+      tagsha: 3db8eaef8c718240fe0542920a15e2ae7371dc65
+    - repo: linuxdeepin/deepin-icon-theme
+      tagsha: cb869c6a50e7211fb71159211b36d466ee20147b
+    - repo: linuxdeepin/dde-tray-loader
+      tagsha: 6cd566a1781fc60c844085609a44e5fb53fd033e
+    - repo: linuxdeepin/dde-shell
+      tagsha: 12b166ad3c048e656846f2922498268c749e246b
+    - repo: linuxdeepin/dde-api-proxy
+      tagsha: 67a64d30f2ab056011f1a9b1214a4168af2b960d
+    - repo: linuxdeepin/dde-shell
+      tagsha: 4bacbe5d69eaa3c0f235f970b05fa2230877dd2c
+    - repo: linuxdeepin/dde-network-core
+      tagsha: 8ca29ae67c9a3ec3e5759f8cdddf6aa4f1610566
