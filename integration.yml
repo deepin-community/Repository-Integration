@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: microcode by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/iucode-tool
+      tagsha: 6552ab8ffcf553ec0b0a91dca62bd117f99ae791
+    - repo: deepin-community/amd64-microcode
+      tagsha: 2e1531a8352f1e5ddd51db82c77a2371d0b75786
+    - repo: deepin-community/intel-microcode
+      tagsha: f4c750c68ac24795284793ee1ba11d3a3fc3423b
+    - repo: deepin-community/deepin-desktop-environment
+      tagsha: e8acc793cb89584179e1540bf2fae8a94ec4674f
