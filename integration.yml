@@ -1,15 +1,230 @@
-# Required
 message: |
   Integrated for V23-Release
-# Not required, now default is V23-Release
 milestone: V23-Release
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/apt
+    tag: 2.8.0deepin2
+  - repo: deepin-community/aptitude
+    tag: 0.8.13.1-5deepin
+  - repo: deepin-community/asymptote
+    tagsha: 235a3bfad8b8ca73825f8d69eb8af4c1b439cee2
+  - repo: deepin-community/avogadrolibs
+    tagsha: 96e75af383e0e2e165437110de7a5812f160b094
+  - repo: deepin-community/binutils
+    tag: 2.41-6deepin3
+  # - repo: deepin-community/blur-effect
+  #   tag: 1.1.3-deepin1
+  - repo: deepin-community/boost1.74
+    tag: 1.74.0+ds1-23deepin1
+  - repo: deepin-community/boost1.83
+    tag: 1.83.0-2
+  - repo: deepin-community/bullet
+    tagsha: af4f1efb1ae4283c4b5dd01764fd1a2602036a05
+  - repo: deepin-community/capnproto
+    tag: 0.9.2-2deepin1
+  - repo: deepin-community/castxml
+    tag: 0.6.2-2deepin1
+  - repo: deepin-community/ceph
+    tagsha: 6f6c0bbe730b719cb7a60d3b6b40d5555cb68322
+  - repo: deepin-community/clucene-core
+    tag: 2.3.3.4.1-deepin1
+  - repo: deepin-community/courier-authlib
+    tagsha: 161941f7d2e97ec1e521e9f247288b0aeb50c3f3
+  - repo: deepin-community/cups-filters
+    tagsha: 93a635a8df1091cf67401c86b6b30be14744219f
+  - repo: deepin-community/eccodes
+    tagsha: aad3713fd4bfd99e67a2bf3cf9e6f7ba67e873af
+  - repo: deepin-community/elfutils
+    tagsha: 4a7437854a2e0755059447f725bceb4a31613493
+  - repo: deepin-community/evolution-data-server
+    tag: 3.50.1-1
+  - repo: deepin-community/fcitx5
+    tag: 5.1.10-1deepin4
+  - repo: deepin-community/fcitx5-configtool
+    tag: 5.1.2-1deepin6
+  - repo: deepin-community/fcitx5-qt
+    tag: 5.1.3-1deepin1
+  - repo: deepin-community/galera-4
+    tagsha: aa02590838d3d5512fea19e396b1b89b295dc3dc
+  - repo: deepin-community/gdcm
+    tag: 3.0.22-2deepin1
+  - repo: deepin-community/glibmm2.4
+    tag: 2.66.6-1deepin1
+  - repo: deepin-community/gpgme1.0
+    tag: 1.18.0-4deepin1
+  - repo: deepin-community/graphviz
+    tag: 2.42.2-9deepin1
+  - repo: deepin-community/gringo
+    tag: 5.6.2-1deepin1
+  - repo: deepin-community/grpc
+    tagsha: 451235343ed94b85f7ff49ed0c35c98bf5fbc1d1
+  - repo: deepin-community/imath
+    tag: 3.1.9-3
+  # - repo: deepin-community/intel-mediasdk
+  #   tag: 22.5.4-1deepin1
+  - repo: deepin-community/ismrmrd
+    tag: 1.8.0-2
+  # - repo: deepin-community/keyman-keyboardprocessor
+  #   tag: 11.0.101-4deepin1
+  - repo: deepin-community/kig
+    tagsha: 028959cd319880b5188a2bcfe94c28ccc771759c
+  # - repo: deepin-community/kscreenlocker
+  #   tag: 5.24.3-2deepin1
+  - repo: deepin-community/kuserfeedback
+    tag: 1.0.0-3deepin1
+  - repo: deepin-community/libcdr
+    tagsha: 45b6faad0c69e9653a3fd36bc7da6c41708d950f
+  - repo: deepin-community/libcmis
+    tagsha: beb3cf97483799127782233b6d2194a50f94843a
+  - repo: deepin-community/libe-book
+    tagsha: dbbc1a69825883abc948869403bf327b24963f21
+  - repo: deepin-community/libfm-qt
+    tagsha: edef400f72edd81e7e1f1c697c3e40a62c7fd04a
+  - repo: deepin-community/libgzstream
+    tagsha: 82911cba57d869e6d2e8b007b52a07a4423d14ab
+  - repo: deepin-community/libixion
+    tag: 0.19.0-4deepin1
+  - repo: deepin-community/libkf5libkleo
+    tagsha: bf19758da5ee0c7953f33f270cb5dd6db2f66699
+  - repo: deepin-community/libksysguard
+    tagsha: 3a406b9945c51741b812afbadb297a565b4a7f93
+  - repo: deepin-community/libmspub
+    tagsha: f8e879921669636f51784064e1af97b7ded696c8
+  - repo: deepin-community/libopenraw
+    tagsha: 110600ad65b274efccab6ff977b24ad2db752ab1
+  - repo: deepin-community/liborcus
+    tag: 0.19.2-3
+  - repo: deepin-community/libphonenumber
+    tagsha: 56aabdfc0004986fb26636dbf552cb600b111e94
+  - repo: deepin-community/libqapt
+    tag: 3.0.5.2-deepin2
+  - repo: deepin-community/libqtxdg
+    tag: 3.12.0-1deepin1
+  - repo: deepin-community/libqxp
+    tagsha: 687334c78555d8b1cd13b84a95f2dff387a3e8e3
+  # - repo: deepin-community/libreoffice
+  #   tag: 4:24.2.0-1deepin2
+  - repo: deepin-community/librevenge
+    tagsha: ae8f7c26a6d5c7b656b9ee047f6cc8376427f8d5
+  - repo: deepin-community/libspatialaudio
+    tagsha: 13af662bf0c235b0afff63b386d0d101cd39c436
+  - repo: deepin-community/libvisio
+    tagsha: 5a81e5122ffbb85847f34435605e802cdde7ea9b
+  - repo: deepin-community/libzmf
+    tagsha: 0767da49f097c80efb892ffbae6877f0cbe402dd
+  - repo: deepin-community/litehtml
+    tag: 0.6-1deepin1
+  - repo: deepin-community/llvm-toolchain-15
+    tagsha: a801d03a44a6abc9b4b396d6da2f75420ef3a11e
+  - repo: deepin-community/llvm-toolchain-16
+    tagsha: 116b46fa846d84cfdc787391cc7eef2a8c79bde5
+  - repo: deepin-community/llvmlite
+    tagsha: ae7e66f956d644b7be252120d9d8e5bead361c31
+  - repo: deepin-community/luceneplusplus
+    tag: 3.0.8-deepin1
+  - repo: deepin-community/lyx
+    tag: 2.3.6.1-deepin1
+  - repo: deepin-community/maildrop
+    tagsha: 3fff4cee2a7655d0bb77d530f187b9e09389dcb2
+  - repo: deepin-community/marisa
+    tagsha: fde99bb4ec41b6ecc9dcd351b1784b69ea521424
+  - repo: deepin-community/mecab
+    tagsha: 706b25b0d9266389b3a866a0eb18338d1163e0b0
+  - repo: deepin-community/mpdecimal
+    tag: 2.5.1-2deepin1
+  - repo: deepin-community/ncnn
+    tagsha: 991ed57906bc8df37c6eaf117c81f48e143b2018
+  - repo: deepin-community/omniorb-dfsg
+    tag: 4.2.5+ds1-1deepin1
+  - repo: deepin-community/onboard
+    tag: 1.4.1.1-deepin7
+  - repo: deepin-community/opam
+    tagsha: aac01f65055b29a3b74e763ce1dc6fd04c99654c
+  - repo: deepin-community/open-vm-tools
+    tagsha: 7f0b35b962bdd11285a95b6a16265d680c3e367c
+  - repo: deepin-community/openbabel
+    tagsha: 8e7f6aa2259fec226d2754daeda006bfa1c5ec9f
+  # - repo: deepin-community/openjdk-21
+  #   tag: 21.0.4+7-2deepin1
+  - repo: deepin-community/presage
+    tagsha: 5ce48c84d6359a900a6619d174c8774d754c80eb
+  - repo: deepin-community/protobuf
+    tag: 3.21.12-8deepin1
+  - repo: deepin-community/pstoedit
+    tag: 3.77-1deepin1
+  - repo: deepin-community/qqwing
+    tagsha: c082c52436158d1b657b43f431524495ba2caf5b
+  - repo: deepin-community/qt6-3d
+    tag: 6.6.1+dfsg-1deepin1
+  - repo: deepin-community/qt6-base
+    tag: 6.6.1+dfsg-5deepin3
+  - repo: deepin-community/qt6-declarative
+    tag: 6.6.1+dfsg-1deepin7
+  - repo: deepin-community/qt6-webengine
+    tag: 6.6.3-0deepin5
+  - repo: deepin-community/qtbase-opensource-src
+    tag: 5.15.8-1+deepin9
+  - repo: deepin-community/qtcreator
+    tagsha: cbe11ef528f1a475561dc039ca4c2bbc1a7517f4
+  - repo: deepin-community/qtlocation-opensource-src
+    tag: 5.15.8-2deepin1
+  - repo: deepin-community/r-cran-minqa
+    tagsha: 05da843864a0a8924ad92d60cf2e183a9fc52d65
+  - repo: deepin-community/ragel
+    tagsha: e8e3c26844e31154610ae1e6e07880ff63d61a82
+  - repo: deepin-community/rdfind
+    tag: 1.5.0-1.1deepin1
+  - repo: deepin-community/recoll
+    tag: 1.31.0-1deepin1
+  # - repo: deepin-community/rustc
+  #   tag: 1.76.0+dfsg0ubuntu1-0ubuntu1deepin0
+  - repo: deepin-community/sane-backends
+    tag: 1.2.1-5deepin1
+  - repo: deepin-community/schroedinger-maeparser
+    tagsha: f5956d1a90ad6d6c9a320dba7d4abf851728a050
+  - repo: deepin-community/schroot
+    tagsha: 338bd9dbda764c34ed5a845ba73830dab441548b
+  - repo: deepin-community/scim
+    tagsha: 4865a89e895ed0f5037a055bd705d3ae1ffea5ad
+  # - repo: deepin-community/seetaface-authorize
+  #   tag: 1.0.0.1-2deepin1
+  # - repo: deepin-community/seetaface-boxes
+  #   tag: 1.0.0.1-2deepin1
+  - repo: deepin-community/seetaface-tennis
+    tag: 1.0.1-0deepin1
+  - repo: deepin-community/sidplay-libs
+    tagsha: 152e84203a845e8b1e9e8e9aa029ed74951c8e37
+  - repo: deepin-community/source-highlight
+    tag: 3.1.9-deepin2
+  - repo: deepin-community/subversion
+    tag: 1.14.3-1deepin1
+  # - repo: deepin-community/sunpinyin
+  #   tag: 3.0.0~rc2.1-deepin1
+  - repo: deepin-community/superlu-dist
+    tagsha: c7f194777e859be17de499155ca53bea81079dd2
+  - repo: deepin-community/tesseract
+    tag: 5.3.0-2deepin1
+  - repo: deepin-community/thrift
+    tagsha: a5da985bdadadb56f0e242e75cf1025add1889b9
+  # - repo: deepin-community/unittestplusplus
+  #   tag: 2.0.0-3deepin1
+  - repo: deepin-community/vprerex
+    tagsha: 7d26e0e9234fd4b89a20c35f232154de1b1b01b7
+  - repo: deepin-community/vtk9
+    tag: 9.1.0+really9.1.0+dfsg2-7deepin1
+  - repo: deepin-community/wxwidgets3.0
+    tagsha: 3acc7a850268b93ebc2f01dff36bd8e2902f3b5a
+  # - repo: deepin-community/x265
+  #   tag: 3.5-deepin1
+  - repo: deepin-community/xalan
+    tagsha: cae777d92781636e718b4cde22d56422f9b8aac4
+  - repo: deepin-community/xdmf
+    tag: 3.0+git20190531-10deepin1
+  - repo: deepin-community/xerces-c
+    tagsha: 4f2d8da1b1c0ad91c2f3f059693e21111c30c155
+  - repo: deepin-community/z3
+    tag: 4.8.12-deepin2
+  # - repo: deepin-community/zinnia
+  #   tag: 0.06-7deepin1
+  - repo: deepin-community/zxing-cpp
+    tag: 1.4.0-3deepin1
