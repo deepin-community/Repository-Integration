@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: add patch to fix undefined symbol of liberofsfuse by
+  ComixHe@deepin-community/erofs-utils
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/erofs-utils
+    tagsha: 741d0fae7f729cb2e875dbaebb67c1e9b99e67e2
+timestamp: 1718083532019
