@@ -21,3 +21,27 @@ repos:
       tagsha: 6b0a5d5921ef1d1ab12c12a506dbf92b648fc6f2
     - repo: deepin-community/docker.io
       tagsha: dbda91400380b63c69711046fad7f23b39e663ed
+    - repo: deepin-community/golang-github-pkg-profile
+      tagsha: a65e0f3dc25f20e45a838c573d4ded65737db72e
+    - repo: deepin-community/golang-github-digitalocean-go-qemu
+      tagsha: 333c890f065cb386d81c1f1fd260d13fbffc649b
+    - repo: deepin-community/golang-github-dtylman-scp
+      tagsha: a6b31c398f65a77e27af76c96c5c1987a607334a
+    - repo: deepin-community/golang-github-containers-psgo
+      tagsha: c3b4ce90447a6a34dc02340866a6d74c647c1f57
+    - repo: deepin-community/golang-github-coreos-stream-metadata-go
+      tagsha: f127f26bef619b985d2b4aca0bbaf030439adeb7
+    - repo: deepin-community/golang-github-digitalocean-go-libvirt
+      tagsha: 66f711a36f2c4d7171be08eb39bc8e56e603401f
+    - repo: deepin-community/golang-github-mdlayher-vsock
+      tagsha: 377e4986e66711d56512118832b750a57b69e645
+    - repo: deepin-community/golang-github-docker-go-plugins-helpers
+      tagsha: ab0324f9ace66e67491f621d8122c9bf9eb7a56c
+    - repo: deepin-community/golang-github-buger-goterm
+      tagsha: ed3b6cf10865e8fc0cb3c748e539426c2cfb2fb7
+    - repo: deepin-community/golang-github-containers-gvisor-tap-vsocks
+      tagsha: 4cfc01d27efd7999b0efa89515230645eb8a1c09
+    - repo: deepin-community/golang-github-gorilla-schema
+      tagsha: 3155a038245916eb7e162d73db87e1860a9f0f1b
+    - repo: deepin-community/golang-github-crc-org-crc
+      tagsha: 20d2a56f152e588cfc6fdbf2131b81688d0ee29a
