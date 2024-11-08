@@ -6,10 +6,11 @@ milestone: V23-Release
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/deepin-mail
+  - repo: linuxdeepin/dde-printer
     # Not required
+
     # Not required, but need one of tag and tagsha info
     # When use tag info, integration workflow will check repository tag and build tag version
     # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "release/v6.4.6"
-    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-mail"
+    tagsha: "upstream/master"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/dde-printer"
