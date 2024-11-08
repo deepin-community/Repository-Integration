@@ -1,15 +1,10 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update putty to 0.81-1 by
+  deepin-community-bot[bot]@deepin-community/putty
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/putty
+    tagsha: aa30ba5bb326a358a5058ba251c3dc238ef80fd7
+  - repo: deepin-community/halibut
+    tagsha: aec067ebe56089b8c705f7da8a004ec1b93a895a
+timestamp: 1713238540952
