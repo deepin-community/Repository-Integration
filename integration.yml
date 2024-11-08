@@ -11,3 +11,13 @@ repos:
       tagsha: 25384111d68d7cfb70b8cd5d08f1a5c51ef3d219
     - repo: deepin-community/golang-github-containers-common
       tagsha: ce9548079a31afd47f0ca19f454f7a922276b000
+    - repo: deepin-community/golang-github-checkpoint-restore-go-criu
+      tagsha: b2a52c0f41e974133beb1f47afc2f8fdf2540c54
+    - repo: deepin-community/golang-github-cyphar-filepath-securejoin
+      tagsha: c1da1f00d9ef9b3f81de371fe7b365de6c283ffe
+    - repo: deepin-community/golang-toml
+      tagsha: 03594e4d7fe27af2ca52f7cfe5dfd3eeef3816b4
+    - repo: deepin-community/runc
+      tagsha: 6b0a5d5921ef1d1ab12c12a506dbf92b648fc6f2
+    - repo: deepin-community/docker.io
+      tagsha: dbda91400380b63c69711046fad7f23b39e663ed
