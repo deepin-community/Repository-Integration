@@ -45,3 +45,27 @@ repos:
       tagsha: 3155a038245916eb7e162d73db87e1860a9f0f1b
     - repo: deepin-community/golang-github-crc-org-crc
       tagsha: 20d2a56f152e588cfc6fdbf2131b81688d0ee29a
+    - repo: deepin-community/golang-github-containerd-go-runc
+      tagsha: a4104cef7beedddae36758c9288cb28d7db9dd65
+    - repo: deepin-community/golang-github-mitchellh-hashstructure
+      tagsha: 76db3090a836ac166c8955ae2ca3a6cc7c44945b
+    - repo: deepin-community/golang-github-deckarep-golang-set
+      tagsha: 28c356e4c0fddc3fee5edcf0085a49bac335af53
+    - repo: deepin-community/golang-github-containerd-typeurl
+      tagsha: c87ee01d52f16373fc7d5b22ed625262bb5bdd12
+    - repo: deepin-community/golang-github-coreos-bbolt
+      tagsha: dc82c7adcbcb78ea7a231956721450d87208b029
+    - repo: deepin-community/notary
+      tagsha: 46705442184207b4ea284a024a51bd50213a4ae2
+    - repo: deepin-community/golang-opentelemetry-contrib
+      tagsha: 21992ee545c846e3288a61bb93053d2afa0fa9ae
+    - repo: deepin-community/golang-opentelemetry-proto
+      tagsha: 656ddac65e811124129d9a3a1e9d7128d60aeb21
+    - repo: deepin-community/golang-opentelemetry-otel
+      tagsha: 5feead8189b45bab3faa3cf9a02fc7c9db6a284c
+    - repo: deepin-community/golang-google-grpc
+      tagsha: 5831a6ca88f8bc42076715f1b91a8bff46b3a947
+    - repo: deepin-community/containerd
+      tagsha: 513889ed563e2910180f5da6a38017c846be5da9
+    - repo: deepin-community/golang-github-cloudflare-cfssl
+      tagsha: 5f46392c84528c053050bd65b36234b17bf782ba
