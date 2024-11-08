@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: podman-5.2.5 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/golang-github-containers-buildah
+      tagsha: c4d2c004a9552b5cc2c2f0e655b024cb65dec883
+    - repo: deepin-community/podman
+      tagsha: e06a8c370b4caf976fed8e4b19ff47cd34f98bb0
+    - repo: deepin-community/golang-github-containers-storage
+      tagsha: 94ba803de3fbd681974cbc8c57f4d5b3a6572fee
+    - repo: deepin-community/golang-github-opencontainers-image-spec
+      tagsha: 25384111d68d7cfb70b8cd5d08f1a5c51ef3d219
+    - repo: deepin-community/golang-github-containers-common
+      tagsha: ce9548079a31afd47f0ca19f454f7a922276b000
