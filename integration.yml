@@ -71,3 +71,5 @@ repos:
       tagsha: 5f46392c84528c053050bd65b36234b17bf782ba
     - repo: deepin-community/golang-github-google-certificate-transparency
       tagsha: 1fc048c68d9d6b8c14edb60d20c5413a07c8036b
+    - repo: deepin-community/golang-github-google-go-cmp
+      tagsha: f72898c45f4a512ea376701a77fa7f879b0c9fb9
