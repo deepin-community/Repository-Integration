@@ -62,7 +62,7 @@ repos:
     - repo: deepin-community/golang-opentelemetry-proto
       tagsha: 656ddac65e811124129d9a3a1e9d7128d60aeb21
     - repo: deepin-community/golang-opentelemetry-otel
-      tagsha: 5feead8189b45bab3faa3cf9a02fc7c9db6a284c
+      tagsha: b1d20fa82b76d9907b71f94bd84c7a89f06a1cd5
     - repo: deepin-community/golang-google-grpc
       tagsha: 5831a6ca88f8bc42076715f1b91a8bff46b3a947
     - repo: deepin-community/containerd
@@ -75,3 +75,17 @@ repos:
       tagsha: f72898c45f4a512ea376701a77fa7f879b0c9fb9
     - repo: deepin-community/golang-github-jmhodges-clock
       tagsha: 9911cdc29f88554186e8668d0ac8718c11304e97
+    - repo: deepin-community/golang-github-containerd-btrfs
+      tagsha: 716bed28918e02178f55bc86f188533952a2d29a
+    - repo: deepin-community/golang-github-evanphx-json-patch
+      tagsha: 2ff7c2fd3879912e7d93d37abe04b1ca76c5c264
+    - repo: deepin-community/golang-gogottrpc
+      tagsha: 18113845759d58f98fbee38dbb8ee5c31e778bd3
+    - repo: deepin-community/golang-github-containerd-go-cni
+      tagsha: 7d6eb8aa2a6030c3e807d9f2a6558055a91ea399
+    - repo: deepin-community/golang-github-moby-sys
+      tagsha: 7d59a37f41c54bce3b4d184d8a6dc4079a43cc9a
+    - repo: deepin-community/golang-github-containerd-cgroups
+      tagsha: 402d94fe1513bcca9135c9b0712b20398e120a55
+    - repo: deepin-community/golang-github-containerd-errdefs
+      tagsha: 741b48cab747ed3bc49b087ef00042b6caab13f4
