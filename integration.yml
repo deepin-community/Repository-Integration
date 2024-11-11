@@ -1,10 +1,10 @@
 message: 'Auto integrate from topic: podman-5.2.5 by @UTsweetyfish to V23-Beta3'
 milestone: V23-Beta3
 repos:
-    - repo: deepin-community/golang-github-containers-buildah
-      tagsha: c4d2c004a9552b5cc2c2f0e655b024cb65dec883
     - repo: deepin-community/podman
       tagsha: e06a8c370b4caf976fed8e4b19ff47cd34f98bb0
+    - repo: deepin-community/golang-github-containers-buildah
+      tagsha: c4d2c004a9552b5cc2c2f0e655b024cb65dec883
     - repo: deepin-community/golang-github-containers-storage
       tagsha: 94ba803de3fbd681974cbc8c57f4d5b3a6572fee
     - repo: deepin-community/golang-github-opencontainers-image-spec
@@ -91,3 +91,11 @@ repos:
       tagsha: 741b48cab747ed3bc49b087ef00042b6caab13f4
     - repo: deepin-community/golang-google-protobuf
       tagsha: 1067f2d6ab8934a72fd649516f52a32e566177a2
+    - repo: deepin-community/golang-github-prometheus-procfs
+      tagsha: 7a8168c279c43bfe997d59fe8b7e939c12782252
+    - repo: deepin-community/golang-github-prometheus-client-model
+      tagsha: 98808755bb1b86e8f90729f5fb97a1911e9cfbef
+    - repo: deepin-community/golang-github-prometheus-client-golang
+      tagsha: 13e0c22c239fda75ca9a5cd943e5ed5f7225a474
+    - repo: deepin-community/golang-github-prometheus-common
+      tagsha: 515b7f54f4068d98159fd169edd0dd6b977de14d
