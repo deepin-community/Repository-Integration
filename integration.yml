@@ -73,3 +73,5 @@ repos:
       tagsha: 1fc048c68d9d6b8c14edb60d20c5413a07c8036b
     - repo: deepin-community/golang-github-google-go-cmp
       tagsha: f72898c45f4a512ea376701a77fa7f879b0c9fb9
+    - repo: deepin-community/golang-github-jmhodges-clock
+      tagsha: 9911cdc29f88554186e8668d0ac8718c11304e97
