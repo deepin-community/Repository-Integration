@@ -125,3 +125,19 @@ repos:
       tagsha: b46d9bb7c20cc215e50daf17448b678d5066750c
     - repo: deepin-community/golang-gvisor-gvisor
       tagsha: f795b91b404b6e49a75ae8cdb0a300eadcdebd82
+    - repo: deepin-community/golang-github-kballard-go-shellquote
+      tagsha: eda8a998fb38c949f3094acdae6b1d898b42ac64
+    - repo: deepin-community/golang-github-mgutz-ansi
+      tagsha: 34ab0feb34b90a099e4bc2569d20248e9deaf2d2
+    - repo: deepin-community/golang-github-netflix-go-expect
+      tagsha: 3674fd2a0a31af1898961abc82717ce931d05705
+    - repo: deepin-community/golang-github-hinshun-vt10x
+      tagsha: 91de83f00b5e1a8c89c27871a9382bb6a1d7cb64
+    - repo: deepin-community/golang-pty
+      tagsha: de05d19032e48af958ad1c69ac4b19d524f4de14
+    - repo: deepin-community/golang-github-google-subcommands
+      tagsha: ff814bb34c150c84f1c531f59ebdf556a90efda4
+    - repo: deepin-community/golang-github-armon-go-proxyproto
+      tagsha: 3a9c3b54ff48b7c57755ecb81c8909d36e09550b
+    - repo: deepin-community/golang-github-paulrosania-go-charset
+      tagsha: fd747e1a687a1a946e61d14d9d63a9605c5b2365
