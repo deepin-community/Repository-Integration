@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: kf6-20241111 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/kf6-kitemviews
+      tagsha: 968440718afb508006d126c6d1d36ab4c35a9e20
+    - repo: deepin-community/kf6-kwidgetsaddons
+      tagsha: d9a35189943596e03160ccaa7373fc6d217f84ca
