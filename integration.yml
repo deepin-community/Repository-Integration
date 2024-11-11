@@ -89,3 +89,5 @@ repos:
       tagsha: 402d94fe1513bcca9135c9b0712b20398e120a55
     - repo: deepin-community/golang-github-containerd-errdefs
       tagsha: 741b48cab747ed3bc49b087ef00042b6caab13f4
+    - repo: deepin-community/golang-google-protobuf
+      tagsha: 1067f2d6ab8934a72fd649516f52a32e566177a2
