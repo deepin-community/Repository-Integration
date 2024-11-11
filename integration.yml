@@ -69,3 +69,5 @@ repos:
       tagsha: 513889ed563e2910180f5da6a38017c846be5da9
     - repo: deepin-community/golang-github-cloudflare-cfssl
       tagsha: 5f46392c84528c053050bd65b36234b17bf782ba
+    - repo: deepin-community/golang-github-google-certificate-transparency
+      tagsha: 1fc048c68d9d6b8c14edb60d20c5413a07c8036b
