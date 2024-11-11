@@ -101,3 +101,27 @@ repos:
       tagsha: 515b7f54f4068d98159fd169edd0dd6b977de14d
     - repo: deepin-community/golang-github-golang-protobuf-1-5
       tagsha: 6d19741f79bfbd3de7d598cf2b0bc7fde36258c8
+    - repo: deepin-community/golang-github-cavaliergopher-grab
+      tagsha: b26e6140146f9584ce6706cd9b4cc019188fb2db
+    - repo: deepin-community/golang-github-areyoulazy-libhosty
+      tagsha: 50974400536df446bbf3368d0fa452193c91445a
+    - repo: deepin-community/golang-github-pborman-uuid
+      tagsha: 814dbf052243fa0eb33d0e016d70982c9afe000d
+    - repo: deepin-community/golang-github-pbnjay-memory
+      tagsha: c9ecedaefe381e3fc1b2b2e031ab9c0c122cd06a
+    - repo: deepin-community/golang-gopkg-h2non-filetype.v1
+      tagsha: d96ea5e7a626dac7b8ee9482332d6617540b35df
+    - repo: deepin-community/golang-github-inetaf-tcpproxy
+      tagsha: 5d5e2a5b12e71d0179fde601567e3c9b89e16f8e
+    - repo: deepin-community/golang-github-apparentlymart-go-cidr
+      tagsha: b5796d73b82e13d10b3dbfce76e70bf2b46ed33e
+    - repo: deepin-community/golang-github-openshift-api
+      tagsha: fc8438b2ab82724877a3c775923cc5fede5c0253
+    - repo: deepin-community/golang-github-elazarl-goproxy
+      tagsha: 4be5ad1de6d1bc5b9a2979b46f1e35559da768af
+    - repo: deepin-community/golang-github-alecaivazis-survey
+      tagsha: 5e69d4f5768db6af38936ef1a445b801b75bd406
+    - repo: deepin-community/golang-github-linuxkit-virtsock
+      tagsha: b46d9bb7c20cc215e50daf17448b678d5066750c
+    - repo: deepin-community/golang-gvisor-gvisor
+      tagsha: f795b91b404b6e49a75ae8cdb0a300eadcdebd82
