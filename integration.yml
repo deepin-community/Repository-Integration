@@ -99,3 +99,5 @@ repos:
       tagsha: 13e0c22c239fda75ca9a5cd943e5ed5f7225a474
     - repo: deepin-community/golang-github-prometheus-common
       tagsha: 515b7f54f4068d98159fd169edd0dd6b977de14d
+    - repo: deepin-community/golang-github-golang-protobuf-1-5
+      tagsha: 6d19741f79bfbd3de7d598cf2b0bc7fde36258c8
