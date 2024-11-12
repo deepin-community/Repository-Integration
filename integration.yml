@@ -141,3 +141,5 @@ repos:
       tagsha: 3a9c3b54ff48b7c57755ecb81c8909d36e09550b
     - repo: deepin-community/golang-github-paulrosania-go-charset
       tagsha: fd747e1a687a1a946e61d14d9d63a9605c5b2365
+    - repo: deepin-community/conmon
+      tagsha: 003c6b91d13634eb444681a2d986118dcc29e1e5
