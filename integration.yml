@@ -9,3 +9,5 @@ repos:
       tagsha: 171e476145de68990bacf384e77394011f99a1f8
     - repo: deepin-community/hostname
       tagsha: 980f3d91343152f70d32a0bd160fbd92948a55c7
+    - repo: deepin-community/bzip2
+      tagsha: 969a26a165e6e927cf28bbc64f0b225a88ee4355
