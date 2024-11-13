@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: integration-testing-20241113 by @xionglinlin to V23-Beta3'
+message: 'Auto integrate from topic: integration-testing-20241113 by @FeiWang1119 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-shell
@@ -19,3 +19,5 @@ repos:
       tagsha: 63e9d1f721df0afc8b818666ca99f231867285eb
     - repo: linuxdeepin/treeland-protocols
       tagsha: 930ab832f695f7549e2a52a55b5daa3161cfcba5
+    - repo: linuxdeepin/default-settings
+      tagsha: 7822813f6e921dad143667b9c36f541099caaa44
