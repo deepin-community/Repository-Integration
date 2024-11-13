@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: usr-20241113 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/sysvinit
+      tagsha: ec27c4031d107207d8aec8870bd67ca6fad38033
+    - repo: deepin-community/debianutils
+      tagsha: 681cf3e5bb9171646d4d032ad42ee553e101db60
+    - repo: deepin-community/base-files
+      tagsha: 171e476145de68990bacf384e77394011f99a1f8
+    - repo: deepin-community/hostname
+      tagsha: 980f3d91343152f70d32a0bd160fbd92948a55c7
+    - repo: deepin-community/bzip2
+      tagsha: 969a26a165e6e927cf28bbc64f0b225a88ee4355
+    - repo: deepin-community/libcap2
+      tagsha: cad7f5cbefd20452e27d54c4d79537f79ad0e0da
+    - repo: deepin-community/libxcrypt
+      tagsha: e3e285b8632363aff5104aa985f71503885295ae
