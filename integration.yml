@@ -1,15 +1,21 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: cd-apps-20241113 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/deepin-screen-recorder
+      tagsha: 0ae80182b1d82baa73c0f03130d621af7c9df075
+    - repo: linuxdeepin/deepin-voice-note
+      tagsha: 8778e5a5ed9e6f3d729b88effa15e31dcdd42bf4
+    - repo: linuxdeepin/deepin-calculator
+      tagsha: 2b2df406a387e18ee038b29870f176e4d77c7ca5
+    - repo: linuxdeepin/deepin-album
+      tagsha: 1af07263625840daff8f9e911f94f2994cb82003
+    - repo: linuxdeepin/deepin-ocr
+      tagsha: 111df39199fcf2bce02a3014088fc65f01cfd9b7
+    - repo: linuxdeepin/deepin-picker
+      tagsha: b58144972156df5c770719e3439fe5bd414c758d
+    - repo: linuxdeepin/deepin-music
+      tagsha: a41604b6a0d68ab1e2455201ddcaf63fe5b1eda3
+    - repo: linuxdeepin/deepin-image-viewer
+      tagsha: fd29e3383456f31e7868dce0557e27d9e8a9731e
+    - repo: linuxdeepin/deepin-boot-maker
+      tagsha: d7305e2e9d7eb50d047ecb93e40af32f1ff21372
