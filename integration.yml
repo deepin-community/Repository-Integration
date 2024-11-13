@@ -17,3 +17,5 @@ repos:
       tagsha: 8ff1f7436a492140d0c2f54675b63019b671a4c6
     - repo: linuxdeepin/deepin-desktop-schemas
       tagsha: 63e9d1f721df0afc8b818666ca99f231867285eb
+    - repo: linuxdeepin/treeland-protocols
+      tagsha: 930ab832f695f7549e2a52a55b5daa3161cfcba5
