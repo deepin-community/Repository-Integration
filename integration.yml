@@ -7,3 +7,5 @@ repos:
       tagsha: 681cf3e5bb9171646d4d032ad42ee553e101db60
     - repo: deepin-community/base-files
       tagsha: 171e476145de68990bacf384e77394011f99a1f8
+    - repo: deepin-community/hostname
+      tagsha: 980f3d91343152f70d32a0bd160fbd92948a55c7
