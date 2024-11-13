@@ -13,3 +13,5 @@ repos:
       tagsha: 969a26a165e6e927cf28bbc64f0b225a88ee4355
     - repo: deepin-community/libcap2
       tagsha: cad7f5cbefd20452e27d54c4d79537f79ad0e0da
+    - repo: deepin-community/libxcrypt
+      tagsha: e3e285b8632363aff5104aa985f71503885295ae
