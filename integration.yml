@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: integration-testing-20241113 by @xionglinli
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-shell
-      tagsha: 8c830847860ff54ab74254c80024502da868926b
+      tagsha: 1469e733143cffe1eefa13591ab1e73e656fac44
     - repo: linuxdeepin/dde-control-center
       tagsha: 76337f6e578e6e2e22166b17c89c9df0ae2abada
     - repo: linuxdeepin/deepin-desktop-theme
