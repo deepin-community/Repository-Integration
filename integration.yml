@@ -11,3 +11,5 @@ repos:
       tagsha: 1c9bd30f9e212cb980b7c49cc29ecbd272fcff7a
     - repo: linuxdeepin/dtk6core
       tagsha: 873c8305041fb73ed2420122509997c817d976e8
+    - repo: linuxdeepin/dtk6gui
+      tagsha: 9b8e7abe5095d5e974e5f06493bf8a7cf8b44a5f
