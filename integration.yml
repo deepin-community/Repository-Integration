@@ -1,10 +1,10 @@
-message: 'Auto integrate from topic: integration-testing-20241113 by @FeiWang1119 to V23-Beta3'
+message: 'Auto integrate from topic: integration-testing-20241113 by @xionglinlin to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-shell
       tagsha: 8c830847860ff54ab74254c80024502da868926b
     - repo: linuxdeepin/dde-control-center
-      tagsha: 484a57a43ff285fcc60a1fb006f0f96f9831f178
+      tagsha: 76337f6e578e6e2e22166b17c89c9df0ae2abada
     - repo: linuxdeepin/deepin-desktop-theme
       tagsha: a45187cc59fd4b555ef91b3917c50a8364ccbdfd
     - repo: linuxdeepin/dde-launchpad
@@ -21,3 +21,5 @@ repos:
       tagsha: 930ab832f695f7549e2a52a55b5daa3161cfcba5
     - repo: linuxdeepin/default-settings
       tagsha: 7822813f6e921dad143667b9c36f541099caaa44
+    - repo: linuxdeepin/dde-control-center
+      tagsha: b01dc2293be7bb7128d2aa89f274fea05579eb15
