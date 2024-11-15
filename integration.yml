@@ -4,4 +4,4 @@ repos:
     - repo: linuxdeepin/deepin-desktop-theme
       tagsha: 914813ac0995706fe5b266aff9dcc67de8075512
     - repo: linuxdeepin/default-settings
-      tagsha: 03f5898a0e66bf2f7858f021b4f81a49e70b401f
+      tagsha: e02f93be139e7c8184753fa6d7bce0209f048f36
