@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update linux-firmware to 20241108.git3bbb13a7-0ubuntu1 by
+  deepin-community-bot[bot]@deepin-community/linux-firmware
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/linux-firmware
+    tagsha: a4e84ad7454be54fc3fae630253897b813d0281f
+timestamp: 1731913489637
