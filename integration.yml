@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'feat: update to 6.12 by MingcongBai@deepin-community/linux-deepin-latest'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/linux-deepin-latest
+    tagsha: 4dc1d1d3b5c9e6ec88ce7c426985c414321cc1a7
+timestamp: 1731918073457
