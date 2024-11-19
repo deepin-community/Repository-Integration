@@ -43,3 +43,51 @@ repos:
       tagsha: b36e7482bbeae99ca69ec43e4510d73dab83f7d5
     - repo: deepin-community/golang-github-j-keck-arping
       tagsha: 6e9760816445cb05c616452f6ea6d4025270b2a6
+    - repo: deepin-community/golang-github-nrdcg-goinwx
+      tagsha: a4f2218d2cb7e15df05a28978c858c95aff171a9
+    - repo: deepin-community/golang-github-minio-md5-simd
+      tagsha: 9f26e5c147e64f5ef18afbcfc28c12727bcbdf12
+    - repo: deepin-community/golang-github-k-sone-critbitgo
+      tagsha: ebde218281e8867430ea12b25e270c9fa557be17
+    - repo: deepin-community/golang-github-google-renameio
+      tagsha: 708bd8a6a4e7daa252fb2bdec90b66edd550296f
+    - repo: deepin-community/golang-github-muhlemmer-httpforwarded
+      tagsha: f6252f2c5158b87516346b9652528de92c8a37e0
+    - repo: deepin-community/golang-github-jkeiser-iter
+      tagsha: b2680d1d3b5c66bfef93f71ee66c5188933b258c
+    - repo: deepin-community/golang-github-peterh-liner
+      tagsha: 217203b201371982f1c92f4f8a1adbabcc5808c1
+    - repo: deepin-community/golang-github-vultr-govultr
+      tagsha: b265f426ed5bc36178a6b779ea7772e0b399a38a
+    - repo: deepin-community/golang-github-jarcoal-httpmock
+      tagsha: 396c1388f54c5bd03899e8a540b83549130a6291
+    - repo: deepin-community/golang-github-muhlemmer-gu
+      tagsha: 929dd9828a076e20da70fc735aa93059b25e5fb4
+    - repo: deepin-community/golang-github-ovh-go-ovh
+      tagsha: 47a5ed2ce6b92510bbd1df3240d7ad35f89e5ef4
+    - repo: deepin-community/golang-github-pquerna-otp
+      tagsha: 3a116e90f666ad54a63dc83135f17ec81b8a5ca8
+    - repo: deepin-community/golang-github-dgryski-go-farm
+      tagsha: 7709d9deec9a05d8c044a8df2919c98b7acd1826
+    - repo: deepin-community/golang-github-jeremija-gosubmit
+      tagsha: f474c9af87686cd0fd8204d0f838b4d8082b4cd0
+    - repo: deepin-community/golang-github-cenkalti-rpc2
+      tagsha: a8554893071e29414556d0b0b741f910ab469824
+    - repo: deepin-community/golang-github-akamai-akamaiopen-edgegrid-golang
+      tagsha: effffe6ee280478d7dcd39791271848d0c3811e2
+    - repo: deepin-community/golang-github-jamesclonk-vultr
+      tagsha: 4eee66c92010e497b127e6c9c6700283e07e79d0
+    - repo: deepin-community/golang-github-nrdcg-desec
+      tagsha: 1a9fff7b228b5739339198a0aef79f756418c43e
+    - repo: deepin-community/golang-github-zitadel-logging
+      tagsha: 01da8ca400f7b88d2df06343bb18171fe69e86b8
+    - repo: deepin-community/golang-gopkg-eapache-channels.v1
+      tagsha: 31a7a617a8b5386085a6011dee86ef7156469901
+    - repo: deepin-community/golang-github-weppos-dnsimple-go
+      tagsha: b2b74cbb42abfdf891df35d68b8cd6db11aced9d
+    - repo: deepin-community/cowsql
+      tagsha: 3b39e5bf04268d6b9467da41bada2e03b7a559c9
+    - repo: deepin-community/raft
+      tagsha: 570a72a522e70e3ac9aa3ba26ed1d5eb397c61f7
+    - repo: deepin-community/golang-github-zitadel-schema
+      tagsha: 97756fb9d2929bd316939dcf1cbbe7530d273af3
