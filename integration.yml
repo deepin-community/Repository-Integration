@@ -1,5 +1,11 @@
 message: 'Auto integrate from topic: kf6-20241119 by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
+    - repo: deepin-community/kf6-kwindowsystem
+      tagsha: 01a5888d984d928babbae1ca5c17e27f3a18096f
     - repo: deepin-community/pkg-kde-tools
       tagsha: e485dcae216b9c7451580bdc0ecd4743ce42fa5a
+    - repo: deepin-community/kf6-kconfig
+      tagsha: 35c42cf3d44b0a73acb8d2adcf9552c19e513297
+    - repo: deepin-community/kf6-kglobalaccel
+      tagsha: 9c96825c934a8783845c4819b03648e8158952ee
