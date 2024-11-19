@@ -1,15 +1,45 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: incus by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/incus
+      tagsha: aa656b47b04443759aecf02b77766c60fc8694c7
+    - repo: deepin-community/golang-github-minio-minio-go-v7
+      tagsha: 12aa3947bbc3955bfaaa447bfb7e6268e94104b1
+    - repo: deepin-community/golang-github-jochenvg-go-udev
+      tagsha: 70b96cb29560343339f4ab6bb63042a02e61b4dd
+    - repo: deepin-community/golang-github-flosch-pongo2.v4
+      tagsha: 903b59126b8ac15399294f90bcf95f836915e511
+    - repo: deepin-community/golang-petname
+      tagsha: 10e518b278e64ff095ff1f83ac44956d0a9fe918
+    - repo: deepin-community/golang-github-golang-jwt-jwt-v5
+      tagsha: 896e5343c7ef0dd9a5c0891d50d879793fabdacc
+    - repo: deepin-community/golang-github-ovn-org-libovsdb
+      tagsha: b68b32dbd1dc2197bf43069ed2ac6fbb90de0b34
+    - repo: deepin-community/golang-github-mdlayher-ndp
+      tagsha: c121dd29352bff862e6576ad10f05d45599483ed
+    - repo: deepin-community/golang-github-cowsql-go-cowsql
+      tagsha: 8a91795d661050c8de0bce95c99118d4467a9851
+    - repo: deepin-community/golang-github-jaypipes-pcidb
+      tagsha: ea13acf08e4df82e74fb07ef812543a15a093e2a
+    - repo: deepin-community/gobgp
+      tagsha: 13c424e2d82787ff1fbc3866a29ecef7399d5a62
+    - repo: deepin-community/golang-github-zitadel-oidc
+      tagsha: 5c4890d63fbda5b467270ae40ad1900a66f18406
+    - repo: deepin-community/golang-github-mdlayher-netx
+      tagsha: dce594875e251f554a1008560da8b064789105f3
+    - repo: deepin-community/golang-github-go-jose-go-jose
+      tagsha: 00461f73f63ec88573534c44e2bb8eca00189928
+    - repo: deepin-community/golang-github-openfga-go-sdk
+      tagsha: 74d2ff44e9bbefbcf1e6e931dbd42541df39b74b
+    - repo: deepin-community/golang-gopkg-lxc-go-lxc.v2
+      tagsha: 0f1b3bf0b563ca0887d4cac2bdadc1b0aa21bd24
+    - repo: deepin-community/golang-github-robfig-cron
+      tagsha: bad0f764ef653d89b081ab887fbd5669edbf1b58
+    - repo: deepin-community/golang-github-rican7-retry
+      tagsha: 7daa11179db472d0c0b36e65c9f147c04eebde97
+    - repo: deepin-community/golang-github-xenolf-lego
+      tagsha: 500b5b7d5b644cf318c29cd8522941d8c7ff525d
+    - repo: deepin-community/golang-github-digitalocean-go-smbios
+      tagsha: b36e7482bbeae99ca69ec43e4510d73dab83f7d5
+    - repo: deepin-community/golang-github-j-keck-arping
+      tagsha: 6e9760816445cb05c616452f6ea6d4025270b2a6
