@@ -105,3 +105,9 @@ repos:
       tagsha: e508d3d9331e982c55c1e414e7e15a126bbc58a8
     - repo: deepin-community/golang-github-kolo-xmlrpc
       tagsha: 0652450cacb0afc956d8dbd3db10b5e07f72cf09
+    - repo: deepin-community/golang-rsc-qr
+      tagsha: 1ae2f8eb8f5d8439dec61e2027d00b351ff91714
+    - repo: deepin-community/golang-github-nbio-st
+      tagsha: 0e1163bf1669b1102be798806a349166936feffa
+    - repo: deepin-community/golang-github-h2non-parth
+      tagsha: 1c5e3afae7d522a8e28073104dcf92e2a0a94f1a
