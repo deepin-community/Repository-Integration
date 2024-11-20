@@ -13,3 +13,5 @@ repos:
       tagsha: f84eb371cc8d0d39838d065f50a67e259ccecbf4
     - repo: linuxdeepin/dtkdeclarative
       tagsha: 123bf395448f8635a2ef03177db98b53f890e6b4
+    - repo: linuxdeepin/dtkcommon
+      tagsha: dd29e61898ce0a074c82ee28a0b8cb8a79cdbe1d
