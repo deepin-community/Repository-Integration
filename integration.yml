@@ -111,3 +111,5 @@ repos:
       tagsha: 0e1163bf1669b1102be798806a349166936feffa
     - repo: deepin-community/golang-github-h2non-parth
       tagsha: 1c5e3afae7d522a8e28073104dcf92e2a0a94f1a
+    - repo: deepin-community/golang-starlark
+      tagsha: 51f774fb0d1eaa74b4a2dfbae35e4d431f046981
