@@ -91,3 +91,17 @@ repos:
       tagsha: 570a72a522e70e3ac9aa3ba26ed1d5eb397c61f7
     - repo: deepin-community/golang-github-zitadel-schema
       tagsha: 97756fb9d2929bd316939dcf1cbbe7530d273af3
+    - repo: deepin-community/golang-github-fatih-structs
+      tagsha: 283309bf12fd97e235d3eaecadbf62893e1cea7a
+    - repo: deepin-community/golang-github-maxatome-go-testdeep
+      tagsha: fbe96c0106b32d7f32185a90dade7dc50cc36d29
+    - repo: deepin-community/golang-github-gokyle-twofactor
+      tagsha: 11bbd4f973636a1e69c2dc1cd8b44be063c3a3dd
+    - repo: deepin-community/golang-github-cenkalti-hub
+      tagsha: 6731b1226bddce2b0303bf426411b2012c22920f
+    - repo: deepin-community/golang-gopkg-h2non-gock.v1
+      tagsha: 5cc27212a131ffab8b09b93d288eb58dc97856da
+    - repo: deepin-community/golang-barcode
+      tagsha: e508d3d9331e982c55c1e414e7e15a126bbc58a8
+    - repo: deepin-community/golang-github-kolo-xmlrpc
+      tagsha: 0652450cacb0afc956d8dbd3db10b5e07f72cf09
