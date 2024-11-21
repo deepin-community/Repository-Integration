@@ -1,15 +1,55 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: kf6-20241121 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/kf6-kidletime
+      tagsha: bbdf7dba75a67bfba9e37b6498cafe0dc4b47d67
+    - repo: deepin-community/kf6-kdbusaddons
+      tagsha: c3c1e9cbabffdd46c31cb80c2451737ee3ec4cde
+    - repo: deepin-community/kf6-kguiaddons
+      tagsha: 0bd5b2f483ee11491cccddfe81255f4672870b1a
+    - repo: deepin-community/kf6-ksvg
+      tagsha: 34d55bc88582a5e5ec1e3409799def68690e07eb
+    - repo: deepin-community/kf6-kcrash
+      tagsha: e135e56016988a1f8d2abadcd325c2106ed2b6f6
+    - repo: deepin-community/kf6-kdoctools
+      tagsha: 98de9d431114d86708d15aa77132bc3dfd9203cd
+    - repo: deepin-community/kf6-kpackage
+      tagsha: 92e227fa11e69707c57c9ff0735de0308fda1971
+    - repo: deepin-community/kf6-kcolorscheme
+      tagsha: 62a1dad44f1d772b4a8d4d6ade78b7b1040ce973
+    - repo: deepin-community/kf6-krunner
+      tagsha: 5788fec2c2cb87bc25685466bec80b0865fb3efa
+    - repo: deepin-community/kf6-kcmutils
+      tagsha: 9948aca6a5faf76fda5e9882d66cfd122c20412a
+    - repo: deepin-community/kf6-kauth
+      tagsha: f9a367cb1b2098587fdf9fe2465e47afd348344d
+    - repo: deepin-community/kf6-kcoreaddons
+      tagsha: b9213d01ce54ea47161a27a7f8ef5be777fcc037
+    - repo: deepin-community/kf6-kservice
+      tagsha: d307bb922cba601c68bed3737d29bf4315d3d7a4
+    - repo: deepin-community/kf6-knotifications
+      tagsha: 25b0b9bec4172b607e87dca8542351b4e11e5184
+    - repo: deepin-community/kf6-kxmlgui
+      tagsha: d3c3eca27b0a9c2cf41cc8d8c011bf912afaa2ff
+    - repo: deepin-community/kf6-kio
+      tagsha: 83c7076b05255fa33eccbc01fe221611576d70ff
+    - repo: deepin-community/kf6-kdeclarative
+      tagsha: 01b5e3d23cc0efca66d06aed652a9b08ba2c8f07
+    - repo: deepin-community/kf6-ki18n
+      tagsha: 0605969de8c61382880c96cd8043fefce83e4f91
+    - repo: deepin-community/kf6-knewstuff
+      tagsha: 5ea4756d161f9084a5499a4ca993cd927ffc7281
+    - repo: deepin-community/kf6-karchive
+      tagsha: fef5983426fd72443e7d7062e2690d7a5749cf9b
+    - repo: deepin-community/kf6-kirigami
+      tagsha: 9d50166f3e8387e7a93f8970649dea56c39e8996
+    - repo: deepin-community/kf6-kwallet
+      tagsha: e14af202ae4751e767a9d820d372cee5cc4e2a99
+    - repo: deepin-community/kf6-kjobwidgets
+      tagsha: 6eeacde5c9722ee0aaab9c8377bac090b8806836
+    - repo: deepin-community/kf6-kbookmarks
+      tagsha: 66db8051c5891f0ba41e00dda4d3ca981735f34f
+    - repo: deepin-community/kf6-kparts
+      tagsha: 16e14f780a73eaa41202cf8d4ca3bfe6edb3590c
+    - repo: deepin-community/kf6-kcompletion
+      tagsha: b895b1adbd1d1f9dce5701aebbb7876df38fb31a
