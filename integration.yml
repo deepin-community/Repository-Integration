@@ -34,7 +34,7 @@ repos:
     - repo: deepin-community/kf6-kio
       tagsha: 83c7076b05255fa33eccbc01fe221611576d70ff
     - repo: deepin-community/kf6-kdeclarative
-      tagsha: 01b5e3d23cc0efca66d06aed652a9b08ba2c8f07
+      tagsha: 90b414415d48c710031ab7bf60c80f5b2351fcd1
     - repo: deepin-community/kf6-ki18n
       tagsha: 0605969de8c61382880c96cd8043fefce83e4f91
     - repo: deepin-community/kf6-knewstuff
@@ -42,7 +42,7 @@ repos:
     - repo: deepin-community/kf6-karchive
       tagsha: fef5983426fd72443e7d7062e2690d7a5749cf9b
     - repo: deepin-community/kf6-kirigami
-      tagsha: 9d50166f3e8387e7a93f8970649dea56c39e8996
+      tagsha: 6ea7153ddc8547248e94148885f90b652279f8ba
     - repo: deepin-community/kf6-kwallet
       tagsha: e14af202ae4751e767a9d820d372cee5cc4e2a99
     - repo: deepin-community/kf6-kjobwidgets
@@ -77,3 +77,15 @@ repos:
       tagsha: 55b81751597394401e6781a25796af21dc4ce712
     - repo: deepin-community/kf6-breeze-icons
       tagsha: 5fc54c48682972eb7c970788d0c87892374f5215
+    - repo: deepin-community/kf6-kirigami
+      tagsha: 6ea7153ddc8547248e94148885f90b652279f8ba
+    - repo: deepin-community/kf6-kdeclarative
+      tagsha: 90b414415d48c710031ab7bf60c80f5b2351fcd1
+    - repo: deepin-community/libkscreen
+      tagsha: 96bf1d6b330a8c4307c9e3e2ec3b39cf71dbfccd
+    - repo: deepin-community/libplasma
+      tagsha: 86d751dbb4eb10f8ac077a4a002a87aeda032e73
+    - repo: deepin-community/plasma-activities
+      tagsha: b1b212bf0a522df00b91f6228c391a250d32c3bc
+    - repo: deepin-community/plasma-wayland-protocols
+      tagsha: 04682ed272bcd965b2b0934a515dbb1d2129bfca
