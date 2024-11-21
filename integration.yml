@@ -69,3 +69,11 @@ repos:
       tagsha: cf15a3f92d04e9ae464dd84b7609e89992be6812
     - repo: deepin-community/kf6-kconfigwidgets
       tagsha: a04a930f06d600c02c5fc3b4f6249eda4d613b22
+    - repo: deepin-community/layer-shell-qt
+      tagsha: bdea04ed6443c4e70da87b7099f269ea37dd3179
+    - repo: deepin-community/kf6-attica
+      tagsha: ca03160d08a63694d0f5548bb20b72af8e607d46
+    - repo: deepin-community/kf6-syndication
+      tagsha: 55b81751597394401e6781a25796af21dc4ce712
+    - repo: deepin-community/kf6-breeze-icons
+      tagsha: 5fc54c48682972eb7c970788d0c87892374f5215
