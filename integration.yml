@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: mlt by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/mlt
+      tagsha: dbdd968f4df2d0c260495400ec8dd631bba369d6
+    - repo: deepin-community/sox
+      tagsha: 1823bab1f4e6da153b89454b8b1ebfed482bc27b
+    - repo: deepin-community/rtaudio
+      tagsha: 9fbd98c74f50133b6af599acf32d540a339e4a8c
+    - repo: deepin-community/sdl12-compat
+      tagsha: c54c5e750e1ac3419725df8407edbab768df93be
+    - repo: deepin-community/xine-lib-1.2
+      tagsha: f79d599da7a15fc9a8d9d91e46b84789b55e492e
+    - repo: deepin-community/graphicsmagick
+      tagsha: fc944f1c9f500a6754b997d053fabf9cdbfd37ea
