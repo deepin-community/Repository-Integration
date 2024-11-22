@@ -5,3 +5,5 @@ repos:
       tagsha: 78ca907edecf361c28f1b2a51d2cb47de20d8633
     - repo: deepin-community/texlive-lang
       tagsha: 2b973dba6c18839f8b8985aba86e8fcdae2db74c
+    - repo: deepin-community/texlive-bin
+      tagsha: b85eda79d9061e62b85578209e460dc4d377e8e1
