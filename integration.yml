@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: texlive-20241115 by @UTsweetyfish to V23-Be
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/texlive-base
-      tagsha: a7aeffedcec77d1d8ebd4c3476fb3fc4ac31e2f0
+      tagsha: 78ca907edecf361c28f1b2a51d2cb47de20d8633
     - repo: deepin-community/texlive-lang
       tagsha: 2b973dba6c18839f8b8985aba86e8fcdae2db74c
