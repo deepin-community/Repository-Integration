@@ -1,15 +1,25 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: cd-20241123 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/deepin-deb-installer
+      tagsha: a1ecff6616de39169a9bf7abc4b0ee28a66ffe6b
+    - repo: linuxdeepin/deepin-music
+      tagsha: 0b6bb489d09bc9d726fa7257dd8d8113d4e0a076
+    - repo: linuxdeepin/deepin-ocr
+      tagsha: 07284247a29109dfeacf447454046e59c805b1cf
+    - repo: linuxdeepin/deepin-devicemanager
+      tagsha: a1e82b761d98b765b3ea31316fe2361dadc275ef
+    - repo: linuxdeepin/deepin-picker
+      tagsha: 4cb611aabfe71a59d6222774679e27cee58a1f44
+    - repo: linuxdeepin/deepin-system-monitor
+      tagsha: 4adfbef35e847f48f88eb1410c2b6d275338f269
+    - repo: linuxdeepin/deepin-voice-note
+      tagsha: a85ebab59b50baf513a0fd378bf1ae2a9cbd634d
+    - repo: linuxdeepin/deepin-screen-recorder
+      tagsha: 948880bc2c0224d9d1510599927f9c591e302949
+    - repo: linuxdeepin/dde-cooperation
+      tagsha: 09e2666efe2655d546180ebee5aa731786edc276
+    - repo: linuxdeepin/deepin-draw
+      tagsha: 155c41ac5816a29e8af62bc05aa49af1a08cb38f
+    - repo: linuxdeepin/deepin-reader
+      tagsha: 743a9caad4d322c228fe9d3ef9ada73b5c898632
