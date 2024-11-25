@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: cpanminus by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/cpanminus
+      tagsha: e9771b0ba29049064700b47dd90b126ab32e268c
+    - repo: deepin-community/libparse-pmfile-perl
+      tagsha: a032c68e38e25ff33d3e71d7f3ab1f4829698531
+    - repo: deepin-community/libmodule-cpanfile-perl
+      tagsha: 03ba7f62779e89f7ff27cca6e72b33ab9c6ab6f9
+    - repo: deepin-community/libextutils-makemaker-cpanfile-perl
+      tagsha: 18486076c909bc222abee20e7bae3714c6d1319d
+    - repo: deepin-community/liblocal-lib-perl
+      tagsha: 2e4d5bc638f6190acd713df12b44e8e00e57f187
