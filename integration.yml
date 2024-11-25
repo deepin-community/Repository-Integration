@@ -17,3 +17,9 @@ repos:
       tagsha: a85ebab59b50baf513a0fd378bf1ae2a9cbd634d
     - repo: linuxdeepin/deepin-screen-recorder
       tagsha: 948880bc2c0224d9d1510599927f9c591e302949
+    - repo: linuxdeepin/dde-cooperation
+      tagsha: 09e2666efe2655d546180ebee5aa731786edc276
+    - repo: linuxdeepin/deepin-draw
+      tagsha: 155c41ac5816a29e8af62bc05aa49af1a08cb38f
+    - repo: linuxdeepin/deepin-reader
+      tagsha: 743a9caad4d322c228fe9d3ef9ada73b5c898632
