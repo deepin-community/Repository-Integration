@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: pcp by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/libextutils-autoinstall-perl
+      tagsha: fb9b50037748fd1cb29f259929f98fef6bb6a128
+    - repo: deepin-community/libxml-tokeparser-perl
+      tagsha: 778bc93031a70b13fe9f58e2c26c5242f629a19a
+    - repo: deepin-community/pcp
+      tagsha: 050b92f0f7d0e1e18be4bc0f734d274a0b304ab0
