@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/deepin-compressor
       tagsha: dfd0301255851bd36f5e9555b960d58696db68a1
+    - repo: linuxdeepin/deepin-fcitx5configtool-plugin
+      tagsha: d565af5d6106acb5037dc1a8c76a2e7d20b381c6
