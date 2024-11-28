@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  Add LoongArch TLSDESC and tunable support from upstream by
+  lixing-star@deepin-community/glibc
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/glibc
+    tagsha: d74719f461625a611046ac76d5ceb7bfcc32f266
+timestamp: 1732764941317
