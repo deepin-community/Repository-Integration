@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: cinnamon-20241127 by @StrangeZuo to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/cinnamon
+      tagsha: 0ec601e6626d295efc172d53866057c25a0b71ab
+    - repo: deepin-community/cinnamon-desktop
+      tagsha: b03f38e0d2dbc8e594895205a6f47618f55ff500
+    - repo: deepin-community/muffin
+      tagsha: 31aa417a42bb2c713e2ca55c08102cc5bc5aed3f
+    - repo: deepin-community/muffin
+      tagsha: 0eb13cb7b23fb33e45fa06fafdb6de414d87896e
+    - repo: deepin-community/cinnamon-menus
+      tagsha: ece1d5168a3f206c2debcc8fc7a60e39b38c3bcd
+    - repo: deepin-community/xapp
+      tagsha: 60ac5b91cedeff0005184abd399e86098a40c9dd
+    - repo: deepin-community/cinnamon-settings-daemon
+      tagsha: 990bcc269766728f21b8f8d810f0024113dc998c
+    - repo: deepin-community/cjs
+      tagsha: 1f25653d8500528943c18784a63b801799e2a379
