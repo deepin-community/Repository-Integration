@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'chore: update version to 6.5.12 by Johnson-zs@linuxdeepin/dde-file-manager'
+milestone: V23-Beta3
+repos:
+  - repo: linuxdeepin/dde-file-manager
+    tagsha: eddf88857cecd4bdcbdeab8448fb55232998e5eb
+timestamp: 1733128264488
