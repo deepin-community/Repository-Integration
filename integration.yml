@@ -10,6 +10,6 @@ repos:
     - repo: linuxdeepin/dtk6declarative
       tagsha: fbcf3b274378dd0c86a953a930099c706a44c168
     - repo: linuxdeepin/qt6platform-plugins
-      tagsha: bb7752ae919a2a43b4d31f962fe2ea6cf9f5b593
+      tagsha: d212866e5946801af3d3595cc71b094056ca149b
     - repo: linuxdeepin/qt6integration
       tagsha: 18ca28de334116dc8806be16d20890bf776b83f7
