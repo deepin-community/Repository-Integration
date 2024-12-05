@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: dlog-03 by @hudeng-go to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dtklog
+      tagsha: bb830e7583c121d12de13421b9eb3e7b27e792fe
+    - repo: linuxdeepin/dtk6log
+      tagsha: 460915191d8ee6436eaaf4d913361575eb4741b8
