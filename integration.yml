@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: cinnamon-20241127 by @Zeno-sole to V23-Beta3'
+message: 'Auto integrate from topic: cinnamon-20241127 by @StrangeZuo to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/cinnamon
