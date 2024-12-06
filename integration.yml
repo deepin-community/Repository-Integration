@@ -1,10 +1,10 @@
-message: 'Auto integrate from topic: cinnamon-20241127 by @StrangeZuo to V23-Beta3'
+message: 'Auto integrate from topic: cinnamon-20241127 by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/cinnamon
       tagsha: 0ec601e6626d295efc172d53866057c25a0b71ab
     - repo: deepin-community/cinnamon-desktop
-      tagsha: b03f38e0d2dbc8e594895205a6f47618f55ff500
+      tagsha: ca99fd7cbe10bec759c78c2ec8f821080c03e203
     - repo: deepin-community/muffin
       tagsha: 31aa417a42bb2c713e2ca55c08102cc5bc5aed3f
     - repo: deepin-community/muffin
@@ -14,6 +14,8 @@ repos:
     - repo: deepin-community/xapp
       tagsha: 60ac5b91cedeff0005184abd399e86098a40c9dd
     - repo: deepin-community/cinnamon-settings-daemon
-      tagsha: 990bcc269766728f21b8f8d810f0024113dc998c
+      tagsha: 26fad41dac69d5a138fe78db16cf031cba660024
     - repo: deepin-community/cjs
       tagsha: 1f25653d8500528943c18784a63b801799e2a379
+    - repo: deepin-community/cinnamon
+      tagsha: 6f960efa06b3ee79a383d48d885dd97474b35071
