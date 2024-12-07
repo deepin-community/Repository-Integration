@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  fix: ssh.service is disabled by default by
+  liujianqiang-niu@deepin-community/openssh
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/openssh
+    tagsha: 9baad4267818ecb637d47ded9a6754efcb9c9e29
+timestamp: 1733562275348
