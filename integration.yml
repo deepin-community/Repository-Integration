@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update libgit2 to 1.8.4+ds-3 by
+  deepin-community-bot[bot]@deepin-community/libgit2
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/libgit2
+    tagsha: 7ef1a3821c7efb86c802c992401f65887b10da89
+timestamp: 1733808899384
