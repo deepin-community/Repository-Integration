@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  fix: Keep the username directory permission at 750. by
+  liujianqiang-niu@deepin-community/shadow
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/shadow
+    tagsha: 846b8faa19d4a272e2272d0ef0b1f8f03cb5b8f7
+timestamp: 1733896887039
