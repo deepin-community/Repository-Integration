@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'fix: 通过postinst脚本动态判断版本安装desktop文件 by Zeno-sole@linuxdeepin/default-settings'
+milestone: V23-Beta3
+repos:
+  - repo: linuxdeepin/default-settings
+    tagsha: d3b8643c9d3c167c4826f38c697f5dd7eedb5356
+timestamp: 1733993846458
