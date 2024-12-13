@@ -10,7 +10,7 @@ repos:
     - repo: linuxdeepin/dtkwidget
       tagsha: 2457fea52bc362d10e0bd668e6653c00424720aa
     - repo: linuxdeepin/dtkdeclarative
-      tagsha: 4ed128d1f8a9445de3cf81abd8baa206881461a1
+      tagsha: 204780d6173cdb3c3a761d77597259ef775d839b
     - repo: linuxdeepin/qt5platform-plugins
       tagsha: 80679d591642ae49eaa73292dfa6bc02f4e7c262
     - repo: linuxdeepin/qt5integration
