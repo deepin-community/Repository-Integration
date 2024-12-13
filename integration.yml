@@ -7,3 +7,5 @@ repos:
       tagsha: 2f536c9aeee5906a6cc7a69485db01a989d1558f
     - repo: linuxdeepin/deepin-desktop-theme
       tagsha: 56d51e18c683149a96de73b255cbeb1300ec27fa
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: 1eea6688d66f2fdde68c337cbb3ddd4df5b167cf
