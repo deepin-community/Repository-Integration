@@ -2,10 +2,12 @@ message: 'Auto integrate from topic: dde-12-13 by @FeiWang1119 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-control-center
-      tagsha: 9c1095587a222a7a98d52185daa8746cef497dc7
+      tagsha: d6ff5c55ee1f32a5797fb0672755d1e6fdff8ba9
     - repo: linuxdeepin/dde-appearance
       tagsha: 2f536c9aeee5906a6cc7a69485db01a989d1558f
     - repo: linuxdeepin/deepin-desktop-theme
       tagsha: 1551f045b0e29acf6fbfd394a6f733732b7effb3
     - repo: linuxdeepin/dde-launchpad
       tagsha: 1eea6688d66f2fdde68c337cbb3ddd4df5b167cf
+    - repo: linuxdeepin/dde-control-center
+      tagsha: e6defd4dcfb2d4385723f7142acfa5e735686f39
