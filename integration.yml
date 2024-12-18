@@ -10,6 +10,6 @@ repos:
     - repo: linuxdeepin/dde-launchpad
       tagsha: 1eea6688d66f2fdde68c337cbb3ddd4df5b167cf
     - repo: linuxdeepin/dde-control-center
-      tagsha: 600864b394f87da2925e839fc05e90f3a6f79721
+      tagsha: 59e9bd62be9a4cdddb06121f82ac9f8ec820508c
     - repo: linuxdeepin/dde-account-faces
       tagsha: 78d3ee889bf32be427926147f9838d0cf7e24f77
