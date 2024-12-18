@@ -4,12 +4,12 @@ repos:
     - repo: linuxdeepin/dde-control-center
       tagsha: d6ff5c55ee1f32a5797fb0672755d1e6fdff8ba9
     - repo: linuxdeepin/dde-appearance
-      tagsha: 2f536c9aeee5906a6cc7a69485db01a989d1558f
+      tagsha: 77600ac279b6d240c8ede80d6518bbb76945dbef
     - repo: linuxdeepin/deepin-desktop-theme
       tagsha: 1551f045b0e29acf6fbfd394a6f733732b7effb3
     - repo: linuxdeepin/dde-launchpad
       tagsha: 1eea6688d66f2fdde68c337cbb3ddd4df5b167cf
     - repo: linuxdeepin/dde-control-center
-      tagsha: cf5252bc1b4b783ec86b9eb3f754369dfcef65c4
+      tagsha: 600864b394f87da2925e839fc05e90f3a6f79721
     - repo: linuxdeepin/dde-account-faces
       tagsha: 78d3ee889bf32be427926147f9838d0cf7e24f77
