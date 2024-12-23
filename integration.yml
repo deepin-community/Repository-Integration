@@ -9,3 +9,5 @@ repos:
       tagsha: 5d734f551a81b55a034b51138b31176f7b4c045f
     - repo: deepin-community/gdal
       tagsha: 7526c43a29ac1558a208b45515153ffa2a0fe697
+    - repo: deepin-community/inkscape
+      tagsha: efd850b310e5e53a32c74c69cc524a36188cb031
