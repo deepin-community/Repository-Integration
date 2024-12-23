@@ -1,9 +1,11 @@
-message: 'Auto integrate from topic: evince-20241121 by @Cherrling to V23-Beta3'
+message: 'Auto integrate from topic: evince-20241121 by @UTsweetyfish to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/nautilus
-      tagsha: 1fa20668363e6cb1f6d594b797899b6e8c83247d
+      tagsha: bfa2c8cca898da5edd878f3752772cfb8e859487
     - repo: deepin-community/evince
       tagsha: 772b0fe21f6da7cd9f9b6881ec62fcc154bb0f03
     - repo: deepin-community/poppler
       tagsha: 5d734f551a81b55a034b51138b31176f7b4c045f
+    - repo: deepin-community/gdal
+      tagsha: 7526c43a29ac1558a208b45515153ffa2a0fe697
