@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: aiohttp-3.10.10 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/python-aiohttp
+      tagsha: 621c2c43d9fdbd15f4a37477ff321972426541ed
+    - repo: deepin-community/yarl
+      tagsha: e612584928a5c64f458ea1752a092e53c8f5093c
+    - repo: deepin-community/aiodns
+      tagsha: 8d99b6d2b8c69516174fe949475522dc08ab74ed
+    - repo: deepin-community/aiohappyeyeballs
+      tagsha: 882e9fe02988d284340a0ea96e0d564afdfc393b
