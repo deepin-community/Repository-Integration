@@ -2,13 +2,13 @@ message: 'Auto integrate from topic: mesa-1129 by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/mesa
-      tagsha: 488d310cc4d6f3b6228cbfbd561b01e89b71328c
+      tagsha: 3e2f1f066d350b51d3ad10f5e5ea956bb9248de0
     - repo: deepin-community/directx-headers
       tagsha: 413da3a2c8155eae2cba69406cb54135bfa83d42
     - repo: deepin-community/wayland-protocols
-      tagsha: 0680de0ca464dedb9c29f9f7eea56591085ba223
+      tagsha: a44cc4230a575c051749d76e96cb200bcbd4f44a
     - repo: deepin-community/llvm-toolchain-19
-      tagsha: 1b2359e279ebfda71d01c8681bdc82bf7d4abfed
+      tagsha: 2db870ed49e53a643031b37d13b6752097890a51
     - repo: deepin-community/wasi-libc
       tagsha: c52d751e6d84f3044650e9194fcd396c57b082a9
     - repo: deepin-community/spirv-llvm-translator-19
