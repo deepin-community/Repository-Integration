@@ -1,15 +1,25 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: pyqt6-6.8.0 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/pyqt-builder
+      tagsha: b942794a34e3269233324812a19113ea0835d3ea
+    - repo: deepin-community/pyqt6
+      tagsha: fc2776c96f560e31ee1019c561ae09e85c5e3ab0
+    - repo: deepin-community/sip6
+      tagsha: 0c63fc59bba21296d88518c4939f7012cd5fa570
+    - repo: deepin-community/setuptools
+      tagsha: ba7e80c9f8ad45558b106763ecc37a04b6092342
+    - repo: deepin-community/jaraco.context
+      tagsha: f0da9e0d237f85fa31d049854a4b8ff938e9b05c
+    - repo: deepin-community/python-autocommand
+      tagsha: 237669f0d70043cfa27f2a2a320afb29f6ac4315
+    - repo: deepin-community/python-inflect
+      tagsha: 3520d3f75cea3347ba25c89ec3be5d8801791cd9
+    - repo: deepin-community/python-typeguard
+      tagsha: 7f1c5de0d53435db4bdb3b5ff1f1a0bf87231b1f
+    - repo: deepin-community/jaraco.text
+      tagsha: 63259ba3e052663d3b6a03e567c8bc277431b985
+    - repo: deepin-community/jaraco.classes
+      tagsha: 01dc1fb64ea972eef5dc94c41f6b2deb88fd1d9d
+    - repo: deepin-community/jaraco.collections
+      tagsha: 8d93c4b7dbfcf06f14d8fdeb8d3ac441ff119a2e
