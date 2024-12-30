@@ -3,8 +3,6 @@ milestone: V23-Beta3
 repos:
     - repo: deepin-community/pyqt-builder
       tagsha: b942794a34e3269233324812a19113ea0835d3ea
-    - repo: deepin-community/pyqt6
-      tagsha: fc2776c96f560e31ee1019c561ae09e85c5e3ab0
     - repo: deepin-community/sip6
       tagsha: 0c63fc59bba21296d88518c4939f7012cd5fa570
     - repo: deepin-community/setuptools
