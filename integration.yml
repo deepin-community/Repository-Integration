@@ -1,15 +1,53 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: emacs-20241231 by @Cherrling to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/bm-el
+      tagsha: c3ee41213be51b0473305153df15d8f3316fe60a
+    - repo: deepin-community/csv-mode
+      tagsha: 17d44d5a8e61426b2806135100430b6c3ae0b8f3
+    - repo: deepin-community/color-theme-modern
+      tagsha: bed3e8efb81ac49c7e137443d3f1540783b3c536
+    - repo: deepin-community/diminish-el
+      tagsha: 732e7b8cd30b91cd28bfe2e9e7747bad44d75a61
+    - repo: deepin-community/emacs-htmlize
+      tagsha: acb5a4d8d7b4afed67dfe57287a5531478dcf0e0
+    - repo: deepin-community/emacs-pod-mode
+      tagsha: 180781617c42a771fc0f9e9c30a55c52456f5000
+    - repo: deepin-community/emacs-session
+      tagsha: cd1323888019d7907a8901685d324464bfb88b85
+    - repo: deepin-community/folding-mode-el
+      tagsha: 9b7ac390f86ee439c20dabaeeedaea592016168b
+    - repo: deepin-community/eproject-el
+      tagsha: 2b2207f5146ab5380b6f19b0a38de3d4e5c5e9fb
+    - repo: deepin-community/graphviz-dot-mode
+      tagsha: c54fddb0ff143bc76ebdc846fd3b1ff22ad6e633
+    - repo: deepin-community/initsplit-el
+      tagsha: 71d21cc55c20edb6a2dfe409c06a5ce531379d5b
+    - repo: deepin-community/markdown-mode
+      tagsha: 25cc2ab6a429aa30130d0d1537de9e4d443bba70
+    - repo: deepin-community/mutt-alias-el
+      tagsha: 375b889383ed98a750c5de98e777528efd885c9e
+    - repo: deepin-community/tabbar-el
+      tagsha: 371e183f9cdb79590c1606df21a8cf9d24a9f69b
+    - repo: deepin-community/muttrc-mode-el
+      tagsha: 22d59ba7ca505f0878c03e2ed4f95b3b07ae480e
+    - repo: deepin-community/apache-mode-el
+      tagsha: 8cc0d10e13209fa8563c4495a09a3ebd9661d8fa
+    - repo: deepin-community/boxquote-el
+      tagsha: 2e2b77b0a559a62a98d797c6098f3f4b02bbb319
+    - repo: deepin-community/emacs-goodies-el
+      tagsha: a54c4be45f472863fd46d27d5b66fee9cc0a4b0a
+    - repo: deepin-community/browse-kill-ring-el
+      tagsha: 847d669f6df8e51287aef3d41872c7cb26721417
+    - repo: deepin-community/bar-cursor-el
+      tagsha: 3003f06c35c9048220d24e827001c91440b64c6a
+    - repo: deepin-community/libcpan-changes-perl
+      tagsha: 8375859b927f7a8dc45a82b035e123f21be104a0
+    - repo: deepin-community/libdata-perl-perl
+      tagsha: a4a867d91bd8a3562bdba9ed1704b1e9e056a3eb
+    - repo: deepin-community/libmoox-handlesvia-perl
+      tagsha: 673250fef99f2fda0796cf01a7943e512bbed093
+    - repo: deepin-community/libmoox-types-mooselike-perl
+      tagsha: 833a8428240b29e3ad91a90dba95709ad38427d8
+    - repo: deepin-community/libpod-readme-perl
+      tagsha: 81f74ba6b65530e6c9e02b1201e335bdcdc50347
