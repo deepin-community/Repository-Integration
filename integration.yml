@@ -19,3 +19,7 @@ repos:
       tagsha: cc21f09b2175f9f2346d3aea333ef6ab051c0286
     - repo: deepin-community/libfont-freetype-perl
       tagsha: e1e4292ef66c8dbab50d61ebdbf39d6def3c9825
+    - repo: deepin-community/libtest-expectandcheck-perl
+      tagsha: e02beca96a78ca8969a5ee2fdc5ed3f74f23856d
+    - repo: deepin-community/libcrypt-openssl-guess-perl
+      tagsha: 21cd0ad364831263de57300f26dbedf7daaf6a9a
