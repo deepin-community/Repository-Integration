@@ -1,15 +1,21 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: normalize-20250109 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/liburing
+      tagsha: 0aef1c63beeed02aec101f82fda7c105fbd0f50c
+    - repo: deepin-community/libmath-int64-perl
+      tagsha: 97cb4bf6126a2c18a52a6e457a04232bd3faf77e
+    - repo: deepin-community/libfunction-parameters-perl
+      tagsha: 8a6dddc91a13d866c637aeab271cf25337113657
+    - repo: deepin-community/libfuture-io-perl
+      tagsha: 00ce8d08a604db0c3f586cebd6332bfcd289f438
+    - repo: deepin-community/sdparm
+      tagsha: 5888c2d5d99cc8f1b1423ac703272ec24767815c
+    - repo: deepin-community/libfcgi-perl
+      tagsha: af8e4e84b7f624b134744f6dba1b5d59a9634567
+    - repo: deepin-community/libcrypt-openssl-random-perl
+      tagsha: efb396255c1af559ed70ce355f54d6c6c540b134
+    - repo: deepin-community/libsub-name-perl
+      tagsha: cc21f09b2175f9f2346d3aea333ef6ab051c0286
+    - repo: deepin-community/libfont-freetype-perl
+      tagsha: e1e4292ef66c8dbab50d61ebdbf39d6def3c9825
