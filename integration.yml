@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: mesa-1129 by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/mesa
+      tagsha: 3e2f1f066d350b51d3ad10f5e5ea956bb9248de0
+    - repo: deepin-community/directx-headers
+      tagsha: 413da3a2c8155eae2cba69406cb54135bfa83d42
+    - repo: deepin-community/wayland-protocols
+      tagsha: a44cc4230a575c051749d76e96cb200bcbd4f44a
+    - repo: deepin-community/llvm-toolchain-19
+      tagsha: 2db870ed49e53a643031b37d13b6752097890a51
+    - repo: deepin-community/wasi-libc
+      tagsha: c52d751e6d84f3044650e9194fcd396c57b082a9
+    - repo: deepin-community/spirv-llvm-translator-19
+      tagsha: c0ea6767870e35edf5400fb1e582a93083581edb
+    - repo: deepin-community/amdgcn-tools-18
+      tagsha: f5df7c03d76c03540bec649d6241842f1edcee19
