@@ -13,3 +13,5 @@ repos:
       tagsha: c52d751e6d84f3044650e9194fcd396c57b082a9
     - repo: deepin-community/spirv-llvm-translator-19
       tagsha: c0ea6767870e35edf5400fb1e582a93083581edb
+    - repo: deepin-community/amdgcn-tools-18
+      tagsha: f5df7c03d76c03540bec649d6241842f1edcee19
