@@ -18,6 +18,8 @@ repos:
     - repo: deepin-community/libjxl-testdata
       tagsha: 3498f0d34c66761db485af7aec8702a15da2bea5
     - repo: deepin-community/kimageformats
-      tagsha: e967332f6af19dda7a90db7c98f34c06af808f08
+      tagsha: d7f629c1be457ff8434eee3a92b3b6e71867b0b7
     - repo: deepin-community/libavif
       tagsha: ead05170a9a1781a3a9b505c2ea55871e4b1d449
+    - repo: deepin-community/kimageformats
+      tagsha: f033610ddbc623ae59323fe44aa23100ac87cf33
