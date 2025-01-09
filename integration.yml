@@ -1,15 +1,57 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: ipython-20250109 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/ipython
+      tagsha: 620d98aed9ebace7bba208b7548d6844ce0253a3
+    - repo: deepin-community/python-asttokens
+      tagsha: 1110d16a164f74ff3b54db19e2a178909121cdb6
+    - repo: deepin-community/python-stack-data
+      tagsha: 4914c3ddbd8d68066e242acecf6aac285e749970
+    - repo: deepin-community/python-littleutils
+      tagsha: 8e57d0cce08d5d18e35a7ec7b3f83e69f4d9a1a8
+    - repo: deepin-community/python-pure-eval
+      tagsha: c2c230ee55e18fbc04d09ad6e4ead68e70721e02
+    - repo: deepin-community/python-executing
+      tagsha: 47fad03ec91e5083327c85c8ae92f33c2ddf50e8
+    - repo: deepin-community/jupyter-core
+      tagsha: c39b31292b1c5b3d167018d78adf40552dd0c163
+    - repo: deepin-community/traitlets
+      tagsha: b1a45090011d8e923aadf9cc3b982857562956b0
+    - repo: deepin-community/ipython-genutils
+      tagsha: ee9e1153a2ad443849fb3ae5c17f3f1d50d2d7a9
+    - repo: deepin-community/matplotlib-inline
+      tagsha: d9dbc05d7c7ea77b6f0c506911d86cb86a5983db
+    - repo: deepin-community/jupyter-comm
+      tagsha: 68fff33f8768677de1d130f2049761ec86641ddf
+    - repo: deepin-community/ipykernel
+      tagsha: c1a90aaabdf71f2259432dba1186f9a6da260d09
+    - repo: deepin-community/ipyparallel
+      tagsha: 303dc0ae1ebc53cce023052be1c57ce1baa06967
+    - repo: deepin-community/jupyter-console
+      tagsha: f81847366af306ca7f9be9a4af334e6e9d02d8f1
+    - repo: deepin-community/jupyter-client
+      tagsha: d7556bb84faf0a284f50a7be985eece3c9085436
+    - repo: deepin-community/nbconvert
+      tagsha: 0b560fac6a335b114157c49b8be218126b824ac4
+    - repo: deepin-community/nbclient
+      tagsha: d370f9daa726f14b93d12c9a1013af4ecc790cf9
+    - repo: deepin-community/testpath
+      tagsha: 9c4a57406a8c4cbb4e3b94fab7e2bd31a30ae6db
+    - repo: deepin-community/terminado
+      tagsha: d8992adea2aa0e4fcf217a4073aae6b4cefc6465
+    - repo: deepin-community/jupyter-notebook
+      tagsha: 3950a1ae44cc2e9cb226cc6910e1f81e0ecc12f0
+    - repo: deepin-community/prompt-toolkit
+      tagsha: 6b3ae5db51f4aaf0473cabeeaab19bea7c6ba38e
+    - repo: deepin-community/pytest-jupyter
+      tagsha: 226f2c73f173825fec051caca9771369c9094a3f
+    - repo: deepin-community/python-autodoc-traits
+      tagsha: ec22875d96e18320852e4db3def8e2b6ffad74cf
+    - repo: deepin-community/sphinxcontrib-github-alt
+      tagsha: f5d32543dbb590a46041674d4040ee0610c85299
+    - repo: deepin-community/myst-nb
+      tagsha: c5516ff14b0eac8e0dcdc1a423a3a4e00b1db627
+    - repo: deepin-community/pytest-mypy-testing
+      tagsha: fe0d39da942eac47da2fb59aff92212072370cd6
+    - repo: deepin-community/jupyter-cache
+      tagsha: 08b3c4f4a590bd748f5f7b882f60ff3d5a0be4da
