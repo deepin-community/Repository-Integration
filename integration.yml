@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: nm-20250110 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/network-manager-l2tp
+      tagsha: bf0aedfec05fea18aa9fc25fd4aed90eedd16b4a
+    - repo: deepin-community/network-manager-openconnect
+      tagsha: c903b48702f4ab7b897173b29c4cab3ef726c2ed
+    - repo: deepin-community/network-manager-sstp
+      tagsha: d23f336d297d5fbd0920d3d00bfd0d38bf9cbce4
+    - repo: deepin-community/network-manager-strongswan
+      tagsha: 360024c483093dd6a71fe6f75492010bba1d484d
+    - repo: deepin-community/network-manager-vpnc
+      tagsha: 69d1d743ffce8d1b4b9409eddfa6293cb9d6badc
+    - repo: deepin-community/network-manager-pptp
+      tagsha: 19513861fb89786bd22eebc68f421d0c8df621b4
+    - repo: deepin-community/network-manager-applet
+      tagsha: 66ec5fac0c49c1ddcaa9e4c8f596a5dc03d70a8c
+    - repo: deepin-community/network-manager-openvpn
+      tagsha: 95887c689e44efb006a66577b8a5a6969c6094c3
