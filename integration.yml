@@ -2,13 +2,9 @@ message: 'Auto integrate from topic: jdk by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/openjdk-21
-      tagsha: dac0838f555ba0f5c512b22b82c29d1f1dee816c
+      tagsha: b9ad749b38f7d29a18fd82364c79d45b555466ae
     - repo: deepin-community/openjdk-20
       tagsha: 356e07dc76b5440f8f55373f69fc6d3a7086e841
-    - repo: deepin-community/openjdk-19
-      tagsha: 31b7e3502d8458d323585218ccbdfdf503682c21
-    - repo: deepin-community/openjdk-18
-      tagsha: 516b834821dd37ef079e8063bb566c55fc424b8e
     - repo: deepin-community/libxfce4ui
       tagsha: 975fe6b27cbc376490f639adbb6e51f5a9b64216
     - repo: deepin-community/libxfce4util
