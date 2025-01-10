@@ -3,4 +3,4 @@ milestone: V23-Release
 repos:
   - repo: deepin-community/openjdk-17
     tagsha: d95516f51017e899a63f463558fac2428109c9d9
-timestamp: 1722503011937
+timestamp: 1722503011933
