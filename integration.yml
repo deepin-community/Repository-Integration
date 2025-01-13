@@ -5,4 +5,6 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/multipath-tools
     tagsha: 0740e668e7c02e13b21b219859cee8f172768057
+  - repo: deepin-community/lvm2
+    tagsha: d2f9d336b5617dd7320623d0ed2fd38458558a90
 timestamp: 1736757629243
