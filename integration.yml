@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'feat: update rsync to 3.3.0+ds1-3 by UTsweetyfish@deepin-community/rsync'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/rsync
+    tagsha: fec7dc65a7f80fcab2517273caee4280c5cb1f4f
+timestamp: 1736880354620
