@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update smplayer to 24.5.0+ds-1 by
+  deepin-community-bot[bot]@deepin-community/smplayer
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/smplayer
+    tagsha: 9ddb50439950dbb182ccb34089947f1f2ff55ed3
+timestamp: 1736928485389
