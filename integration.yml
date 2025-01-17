@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update liblol to 0.1.6-1 by
+  deepin-community-bot[bot]@deepin-community/liblol
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/liblol
+    tagsha: 1f0d9be4dc5055539418189f2332fed08889ae37
+timestamp: 1737084524765
