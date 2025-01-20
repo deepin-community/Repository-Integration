@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'fix: 完善盒盖状态插拔电源动作 by ECQZXC@linuxdeepin/dde-daemon'
+milestone: V23-Beta3
+repos:
+  - repo: linuxdeepin/dde-daemon
+    tagsha: 5f6f794091c3a56deafd0cd2a55bc99c66227735
+timestamp: 1737337220370
