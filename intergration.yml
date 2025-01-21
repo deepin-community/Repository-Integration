@@ -1,7 +1,15 @@
+# Required
 message: |
-  Integrated for 23 preview
+  Integrated for V25-Release
+# Not required, now default is V25-Release
+milestone: V23-Release
+# Required
 repos: 
-  - repo: deepin-community/dkms
-    tag:
-    order: 0
-    tagsha: "eea99c909ba67a5bc2b894cea5217155f01c7972"
+  # Required
+  - repo: linuxdeepin/deepin-sync-client 
+    # Not required
+    # Not required, but need one of tag and tagsha info
+    # When use tag info, integration workflow will check repository tag and build tag version
+    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
+    tagsha: "develop/v25"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/nonfree/deepin-sync-client"
