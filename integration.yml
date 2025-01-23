@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  upgrade golang-github-googleapis-gax-go (2.13.0-1) unstable by
+  Cherrling@deepin-community/golang-github-googleapis-gax-go
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/golang-github-googleapis-gax-go
+    tagsha: 4a0963f5de4551540296bc99734026ffe1db7aed
+timestamp: 1737612681935
