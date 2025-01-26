@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  upgrade kguiaddons (5.115.0-4) unstable by
+  Cherrling@deepin-community/kguiaddons
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/kguiaddons
+    tagsha: a93e07d825feaaf24d02428c0b6b7e3ee0713721
+timestamp: 1737910364776
