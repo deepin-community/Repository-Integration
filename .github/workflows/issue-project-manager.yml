@@ -118,7 +118,7 @@ jobs:
             core.setOutput('app_token', token)
 
       - name: Download integration files
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: integration-archive-${{ github.event.number }}
 

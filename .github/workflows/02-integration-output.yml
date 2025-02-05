@@ -10,7 +10,7 @@ jobs:
     steps:
 
       - name: download integration detail
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: integration-archive-${{ github.event.number }}
 
