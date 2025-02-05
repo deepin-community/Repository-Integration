@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  upgrade python-charset-normalizer (3.4.0-1) unstable by
+  Cherrling@deepin-community/python-charset-normalizer
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/python-charset-normalizer
+    tagsha: f0c74f20c7c3461a652b868428c6f3808519d163
+timestamp: 1737910454340
