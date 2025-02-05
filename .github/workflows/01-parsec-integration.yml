@@ -378,7 +378,7 @@ jobs:
             }
 
       - name: upload integration detail
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: integration-archive-${{ github.event.number }}
           path: |
