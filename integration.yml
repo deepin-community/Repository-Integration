@@ -17,3 +17,5 @@ repos:
       tagsha: 3193d99e387f7b6b1f366fd4b76a4eb0dcfe76ce
     - repo: deepin-community/opensubdiv
       tagsha: 021f2c72c0b28a0361563396f4d8f09c3d57da89
+    - repo: deepin-community/ptex-base
+      tagsha: e18d0faa846d3e22fee0c9a6c87894e21ffe1b52
