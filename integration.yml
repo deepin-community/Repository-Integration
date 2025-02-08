@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update gcc-arm-none-eabi to 15%14.2.rel1-1 by
+  lhdjply@deepin-community/gcc-arm-none-eabi
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/gcc-arm-none-eabi
+    tagsha: a32673e6cdb417dab3445cfa7b6e849c7d05422f
+timestamp: 1738976751757
