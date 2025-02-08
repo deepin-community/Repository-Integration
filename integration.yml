@@ -6,7 +6,7 @@ repos:
     - repo: deepin-community/kf6-kdbusaddons
       tagsha: c3c1e9cbabffdd46c31cb80c2451737ee3ec4cde
     - repo: deepin-community/kf6-kguiaddons
-      tagsha: 0bd5b2f483ee11491cccddfe81255f4672870b1a
+      tagsha: 1039191201fa7358d077b1a3ccf2456de774892e
     - repo: deepin-community/kf6-ksvg
       tagsha: 34d55bc88582a5e5ec1e3409799def68690e07eb
     - repo: deepin-community/kf6-kcrash
@@ -20,7 +20,7 @@ repos:
     - repo: deepin-community/kf6-krunner
       tagsha: 5788fec2c2cb87bc25685466bec80b0865fb3efa
     - repo: deepin-community/kf6-kcmutils
-      tagsha: 9948aca6a5faf76fda5e9882d66cfd122c20412a
+      tagsha: 77d005ce1caf1b098ea1b8e2c887282a0a7205ae
     - repo: deepin-community/kf6-kauth
       tagsha: 1605f45b916606b875bf150fad6f628b7fb28331
     - repo: deepin-community/kf6-kcoreaddons
@@ -44,7 +44,7 @@ repos:
     - repo: deepin-community/kf6-kirigami
       tagsha: 6ea7153ddc8547248e94148885f90b652279f8ba
     - repo: deepin-community/kf6-kwallet
-      tagsha: e14af202ae4751e767a9d820d372cee5cc4e2a99
+      tagsha: 4ad176a86bef8958ab471ab6064495ff63ac7a31
     - repo: deepin-community/kf6-kjobwidgets
       tagsha: 6eeacde5c9722ee0aaab9c8377bac090b8806836
     - repo: deepin-community/kf6-kbookmarks
@@ -54,15 +54,15 @@ repos:
     - repo: deepin-community/kf6-kcompletion
       tagsha: b895b1adbd1d1f9dce5701aebbb7876df38fb31a
     - repo: deepin-community/kscreenlocker
-      tagsha: 7e3d64abb687377ca2fcf81c3de85c3fe1f5a043
+      tagsha: cde235d006571a3f23a1e6aec9939d1c58b4dcc8
     - repo: deepin-community/kf6-kcodecs
       tagsha: 077ef7f256c7b563ff4c77776c430a99212f6496
     - repo: deepin-community/kf6-kwidgetsaddons
-      tagsha: a3774146ae5d860838c201907873c2690ea0789e
+      tagsha: bb3f55949664275ab40df36eaac38018b0039abf
     - repo: deepin-community/kf6-kiconthemes
-      tagsha: 49d8947fe0196e02f44da3d34f6dcee6a9221e8a
+      tagsha: d455027ff9c2c9d1171ebc98f178fab0eb087809
     - repo: deepin-community/kf6-kitemviews
-      tagsha: d14fb636c03a282db78941ae8b10a8b184265581
+      tagsha: f0de6133de3c60407485d21be20cc5e12da125bf
     - repo: deepin-community/kf6-kded
       tagsha: 9fed73a524f3db13fa355e3890a550615cab5f39
     - repo: deepin-community/kf6-solid
@@ -82,10 +82,32 @@ repos:
     - repo: deepin-community/kf6-kdeclarative
       tagsha: 90b414415d48c710031ab7bf60c80f5b2351fcd1
     - repo: deepin-community/libkscreen
-      tagsha: 96bf1d6b330a8c4307c9e3e2ec3b39cf71dbfccd
+      tagsha: 740946eee12e24695871c52c0a3d4d17af923a1b
     - repo: deepin-community/libplasma
-      tagsha: 86d751dbb4eb10f8ac077a4a002a87aeda032e73
+      tagsha: 109cf8a3343c1d28539d5a67edceca9a1cd75468
     - repo: deepin-community/plasma-activities
       tagsha: b1b212bf0a522df00b91f6228c391a250d32c3bc
     - repo: deepin-community/plasma-wayland-protocols
       tagsha: 04682ed272bcd965b2b0934a515dbb1d2129bfca
+    - repo: deepin-community/kglobalacceld
+      tagsha: 259f5dcf2682be175272bd4badbe66d775ef95d4
+    - repo: deepin-community/kwallet-kf5
+      tagsha: a28a8a9a41af4a6680852477fffc7f4621744278
+    - repo: deepin-community/kwayland
+      tagsha: 48af73b9271d8b1c965ec9f402a5ac513916f591
+    - repo: deepin-community/kwayland-kf5
+      tagsha: 787601a77baa41a4740a2441f2b4852a5d9143f0
+    - repo: deepin-community/kcodecs
+      tagsha: f45d8e397ca1ca9f0b2be222752898d8af27bcd5
+    - repo: deepin-community/kf6-extra-cmake-modules
+      tagsha: d16c8a88e81e7b9b781586015573c0daabf4fc66
+    - repo: deepin-community/karchive
+      tagsha: cd5b99cc8cc2ca2f4f5156879ca37b148bfd1156
+    - repo: deepin-community/kf6-kcrash
+      tagsha: cc7fcd913ff8d86fd2cebd304a332045a1bcb3af
+    - repo: deepin-community/kf6-kcoreaddons
+      tagsha: 04d00976d033d9583fc7e66ba80cc0a0fc883b26
+    - repo: deepin-community/kturtle
+      tagsha: c3593ba20a134347777212da7552a8b8492cba3c
+    - repo: deepin-community/kf6-syntax-highlighting
+      tagsha: a3ff494e6dd2a3e22f850c47836df98c5c0eb5d0
