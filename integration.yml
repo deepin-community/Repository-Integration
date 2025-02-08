@@ -111,3 +111,7 @@ repos:
       tagsha: c3593ba20a134347777212da7552a8b8492cba3c
     - repo: deepin-community/kf6-syntax-highlighting
       tagsha: a3ff494e6dd2a3e22f850c47836df98c5c0eb5d0
+    - repo: deepin-community/kf6-extra-cmake-modules
+      tagsha: fd1ef16b0cc79c374868b790faf6a0305dfb308d
+    - repo: deepin-community/kf6-ktextwidgets
+      tagsha: df7fc54509ee7e02e1ff3dcb5aa59c6126d2274a
