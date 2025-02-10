@@ -3,5 +3,3 @@ milestone: V23-Beta3
 repos:
     - repo: deepin-community/pytest-httpbin
       tagsha: f450faad09d2702205685958bc2583f9e38a80d9
-    - repo: deepin-community/python-werkzeug
-      tagsha: f5d60615abe1ce90d9bc0ccb86b68150a67cd8e1
