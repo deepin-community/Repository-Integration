@@ -115,3 +115,5 @@ repos:
       tagsha: fd1ef16b0cc79c374868b790faf6a0305dfb308d
     - repo: deepin-community/kf6-ktextwidgets
       tagsha: df7fc54509ee7e02e1ff3dcb5aa59c6126d2274a
+    - repo: deepin-community/kf6-kimageformats
+      tagsha: c0027b8380c9df841ae6734428324f9ed18e7ee9
