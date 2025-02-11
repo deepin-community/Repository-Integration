@@ -7,3 +7,5 @@ repos:
       tagsha: 6a0b714237ed718c16866044cc048356d1d5d264
     - repo: linuxdeepin/docparser
       tagsha: 01c9aa34991ed77f878db8321902d5242faa73db
+    - repo: linuxdeepin/deepin-pdfium
+      tagsha: 921980132a4b4be00a749fe5646e033f7ca8aa84
