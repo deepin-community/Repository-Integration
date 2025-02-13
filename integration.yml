@@ -5,4 +5,6 @@ milestone: V23-Beta3
 repos:
   - repo: deepin-community/pulseaudio
     tagsha: f9ee058aad88e848262c93d632103511daf0854a
+  - repo: deepin-community/pipewire
+    tagsha: 161f67f486bb1bb67887dd032d79abd81ecfbd68
 timestamp: 1738908646132
