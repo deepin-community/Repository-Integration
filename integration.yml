@@ -6,7 +6,7 @@ repos:
     - repo: deepin-community/openvdb
       tagsha: 15dca1030d04698167f56432f41abd022f8d4b17
     - repo: deepin-community/openimageio
-      tagsha: 51345559b03ad5fff0a3f3b0f525fce24bf8a4c9
+      tagsha: a151721abb602616ab9f68895ee0997abedc07de
     - repo: deepin-community/blender
       tagsha: d2098bd5cc81186fd1560c2f7d06bd7a126444ce
     - repo: deepin-community/embree
@@ -19,3 +19,5 @@ repos:
       tagsha: 021f2c72c0b28a0361563396f4d8f09c3d57da89
     - repo: deepin-community/ptex-base
       tagsha: e18d0faa846d3e22fee0c9a6c87894e21ffe1b52
+    - repo: deepin-community/dcmtk
+      tagsha: a0722755017a40a95ee4085c6231973e0bb0090a
