@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  fix: support ostree-booted uninstallation by
+  BLumia@linuxdeepin/dde-application-wizard
+milestone: V23-Beta3
+repos:
+  - repo: linuxdeepin/dde-application-wizard
+    tagsha: c2334048e37e71add53fec5116980ef46d9fe72f
+timestamp: 1736933574522
