@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: hygon-20241128 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/grub2
+      tagsha: a8a9e91f84d5cd8aed10ce565c11461bf3fec468
+    - repo: deepin-community/qemu
+      tagsha: 0562970eaab90419ffaf7b67c44d3bf07031f595
+    - repo: deepin-community/libvirt
+      tagsha: e3a4f35db06f1844065bc2b33aa42bcfb1d0ddfa
+    - repo: deepin-community/edk2
+      tagsha: c5a6d3f8b9287c684bf6d703e813e0099680a555
