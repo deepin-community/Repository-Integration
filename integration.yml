@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: passt by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/passt
+      tagsha: 040b0c2a9be8d6cc83468a112c4f7aafcafbc84f
+    - repo: deepin-community/slirp4netns
+      tagsha: 6d076e95a465c326a41bf26dee36391c5e1591b8
+    - repo: deepin-community/libslirp
+      tagsha: 3157a9c3ef180b3ed4b71b9924fe21481e32874b
