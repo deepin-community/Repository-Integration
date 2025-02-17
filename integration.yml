@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  fix: use last boot as default if GRUB_SAVEDEFAULT set in grub by
+  ssk-wh@deepin-community/ostree
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/ostree
+    tagsha: 348c23825d5ec58d850344400fd766551d95509a
+timestamp: 1728369508781
