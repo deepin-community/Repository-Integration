@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update fonts-noto-cjk to 1:20240730+repack1-1 by
+  deepin-community-bot[bot]@deepin-community/fonts-noto-cjk
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/fonts-noto-cjk
+    tagsha: f07b7cef846a248e75f182965a12c61505068d38
+timestamp: 1724290561163
