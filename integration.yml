@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: gvfs20240806 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/gvfs
+      tagsha: 94934e3eed1c88249da445fd7004eb77f08e2f9b
+    - repo: deepin-community/libmtp
+      tagsha: e3341c17cdbcbf5f31e13cf5dde0073cf203e9b8
+    - repo: deepin-community/msgraph
+      tagsha: db8bbc5d73abfca128f6a69d8e6aee6555faac86
+    - repo: deepin-community/gcr4
+      tagsha: 0c08af2ea5e28952a0ec9209649da77084180533
+    - repo: deepin-community/uhttpmock
+      tagsha: 46e4ec559e81118976dc9b57c183d90d4a2e4cf0
+    - repo: deepin-community/gvfs
+      tagsha: 94934e3eed1c88249da445fd7004eb77f08e2f9b
