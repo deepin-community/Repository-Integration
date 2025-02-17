@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: debputy by @UTsweetyfish to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/debputy
+      tagsha: fcea60966e8123b5c9d5509a128d4c2dcf9dc737
+    - repo: deepin-community/colored
+      tagsha: 397a40b0dd019321299080aee6db193c4f8f3a0d
+    - repo: deepin-community/pyhunspell
+      tagsha: 23136acb492fab5d043694aae912765414c6153b
+    - repo: deepin-community/lsprotocol
+      tagsha: 0f8dc20de2432e30ae97a79ddfe55ac5a3f5b88c
+    - repo: deepin-community/pygls
+      tagsha: 33a500e994ee200397c2d58c981d1c27d52caa01
+    - repo: deepin-community/python-ruyaml
+      tagsha: 61de0680a13e08e293e101e885dc22289f5bde8b
