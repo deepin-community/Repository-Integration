@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: gcc-12-cross by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/binutils
+      tagsha: d129fbcf4ca6f2168a3dfc2cee88b7324634f9ea
+    - repo: deepin-community/binutils-mipsen
+      tagsha: 10c91d2c700eab0a050bbd4f027ba58c469a966d
+    - repo: deepin-community/cross-toolchain-base-mipsen
+      tagsha: 39e6b1088982f03c87d0eb3092e80e97e87d4ca5
+    - repo: deepin-community/gcc-12-cross-mipsen
+      tagsha: ef918b85925577b57b3c06848b800481e2b66bf7
