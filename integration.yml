@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  Import TextField-Only-enable-paste-action-if-clipboard-has-text.patch by
+  UTsweetyfish@deepin-community/qt6-declarative
+milestone: v23-Release
+repos:
+  - repo: deepin-community/qt6-declarative
+    tagsha: 0235748bca17dce2570a7680f77d2be4369ca417
+timestamp: 1709260785681
