@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  chore: Update manpages to 6.9.1-1 and backport 1 commit by Uniontech by
+  Avenger-285714@deepin-community/manpages
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/manpages
+    tagsha: d93088cf713669ba707303668265073e6fc70975
+timestamp: 1739796477583
