@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: golang-1.22 by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/golang-1.22
+      tagsha: edd7bc185c5dd88037c1e4a13b7be36b29b4fa40
+    - repo: deepin-community/golang-defaults
+      tagsha: ff82bf43827b491fed43723c242fb96c4fcd241e
+    - repo: deepin-community/golang-1.21
+      tagsha: 97caa221e976d70fa0482067c865d9600d110797
