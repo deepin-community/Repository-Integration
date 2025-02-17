@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: move-to-main-20250108 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/imwheel
+      tagsha: 714813d07156cfe97e0823fea4fe73d54ca9ca47
+    - repo: deepin-community/iputils
+      tagsha: 7c93c24376d87fa12fb5fef62d0753013d7dca9c
+    - repo: deepin-community/im-config
+      tagsha: 46862332ce296ebd4f3bca178bbe6316fdd478f7
+    - repo: deepin-community/inxi
+      tagsha: 9f2ab20f7a5d50ebcf97a17eef1b14425e77ffe3
