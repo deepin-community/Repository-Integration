@@ -2,8 +2,8 @@ message: 'Auto integrate from topic: treeland by @wineee to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/qwlroots
-      tagsha: 986269038e17ad3be68e4ba356ae3ceec6da647f
+      tagsha: 80234e079dbd975240f8977fbabb2980cb1fdfdc
     - repo: deepin-community/waylib
-      tagsha: 035c50f88347276b9bc363f45291e8caf6f84387
+      tagsha: 3b523b971bff878e018706e11078749770c7fe60
     - repo: deepin-community/wlroots
-      tagsha: 37b8cf7a30c1d72eb5589f89178cbd2074321caa
+      tagsha: 07db13770d27135f99574e3a1bce8aed3b289e00
