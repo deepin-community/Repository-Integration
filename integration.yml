@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: dtk5-5.6.35 by @FeiWang1119 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dtkcommon
+      tagsha: 7ff5304b578d708d694e9c1cc0b0c2e257fa19c4
+    - repo: linuxdeepin/dtkcore
+      tagsha: 3785f78eb0741295d00b9d1779c7987bc67b2e6e
+    - repo: linuxdeepin/dtkgui
+      tagsha: 07622caadd265afec43e505e480d672f461df919
+    - repo: linuxdeepin/dtkwidget
+      tagsha: 4497efc373ce0b5641cde50a76c14003da3ffdba
+    - repo: linuxdeepin/qt5integration
+      tagsha: 2671fad57b391230621da599fc596d1e1f775c99
+    - repo: linuxdeepin/qt5platform-plugins
+      tagsha: 0d5d330e629abcf478e8764a423a1eadbd7f38e7
+    - repo: linuxdeepin/dtkdeclarative
+      tagsha: bacc3b1559becb04c46f3dd706859269637989cc
