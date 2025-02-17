@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: mpv-0.38.0 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/mpv
+      tagsha: 792f27e8122b9208d706eec92d23dbd0f9f4105e
+    - repo: deepin-community/libplacebo
+      tagsha: d9fa90d06b7ab983aedfcb11b314de80493585d9
+    - repo: deepin-community/xxhash
+      tagsha: 670e02448670e7d2e9c886ff3432e0a4b9eb1b65
