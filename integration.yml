@@ -1,15 +1,34 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update tyxml to 4.5.0-4 by
+  deepin-community-bot[bot]@deepin-community/tyxml
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/tyxml
+    tagsha: daa9de9580da412072194a9994b2175797b7ebc9
+  - repo: deepin-community/uutf
+    tagsha: 851ce2d992d43ad43219773ca319a4499d2e62c7
+  - repo: deepin-community/ocaml-topkg
+    tagsha: 9b0b389ceaf3dd6629837d03237e9953f09f78db
+  - repo: deepin-community/opam
+    tagsha: 681bbe32cb5ec91b130a4ac0689e4e076839d4a4
+  - repo: deepin-community/dose3
+    tagsha: aa3998a893be75e0db382ee6b18afbdadf1e1dc0
+  - repo: deepin-community/ocamlgraph
+    tagsha: fe90b513c9ed64d9b28a68bc9296cb7b6d1081a4
+  - repo: deepin-community/ocaml-base64
+    tagsha: 815a8b94ea2080ade87889213a16ef66b9bcd508
+  - repo: deepin-community/ocaml-odoc
+    tagsha: a7d33b65849b79b68d743f8d653c68b846576e09
+  - repo: deepin-community/ocaml-dune
+    tagsha: 1822d8634906e2ce0ab8620d9ec37d62ee865980
+  - repo: deepin-community/ocaml-crunch
+    tagsha: b7a7fb445dbf7063ac0ee9b1fc165282124fdfa1
+  - repo: deepin-community/ocaml-ptime
+    tagsha: 681abb5795ababcca8bb80e2c8c5b2b72b4c563d
+  - repo: deepin-community/ocaml-mccs
+    tagsha: bc0a11e16f8a467495707b3c847d34d10f7cfc88
+  - repo: deepin-community/glpk
+    tagsha: a6dcef00c8b73e4bb87e14282b940083f08e4b39
+  - repo: deepin-community/js-of-ocaml
+    tagsha: ad48046ae0767205769d8af62ae64470922fed27
+timestamp: 1716868053164
