@@ -1,15 +1,10 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update multipath-tools to 0.9.9-1 by
+  deepin-community-bot[bot]@deepin-community/multipath-tools
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/multipath-tools
+    tagsha: 0740e668e7c02e13b21b219859cee8f172768057
+  - repo: deepin-community/lvm2
+    tagsha: d2f9d336b5617dd7320623d0ed2fd38458558a90
+timestamp: 1736757629243
