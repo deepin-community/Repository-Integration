@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'chore: Bump version to 6.0.45 by ArchieMeng@linuxdeepin/dde-control-center'
+milestone: v23-Release
+repos:
+  - repo: linuxdeepin/dde-control-center
+    tagsha: 790546f9cd9a797b7e63ab47b0e839f58d17493c
+timestamp: 1709622091915
