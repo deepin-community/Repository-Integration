@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: librime-202404 by @UTsweetyfish to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/utfcpp
+      tagsha: f431334aa41db97df735eec86b4276cbe21abce9
+    - repo: deepin-community/librime
+      tagsha: d9ead9e78e487cf4d3b28372679dfa8181c2f573
