@@ -1,15 +1,57 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: kitty by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/golang-github-altree-bigfloat
+      tagsha: 75f9ced8c36deb2175aac799047212f45d0dec05
+    - repo: deepin-community/golang-github-alecthomas-chroma-v2
+      tagsha: 249d24b1c8d42d0931548ee081aa59899ccc80cd
+    - repo: deepin-community/golang-github-alecthomas-assert
+      tagsha: 6bbbc36bb897ae653b80c90926aa0edf1d139e21
+    - repo: deepin-community/golang-github-alecthomas-repr
+      tagsha: 985705ec82551f7777d34ced451fe92694ca15b7
+    - repo: deepin-community/golang-github-hexops-gotextdiff
+      tagsha: 9820ad3e162b82e5d3fc76ab961c549948bcbf49
+    - repo: deepin-community/golang-github-alecthomas-kong
+      tagsha: dc1444e611289b6dd8e1a43cff05fdcbf09bd0f3
+    - repo: deepin-community/golang-github-alecthomas-kong-hcl
+      tagsha: 6901faed866250e969a4be38cde2bb694d252a62
+    - repo: deepin-community/golang-github-danwakefield-fnmatch
+      tagsha: ca328a3ecdd3f1a3bedd5330c296b3abc387e934
+    - repo: deepin-community/golang-github-dlclark-regexp2
+      tagsha: d967dda2aef65a415ae8a21cea6f151995d9b6b0
+    - repo: deepin-community/golang-github-gorilla-handlers
+      tagsha: a3da66fb20bb57f6bb8b36472be1905f4f26a158
+    - repo: deepin-community/golang-github-gorilla-mux
+      tagsha: 98d68eecdafe998937b7cf00ca906b8c5b647a61
+    - repo: deepin-community/golang-github-mattn-go-colorable
+      tagsha: 0ae14ba49e0c83e781a08c6d16bbb7786f5f7ad4
+    - repo: deepin-community/golang-github-mattn-go-isatty
+      tagsha: 854d8649a49b3a62c8851012482680986f9755ec
+    - repo: deepin-community/golang-github-bmatcuk-doublestar
+      tagsha: 604b93b8f70240bf434185938ac09647ffd413e0
+    - repo: deepin-community/golang-github-rwcarlsen-goexif
+      tagsha: 1d3ad9ca5579a9740f7f1e391a0952f56d4d9a0c
+    - repo: deepin-community/golang-github-seancfoley-ipaddress-go
+      tagsha: 9c041a0cdc79f2c789fb05721511618c23a929e2
+    - repo: deepin-community/golang-github-zeebo-xxh3
+      tagsha: 31901bac7e6e40632e41bd5302e33b87d1e00fab
+    - repo: deepin-community/golang-github-klauspost-cpuid
+      tagsha: 4bb0deb441afba8a2a143fd4e1ad2b977a1e087a
+    - repo: deepin-community/golang-github-zeebo-assert
+      tagsha: b47d562321faf05a5d3f033957f0c241044bbfc8
+    - repo: deepin-community/golang-golang-x-exp
+      tagsha: 49d5a3412cc82de3a17be29573c73a29790fa3d8
+    - repo: deepin-community/simde
+      tagsha: 98e30d3a1bfa935dc0794068a84d2f80d7bacb20
+    - repo: deepin-community/kitty
+      tagsha: 43836c451af7d85b7b9fa7517963f74d725d41db
+    - repo: deepin-community/golang-github-felixge-httpsnoop
+      tagsha: 21c7cae4e66a3e102613f81372eecc844bcdc392
+    - repo: deepin-community/golang-github-seancfoley-bintree
+      tagsha: e32bc83825f7c32fea0346670003d198897d29d0
+    - repo: deepin-community/golang-github-edwvee-exiffix
+      tagsha: ee9646b07e3ab3560a66a7ccd6c72317a93acb2e
+    - repo: deepin-community/golang-howett-plist
+      tagsha: f6bfc0cf9068ee1698d1e2a869afdecd3d37c3aa
+    - repo: deepin-community/golang-github-gorilla-csrf
+      tagsha: 3c09528cd1dc549f78031079487168e106f4996a
