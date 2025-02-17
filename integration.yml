@@ -1,15 +1,21 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: shell-vectory-20240828 by @yixinshark to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dde-daemon
+      tagsha: 47174af4c11e3cecf48b5fdd4d65482a3a86cbfc
+    - repo: linuxdeepin/dde-widgets
+      tagsha: 039432c69fbde9eb81bad57b2fe257462875f33a
+    - repo: linuxdeepin/startdde
+      tagsha: 6c185abea4a652ac96687249ef50424c2409c425
+    - repo: linuxdeepin/dde-api-proxy
+      tagsha: df502cf322a654daa370cb5c02ce465e767b7e7f
+    - repo: linuxdeepin/dde-tray-loader
+      tagsha: 996409298ade69b855d6c96f142e6eace1044198
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: a8dd235ede43c2f4f83033803c17bfabef7cf895
+    - repo: linuxdeepin/dde-shell
+      tagsha: d9589898ea8cdba8317c45f0d2c5fedee48f9d95
+    - repo: linuxdeepin/dde-control-center
+      tagsha: a5bef5a91c327b1e7933285c7cd80db671c69103
+    - repo: linuxdeepin/dde-clipboard
+      tagsha: fccf128cb306663aa041ee413b4722aa598cd8c8
