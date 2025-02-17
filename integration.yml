@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: alsa20240927 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/alsa-utils
+      tagsha: cc4078154476d21fdb4a31e74ebf92253ed6d60b
+    - repo: deepin-community/alsa-tools
+      tagsha: 0ca5e5a6ca101aa82df345cd99f919dddcb3964a
+    - repo: deepin-community/wireplumber
+      tagsha: e19f8cb20dc0c4f02a6616234eaf8074099bee21
+    - repo: deepin-community/pipewire
+      tagsha: e303499a47d61b5d0564b6927327a7a6592718cb
+    - repo: deepin-community/pulseaudio
+      tagsha: 2ee864dd10f83389028bd731d061ddfe6cb1c117
+    - repo: deepin-community/rtkit
+      tagsha: ffb3b3b72e60ab3e134d82b018a3df611ed874fd
+    - repo: deepin-community/alsa-topology-conf
+      tagsha: 34cf9be5f6e909c81f39810acd8bf3902eeb83fa
+    - repo: deepin-community/alsa-ucm-conf
+      tagsha: 114ac87f0aec7e8376920a7651e0bd62fed3f28e
