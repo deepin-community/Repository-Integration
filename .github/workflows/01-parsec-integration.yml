@@ -150,6 +150,11 @@ jobs:
             if res.status_code == 200:
               content = str(base64.b64decode(res.json()["content"]), encoding='utf-8')
               #print("b64decode: ", str(content))
+              if len(content) <= 0:
+                print("No Changelog content found, use github raw request instead")
+                url = "https://raw.githubusercontent.com/{repo}/{commit}/debian/changelog".format(repo=repo, commit=commitortag)
+                res = requests.get(url.replace("+", "%2B"), headers=header)
+                content = str(res.content)
               first_line_readed = False
               for line in content.split("\n"):
                 # read end with newest changelog section
