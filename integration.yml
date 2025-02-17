@@ -1,15 +1,35 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: multimedia-0305 by @pengfeixx to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/docparser
+      tagsha: f40f4da96fa092a3a04565053fcf97e57dd66640
+    - repo: linuxdeepin/util-dfm
+      tagsha: 1834b08faddf3936cb0d0bdcfd1bdbd74ca9885d
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 3f6ae0ed4bcec54fc67ea3739eb76a5040ccef65
+    - repo: linuxdeepin/dde-cooperation
+      tagsha: c891ddf7974cfe8987822dbc69a37f835a78fafd
+    - repo: linuxdeepin/deepin-diskmanager
+      tagsha: fdc299bf3fd1b53bec851d77581594675b177a21
+    - repo: linuxdeepin/deepin-album
+      tagsha: 0f21b9ec71ab2d91e33d1016b30c6c67442607f9
+    - repo: linuxdeepin/deepin-editor
+      tagsha: 6c7ece5030d3603e8db8696b0e16dad768d4141b
+    - repo: linuxdeepin/deepin-deb-installer
+      tagsha: 963e41b27c22a642572eef438064b31f65df6058
+    - repo: linuxdeepin/deepin-log-viewer
+      tagsha: 4cd6b8a423e6b17ead37d7d3bf05744d3b9949de
+    - repo: linuxdeepin/deepin-downloader
+      tagsha: eb6db7fb0c30e9b19a0dd88d3ff3eaa9db6d3d1f
+    - repo: linuxdeepin/deepin-camera
+      tagsha: e85843826cbb2d8fc0f6abb4ae2a6e9ebb14bca7
+    - repo: linuxdeepin/deepin-devicemanager
+      tagsha: a969e7a6d7301be6d68e77bc71517f902fdbf72a
+    - repo: linuxdeepin/image-editor
+      tagsha: a2ac8a8a8f87055ee215df92542d5d590f4d8d0f
+    - repo: linuxdeepin/deepin-picker
+      tagsha: 6ab549583e9de057a34f3cede692222e08a28e0b
+    - repo: linuxdeepin/deepin-system-monitor
+      tagsha: e578a249f170959ecbde8ac055d0f20bdd7813fe
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: cda25f3a3a973e5de67d18cf2cecb862aa718d5c
