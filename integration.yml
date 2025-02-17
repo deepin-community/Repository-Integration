@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: texlive-20241115 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/texlive-base
+      tagsha: 78ca907edecf361c28f1b2a51d2cb47de20d8633
+    - repo: deepin-community/texlive-lang
+      tagsha: 2b973dba6c18839f8b8985aba86e8fcdae2db74c
+    - repo: deepin-community/texlive-bin
+      tagsha: b85eda79d9061e62b85578209e460dc4d377e8e1
+    - repo: deepin-community/libxaw
+      tagsha: 3f794f91127a1c7d934fc5ed915bb66aca9f8fbe
+    - repo: deepin-community/cproto
+      tagsha: 855dec6af906b56a60aac5033b4f46ec0b729531
+    - repo: deepin-community/mpfi
+      tagsha: efeadd3dc1760a3ae5c797a5d79abb2b94afa195
