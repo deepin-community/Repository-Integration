@@ -1,15 +1,27 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: gs10 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/ghostscript
+      tagsha: 63ef1fb4dc255afe6cf2e9c3055092057fb0193a
+    - repo: deepin-community/libspectre
+      tagsha: 3c93f47be7a254c611036ac9ea4062a77c447a47
+    - repo: deepin-community/gimp
+      tagsha: 5b09e362cf0325604b5f7f04e468d69726c9ed28
+    - repo: deepin-community/gutenprint
+      tagsha: 42ff4cbd0e680eba6402f10209daef6cb900027b
+    - repo: deepin-community/rst2pdf
+      tagsha: dc0385d72bc2b479a3a515de185f98a2e27f4f3a
+    - repo: deepin-community/python-svglib
+      tagsha: e9642e6068ee51314a9f88d4e655cc89dcc5cf73
+    - repo: deepin-community/jbig2dec
+      tagsha: cd836d64e4bfec7b6ff74fe97686dbb671ad5f9e
+    - repo: deepin-community/afdko
+      tagsha: bffeb09a630b968e1ac5fb6230511200647b8af7
+    - repo: deepin-community/fonts-sil-charis
+      tagsha: 5eb7bb5e0e3a4b64e7525133a3c5ac46018ea48e
+    - repo: deepin-community/mujs
+      tagsha: f5de586bfb973ed8d2ba6c91558aaad9884aaa04
+    - repo: deepin-community/pymupdf
+      tagsha: a034f9b19ba7bf6f6ae537d1e20602cbc9565456
+    - repo: deepin-community/mupdf
+      tagsha: 3d39a50ac2d2dc05cbb3770cf84060b521ef3818
