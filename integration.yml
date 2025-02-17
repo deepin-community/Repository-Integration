@@ -1,15 +1,23 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: breezy by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/breezy
+      tagsha: dde0744b52184956243cd5ec19cf0b3c0a2feec1
+    - repo: deepin-community/python-launchpadlib
+      tagsha: a024bf3d241b71dbe9c8110a333802d9a0bc9092
+    - repo: deepin-community/configobj
+      tagsha: 0a172d97eb5edee05c11d920e1d56db63e45724c
+    - repo: deepin-community/python-merge3
+      tagsha: 02d723084e0f927bb603c37e24d8d2d817787576
+    - repo: deepin-community/patiencediff
+      tagsha: 83323efcae7dceabc5d619407010566ee2083e2b
+    - repo: deepin-community/python-fastbencode
+      tagsha: 420b1070e1b1324c4c6041addd9d5c2bdb262387
+    - repo: deepin-community/python-setuptools-gettext
+      tagsha: 03e5dfb67161dc3bfbfb17b353ba324a1b5a5d73
+    - repo: deepin-community/lazr.uri
+      tagsha: b4cb65713724f513c788ca251b291d7cdde829be
+    - repo: deepin-community/python-wadllib
+      tagsha: ea0c4b7ede3a0072b3228a32b9e63eed803cdaf6
+    - repo: deepin-community/lazr.restfulclient
+      tagsha: 935d49a8968208bdd3b07f01e63f414d4844c495
