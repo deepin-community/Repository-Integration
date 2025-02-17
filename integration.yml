@@ -1,15 +1,21 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: levenshtein by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/python-levenshtein
+      tagsha: 2d6236b1db100f5ba0202abed7840257f18f7bcd
+    - repo: deepin-community/rapidfuzz-cpp
+      tagsha: b279471bb77331ad538b998eb1125c9c6231cfd6
+    - repo: deepin-community/rapidfuzz
+      tagsha: 027fda21a1be50638500539728caae27de7e10a6
+    - repo: deepin-community/taskflow
+      tagsha: 127bfdb58d210b676f69c14269db3902b83dc2a7
+    - repo: deepin-community/cli11
+      tagsha: 57ac12fa37078ab2b9b10eabb302781d2f9fbc8a
+    - repo: deepin-community/sphinxcontrib-bibtex
+      tagsha: 37dd2d2a57caa3d2195c7aa28dd7e47e11f3e104
+    - repo: deepin-community/pybtex-docutils
+      tagsha: 468b50cd32d6cba4cf98c2ec4a34ee7d059010e5
+    - repo: deepin-community/sphinx-autoapi
+      tagsha: e08e55a62585b7cd12eea4c55f79c3481ce03c6a
+    - repo: deepin-community/astroid
+      tagsha: ecb16d10d4cac874fafdd510f602dda7342d2415
