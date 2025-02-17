@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: tuned by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/tuned
+      tagsha: 16333863c313ba2419f86827cce790b7c81dec6a
+    - repo: deepin-community/virt-what
+      tagsha: 1dd582bb97480e481987caa4ab29657b1819726b
+    - repo: deepin-community/python-linux-procfs
+      tagsha: 4becdce27424a6dc0a609749cf876e355b05bf45
