@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update netcat-openbsd to 1.226-1.1 by
+  deepin-community-bot[bot]@deepin-community/netcat-openbsd
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/netcat-openbsd
+    tagsha: 9c1111e9b7c0c2d3c6302c6234d7ee75ec6d741e
+timestamp: 1720602477570
