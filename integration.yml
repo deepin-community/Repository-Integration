@@ -1,15 +1,23 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: cdapp-240411 by @max-lvs to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/deepin-log-viewer
+      tagsha: 066c43ce706d425393dffa73c279c884ba071c63
+    - repo: linuxdeepin/deepin-camera
+      tagsha: 90dc3d20785d2ed5cb1ad23978f7b2bc560fc7a7
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: 47940c721cdb7b58b77611d6ca6262936c01b2e4
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 01495ca2d870bc1b354e563e5d248d53eb4f6f28
+    - repo: linuxdeepin/deepin-music
+      tagsha: 30687f7746127a076c40b8dcddc17e6aaa02f89e
+    - repo: linuxdeepin/deepin-log-viewer
+      tagsha: 3c8b86dcfaea65c359d4f3edf3b4e52a4f0bc75c
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: d6f935c050762bf9839d9e10c41dab8d8607a4fd
+    - repo: linuxdeepin/deepin-music
+      tagsha: 13b77cd6eac9031bca6e128b72b76f5c4fe0ea05
+    - repo: linuxdeepin/deepin-camera
+      tagsha: f1601fba4c09144467b83b746f584c7d53574736
+    - repo: linuxdeepin/dde-device-formatter
+      tagsha: 50c13b12ebf8e81e845950aac1693182d912680c
