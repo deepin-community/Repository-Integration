@@ -1,5 +1,7 @@
-message: 'Auto integrate from topic: treeland-0.5.19 by @wineee to V23-Beta3'
+message: 'Auto integrate from topic: treeland-0.5.19 by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/waylib
       tagsha: fea50b890b8b9a09c68daffc9d890cee9e7018fe
+    - repo: deepin-community/qwlroots
+      tagsha: e6963722423aed916e1b0c01e693d3d30a4e6a8a
