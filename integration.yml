@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'fix: sync upstream patch by zhousc11@deepin-community/accountsservice'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/accountsservice
+    tagsha: c1e0c31d1c275cddf989d101e72b6e5080c11cf4
+timestamp: 1731390914818
