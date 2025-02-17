@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'chore: Change sha512 implement by hudeng-go@deepin-community/reprepro'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/reprepro
+    tagsha: a29b6c6dc578ce4c4ce2c66e15ba2d6a87fc3492
+timestamp: 1734439484440
