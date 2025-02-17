@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: flatpak-202404 by @UTsweetyfish to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/flatpak
+      tagsha: ba56c94868ed25461ad751322f33cb48dc80245f
+    - repo: deepin-community/xdg-desktop-portal
+      tagsha: 23da11c96267ad08bec5fa94747d4bf20c8f3dc5
+    - repo: deepin-community/malcontent
+      tagsha: 5c25fdb441d50575d9b5fb55c67926c86ce6405e
+    - repo: deepin-community/accountsservice
+      tagsha: 08f0858512fb90d3998d5d0aa69e144d780cb84c
