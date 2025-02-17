@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: networkmanager-qt6 by @xzl01 to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/pkg-kde-tools
+      tagsha: 7af3b31dfdcc1fafba2b6070f792f25e236294cc
+    - repo: deepin-community/extra-cmake-modules
+      tagsha: 819c5985e5fb702380460d4bdde505310e28f3be
+    - repo: deepin-community/networkmanager-qt6
+      tagsha: 02f39b0971c8cbfbf8155201e72e6f8c3285f490
