@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: dtk6-6.0.25 by @FeiWang1119 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dtk6core
+      tagsha: dc4c9c82c39e9eb57c945df2fb8743217d6029ae
+    - repo: linuxdeepin/dtk6gui
+      tagsha: 79980cf794280fd8e84728cde2016368e8fdb959
+    - repo: linuxdeepin/dtk6widget
+      tagsha: 0121e484508a3cb94562a6dbb0caa57c2276562e
+    - repo: linuxdeepin/qt6integration
+      tagsha: 9e490f95336d6f94c1f1dd7e8d2f28c4d37ec610
+    - repo: linuxdeepin/qt6platform-plugins
+      tagsha: 02aaa41d4b5244313d7c0abb61a08df90fdfc1ea
+    - repo: linuxdeepin/dtk6declarative
+      tagsha: a1757577a55fe4595bc61225ca371f0258319030
