@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: cdapp-20240626 by @max-lvs to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: f74e741dd2df69d09ba2c22cca0b3fefd2263bba
+    - repo: linuxdeepin/deepin-album
+      tagsha: 87e2695fba92c5de759196b6bf06e7664c6e7eac
+    - repo: linuxdeepin/image-editor
+      tagsha: 785931c0833835d4c610aa1d334890ab1e915a37
+    - repo: linuxdeepin/deepin-image-viewer
+      tagsha: fc86543a87ef58c4f19d588166d778b0b9d348a5
+    - repo: linuxdeepin/deepin-draw
+      tagsha: 4d9a32e39c33e72b8fba4c5699b62f274bf1758a
+    - repo: linuxdeepin/deepin-devicemanager
+      tagsha: 367ff567f7f9b78062fe31f6b345cc5fa243c747
+    - repo: linuxdeepin/deepin-system-monitor
+      tagsha: 4d2def724e2df54bc8532df42821aa9b9f98452d
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: c5ff872edea9036b45175e8b6f9ca4bdeb4999a8
