@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: rime by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/fcitx5-rime
+      tagsha: a91d3daa11c0ce68b714c789316dcfb65c8b67fa
+    - repo: deepin-community/fcitx5
+      tagsha: 2711e007b4c7ba2af4f33f0d0b9a358e656db602
+    - repo: deepin-community/fcitx5-chinese-addons
+      tagsha: c5e5ce570811cd9cb2bb06aa8046a5bd365710c0
+    - repo: deepin-community/libime
+      tagsha: 366cf4002b9e6e05ab4d8df1620e29c19d39152a
