@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: update exim4 to 4.98-2 by
+  deepin-community-bot[bot]@deepin-community/exim4
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/exim4
+    tagsha: 09d6567ac5f6e3aedd75e0b87e49b35686b2453c
+timestamp: 1734497300743
