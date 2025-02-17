@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  upgrade golang-github-matryer-try (1+git20161228.6.9ac251b-4) unstable by
+  Cherrling@deepin-community/golang-github-matryer-try
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/golang-github-matryer-try
+    tagsha: f7b9ea4cc96d1438f56070a7bcb6ce803c08b807
+timestamp: 1737612506841
