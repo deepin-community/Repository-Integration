@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: new-dock-ui by @tsic404 to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dde-shell
+      tagsha: 327bd76cf717fa6d7d8e30eb5b82efadb3e92880
+    - repo: linuxdeepin/dde-session
+      tagsha: becffc90ec3e70130a13a2485df242c9908b636b
+    - repo: deepin-community/deepin-desktop-environment
+      tagsha: 54883f34a59f78a485e22c32c1871bee0f09ca87
+    - repo: deepin-community/qt6-wayland
+      tagsha: 2170216cc8fb7b098c3b12736368bb9e8a764f51
