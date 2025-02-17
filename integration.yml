@@ -1,15 +1,145 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: podman-5.2.5 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/podman
+      tagsha: e06a8c370b4caf976fed8e4b19ff47cd34f98bb0
+    - repo: deepin-community/golang-github-containers-buildah
+      tagsha: c4d2c004a9552b5cc2c2f0e655b024cb65dec883
+    - repo: deepin-community/golang-github-containers-storage
+      tagsha: 94ba803de3fbd681974cbc8c57f4d5b3a6572fee
+    - repo: deepin-community/golang-github-opencontainers-image-spec
+      tagsha: 25384111d68d7cfb70b8cd5d08f1a5c51ef3d219
+    - repo: deepin-community/golang-github-containers-common
+      tagsha: ce9548079a31afd47f0ca19f454f7a922276b000
+    - repo: deepin-community/golang-github-checkpoint-restore-go-criu
+      tagsha: b2a52c0f41e974133beb1f47afc2f8fdf2540c54
+    - repo: deepin-community/golang-github-cyphar-filepath-securejoin
+      tagsha: c1da1f00d9ef9b3f81de371fe7b365de6c283ffe
+    - repo: deepin-community/golang-toml
+      tagsha: 03594e4d7fe27af2ca52f7cfe5dfd3eeef3816b4
+    - repo: deepin-community/runc
+      tagsha: 6b0a5d5921ef1d1ab12c12a506dbf92b648fc6f2
+    - repo: deepin-community/docker.io
+      tagsha: dbda91400380b63c69711046fad7f23b39e663ed
+    - repo: deepin-community/golang-github-pkg-profile
+      tagsha: a65e0f3dc25f20e45a838c573d4ded65737db72e
+    - repo: deepin-community/golang-github-digitalocean-go-qemu
+      tagsha: 333c890f065cb386d81c1f1fd260d13fbffc649b
+    - repo: deepin-community/golang-github-dtylman-scp
+      tagsha: a6b31c398f65a77e27af76c96c5c1987a607334a
+    - repo: deepin-community/golang-github-containers-psgo
+      tagsha: c3b4ce90447a6a34dc02340866a6d74c647c1f57
+    - repo: deepin-community/golang-github-coreos-stream-metadata-go
+      tagsha: f127f26bef619b985d2b4aca0bbaf030439adeb7
+    - repo: deepin-community/golang-github-digitalocean-go-libvirt
+      tagsha: 66f711a36f2c4d7171be08eb39bc8e56e603401f
+    - repo: deepin-community/golang-github-mdlayher-vsock
+      tagsha: 377e4986e66711d56512118832b750a57b69e645
+    - repo: deepin-community/golang-github-docker-go-plugins-helpers
+      tagsha: ab0324f9ace66e67491f621d8122c9bf9eb7a56c
+    - repo: deepin-community/golang-github-buger-goterm
+      tagsha: ed3b6cf10865e8fc0cb3c748e539426c2cfb2fb7
+    - repo: deepin-community/golang-github-containers-gvisor-tap-vsocks
+      tagsha: 4cfc01d27efd7999b0efa89515230645eb8a1c09
+    - repo: deepin-community/golang-github-gorilla-schema
+      tagsha: 3155a038245916eb7e162d73db87e1860a9f0f1b
+    - repo: deepin-community/golang-github-crc-org-crc
+      tagsha: 20d2a56f152e588cfc6fdbf2131b81688d0ee29a
+    - repo: deepin-community/golang-github-containerd-go-runc
+      tagsha: a4104cef7beedddae36758c9288cb28d7db9dd65
+    - repo: deepin-community/golang-github-mitchellh-hashstructure
+      tagsha: 76db3090a836ac166c8955ae2ca3a6cc7c44945b
+    - repo: deepin-community/golang-github-deckarep-golang-set
+      tagsha: 28c356e4c0fddc3fee5edcf0085a49bac335af53
+    - repo: deepin-community/golang-github-containerd-typeurl
+      tagsha: c87ee01d52f16373fc7d5b22ed625262bb5bdd12
+    - repo: deepin-community/golang-github-coreos-bbolt
+      tagsha: dc82c7adcbcb78ea7a231956721450d87208b029
+    - repo: deepin-community/notary
+      tagsha: 46705442184207b4ea284a024a51bd50213a4ae2
+    - repo: deepin-community/golang-opentelemetry-contrib
+      tagsha: 21992ee545c846e3288a61bb93053d2afa0fa9ae
+    - repo: deepin-community/golang-opentelemetry-proto
+      tagsha: 656ddac65e811124129d9a3a1e9d7128d60aeb21
+    - repo: deepin-community/golang-opentelemetry-otel
+      tagsha: b1d20fa82b76d9907b71f94bd84c7a89f06a1cd5
+    - repo: deepin-community/golang-google-grpc
+      tagsha: 5831a6ca88f8bc42076715f1b91a8bff46b3a947
+    - repo: deepin-community/containerd
+      tagsha: 513889ed563e2910180f5da6a38017c846be5da9
+    - repo: deepin-community/golang-github-cloudflare-cfssl
+      tagsha: 5f46392c84528c053050bd65b36234b17bf782ba
+    - repo: deepin-community/golang-github-google-certificate-transparency
+      tagsha: 1fc048c68d9d6b8c14edb60d20c5413a07c8036b
+    - repo: deepin-community/golang-github-google-go-cmp
+      tagsha: f72898c45f4a512ea376701a77fa7f879b0c9fb9
+    - repo: deepin-community/golang-github-jmhodges-clock
+      tagsha: 9911cdc29f88554186e8668d0ac8718c11304e97
+    - repo: deepin-community/golang-github-containerd-btrfs
+      tagsha: 716bed28918e02178f55bc86f188533952a2d29a
+    - repo: deepin-community/golang-github-evanphx-json-patch
+      tagsha: 2ff7c2fd3879912e7d93d37abe04b1ca76c5c264
+    - repo: deepin-community/golang-gogottrpc
+      tagsha: 18113845759d58f98fbee38dbb8ee5c31e778bd3
+    - repo: deepin-community/golang-github-containerd-go-cni
+      tagsha: 7d6eb8aa2a6030c3e807d9f2a6558055a91ea399
+    - repo: deepin-community/golang-github-moby-sys
+      tagsha: 7d59a37f41c54bce3b4d184d8a6dc4079a43cc9a
+    - repo: deepin-community/golang-github-containerd-cgroups
+      tagsha: 402d94fe1513bcca9135c9b0712b20398e120a55
+    - repo: deepin-community/golang-github-containerd-errdefs
+      tagsha: 741b48cab747ed3bc49b087ef00042b6caab13f4
+    - repo: deepin-community/golang-google-protobuf
+      tagsha: 1067f2d6ab8934a72fd649516f52a32e566177a2
+    - repo: deepin-community/golang-github-prometheus-procfs
+      tagsha: 7a8168c279c43bfe997d59fe8b7e939c12782252
+    - repo: deepin-community/golang-github-prometheus-client-model
+      tagsha: 98808755bb1b86e8f90729f5fb97a1911e9cfbef
+    - repo: deepin-community/golang-github-prometheus-client-golang
+      tagsha: 13e0c22c239fda75ca9a5cd943e5ed5f7225a474
+    - repo: deepin-community/golang-github-prometheus-common
+      tagsha: 515b7f54f4068d98159fd169edd0dd6b977de14d
+    - repo: deepin-community/golang-github-golang-protobuf-1-5
+      tagsha: 6d19741f79bfbd3de7d598cf2b0bc7fde36258c8
+    - repo: deepin-community/golang-github-cavaliergopher-grab
+      tagsha: b26e6140146f9584ce6706cd9b4cc019188fb2db
+    - repo: deepin-community/golang-github-areyoulazy-libhosty
+      tagsha: 50974400536df446bbf3368d0fa452193c91445a
+    - repo: deepin-community/golang-github-pborman-uuid
+      tagsha: 814dbf052243fa0eb33d0e016d70982c9afe000d
+    - repo: deepin-community/golang-github-pbnjay-memory
+      tagsha: c9ecedaefe381e3fc1b2b2e031ab9c0c122cd06a
+    - repo: deepin-community/golang-gopkg-h2non-filetype.v1
+      tagsha: d96ea5e7a626dac7b8ee9482332d6617540b35df
+    - repo: deepin-community/golang-github-inetaf-tcpproxy
+      tagsha: 5d5e2a5b12e71d0179fde601567e3c9b89e16f8e
+    - repo: deepin-community/golang-github-apparentlymart-go-cidr
+      tagsha: b5796d73b82e13d10b3dbfce76e70bf2b46ed33e
+    - repo: deepin-community/golang-github-openshift-api
+      tagsha: fc8438b2ab82724877a3c775923cc5fede5c0253
+    - repo: deepin-community/golang-github-elazarl-goproxy
+      tagsha: 4be5ad1de6d1bc5b9a2979b46f1e35559da768af
+    - repo: deepin-community/golang-github-alecaivazis-survey
+      tagsha: 5e69d4f5768db6af38936ef1a445b801b75bd406
+    - repo: deepin-community/golang-github-linuxkit-virtsock
+      tagsha: b46d9bb7c20cc215e50daf17448b678d5066750c
+    - repo: deepin-community/golang-gvisor-gvisor
+      tagsha: f795b91b404b6e49a75ae8cdb0a300eadcdebd82
+    - repo: deepin-community/golang-github-kballard-go-shellquote
+      tagsha: eda8a998fb38c949f3094acdae6b1d898b42ac64
+    - repo: deepin-community/golang-github-mgutz-ansi
+      tagsha: 34ab0feb34b90a099e4bc2569d20248e9deaf2d2
+    - repo: deepin-community/golang-github-netflix-go-expect
+      tagsha: 3674fd2a0a31af1898961abc82717ce931d05705
+    - repo: deepin-community/golang-github-hinshun-vt10x
+      tagsha: 91de83f00b5e1a8c89c27871a9382bb6a1d7cb64
+    - repo: deepin-community/golang-pty
+      tagsha: de05d19032e48af958ad1c69ac4b19d524f4de14
+    - repo: deepin-community/golang-github-google-subcommands
+      tagsha: ff814bb34c150c84f1c531f59ebdf556a90efda4
+    - repo: deepin-community/golang-github-armon-go-proxyproto
+      tagsha: 3a9c3b54ff48b7c57755ecb81c8909d36e09550b
+    - repo: deepin-community/golang-github-paulrosania-go-charset
+      tagsha: fd747e1a687a1a946e61d14d9d63a9605c5b2365
+    - repo: deepin-community/conmon
+      tagsha: 003c6b91d13634eb444681a2d986118dcc29e1e5
