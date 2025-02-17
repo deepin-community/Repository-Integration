@@ -1,15 +1,21 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: perl-20250110 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/libdigest-sha-perl
+      tagsha: 410bae3021a2805da069d1d6328412ed9743fcaf
+    - repo: deepin-community/libextutils-cbuilder-perl
+      tagsha: ed03eb1e2b60aad12633739e3be3cdbb1a3c77e2
+    - repo: deepin-community/libhttp-tiny-perl
+      tagsha: 1735c8bca1e14efdec8a11f05d64c9ed45b83ec2
+    - repo: deepin-community/libvariable-magic-perl
+      tagsha: e123f6c7c6b03a1ea2d0750db22a5aa99678b27b
+    - repo: deepin-community/libdbm-deep-perl
+      tagsha: 574daf4fb64db88b2c08bbd9a02fb9177641c97f
+    - repo: deepin-community/libmozilla-ca-perl
+      tagsha: 8ce20658c8054ac899e3cd7ee31737634ccf72f2
+    - repo: deepin-community/libnumber-format-perl
+      tagsha: ebc836f10f400ef4cffa99ce8240bc88cb749eea
+    - repo: deepin-community/libmodule-corelist-perl
+      tagsha: c134f037eacb397a2726a8e2a563e115e0f987d7
+    - repo: deepin-community/libdevel-cover-perl
+      tagsha: f4b837d4264ccf06b56f784c10a61e444dd9482c
