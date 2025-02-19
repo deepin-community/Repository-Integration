@@ -4,7 +4,7 @@ repos:
     - repo: deepin-community/opencascade
       tagsha: 34743efae188c65b7a9c47ec2045a4d24d9d4a79
     - repo: deepin-community/ngspice
-      tagsha: 29a38f11013d534dbec23807d8da47e19613f2bf
+      tagsha: dc2dc960df416c4bcbd4f2e5688bbffe006ee6f9
     - repo: deepin-community/kicad-packages3d
       tagsha: 6a99fd267cafab1bfee0df695732e5f1684be93c
     - repo: deepin-community/kicad-templates
