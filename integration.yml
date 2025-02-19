@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: libsdl3-20250219-lhdjply by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/libsdl3
+      tagsha: d5436110a0abf08bc65d8516f0ebfb79868feedb
+    - repo: deepin-community/libdecor-0
+      tagsha: 4960b0b7bc06521f6b502158fdce76d39418d32f
+    - repo: deepin-community/libsdl3-image
+      tagsha: 6c60f9f407394a08e2d062b28ccd84e49e262295
+    - repo: deepin-community/libsdl3-mixer
+      tagsha: 2abb9478c4a28ec54e9443c547d1b1bc63a429e6
+    - repo: deepin-community/libsdl3-ttf
+      tagsha: 1581ab948fb6bc164ea335a8a01396820d00d328
