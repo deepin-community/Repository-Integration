@@ -14,4 +14,4 @@ repos:
     - repo: deepin-community/kicad-footprints
       tagsha: 91d07e21bb16481ed60e435a3c30fe4bfa35d3aa
     - repo: deepin-community/kicad
-      tagsha: 599c8812b306b13d7d1321171ebf18301b63bf0e
+      tagsha: 7aac5f5be52979ef17604f0183b1fdd182b7e3f4
