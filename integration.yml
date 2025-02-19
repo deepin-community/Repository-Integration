@@ -1,15 +1,57 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: cherrpack-20250219 by @Cherrling to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/acpica-unix
+      tagsha: 7d4d5e523c0aaea677b83725afed8445e4dfdc2e
+    - repo: deepin-community/aiofiles
+      tagsha: 470b33db52e6ee1addc06708056c852a77d26060
+    - repo: deepin-community/alglib
+      tagsha: d630c625f0aba0aa8545f0d1eac218509b8ce011
+    - repo: deepin-community/alsa-plugins
+      tagsha: 750887ddc4a6a0488f5aeec4a60ac14e31f0ebd1
+    - repo: deepin-community/antlr4
+      tagsha: 5636114ca1482cde72178acd1c77454c1a1e220e
+    - repo: deepin-community/aom
+      tagsha: 75d8642db5ceaf595a045bd0613b5843c3eefed3
+    - repo: deepin-community/apache-log4j2
+      tagsha: 3786c6397dba99c04d697d4f2792ec75035aea2b
+    - repo: deepin-community/apache-pom
+      tagsha: bfd3b4cb30c21742dd2dd0e98ef99cda2a5915e8
+    - repo: deepin-community/apipkg
+      tagsha: 148750bcfd5da552a204e187efe60efb745452b9
+    - repo: deepin-community/galera-4
+      tagsha: 4d169b268bac445aa6b703506ab0140d97ae5be7
+    - repo: deepin-community/ganymed-ssh2
+      tagsha: 0f01e21eb3dba6836f5688fa92ee3f92837078ba
+    - repo: deepin-community/gcab
+      tagsha: fa97ee9dabcb5cd0af576f955c9df913346b84d5
+    - repo: deepin-community/gavl
+      tagsha: 6080670e8f0a5d49d37fb92e8c18422d09f38830
+    - repo: deepin-community/gobgp
+      tagsha: 5633ea911d8b4b1341cb82b8d3f4c47c3ca154ac
+    - repo: deepin-community/armadillo
+      tagsha: 4003ed7e653e2fb05b5ba9a5e80af3ea6e68af6e
+    - repo: deepin-community/arpack
+      tagsha: 434da0513b608c34f62960366602804fbe65514f
+    - repo: deepin-community/artikulate
+      tagsha: d699e4f6c0e07f3c7b09881a2d1cd909d54643eb
+    - repo: deepin-community/asciidoctor
+      tagsha: 6bdf3a8e821cf1ed59d5f0280eb07f185ee6ecc8
+    - repo: deepin-community/asm
+      tagsha: 6ef50b0eeb14b59685f6ebe007e1510fda3ccbef
+    - repo: deepin-community/aspectj
+      tagsha: 209766b6f0fe1621979a424534a90c759fa1440b
+    - repo: deepin-community/aspell-en
+      tagsha: a32ce1f439ee099ca43396fe1a4067d316a3527e
+    - repo: deepin-community/assertj-core
+      tagsha: 68df07a50bc8e4cf804a55ea868a8d39a80ba399
+    - repo: deepin-community/assimp
+      tagsha: f7dc8d4b7376ed925c7391207d604e9e6a4aecec
+    - repo: deepin-community/astroid
+      tagsha: 435950a9fbf1d332d1c896e3ede3a30c6e56d91a
+    - repo: deepin-community/at-spi2-core
+      tagsha: 01041452eb42736bcf994e74cf0222ebd6415111
+    - repo: deepin-community/argparse-manpage
+      tagsha: b110e95b53f282017835a3609149a6dea36405d4
+    - repo: deepin-community/aria2
+      tagsha: 5da9090b3861f5c20842523b4e1d6281ea250e5c
