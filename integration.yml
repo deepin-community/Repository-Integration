@@ -4,4 +4,4 @@ repos:
     - repo: deepin-community/gparted
       tagsha: 4061cecddfcf5171501f5800bf52b902d98cbd38
     - repo: deepin-community/gtkmm3.0
-      tagsha: f4bfeda7296efe546e8e9d5ee101eaca031e0cc7
+      tagsha: 6924cb53f2e36413598b1a59fdeb7a6984a05c71
