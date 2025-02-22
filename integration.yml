@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: gcc-riscv64-unknown-elf-20250222-lhdjply by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/gcc-riscv64-unknown-elf
+      tagsha: 36704ff72424c926fb89ffce7ef9b560c34c00c9
+    - repo: deepin-community/binutils-riscv64-unknown-elf
+      tagsha: 8a96b4b90a38d08e2800e9184f79e5981c0e8db1
