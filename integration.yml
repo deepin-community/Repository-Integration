@@ -1,15 +1,20 @@
 # Required
 message: |
-  Integrated for V23-Release
+  GCC 12 Downgrade 2024-10-14
 # Not required, now default is V23-Release
 milestone: V23-Release
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/libfilezilla # +rb1
+    tagsha: "d3f78de0e66a1c571dc724823f4fd6860e2a18f1"
+  - repo: deepin-community/libjsoncpp # +rb1
+    tagsha: "281e6287b246f246de6d86d623312107bdf0f490"
+  - repo: deepin-community/libplacebo # +rb1
+    tagsha: "702ad4adf58fd24000f14b52a435a353f95a9648"
+  - repo: deepin-community/lme4 # deepin0
+    tagsha: "bae18e41a5232bce8de2570a77ea0db7d9794d4e"
+  - repo: deepin-community/mediainfo # +rb1
+    tagsha: "64d5e2f4dab5c09c10895f6cb22d11d9a5044443"
+  - repo: deepin-community/opam # +rb2
+    tagsha: "aac01f65055b29a3b74e763ce1dc6fd04c99654c"
