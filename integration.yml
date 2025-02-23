@@ -1,15 +1,33 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: dtklog-001 by @kegechen to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dtklog
+      tagsha: 6a46078bd55f2a5537645f6767ed317ba851faa6
+    - repo: linuxdeepin/dtk6log
+      tagsha: 68402971eaf2017f698efbe05a69bb80525c9585
+    - repo: linuxdeepin/dtk6core
+      tagsha: bf6e4ae449fda4ae913aba4af3a46ef4ad792c06
+    - repo: linuxdeepin/dtkcommon
+      tagsha: 14b2ac9170ff37889e882de1946cc38fc3342570
+    - repo: linuxdeepin/dtkcore
+      tagsha: 26968c88fa749b438bd7282219647d6ab6bb3f68
+    - repo: linuxdeepin/dtkgui
+      tagsha: d7e4fe71ccfbdec476d0ce4fe929f47a23249b45
+    - repo: linuxdeepin/dtkwidget
+      tagsha: 5356cde61484053c396e26522caa708b4e8d6546
+    - repo: linuxdeepin/dtkdeclarative
+      tagsha: 7716addbb7c57a284fd4795592cd3f0ac0f083bd
+    - repo: linuxdeepin/qt5integration
+      tagsha: 1d8fa165933674bfe6c4d79cfad495c685ed19be
+    - repo: linuxdeepin/qt5platform-plugins
+      tagsha: bd4eb1ffbc93ea68c20c134814cc97e5d2dba354
+    - repo: linuxdeepin/dtk6gui
+      tagsha: dc63a33ce2284bbcfbbf436925a2d9ddb60f2622
+    - repo: linuxdeepin/dtk6widget
+      tagsha: 3de41a07a2a1bf2a67e958c03744ebe657513688
+    - repo: linuxdeepin/dtk6declarative
+      tagsha: c2c45972f0011bd225da1bc82bdc3b1358fba6cf
+    - repo: linuxdeepin/qt6integration
+      tagsha: 0254a9188816f34f7139656947c9bc9340192d89
+    - repo: linuxdeepin/qt6platform-plugins
+      tagsha: f8bd530ad90f2703a2e6e9ce287fb2d9b69da91c
