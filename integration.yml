@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: v25stage3 by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/distro-info
+      tagsha: ef840e444dd7de2c266c41266ed741bed416ef74
+    - repo: deepin-community/unittest2
+      tagsha: 91b657b928d094b3357754d2c68949e5f2ffa246
+    - repo: deepin-community/python-flake8
+      tagsha: efcf8fe177441466b47e9be9f2602d975f6ebf86
+    - repo: deepin-community/devscripts
+      tagsha: e17e660f2d0b8ada6975d94472eeefcf8fa4b9a3
