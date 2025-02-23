@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: claws by @xzl01 to V23-Release'
 milestone: V23-Release
-# Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+    - repo: deepin-community/libcompface
+      tagsha: 1b2bef5df112d4c9188fbcd4114869c5ec1ed18f
+    - repo: deepin-community/claws-mail
+      tagsha: ccfbb458ea4120079bbf911c3e566e4b00b63e3b
+    - repo: deepin-community/gumbo-parser
+      tagsha: a2a12bd9477c61c84ca90d79dc303ac05a51247d
+    - repo: deepin-community/dillo
+      tagsha: e96c9b6cd28e34612e9af1ec3cd836f99a559dda
+    - repo: deepin-community/ruby-sdbm
+      tagsha: b70d028bc828af77984ebae39ef6cf3eea4cbf11
+    - repo: deepin-community/bsfilter
+      tagsha: 787552ec44fda8a30bbb572e6890f52a8ce4e39b
