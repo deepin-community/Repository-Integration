@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update virtualbox-guest-additions-iso to 7.0.18-1 by
+  deepin-community-bot[bot]@deepin-community/virtualbox-guest-additions-iso
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/virtualbox-guest-additions-iso
+    tagsha: 3f0c3e0511473a5f8d15d973e0d65079324ab04b
+timestamp: 1718957333039
