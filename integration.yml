@@ -1,15 +1,21 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: "chore: init by xzl01@deepin-community/urwid"
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/urwid
+    tagsha: 6d07490192eca9852a7a075ad1ff5036a0b54b4d
+  - repo: deepin-community/twisted
+    tagsha: 6e74f71c8abc00a20489f0f63ece628b3ab129ff
+  - repo: deepin-community/pytest-mock
+    tagsha: 188c86872af4baad4ef84c85240077cc941cc91d
+  - repo: deepin-community/automat
+    tagsha: a37a023c436fb8f621ceb33db163280780d50a5
+  - repo: deepin-community/pydoctor
+    tagsha: 162d94b5f564b5286ac38bf92ca5013be4b521c7
+  - repo: deepin-community/python-pkginfo
+    tagsha: 8c7ae62abff658317f827652a4b3b1cc02143cff
+  - repo: deepin-community/jquery-throttle-debounce
+    tagsha: 6ad583b4a1f3ab0092cea83ee79962060a078387
+  - repo: deepin-community/uglifyjs
+    tagsha: df13a6549dfc32cf4fdb36cc86b08be9292528cd
+timestamp: 1715675724030
+
