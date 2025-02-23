@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: latex2html-20250113 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/latex2html
+      tagsha: 59c3abed97fbe8a08c09be7f251931ba7242a522
+    - repo: deepin-community/ghostscript
+      tagsha: 1c02fd14ba02f25a6278b67ed85333b9eaf94ff6
+    - repo: deepin-community/netpbm-free
+      tagsha: c67db6dce0e83f3765ab50ee964d8c1f7a5563fc
+    - repo: deepin-community/latexmk
+      tagsha: 42216cfa72193efa07b9e0eed2a4a22280808ef4
+    - repo: deepin-community/html2text
+      tagsha: dd58c46ab7aa3cdf77c7ae07ee4546a0dd003a03
+    - repo: deepin-community/context
+      tagsha: b6cb56ba09259e31ed083013ac6c021bff9cd755
+    - repo: deepin-community/groff
+      tagsha: 5fc7bfe4e8f3cbf616708f98ded682b0dadfc673
+    - repo: deepin-community/luametatex
+      tagsha: b34ecffb935035a49349581b75f67b9912c9fa54
