@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: curl-8.10.0 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/curl
+      tagsha: fb799dcff1eab36c64bb2648d2bcdbf2cdcfd838
+    - repo: deepin-community/libvirt-python
+      tagsha: 2675c8cdd49adcd71b1f6a7002a99cd3f5e65d2a
+    - repo: deepin-community/libvirt
+      tagsha: 301aa98c4508c7c07393cb577b42ffec9b881ca6
+    - repo: deepin-community/nghttp3
+      tagsha: 0c556e3e6da8e7da72d72abbf5c2b7c13ac4093b
+    - repo: deepin-community/ngtcp2
+      tagsha: 8e0abe63ebaed9cbcc59d9ea5a4732058afbce63
+    - repo: deepin-community/wireshark
+      tagsha: 98020018f8f2bd9d00e726460f64d349906f4d8b
+    - repo: deepin-community/mdevctl
+      tagsha: 46fd867d560092b07398a9ffcbf65fc4041130fb
