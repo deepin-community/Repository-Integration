@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: sync debian 3.5-2.1 version by kyrie-z@deepin-community/policycoreutils
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/policycoreutils
+    tagsha: 074e86f7af2d08992f64b13059d71077e6ac3091
+timestamp: 1730373049168
