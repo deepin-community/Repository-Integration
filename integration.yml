@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'chore: Update dkms to 3.1.0-1 by Avenger-285714@deepin-community/dkms'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/dkms
+    tagsha: 0a4f99577a99aab5d2e52c19d499f54c436785f0
+timestamp: 1729479424323
