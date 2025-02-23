@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: gir1.2-0322 by @Zeno-sole to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/babl
+      tagsha: 631e0db9b08946ba7b87f46182f2aba66c5459fc
+    - repo: deepin-community/gobject-introspection
+      tagsha: c4a980cdcfe01a50b20a60d816441d2fb13b4cbd
+    - repo: deepin-community/gimp
+      tagsha: 71d9a187f59e96c3cfb98f582dffe11a5c1fb0db
+    - repo: deepin-community/gutenprint
+      tagsha: 5f4727e08d873f772e1dd28bf9c9df285b90a57a
+    - repo: deepin-community/lensfun
+      tagsha: 13c7b096820d197ed09441cfe2f3bc21f4a57310
