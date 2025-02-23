@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: perl-20241010 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/libxs-parse-sublike-perl
+      tagsha: 6013077013488de285290e5ada538b9c8c99ce2d
+    - repo: deepin-community/libobject-pad-perl
+      tagsha: 58dcba4780dab5a7ecd93302b3c422f6455a474b
+    - repo: deepin-community/libtest2-suite-perl
+      tagsha: ea42a81eeb3f1bc0983fc6aa738d3698b0da9917
+    - repo: deepin-community/libxs-parse-keyword-perl
+      tagsha: 6069d170e556b521c55b3ff1be8fa92ca0ab554d
