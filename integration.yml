@@ -1,15 +1,25 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: jpegxl-20241219 by @StrangeZuo to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/jpeg-xl
+      tagsha: 411c21ef2d2e6e23db245650b28536ef68fcc7fe
+    - repo: deepin-community/webkit2gtk
+      tagsha: f387629fcfa120cb4022363aaf3bd07329bd5a84
+    - repo: deepin-community/gimp
+      tagsha: 4b273ed91fef04f08c72a4d8511d9a04a01d985f
+    - repo: deepin-community/wpewebkit
+      tagsha: 6b7076944c1973cf369ba3ec88997d06512823af
+    - repo: deepin-community/kimageformats
+      tagsha: 4c60f76317342889c9ccc3e5be12d4f1d90aeede
+    - repo: deepin-community/graphicsmagick
+      tagsha: 0f2a6cc3482053e1d43148dfe9080eb01e642777
+    - repo: deepin-community/ffmpeg
+      tagsha: 1d26ffa4ebdce40bbb061024b107df3e3e4d38d3
+    - repo: deepin-community/libjxl-testdata
+      tagsha: 3498f0d34c66761db485af7aec8702a15da2bea5
+    - repo: deepin-community/kimageformats
+      tagsha: d7f629c1be457ff8434eee3a92b3b6e71867b0b7
+    - repo: deepin-community/libavif
+      tagsha: ead05170a9a1781a3a9b505c2ea55871e4b1d449
+    - repo: deepin-community/kimageformats
+      tagsha: f033610ddbc623ae59323fe44aa23100ac87cf33
