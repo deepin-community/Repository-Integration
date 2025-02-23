@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'feat: add package by MingcongBai@deepin-community/deepin-distrobox-installer'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/deepin-distrobox-installer
+    tagsha: 87ba83d7221b19f3306ffa249a0550129c666f15
+timestamp: 1730685399550
