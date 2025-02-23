@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: upgrade xfsprogs (6.12.0-1) unstable by Cherrling@deepin-community/xfsprogs
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/xfsprogs
+    tagsha: a28294a086b2d905fdec0d459d29a166b74e0d7c
+timestamp: 1737622155671
