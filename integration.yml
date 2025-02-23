@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: samba-4.20 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/tevent
+      tagsha: 7dd93813c070fe2e8e1af7dfc3c7399c9e484ea3
+    - repo: deepin-community/tdb
+      tagsha: 61bbf84fff2b4d778c4b65e0845a40d057f0599e
+    - repo: deepin-community/talloc
+      tagsha: 1c7a9dc0b71840cebbb421cdd055312bbda5eca1
+    - repo: deepin-community/cifs-utils
+      tagsha: df5e6c7b114c6040412a390be799ccc9186450c7
+    - repo: deepin-community/samba
+      tagsha: 7fedf3acb4f37919cf37a14505eead44164c32f6
