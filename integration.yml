@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: glib-2.80 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/glib2.0
+      tagsha: 547d47d6324f4d0720fb796b6b628d9a4ae699ee
+    - repo: deepin-community/gobject-introspection
+      tagsha: 129227c9ed05e513f87b9cc39835b4fd274d0841
+    - repo: deepin-community/gi-docgen
+      tagsha: f6a3d011853b89ed4d9c8bbb986f81041f2a617d
