@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  Support Hygon CSV3 guest, support live migration for Hygon CSV3 guest by
+  wojiaohanliyang@deepin-community/qemu
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/qemu
+    tagsha: 4b4ecf62ac9b50505a5929e78c112f4e2db58c19
+timestamp: 1728911404676
