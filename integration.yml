@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  fix: ensure Qt resources are properly loaded by
+  Johnson-zs@linuxdeepin/dde-file-manager
+milestone: V23-Beta3
+repos:
+  - repo: linuxdeepin/dde-file-manager
+    tagsha: 6676f355746c2aa1b710cb7b10ebbd5fcf6a6ad1
+timestamp: 1735033838603
