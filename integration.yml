@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  refactor: port to Qt6, new Wayland implementation by
+  RigoLigoRLC@linuxdeepin/dde-clipboard
+milestone: V23-Beta3
+repos:
+  - repo: linuxdeepin/dde-clipboard
+    tagsha: 8d146b8deaf90a89b01fc5dda2ae85e784f083aa
+timestamp: 1731034503489
