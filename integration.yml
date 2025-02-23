@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: glib-2.80-gtk by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/gtkplus3.0
+      tagsha: 3efe30fbc8eba594144311ec8e129cd1da081e08
+    - repo: deepin-community/gdk-pixbuf
+      tagsha: b6e478bf0032e7d024afbcea5d0bedeb9d221e1e
+    - repo: deepin-community/pango1.0
+      tagsha: 415fbc304d257a46c58202455cd244c506207deb
+    - repo: deepin-community/libcloudproviders
+      tagsha: 9de05b46cc535888294aabb036308d37b5b42bbd
