@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: fix-bug-testing-20240925 by @ArchieMeng to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: 9b052edd48706f45286b26e4963af3d627a7a529
+    - repo: linuxdeepin/dde-tray-loader
+      tagsha: 60febaeb3c29d512cea9a3ab74afdcf3e169c84d
+    - repo: linuxdeepin/dde-shell
+      tagsha: 2dcc8cb1752aca71c02574598379acfa2739643e
+    - repo: linuxdeepin/dde-session-shell
+      tagsha: 1d9e5d51b43a07806429bb325292aea17fb22aa3
+    - repo: linuxdeepin/dde-api-proxy
+      tagsha: eb141257b42b27436a174818e8bfdb7c52313d60
+    - repo: linuxdeepin/dde-control-center
+      tagsha: 1c5782bd01b1cd703fcc48d51c73694bdcaa9a29
+    - repo: linuxdeepin/dde-widgets
+      tagsha: 071f7732ea4162c9d890e8e5a72eac2730e3fdea
+    - repo: linuxdeepin/deepin-fcitx5configtool-plugin
+      tagsha: dd110e7b0a9e2b82ed862a338fac7c64d6822f90
