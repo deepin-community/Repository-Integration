@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: rocm by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/roct-thunk-interface
+      tagsha: b821b052f5c1ddd98002dd5b6251806298fb4552
+    - repo: deepin-community/rocm-cmake
+      tagsha: d1912075687268f53ed5d88159e17089790e3c91
+    - repo: deepin-community/rocminfo
+      tagsha: 93777642ee439a34bc59f7e8684c2e68bf9c7c01
+    - repo: deepin-community/rocr-runtime
+      tagsha: 84d4b5da2086cc4eb6fb053b249f236ca1dce364
+    - repo: deepin-community/rocm-device-libs
+      tagsha: 03b5d7fa4bc43acf8fd11a822ca1cf5e458e62bd
