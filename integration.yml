@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'feat: update ddccontrol-db to 20240304 by xzl01@deepin-community/ddccontrol-db'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/ddccontrol-db
+    tagsha: 0dcc8f1faf29dcff1d91d55012df8876efda7f64
+timestamp: 1726726429264
