@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'feat: cweekwidget uses locale to replace tr by myml@linuxdeepin/dde-calendar'
+milestone: V23-Beta3
+repos:
+  - repo: linuxdeepin/dde-calendar
+    tagsha: 49856d9f8fba4a8b590c62fb3950646c5bc27fa5
+timestamp: 1727597627122
