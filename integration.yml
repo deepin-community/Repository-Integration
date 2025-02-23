@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: cmake-3.28 by @UTsweetyfish to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/cmake
+      tagsha: eb4ade98c35ac4236c664eafa01975b23edb516e
+    - repo: deepin-community/cmake-extras
+      tagsha: 1294f176195784f939bfc6d313612e3591438e9b
+    - repo: deepin-community/libjsoncpp
+      tagsha: 852eb3b85703649340e07eb70375bce007a518da
+    - repo: deepin-community/cppdap
+      tagsha: f14ae042d73aa14e831be567888a0cdccb2e1e7f
