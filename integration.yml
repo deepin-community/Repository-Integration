@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'chore: bump version to 1.2.5 by dengbo11@linuxdeepin/dde-application-manager'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-daemon
+    tagsha: c9f27e569aea097232a3b5913ca9cd73727b0b83
+  - repo: linuxdeepin/dde-application-manager
+    tagsha: 25eef9558958ea7fa1fa05d3e9e1307e432d8478
+topic: file-manager
+timestamp: 1713860823176
