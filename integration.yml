@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update redland-bindings to 1.0.17.1+dfsg-6 by
+  deepin-community-bot[bot]@deepin-community/redland-bindings
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/redland-bindings
+    tagsha: b7d6ea84e8a55c604d14ff4b5b3795353e13e176
+timestamp: 1722491337509
