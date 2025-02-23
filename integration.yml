@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  upgrade: python-cwcwidth (0.1.8-1) unstable; urgency=medium by
+  xvyv99@deepin-community/python-cwcwidth
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/python-cwcwidth
+    tagsha: b41fa44db110bb3bfde9b89150fdc26f202dc090
+timestamp: 1730707916254
