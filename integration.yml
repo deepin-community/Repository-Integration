@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: bump version to 5.1.5-1deepin3 by kegechen@deepin-community/fcitx5
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/fcitx5
+    tagsha: 44ed0407ef0ad0677d78671e9782b69259113963
+timestamp: 1712890070088
