@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: llvm17 by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/spirv-headers
+      tagsha: 2d09d372850a23f1b8efb07927973e4b3e0ceaf8
+    - repo: deepin-community/spirv-llvm-translator-17
+      tagsha: c5c814e0b9c7501436f65d835fa668d656b6891a
+    - repo: deepin-community/llvm-toolchain-17
+      tagsha: 713eb16bb086b9dc0ce864653978129250108b21
+    - repo: deepin-community/re2
+      tagsha: 137d2f707c3bdcded82e185dcb89882fab6d1378
