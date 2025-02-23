@@ -1,15 +1,75 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: node-d3 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/node-d3
+      tagsha: e7e3af20e150755dafe7988673e17787f275b910
+    - repo: deepin-community/node-d3-brush
+      tagsha: 9da91d42b50ccd49446f01606670dfc4b6f5bea1
+    - repo: deepin-community/node-d3-color
+      tagsha: 29af666421202c0abe4cc57a09553efa4d2b113a
+    - repo: deepin-community/node-d3-transition
+      tagsha: b984a887d92c082a39ad599d156f247a1fb1931a
+    - repo: deepin-community/node-d3-dispatch
+      tagsha: 1e835d637b697358dd63bad988489df76faaf6b2
+    - repo: deepin-community/node-d3-random
+      tagsha: e472f5168e04461d4a7a32c148626ab7c5417ed4
+    - repo: deepin-community/node-d3-time
+      tagsha: 9d0dc138b148436b7e4408d649bec809e5e71ab1
+    - repo: deepin-community/node-d3-force
+      tagsha: eabb7c4ced078772f62c119ef3db035f4baf18fe
+    - repo: deepin-community/node-d3-interpolate
+      tagsha: 8ddee19a9e8d5b2d43d5c0b0a9bb61750fc45eec
+    - repo: deepin-community/node-d3-geo
+      tagsha: 0a951413877298c6fdfd7399e561f073e864715b
+    - repo: deepin-community/node-d3-drag
+      tagsha: a804f5ec5c064080d7a4d9634c5dd99c3e3f5ea5
+    - repo: deepin-community/node-d3-fetch
+      tagsha: e68889a761d08760734d3578aad27505367a7efa
+    - repo: deepin-community/node-d3-zoom
+      tagsha: 6663f2e0d064b52ab86c29cd7bc56a80fa7c1622
+    - repo: deepin-community/node-d3-axis
+      tagsha: 5f0cea02de657ee39246a51f2d536e19502532b0
+    - repo: deepin-community/node-d3-voronoi
+      tagsha: cadc34120e4bc8f8a469036b43a1c0677da7646b
+    - repo: deepin-community/node-d3-quadtree
+      tagsha: cea27e0903930398ef7ec0aa6176c300572a4a20
+    - repo: deepin-community/node-d3-dsv
+      tagsha: 6c2a450c6943c925d6f60d0c6e5a353845f12a3e
+    - repo: deepin-community/node-d3-path
+      tagsha: 6d3c7fd1da2491896580b7ce92958de53dad247b
+    - repo: deepin-community/node-d3-scale
+      tagsha: 3b6dd73917af7f2d7cc00dd6c942a0cb201b1c18
+    - repo: deepin-community/node-d3-selection
+      tagsha: 21f48c416650dae49bf15b259beb50cba078784a
+    - repo: deepin-community/node-d3-scale-chromatic
+      tagsha: 6ff056657c9a685ca12a55c1de20ac939aa00faa
+    - repo: deepin-community/node-d3-array
+      tagsha: 34aeecaa7c725abccd8ecf0f22f4c8191b491ff6
+    - repo: deepin-community/node-d3-contour
+      tagsha: 490659f7a753e97531fb3efa69100b9176fc7a54
+    - repo: deepin-community/node-d3-timer
+      tagsha: 6d33d76da5cd6ecb6ecff18592ff94e8f57a04ad
+    - repo: deepin-community/node-d3-collection
+      tagsha: bb96b162a5fcfaeb556c1c4209108b08048522d5
+    - repo: deepin-community/node-d3-hierarchy
+      tagsha: 38a5fc2614ecb9d593b2c4b23668b23985b9c17e
+    - repo: deepin-community/d3-format
+      tagsha: 5bbe1dff5515a99f23063fb0f360e296856724c4
+    - repo: deepin-community/node-d3-ease
+      tagsha: 8f69c466f945042d35b50bfd960a1c1c807587c5
+    - repo: deepin-community/node-d3-shape
+      tagsha: 3598a1ad8d09680f0b158ed30e0f43166c501bd7
+    - repo: deepin-community/node-d3-time-format
+      tagsha: 47dc55212031449fc752790ec77cdd8930fb3c2c
+    - repo: deepin-community/node-d3-chord
+      tagsha: 7c513743b8698c62d981471644028e44f9327e18
+    - repo: deepin-community/node-d3-polygon
+      tagsha: fbac72da285d4e897092af80610e0cbb562a1090
+    - repo: deepin-community/node-csv-spectrum
+      tagsha: 07b69d205e018144329a5384326f28e2bb2e6f06
+    - repo: deepin-community/node-d3-queue
+      tagsha: a2dde0aaa3603f8fa6aafed0efdcbd3c22df5913
+    - repo: deepin-community/d3-tip.js
+      tagsha: ad0495ea0c515cb378de411a8acf0a4ff6af7ec2
+    - repo: deepin-community/uglifyjs
+      tagsha: 9db87967c3483c74b11534547ac2a35b4081b623
