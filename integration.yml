@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: cdapp-20240328 by @Zeno-sole to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/deepin-screen-recorder
+      tagsha: c706e635b8d47dc5286951e7d733545875aec1e7
+    - repo: linuxdeepin/util-dfm
+      tagsha: 0571091ae0d2b192434c2aedfad0ffe401a0571d
+    - repo: linuxdeepin/docparser
+      tagsha: 66ac20d8cd6520eb95aea06f37e1ffd717b98c92
+    - repo: linuxdeepin/deepin-diskmanager
+      tagsha: 19412c846215d4050277c0267b8859a0d7f2467a
+    - repo: linuxdeepin/deepin-devicemanager
+      tagsha: d4937302ba8c370991897c1e3411dfaf13507288
+    - repo: linuxdeepin/deepin-compressor
+      tagsha: bb047fd87e91d3dff9dc6e1cc03243d14b623496
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: c485f77639f904a623741849ab23050a759a96d6
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: f13482dd1b9445a6e95a5cb073fcfa9331c9dd60
