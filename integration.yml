@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: dockercompose by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/docker-compose
+      tagsha: 464d1c86fcf02c1890c11661effdb52e95724b8c
+    - repo: deepin-community/python-docker
+      tagsha: 27c674df0ced2331a13f4c4a36e2aa7b2ec3dc96
+    - repo: deepin-community/dockerpty
+      tagsha: 4a891cd2a63af884943e410dea67f0bdccec37f9
+    - repo: deepin-community/texttable
+      tagsha: 1e7449fef284950d8741462ec88eeda93012c645
+    - repo: deepin-community/websocket-client
+      tagsha: 3b071ded3a2ae6396999988228a3cdd5bfbd3ef2
+    - repo: deepin-community/docopt
+      tagsha: 567665b2bca249751e3a9328ade00c2f2128f1ca
