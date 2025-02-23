@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: 'Auto integrate from topic: cdapp-240326 by @max-lvs to V23-Release'
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/deepin-screen-recorder
+      tagsha: bbb50163c71211d528342d20868a1a7324322ce0
+    - repo: linuxdeepin/deepin-compressor
+      tagsha: ccf8c930531e6d8a07793f29dca2f0f1e7a95ee6
+    - repo: linuxdeepin/deepin-diskmanager
+      tagsha: 4d9ee32e0572f860b0b2c60001afe9242f59d549
+    - repo: linuxdeepin/deepin-compressor
+      tagsha: 477995647007726897422b49ad1c4d9926b982af
