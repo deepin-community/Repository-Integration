@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  [Backport][LoongArch] Add the support for `relax` feature by
+  Ami-zhang@deepin-community/llvm-toolchain-17
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/llvm-toolchain-17
+    tagsha: 24d8c1d6684b29262a7dbb4088fefda645352078
+timestamp: 1724729917636
