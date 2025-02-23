@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: fix-bug-testing-20240904 by @xionglinlin to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dde-launchpad
+      tagsha: bbadd6122dfaf8f2cb6ccb05156e12c1d7ef57d2
+    - repo: linuxdeepin/deepin-desktop-theme
+      tagsha: 27b1e6efa7ec0a2f2ac70992c7d3a9c989bea292
+    - repo: linuxdeepin/dde-control-center
+      tagsha: 871815d29a25aca28754b62e6aa9c376918195ae
+    - repo: linuxdeepin/dde-tray-loader
+      tagsha: df5ade84c54a0c2edad3df78ed5f77708c9015ca
+    - repo: linuxdeepin/dde-shell
+      tagsha: c7fd952d623491d8fa0f0c4766a465f9e3f503a5
+    - repo: linuxdeepin/deepin-deepinid-client
+      tagsha: 6afb33ac55fcf9a260d2fe7aa70e0b43a35af346
