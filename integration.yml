@@ -1,15 +1,25 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: zeno-t64-20240118 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/thrift
+      tagsha: c457004aa2676a5a27046fafd61e0d6889cec29a
+    - repo: deepin-community/mozjs115
+      tagsha: 03f396b90884cb45d3e872ed87df4101f7dd6090
+    - repo: deepin-community/lxc
+      tagsha: d63c6629897aaacdee706398ee91a8271541a005
+    - repo: deepin-community/graphicsmagick
+      tagsha: 63fda3b865bc81e46941527d7e92201f39296dd7
+    - repo: deepin-community/gegl
+      tagsha: 6116d55075d77c19c8b9324f615c8a53205c0101
+    - repo: deepin-community/evemu
+      tagsha: 6be733422eb5f805865b3fb886dcada2fd3362b6
+    - repo: deepin-community/libdmapsharing
+      tagsha: 4921ac9b1bba6a385f6471985d28cba54f15eb90
+    - repo: deepin-community/libquazip1-qt5
+      tagsha: 368258a3dde636bfa68fb494ff4f947e3b3b018b
+    - repo: deepin-community/telepathy-glib
+      tagsha: 9fe5b990daa11e7461f03c76de7ebfe6a207ba28
+    - repo: deepin-community/wget2
+      tagsha: 241b6d281248773d558f628d7dec5c0713c41314
+    - repo: deepin-community/zfp
+      tagsha: d16cc68600c20693782c952f97699dd32fb89505
