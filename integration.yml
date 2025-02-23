@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: uboot by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/crust-firmware
+      tagsha: da3725d8b3c7c5398f212061cced89b10e00feab
+    - repo: deepin-community/arm-trusted-firmware
+      tagsha: 8c306128ae125d9b55716f359d5df1f080516d41
+    - repo: deepin-community/u-boot
+      tagsha: a4c414c573397efebbef073ed19edbb3725465d3
+    - repo: deepin-community/gcc-or1k-elf
+      tagsha: 03fbe621046cd7bbbe5802b19e81e6f97d8a57a0
+    - repo: deepin-community/binutils-or1k-elf
+      tagsha: a91094648a5756326b431787afa54860cf130e11
