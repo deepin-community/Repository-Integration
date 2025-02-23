@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: appstream1.0.3 by @BLumia to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/appstream
+      tagsha: fc6e3026ed30423bb42ef99e1bada59a8de5d235
+    - repo: deepin-community/packagekit
+      tagsha: 43499f5df439647f0952d319aebddbfadfd97841
+    - repo: deepin-community/flatpak
+      tagsha: 25fccba8accf91b6582d3773ff2adff8d576332a
+    - repo: deepin-community/libadwaita-1
+      tagsha: ebf857b8eba02fbb9ea4b9bc61d36c5c148188f1
+    - repo: deepin-community/appstream-glib
+      tagsha: c1bdf805673f3a58819b197dbf2f9e91bb1ef6ce
+    - repo: deepin-community/malcontent
+      tagsha: 9db28459c8c8544f5750b69498a5f5c47147b51d
