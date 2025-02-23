@@ -1,15 +1,18 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: cdapp-20240920 by @majing2022 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 201806e234db612135ac7c65c1a50a70ba157976
+    - repo: linuxdeepin/image-editor
+      tagsha: 7eb43703d5b2b905171fbbf52ebc0b4fef8549a0
+    - repo: linuxdeepin/dde-file-manager-extensions
+      tagsha: 6beb8d87bc7bd7cf6334f3d869b101b0e6fce924
+    - repo: linuxdeepin/util-dfm
+      tagsha: 8bd85e13f06469efb037a6a5af81693c119cdd88
+    - repo: linuxdeepin/deepin-font-manager
+      tagsha: cbf5d0229471b9fdd5ef1357aeb76892542b42ef
+    - repo: linuxdeepin/deepin-reader
+      tagsha: a50d1f98f54d1016b5941fa085d42d8a45cffe90    
+    - repo: linuxdeepin/dde-cooperation
+      tagsha: 90a79edc6e686553d0e97bd9a98b7556b28cfa59    
+
