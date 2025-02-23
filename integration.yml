@@ -1,15 +1,119 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: kf6-20241121 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/kf6-kidletime
+      tagsha: bbdf7dba75a67bfba9e37b6498cafe0dc4b47d67
+    - repo: deepin-community/kf6-kdbusaddons
+      tagsha: c3c1e9cbabffdd46c31cb80c2451737ee3ec4cde
+    - repo: deepin-community/kf6-kguiaddons
+      tagsha: 1039191201fa7358d077b1a3ccf2456de774892e
+    - repo: deepin-community/kf6-ksvg
+      tagsha: 34d55bc88582a5e5ec1e3409799def68690e07eb
+    - repo: deepin-community/kf6-kcrash
+      tagsha: e135e56016988a1f8d2abadcd325c2106ed2b6f6
+    - repo: deepin-community/kf6-kdoctools
+      tagsha: 98de9d431114d86708d15aa77132bc3dfd9203cd
+    - repo: deepin-community/kf6-kpackage
+      tagsha: 92e227fa11e69707c57c9ff0735de0308fda1971
+    - repo: deepin-community/kf6-kcolorscheme
+      tagsha: 62a1dad44f1d772b4a8d4d6ade78b7b1040ce973
+    - repo: deepin-community/kf6-krunner
+      tagsha: 5788fec2c2cb87bc25685466bec80b0865fb3efa
+    - repo: deepin-community/kf6-kcmutils
+      tagsha: 77d005ce1caf1b098ea1b8e2c887282a0a7205ae
+    - repo: deepin-community/kf6-kauth
+      tagsha: 1605f45b916606b875bf150fad6f628b7fb28331
+    - repo: deepin-community/kf6-kcoreaddons
+      tagsha: b9213d01ce54ea47161a27a7f8ef5be777fcc037
+    - repo: deepin-community/kf6-kservice
+      tagsha: d307bb922cba601c68bed3737d29bf4315d3d7a4
+    - repo: deepin-community/kf6-knotifications
+      tagsha: 25b0b9bec4172b607e87dca8542351b4e11e5184
+    - repo: deepin-community/kf6-kxmlgui
+      tagsha: d3c3eca27b0a9c2cf41cc8d8c011bf912afaa2ff
+    - repo: deepin-community/kf6-kio
+      tagsha: 83c7076b05255fa33eccbc01fe221611576d70ff
+    - repo: deepin-community/kf6-kdeclarative
+      tagsha: 90b414415d48c710031ab7bf60c80f5b2351fcd1
+    - repo: deepin-community/kf6-ki18n
+      tagsha: 0605969de8c61382880c96cd8043fefce83e4f91
+    - repo: deepin-community/kf6-knewstuff
+      tagsha: 5ea4756d161f9084a5499a4ca993cd927ffc7281
+    - repo: deepin-community/kf6-karchive
+      tagsha: fef5983426fd72443e7d7062e2690d7a5749cf9b
+    - repo: deepin-community/kf6-kirigami
+      tagsha: 6ea7153ddc8547248e94148885f90b652279f8ba
+    - repo: deepin-community/kf6-kwallet
+      tagsha: 4ad176a86bef8958ab471ab6064495ff63ac7a31
+    - repo: deepin-community/kf6-kjobwidgets
+      tagsha: 6eeacde5c9722ee0aaab9c8377bac090b8806836
+    - repo: deepin-community/kf6-kbookmarks
+      tagsha: 66db8051c5891f0ba41e00dda4d3ca981735f34f
+    - repo: deepin-community/kf6-kparts
+      tagsha: 16e14f780a73eaa41202cf8d4ca3bfe6edb3590c
+    - repo: deepin-community/kf6-kcompletion
+      tagsha: b895b1adbd1d1f9dce5701aebbb7876df38fb31a
+    - repo: deepin-community/kscreenlocker
+      tagsha: cde235d006571a3f23a1e6aec9939d1c58b4dcc8
+    - repo: deepin-community/kf6-kcodecs
+      tagsha: 077ef7f256c7b563ff4c77776c430a99212f6496
+    - repo: deepin-community/kf6-kwidgetsaddons
+      tagsha: bb3f55949664275ab40df36eaac38018b0039abf
+    - repo: deepin-community/kf6-kiconthemes
+      tagsha: d455027ff9c2c9d1171ebc98f178fab0eb087809
+    - repo: deepin-community/kf6-kitemviews
+      tagsha: f0de6133de3c60407485d21be20cc5e12da125bf
+    - repo: deepin-community/kf6-kded
+      tagsha: 9fed73a524f3db13fa355e3890a550615cab5f39
+    - repo: deepin-community/kf6-solid
+      tagsha: cf15a3f92d04e9ae464dd84b7609e89992be6812
+    - repo: deepin-community/kf6-kconfigwidgets
+      tagsha: a04a930f06d600c02c5fc3b4f6249eda4d613b22
+    - repo: deepin-community/layer-shell-qt
+      tagsha: bdea04ed6443c4e70da87b7099f269ea37dd3179
+    - repo: deepin-community/kf6-attica
+      tagsha: ca03160d08a63694d0f5548bb20b72af8e607d46
+    - repo: deepin-community/kf6-syndication
+      tagsha: 55b81751597394401e6781a25796af21dc4ce712
+    - repo: deepin-community/kf6-breeze-icons
+      tagsha: 5fc54c48682972eb7c970788d0c87892374f5215
+    - repo: deepin-community/kf6-kirigami
+      tagsha: 6ea7153ddc8547248e94148885f90b652279f8ba
+    - repo: deepin-community/kf6-kdeclarative
+      tagsha: 90b414415d48c710031ab7bf60c80f5b2351fcd1
+    - repo: deepin-community/libkscreen
+      tagsha: 740946eee12e24695871c52c0a3d4d17af923a1b
+    - repo: deepin-community/libplasma
+      tagsha: 109cf8a3343c1d28539d5a67edceca9a1cd75468
+    - repo: deepin-community/plasma-activities
+      tagsha: b1b212bf0a522df00b91f6228c391a250d32c3bc
+    - repo: deepin-community/plasma-wayland-protocols
+      tagsha: 04682ed272bcd965b2b0934a515dbb1d2129bfca
+    - repo: deepin-community/kglobalacceld
+      tagsha: 259f5dcf2682be175272bd4badbe66d775ef95d4
+    - repo: deepin-community/kwallet-kf5
+      tagsha: a28a8a9a41af4a6680852477fffc7f4621744278
+    - repo: deepin-community/kwayland
+      tagsha: 48af73b9271d8b1c965ec9f402a5ac513916f591
+    - repo: deepin-community/kwayland-kf5
+      tagsha: 787601a77baa41a4740a2441f2b4852a5d9143f0
+    - repo: deepin-community/kcodecs
+      tagsha: f45d8e397ca1ca9f0b2be222752898d8af27bcd5
+    - repo: deepin-community/kf6-extra-cmake-modules
+      tagsha: d16c8a88e81e7b9b781586015573c0daabf4fc66
+    - repo: deepin-community/karchive
+      tagsha: cd5b99cc8cc2ca2f4f5156879ca37b148bfd1156
+    - repo: deepin-community/kf6-kcrash
+      tagsha: cc7fcd913ff8d86fd2cebd304a332045a1bcb3af
+    - repo: deepin-community/kf6-kcoreaddons
+      tagsha: 04d00976d033d9583fc7e66ba80cc0a0fc883b26
+    - repo: deepin-community/kturtle
+      tagsha: c3593ba20a134347777212da7552a8b8492cba3c
+    - repo: deepin-community/kf6-syntax-highlighting
+      tagsha: a3ff494e6dd2a3e22f850c47836df98c5c0eb5d0
+    - repo: deepin-community/kf6-extra-cmake-modules
+      tagsha: fd1ef16b0cc79c374868b790faf6a0305dfb308d
+    - repo: deepin-community/kf6-ktextwidgets
+      tagsha: df7fc54509ee7e02e1ff3dcb5aa59c6126d2274a
+    - repo: deepin-community/kf6-kimageformats
+      tagsha: c0027b8380c9df841ae6734428324f9ed18e7ee9
