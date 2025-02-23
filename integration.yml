@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: kicad-20250219-lhdjply by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/opencascade
+      tagsha: 34743efae188c65b7a9c47ec2045a4d24d9d4a79
+    - repo: deepin-community/ngspice
+      tagsha: 78370bdb431de8d25038485d498579017588eb15
+    - repo: deepin-community/kicad-packages3d
+      tagsha: f17912f1f171c2be074a9939739399fe4ded1aa2
+    - repo: deepin-community/kicad-templates
+      tagsha: 65cdaa4624a3d476a92b8f45798cf6f6a329eb47
+    - repo: deepin-community/kicad-symbols
+      tagsha: 9b8aa50dc74669728fc71f63b522aeef5327f9e0
+    - repo: deepin-community/kicad-footprints
+      tagsha: 6e9a8d02d898d73e6d37e4f35536ef9ef1f24511
+    - repo: deepin-community/kicad
+      tagsha: c45979814a4833187ddf17a8dd70e8d5250ca2c6
