@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: fprint by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/fprintd
+      tagsha: 1d8a8d8c4b9077bc97f290131eda9106bbeccbfc
+    - repo: deepin-community/libfprint
+      tagsha: 57a3288b78cc2003447eb30a0396ce6e3bb199c4
+    - repo: deepin-community/libgusb
+      tagsha: 761054bb77b010d863597906cdfdda4ed08d6fa7
