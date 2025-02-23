@@ -1,15 +1,29 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: tools-924 by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/autofs
+      tagsha: 157f672183b25872ce36f7da5b2fa5b98dc1287e
+    - repo: deepin-community/trace-cmd
+      tagsha: e251771f84c5d75861f4134740342778a959ef4c
+    - repo: deepin-community/kernelshark
+      tagsha: 1b3263031320bbc10dce1751d4a4766950add387
+    - repo: deepin-community/fzf
+      tagsha: 1b6c1b6723acd43b9a8d2c8b09bbeb32a1c15719
+    - repo: deepin-community/moreutils
+      tagsha: 59133a1d9f1e2e3dd868051c4ee1a82f28f08f8b
+    - repo: deepin-community/jose
+      tagsha: d479d37abd397c9f0d110de545b2c3c01fb03180
+    - repo: deepin-community/libtracefs
+      tagsha: ffae8d314e8ac7e28aa364a2742e1ed545babfca
+    - repo: deepin-community/golang-github-charlievieth-fastwalk
+      tagsha: 1ddbb85d6eedcd9805c441e5c099b1b628b785ab
+    - repo: deepin-community/golang-github-junegunn-go-shellwords
+      tagsha: a1abd866450e8a55c04242d3a086e6e3a46222a4
+    - repo: deepin-community/sssd
+      tagsha: a8f7fbeef10f74de0aba33dd8d2494c8bb00bce6
+    - repo: deepin-community/kerberos-configs
+      tagsha: 33816a26911b0efd79036a02bcb04815431a6ba7
+    - repo: deepin-community/libtraceevent
+      tagsha: 801403df4428305af1c3a95aef5c24a42f7d52ed
+    - repo: deepin-community/golang-github-rivo-uniseg
+      tagsha: 67d1e4d35f2664e8fdf5377bf825e59290e3a94c
