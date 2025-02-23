@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'feat: update pngquant to 2.18.0-1 by lhdjply@deepin-community/pngquant'
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/pngquant
+    tagsha: bcecea9494c4f04e5dc6cdc4f5027d745b24f4bd
+timestamp: 1736987139594
