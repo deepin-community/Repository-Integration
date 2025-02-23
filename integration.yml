@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  fix: missing blur for Menu when it's parent is clip by
+  18202781743@linuxdeepin/dde-launchpad
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/dde-launchpad
+    tagsha: 2d21120214c61b69ac3a68c2ece53ad1ad68566d
+timestamp: 1715689383995
