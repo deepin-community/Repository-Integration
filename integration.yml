@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  fixup extra 'pkg-config' in deb_udevudevdir by
+  UTsweetyfish@deepin-community/e2fsprogs
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/e2fsprogs
+    tagsha: 22d6223f32bff7ccdb0c628b41edb3be17ef2c88
+timestamp: 1724744397195
