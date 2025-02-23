@@ -1,6 +1,15 @@
-message: 'LoongArch: Fix errors on sanitizer by ticat123@deepin-community/gcc-12'
+# Required
+message: |
+  Integrated for V23-Release
+# Not required, now default is V23-Release
 milestone: V23-Release
-repos:
-  - repo: deepin-community/gcc-12
-    tagsha: fe04c0156f8a746b31bcd23541e01b998f0562b0
-timestamp: 1740018152130
+# Required
+repos: 
+  # Required
+  - repo: linuxdeepin/examplerepo
+    # Not required
+    tag: 5.11.22
+    # Not required, but need one of tag and tagsha info
+    # When use tag info, integration workflow will check repository tag and build tag version
+    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
+    tagsha: "********************************"
