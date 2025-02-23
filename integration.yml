@@ -1,15 +1,10 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update btrfs-progs to 6.6.3-1 by
+  deepin-community-bot[bot]@deepin-community/btrfs-progs
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/btrfs-progs
+    tagsha: 02fc4f9bf0c4b23e4699f878d1eb6d254a5f69da
+  - repo: deepin-community/reiserfsprogs
+    tagsha: e32b57971dc6658ab10ce4b62f07f7c47ca5cc05
+timestamp: 1716626927366
