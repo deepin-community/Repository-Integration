@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: tcltk-defaults by @Cherrling to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/tcltk-defaults
+      tagsha: 0c5b494adc1905b07a44417aa37bdf672241bb33
+    - repo: deepin-community/tcl8.6
+      tagsha: 2d708b3ce6ef3404e5d636fe93d96b4874b1bc42
+    - repo: deepin-community/tk8.6
+      tagsha: 63345d68323cc71d2cc45794aaeffb7fcf47b200
