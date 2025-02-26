@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: libstdc-20250226-hdjply by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/binutils-xtensa
+      tagsha: 898fb09740ab93bdd08fbae5ebdb1b467c169e92
+    - repo: deepin-community/gcc-xtensa
+      tagsha: a9ca63a40e5d1d1378864ba4ca3be33ca88e1a1b
+    - repo: deepin-community/libstdc--arm-none-eabi
+      tagsha: e52010a8ab64c4ed298ddfef1cb82d9612edc11c
+    - repo: deepin-community/libstdc--riscv64-unknown-elf
+      tagsha: 53a8d433695984befd0cfcdfa6cd1f3959cf1ac2
+    - repo: deepin-community/picolibc
+      tagsha: 5e167bd3cebe2253fe61d1c3dbcbf44feb4c04d3
