@@ -17,3 +17,5 @@ repos:
       tagsha: f83e3b343bc664ff7c8550ca34bbd2a99b8e257f
     - repo: deepin-community/node-registry-auth-token
       tagsha: a12128276c38f27c88e97c4cc5815618b8906478
+    - repo: deepin-community/dh-make-perl
+      tagsha: cdcdbb571ee6afda94dd1452380a7ce03e0ef546
