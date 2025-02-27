@@ -33,3 +33,7 @@ repos:
       tagsha: 4f5f6dc1820a7b8cc86f20f03e7e696ec93d06db
     - repo: deepin-community/node-tap
       tagsha: 58466974d23227db16fcd19145cdd5aba713464d
+    - repo: deepin-community/node-cliui
+      tagsha: 81e4eaac6b77f7b7b6be616cbe1b5733eef2f6c8
+    - repo: deepin-community/node-tap-parser
+      tagsha: 6b10ab716db46c0cda04157ba303f2ad67d5f4e2
