@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: javascript-202502 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/pkg-js-tools
+      tagsha: 5fdb060fc688485bdf100b37ad6664bfa9fb4e1b
+    - repo: deepin-community/node-package-json
+      tagsha: a524aa5c239644620a861917a58beeb1ea86705b
+    - repo: deepin-community/node-dot-prop
+      tagsha: 76e16813ff0191e91fa90c2fea3fad66ff419e3d
+    - repo: deepin-community/node-get-stream
+      tagsha: 80a37a682656710fccd688ecd6ee880ac3c217ba
+    - repo: deepin-community/node-cli-boxes
+      tagsha: d9cd83a77432c38b898c75c25b19431123db909f
+    - repo: deepin-community/node-execa
+      tagsha: cfee292d9c91d3250154c17428ed2e2eb0a9d60d
+    - repo: deepin-community/lumino
+      tagsha: f83e3b343bc664ff7c8550ca34bbd2a99b8e257f
