@@ -23,3 +23,5 @@ repos:
       tagsha: e1a2c6245dd93df105edc9b886c47e4aded40015
     - repo: deepin-community/node-typescript
       tagsha: 4220e76e47eae99b2f62f311e3617deecdb02185
+    - repo: deepin-community/node-css-loader
+      tagsha: 8dd51117125abfb7fdd722f5966c8ad6bd143522
