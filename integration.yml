@@ -29,3 +29,5 @@ repos:
       tagsha: 254cbf3bf9487a6d833b6d54c3fd4aa6472cb2fe
     - repo: deepin-community/node-jquery-mousewheel
       tagsha: accda09145ade363325d5e4b43e266e22d30d118
+    - repo: deepin-community/node-minipass
+      tagsha: 4f5f6dc1820a7b8cc86f20f03e7e696ec93d06db
