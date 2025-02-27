@@ -31,3 +31,5 @@ repos:
       tagsha: accda09145ade363325d5e4b43e266e22d30d118
     - repo: deepin-community/node-minipass
       tagsha: 4f5f6dc1820a7b8cc86f20f03e7e696ec93d06db
+    - repo: deepin-community/node-tap
+      tagsha: 58466974d23227db16fcd19145cdd5aba713464d
