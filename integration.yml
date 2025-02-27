@@ -37,3 +37,5 @@ repos:
       tagsha: 81e4eaac6b77f7b7b6be616cbe1b5733eef2f6c8
     - repo: deepin-community/node-tap-parser
       tagsha: 6b10ab716db46c0cda04157ba303f2ad67d5f4e2
+    - repo: deepin-community/node-yaml
+      tagsha: 64fc6865fdcc2f2499b238fe7d258ce17d3b9e98
