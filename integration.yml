@@ -1,15 +1,53 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: javascript-202502 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/pkg-js-tools
+      tagsha: 5fdb060fc688485bdf100b37ad6664bfa9fb4e1b
+    - repo: deepin-community/node-package-json
+      tagsha: a524aa5c239644620a861917a58beeb1ea86705b
+    - repo: deepin-community/node-dot-prop
+      tagsha: 76e16813ff0191e91fa90c2fea3fad66ff419e3d
+    - repo: deepin-community/node-get-stream
+      tagsha: 80a37a682656710fccd688ecd6ee880ac3c217ba
+    - repo: deepin-community/node-cli-boxes
+      tagsha: d9cd83a77432c38b898c75c25b19431123db909f
+    - repo: deepin-community/node-execa
+      tagsha: cfee292d9c91d3250154c17428ed2e2eb0a9d60d
+    - repo: deepin-community/lumino
+      tagsha: f83e3b343bc664ff7c8550ca34bbd2a99b8e257f
+    - repo: deepin-community/node-registry-auth-token
+      tagsha: a12128276c38f27c88e97c4cc5815618b8906478
+    - repo: deepin-community/dh-make-perl
+      tagsha: cdcdbb571ee6afda94dd1452380a7ce03e0ef546
+    - repo: deepin-community/requirejs
+      tagsha: e1a2c6245dd93df105edc9b886c47e4aded40015
+    - repo: deepin-community/node-typescript
+      tagsha: 4220e76e47eae99b2f62f311e3617deecdb02185
+    - repo: deepin-community/node-css-loader
+      tagsha: 8dd51117125abfb7fdd722f5966c8ad6bd143522
+    - repo: deepin-community/node-icss-utils
+      tagsha: 254cbf3bf9487a6d833b6d54c3fd4aa6472cb2fe
+    - repo: deepin-community/node-jquery-mousewheel
+      tagsha: accda09145ade363325d5e4b43e266e22d30d118
+    - repo: deepin-community/node-minipass
+      tagsha: 4f5f6dc1820a7b8cc86f20f03e7e696ec93d06db
+    - repo: deepin-community/node-tap
+      tagsha: 58466974d23227db16fcd19145cdd5aba713464d
+    - repo: deepin-community/node-cliui
+      tagsha: 81e4eaac6b77f7b7b6be616cbe1b5733eef2f6c8
+    - repo: deepin-community/node-tap-parser
+      tagsha: 6b10ab716db46c0cda04157ba303f2ad67d5f4e2
+    - repo: deepin-community/node-yaml
+      tagsha: 64fc6865fdcc2f2499b238fe7d258ce17d3b9e98
+    - repo: deepin-community/node-tap-mocha-reporter
+      tagsha: 17340613cab8baf0a1035a85129e68ae9c968cfe
+    - repo: deepin-community/node-cacache
+      tagsha: 9102a3f314f0f9b549170a3f729423256793dc8d
+    - repo: deepin-community/node-tar
+      tagsha: 14f58d9cc5efaf4b38fd18e7e369374f76b27473
+    - repo: deepin-community/node-ssri
+      tagsha: 04f22f6b7f3705137c354820066be6a411fe05ae
+    - repo: deepin-community/node-xterm
+      tagsha: 152d9c2f5dff792bebd689fca1dfea050a6ae489
+    - repo: deepin-community/wabt
+      tagsha: 7d75d3535a0482f1cd84799576ef9a98bf9a221c
