@@ -5,9 +5,9 @@ repos:
       tagsha: 898fb09740ab93bdd08fbae5ebdb1b467c169e92
     - repo: deepin-community/gcc-xtensa
       tagsha: a9ca63a40e5d1d1378864ba4ca3be33ca88e1a1b
-    - repo: deepin-community/libstdc--arm-none-eabi
+    - repo: deepin-community/libstdcplusplus-arm-none-eabi
       tagsha: e52010a8ab64c4ed298ddfef1cb82d9612edc11c
-    - repo: deepin-community/libstdc--riscv64-unknown-elf
+    - repo: deepin-community/libstdcplusplus-riscv64-unknown-elf
       tagsha: 53a8d433695984befd0cfcdfa6cd1f3959cf1ac2
     - repo: deepin-community/picolibc
       tagsha: cd1ddd34823e21d14a9e50544108f9fa13f0c03e
