@@ -15,3 +15,5 @@ repos:
       tagsha: cfee292d9c91d3250154c17428ed2e2eb0a9d60d
     - repo: deepin-community/lumino
       tagsha: f83e3b343bc664ff7c8550ca34bbd2a99b8e257f
+    - repo: deepin-community/node-registry-auth-token
+      tagsha: a12128276c38f27c88e97c4cc5815618b8906478
