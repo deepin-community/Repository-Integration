@@ -10,4 +10,4 @@ repos:
     - repo: deepin-community/libstdc--riscv64-unknown-elf
       tagsha: 53a8d433695984befd0cfcdfa6cd1f3959cf1ac2
     - repo: deepin-community/picolibc
-      tagsha: 5e167bd3cebe2253fe61d1c3dbcbf44feb4c04d3
+      tagsha: cd1ddd34823e21d14a9e50544108f9fa13f0c03e
