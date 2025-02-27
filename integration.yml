@@ -49,3 +49,5 @@ repos:
       tagsha: 04f22f6b7f3705137c354820066be6a411fe05ae
     - repo: deepin-community/node-xterm
       tagsha: 152d9c2f5dff792bebd689fca1dfea050a6ae489
+    - repo: deepin-community/wabt
+      tagsha: 7d75d3535a0482f1cd84799576ef9a98bf9a221c
