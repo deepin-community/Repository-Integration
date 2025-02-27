@@ -19,3 +19,7 @@ repos:
       tagsha: a12128276c38f27c88e97c4cc5815618b8906478
     - repo: deepin-community/dh-make-perl
       tagsha: cdcdbb571ee6afda94dd1452380a7ce03e0ef546
+    - repo: deepin-community/requirejs
+      tagsha: e1a2c6245dd93df105edc9b886c47e4aded40015
+    - repo: deepin-community/node-typescript
+      tagsha: 4220e76e47eae99b2f62f311e3617deecdb02185
