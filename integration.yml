@@ -4,4 +4,4 @@ repos:
     - repo: deepin-community/crudini
       tagsha: f996dd6d0f3d578501e0325397ef9830c4690a38
     - repo: deepin-community/python-iniparse
-      tagsha: 88e53da3588204a6d4ba4a0b6b5a374e6108ea11
+      tagsha: ed0f47fbf0aba1d1926eda0c231dbff48e2da5c9
