@@ -2,9 +2,9 @@ message: 'Auto integrate from topic: filezilla-20250226-lhdjply by @lhdjply to V
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/nettle
-      tagsha: 175e94550d415eda5b78db61322fe7a54191f1ff
+      tagsha: 0cf88600f18f60e082b0d197be24337d6a304907
     - repo: deepin-community/gnutls28
-      tagsha: 3e5e7ac7d6569066b7d829becb0b986b800e0b3c
+      tagsha: 3e1f825df2e86ba713aa6e9d79d2e26f90a1e7e5
     - repo: deepin-community/libfilezilla
       tagsha: 66c7c709892cf3f29127da3ac0f29c98155e3dbd
     - repo: deepin-community/filezilla
