@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: filezilla-20250226-lhdjply by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/nettle
+      tagsha: 0cf88600f18f60e082b0d197be24337d6a304907
+    - repo: deepin-community/gnutls28
+      tagsha: 3e1f825df2e86ba713aa6e9d79d2e26f90a1e7e5
+    - repo: deepin-community/libfilezilla
+      tagsha: 66c7c709892cf3f29127da3ac0f29c98155e3dbd
+    - repo: deepin-community/filezilla
+      tagsha: b70943b5a109999c076db20bd8d5dc0d67a14a15
