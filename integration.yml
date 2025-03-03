@@ -1,15 +1,31 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: nodejs20 by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/node-minimatch
+      tagsha: ab384243afc06f2095878dfe26e5ebbea51cef32
+    - repo: deepin-community/nodejs
+      tagsha: 71691b9c68eaed0a90ed7a272a9a329b2f5b021e
+    - repo: deepin-community/simdjson
+      tagsha: 1a0fe52a02e4e96205ef19f0bffb0e251efc825a
+    - repo: deepin-community/c-ares
+      tagsha: 1e336f84aca3cf8b85cbaec3787aabcdc8d1f239
+    - repo: deepin-community/node-corepack
+      tagsha: 3a937053d2f6c68365b7f5697f653466cb5ec781
+    - repo: deepin-community/node-yarnpkg
+      tagsha: 17cfd9b0f676cd52ea4970c3cb22bbc3f9f484ac
+    - repo: deepin-community/node-change-case
+      tagsha: 7e658682964992b8a7c02595c84b42286674a55a
+    - repo: deepin-community/node-clipanion
+      tagsha: b7f3bb8c8d8968384d21e8869561e3310b7c1ac9
+    - repo: deepin-community/node-typanion
+      tagsha: c4f4585bc4b1c4e61e6722c200a174a7abadf6fc
+    - repo: deepin-community/node-enquirer
+      tagsha: 0833a84943a0ad8928d28ab554bc70beb951446f
+    - repo: deepin-community/node-yaml
+      tagsha: 3fb6ef5177746c7f0fb04e5d36c69399eb9bfd38
+    - repo: deepin-community/node-boxen
+      tagsha: 7bf1805cc76f4bd249fa996e4e6b0c698b8792c9
+    - repo: deepin-community/node-cli-boxes
+      tagsha: bbb1599f4f28bf6f1907b92fc4075967c1079528
+    - repo: deepin-community/node-zkochan-cmd-shim
+      tagsha: ad329404fa3e4926b10a145dfb231bfa81dfec6b
