@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update android-platform-frameworks-base to 1:14~beta1-2build3 by
+  gfdgd-xi@deepin-community/android-platform-frameworks-base
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/android-platform-frameworks-base
+    tagsha: 55ae8f9302ee8dec4fe8714e763eeee226150142
+timestamp: 1740992414617
