@@ -7,3 +7,5 @@ repos:
       tagsha: 60c9702fc05d12decf0947e8ca74160fe662e558
     - repo: deepin-community/python-pbr
       tagsha: 9683245ef542871d54ee9fdfb25de4db7cd95977
+    - repo: deepin-community/python-stestr
+      tagsha: f263032f6f0e950e9cda7931729458c8d6451670
