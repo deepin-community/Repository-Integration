@@ -10,6 +10,6 @@ repos:
     - repo: deepin-community/gluegen2
       tagsha: 0fd06e166e1ee92ad743cb6eda3a693e6a36f52e
     - repo: deepin-community/swt4-gtk
-      tagsha: 3adf3c73927f38a1c1354fe3045485276911ece2
+      tagsha: a7d54a85c84e7205eef4df92efd9f05240cde8bb
     - repo: deepin-community/libmatio
       tagsha: 108167b008afbbc68bebb5bce4ec9aa4dda97d7c
