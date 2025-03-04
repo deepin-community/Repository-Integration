@@ -5,3 +5,7 @@ repos:
       tagsha: 9fffa34b96852f20b9474ccb1cae699e66748656
     - repo: deepin-community/libflexdock-java
       tagsha: 698d9bfe1b74d0982001a14c8b931ab30a189cb1
+    - repo: deepin-community/libjogl2-java
+      tagsha: a3f03319ecb4a0b25f8c16ddc6e91bfaa3b989d2
+    - repo: deepin-community/gluegen2
+      tagsha: 555a26245f8c3edba3806666c00505a06e11e5f8
