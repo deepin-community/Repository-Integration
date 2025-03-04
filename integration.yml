@@ -8,4 +8,4 @@ repos:
     - repo: deepin-community/libjogl2-java
       tagsha: a3f03319ecb4a0b25f8c16ddc6e91bfaa3b989d2
     - repo: deepin-community/gluegen2
-      tagsha: 555a26245f8c3edba3806666c00505a06e11e5f8
+      tagsha: 0fd06e166e1ee92ad743cb6eda3a693e6a36f52e
