@@ -9,3 +9,5 @@ repos:
       tagsha: a3f03319ecb4a0b25f8c16ddc6e91bfaa3b989d2
     - repo: deepin-community/gluegen2
       tagsha: 0fd06e166e1ee92ad743cb6eda3a693e6a36f52e
+    - repo: deepin-community/swt4-gtk
+      tagsha: 91468e7906410936791a44ff2e0da3b8ddb50c89
