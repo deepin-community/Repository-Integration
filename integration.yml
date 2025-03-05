@@ -14,4 +14,4 @@ repos:
     - repo: deepin-community/libmatio
       tagsha: 108167b008afbbc68bebb5bce4ec9aa4dda97d7c
     - repo: deepin-community/freehep-vectorgraphics
-      tagsha: 5ec5055951f75ad8beca42e4b3de58560a24daf2
+      tagsha: a3e7950294c23ab65308304c2eedaa1ed8b93e42
