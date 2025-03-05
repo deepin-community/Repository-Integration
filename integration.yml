@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: deepin-community/linux-deepin-hwe
       tagsha: c1163752dfee47dc4472b53ec29d9d8360162ca8
+    - repo: deepin-community/linux-deepin-latest
+      tagsha: cda16fa7aa0515174f8edeb348e14d714e8b07d9
