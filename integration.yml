@@ -89,3 +89,7 @@ repos:
       tagsha: 3d629a6f0dcf29bffed05a67a2f6256fee285de4
     - repo: deepin-community/sphinx
       tagsha: e833a7f3af83e9c00f4b79c5f0ebc04d6e8f4fe8
+    - repo: deepin-community/alabaster
+      tagsha: 5333a95a5017fd255b5a1c31457bcffee93347f8
+    - repo: deepin-community/python-babel
+      tagsha: dc683888f12d3719382bf09bb8e5aa341eff5896
