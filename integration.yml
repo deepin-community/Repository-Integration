@@ -93,3 +93,5 @@ repos:
       tagsha: 5333a95a5017fd255b5a1c31457bcffee93347f8
     - repo: deepin-community/python-babel
       tagsha: dc683888f12d3719382bf09bb8e5aa341eff5896
+    - repo: deepin-community/dvisvgm
+      tagsha: 85f419733e14e8e53268240374a274778e7889e0
