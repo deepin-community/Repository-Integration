@@ -99,3 +99,13 @@ repos:
       tagsha: 46f6b32780a48d08a91f94b89e038e232c8b5050
     - repo: deepin-community/unicode-cldr-core
       tagsha: f3a526e89c5abeb68357763aa6c89d239dcca5bf
+    - repo: deepin-community/python-sniffio
+      tagsha: ada07a34e14e23102510d66f6129abc04836b937
+    - repo: deepin-community/pycodestyle
+      tagsha: 11f350db8088f45929eac3b59ee694a9261908b7
+    - repo: deepin-community/python-pygraphviz
+      tagsha: c5fdb6ef6cf3468214f099a5ae8b2565eb813104
+    - repo: deepin-community/pybind11
+      tagsha: 00fcf6ca394cdd34e1424955787ec7aa85ad3905
+    - repo: deepin-community/pydot
+      tagsha: 1f97921232eb096adbbbe565bbded9d17cad88f2
