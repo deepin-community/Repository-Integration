@@ -95,3 +95,7 @@ repos:
       tagsha: dc683888f12d3719382bf09bb8e5aa341eff5896
     - repo: deepin-community/dvisvgm
       tagsha: 85f419733e14e8e53268240374a274778e7889e0
+    - repo: deepin-community/python-dateutil
+      tagsha: 46f6b32780a48d08a91f94b89e038e232c8b5050
+    - repo: deepin-community/unicode-cldr-core
+      tagsha: f3a526e89c5abeb68357763aa6c89d239dcca5bf
