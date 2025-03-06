@@ -9,3 +9,81 @@ repos:
       tagsha: 9683245ef542871d54ee9fdfb25de4db7cd95977
     - repo: deepin-community/python-stestr
       tagsha: f263032f6f0e950e9cda7931729458c8d6451670
+    - repo: deepin-community/python-mkdocs
+      tagsha: 58e2c39feeab0e44c9ce92e3bac53d60d7a0ed7a
+    - repo: deepin-community/python-fasteners
+      tagsha: 733879c1d107038568760b402591f8b8f423e206
+    - repo: deepin-community/python-pytest-flake8
+      tagsha: 036a2295ff6116ca405aaa22220c29f621ad753e
+    - repo: deepin-community/python-dogpile.cache
+      tagsha: 8e639618927d9054b88be3ca3a498b1af8a2c9ad
+    - repo: deepin-community/python-sphinx-issues
+      tagsha: 3f018db35f125434c6e534255c6f1accceebbc83
+    - repo: deepin-community/python-email-validator
+      tagsha: 98d15790002d0e99f5f0c8713ccdc36f29157673
+    - repo: deepin-community/pyquery
+      tagsha: c8b2ec75fb34af459a12babb5585a4f8f839a3fc
+    - repo: deepin-community/python-pytest-cov
+      tagsha: f7ff98f589ba7be90beeb21030fa2ad569e1daf4
+    - repo: deepin-community/recommonmark
+      tagsha: 8342bc7397787d50dde2dcd682ff19f9d5f93c31
+    - repo: deepin-community/dh-python
+      tagsha: 518d0684a1d68f23be8599fd7a72936c5b73e03d
+    - repo: deepin-community/python-unidiff
+      tagsha: d13223ed8bee8d0b6df642436e2336bb89c09806
+    - repo: deepin-community/python-jsonschema
+      tagsha: dc765b51d1ee0234a496e6ad426c1c93afcba9cf
+    - repo: deepin-community/python-docker
+      tagsha: a7bbcb63f706c1bd9bf2d98053ad603d56de8645
+    - repo: deepin-community/requests
+      tagsha: 58ffb2f1f7a05172747291614fd69cbd264f1562
+    - repo: deepin-community/python-tzlocal
+      tagsha: 8b906c3978434bd391e128d983853aa203abe38d
+    - repo: deepin-community/python-service-identity
+      tagsha: 62f145bf080c363da14e2a0de0a9d993dc319222
+    - repo: deepin-community/black
+      tagsha: b80ad270abeccdd49a5607055d090c54fba92a28
+    - repo: deepin-community/openstack-pkg-tools
+      tagsha: dec0e28375f69c4cf492453685ad08d520e04280
+    - repo: deepin-community/pydata-sphinx-theme
+      tagsha: 3db0a1f244724d02aaf229948539b8432de8abef
+    - repo: deepin-community/python-typing-extensions
+      tagsha: 2f944ca4d59a64b816a5b3f4b52c95da31e19582
+    - repo: deepin-community/python-resolvelib
+      tagsha: 5cc7f009719b6744de6c56925163ec11c4d929e6
+    - repo: deepin-community/python-kubernetes
+      tagsha: ba22de1c31b25ef049995000ea8d9c64e615c76d
+    - repo: deepin-community/python-tokenize-rt
+      tagsha: afbf7abb41a66ee39953b7b342ed0cd2f8a77d48
+    - repo: deepin-community/ruamel.yaml
+      tagsha: 4abec6a3e4b59f2350b7a4bde324d215532fdd3a
+    - repo: deepin-community/mypy
+      tagsha: 6759edd07a0a0f0c23bf5e45258f4a1bb73ebb44
+    - repo: deepin-community/python-docutils
+      tagsha: 09815586339522e33cfec6742a6ee4a16290b2af
+    - repo: deepin-community/scikit-learn
+      tagsha: f198042d1bbde3234af9d92effb8974b6c377d13
+    - repo: deepin-community/networkx
+      tagsha: e9c3828460f8f1384fd3335a813c517f4c8cd720
+    - repo: deepin-community/pytest
+      tagsha: 886e03bfb3249287d439e71574036693f124d089
+    - repo: deepin-community/python-trio
+      tagsha: 12eea01b26b7d790cb15fe6299e72bb73be102e4
+    - repo: deepin-community/python-gevent
+      tagsha: d532b3f0bb559d06d7d72ecd940e07889fcbc5c1
+    - repo: deepin-community/unidecode
+      tagsha: a04e878aaa7c00058db1a6155c8cb8af8e37da3d
+    - repo: deepin-community/rasterio
+      tagsha: d045e7c1834696cedf2925412c5aa81b8e0af3d7
+    - repo: deepin-community/h5py
+      tagsha: d2a883398f83956b8bb6b7e4ccbdfb867b2ddfd5
+    - repo: deepin-community/python-reportlab
+      tagsha: 64c6ec7dc8986cc4b2d667e833bcc5ef9433565b
+    - repo: deepin-community/numpy
+      tagsha: 018f74373620d9ca531fc2063d88c4096973e3b4
+    - repo: deepin-community/matplotlib
+      tagsha: 06ec3c088826fe1f7cb3175f561507e80a65d220
+    - repo: deepin-community/scipy
+      tagsha: d52c532c9bd298ced5effef671f41a9df70d38ad
+    - repo: deepin-community/python-flake8
+      tagsha: 3d629a6f0dcf29bffed05a67a2f6256fee285de4
