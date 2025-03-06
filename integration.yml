@@ -87,3 +87,5 @@ repos:
       tagsha: d52c532c9bd298ced5effef671f41a9df70d38ad
     - repo: deepin-community/python-flake8
       tagsha: 3d629a6f0dcf29bffed05a67a2f6256fee285de4
+    - repo: deepin-community/sphinx
+      tagsha: e833a7f3af83e9c00f4b79c5f0ebc04d6e8f4fe8
