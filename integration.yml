@@ -1,15 +1,85 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: perl-20250307 by @UTsweetyfish to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/perltidy
+      tagsha: 1b902f9c42c27c01d4e628edfe0b76e755691d8f
+    - repo: deepin-community/libcompress-raw-lzma-perl
+      tagsha: c8662acd7855b4fcaa66a0e3c4bda14319a4f43a
+    - repo: deepin-community/libole-storage-lite-perl
+      tagsha: 56a5838448b23de636dd71fa7c1a6009b9dcfece
+    - repo: deepin-community/libextutils-hascompiler-perl
+      tagsha: a978d5bee95588c45ee500b32bb0737799d81902
+    - repo: deepin-community/libtest-without-module-perl
+      tagsha: 3eafbbd6015bf7de767d8b29cee9e05852a550bb
+    - repo: deepin-community/libdevel-mat-dumper-perl
+      tagsha: 8922d0f3ced21e0b37d330733e34b2fd9a6e2200
+    - repo: deepin-community/libextutils-helpers-perl
+      tagsha: ec289faaf3b39f07482302e2fe91340b1b45f24f
+    - repo: deepin-community/libmodule-build-tiny-perl
+      tagsha: 7a0859854c7a647f1bab002e7fc28e008b44da1e
+    - repo: deepin-community/libfuture-perl
+      tagsha: a537f6b99060266ca45b51c9567cbb29fc31632c
+    - repo: deepin-community/libsyntax-keyword-try-perl
+      tagsha: ba4e498416396a73de71a089224d5d61cc6e5093
+    - repo: deepin-community/libbusiness-issn-perl
+      tagsha: 318fa604253c553d0f0b1bcefd4b0ec6d7743157
+    - repo: deepin-community/libcpanel-json-xs-perl
+      tagsha: 6885b7ea2b3f0534b7989ca723a394163c25cf45
+    - repo: deepin-community/libdata-printer-perl
+      tagsha: c97e5ad145144746f9a91ff8754ff96128ccee1b
+    - repo: deepin-community/libhttp-cookiejar-perl
+      tagsha: 3e599915f1468f18813a86002c6be2d65c4ac3cc
+    - repo: deepin-community/libfuture-asyncawait-perl
+      tagsha: 163d782c974987952c212c870ac807e128037cd7
+    - repo: deepin-community/libcookie-baker-perl
+      tagsha: 57c89cdcf491838f390394f78a1791abb3deae0d
+    - repo: deepin-community/libgd-perl
+      tagsha: 5659634bbc51521f6f980cd2f1716a224fc77ece
+    - repo: deepin-community/liburi-perl
+      tagsha: b260e8391f7c63056a47a404cb2ad9db6ea2c1a4
+    - repo: deepin-community/libpath-tiny-perl
+      tagsha: 9f6d1d9f710d271c094dfa2923de453c4ff8a717
+    - repo: deepin-community/libuuid-perl
+      tagsha: c36ca602ca6b8c8ffb281d6828454407ba594552
+    - repo: deepin-community/libppi-perl
+      tagsha: ad601d13a6acad0aa3ac37ab4863b0e08e223849
+    - repo: deepin-community/libwx-perl
+      tagsha: 053d3038a245f18de1d3e6d5cc6b757c630941f5
+    - repo: deepin-community/libtest-harness-perl
+      tagsha: acf3266ec9a3e66bd6bab54b00054341f2a88436
+    - repo: deepin-community/libtext-csv-xs-perl
+      tagsha: b9927127bda6a4c2482994c66020a62e1838a6a8
+    - repo: deepin-community/libtype-tiny-perl
+      tagsha: 9224b38b75fe104389dc27ad522d11ba0a1cc075
+    - repo: deepin-community/libstruct-dumb-perl
+      tagsha: 327d3022ff07cac5c2f22aebb7ed0b27fd97f3e7
+    - repo: deepin-community/libintl-perl
+      tagsha: 0f92fae2249c3b5798bf3a76ef15188ac511305e
+    - repo: deepin-community/libpdf-api2-perl
+      tagsha: 559fa92f34ff2a381d365fdd6ceeada72e9a8977
+    - repo: deepin-community/libcpan-meta-requirements-perl
+      tagsha: 72c802235f9dbb1bc70181f01ca1eec4eb2cf94f
+    - repo: deepin-community/liblist-someutils-perl
+      tagsha: 89bbc25cfb5fbb08f88b6b61f93feea342e72e20
+    - repo: deepin-community/libsoftware-licensemoreutils-perl
+      tagsha: 00b842c9837f8cf666005871a7922bacf72f1fe7
+    - repo: deepin-community/libtoml-tiny-perl
+      tagsha: 1fd6e358ae4dc3b0d3cafc63d4a378210881e466
+    - repo: deepin-community/libtest-most-perl
+      tagsha: cf01cc3bd4ab5e3b033972f9225b6bf954c652ae
+    - repo: deepin-community/libmojolicious-perl
+      tagsha: 67278dcc35c3d986471a2c7514664a4ae81dfcc2
+    - repo: deepin-community/libtest2-plugin-nowarnings-perl
+      tagsha: 4d312e9718db8c4c28e05fa0a760ebc3eb4b80c2
+    - repo: deepin-community/libtext-csv-perl
+      tagsha: c737127514115daf9a88b4ff972d266096312017
+    - repo: deepin-community/dh-make-perl
+      tagsha: aac5ac3ba12690f2d6f967d15c974b4ff6f5308c
+    - repo: deepin-community/libconfig-tiny-perl
+      tagsha: db799e0b76722748024090045efff9b1f2154571
+    - repo: deepin-community/libio-compress-perl
+      tagsha: 1d22de9af7e44a804d90982a831c458942d482d1
+    - repo: deepin-community/libmath-bigint-perl
+      tagsha: e2296024d86ebaf75e48a3656b9200ee0ce338b5
+    - repo: deepin-community/libmodule-build-perl
+      tagsha: df34f2542bd7752b1eef5924bf45d091aa9649b9
