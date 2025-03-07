@@ -93,3 +93,5 @@ repos:
       tagsha: 7fb6fd11012492bd8d6ab25f4424c1af5e074e3d
     - repo: deepin-community/libxs-parse-sublike-perl
       tagsha: 81ac6b583880c5c2c0edf9938e7cbf38345cd502
+    - repo: deepin-community/libgd2
+      tagsha: f18ffd9dc6e3f266d3aa6d6c304fa77b0819d785
