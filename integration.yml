@@ -22,13 +22,13 @@ repos:
     - repo: deepin-community/apache-opennlp
       tagsha: f4a8b9c72dd4c43540b6f0344c6449b8e62bc874
     - repo: deepin-community/javacc5
-      tagsha: 3c71ba79869096e040abfa9826e1e6c8c00f11c2
+      tagsha: 7c99846d532ae10b284de8e3dd45e5611beb755e
     - repo: deepin-community/junit5-system-exit
       tagsha: 87eb5c31b3d35a1942f708819b403176a53026b7
     - repo: deepin-community/morfologik-stemming2
       tagsha: a61ec383efbe641e857d755257e0c5142c5e08bf
     - repo: deepin-community/noggit
-      tagsha: 228453d248a4c74e44b1bacef8568da6b662a655
+      tagsha: 2aa39262b220ced47f612b2e1568f76ffe8f2084
     - repo: deepin-community/s2-geometry-library
       tagsha: 5854acb8fbf1c296428a47ce06c47ed1e94c9488
     - repo: deepin-community/spatial4j
