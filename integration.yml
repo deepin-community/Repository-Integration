@@ -83,3 +83,13 @@ repos:
       tagsha: e2296024d86ebaf75e48a3656b9200ee0ce338b5
     - repo: deepin-community/libmodule-build-perl
       tagsha: df34f2542bd7752b1eef5924bf45d091aa9649b9
+    - repo: deepin-community/libcompress-raw-zlib-perl
+      tagsha: 49d0502bde335601c5486707b4b615825f1cad1a
+    - repo: deepin-community/libtype-tiny-xs-perl
+      tagsha: 1633b762d48c05003925b4f0cfc59016d003a078
+    - repo: deepin-community/libexporter-tiny-perl
+      tagsha: 30dff23b87d26ac60063d7fe69de10928c2b0645
+    - repo: deepin-community/libcompress-raw-bzip2-perl
+      tagsha: 7fb6fd11012492bd8d6ab25f4424c1af5e074e3d
+    - repo: deepin-community/libxs-parse-sublike-perl
+      tagsha: 81ac6b583880c5c2c0edf9938e7cbf38345cd502
