@@ -33,3 +33,5 @@ repos:
       tagsha: 5854acb8fbf1c296428a47ce06c47ed1e94c9488
     - repo: deepin-community/spatial4j
       tagsha: 96bacfa4b236be0a5d82d847297b7299e7aabace
+    - repo: deepin-community/libnative-platform-java
+      tagsha: 2d8970e465e7d06e07a04d14f258f7616cab354c
