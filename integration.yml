@@ -43,8 +43,6 @@ repos:
       tagsha: c36ca602ca6b8c8ffb281d6828454407ba594552
     - repo: deepin-community/libppi-perl
       tagsha: ad601d13a6acad0aa3ac37ab4863b0e08e223849
-    - repo: deepin-community/libwx-perl
-      tagsha: 053d3038a245f18de1d3e6d5cc6b757c630941f5
     - repo: deepin-community/libtest-harness-perl
       tagsha: acf3266ec9a3e66bd6bab54b00054341f2a88436
     - repo: deepin-community/libtext-csv-xs-perl
@@ -67,8 +65,6 @@ repos:
       tagsha: 1fd6e358ae4dc3b0d3cafc63d4a378210881e466
     - repo: deepin-community/libtest-most-perl
       tagsha: cf01cc3bd4ab5e3b033972f9225b6bf954c652ae
-    - repo: deepin-community/libmojolicious-perl
-      tagsha: 67278dcc35c3d986471a2c7514664a4ae81dfcc2
     - repo: deepin-community/libtest2-plugin-nowarnings-perl
       tagsha: 4d312e9718db8c4c28e05fa0a760ebc3eb4b80c2
     - repo: deepin-community/libtext-csv-perl
