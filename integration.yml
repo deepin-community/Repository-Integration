@@ -14,4 +14,8 @@ repos:
     - repo: deepin-community/libmatio
       tagsha: 108167b008afbbc68bebb5bce4ec9aa4dda97d7c
     - repo: deepin-community/freehep-vectorgraphics
-      tagsha: a3e7950294c23ab65308304c2eedaa1ed8b93e42
+      tagsha: 62b277b27613b84148c27c8e9e2a1801b6e7546b
+    - repo: deepin-community/jakarta-activation
+      tagsha: 343d1a464d050aa922683ca686a6bfb477f969e0
+    - repo: deepin-community/lucene8
+      tagsha: 63acc5c557973b99e26fbe64d2bb081e36df98ce
