@@ -41,3 +41,5 @@ repos:
       tagsha: 18e723a44e3b595bdc8188aa8d03c3cc003b2a7c
     - repo: deepin-community/react
       tagsha: 983f58d635ff502a30f3146b84fb66ef433f0809
+    - repo: deepin-community/ocplib-endian
+      tagsha: 7b742b751a3f723983d3190ca4ec38b2bd2a18a8
