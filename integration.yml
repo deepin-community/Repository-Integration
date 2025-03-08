@@ -20,7 +20,7 @@ repos:
     - repo: deepin-community/lucene8
       tagsha: 63acc5c557973b99e26fbe64d2bb081e36df98ce
     - repo: deepin-community/apache-opennlp
-      tagsha: 80ecca7449cb1224137995a4bf0f9cf114a1c926
+      tagsha: 98a1203d42b37c2851a11a969778acd9a3227076
     - repo: deepin-community/javacc5
       tagsha: 7c99846d532ae10b284de8e3dd45e5611beb755e
     - repo: deepin-community/junit5-system-exit
