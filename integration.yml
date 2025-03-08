@@ -35,3 +35,5 @@ repos:
       tagsha: 96bacfa4b236be0a5d82d847297b7299e7aabace
     - repo: deepin-community/libnative-platform-java
       tagsha: 2d8970e465e7d06e07a04d14f258f7616cab354c
+    - repo: deepin-community/ocaml-ctypes
+      tagsha: 2bf2b8fb43b5bf8a2246d89d8b1b41244ba92cd3
