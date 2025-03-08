@@ -37,3 +37,7 @@ repos:
       tagsha: 2d8970e465e7d06e07a04d14f258f7616cab354c
     - repo: deepin-community/ocaml-ctypes
       tagsha: 2bf2b8fb43b5bf8a2246d89d8b1b41244ba92cd3
+    - repo: deepin-community/lwt
+      tagsha: 18e723a44e3b595bdc8188aa8d03c3cc003b2a7c
+    - repo: deepin-community/react
+      tagsha: 983f58d635ff502a30f3146b84fb66ef433f0809
