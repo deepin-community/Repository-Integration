@@ -77,3 +77,5 @@ repos:
       tagsha: ebe733b15bcad05bb5bab666890c9980be1fd48a
     - repo: deepin-community/cppo
       tagsha: 33932a3dac28c0940a7927a1019e8dde0bc606a4
+    - repo: deepin-community/debhelper
+      tagsha: b3dfff598362972777f372f88a9b3e569131fde7
