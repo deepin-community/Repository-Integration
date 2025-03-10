@@ -39,3 +39,7 @@ repos:
       tagsha: 1c5bddfb67dd0fbccfc8b433781db5ab506734a7
     - repo: deepin-community/noggit
       tagsha: 2aa39262b220ced47f612b2e1568f76ffe8f2084
+    - repo: deepin-community/react
+      tagsha: f2dc196ee27a1b0a4386bd2f370424fd49cc0cc7
+    - repo: deepin-community/ocplib-endian
+      tagsha: 688b0a0444d42fbe6ae3d532cf929e35530585bd
