@@ -9,3 +9,5 @@ repos:
       tagsha: 79d4e71c32c2e21fb7b006a7808cee3496d4cbfc
     - repo: deepin-community/golang-github-vishvananda-netlink
       tagsha: 04cb1b68277e3064726ef0b35ab4cbc0f733ec55
+    - repo: deepin-community/containerd
+      tagsha: 0996a17f51abc86696b07ef5370b318b63d622df
