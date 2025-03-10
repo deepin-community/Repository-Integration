@@ -64,7 +64,7 @@ repos:
     - repo: deepin-community/ocaml-num
       tagsha: 0e6a0f780ad07e21037d9fea79d7a764dc5f11a6
     - repo: deepin-community/findlib
-      tagsha: 34fe3aaa9dd12bd833e7d1134f50c062a92f4f59
+      tagsha: e867f0e4fe5b6f8fc366cd22a77e0e25b6935969
     - repo: deepin-community/ocaml-result
       tagsha: 25fee4c59f9597e244230e5f35b8bde86fc1f497
     - repo: deepin-community/ocaml-mmap
