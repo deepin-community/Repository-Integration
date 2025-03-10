@@ -43,3 +43,11 @@ repos:
       tagsha: 983f58d635ff502a30f3146b84fb66ef433f0809
     - repo: deepin-community/ocplib-endian
       tagsha: 7b742b751a3f723983d3190ca4ec38b2bd2a18a8
+    - repo: deepin-community/janest-base
+      tagsha: a8fef800864f3f5302724379c12b1efac7e48d7b
+    - repo: deepin-community/ocaml-intrinsics-kernel
+      tagsha: e4d693bacb237fecd5433c1ed1dc415641c4aed1
+    - repo: deepin-community/ppx-let
+      tagsha: 0057b992107db34ee991799d283d201c2dbf41cc
+    - repo: deepin-community/ppx-here
+      tagsha: dc2ad56e735c63dcb6447b94630e665fd8af7c4a
