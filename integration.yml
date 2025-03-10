@@ -52,4 +52,4 @@ repos:
     - repo: deepin-community/ppx-here
       tagsha: dc2ad56e735c63dcb6447b94630e665fd8af7c4a
     - repo: deepin-community/ocaml
-      tagsha: e467757a89ae5e28a89425362286b7523b92baef
+      tagsha: dc07183ee7f741584a6be50d6485c2950fa18074
