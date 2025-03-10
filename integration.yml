@@ -109,3 +109,5 @@ repos:
       tagsha: 00fcf6ca394cdd34e1424955787ec7aa85ad3905
     - repo: deepin-community/pydot
       tagsha: 1f97921232eb096adbbbe565bbded9d17cad88f2
+    - repo: deepin-community/ruamel.yaml.clib
+      tagsha: bdc78aed837371086c2ee5f540d1231dbfbcb663
