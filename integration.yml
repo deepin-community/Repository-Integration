@@ -1,15 +1,45 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: scilab-20250310-lhdjply by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/scilab
+      tagsha: 9fffa34b96852f20b9474ccb1cae699e66748656
+    - repo: deepin-community/libflexdock-java
+      tagsha: 698d9bfe1b74d0982001a14c8b931ab30a189cb1
+    - repo: deepin-community/libjogl2-java
+      tagsha: f5a4123ba8d65d76e734dae898421861eb63bff9
+    - repo: deepin-community/gluegen2
+      tagsha: 0fd06e166e1ee92ad743cb6eda3a693e6a36f52e
+    - repo: deepin-community/swt4-gtk
+      tagsha: 91468e7906410936791a44ff2e0da3b8ddb50c89
+    - repo: deepin-community/libmatio
+      tagsha: 108167b008afbbc68bebb5bce4ec9aa4dda97d7c
+    - repo: deepin-community/freehep-vectorgraphics
+      tagsha: 62b277b27613b84148c27c8e9e2a1801b6e7546b
+    - repo: deepin-community/jakarta-activation
+      tagsha: 343d1a464d050aa922683ca686a6bfb477f969e0
+    - repo: deepin-community/lucene8
+      tagsha: 63acc5c557973b99e26fbe64d2bb081e36df98ce
+    - repo: deepin-community/apache-opennlp
+      tagsha: 98a1203d42b37c2851a11a969778acd9a3227076
+    - repo: deepin-community/javacc5
+      tagsha: 7c99846d532ae10b284de8e3dd45e5611beb755e
+    - repo: deepin-community/junit5-system-exit
+      tagsha: 87eb5c31b3d35a1942f708819b403176a53026b7
+    - repo: deepin-community/morfologik-stemming2
+      tagsha: a61ec383efbe641e857d755257e0c5142c5e08bf
+    - repo: deepin-community/s2-geometry-library
+      tagsha: 5854acb8fbf1c296428a47ce06c47ed1e94c9488
+    - repo: deepin-community/spatial4j
+      tagsha: 96bacfa4b236be0a5d82d847297b7299e7aabace
+    - repo: deepin-community/libnative-platform-java
+      tagsha: 2d8970e465e7d06e07a04d14f258f7616cab354c
+    - repo: deepin-community/ocaml-ctypes
+      tagsha: 131d8c90d7c203118e2083323aa320954b818c7b
+    - repo: deepin-community/lwt
+      tagsha: 1c5bddfb67dd0fbccfc8b433781db5ab506734a7
+    - repo: deepin-community/noggit
+      tagsha: 2aa39262b220ced47f612b2e1568f76ffe8f2084
+    - repo: deepin-community/react
+      tagsha: f2dc196ee27a1b0a4386bd2f370424fd49cc0cc7
+    - repo: deepin-community/ocplib-endian
+      tagsha: 688b0a0444d42fbe6ae3d532cf929e35530585bd
