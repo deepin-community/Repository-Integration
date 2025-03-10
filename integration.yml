@@ -62,7 +62,7 @@ repos:
     - repo: deepin-community/python-docutils
       tagsha: 09815586339522e33cfec6742a6ee4a16290b2af
     - repo: deepin-community/scikit-learn
-      tagsha: f198042d1bbde3234af9d92effb8974b6c377d13
+      tagsha: 3a74734684362b5bdd4b055707c8a13fdf212a4d
     - repo: deepin-community/networkx
       tagsha: e9c3828460f8f1384fd3335a813c517f4c8cd720
     - repo: deepin-community/pytest
@@ -74,17 +74,17 @@ repos:
     - repo: deepin-community/unidecode
       tagsha: a04e878aaa7c00058db1a6155c8cb8af8e37da3d
     - repo: deepin-community/rasterio
-      tagsha: d045e7c1834696cedf2925412c5aa81b8e0af3d7
+      tagsha: a32ec5cd47f36df1822a4f0a4cec95049270e97a
     - repo: deepin-community/h5py
-      tagsha: d2a883398f83956b8bb6b7e4ccbdfb867b2ddfd5
+      tagsha: 71661233422826ebf908bcc5290de78aab12a02f
     - repo: deepin-community/python-reportlab
       tagsha: 64c6ec7dc8986cc4b2d667e833bcc5ef9433565b
     - repo: deepin-community/numpy
       tagsha: 018f74373620d9ca531fc2063d88c4096973e3b4
     - repo: deepin-community/matplotlib
-      tagsha: 06ec3c088826fe1f7cb3175f561507e80a65d220
+      tagsha: 3a50affc370800921b5b4482bf4f081a55cb05b6
     - repo: deepin-community/scipy
-      tagsha: d52c532c9bd298ced5effef671f41a9df70d38ad
+      tagsha: 4775ac85e44dbd9d1324023838d09700ebc246f5
     - repo: deepin-community/python-flake8
       tagsha: 3d629a6f0dcf29bffed05a67a2f6256fee285de4
     - repo: deepin-community/sphinx
@@ -111,3 +111,33 @@ repos:
       tagsha: 1f97921232eb096adbbbe565bbded9d17cad88f2
     - repo: deepin-community/ruamel.yaml.clib
       tagsha: bdc78aed837371086c2ee5f540d1231dbfbcb663
+    - repo: deepin-community/python-shapely
+      tagsha: eb650aa680f07d8470c88fc4ec477651fc709713
+    - repo: deepin-community/numexpr
+      tagsha: defb5405e2fb3d8e3760efaae70c895f9b1d8da6
+    - repo: deepin-community/pykdtree
+      tagsha: 1162aff4f5aaa0823bad84776083a30400c70610
+    - repo: deepin-community/bottleneck
+      tagsha: bb1a62e63f9fcd5e7d1435be18ec2b37672c44cb
+    - repo: deepin-community/numcodecs
+      tagsha: 57f5d45c99ce9ec0448cef04b8673f8078efe7b8
+    - repo: deepin-community/python-cartopy
+      tagsha: b242714b6f1a4b5b0de9ca6b60b15ca58290f665
+    - repo: deepin-community/pytables
+      tagsha: a94f57920a365e721d1bf17b0673badfea39b51e
+    - repo: deepin-community/cftime
+      tagsha: 278553c4855e75369f8a96948b2ad9c0e2c76108
+    - repo: deepin-community/python-pyproj
+      tagsha: e483bf99be4e8e743dd857f6f65ecb0a3e99b68d
+    - repo: deepin-community/skimage
+      tagsha: e1a72062cd7056992f7304ef8076db115cd2b24c
+    - repo: deepin-community/netcdf4-python
+      tagsha: 3544d9a0744380039a10e5ad14632f65c8a2a635
+    - repo: deepin-community/pandas
+      tagsha: b47155be495276f20283a2dc652a3eaceec90262
+    - repo: deepin-community/imath
+      tagsha: 0ebd6f698179fe063a31cd3f613cf7089de4c530
+    - repo: deepin-community/gdal
+      tagsha: c8f76c2c3ec8f30c0b0eb478fefee0af9cea04aa
+    - repo: deepin-community/opencv
+      tagsha: 73f2157c680ef987c52ab66e4f89f26ea10efe21
