@@ -42,14 +42,38 @@ repos:
     - repo: deepin-community/react
       tagsha: 983f58d635ff502a30f3146b84fb66ef433f0809
     - repo: deepin-community/ocplib-endian
-      tagsha: 7b742b751a3f723983d3190ca4ec38b2bd2a18a8
+      tagsha: 2354f8dbf886c4c326fb7dfd30c3bebae2b57bd6
     - repo: deepin-community/janest-base
       tagsha: a8fef800864f3f5302724379c12b1efac7e48d7b
     - repo: deepin-community/ocaml-intrinsics-kernel
-      tagsha: e4d693bacb237fecd5433c1ed1dc415641c4aed1
+      tagsha: 470b91bc7dc9ede16796af1bb86bf61110957909
     - repo: deepin-community/ppx-let
       tagsha: 0057b992107db34ee991799d283d201c2dbf41cc
     - repo: deepin-community/ppx-here
       tagsha: dc2ad56e735c63dcb6447b94630e665fd8af7c4a
     - repo: deepin-community/ocaml
       tagsha: dc07183ee7f741584a6be50d6485c2950fa18074
+    - repo: deepin-community/ocaml-dune
+      tagsha: 47674930c1a3b8007dc25274003129dd171fe2b2
+    - repo: deepin-community/ocaml-sexplib0
+      tagsha: b3678151195abf7a23ead78f96438d9a3c9894f8
+    - repo: deepin-community/ocamlbuild
+      tagsha: f475f56d8d492616405ea6d8c1771aba0ebb8309
+    - repo: deepin-community/ocaml-topkg
+      tagsha: f18ac85ea4381fbd34bf1d87bd1209b4f3e94855
+    - repo: deepin-community/ocaml-num
+      tagsha: 0e6a0f780ad07e21037d9fea79d7a764dc5f11a6
+    - repo: deepin-community/findlib
+      tagsha: 34fe3aaa9dd12bd833e7d1134f50c062a92f4f59
+    - repo: deepin-community/ocaml-result
+      tagsha: 25fee4c59f9597e244230e5f35b8bde86fc1f497
+    - repo: deepin-community/ocaml-mmap
+      tagsha: 0df0a1020dc2d1b698f95f2c989f6ffa084d6ef1
+    - repo: deepin-community/ounit
+      tagsha: 8d4cd238bf8908525f6dfe2819c73dd3978ed69d
+    - repo: deepin-community/ocaml-bigarray-compat
+      tagsha: 0b7ca994aa7e24537809c80b1d5f3bc2a460fa56
+    - repo: deepin-community/ocaml-integers
+      tagsha: ebe733b15bcad05bb5bab666890c9980be1fd48a
+    - repo: deepin-community/cppo
+      tagsha: 33932a3dac28c0940a7927a1019e8dde0bc606a4
