@@ -35,3 +35,5 @@ repos:
       tagsha: 2d8970e465e7d06e07a04d14f258f7616cab354c
     - repo: deepin-community/ocaml-ctypes
       tagsha: 131d8c90d7c203118e2083323aa320954b818c7b
+    - repo: deepin-community/lwt
+      tagsha: 1c5bddfb67dd0fbccfc8b433781db5ab506734a7
