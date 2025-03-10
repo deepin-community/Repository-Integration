@@ -37,3 +37,5 @@ repos:
       tagsha: 131d8c90d7c203118e2083323aa320954b818c7b
     - repo: deepin-community/lwt
       tagsha: 1c5bddfb67dd0fbccfc8b433781db5ab506734a7
+    - repo: deepin-community/noggit
+      tagsha: 2aa39262b220ced47f612b2e1568f76ffe8f2084
