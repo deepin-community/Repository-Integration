@@ -141,3 +141,5 @@ repos:
       tagsha: c8f76c2c3ec8f30c0b0eb478fefee0af9cea04aa
     - repo: deepin-community/opencv
       tagsha: 73f2157c680ef987c52ab66e4f89f26ea10efe21
+    - repo: deepin-community/python-executing
+      tagsha: 8d782805457ba6aebe597116e6a318cedf712c0a
