@@ -143,3 +143,7 @@ repos:
       tagsha: 73f2157c680ef987c52ab66e4f89f26ea10efe21
     - repo: deepin-community/python-executing
       tagsha: 8d782805457ba6aebe597116e6a318cedf712c0a
+    - repo: deepin-community/sqlalchemy
+      tagsha: 9d723772b05848d1dbc3d7a2cb7dedb88765d5b0
+    - repo: deepin-community/xlsxwriter
+      tagsha: 7a36d8c71c4dfcb6beb7c34543b02cc3c365b380
