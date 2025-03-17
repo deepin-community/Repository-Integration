@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: openrazer by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/openrazer
-      tagsha: 10f8bc21253c5a5b237d5aecdee32d1bdc12102a
+      tagsha: 17d4fdebdcd3aa4e29bcaa2576fb43cc0503df31
     - repo: deepin-community/python-daemonize
       tagsha: e12e317ffffc68f550445e70b67a2fcf5e41257e
