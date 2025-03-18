@@ -147,3 +147,5 @@ repos:
       tagsha: 9d723772b05848d1dbc3d7a2cb7dedb88765d5b0
     - repo: deepin-community/xlsxwriter
       tagsha: 7a36d8c71c4dfcb6beb7c34543b02cc3c365b380
+    - repo: deepin-community/python-cssselect
+      tagsha: eaa787575191b8bf3fdbf79790e07323e6889131
