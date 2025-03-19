@@ -149,3 +149,5 @@ repos:
       tagsha: 7a36d8c71c4dfcb6beb7c34543b02cc3c365b380
     - repo: deepin-community/python-cssselect
       tagsha: eaa787575191b8bf3fdbf79790e07323e6889131
+    - repo: deepin-community/sphinx-rtd-theme
+      tagsha: a0530bc7be61977ef5cab8e5ffde72a412559a3c
