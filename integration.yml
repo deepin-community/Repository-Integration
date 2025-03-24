@@ -151,3 +151,5 @@ repos:
       tagsha: eaa787575191b8bf3fdbf79790e07323e6889131
     - repo: deepin-community/sphinx-rtd-theme
       tagsha: a0530bc7be61977ef5cab8e5ffde72a412559a3c
+    - repo: deepin-community/pywavelets
+      tagsha: 8a2fb7371e32301228540fd1372ba58d59db2e4e
