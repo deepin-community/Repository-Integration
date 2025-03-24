@@ -3,3 +3,7 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-kwin
       tagsha: 3ab03cdcfe362973a16dc5c5dd4ff21923a9dcd1
+    - repo: linuxdeepin/dde-session
+      tagsha: 4fec76bdc9d17f2d5b8d5e6ae7c3fc55a0be911e
+    - repo: linuxdeepin/deepin-kwin
+      tagsha: d3c10cae2f8131ed1ddec5c3e64a0a959e4d09f3
