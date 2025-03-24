@@ -153,3 +153,5 @@ repos:
       tagsha: a0530bc7be61977ef5cab8e5ffde72a412559a3c
     - repo: deepin-community/pywavelets
       tagsha: 8a2fb7371e32301228540fd1372ba58d59db2e4e
+    - repo: deepin-community/tifffile
+      tagsha: 9dfda7a574aec9d52e86429d961da02a450f4ed6
