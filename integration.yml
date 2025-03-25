@@ -6,4 +6,4 @@ repos:
     - repo: linuxdeepin/dde-session
       tagsha: 4fec76bdc9d17f2d5b8d5e6ae7c3fc55a0be911e
     - repo: linuxdeepin/deepin-kwin
-      tagsha: 17bb12492d2afa4e30834976b822fa158cff1f24
+      tagsha: 906a8be392ab8f36afd0c3266c5c23c117f12674
