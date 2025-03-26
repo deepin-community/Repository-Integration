@@ -155,3 +155,5 @@ repos:
       tagsha: 8a2fb7371e32301228540fd1372ba58d59db2e4e
     - repo: deepin-community/tifffile
       tagsha: 9dfda7a574aec9d52e86429d961da02a450f4ed6
+    - repo: deepin-community/responses
+      tagsha: 34c1ae4bdde65d6aace2f84ede7a6b8e575d21c2
