@@ -12,4 +12,4 @@ repos:
     - repo: deepin-community/kicad-packages3d
       tagsha: b0487f8657ed4d5507b5cd77485d5d5d5ad67571
     - repo: deepin-community/nng
-      tagsha: dac4aab74f4d47d0b85cd433a81bd0285843e5eb
+      tagsha: b055728e7aa6df8e5bd404ab070bb25999020cff
