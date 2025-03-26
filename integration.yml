@@ -2,8 +2,8 @@ message: 'Auto integrate from topic: kwin-qt6 by @wineee to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-kwin
-      tagsha: 3ab03cdcfe362973a16dc5c5dd4ff21923a9dcd1
+      tagsha: 8273f30076e0d6f853c67ebf937b42204196f51d
     - repo: linuxdeepin/dde-session
       tagsha: 4fec76bdc9d17f2d5b8d5e6ae7c3fc55a0be911e
     - repo: linuxdeepin/deepin-kwin
-      tagsha: b1218aae317ae7f8131872212b57ebb58492baf6
+      tagsha: 04d75eb362549ef74c3e78e6e53aac73ebc48864
