@@ -12,4 +12,4 @@ repos:
     - repo: deepin-community/qoi
       tagsha: 1ed8a0ad21f7956f9cc8e6adb5078c0b5cfde57f
     - repo: deepin-community/libproxy
-      tagsha: 6352a9c26ed2806af6e941182f68e808b69c85af
+      tagsha: 4d4b2a5ee2b01712d48fa028091bcd85d5d46bdf
