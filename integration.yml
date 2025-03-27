@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: kernel-20250305 by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/linux-deepin-hwe
-      tagsha: c1163752dfee47dc4472b53ec29d9d8360162ca8
+      tagsha: f0b8e834e3868e38d605b2822b5d084109bc53d5
     - repo: deepin-community/linux-deepin-latest
       tagsha: f3d126e7350b4d0c56e0f60401b10206da50749d
