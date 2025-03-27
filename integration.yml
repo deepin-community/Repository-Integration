@@ -9,3 +9,5 @@ repos:
       tagsha: 6b3329b2e6966f7c13b2522be80a788a677356c4
     - repo: deepin-community/babl
       tagsha: 027f2c3c888b81b5c86f37ee9e0d7d49e28fb03a
+    - repo: deepin-community/qoi
+      tagsha: 1ed8a0ad21f7956f9cc8e6adb5078c0b5cfde57f
