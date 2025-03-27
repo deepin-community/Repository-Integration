@@ -4,6 +4,8 @@ repos:
     - repo: deepin-community/gimp
       tagsha: 560d8ad9ed123ad3ae12725ff9b9770ea7f70c4c
     - repo: deepin-community/gegl
-      tagsha: d4e9a3baaa1f8d6549957a13392a916f51d3b05b
+      tagsha: 106d05ea6154e7581ac7208b1f4fddce16b27b04
     - repo: deepin-community/exiv2
       tagsha: 6b3329b2e6966f7c13b2522be80a788a677356c4
+    - repo: deepin-community/babl
+      tagsha: 027f2c3c888b81b5c86f37ee9e0d7d49e28fb03a
