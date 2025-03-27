@@ -17,3 +17,5 @@ repos:
       tagsha: d74f9fe5161d42913db6bd69dd405ab551273751
     - repo: deepin-community/glib-networking
       tagsha: 71d9e5b3754401a7899250f74bc797400cd80bb8
+    - repo: deepin-community/libsoup3
+      tagsha: d656e4f99788baf8cc5a96620217023ca8d1ebc9
