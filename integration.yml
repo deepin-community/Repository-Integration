@@ -1,15 +1,23 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: blender by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/ispc
+      tagsha: 9a283194a6eea453c4009874900332b283846a5c
+    - repo: deepin-community/openvdb
+      tagsha: a61fb753b6a1949c0b21a0df5f2a900a897e1aa7
+    - repo: deepin-community/openimageio
+      tagsha: 35be8db20ec1d4ae5542869282dc0fa424e44284
+    - repo: deepin-community/blender
+      tagsha: 44e2b4048816d40dac03d2a2d85685cdd9febdc8
+    - repo: deepin-community/embree
+      tagsha: fcc2ae34b581788987533f46314b7a60bb799c3f
+    - repo: deepin-community/opencolorio
+      tagsha: 897efcd56bee2ad6da28208a967d8dc1cba4297b
+    - repo: deepin-community/pystring
+      tagsha: 3193d99e387f7b6b1f366fd4b76a4eb0dcfe76ce
+    - repo: deepin-community/opensubdiv
+      tagsha: 021f2c72c0b28a0361563396f4d8f09c3d57da89
+    - repo: deepin-community/ptex-base
+      tagsha: e18d0faa846d3e22fee0c9a6c87894e21ffe1b52
+    - repo: deepin-community/dcmtk
+      tagsha: a0722755017a40a95ee4085c6231973e0bb0090a
