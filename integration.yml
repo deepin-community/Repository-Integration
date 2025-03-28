@@ -14,7 +14,7 @@ repos:
     - repo: deepin-community/libproxy
       tagsha: 783a83e728166f451b9f84748ba9224e856ff02c
     - repo: deepin-community/webkit2gtk
-      tagsha: d74f9fe5161d42913db6bd69dd405ab551273751
+      tagsha: 3e2c1b7f28fb8a64f498d434e9e4e8c1656f4b56
     - repo: deepin-community/glib-networking
       tagsha: 71d9e5b3754401a7899250f74bc797400cd80bb8
     - repo: deepin-community/libsoup3
