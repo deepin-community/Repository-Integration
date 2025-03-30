@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: upgrade zxing-cpp (2.3.0-2) unstable by Cherrling@deepin-community/zxing-cpp
+milestone: V23-Beta3
+repos:
+  - repo: deepin-community/zxing-cpp
+    tagsha: 517cf378fdd6426bea76aa6d2a77fad75f5933da
+timestamp: 1738778906185
