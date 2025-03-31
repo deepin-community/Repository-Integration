@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: waydroid by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/gbinder-python
+      tagsha: 0a6daa7e3412968ffec76841ed74667b35a158a3
+    - repo: deepin-community/libgbinder
+      tagsha: f2af028c7c5b0feed8eb900b127eb8319a523a6c
+    - repo: deepin-community/libglibutil
+      tagsha: db6d55f03715c186b6a182089bb9696f9c9220fe
+    - repo: deepin-community/waydroid
+      tagsha: a9560a9a6fd574f0571ed1b2ba4e345c65148798
