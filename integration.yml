@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: gimp3.0-20250327-lhdjply by @lhdjply to V23
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/gimp
-      tagsha: ed6246c7491f35c25bc902145bd7c3486e5ddc1a
+      tagsha: e7d32d700b6e984557821d13abf09fc3db737932
     - repo: deepin-community/gegl
       tagsha: 106d05ea6154e7581ac7208b1f4fddce16b27b04
     - repo: deepin-community/exiv2
