@@ -1,15 +1,21 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: gimp3.0-20250327-lhdjply by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/gimp
+      tagsha: e7d32d700b6e984557821d13abf09fc3db737932
+    - repo: deepin-community/gegl
+      tagsha: 106d05ea6154e7581ac7208b1f4fddce16b27b04
+    - repo: deepin-community/exiv2
+      tagsha: 6b3329b2e6966f7c13b2522be80a788a677356c4
+    - repo: deepin-community/babl
+      tagsha: 027f2c3c888b81b5c86f37ee9e0d7d49e28fb03a
+    - repo: deepin-community/qoi
+      tagsha: 1ed8a0ad21f7956f9cc8e6adb5078c0b5cfde57f
+    - repo: deepin-community/libproxy
+      tagsha: 783a83e728166f451b9f84748ba9224e856ff02c
+    - repo: deepin-community/webkit2gtk
+      tagsha: 3e2c1b7f28fb8a64f498d434e9e4e8c1656f4b56
+    - repo: deepin-community/glib-networking
+      tagsha: 71d9e5b3754401a7899250f74bc797400cd80bb8
+    - repo: deepin-community/libsoup3
+      tagsha: d656e4f99788baf8cc5a96620217023ca8d1ebc9
