@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: 20250331-pycod by @lhdjply to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/pyocd
-      tagsha: 594e87921cb89632540c42f95a047305ac46cd60
+      tagsha: 8ab610f8ba3734db32b73cbb973e6ae4bddd7f47
     - repo: deepin-community/pyusb
       tagsha: 2376933d3f9246de69594bec20ac82a4a467f849
