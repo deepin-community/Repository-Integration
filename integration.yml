@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: 20250331-pycod by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/pyocd
+      tagsha: 8f3c151f2d0f3847c86dcbef828bd9c938d91497
+    - repo: deepin-community/pyusb
+      tagsha: 2376933d3f9246de69594bec20ac82a4a467f849
+    - repo: deepin-community/intelhex
+      tagsha: eee4a6c72b73df5b7cc386c7364d99914668b771
+    - repo: deepin-community/python-intervaltree
+      tagsha: a0e8baf3b5ac15037371369e1322d5fde04ec8ac
