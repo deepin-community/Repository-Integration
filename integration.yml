@@ -2,6 +2,10 @@ message: 'Auto integrate from topic: 20250331-pycod by @lhdjply to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/pyocd
-      tagsha: 8ab610f8ba3734db32b73cbb973e6ae4bddd7f47
+      tagsha: 4109ba26f28bd76d77b49e2e193f8af8f034b85a
     - repo: deepin-community/pyusb
       tagsha: 2376933d3f9246de69594bec20ac82a4a467f849
+    - repo: deepin-community/intelhex
+      tagsha: eee4a6c72b73df5b7cc386c7364d99914668b771
+    - repo: deepin-community/python-intervaltree
+      tagsha: a0e8baf3b5ac15037371369e1322d5fde04ec8ac
