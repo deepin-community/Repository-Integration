@@ -5,3 +5,5 @@ repos:
       tagsha: 7a3f5cedc2ce8706de724fe354bebcdcf51d1de0
     - repo: deepin-community/openxr-sdk-source
       tagsha: d870bdda6b2f2cd5bd5f305bd9fa410f88951085
+    - repo: deepin-community/fftw3
+      tagsha: 0873792bea5b910cb4df4a1f2a3ec979afed2e00
