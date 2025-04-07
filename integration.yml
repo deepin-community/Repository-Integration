@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: blender-20250407-lhdjply by @lhdjply to V23
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/blender
-      tagsha: e30c90ae83b8fe7fa6951507b96e71181ef606ec
+      tagsha: f2e6d0046d93a38cea20dc49a1729a889d8d962e
     - repo: deepin-community/openxr-sdk-source
       tagsha: d870bdda6b2f2cd5bd5f305bd9fa410f88951085
     - repo: deepin-community/fftw3
