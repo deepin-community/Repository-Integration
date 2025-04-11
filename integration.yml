@@ -1,5 +1,7 @@
 message: 'Auto integrate from topic: calamares by @chenchongbiao to V23-Beta3'
 milestone: V23-Beta3
 repos:
+    - repo: deepin-community/kpmcore
+      tagsha: c4ef1b35cefe0138ba333644c05a7a04188dbc2c
     - repo: deepin-community/calamares
       tagsha: b50da0b83c73adcf6189a8540856f491f0df7d18
