@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: fio by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/libguestfs
+      tagsha: e6ac79e56b7490b4cb73ba0967375776fce7f1a5
+    - repo: deepin-community/libnbd
+      tagsha: 84b7ca55d145df55e74aaf29353f1ef4e872d9b5
+    - repo: deepin-community/nbdkit
+      tagsha: 54abaf5e2307588e54efdeded7c69f570d28cf75
+    - repo: deepin-community/fio
+      tagsha: 95e5a1bd3227f00e1337c33d79e57cbecc664194
