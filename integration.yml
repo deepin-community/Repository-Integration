@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: cd-20250414 by @Zeno-sole to V23-Beta3'
+message: 'Auto integrate from topic: cd-20250414 by @lzwind to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/dde-file-manager
@@ -11,3 +11,5 @@ repos:
       tagsha: fd5118f4268b6d9bc857c1f3c240956ae6d4c289
     - repo: linuxdeepin/util-dfm
       tagsha: ba108f1a27e52f0185a8717ab669e6d7294bcd48
+    - repo: linuxdeepin/dde-grand-search
+      tagsha: 84fcc63b5dbffea7e5a0f8f4301f2f2b3e12ea46
