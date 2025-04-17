@@ -1,9 +1,21 @@
-message: 'Auto integrate from topic: neovim by @xzl01'
-milestone: V23-Beta2
+message: 'Auto integrate from topic: neovim by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
 repos:
-    - repo: deepin-community/neovim
-      tagsha: 4c0aea679d66dbac2a700b8ca8a8f356a0c441ef
     - repo: deepin-community/python-pynvim
-      tagsha: 14d5640c8224ef82644213cae5990a709b418a48
+      tagsha: 6b0f91571535bc289bf577c5a4719ef576eaf263
+    - repo: deepin-community/tree-sitter-vimdoc
+      tagsha: dffe0121400c93fda4177ba1b6d99d81df7171c2
+    - repo: deepin-community/tree-sitter-vim
+      tagsha: 470b8570205d36c888b1ad323afa14c8b774abca
+    - repo: deepin-community/tree-sitter-query
+      tagsha: 215c8cd8f97c245fd2f9b3fdb1d83eb6636fae2d
+    - repo: deepin-community/tree-sitter-lua
+      tagsha: 41d7522ccbedcaa0fb28c989e92781e916c168c2
+    - repo: deepin-community/tree-sitter-c
+      tagsha: 71e6b5518655438d603bf85470c3f83b3a8b029b
     - repo: deepin-community/tree-sitter
-      tagsha: 0d26ec4dcefd4ee0bbfbb6f51e4289cad055573e
+      tagsha: 1e65b347edf67c44cc32818c663a6069580fd1a0
+    - repo: deepin-community/libmpack-lua
+      tagsha: 03b86d54db5394d865645ec2947d76c487352d64
+    - repo: deepin-community/tree-sitter-vimdoc
+      tagsha: d4d50bf116d44b738bba589ab9527a3fbaa8aafa
