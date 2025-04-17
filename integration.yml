@@ -20,4 +20,4 @@ repos:
     - repo: deepin-community/tree-sitter-vimdoc
       tagsha: d4d50bf116d44b738bba589ab9527a3fbaa8aafa
     - repo: deepin-community/tree-sitter
-      tagsha: 4d77328eb4bb8918ed2b77cce8cf358ad560b2f2
+      tagsha: 7670a4ad9c5cece42c793b8d2f698e20b67cdfe0
