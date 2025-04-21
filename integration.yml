@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: pyopengl by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/pyopengl
+      tagsha: 26637718ce5a56f1827f06ac9c6a3946e1c4fbc4
+    - repo: deepin-community/easyprocess
+      tagsha: b75c8cc35d96e12b8da254dd088f9bc31ef5ebed
+    - repo: deepin-community/pyvirtualdisplay
+      tagsha: d516f27a7acf7eb94e7efa7f9740f6bddb4eb307
+    - repo: deepin-community/pytest-xvfb
+      tagsha: 73f8295ea2766beb9babc53b58e8696be08fbcef
+    - repo: deepin-community/vncdotool
+      tagsha: c4bc46226914a52ff99f64b0b9f61f4fa4b60233
+    - repo: deepin-community/pygame
+      tagsha: 80820761081ed33d62160e97c229e57d49dd8bd8
+    - repo: deepin-community/fluid-soundfont
+      tagsha: 9161ec72f7b7e5609e2c8af1114b93f80b14641c
