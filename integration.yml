@@ -48,6 +48,8 @@ repos:
     - repo: deepin-community/fldigi
       tagsha: 63e9120a23f07d536bcd47c59f6e87873a16016b
     - repo: deepin-community/flxmlrpc
-      tagsha: 7f39298d6ab69158a6d6307bbaa7be1611d5f136
+      tagsha: fec9c529bc31fd98fca55402eb60731dc343937a
     - repo: deepin-community/qcustomplot
-      tagsha: 8c156c4b88523a56c7db7beabd2cd582dcdf8c55
+      tagsha: faef3831df146d228ba343d0a888790c5813ffe0
+    - repo: deepin-community/rtaudio
+      tagsha: 16d5a45d61b1ea25d55fd11fea3f4ae10e9079f7
