@@ -1,17 +1,17 @@
-message: 'Auto integrate from topic: pyopengl by @Cryolitia to V23-Beta3'
+message: 'Auto integrate from topic: pyopengl by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/pyopengl
       tagsha: 26637718ce5a56f1827f06ac9c6a3946e1c4fbc4
     - repo: deepin-community/easyprocess
-      tagsha: ae28cfa00f4c69d0c49932d57a3d657a3edeffb9
+      tagsha: b75c8cc35d96e12b8da254dd088f9bc31ef5ebed
     - repo: deepin-community/pyvirtualdisplay
-      tagsha: 30a5f4ed16e47030f227e9e83272b6601d9733ca
+      tagsha: d516f27a7acf7eb94e7efa7f9740f6bddb4eb307
     - repo: deepin-community/pytest-xvfb
-      tagsha: f8d8feaedac82588155203e2fc8172d55a98fc2a
+      tagsha: 73f8295ea2766beb9babc53b58e8696be08fbcef
     - repo: deepin-community/vncdotool
-      tagsha: d3224593f12871d6c44fb749327e8270dd210758
+      tagsha: c4bc46226914a52ff99f64b0b9f61f4fa4b60233
     - repo: deepin-community/pygame
-      tagsha: 91fb93c30ac388cc665b82b424264cafb218bc33
+      tagsha: 80820761081ed33d62160e97c229e57d49dd8bd8
     - repo: deepin-community/fluid-soundfont
-      tagsha: bbd4e692046ad6f244820007edbbb4ef9615a962
+      tagsha: 9161ec72f7b7e5609e2c8af1114b93f80b14641c
