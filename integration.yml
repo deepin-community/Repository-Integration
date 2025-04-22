@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: deepin-community/genext2fs
       tagsha: 392739f5170fa3c7956b7bb42b2681a42ce3f710
+    - repo: deepin-community/genimage
+      tagsha: c0a5454433b2ddbca65705a2dc486a027d0f1a28
