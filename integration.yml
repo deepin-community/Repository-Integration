@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: genimage-20250422-lhdjply by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/genimage
+      tagsha: c0a5454433b2ddbca65705a2dc486a027d0f1a28
+    - repo: deepin-community/genext2fs
+      tagsha: 392739f5170fa3c7956b7bb42b2681a42ce3f710
+    - repo: deepin-community/mtools
+      tagsha: edc3c4eb699f3aaddc62c3e34ac55fb5ee4935d8
+    - repo: deepin-community/device-tree-compiler
+      tagsha: 0a3650c0efbdf25450485b39903b225a831acf14
+    - repo: deepin-community/mtd-utils
+      tagsha: 591198cd40588690525250dc8224a1f6e53886df
+    - repo: deepin-community/cpio
+      tagsha: 10618f6adb840b03c879fc40bc9c32a8c97ed7c1
