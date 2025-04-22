@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: inkscape by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/mm-common
+      tagsha: d84c435e9da083d59e836f4a4b49558e872c51aa
+    - repo: deepin-community/lib2geom
+      tagsha: 32b09b3929f30f9c211bc1dec8f7b584accd23b1
+    - repo: deepin-community/imagemagick
+      tagsha: 0214c4374e7ee7a82b1bc7299b1fed11db61b25d
+    - repo: deepin-community/inkscape
+      tagsha: 54a5b20d752e9213824c3b380de6080d311c5cf4
