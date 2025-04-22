@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  feat: update glances to 4.3.1+dfsg-1 by
+  deepin-community-bot[bot]@deepin-community/glances
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/glances
+    tagsha: c645d6f48ac5d2e2a6ef2b28fee68ef0b01b69bc
+timestamp: 1745285875644
