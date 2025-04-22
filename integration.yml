@@ -6,10 +6,10 @@ repos:
     - repo: deepin-community/genext2fs
       tagsha: 392739f5170fa3c7956b7bb42b2681a42ce3f710
     - repo: deepin-community/mtools
-      tagsha: 005c72ec723043fd6e87e559e6a08e42dc58dd76
+      tagsha: edc3c4eb699f3aaddc62c3e34ac55fb5ee4935d8
     - repo: deepin-community/device-tree-compiler
-      tagsha: c4609010b65e806c86630afb4d8ce160ffdcec30
+      tagsha: 0a3650c0efbdf25450485b39903b225a831acf14
     - repo: deepin-community/mtd-utils
-      tagsha: 2902d417a3a996c62135d49e822d7c6c9fd698b5
+      tagsha: 591198cd40588690525250dc8224a1f6e53886df
     - repo: deepin-community/cpio
       tagsha: 10618f6adb840b03c879fc40bc9c32a8c97ed7c1
