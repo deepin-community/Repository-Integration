@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: openscenegraph by @Cryolitia to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/openscenegraph
+      tagsha: 38730c205709bedf74d0e733206eda178f58cd1f
+    - repo: deepin-community/freeglut
+      tagsha: 77aadc168614faf346a1e1a10af64a5d1b10f0d7
+    - repo: deepin-community/collada-dom
+      tagsha: 78fdc147cc0cb3fbc96b8a5693dea658b4842d7b
+    - repo: deepin-community/coin3
+      tagsha: 3c5917e5030e8f4c36a62491fe0983eec0f4342e
