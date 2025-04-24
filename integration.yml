@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: stellarium by @Cryolitia to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/stellarium
+      tagsha: 50fc06f93d705d7d5e4fb859cb35b7823da14faa
+    - repo: deepin-community/octave
+      tagsha: 221f1473c5a910a418e4f0576116dae6e88f8835
+    - repo: deepin-community/libqt5qxlsx
+      tagsha: 55de7500e3102461bb1fcb533f5afd7187440a14
+    - repo: deepin-community/graphicsmagick
+      tagsha: b26a860a598c7d797427025efa8eb9671afd9127
+    - repo: deepin-community/libnova
+      tagsha: 6f1cb407ba13787cd5fe65c1d02c5bdc5e1b9ca0
+    - repo: deepin-community/libsoftware-licensemoreutils-perl
+      tagsha: 00b842c9837f8cf666005871a7922bacf72f1fe7
+    - repo: deepin-community/indi
+      tagsha: 7cd934d6f02b80337d451bd1166240b87559c267
+    - repo: deepin-community/nlopt
+      tagsha: 061f4be0a0046b8611cdc89d0666b384406f2cd4
