@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: neovim by @xzl01 to V23-Beta3'
+message: 'Auto integrate from topic: neovim by @Cryolitia to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/python-pynvim
@@ -20,4 +20,6 @@ repos:
     - repo: deepin-community/tree-sitter-vimdoc
       tagsha: d4d50bf116d44b738bba589ab9527a3fbaa8aafa
     - repo: deepin-community/tree-sitter
-      tagsha: 7670a4ad9c5cece42c793b8d2f698e20b67cdfe0
+      tagsha: 0f19118ae9700b454979cd8458a045bfdfe0f474
+    - repo: deepin-community/neovim
+      tagsha: 4173490a84ff79f238bb851927309f66b02ad679
