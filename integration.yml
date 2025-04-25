@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: cd-20250425 by @lzwind to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: linuxdeepin/util-dfm
+      tagsha: 4e1a0bb718f62dcad8162b163cf370eb80edacdf
+    - repo: linuxdeepin/deepin-anything
+      tagsha: 860d7a748bc81d0cfb13465d44205c201ab196fd
+    - repo: linuxdeepin/dde-grand-search
+      tagsha: 56dffd1a3c33359f539167315a44864642e3fa6f
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 2d6a744c062d2844e9ab098d0d6e440aa612d471
