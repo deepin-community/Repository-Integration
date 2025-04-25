@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/util-dfm
       tagsha: 4e1a0bb718f62dcad8162b163cf370eb80edacdf
+    - repo: linuxdeepin/deepin-anything
+      tagsha: 860d7a748bc81d0cfb13465d44205c201ab196fd
