@@ -6,4 +6,4 @@ repos:
     - repo: deepin-community/calamares
       tagsha: b50da0b83c73adcf6189a8540856f491f0df7d18
     - repo: deepin-community/calamares-settings-deepin
-      tagsha: 5b6bc13300039c829d67f05d9768d19266942240
+      tagsha: 640448e8567993b9b469f9ca60542b177f75cd8e
