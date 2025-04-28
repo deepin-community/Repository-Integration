@@ -7,3 +7,5 @@ repos:
       tagsha: a9d8c2af5cc3f5170a113bf9ee76579c04f42892
     - repo: linuxdeepin/dde-grand-search
       tagsha: 56dffd1a3c33359f539167315a44864642e3fa6f
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: af6342abbcf130270d29a529fb00d40a91a22b5e
