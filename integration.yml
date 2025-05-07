@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: sdr by @YukariChiba to V23-Beta3'
+message: 'Auto integrate from topic: sdr by @Cryolitia to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/airspyone-host
@@ -53,3 +53,5 @@ repos:
       tagsha: faef3831df146d228ba343d0a888790c5813ffe0
     - repo: deepin-community/rtaudio
       tagsha: 16d5a45d61b1ea25d55fd11fea3f4ae10e9079f7
+    - repo: deepin-community/wfview
+      tagsha: d7660b7d05787afd5b465a8a52fb40f60064cfde
