@@ -1,15 +1,57 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: sdr by @Cryolitia to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/airspyone-host
+      tagsha: 938bafddd20a385fd63c0db5c2d1ee93777ba0e5
+    - repo: deepin-community/hackrf
+      tagsha: 77691ca0e5bb72c7c25ed7de9ba35225789f5c41
+    - repo: deepin-community/dfu-util
+      tagsha: d2f23ca95c5a9bd51a87fdb393d9a6df2bc6c0c1
+    - repo: deepin-community/soapysdr
+      tagsha: e4b23bd30c682a861e1af13a9be5440fdd05271b
+    - repo: deepin-community/soapyhackrf
+      tagsha: 83c4d91a7aa6a189cf8e7abcba3f0ae99a97995e
+    - repo: deepin-community/libmirisdr
+      tagsha: 5c41ed27049a00a5469bd96b7079a4204a37eee8
+    - repo: deepin-community/libosmosdr
+      tagsha: a519ff27087526dc1f6a22784bdff79606baf495
+    - repo: deepin-community/hamlib
+      tagsha: ef12882aab835793d4f4340a72af21c571529559
+    - repo: deepin-community/indi
+      tagsha: 7cd934d6f02b80337d451bd1166240b87559c267
+    - repo: deepin-community/libfec
+      tagsha: 49593298cc82d21c3f32afc22d8982c138687923
+    - repo: deepin-community/soapyairspy
+      tagsha: 496def86907b7dc14c52890464ac7d3d0eeb3fa2
+    - repo: deepin-community/libnova
+      tagsha: 6f1cb407ba13787cd5fe65c1d02c5bdc5e1b9ca0
+    - repo: deepin-community/cubicsdr
+      tagsha: c792c1c99c047540b7a41357479e6b2aa019f6b3
+    - repo: deepin-community/liquid-dsp
+      tagsha: 07a202fbf5592ccc3f571e9fdd480843a4edd6a7
+    - repo: deepin-community/icom
+      tagsha: 380c216dbb4bf6b40988ee38291d2c1f875f35f4
+    - repo: deepin-community/flmsg
+      tagsha: d6a143b520819df54e76c216ccfad5c596f2d1bb
+    - repo: deepin-community/flrig
+      tagsha: b79ecaf765cefc89c961b6dba3cd4d95c82dbaba
+    - repo: deepin-community/direwolf
+      tagsha: a6548d3f749c1c1142708cd4f7cdf1333600dd63
+    - repo: deepin-community/qsstv
+      tagsha: 90d24c7927139a4ba2f026ca531fa98a03f30334
+    - repo: deepin-community/trustedqsl
+      tagsha: 3f296816b78c2ae5f655b2c2f885b9a1c73e4a59
+    - repo: deepin-community/wsjtx
+      tagsha: 2616c464fdb8b86488d4f05eaf950eb36ea979a2
+    - repo: deepin-community/jtdx
+      tagsha: 01bb89a6ecaf6fd70244a29e24f674ae73f480ee
+    - repo: deepin-community/fldigi
+      tagsha: 63e9120a23f07d536bcd47c59f6e87873a16016b
+    - repo: deepin-community/flxmlrpc
+      tagsha: fec9c529bc31fd98fca55402eb60731dc343937a
+    - repo: deepin-community/qcustomplot
+      tagsha: faef3831df146d228ba343d0a888790c5813ffe0
+    - repo: deepin-community/rtaudio
+      tagsha: 16d5a45d61b1ea25d55fd11fea3f4ae10e9079f7
+    - repo: deepin-community/wfview
+      tagsha: d7660b7d05787afd5b465a8a52fb40f60064cfde
