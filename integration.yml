@@ -9,3 +9,5 @@ repos:
       tagsha: 56dffd1a3c33359f539167315a44864642e3fa6f
     - repo: linuxdeepin/dde-file-manager
       tagsha: 5e9d031e5e8e7476ef7b1afdd5593b8519115e45
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 5a56f3e94b798e09e2ab48c954fb2b631a635799
