@@ -1,7 +1,9 @@
-message: 'Auto integrate from topic: adb-loong by @UTsweetyfish to V23-Beta3'
+message: 'Auto integrate from topic: adb-loong by @Zeno-sole to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/android-platform-external-boringssl
       tagsha: 928f0a05a65fe0cda07267fd8167bf09c77a4b74
     - repo: deepin-community/android-platform-tools
       tagsha: 6932ef901684e2e6114c7ed5b4118484a91a5b15
+    - repo: deepin-community/android-udev-rules
+      tagsha: 9debf5651366e35e9bb75bc354c90d9c1b974f0e
