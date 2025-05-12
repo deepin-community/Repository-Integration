@@ -9,3 +9,5 @@ repos:
       tagsha: c7113a1d14b4058a53e60b13185c12e747d58aea
     - repo: linuxdeepin/dde-grand-search
       tagsha: e4e9f4813c96b868dc4b66008681a65800cd51bd
+    - repo: linuxdeepin/deepin-anything
+      tagsha: 0097c856aae37d47c81987084fbd3e0817c94115
