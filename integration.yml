@@ -11,3 +11,5 @@ repos:
       tagsha: e4e9f4813c96b868dc4b66008681a65800cd51bd
     - repo: linuxdeepin/deepin-anything
       tagsha: 0097c856aae37d47c81987084fbd3e0817c94115
+    - repo: linuxdeepin/util-dfm
+      tagsha: ef9308129abe0162eda2fe28d74ac7ae2dcade78
