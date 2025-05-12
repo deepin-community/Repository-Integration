@@ -13,3 +13,5 @@ repos:
       tagsha: 0097c856aae37d47c81987084fbd3e0817c94115
     - repo: linuxdeepin/util-dfm
       tagsha: ef9308129abe0162eda2fe28d74ac7ae2dcade78
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 2b16fcb393c8ad2e995f4f1047e2abe3ed1acb92
