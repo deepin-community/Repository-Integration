@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: xdg by @xzl01 to V23-Beta3'
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/python-dbusmock
-      tagsha: b9d8d4b5b710ea5133c1121faf8a3b1645e05556
+      tagsha: 760b8da7dfa992d461a4f52d92bac48ace57ecfb
     - repo: deepin-community/xdg-desktop-portal
       tagsha: 2fdcbcb9a3135007527a3aa5b22ffdae5dbd6214
