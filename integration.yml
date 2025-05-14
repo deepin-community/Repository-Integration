@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: gtk4-lhdjply-20250514 by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/gtk4
+      tagsha: 92323f3f9f5858a22c9ff89fb17bee3459ea6ff8
+    - repo: deepin-community/cairo
+      tagsha: c3f9d6ebda6e11ecb11ebeeaca227fe63bed3676
+    - repo: deepin-community/harfbuzz
+      tagsha: 7d0d7e91097d9a73d4d0280d65927a49139d5474
+    - repo: deepin-community/pango1.0
+      tagsha: 3c0acbec34582bcd8419b7db060b069c47c1ca3d
+    - repo: deepin-community/libpng1.6
+      tagsha: 81c3b164d07a600362511fc69107852987a52bf8
+    - repo: deepin-community/wayland-protocols
+      tagsha: 59e507a062d9375156cea0b6086d845fb275e08e
+    - repo: deepin-community/fontconfig
+      tagsha: 5803f1e6a0c8bd1b616c62ec0631295e3c76ea2c
