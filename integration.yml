@@ -13,3 +13,5 @@ repos:
       tagsha: 81c3b164d07a600362511fc69107852987a52bf8
     - repo: deepin-community/wayland-protocols
       tagsha: 59e507a062d9375156cea0b6086d845fb275e08e
+    - repo: deepin-community/fontconfig
+      tagsha: 5803f1e6a0c8bd1b616c62ec0631295e3c76ea2c
