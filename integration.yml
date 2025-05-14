@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: davfs2 by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/davfs2
+      tagsha: 92ad612f585e034fd0d8e4a135c2e9885dffc123
+    - repo: deepin-community/neon27
+      tagsha: 7171a6d689df03db8c3ade7d8c3dd18b5d60a5a7
