@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: gtk4-lhdjply-20250514 by @lhdjply to V23-Be
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/gtk4
-      tagsha: 03217b66f5a48d695818e263149a24588ab5e3b2
+      tagsha: 92323f3f9f5858a22c9ff89fb17bee3459ea6ff8
     - repo: deepin-community/cairo
       tagsha: c3f9d6ebda6e11ecb11ebeeaca227fe63bed3676
     - repo: deepin-community/harfbuzz
