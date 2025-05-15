@@ -13,3 +13,7 @@ repos:
       tagsha: 8b3e2189bc1245102ed03c478ef97d38a12747b6
     - repo: deepin-community/python-pkcs11
       tagsha: b31a6a2429ba4d4833a50b6d22e358e33ed1de4c
+    - repo: deepin-community/asn1crypto
+      tagsha: 3d218b37dd36f38fe873e2339d2015b5ddba71e5
+    - repo: deepin-community/oscrypto
+      tagsha: 18aa0e30156d6172728e818d6cdc308660a66920
