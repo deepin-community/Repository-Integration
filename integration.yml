@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: esptool-lhdjply-20250515 by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/esptool
+      tagsha: 797e7b7f8a65652e9b1195843e3618bf4d4928e2
+    - repo: deepin-community/python-bitarray
+      tagsha: cd3c9eb089d10f475ccb7c91798137c3bb256f3d
+    - repo: deepin-community/python-bitstring
+      tagsha: b55dc46f58487aa7a86ea6bdde5d6820ac6dc1d2
+    - repo: deepin-community/python-reedsolo
+      tagsha: 01c95f518e09feb4fc0f86c45a6fe1e44678bef8
