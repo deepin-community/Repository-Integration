@@ -9,3 +9,7 @@ repos:
       tagsha: b55dc46f58487aa7a86ea6bdde5d6820ac6dc1d2
     - repo: deepin-community/python-reedsolo
       tagsha: 01c95f518e09feb4fc0f86c45a6fe1e44678bef8
+    - repo: deepin-community/python-gfloat
+      tagsha: 8b3e2189bc1245102ed03c478ef97d38a12747b6
+    - repo: deepin-community/python-pkcs11
+      tagsha: b31a6a2429ba4d4833a50b6d22e358e33ed1de4c
