@@ -3,3 +3,5 @@ milestone: V23-Beta3
 repos:
     - repo: linuxdeepin/util-dfm
       tagsha: 8593badbb3c6dbd4bab98b46c786fd5afbd5a13c
+    - repo: linuxdeepin/dde-grand-search
+      tagsha: 1385b78d4ae1998e4845c154b90db69f0ad712a7
