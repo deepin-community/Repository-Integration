@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: virtualbox-lhdjply-20250517 by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/virtualbox
+      tagsha: 62a5272aa56cf9f7a77fc8e9d6874854f0c7c63b
+    - repo: deepin-community/virtualbox-ext-pack
+      tagsha: a9339b9ddd344082334955adeec65ce210a6484a
+    - repo: deepin-community/virtualbox-guest-additions-iso
+      tagsha: 2e88dc5d3e88a203fe7c8c537b8a0cf5f3839bc5
