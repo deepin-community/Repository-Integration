@@ -1,11 +1,5 @@
 message: 'Auto integrate from topic: cd-20250521 by @lzwind to V23-Beta3'
 milestone: V23-Beta3
 repos:
-    - repo: linuxdeepin/util-dfm
-      tagsha: 4da084e1075d64c084deff36dd36c567ac4b9710
-    - repo: linuxdeepin/dde-grand-search
-      tagsha: 22951a5121a7c7eac9bebe28df4696b1eb8d4707
-    - repo: linuxdeepin/dde-file-manager
-      tagsha: 9a343a6b6f33c20b86ee6676e65a32c820e11842
-    - repo: linuxdeepin/deepin-anything
-      tagsha: 90642ab96d17f2f1eb5bd3b19f2160521e0ba279
+    - repo: deepin-community/luceneplusplus
+      tagsha: ea977d57dacad7703e567fcc3fee4586d85e6621
