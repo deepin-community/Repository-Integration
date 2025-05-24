@@ -2,14 +2,14 @@ message: 'Auto integrate from topic: kicad9-20250326-lhdjply by @lhdjply to V23-
 milestone: V23-Beta3
 repos:
     - repo: deepin-community/kicad
-      tagsha: 2d3c8d5c6683e43d6c51ef58075f863b0ce522d2
+      tagsha: 3663041ef840c0201caca7acc1cdb6f0194ca62d
     - repo: deepin-community/kicad-templates
       tagsha: 8c39d91e6c2f637d104aa8fb8d9a12baec0f6bdb
     - repo: deepin-community/kicad-symbols
-      tagsha: 656d83ee580e47b73a131ef57adbc91a7f99f224
+      tagsha: d28f4a20f3d320c3caf11c8a542d6ae8ed032ec4
     - repo: deepin-community/kicad-footprints
-      tagsha: 5ee73f740a6655a17acf00df12f2bebad297ff14
+      tagsha: 19157ef4283caf61c617cd7c7b7950fd2f11077b
     - repo: deepin-community/kicad-packages3d
-      tagsha: b0487f8657ed4d5507b5cd77485d5d5d5ad67571
+      tagsha: 2dbc24d90e1a833188ea3fea43cc46c17df7d8ce
     - repo: deepin-community/nng
       tagsha: b055728e7aa6df8e5bd404ab070bb25999020cff
