@@ -1,15 +1,95 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: lxqt by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/lxqt-metapackages
+      tagsha: 4823d79a0274266264ae0ed0f6f92dd00a22f9fc
+    - repo: deepin-community/lxqt-runner
+      tagsha: ca9311baf21fc74476856c9ef40522418a5d242e
+    - repo: deepin-community/lxqt-session
+      tagsha: ec5865820820ce6c2f3f9f83df9c7195dfbb7c1c
+    - repo: deepin-community/qterminal
+      tagsha: ee62a6e2cf02454cec496bd6a7365bf34eebd882
+    - repo: deepin-community/desktop-file-utils
+      tagsha: 6f85f93102fba4d828c18c4e16c48d4c38ae7c49
+    - repo: deepin-community/lxqt-themes
+      tagsha: 92a98604598bf3077a03f393fb846f71dcb02296
+    - repo: deepin-community/xscreensaver
+      tagsha: aa1f49ee76125b6a1429608a3e75e82675c3140b
+    - repo: deepin-community/xfce4-clipman-plugin
+      tagsha: 262372a6f758a31fc600efe67d77f6fbb529ac92
+    - repo: deepin-community/xarchiver
+      tagsha: ec4adfa4abfae3bffa07c464075b62d0b5d4cbb4
+    - repo: deepin-community/weechat
+      tagsha: a27fe45c61ff9dd244d2b26b02c0f10ffafe98ec
+    - repo: deepin-community/qlipper
+      tagsha: ca41e0845d59c5940f1ff33d46caf8279839157b
+    - repo: deepin-community/pcmanfm-qt
+      tagsha: b80f7a5fc71e16c5c7e3bf136b0d07cb41f7b888
+    - repo: deepin-community/pavucontrol-qt
+      tagsha: 9dac20e4836d600c395747326d41240d727a316d
+    - repo: deepin-community/lxqt-sudo
+      tagsha: e7ff9091e838cd96c482d306aca909951759bc9e
+    - repo: deepin-community/lxqt-qtplugin
+      tagsha: 283fa79190dfb75d04ea8969787b86247076b405
+    - repo: deepin-community/lxqt-powermanagement
+      tagsha: ab1f763c2d8eb68d4e7df77d1d5e86a9a0fd103b
+    - repo: deepin-community/lxqt-policykit
+      tagsha: 6d2aa8137df7f27b67f5fd4ea48aa5b0d91aef03
+    - repo: deepin-community/lxqt-panel
+      tagsha: bb3f443e29cf05b9f19df0f2aa464ed0e8d3762e
+    - repo: deepin-community/lxqt-openssh-askpass
+      tagsha: d21ad3edeaad1659aed455d2c128e1d7b9e7a888
+    - repo: deepin-community/lxqt-notificationd
+      tagsha: 19e9871051aa2ccaecae51c5a1fa3ac68f449dc3
+    - repo: deepin-community/lxqt-globalkeys
+      tagsha: 433d199b6880e1967c3f191a1403ebfe754ba2d4
+    - repo: deepin-community/lxqt-admin
+      tagsha: 1eca838ba85d6e055226a653a150e364834a4df5
+    - repo: deepin-community/lxqt-about
+      tagsha: 9b6673c218bfc2cc375d4721a91cae58dae62b9e
+    - repo: deepin-community/lximage-qt
+      tagsha: a3e6e8f6a18f5c721f490e2c1bd8f80d613784a2
+    - repo: deepin-community/hexchat
+      tagsha: afb7996a22191f4fe74bea0b1aa92cabbf1a9f37
+    - repo: deepin-community/featherpad
+      tagsha: ac5a68bfa83794724b7134479c13abab166c5ff2
+    - repo: deepin-community/engrampa
+      tagsha: 706e7655250ccbf0f3d7431797cc93054901b306
+    - repo: deepin-community/clipit
+      tagsha: c332f849b31ff202023ba800094c4e57ce5e4100
+    - repo: deepin-community/audacious
+      tagsha: e62f6f8dbbe3ec71d8e6145375f931b19194bded
+    - repo: deepin-community/libfm-qt
+      tagsha: 455a0bc81078382b7fcea8bd7940ed8b7ceb4e91
+    - repo: deepin-community/lxqt-build-tools
+      tagsha: f1669fb670cc7416a9cf6434c6c3be2e356caccf
+    - repo: deepin-community/layer-shell-qt
+      tagsha: cc24280cb735977b7b65c0ab2c23c30bb9b48587
+    - repo: deepin-community/libsysstat
+      tagsha: b0011988902c3bd23cc24120426ce93f6dcad5ef
+    - repo: deepin-community/liblxqt
+      tagsha: 6a779b2a93cce9ffca92760e1730de27f5deed74
+    - repo: deepin-community/libqtxdg
+      tagsha: 17dbdae2ef744fc58a102dc259a37ff1f538a8b8
+    - repo: deepin-community/qtermwidget
+      tagsha: 79fba7a36b69675b0a2088399200c5006a6d3203
+    - repo: deepin-community/polkit-qt-1
+      tagsha: fe4273c7f368e6bfc9ae886cfe67b106497ee588
+    - repo: deepin-community/lxqt-menu-data
+      tagsha: 04016e218cc0fafff60d4a4656c595dd5636e93f
+    - repo: deepin-community/qtxdg-tools
+      tagsha: 8024cd3778e9ec3140a532b90c25954e9478b028
+    - repo: deepin-community/libguess
+      tagsha: db751d11e199da9fd9273761c8d5405320dffb1b
+    - repo: deepin-community/lxqt-runner
+      tagsha: 1e5ca2ea01efcd0d10cc434314c47015c5215f56
+    - repo: deepin-community/libdbusmenu-lxqt
+      tagsha: 2c91a01d9213261bc7fea165137ab72463034f73
+    - repo: deepin-community/gauche
+      tagsha: 9f286a935c49ed462dcd324eaddc95d4cbc15db6
+    - repo: deepin-community/lxqt-build-tools-qt5
+      tagsha: 84c63d8b5ba4381b151a47c7b1c356038c6f1118
+    - repo: deepin-community/xfconf
+      tagsha: bd5c7500fa176b86da2e1dab798b0041c77005c2
+    - repo: deepin-community/xfce4-dev-tools
+      tagsha: 6230da3582070b1f2d45f7a61b225d4c6e117b60
