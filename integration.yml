@@ -3,8 +3,6 @@ milestone: V23-Beta3
 repos:
     - repo: deepin-community/lxqt-metapackages
       tagsha: 4823d79a0274266264ae0ed0f6f92dd00a22f9fc
-    - repo: deepin-community/lxqt-runner
-      tagsha: ca9311baf21fc74476856c9ef40522418a5d242e
     - repo: deepin-community/lxqt-session
       tagsha: ec5865820820ce6c2f3f9f83df9c7195dfbb7c1c
     - repo: deepin-community/qterminal
@@ -93,3 +91,5 @@ repos:
       tagsha: bd5c7500fa176b86da2e1dab798b0041c77005c2
     - repo: deepin-community/xfce4-dev-tools
       tagsha: 6230da3582070b1f2d45f7a61b225d4c6e117b60
+    - repo: deepin-community/menu-cache
+      tagsha: ac8bd7cf9ef1529da16feee7047310ce87570ad6
