@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: gimp-lhdjply-20250528 by @lhdjply to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/gimp
+      tagsha: 5b4d308d635d62c40273d6322c40d312be5a0341
+    - repo: deepin-community/gegl
+      tagsha: a67b7daaba68b0f08b83fb7b7f1e407ba90cf41b
+    - repo: deepin-community/babl
+      tagsha: 99b70cf1cd3b61d7541c382645a4f881dfd5fe4f
