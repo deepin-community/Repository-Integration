@@ -97,3 +97,5 @@ repos:
       tagsha: 7474d7cd561b4bbc1ac66a3d67a30bce474291ea
     - repo: deepin-community/polkit-qt-1
       tagsha: c490c2536442dba2186b087b260aaa47063d5dfb
+    - repo: linuxdeepin/dde-polkit-agent
+      tagsha: a2156da4ebe7a2b66b046fa1222d3ce383ae4b23
