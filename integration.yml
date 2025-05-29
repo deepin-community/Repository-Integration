@@ -95,3 +95,5 @@ repos:
       tagsha: ac8bd7cf9ef1529da16feee7047310ce87570ad6
     - repo: deepin-community/libfm
       tagsha: 7474d7cd561b4bbc1ac66a3d67a30bce474291ea
+    - repo: deepin-community/polkit-qt-1
+      tagsha: c490c2536442dba2186b087b260aaa47063d5dfb
