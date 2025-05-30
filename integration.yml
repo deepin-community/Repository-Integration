@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
+message: >-
+  upgrade node-os-tmpdir (1.0.2-4) unstable by
+  Cherrling@deepin-community/node-os-tmpdir
 milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/node-os-tmpdir
+    tagsha: 6d39c58df5a9a761b0101b758d7bdceb53cb65c5
+timestamp: 1748609721196
