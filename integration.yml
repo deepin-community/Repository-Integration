@@ -1,5 +1,5 @@
 message: 'feat: update qtcreator to 16.0.1-1 by lhdjply@deepin-community/qtcreator'
-milestone: V23-Release
+milestone: v25-Release
 repos:
   - repo: deepin-community/qtcreator
     tagsha: e3584eb84ef49b12be9276ae7ce2211eed5d964f
