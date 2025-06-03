@@ -1,7 +1,7 @@
 message: >-
   upgrade node-os-tmpdir (1.0.2-4) unstable by
   Cherrling@deepin-community/node-os-tmpdir
-milestone: V23-Release
+milestone: v25-Release
 repos:
   - repo: deepin-community/node-os-tmpdir
     tagsha: 6d39c58df5a9a761b0101b758d7bdceb53cb65c5
