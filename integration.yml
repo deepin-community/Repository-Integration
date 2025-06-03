@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for V23-Release
-# Not required, now default is V23-Release
-milestone: V23-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: sys-20250603 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/systemd
+      tagsha: 61359bf00cde0a572717cae1b9e698ba54451312
+    - repo: deepin-community/initramfs-tools
+      tagsha: 47c5a1162ebe56420fa2193c6bc7dfa32157c747
+    - repo: deepin-community/btrfs-progs
+      tagsha: b40cf5f2e9f1327c6a6f31649a3da35d8632926e
+    - repo: deepin-community/network-manager
+      tagsha: d433f42bc4c8b3268d7b4eb5319e7bfb6e2078b8
