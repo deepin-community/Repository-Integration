@@ -1,7 +1,7 @@
 message: >-
   upgrade node-osenv (0.1.5+~0.1.1-1) unstable by
   Cherrling@deepin-community/node-osenv
-milestone: V23-Release
+milestone: v25-Release
 repos:
   - repo: deepin-community/node-osenv
     tagsha: 3d8569f5c0e7b8e5e22370e262d5ab9e73e389b7
