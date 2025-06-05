@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
-milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: tools by @xzl01 to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/valgrind
+      tagsha: b0a965f2f983089a6d1aa78b8a06aa91c2cd3bdf
+    - repo: deepin-community/systemtap
+      tagsha: 3576ab55ff3e0f26921216cb4952956816b7fa58
+    - repo: deepin-community/pcp
+      tagsha: c6fed16adf3d5a66a9c33699f64863ce6029c02d
