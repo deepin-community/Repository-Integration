@@ -19,3 +19,5 @@ repos:
       tagsha: 378e838641cc156d6eae0fc1ed0ae187c17c4818
     - repo: deepin-community/fonts-osifont
       tagsha: 99cdb701f9da628656955b0f335eadefde38da45
+    - repo: deepin-community/swig
+      tagsha: b17637098cc6caa0aad63ba58cee08aeb86aaee5
