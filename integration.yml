@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
-milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: yade by @Cryolitia to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/yade
+      tagsha: 57be8b3cec0952c554886b01f0cf6e8e32c4e72d
+    - repo: deepin-community/libqglviewer
+      tagsha: 6b791e75959bcca0e322f8de6705d9051004033f
+    - repo: deepin-community/mpfrcplusplus
+      tagsha: bee666f75a1c3c37a670ffccf88afd1f2e9f862d
