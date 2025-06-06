@@ -1,5 +1,5 @@
 message: 'Auto integrate from topic: iperf3 by @Cryolitia to V23-Beta3'
-milestone: V23-Beta3
+milestone: v25-Release
 repos:
     - repo: deepin-community/iperf3
       tagsha: f2dfdd0e8fe994935241a5b554dd62727be4cf56
