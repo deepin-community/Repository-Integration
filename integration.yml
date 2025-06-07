@@ -14,7 +14,7 @@ repos:
     - repo: deepin-community/pivy
       tagsha: 42f077cc6f8ea4428fa739a490f6239fd38873d1
     - repo: deepin-community/pyside2
-      tagsha: 7e60f7b5ba908f989e744f1ad3a4c271609d1ba2
+      tagsha: 01af1b5e34d8f869b6e65626c8094ac977104120
     - repo: deepin-community/zipiosplusplus
       tagsha: 2fda98e8c40debe253276727f6895c6be9b3ee60
     - repo: deepin-community/fonts-osifont
