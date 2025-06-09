@@ -21,3 +21,7 @@ repos:
       tagsha: 99cdb701f9da628656955b0f335eadefde38da45
     - repo: deepin-community/swig
       tagsha: b17637098cc6caa0aad63ba58cee08aeb86aaee5
+    - repo: deepin-community/simage
+      tagsha: d4f0ee0a1e4ebc1128e8d968f7c82de5a5fc874f
+    - repo: deepin-community/soqt
+      tagsha: 34777cf6402969c7ee7250b0f71bcb848f7f916e
