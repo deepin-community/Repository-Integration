@@ -1,5 +1,5 @@
 message: 'feat: update gzip to 1.13-1 by deepin-community-bot[bot]@deepin-community/gzip'
-milestone: V23-Release
+milestone: V25-Release
 repos:
   - repo: deepin-community/gzip
     tagsha: cc31aaa2ea637fcd612b4f5ffe2ed1785410a3ef
