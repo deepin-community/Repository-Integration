@@ -12,7 +12,7 @@ repos:
     - repo: deepin-community/ondselsolver
       tagsha: 41c0e33976b1a1564b7878286f617634588bafe9
     - repo: deepin-community/pivy
-      tagsha: 42f077cc6f8ea4428fa739a490f6239fd38873d1
+      tagsha: 5f9c736477f557faff41a4cb630fd20b2de94906
     - repo: deepin-community/pyside2
       tagsha: 01af1b5e34d8f869b6e65626c8094ac977104120
     - repo: deepin-community/zipiosplusplus
