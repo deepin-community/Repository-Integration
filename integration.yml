@@ -99,3 +99,5 @@ repos:
       tagsha: dd5fd8f8ef93d5adffb8c973dcf922b948b08c6a
     - repo: deepin-community/lxqt-config
       tagsha: 0cadfc60b64400aa587ece7b4fd692e2b405d18d
+    - repo: deepin-community/qps
+      tagsha: 04527b1ebe27a07bcb395df4b797f09113682f95
