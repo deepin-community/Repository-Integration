@@ -1,5 +1,5 @@
 message: 'Auto integrate from topic: ardour by @Cryolitia to V23-Beta3'
-milestone: V23-Beta3
+milestone: v25-Release
 repos:
     - repo: deepin-community/ardour
       tagsha: c32927e6c612cc47be9d53f16f10a5948973dc62
