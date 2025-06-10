@@ -101,3 +101,5 @@ repos:
       tagsha: 0cadfc60b64400aa587ece7b4fd692e2b405d18d
     - repo: deepin-community/qps
       tagsha: 04527b1ebe27a07bcb395df4b797f09113682f95
+    - repo: deepin-community/lxqt-branding-debian
+      tagsha: e35580c1ee9b58ff1e894c1cd778f60e4773ac03
