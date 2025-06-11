@@ -1,5 +1,5 @@
 message: 'Auto integrate from topic: fuse-archive-20050611 by @Zeno-sole to V23-Beta3'
-milestone: V23-Beta3
+milestone: v25-Release
 repos:
     - repo: deepin-community/fuse-archive
       tagsha: f666fcf12cbd9df75aa4a28826a16556f5b80d8e
