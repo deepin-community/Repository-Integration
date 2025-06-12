@@ -1,5 +1,5 @@
 message: 'Auto integrate from topic: coin3-t64 by @Cryolitia to V23-Beta3'
-milestone: V23-Beta3
+milestone: v25-Release
 repos:
     - repo: deepin-community/coin3
       tagsha: 9f23fb810848b7ada21d8808a00c5349e16c10fc
