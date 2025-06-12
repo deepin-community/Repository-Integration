@@ -18,8 +18,20 @@ repos:
     - repo: deepin-community/libmpack-lua
       tagsha: 03b86d54db5394d865645ec2947d76c487352d64
     - repo: deepin-community/tree-sitter-vimdoc
-      tagsha: d4d50bf116d44b738bba589ab9527a3fbaa8aafa
+      tagsha: a0425951b8364ddb11781965918a4ccbe03dcd80
     - repo: deepin-community/tree-sitter
       tagsha: 0f19118ae9700b454979cd8458a045bfdfe0f474
     - repo: deepin-community/neovim
-      tagsha: 4173490a84ff79f238bb851927309f66b02ad679
+      tagsha: a44f3077a0ba33e9afade4ecf70ecd1161564276
+    - repo: deepin-community/tree-sitter-query
+      tagsha: 66824dd526769faf07e94498a4762e6489808a24
+    - repo: deepin-community/tree-sitter-c
+      tagsha: aab4bfecbad15f701e2d77a316f40c391448cb62
+    - repo: deepin-community/tree-sitter-lua
+      tagsha: 4df6ce4b27b22ab14c140553bcbcf1746724bd89
+    - repo: deepin-community/lua-lpeg
+      tagsha: c8fe3429034ed8f08f39f533128c86d8ff1a2d50
+    - repo: deepin-community/tree-sitter-markdown
+      tagsha: 6c45236a73563385f86a5498b8b46018498d7030
+    - repo: deepin-community/tree-sitter-vim
+      tagsha: 911bfb96b1daa79f9a0378bfde992b19cf7f7fa5
