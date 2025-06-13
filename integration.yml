@@ -1,20 +1,6 @@
-message: 'Auto integrate from topic: neovim by @Cryolitia to V23-Beta3'
-milestone: V23-Beta3
+message: 'Auto integrate from topic: neovim by @Cryolitia to v25-Release'
+milestone: v25-Release
 repos:
-    - repo: deepin-community/python-pynvim
-      tagsha: 6b0f91571535bc289bf577c5a4719ef576eaf263
-    - repo: deepin-community/tree-sitter-vimdoc
-      tagsha: dffe0121400c93fda4177ba1b6d99d81df7171c2
-    - repo: deepin-community/tree-sitter-vim
-      tagsha: 470b8570205d36c888b1ad323afa14c8b774abca
-    - repo: deepin-community/tree-sitter-query
-      tagsha: 215c8cd8f97c245fd2f9b3fdb1d83eb6636fae2d
-    - repo: deepin-community/tree-sitter-lua
-      tagsha: 41d7522ccbedcaa0fb28c989e92781e916c168c2
-    - repo: deepin-community/tree-sitter-c
-      tagsha: 71e6b5518655438d603bf85470c3f83b3a8b029b
-    - repo: deepin-community/tree-sitter
-      tagsha: e7044e16d9ea822b57f75bdae8369d767a7071a4
     - repo: deepin-community/libmpack-lua
       tagsha: 03b86d54db5394d865645ec2947d76c487352d64
     - repo: deepin-community/tree-sitter-vimdoc
