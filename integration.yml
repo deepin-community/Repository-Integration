@@ -1,5 +1,5 @@
 message: 'Auto integrate from topic: freecad-20250606-lhdjply by @lhdjply to V23-Beta3'
-milestone: V23-Beta3
+milestone: v25-Release
 repos:
     - repo: deepin-community/freecad
       tagsha: d42f71ea74fc29c4086cc3512e8aad7dd0215b99
