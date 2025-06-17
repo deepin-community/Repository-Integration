@@ -1,5 +1,5 @@
 message: 'Auto integrate from topic: yade by @Cryolitia to V23-Beta3'
-milestone: V23-Beta3
+milestone: v25-Release
 repos:
     - repo: deepin-community/yade
       tagsha: de111c586f6a6a9a5952d94de586298abbe581f5
