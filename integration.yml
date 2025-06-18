@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  The 'u' format is removed in python 3.12, switch to using
+  PyUnicode_AsWideCharString as recommended. by
+  UTsweetyfish@deepin-community/onboard
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/onboard
+    tagsha: 0957248200de641e26ba81c0137f16028a13b9cd
+timestamp: 1750217291002
