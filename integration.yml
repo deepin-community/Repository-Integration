@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: wlroots by @xzl01 to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/wayland
+      tagsha: 639535c5dff3fbbc5cb5022fae60c8d5406aef4c
+    - repo: deepin-community/wayland
+      tagsha: 9b231b8ecc12740d6cb213dc6ed35b38dc8581ba
+    - repo: deepin-community/pixman
+      tagsha: 5b1e29bb0611c680bcbab1db66d0b180993686dd
+    - repo: deepin-community/wayland-protocols
+      tagsha: 57173c95f2b813943408ed412337fc84c7cdd86a
+    - repo: deepin-community/wlroots
+      tagsha: a4adb0d9764438464f29dd16f570825b8c02e0d0
