@@ -1,8 +1,8 @@
-message: 'Auto integrate from topic: yade by @Cryolitia to V23-Beta3'
+message: 'Auto integrate from topic: yade by @Cryolitia to v25-Release'
 milestone: v25-Release
 repos:
     - repo: deepin-community/yade
-      tagsha: de111c586f6a6a9a5952d94de586298abbe581f5
+      tagsha: 8326a7c8b24e4299bf64174652cb19998647c1b3
     - repo: deepin-community/libqglviewer
       tagsha: 6b791e75959bcca0e322f8de6705d9051004033f
     - repo: deepin-community/mpfrcplusplus
