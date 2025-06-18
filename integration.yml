@@ -37,8 +37,6 @@ repos:
       tagsha: bb3f443e29cf05b9f19df0f2aa464ed0e8d3762e
     - repo: deepin-community/lxqt-openssh-askpass
       tagsha: d21ad3edeaad1659aed455d2c128e1d7b9e7a888
-    - repo: deepin-community/lxqt-notificationd
-      tagsha: 19e9871051aa2ccaecae51c5a1fa3ac68f449dc3
     - repo: deepin-community/lxqt-globalkeys
       tagsha: 433d199b6880e1967c3f191a1403ebfe754ba2d4
     - repo: deepin-community/lxqt-admin
