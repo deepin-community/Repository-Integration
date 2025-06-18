@@ -1,5 +1,5 @@
-message: 'Auto integrate from topic: lxqt by @xzl01 to V23-Beta3'
-milestone: V23-Beta3
+message: 'Auto integrate from topic: lxqt by @Cryolitia to v25-Release'
+milestone: v25-Release
 repos:
     - repo: deepin-community/lxqt-metapackages
       tagsha: 4823d79a0274266264ae0ed0f6f92dd00a22f9fc
@@ -103,3 +103,5 @@ repos:
       tagsha: 04527b1ebe27a07bcb395df4b797f09113682f95
     - repo: deepin-community/lxqt-branding-debian
       tagsha: e35580c1ee9b58ff1e894c1cd778f60e4773ac03
+    - repo: deepin-community/xfce4-screenshooter
+      tagsha: 68edae70870ba87a3e4cba742e5bf3d5196b928f
