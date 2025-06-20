@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: libblockdev-202506 by @UTsweetyfish to v25-
 milestone: v25-Release
 repos:
     - repo: deepin-community/libblockdev
-      tagsha: d79871e97130975a1152c8dda2e78ad92c3dd473
+      tagsha: 9bd15ec9cf3af9ae60bec64f66f987393be6c29d
     - repo: deepin-community/udisks2
       tagsha: 0481330d562da2f9ae27acf4d383fe87cdb179c1
