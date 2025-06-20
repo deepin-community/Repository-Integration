@@ -4,4 +4,4 @@ repos:
     - repo: deepin-community/libblockdev
       tagsha: 9bd15ec9cf3af9ae60bec64f66f987393be6c29d
     - repo: deepin-community/udisks2
-      tagsha: 0481330d562da2f9ae27acf4d383fe87cdb179c1
+      tagsha: a1a6e9d3903baf8d2b5898dd8fff51ffca911c13
