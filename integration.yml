@@ -6,10 +6,9 @@ milestone: v25-Release
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: linuxdeepin/deepin-home-appstore-client
+    tagsha: "develop/snipe"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-home-appstore-client"
+  - repo: linuxdeepin/deepin-home-appstore-daemon
+    tagsha: "develop/snipe"
+    gitaddr: "ssh://uta00001@gerrit.uniontech.com:29418/deepin-home-appstore-daemon"
