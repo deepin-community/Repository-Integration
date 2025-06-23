@@ -17,3 +17,5 @@ repos:
       tagsha: 7ddfe53e45fc5b37e9ab9ce3589e79e6c6724da4
     - repo: linuxdeepin/deepin-diskmanager
       tagsha: 033f736dc2f566f099f8605be70269a22045648c
+    - repo: linuxdeepin/deepin-picker
+      tagsha: 612916f22a525c8b08a373a2df864468a93c1e97
