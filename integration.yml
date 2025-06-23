@@ -21,3 +21,5 @@ repos:
       tagsha: 612916f22a525c8b08a373a2df864468a93c1e97
     - repo: linuxdeepin/deepin-fcitx5configtool-plugin
       tagsha: bac9e494b07929f7672a6edae049124e581d32ac
+    - repo: linuxdeepin/dde-grand-search
+      tagsha: 6997316b1a450e06b55ecce97402e64ecf7bb1af
