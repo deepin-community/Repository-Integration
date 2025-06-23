@@ -11,3 +11,5 @@ repos:
       tagsha: 4973d725a3a5993a19989187abddcd4488619725
     - repo: linuxdeepin/deepin-system-monitor
       tagsha: 1131a0e26f6f149b1d564076b1006772419b0b85
+    - repo: linuxdeepin/deepin-boot-maker
+      tagsha: ef402f8541e082e180475c1450f73a1c505fd0bb
