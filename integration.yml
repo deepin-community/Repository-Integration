@@ -45,3 +45,5 @@ repos:
       tagsha: 3ec9ebe7ec0fa763660ff31440f93ad5d724c2df
     - repo: linuxdeepin/deepin-deb-installer
       tagsha: 83e257431c074eb960a003379a118143001d769a
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: d53a187403834ca0fd6ca3c5d654cc154f97980b
