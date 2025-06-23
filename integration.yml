@@ -39,8 +39,6 @@ repos:
       tagsha: 6c7b4dadda5e8b7bd7e3126cc7b28e8e76784d5e
     - repo: linuxdeepin/deepin-screen-recorder
       tagsha: b9695ac88c5202d36f32cbafe802a0daf3a8ba3b
-    - repo: linuxdeepin/deepin-diskmanager
-      tagsha: 473c45186777f211fa255cdb69318e5ae96b8d3a
     - repo: linuxdeepin/deepin-log-viewer
       tagsha: 3ec9ebe7ec0fa763660ff31440f93ad5d724c2df
     - repo: linuxdeepin/deepin-deb-installer
@@ -75,3 +73,5 @@ repos:
       tagsha: cf8019f4bca18c6a0f09f38aea8bc3c216fb53b4
     - repo: linuxdeepin/deepin-gomoku
       tagsha: 80559410dedac9623d3519312ef06d2d4f7f7446
+    - repo: linuxdeepin/deepin-lianliankan
+      tagsha: 6141ef41abab062e63c8d3a790d119c3197c9b4a
