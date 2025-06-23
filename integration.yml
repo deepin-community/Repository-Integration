@@ -31,3 +31,5 @@ repos:
       tagsha: 21b7b7a7a7613f9af1c875caac052c04851d6e44
     - repo: linuxdeepin/deepin-log-viewer
       tagsha: 1d3ef001ab1f862a1be171f2e9b570916473350b
+    - repo: linuxdeepin/deepin-compressor
+      tagsha: 429d657d049c0f115d13f8dbf00b83dadcdaf034
