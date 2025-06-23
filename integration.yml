@@ -63,3 +63,7 @@ repos:
       tagsha: 6fa03c8a9e7b16a48cf0576f8def16511560f68a
     - repo: linuxdeepin/deepin-font-manager
       tagsha: bacf381f4f2845b0b5faa779453834482d8f8b63
+    - repo: linuxdeepin/deepin-calculator
+      tagsha: 5818ee528abf43ea714fa0ca624f5a200bf33093
+    - repo: linuxdeepin/deepin-reader
+      tagsha: b276bd3eb8b82468f2314f112b05a10c538d695e
