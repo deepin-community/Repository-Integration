@@ -69,3 +69,5 @@ repos:
       tagsha: b276bd3eb8b82468f2314f112b05a10c538d695e
     - repo: linuxdeepin/deepin-editor
       tagsha: 8f49e35d9f7d1bdb4a375133648b1deca4bf69ff
+    - repo: linuxdeepin/deepin-manual
+      tagsha: 955ad3970efbe76b42889dd6549b3a887dc4490c
