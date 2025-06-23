@@ -49,3 +49,5 @@ repos:
       tagsha: d53a187403834ca0fd6ca3c5d654cc154f97980b
     - repo: linuxdeepin/deepin-system-monitor
       tagsha: 9c32857ab4908a3f3fbda102eb1f90d7be012685
+    - repo: linuxdeepin/deepin-image-viewer
+      tagsha: 9d5bfebfe76a6844d0426796bfb125ebfd2c2ee3
