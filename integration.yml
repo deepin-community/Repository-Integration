@@ -71,3 +71,5 @@ repos:
       tagsha: 8f49e35d9f7d1bdb4a375133648b1deca4bf69ff
     - repo: linuxdeepin/deepin-manual
       tagsha: 955ad3970efbe76b42889dd6549b3a887dc4490c
+    - repo: linuxdeepin/dde-device-formatter
+      tagsha: cf8019f4bca18c6a0f09f38aea8bc3c216fb53b4
