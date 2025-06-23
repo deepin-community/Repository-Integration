@@ -55,3 +55,5 @@ repos:
       tagsha: b5357117f7c752cee2d24d53b9595ceef5aa1188
     - repo: linuxdeepin/deepin-draw
       tagsha: 19598cb468b62ebd9f6ced955ed0aeab8fc78dbb
+    - repo: linuxdeepin/deepin-music
+      tagsha: 0b22a4eb8c0535456a846e5e140f94e51a0ed1ce
