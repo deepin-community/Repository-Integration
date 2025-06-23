@@ -35,3 +35,5 @@ repos:
       tagsha: 429d657d049c0f115d13f8dbf00b83dadcdaf034
     - repo: linuxdeepin/deepin-deb-installer
       tagsha: 95afdff4a0eb237a5d7b21023a07c54c11345a33
+    - repo: linuxdeepin/deepin-ocr
+      tagsha: 6c7b4dadda5e8b7bd7e3126cc7b28e8e76784d5e
