@@ -27,3 +27,5 @@ repos:
       tagsha: 3600d0392b83e2bc0dd1ce6edc100dcf31ca6c56
     - repo: linuxdeepin/deepin-scanner
       tagsha: 0e2be32f3e3a48d64f44da33f7a66c0d8c9471f3
+    - repo: linuxdeepin/deepin-downloader
+      tagsha: 21b7b7a7a7613f9af1c875caac052c04851d6e44
