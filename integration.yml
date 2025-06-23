@@ -33,3 +33,5 @@ repos:
       tagsha: 1d3ef001ab1f862a1be171f2e9b570916473350b
     - repo: linuxdeepin/deepin-compressor
       tagsha: 429d657d049c0f115d13f8dbf00b83dadcdaf034
+    - repo: linuxdeepin/deepin-deb-installer
+      tagsha: 95afdff4a0eb237a5d7b21023a07c54c11345a33
