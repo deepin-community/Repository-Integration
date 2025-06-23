@@ -19,3 +19,5 @@ repos:
       tagsha: 033f736dc2f566f099f8605be70269a22045648c
     - repo: linuxdeepin/deepin-picker
       tagsha: 612916f22a525c8b08a373a2df864468a93c1e97
+    - repo: linuxdeepin/deepin-fcitx5configtool-plugin
+      tagsha: bac9e494b07929f7672a6edae049124e581d32ac
