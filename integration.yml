@@ -13,3 +13,5 @@ repos:
       tagsha: 1131a0e26f6f149b1d564076b1006772419b0b85
     - repo: linuxdeepin/deepin-boot-maker
       tagsha: ef402f8541e082e180475c1450f73a1c505fd0bb
+    - repo: linuxdeepin/dde-cooperation
+      tagsha: 7ddfe53e45fc5b37e9ab9ce3589e79e6c6724da4
