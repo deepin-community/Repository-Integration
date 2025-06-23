@@ -57,3 +57,5 @@ repos:
       tagsha: 19598cb468b62ebd9f6ced955ed0aeab8fc78dbb
     - repo: linuxdeepin/deepin-music
       tagsha: 0b22a4eb8c0535456a846e5e140f94e51a0ed1ce
+    - repo: linuxdeepin/dde-calendar
+      tagsha: 42617f3e406ceff1a3896325715f2493188a1d58
