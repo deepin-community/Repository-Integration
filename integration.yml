@@ -59,3 +59,7 @@ repos:
       tagsha: 0b22a4eb8c0535456a846e5e140f94e51a0ed1ce
     - repo: linuxdeepin/dde-calendar
       tagsha: 42617f3e406ceff1a3896325715f2493188a1d58
+    - repo: linuxdeepin/deepin-voice-note
+      tagsha: 6fa03c8a9e7b16a48cf0576f8def16511560f68a
+    - repo: linuxdeepin/deepin-font-manager
+      tagsha: bacf381f4f2845b0b5faa779453834482d8f8b63
