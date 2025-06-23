@@ -3,3 +3,5 @@ milestone: v25-Release
 repos:
     - repo: linuxdeepin/deepin-terminal
       tagsha: ba37e0c98d0ec958c5cf609157b82d8396d3aa5c
+    - repo: linuxdeepin/deepin-lianliankan
+      tagsha: 4e9319a0e74cc05e3b9c825058956eed4d7beaea
