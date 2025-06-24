@@ -17,3 +17,5 @@ repos:
       tagsha: 1684866c18d3b193818c0cf7bada98733af162b5
     - repo: deepin-community/direwolf
       tagsha: 7ed5e838e31ecc54d662553f9abd76b6e40271b1
+    - repo: deepin-community/jtdx
+      tagsha: 6424d6af03f6cd6844e7b63fca6370b286cf6e5f
