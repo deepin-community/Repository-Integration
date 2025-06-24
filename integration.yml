@@ -71,3 +71,5 @@ repos:
       tagsha: f9e233c9a8a11bd37fd57f89901fae139caf2fd5
     - repo: linuxdeepin/deepin-devicemanager
       tagsha: 30d0c15b13bc10d54730c09d715351bb3ab19b1f
+    - repo: linuxdeepin/deepin-scanner
+      tagsha: 85509407662a3fd298167b838be992616f9ae5ba
