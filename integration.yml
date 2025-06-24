@@ -67,3 +67,5 @@ repos:
       tagsha: 473c45186777f211fa255cdb69318e5ae96b8d3a
     - repo: linuxdeepin/dde-calendar
       tagsha: 67507a35644f8e99dd43b0ea70d7fb1ff7fadae8
+    - repo: linuxdeepin/deepin-downloader
+      tagsha: f9e233c9a8a11bd37fd57f89901fae139caf2fd5
