@@ -75,3 +75,5 @@ repos:
       tagsha: 85509407662a3fd298167b838be992616f9ae5ba
     - repo: linuxdeepin/deepin-voice-note
       tagsha: 0b3501030bdd14d046094a149aaeba72266cf819
+    - repo: linuxdeepin/deepin-camera
+      tagsha: 7f6200dd5c50fa697ddbb4e7e22879553c43ee0e
