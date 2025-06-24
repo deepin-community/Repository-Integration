@@ -77,3 +77,9 @@ repos:
       tagsha: 0b3501030bdd14d046094a149aaeba72266cf819
     - repo: linuxdeepin/deepin-camera
       tagsha: 7f6200dd5c50fa697ddbb4e7e22879553c43ee0e
+    - repo: linuxdeepin/deepin-music
+      tagsha: c0f159331d45995e6bef6e39788f37ced9bf449a
+    - repo: linuxdeepin/deepin-screen-recorder
+      tagsha: 56dfc33e53a6f34e312243f9050044d30d36390c
+    - repo: linuxdeepin/deepin-compressor
+      tagsha: 9d54457364a3eef7904e42d1f462e7a3868d0d1e
