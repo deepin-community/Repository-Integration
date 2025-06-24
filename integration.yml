@@ -4,4 +4,6 @@ repos:
     - repo: deepin-community/hamlib
       tagsha: 71031f36f0f198d790c26205d314cddec2313a30
     - repo: deepin-community/libnova
-      tagsha: cfc9ec8b2ffb3a8002ca154555b7f64d0dad32ec
+      tagsha: 6466b261ab12c8d140c4e6262ebb3f11456855cc
+    - repo: deepin-community/indi
+      tagsha: d1997b39eec579a36e372b30cb4356f8342da998
