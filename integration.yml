@@ -83,3 +83,5 @@ repos:
       tagsha: 56dfc33e53a6f34e312243f9050044d30d36390c
     - repo: linuxdeepin/deepin-compressor
       tagsha: 9d54457364a3eef7904e42d1f462e7a3868d0d1e
+    - repo: linuxdeepin/dde-cooperation
+      tagsha: 28083887619c33be8f28d4daba289bb97b753dcf
