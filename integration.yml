@@ -7,3 +7,13 @@ repos:
       tagsha: 6466b261ab12c8d140c4e6262ebb3f11456855cc
     - repo: deepin-community/indi
       tagsha: d1997b39eec579a36e372b30cb4356f8342da998
+    - repo: deepin-community/wsjtx
+      tagsha: 7cbb3a788c83343c3b4b0dff81fe819f4ea4732c
+    - repo: deepin-community/qsstv
+      tagsha: f8d20e1f2fe9a7cb095a5c32286444eb7c802e2d
+    - repo: deepin-community/cubicsdr
+      tagsha: b870ae007d983df795827f514488b7792cc89e64
+    - repo: deepin-community/fldigi
+      tagsha: 1684866c18d3b193818c0cf7bada98733af162b5
+    - repo: deepin-community/direwolf
+      tagsha: 7ed5e838e31ecc54d662553f9abd76b6e40271b1
