@@ -73,3 +73,5 @@ repos:
       tagsha: 30d0c15b13bc10d54730c09d715351bb3ab19b1f
     - repo: linuxdeepin/deepin-scanner
       tagsha: 85509407662a3fd298167b838be992616f9ae5ba
+    - repo: linuxdeepin/deepin-voice-note
+      tagsha: 0b3501030bdd14d046094a149aaeba72266cf819
