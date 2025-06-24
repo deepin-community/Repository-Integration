@@ -4,6 +4,6 @@ repos:
     - repo: deepin-community/yade
       tagsha: 8326a7c8b24e4299bf64174652cb19998647c1b3
     - repo: deepin-community/libqglviewer
-      tagsha: eae52ed524f582098fbd12fb2d42a151c77e62fd
+      tagsha: 0fa54c66500de5dd2014a032f927cf2c53cdad24
     - repo: deepin-community/mpfrcplusplus
       tagsha: bee666f75a1c3c37a670ffccf88afd1f2e9f862d
