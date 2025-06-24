@@ -67,3 +67,5 @@ repos:
       tagsha: 6141ef41abab062e63c8d3a790d119c3197c9b4a
     - repo: linuxdeepin/deepin-camera
       tagsha: 76c771bb3f022a5022ed51b37c4ecad659c71221
+    - repo: linuxdeepin/deepin-log-viewer
+      tagsha: 3ec9ebe7ec0fa763660ff31440f93ad5d724c2df
