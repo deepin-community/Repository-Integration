@@ -1,12 +1,6 @@
 message: 'Auto integrate from topic: cd-20250623 by @lzwind to v25-Release'
 milestone: v25-Release
 repos:
-    - repo: linuxdeepin/deepin-devicemanager
-      tagsha: 4973d725a3a5993a19989187abddcd4488619725
-    - repo: linuxdeepin/deepin-boot-maker
-      tagsha: ef402f8541e082e180475c1450f73a1c505fd0bb
-    - repo: linuxdeepin/dde-cooperation
-      tagsha: 7ddfe53e45fc5b37e9ab9ce3589e79e6c6724da4
     - repo: linuxdeepin/deepin-picker
       tagsha: 612916f22a525c8b08a373a2df864468a93c1e97
     - repo: linuxdeepin/deepin-fcitx5configtool-plugin
@@ -15,18 +9,10 @@ repos:
       tagsha: 6997316b1a450e06b55ecce97402e64ecf7bb1af
     - repo: linuxdeepin/dde-file-manager
       tagsha: 3600d0392b83e2bc0dd1ce6edc100dcf31ca6c56
-    - repo: linuxdeepin/deepin-scanner
-      tagsha: 0e2be32f3e3a48d64f44da33f7a66c0d8c9471f3
-    - repo: linuxdeepin/deepin-downloader
-      tagsha: 21b7b7a7a7613f9af1c875caac052c04851d6e44
-    - repo: linuxdeepin/deepin-compressor
-      tagsha: 429d657d049c0f115d13f8dbf00b83dadcdaf034
     - repo: linuxdeepin/deepin-deb-installer
       tagsha: 95afdff4a0eb237a5d7b21023a07c54c11345a33
     - repo: linuxdeepin/deepin-ocr
       tagsha: 6c7b4dadda5e8b7bd7e3126cc7b28e8e76784d5e
-    - repo: linuxdeepin/deepin-screen-recorder
-      tagsha: b9695ac88c5202d36f32cbafe802a0daf3a8ba3b
     - repo: linuxdeepin/deepin-movie-reborn
       tagsha: d53a187403834ca0fd6ca3c5d654cc154f97980b
     - repo: linuxdeepin/deepin-system-monitor
@@ -37,12 +23,6 @@ repos:
       tagsha: b5357117f7c752cee2d24d53b9595ceef5aa1188
     - repo: linuxdeepin/deepin-draw
       tagsha: 19598cb468b62ebd9f6ced955ed0aeab8fc78dbb
-    - repo: linuxdeepin/deepin-music
-      tagsha: 0b22a4eb8c0535456a846e5e140f94e51a0ed1ce
-    - repo: linuxdeepin/dde-calendar
-      tagsha: 42617f3e406ceff1a3896325715f2493188a1d58
-    - repo: linuxdeepin/deepin-voice-note
-      tagsha: 6fa03c8a9e7b16a48cf0576f8def16511560f68a
     - repo: linuxdeepin/deepin-font-manager
       tagsha: bacf381f4f2845b0b5faa779453834482d8f8b63
     - repo: linuxdeepin/deepin-calculator
@@ -59,8 +39,6 @@ repos:
       tagsha: 80559410dedac9623d3519312ef06d2d4f7f7446
     - repo: linuxdeepin/deepin-lianliankan
       tagsha: 6141ef41abab062e63c8d3a790d119c3197c9b4a
-    - repo: linuxdeepin/deepin-camera
-      tagsha: 76c771bb3f022a5022ed51b37c4ecad659c71221
     - repo: linuxdeepin/deepin-log-viewer
       tagsha: 3ec9ebe7ec0fa763660ff31440f93ad5d724c2df
     - repo: linuxdeepin/deepin-diskmanager
@@ -87,3 +65,5 @@ repos:
       tagsha: 28083887619c33be8f28d4daba289bb97b753dcf
     - repo: linuxdeepin/deepin-boot-maker
       tagsha: d7c2f32e1783c6df71299a4a85f9178d9f9e8509
+    - repo: linuxdeepin/deepin-album
+      tagsha: cb45a3ddd4866359eb5857b15c828d89eb74029c
