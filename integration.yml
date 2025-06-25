@@ -1,5 +1,5 @@
 message: 'Auto integrate from topic: orge by @xzl01 to V23-Beta3'
-milestone: V23-Beta3
+milestone: v25-Release
 repos:
     - repo: deepin-community/ogre-1.9
       tagsha: 972ebb4e83130747c50440ac20a34c5cb82a1d03
