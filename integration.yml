@@ -1,15 +1,69 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: cd-20250623 by @lzwind to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/deepin-picker
+      tagsha: 612916f22a525c8b08a373a2df864468a93c1e97
+    - repo: linuxdeepin/deepin-fcitx5configtool-plugin
+      tagsha: bac9e494b07929f7672a6edae049124e581d32ac
+    - repo: linuxdeepin/dde-grand-search
+      tagsha: 6997316b1a450e06b55ecce97402e64ecf7bb1af
+    - repo: linuxdeepin/dde-file-manager
+      tagsha: 3600d0392b83e2bc0dd1ce6edc100dcf31ca6c56
+    - repo: linuxdeepin/deepin-deb-installer
+      tagsha: 95afdff4a0eb237a5d7b21023a07c54c11345a33
+    - repo: linuxdeepin/deepin-ocr
+      tagsha: 6c7b4dadda5e8b7bd7e3126cc7b28e8e76784d5e
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: d53a187403834ca0fd6ca3c5d654cc154f97980b
+    - repo: linuxdeepin/deepin-system-monitor
+      tagsha: 9c32857ab4908a3f3fbda102eb1f90d7be012685
+    - repo: linuxdeepin/deepin-image-viewer
+      tagsha: 9d5bfebfe76a6844d0426796bfb125ebfd2c2ee3
+    - repo: linuxdeepin/deepin-album
+      tagsha: b5357117f7c752cee2d24d53b9595ceef5aa1188
+    - repo: linuxdeepin/deepin-draw
+      tagsha: 19598cb468b62ebd9f6ced955ed0aeab8fc78dbb
+    - repo: linuxdeepin/deepin-font-manager
+      tagsha: bacf381f4f2845b0b5faa779453834482d8f8b63
+    - repo: linuxdeepin/deepin-calculator
+      tagsha: 5818ee528abf43ea714fa0ca624f5a200bf33093
+    - repo: linuxdeepin/deepin-reader
+      tagsha: b276bd3eb8b82468f2314f112b05a10c538d695e
+    - repo: linuxdeepin/deepin-editor
+      tagsha: 8f49e35d9f7d1bdb4a375133648b1deca4bf69ff
+    - repo: linuxdeepin/deepin-manual
+      tagsha: 955ad3970efbe76b42889dd6549b3a887dc4490c
+    - repo: linuxdeepin/dde-device-formatter
+      tagsha: cf8019f4bca18c6a0f09f38aea8bc3c216fb53b4
+    - repo: linuxdeepin/deepin-gomoku
+      tagsha: 80559410dedac9623d3519312ef06d2d4f7f7446
+    - repo: linuxdeepin/deepin-lianliankan
+      tagsha: 6141ef41abab062e63c8d3a790d119c3197c9b4a
+    - repo: linuxdeepin/deepin-log-viewer
+      tagsha: 3ec9ebe7ec0fa763660ff31440f93ad5d724c2df
+    - repo: linuxdeepin/deepin-diskmanager
+      tagsha: 473c45186777f211fa255cdb69318e5ae96b8d3a
+    - repo: linuxdeepin/dde-calendar
+      tagsha: 67507a35644f8e99dd43b0ea70d7fb1ff7fadae8
+    - repo: linuxdeepin/deepin-downloader
+      tagsha: f9e233c9a8a11bd37fd57f89901fae139caf2fd5
+    - repo: linuxdeepin/deepin-devicemanager
+      tagsha: 30d0c15b13bc10d54730c09d715351bb3ab19b1f
+    - repo: linuxdeepin/deepin-scanner
+      tagsha: 85509407662a3fd298167b838be992616f9ae5ba
+    - repo: linuxdeepin/deepin-voice-note
+      tagsha: 0b3501030bdd14d046094a149aaeba72266cf819
+    - repo: linuxdeepin/deepin-camera
+      tagsha: 7f6200dd5c50fa697ddbb4e7e22879553c43ee0e
+    - repo: linuxdeepin/deepin-music
+      tagsha: c0f159331d45995e6bef6e39788f37ced9bf449a
+    - repo: linuxdeepin/deepin-screen-recorder
+      tagsha: 56dfc33e53a6f34e312243f9050044d30d36390c
+    - repo: linuxdeepin/deepin-compressor
+      tagsha: 9d54457364a3eef7904e42d1f462e7a3868d0d1e
+    - repo: linuxdeepin/dde-cooperation
+      tagsha: 28083887619c33be8f28d4daba289bb97b753dcf
+    - repo: linuxdeepin/deepin-boot-maker
+      tagsha: d7c2f32e1783c6df71299a4a85f9178d9f9e8509
+    - repo: linuxdeepin/deepin-album
+      tagsha: cb45a3ddd4866359eb5857b15c828d89eb74029c
