@@ -1,7 +1,7 @@
-message: 'Auto integrate from topic: orge by @xzl01 to v25-Release'
+message: 'Auto integrate from topic: orge by @Cryolitia to v25-Release'
 milestone: v25-Release
 repos:
     - repo: deepin-community/ogre-1.9
-      tagsha: e5b2242ac976027a596486dba9bbbe16f78e4ebe
+      tagsha: 387e8d8648828ccd9bb4c1c3966077b6a7c2b2ba
     - repo: deepin-community/ois
       tagsha: 2b8bb48f8148cff2aeb1765f8514e6fc732be9a3
