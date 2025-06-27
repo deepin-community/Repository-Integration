@@ -9,3 +9,5 @@ repos:
       tagsha: b081e93210dc19c814db058ca531cc3e0b439642
     - repo: linuxdeepin/deepin-deb-installer
       tagsha: e442e5afc0d993eb94836270380c325ae4a8345a
+    - repo: linuxdeepin/deepin-downloader
+      tagsha: 99e0ec45a5a28fdc39c666202399134523f07a2a
