@@ -49,3 +49,5 @@ repos:
       tagsha: 83ec04e7114fd3bff3ad6cb09729fe0f14a51bda
     - repo: linuxdeepin/deepin-voice-note
       tagsha: 2191dc6350b3d6583c2fbec75af6773a0747fa8c
+    - repo: linuxdeepin/deepin-system-monitor
+      tagsha: 75f89b9c7cf3ba117c958ae51d60ce83c82259b0
