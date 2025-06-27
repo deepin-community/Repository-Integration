@@ -19,3 +19,5 @@ repos:
       tagsha: c8872e85c4cbc3ab54cd12af2085c7bc309b2eaf
     - repo: linuxdeepin/deepin-draw
       tagsha: 78ce950798080b4b28e129e1e683dcb231b9603c
+    - repo: linuxdeepin/deepin-image-viewer
+      tagsha: a2a6674241f88ea14d948accd2c7ed12767ad5fe
