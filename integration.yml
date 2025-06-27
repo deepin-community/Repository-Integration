@@ -11,3 +11,5 @@ repos:
       tagsha: e442e5afc0d993eb94836270380c325ae4a8345a
     - repo: linuxdeepin/deepin-downloader
       tagsha: 99e0ec45a5a28fdc39c666202399134523f07a2a
+    - repo: linuxdeepin/deepin-log-viewer
+      tagsha: 2e0b3f3cbdc60234a40b28a11b65d5e4e453330c
