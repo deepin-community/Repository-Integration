@@ -47,3 +47,5 @@ repos:
       tagsha: 89215e316015a91ed89365cc4e051cda2d88b94e
     - repo: linuxdeepin/deepin-diskmanager
       tagsha: 83ec04e7114fd3bff3ad6cb09729fe0f14a51bda
+    - repo: linuxdeepin/deepin-voice-note
+      tagsha: 2191dc6350b3d6583c2fbec75af6773a0747fa8c
