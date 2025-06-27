@@ -5,3 +5,5 @@ repos:
       tagsha: 9f52461eb4cd9e3c4730eea7cc6a76769537b706
     - repo: linuxdeepin/docparser
       tagsha: 19beb6c1604455a015402e89d93e28e7ab145273
+    - repo: linuxdeepin/deepin-compressor
+      tagsha: b081e93210dc19c814db058ca531cc3e0b439642
