@@ -31,3 +31,5 @@ repos:
       tagsha: e4c73b767f7d2521d51a24c8d4e458e6bbc441bf
     - repo: linuxdeepin/deepin-scanner
       tagsha: 52389243681d98f9b2a1b20c6db52370a18d4474
+    - repo: linuxdeepin/deepin-anything
+      tagsha: 6cd0738d4848d27bae4a4d615d1c8105a59346f9
