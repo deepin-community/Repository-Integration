@@ -23,3 +23,5 @@ repos:
       tagsha: a2a6674241f88ea14d948accd2c7ed12767ad5fe
     - repo: linuxdeepin/dde-file-manager
       tagsha: a0d2e2e94afc9ada420bde72741083e03ff2dfce
+    - repo: linuxdeepin/dde-grand-search
+      tagsha: 6e98fdb7ca953658a7d627192dd062338dc5f29a
