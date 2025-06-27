@@ -39,3 +39,7 @@ repos:
       tagsha: 6067b7d17c2c7be26f579db97635bb23e4fae6d0
     - repo: linuxdeepin/deepin-font-manager
       tagsha: da79c5ff5dadaf1bc61092930a354fb2c0965489
+    - repo: linuxdeepin/deepin-movie-reborn
+      tagsha: 5a14d685c67aa2e391774113e77229693e1f24d2
+    - repo: linuxdeepin/dde-calendar
+      tagsha: 45c03bb443dca51d55aa53605d01dd3a4e2210d0
