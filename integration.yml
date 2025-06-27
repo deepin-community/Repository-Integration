@@ -7,3 +7,5 @@ repos:
       tagsha: 19beb6c1604455a015402e89d93e28e7ab145273
     - repo: linuxdeepin/deepin-compressor
       tagsha: b081e93210dc19c814db058ca531cc3e0b439642
+    - repo: linuxdeepin/deepin-deb-installer
+      tagsha: e442e5afc0d993eb94836270380c325ae4a8345a
