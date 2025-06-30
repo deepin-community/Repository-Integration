@@ -7,3 +7,5 @@ repos:
       tagsha: 0e357d50f456b2e8563957d7d490a342eb389a5a
     - repo: deepin-community/allegro5
       tagsha: 037f02719581062cfc45f791c3305eec9a8b8b8b
+    - repo: deepin-community/imgui
+      tagsha: d9dcff1e7142f9c06e23357bb403a32db79cb06d
