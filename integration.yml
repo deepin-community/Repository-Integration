@@ -4,4 +4,4 @@ repos:
     - repo: deepin-community/scribus
       tagsha: 34d24ae4ae63a8011ea1f12a5556bbd1e58eb692
     - repo: deepin-community/libpodofo
-      tagsha: 321b954b99bff0037a40dc04c05121bb52e5878e
+      tagsha: 2b802d4e725746303decb50dfdcffd51b9f69fbe
