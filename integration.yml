@@ -1,5 +1,5 @@
 message: 'Auto integrate from topic: tools by @xzl01 to V23-Beta3'
-milestone: V23-Beta3
+milestone: v25-Release
 repos:
     - repo: deepin-community/valgrind
       tagsha: b0a965f2f983089a6d1aa78b8a06aa91c2cd3bdf
