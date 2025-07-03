@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: cron-20250703 by @Cryolitia to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/systemd-cron
+      tagsha: b59a095b56a00b61a76658fa11766b144d3fc0d8
+    - repo: deepin-community/cruft-ng
+      tagsha: d3cc006f4b9973132cd59c626c2a2397a893df17
+    - repo: deepin-community/anacron
+      tagsha: e09dcd4b0687a21c97e863ac0d66f08bd7cd5767
