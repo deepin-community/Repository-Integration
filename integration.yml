@@ -4,8 +4,8 @@ repos:
     - repo: deepin-community/pikopixel
       tagsha: 422dd77f87e1f7c645dedb1e37362f1655b9d13e
     - repo: deepin-community/libicns
-      tagsha: 0ff0381049e6088858445b414a630b78fa011507
+      tagsha: 843223e1c7006f1320e07472271c5af6b31966f6
     - repo: deepin-community/gnustep-gui
-      tagsha: d447b8bd9ebb61945a76dfd8b5a1b05855c14d1c
+      tagsha: 5b38e631c6e829785e83f5da2389f23bdf6e1d20
     - repo: deepin-community/gnustep-back
       tagsha: 2901badcf98dccbd5a02bc6c1a9b07d79b32c445
