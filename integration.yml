@@ -4,7 +4,7 @@ repos:
     - repo: deepin-community/boxed-cpp
       tagsha: 0c906a52d8b5364de4b35b687b034487ef5ee714
     - repo: deepin-community/contour
-      tagsha: 6e7b401fd9d68a82079d553d2316078495942d85
+      tagsha: c867077da29131ccb965a81c61084538b3207c49
     - repo: deepin-community/reflection-cpp
       tagsha: 5107cbc255179116cc02062bb3f82195c8cb7554
     - repo: deepin-community/libunicode
