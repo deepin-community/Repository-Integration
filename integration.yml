@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: pikopixel by @calsym456 to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/pikopixel
+      tagsha: 422dd77f87e1f7c645dedb1e37362f1655b9d13e
+    - repo: deepin-community/libicns
+      tagsha: 0ff0381049e6088858445b414a630b78fa011507
+    - repo: deepin-community/gnustep-gui
+      tagsha: d447b8bd9ebb61945a76dfd8b5a1b05855c14d1c
+    - repo: deepin-community/gnustep-back
+      tagsha: 2901badcf98dccbd5a02bc6c1a9b07d79b32c445
