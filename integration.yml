@@ -8,4 +8,4 @@ repos:
     - repo: deepin-community/gnustep-gui
       tagsha: 5b38e631c6e829785e83f5da2389f23bdf6e1d20
     - repo: deepin-community/gnustep-back
-      tagsha: 2901badcf98dccbd5a02bc6c1a9b07d79b32c445
+      tagsha: 454cd99d7da846eb05f01cdc69ba555ad335114b
