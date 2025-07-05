@@ -8,6 +8,6 @@ repos:
     - repo: deepin-community/reflection-cpp
       tagsha: 5107cbc255179116cc02062bb3f82195c8cb7554
     - repo: deepin-community/libunicode
-      tagsha: 6e05268a8d715b388d7f8f26c212b1c323dcc4c3
+      tagsha: dfc5cf24034b7c755b4527a6b6d7456b2abe15fe
     - repo: deepin-community/ms-gsl
       tagsha: e75eb293fffab10ce570a184a33c15546e66a52b
