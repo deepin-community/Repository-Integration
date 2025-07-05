@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: contour by @calsym456 to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/boxed-cpp
+      tagsha: 0c906a52d8b5364de4b35b687b034487ef5ee714
+    - repo: deepin-community/contour
+      tagsha: 24a9bea3f79a9a5b9b27cd6a12a6d73492600e4f
+    - repo: deepin-community/reflection-cpp
+      tagsha: 5107cbc255179116cc02062bb3f82195c8cb7554
+    - repo: deepin-community/libunicode
+      tagsha: dfc5cf24034b7c755b4527a6b6d7456b2abe15fe
+    - repo: deepin-community/ms-gsl
+      tagsha: e75eb293fffab10ce570a184a33c15546e66a52b
