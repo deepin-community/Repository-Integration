@@ -6,6 +6,6 @@ repos:
     - repo: deepin-community/vkroots
       tagsha: 8cff01eac97916216a2dd0c7649297c4d6b743e9
     - repo: deepin-community/eiskaltdcpp
-      tagsha: 9b4994d818ec33b3511c1952004e9fede76a07e0
+      tagsha: 70be3220f50f57c8be3e589d00d94f0cd9f24b6e
     - repo: deepin-community/libliftoff
       tagsha: fe1b1e5877686265a53362834ac3bde842cf8f0b
