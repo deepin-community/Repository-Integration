@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: gamescope by @Cryolitia to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/gamescope
+      tagsha: 2e149e50fac90577b21992e931c24348b0c53f5b
+    - repo: deepin-community/vkroots
+      tagsha: 8cff01eac97916216a2dd0c7649297c4d6b743e9
+    - repo: deepin-community/eiskaltdcpp
+      tagsha: 9b4994d818ec33b3511c1952004e9fede76a07e0
+    - repo: deepin-community/libliftoff
+      tagsha: fe1b1e5877686265a53362834ac3bde842cf8f0b
