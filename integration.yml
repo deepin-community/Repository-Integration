@@ -6,4 +6,4 @@ repos:
     - repo: deepin-community/cruft-ng
       tagsha: d3cc006f4b9973132cd59c626c2a2397a893df17
     - repo: deepin-community/anacron
-      tagsha: e09dcd4b0687a21c97e863ac0d66f08bd7cd5767
+      tagsha: a3a966a3bc812fe56b532a4c42ed30fabdee1f6e
