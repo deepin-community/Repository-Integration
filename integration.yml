@@ -7,3 +7,5 @@ repos:
       tagsha: ece4a7738b6400eea48052b99d69daef60cf31bf
     - repo: deepin-community/godot
       tagsha: acee9f77f6f62beef3ed164c76d40ddc9eb99409
+    - repo: deepin-community/enet
+      tagsha: fd1079ee031a6dab5a5ab87c357c4fcfd49ae082
