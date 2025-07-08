@@ -6,4 +6,4 @@ repos:
     - repo: deepin-community/wslay
       tagsha: ece4a7738b6400eea48052b99d69daef60cf31bf
     - repo: deepin-community/godot
-      tagsha: 95dfeec139cb4ff649e2f61c13a7c127ca61488a
+      tagsha: acee9f77f6f62beef3ed164c76d40ddc9eb99409
