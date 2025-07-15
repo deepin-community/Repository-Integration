@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: rpm-20250715 by @qaqland to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/rust-ed25519
+      tagsha: 879371adeda53fcbbb17770828388b19b0bc071d
+    - repo: deepin-community/rust-curve25519-dalek
+      tagsha: 3c983120749e489fc7907a1a456157d3fa7d9f65
+    - repo: deepin-community/rust-sequoia-policy-config
+      tagsha: 3612c0a0b0fb70a863800fda942079557fd829c2
+    - repo: deepin-community/rust-cdylib-link-lines
+      tagsha: 91e93fa572ebb060b52776e9557f33a92ccf7df7
+    - repo: deepin-community/rust-rpm-sequoia
+      tagsha: a2b00d3382440c89ebc2f1b1f9d21d3fc2917229
+    - repo: deepin-community/utf8-locale
+      tagsha: bee2152ad28fe03b3d767ddd0656e1ff11235d76
+    - repo: deepin-community/fsverity-utils
+      tagsha: 632e282ed7ee69a7efc0a07a612914cdcc42402b
+    - repo: deepin-community/rpm
+      tagsha: 521a16cce4d3f83fcd813cc3f1895cce33375825
