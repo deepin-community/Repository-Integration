@@ -15,5 +15,7 @@ repos:
       tagsha: bee2152ad28fe03b3d767ddd0656e1ff11235d76
     - repo: deepin-community/fsverity-utils
       tagsha: 632e282ed7ee69a7efc0a07a612914cdcc42402b
+    - repo: deepin-community/rust-sequoia-openpgp
+      tagsha: 72ee4b337afb522e088c11e9f0412b061aeba599
     - repo: deepin-community/rpm
-      tagsha: 521a16cce4d3f83fcd813cc3f1895cce33375825
+      tagsha: 6a52b457aae0de47831a15666f05170efb9740df
