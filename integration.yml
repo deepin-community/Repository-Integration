@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: qbittorrent by @apr3vau to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libtorrent-rasterbar
+      tagsha: 18690a391e26f7f7239a258c5e5bc8988e5d2ad5
+    - repo: deepin-community/qbittorrent
+      tagsha: 881f131d922a49f5dcbeb6a00815f2511104feb3
