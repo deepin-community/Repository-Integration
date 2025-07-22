@@ -10,12 +10,24 @@ repos:
     - repo: deepin-community/dpdk
       tagsha: c3039d7de6c55731c2c8321b082dad617ace2a85
     - repo: deepin-community/xdp-tools
-      tagsha: 0727a09a785aa6e738273fbeb5319cac7d79175f
-    - repo: deepin-community/xdp-tools
       tagsha: d28bdaf57b4f3cb7be53f34b848d3442a426e96d
     - repo: deepin-community/gqrx-sdr
       tagsha: 42aeaa39bd3fa360e0c01b32a77de98c1ccc1fa0
     - repo: deepin-community/libiio
       tagsha: a084bc1521411d403ee00e94f50a451fbdff1d64
-    - repo: deepin-community/gr-osmosdr
-      tagsha: 5a1aa13ae70b0ddf91d83e087b79a90cb05b883c
+    - repo: deepin-community/libxtrx
+      tagsha: 334d513d989ea4c3293ccf7dac554c8762426b16
+    - repo: deepin-community/bladerf
+      tagsha: c2b52608abdffa9accbc193e0fbc4e90b6027452
+    - repo: deepin-community/libxtrxll
+      tagsha: 5b770d039121a6aa286debc724a0d9dd209314a9
+    - repo: deepin-community/python-pyqtgraph
+      tagsha: 215270ddcc3b9ba33ed1d11bfc62820f881c5f96
+    - repo: deepin-community/libtecla
+      tagsha: cb1571ac63a04aacfcafece1d7beb30dc7d45865
+    - repo: deepin-community/sphinx-qt-documentation
+      tagsha: ed2657f0cd38144b70127d1d73466092338b7795
+    - repo: deepin-community/libusb3380
+      tagsha: 98f185e0864c26a19f5d60ae228b8a19ab560b57
+    - repo: deepin-community/uhd
+      tagsha: 5b467da64300e0a525d2ef69a2a792a52fe2e579
