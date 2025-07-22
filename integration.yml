@@ -21,8 +21,6 @@ repos:
       tagsha: c2b52608abdffa9accbc193e0fbc4e90b6027452
     - repo: deepin-community/libxtrxll
       tagsha: 5b770d039121a6aa286debc724a0d9dd209314a9
-    - repo: deepin-community/python-pyqtgraph
-      tagsha: 215270ddcc3b9ba33ed1d11bfc62820f881c5f96
     - repo: deepin-community/libtecla
       tagsha: cb1571ac63a04aacfcafece1d7beb30dc7d45865
     - repo: deepin-community/sphinx-qt-documentation
