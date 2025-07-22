@@ -15,3 +15,5 @@ repos:
       tagsha: d28bdaf57b4f3cb7be53f34b848d3442a426e96d
     - repo: deepin-community/gqrx-sdr
       tagsha: 42aeaa39bd3fa360e0c01b32a77de98c1ccc1fa0
+    - repo: deepin-community/libiio
+      tagsha: a084bc1521411d403ee00e94f50a451fbdff1d64
