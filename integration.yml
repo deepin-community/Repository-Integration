@@ -1,8 +1,8 @@
-message: 'Auto integrate from topic: blender-20250407-lhdjply by @lhdjply to V23-Beta3'
-milestone: V23-Beta3
+message: 'Auto integrate from topic: blender-20250407-lhdjply by @lhdjply to v25-Release'
+milestone: v25-Release
 repos:
     - repo: deepin-community/blender
-      tagsha: f2e6d0046d93a38cea20dc49a1729a889d8d962e
+      tagsha: 7548aa101fe7e317cd3da2faba10c306c1091ff6
     - repo: deepin-community/openxr-sdk-source
       tagsha: d870bdda6b2f2cd5bd5f305bd9fa410f88951085
     - repo: deepin-community/fftw3
