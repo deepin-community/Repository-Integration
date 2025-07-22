@@ -17,3 +17,5 @@ repos:
       tagsha: 42aeaa39bd3fa360e0c01b32a77de98c1ccc1fa0
     - repo: deepin-community/libiio
       tagsha: a084bc1521411d403ee00e94f50a451fbdff1d64
+    - repo: deepin-community/gr-osmosdr
+      tagsha: 5a1aa13ae70b0ddf91d83e087b79a90cb05b883c
