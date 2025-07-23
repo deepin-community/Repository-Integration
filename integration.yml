@@ -2,6 +2,6 @@ message: 'Auto integrate from topic: qbittorrent by @apr3vau to v25-Release'
 milestone: v25-Release
 repos:
     - repo: deepin-community/libtorrent-rasterbar
-      tagsha: 18690a391e26f7f7239a258c5e5bc8988e5d2ad5
+      tagsha: 8e337ad14d6d80ee9f9e9bde53ed9ac6975fac48
     - repo: deepin-community/qbittorrent
       tagsha: 881f131d922a49f5dcbeb6a00815f2511104feb3
