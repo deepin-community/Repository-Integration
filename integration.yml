@@ -15,3 +15,7 @@ repos:
       tagsha: 17f9d40b13647af45eff3b5edd526d3d5eebe2cd
     - repo: deepin-community/vulkan-validationlayers
       tagsha: ef0e445c343b5a7a6fd8a9132527daea03c195c5
+    - repo: deepin-community/khronos-api
+      tagsha: ee3da0be4f59dc682f7f125582a6f20b93541f58
+    - repo: deepin-community/wine
+      tagsha: 4d5b03aff9da6290c3fb2dbb8f4db47b0b387f4a
