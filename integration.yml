@@ -18,6 +18,6 @@ repos:
     - repo: deepin-community/khronos-api
       tagsha: ee3da0be4f59dc682f7f125582a6f20b93541f58
     - repo: deepin-community/wine
-      tagsha: 4d5b03aff9da6290c3fb2dbb8f4db47b0b387f4a
+      tagsha: 38a35de6976aeafc2625b4064669be8eee36dc16
     - repo: deepin-community/mesa
       tagsha: ea568ae3962302f36b61fe41a98b236a2f1e8d5b
