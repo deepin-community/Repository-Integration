@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: vk1.4 by @YukariChiba to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/shaderc
+      tagsha: 1327f8ff983cfeb772a6ae9bd4ea6e5e452c698e
+    - repo: deepin-community/glslang
+      tagsha: e01582f213d1764c36a7af873a219481978e678d
+    - repo: deepin-community/vulkan-validationlayers
+      tagsha: ef0e445c343b5a7a6fd8a9132527daea03c195c5
