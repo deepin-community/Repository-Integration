@@ -1,11 +1,17 @@
 message: 'Auto integrate from topic: vk1.4 by @YukariChiba to v25-Release'
 milestone: v25-Release
 repos:
+    - repo: deepin-community/vulkan-loader
+      tagsha: 0dc4b2209a9c83fb57dd1517288113defa1fece2
+    - repo: deepin-community/vulkan-utility-libraries
+      tagsha: c0f3649d235fb36312ce1957673a7d2ee52df9f4
     - repo: deepin-community/shaderc
       tagsha: 1327f8ff983cfeb772a6ae9bd4ea6e5e452c698e
-    - repo: deepin-community/glslang
-      tagsha: e01582f213d1764c36a7af873a219481978e678d
-    - repo: deepin-community/vulkan-validationlayers
-      tagsha: ef0e445c343b5a7a6fd8a9132527daea03c195c5
     - repo: deepin-community/spirv-tools
       tagsha: 054afdc61776915b9d5f6e759f978f71458855df
+    - repo: deepin-community/glslang
+      tagsha: e01582f213d1764c36a7af873a219481978e678d
+    - repo: deepin-community/spirv-headers
+      tagsha: 17f9d40b13647af45eff3b5edd526d3d5eebe2cd
+    - repo: deepin-community/vulkan-validationlayers
+      tagsha: ef0e445c343b5a7a6fd8a9132527daea03c195c5
