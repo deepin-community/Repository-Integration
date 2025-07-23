@@ -4,6 +4,6 @@ repos:
     - repo: deepin-community/blender
       tagsha: 7548aa101fe7e317cd3da2faba10c306c1091ff6
     - repo: deepin-community/openxr-sdk-source
-      tagsha: d870bdda6b2f2cd5bd5f305bd9fa410f88951085
+      tagsha: 4c3c1ec088bfe8989238bd6623f0c37dd95c306d
     - repo: deepin-community/fftw3
       tagsha: 0873792bea5b910cb4df4a1f2a3ec979afed2e00
