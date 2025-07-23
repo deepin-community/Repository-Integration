@@ -8,4 +8,4 @@ repos:
     - repo: deepin-community/musescore-general-soundfont-small
       tagsha: 9c2d5adbfcff289715815edb910e51ee8d952c4f
     - repo: deepin-community/musescore3
-      tagsha: e737d99b11ea185010df12ed387df0de69abaff3
+      tagsha: d778eb8386febd4088192427ef4b4a81ab3d2f69
