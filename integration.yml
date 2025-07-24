@@ -5,3 +5,5 @@ repos:
       tagsha: 5f6ed3f9afce7180ecde2d573c5a8d69e113cd90
     - repo: deepin-community/nv-codec-headers
       tagsha: e8f86b3589187ee8008c6c7b010788492ff57133
+    - repo: deepin-community/simde
+      tagsha: 77dc4ba4e886fe5082714ec85a56a2a5f18068c6
