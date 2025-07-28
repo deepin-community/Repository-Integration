@@ -7,3 +7,5 @@ repos:
       tagsha: 6ae823b996342ee545bc766b09ca706761fb75bd
     - repo: deepin-community/libspng
       tagsha: a96e35c8eda3d352f201b3e402507d08efb71a49
+    - repo: deepin-community/node-popper2
+      tagsha: 53b0b4c065a5b36e5de7f657f4d654b261c810e5
