@@ -17,3 +17,7 @@ repos:
       tagsha: 4567be402a236f0788f9191cd053b3b85eb93a23
     - repo: deepin-community/libunibreak
       tagsha: 005869564a0a63e9cc693622638df03304a1386e
+    - repo: deepin-community/sdl12-compat
+      tagsha: c54c5e750e1ac3419725df8407edbab768df93be
+    - repo: deepin-community/xine-lib-1.2
+      tagsha: 28bec03c932d8a52c81e6589da82593e1109fb22
