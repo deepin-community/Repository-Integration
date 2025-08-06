@@ -20,4 +20,4 @@ repos:
     - repo: deepin-community/sdl12-compat
       tagsha: c54c5e750e1ac3419725df8407edbab768df93be
     - repo: deepin-community/xine-lib-1.2
-      tagsha: 28bec03c932d8a52c81e6589da82593e1109fb22
+      tagsha: 2a9ea264b9f60e1db666fab0ce39a04ab86b5f2a
