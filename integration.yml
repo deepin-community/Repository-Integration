@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: linyaps-20250811 by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/linyaps-box
+      tagsha: ce36d7d325c0667307b1e276e54f53eb96164fcd
+    - repo: deepin-community/linyaps
+      tagsha: 3d02589096b5350c3bceeb3e5853339bdf4a0ffc
