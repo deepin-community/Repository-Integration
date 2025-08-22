@@ -21,3 +21,5 @@ repos:
       tagsha: d9c7c22c3d71c6daaf864c712742145811186cdf
     - repo: deepin-community/golang-github-checkpoint-restore-go-criu
       tagsha: 14c9fdf05a2c099606e2218952ad07c6faf154ac
+    - repo: deepin-community/podman
+      tagsha: 7fd5d1d7c2df1022a1306411e135ff9ff94e9b43
