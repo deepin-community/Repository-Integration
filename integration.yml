@@ -1,15 +1,23 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: golang-20250822 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/golang-github-containers-buildah
+      tagsha: a799439a2e9f2d5344493fc90f306568d42596e6
+    - repo: deepin-community/golang-github-containers-image
+      tagsha: cd8bf7aaffc7b3fee3ed01b551451e1359633334
+    - repo: deepin-community/golang-github-containers-storage
+      tagsha: 94d428d92717f0aa7b096818bd09f0f91396872f
+    - repo: deepin-community/golang-github-containers-common
+      tagsha: 7b5f5159c1e9d66cb93e3a33cfd1acf54724ddd4
+    - repo: deepin-community/golang-github-openshift-imagebuilder
+      tagsha: 88d3852dd4a46622136595fb0a62c002377a92de
+    - repo: deepin-community/golang-github-fsouza-go-dockerclient
+      tagsha: b09aa5a1b676e65bd87924a0e42fe9046878fde7
+    - repo: deepin-community/golang-github-vbatts-tar-split
+      tagsha: bb349ef7c40621bae0a384a63cad1d32ba2b6098
+    - repo: deepin-community/golang-github-checkpoint-restore-checkpointctl
+      tagsha: a567a10824e6facba528a5cf35a9c100f74c082a
+    - repo: deepin-community/golang-github-imdario-mergo
+      tagsha: d9c7c22c3d71c6daaf864c712742145811186cdf
+    - repo: deepin-community/golang-github-checkpoint-restore-go-criu
+      tagsha: 14c9fdf05a2c099606e2218952ad07c6faf154ac
