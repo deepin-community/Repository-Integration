@@ -39,3 +39,5 @@ repos:
       tagsha: ed9a79e56f8fff54b3d7845e7f85b5b406f0daa9
     - repo: deepin-community/libnginx-mod-http-upstream-fair
       tagsha: b7f6b03754e2fc5b2a5598374320071f883beed5
+    - repo: deepin-community/libnginx-mod-http-dav-ext
+      tagsha: f1916a5633df608c38d4c56086fb532ce815ef32
