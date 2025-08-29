@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: virtualbox-7.2.0 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/virtualbox
+      tagsha: 0ec770a400622c195317196957f0475c615cc4ad
+    - repo: deepin-community/virtualbox-ext-pack
+      tagsha: fd509a4e411bb7d0aee0de7d1104f8a26c9f9256
+    - repo: deepin-community/virtualbox-guest-additions-iso
+      tagsha: 9b7a8cc44b3c9d0d4d116366ead552f05befb39a
