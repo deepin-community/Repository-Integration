@@ -7,3 +7,5 @@ repos:
       tagsha: fd509a4e411bb7d0aee0de7d1104f8a26c9f9256
     - repo: deepin-community/virtualbox-guest-additions-iso
       tagsha: 9b7a8cc44b3c9d0d4d116366ead552f05befb39a
+    - repo: deepin-community/kbuild
+      tagsha: ecb67601af14ee1fe585f40d8f18a3d72b166516
