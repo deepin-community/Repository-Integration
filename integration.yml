@@ -11,3 +11,5 @@ repos:
       tagsha: cd8ff911eec5077e3578045be0dbdbfe8d86674d
     - repo: deepin-community/borgbackup2
       tagsha: 140dec3716bb8f83ae3392538b9bc8dd9b7ebd7f
+    - repo: deepin-community/setuptools
+      tagsha: 896714f92d83b57ceb596eca05e9c501f277ccfe
