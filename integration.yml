@@ -21,3 +21,5 @@ repos:
       tagsha: 5ddcdf7affcf4cda40b30d32bdccfadb7ecffe28
     - repo: deepin-community/tox
       tagsha: 4210b32c323b9e7696290fdffd8f83ade30ac45c
+    - repo: deepin-community/platformdirs
+      tagsha: d9b1b316a82db324c97579981e1fd2bcf80aa3e3
