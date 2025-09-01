@@ -15,3 +15,7 @@ repos:
       tagsha: 896714f92d83b57ceb596eca05e9c501f277ccfe
     - repo: deepin-community/wheel
       tagsha: cc75175945507366a6770201a6b3bd5cb54ad94e
+    - repo: deepin-community/python-pyproject-hooks
+      tagsha: 5520f09c9f0dd541de00d262fc95734466e95ad5
+    - repo: deepin-community/flit
+      tagsha: 5ddcdf7affcf4cda40b30d32bdccfadb7ecffe28
