@@ -23,3 +23,5 @@ repos:
       tagsha: 4210b32c323b9e7696290fdffd8f83ade30ac45c
     - repo: deepin-community/platformdirs
       tagsha: d9b1b316a82db324c97579981e1fd2bcf80aa3e3
+    - repo: deepin-community/python-packaging
+      tagsha: f35c444ffd4306113729b2531f73cfb0883a7cc2
