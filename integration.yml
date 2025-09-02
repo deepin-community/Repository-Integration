@@ -15,3 +15,5 @@ repos:
       tagsha: 55fbcd2803a5415a520534642abe417cd428df12
     - repo: deepin-community/golang-github-humanlogio-humanlog
       tagsha: e3d50321dad787895792c99fcda2c67de6c3109a
+    - repo: deepin-community/golang-github-jesseduffield-kill
+      tagsha: e97f758a6dc39b52ba4a78615769c2f5f8afd710
