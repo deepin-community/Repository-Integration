@@ -1,15 +1,39 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: imagemagick-7 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/converseen
+      tagsha: fa4fb9d38005865c19187c334a6aa6f959b1a54e
+    - repo: deepin-community/rss-glx
+      tagsha: e89ba86fda037259da7a136cb832b97a9e9afffa
+    - repo: deepin-community/blockdiag
+      tagsha: 65a2e5ee2df832008adafc633a97efe10d93842c
+    - repo: deepin-community/ikiwiki
+      tagsha: 7c3fef5c48e4bd7ee782f01df877ef70118659cd
+    - repo: deepin-community/node-browserify-zlib
+      tagsha: 1273c367658c3053c8998e4f539a99240fd7b2b5
+    - repo: deepin-community/pstoedit
+      tagsha: 803428ba88e6b6f642f353b030f672b7feef244f
+    - repo: deepin-community/vips
+      tagsha: 8168b13c2db52bc875a93a293f26e8d57d8f8f0d
+    - repo: deepin-community/wand
+      tagsha: c3bbfdde42b1d7e95009e03e124ac54a48e7b7c9
+    - repo: deepin-community/zbar
+      tagsha: 0d0eeea3529250631d84c300d60dfc1e1de5a95c
+    - repo: deepin-community/odr-padenc
+      tagsha: bcbeff245921f48baa1847d959427c816df5971f
+    - repo: deepin-community/php-imagick
+      tagsha: 9401cba2af59c8e006942678ecfcf8de4f574f19
+    - repo: deepin-community/pqiv
+      tagsha: a14ecc0aee8e0f53a3786ff12215fe1c60f16404
+    - repo: deepin-community/r-cran-magick
+      tagsha: 13044cecb06909d002600c0cb8dc2d6c8eb71254
+    - repo: deepin-community/ruby-rmagick
+      tagsha: 89cbbea48a899eee0eb9e3c2bed4c4c2aa352e84
+    - repo: deepin-community/virtuoso-opensource
+      tagsha: 17a18f6f4a052d41ee295d5a565029aa1e754be3
+    - repo: deepin-community/wmaker
+      tagsha: 0a9474cef39ac64a30f64900d72e687418c7e4c6
+    - repo: deepin-community/dmtx-utils
+      tagsha: 7f9420e4aef14c0390f2b91ddd56ffb8a30e28ce
+    - repo: deepin-community/imagemagick
+      tagsha: df2897fdbbe467a62b748fd4a2241c75ef3e583e
