@@ -36,4 +36,4 @@ repos:
     - repo: deepin-community/dmtx-utils
       tagsha: 7f9420e4aef14c0390f2b91ddd56ffb8a30e28ce
     - repo: deepin-community/imagemagick
-      tagsha: df2897fdbbe467a62b748fd4a2241c75ef3e583e
+      tagsha: 5cd66abcaf53a91d0b756020a6a80b370fce05a0
