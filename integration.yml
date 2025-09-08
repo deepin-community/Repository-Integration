@@ -21,8 +21,6 @@ repos:
       tagsha: 0d0eeea3529250631d84c300d60dfc1e1de5a95c
     - repo: deepin-community/odr-padenc
       tagsha: bcbeff245921f48baa1847d959427c816df5971f
-    - repo: deepin-community/php-imagick
-      tagsha: 9401cba2af59c8e006942678ecfcf8de4f574f19
     - repo: deepin-community/pqiv
       tagsha: a14ecc0aee8e0f53a3786ff12215fe1c60f16404
     - repo: deepin-community/r-cran-magick
@@ -36,4 +34,4 @@ repos:
     - repo: deepin-community/dmtx-utils
       tagsha: 7f9420e4aef14c0390f2b91ddd56ffb8a30e28ce
     - repo: deepin-community/imagemagick
-      tagsha: 5cd66abcaf53a91d0b756020a6a80b370fce05a0
+      tagsha: 5f9773ecc81d63f840602aec2772797c54e55f22
