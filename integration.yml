@@ -3,3 +3,5 @@ milestone: v25-Release
 repos:
     - repo: deepin-community/python-dbusmock
       tagsha: fe99dfad218623fe697db0d66a225f4b3066ad22
+    - repo: deepin-community/xdg-desktop-portal
+      tagsha: 8c2f2f8860248f8934a55180d64f0e03bf2eebdc
