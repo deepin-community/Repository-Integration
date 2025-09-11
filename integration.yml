@@ -1,4 +1,5 @@
 message: Update deepin-keyring 2025.08.12
+milestone: v25-Release
 repos:
   - repo: linuxdeepin/deepin-keyring
     tagsha: "f81987d18560c92b3a62ac54ae21c5922ac6f167"
