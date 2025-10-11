@@ -1,5 +1,5 @@
-message: 'Auto integrate from topic: docker-compose-v2 by @UTsweetyfish to V23-Beta3'
-milestone: V23-Beta3
+message: 'Auto integrate from topic: docker-compose-v2 by @Zeno-sole to v25-Release'
+milestone: v25-Release
 repos:
     - repo: deepin-community/golang-github-mattn-go-runewidth
       tagsha: 13ebace982c13a3be94a0b83b9fa0cb2aad194f1
