@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Migrate to html2text 2.x, which dropped the -pretty flag. Closes: #1064737. by
+  UTsweetyfish@deepin-community/python3-defaults
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/python3-defaults
+    tagsha: 153d1f85c4809cb044face7ebec960df0d204986
+timestamp: 1760508579946
