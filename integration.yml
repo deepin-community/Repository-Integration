@@ -1,15 +1,23 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: dtk-cpv20 by @18202781743 to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dtkcore
+      tagsha: b90fc7edae6ae7bb28766edc2b29691009682b19
+    - repo: linuxdeepin/dtkgui
+      tagsha: 49add8b8793191b1951f94cc53dbde879af27fe6
+    - repo: linuxdeepin/qt5integration
+      tagsha: 5797db48e5c4eb1c1c81680d15e42cf522c66e0b
+    - repo: linuxdeepin/qt6integration
+      tagsha: 305596c54c70500da10d2997a92edc0ee8498b0f
+    - repo: linuxdeepin/dtk6core
+      tagsha: 5847dec3dc9dc66fb83cc338df1e9bd3c5e5f110
+    - repo: linuxdeepin/dtkwidget
+      tagsha: 683c16f637050c025703284a16f8f6dd992f5975
+    - repo: linuxdeepin/dtk6widget
+      tagsha: b9b83f3dec6fe64d86535e15b5244628716b83bc
+    - repo: linuxdeepin/qt6platform-plugins
+      tagsha: fcde5ddd8540685b8fbf25ad7f980b3701ebf2bb
+    - repo: linuxdeepin/qt5platform-plugins
+      tagsha: 73dc3d92541e4370086d0171dea7b8e1b63615c0
+    - repo: linuxdeepin/dtk6gui
+      tagsha: 4cecfc77b852d809cbe5627eb2a82ce38229e4d9
