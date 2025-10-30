@@ -1,5 +1,6 @@
-message: 'Auto integrate from topic: perl-20250307 by @UTsweetyfish to V23-Beta3'
-milestone: V23-Beta3
+message: 'Auto integrate from topic: perl-20250307 by @UTsweetyfish'
+milestone: v25-Release
+timestamp: 1761792087290
 repos:
     - repo: deepin-community/perltidy
       tagsha: 1b902f9c42c27c01d4e628edfe0b76e755691d8f
