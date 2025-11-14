@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: incus-6.0.4 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/incus
+      tagsha: 0620de570d2a13beb8a258e07e56064de3020e8f
+    - repo: deepin-community/incus
+      tagsha: d02c11c4474617e060c5a22f1b9800616bd9705d
