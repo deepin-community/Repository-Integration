@@ -2,6 +2,4 @@ message: 'Auto integrate from topic: incus-6.0.4 by @UTsweetyfish to v25-Release
 milestone: v25-Release
 repos:
     - repo: deepin-community/incus
-      tagsha: 0620de570d2a13beb8a258e07e56064de3020e8f
-    - repo: deepin-community/incus
-      tagsha: d02c11c4474617e060c5a22f1b9800616bd9705d
+      tagsha: 1c86eb43a4b6b40ef9e5253fb42e5eaf24676c3a
