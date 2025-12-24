@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Fix: fix CVE-2022-33065 CVE-2024-50612 CVE-2021-4156 by
+  zengwei00@deepin-community/libsndfile
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libsndfile
+    tagsha: 1d49eea29fe3a4f22dd4cf13b27e31e2d2826033
+timestamp: 1766559436696
