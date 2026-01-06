@@ -12,6 +12,10 @@ repos:
     - repo: linuxdeepin/dtkcommon
       tagsha: a89ddf1a7d98a356abf09e3fc74b1c1b56216a1c
     - repo: linuxdeepin/qt5integration
-      tagsha: 5100c135970b64863e64cf1114cd2266fd3a69a8
+      tagsha: 50a7de291db3741617fb5ff5341bd270bcec87af
     - repo: linuxdeepin/qt5platform-plugins
-      tagsha: 808386769a44aa85d10db6c4505370f031c939f7
+      tagsha: 13d67525a277b58bce947bbcbdc6b5abf9dc5d1c
+    - repo: linuxdeepin/qt5platform-plugins
+      tagsha: 25335eb299b16f44c66ae4cd7f946a5beae2a86e
+    - repo: linuxdeepin/qt5integration
+      tagsha: f43af335c18a54e5f5e8768a51e5672e012c62fe
