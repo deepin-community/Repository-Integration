@@ -19,3 +19,5 @@ repos:
       tagsha: 25335eb299b16f44c66ae4cd7f946a5beae2a86e
     - repo: linuxdeepin/qt5integration
       tagsha: f43af335c18a54e5f5e8768a51e5672e012c62fe
+    - repo: linuxdeepin/dtklog
+      tagsha: 0f1fb21c4675e178c13c9d1d0bac21948f5bd11b
