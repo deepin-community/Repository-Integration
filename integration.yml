@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: dtk-unify by @18202781743 to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: linuxdeepin/dtkcore
+      tagsha: 234e05709352b3f17fdc2a720eba1f2b7324d0a1
+    - repo: linuxdeepin/dtkgui
+      tagsha: 7d816ae9ceda7e1ebb65e54fdbde7baa465a3ce5
+    - repo: linuxdeepin/dtkwidget
+      tagsha: 1ffdfa3fcdb8e950181a21042e9db6e87c8e4618
+    - repo: linuxdeepin/dtkdeclarative
+      tagsha: c82c87239da6afa7bbc2b65e16a7a419b01f5921
+    - repo: linuxdeepin/dtkcommon
+      tagsha: a89ddf1a7d98a356abf09e3fc74b1c1b56216a1c
+    - repo: linuxdeepin/qt5integration
+      tagsha: 5100c135970b64863e64cf1114cd2266fd3a69a8
+    - repo: linuxdeepin/qt5platform-plugins
+      tagsha: 808386769a44aa85d10db6c4505370f031c939f7
