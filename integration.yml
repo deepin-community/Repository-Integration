@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: pipewire-20260129 by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libcamera
+      tagsha: 9c5e980028c8f70782aec656581fee11726c2cd8
+    - repo: deepin-community/pipewire
+      tagsha: 4ce1ab52b48e13f16318a333308244b5b56bd9f0
+    - repo: deepin-community/roc-toolkit
+      tagsha: 87a2ea38ecae016521701c7e812e82b09011995f
+    - repo: deepin-community/openfec
+      tagsha: 1f92afcbfbffb3e0a6e54acd39b0a80130cb4705
