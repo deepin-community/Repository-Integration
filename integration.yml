@@ -9,3 +9,13 @@ repos:
       tagsha: 87a2ea38ecae016521701c7e812e82b09011995f
     - repo: deepin-community/openfec
       tagsha: 1f92afcbfbffb3e0a6e54acd39b0a80130cb4705
+    - repo: deepin-community/alsa-lib
+      tagsha: fe25abea4454d78de10d318e65161f3737b16b1e
+    - repo: deepin-community/alsa-ucm-conf
+      tagsha: 84483ca1cc780bb4dd8b4de63a66f79235552168
+    - repo: deepin-community/alsa-utils
+      tagsha: 7bcc3d7ded799d376c424a04df8d109a58db63e9
+    - repo: deepin-community/sphinxcontrib-doxylink
+      tagsha: de0491999583fdd90d13db6f39a722c57b0bfc84
+    - repo: deepin-community/onnx
+      tagsha: 758ded6b2311493afb80096a1d15b960bfef138b
