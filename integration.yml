@@ -19,3 +19,31 @@ repos:
       tagsha: de0491999583fdd90d13db6f39a722c57b0bfc84
     - repo: deepin-community/onnx
       tagsha: 758ded6b2311493afb80096a1d15b960bfef138b
+    - repo: deepin-community/onnxruntime
+      tagsha: 26689835fa0203fd2fb44b680592ac5368f0f175
+    - repo: deepin-community/cpuinfo
+      tagsha: eb5278c3357a092a37205fb09d31681eed704878
+    - repo: deepin-community/dlpack
+      tagsha: 3570cc964c121efa916acc09b216df71e7ebf9a2
+    - repo: deepin-community/ms-gsl
+      tagsha: 03b45001d94a6314fa36b9433532eb10a78d0ff5
+    - repo: deepin-community/pthreadpool
+      tagsha: 3ee6b2438f302a56777f953e0608c853d7ff536d
+    - repo: deepin-community/fxdiv
+      tagsha: b3e0c0640dfb7991026f475c42e8df890221cd9f
+    - repo: deepin-community/safeint
+      tagsha: fca9fe639459ec96256653899a4cbef9abf1adc8
+    - repo: deepin-community/onednn
+      tagsha: 88f0e1e879de29c5247214e3ee66536953609f80
+    - repo: deepin-community/xnnpack
+      tagsha: dde3e0582014b9e1ec42ed8a5925e9fdc30003f2
+    - repo: deepin-community/fp16
+      tagsha: 1703624b36616474e19b4e34aabec3f313a3772b
+    - repo: deepin-community/psimd
+      tagsha: 9130a5fd3564932cf0313f3bcafd039c0d74aab8
+    - repo: deepin-community/liblc3
+      tagsha: deff3dabdde0bd98092d1f4983d509b8416c08c5
+    - repo: deepin-community/alsa-plugins
+      tagsha: 320804d2f57796e7bdbdb5da7527c96be126bba3
+    - repo: deepin-community/wireplumber
+      tagsha: 48a1cd831849ae1f46778621282cbc388490853a
