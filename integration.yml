@@ -4,13 +4,13 @@ repos:
     - repo: deepin-community/libcamera
       tagsha: 9c5e980028c8f70782aec656581fee11726c2cd8
     - repo: deepin-community/pipewire
-      tagsha: 4ce1ab52b48e13f16318a333308244b5b56bd9f0
+      tagsha: 530ceb48f31d7ab2585c6b58b8032d5f8e25c3f4
     - repo: deepin-community/roc-toolkit
       tagsha: 87a2ea38ecae016521701c7e812e82b09011995f
     - repo: deepin-community/openfec
       tagsha: 1f92afcbfbffb3e0a6e54acd39b0a80130cb4705
     - repo: deepin-community/alsa-lib
-      tagsha: fe25abea4454d78de10d318e65161f3737b16b1e
+      tagsha: e1a39a10b5c81193118a22d9511efc41699bc785
     - repo: deepin-community/alsa-ucm-conf
       tagsha: 84483ca1cc780bb4dd8b4de63a66f79235552168
     - repo: deepin-community/alsa-utils
@@ -47,3 +47,7 @@ repos:
       tagsha: 320804d2f57796e7bdbdb5da7527c96be126bba3
     - repo: deepin-community/wireplumber
       tagsha: 48a1cd831849ae1f46778621282cbc388490853a
+    - repo: deepin-community/fdk-aac
+      tagsha: 4427ec842fbcca0cd634a7cd574d51e5167864e3
+    - repo: deepin-community/libsndfile
+      tagsha: f8ce4fe6f47baddd01d9d10b57d845fe6780e4af
