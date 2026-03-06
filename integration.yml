@@ -1,15 +1,113 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: upgrade-20260306 by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/debconf
+      tagsha: e9d2f1d4af1a214bdc239344c3b14db950266519
+    - repo: deepin-community/emacsen-common
+      tagsha: 7ca7cd6f81f23429c0ac4d6f7005a73e104fd2c0
+    - repo: deepin-community/libass
+      tagsha: 7912a3b20f1d12c4a44d257ddd007ee1092abe77
+    - repo: deepin-community/apparmor
+      tagsha: 39e3360cf7aae010ae0e31a423c02f095fc39b66
+    - repo: deepin-community/kbd
+      tagsha: 26a46d7abec7b429dbca1e6086bcdd5335d23bb9
+    - repo: deepin-community/alsa-plugins
+      tagsha: 041e3d57f671fb45e2307f2f0a349224e1c435b5
+    - repo: deepin-community/dmidecode
+      tagsha: 01ee459c1a4e32c7791d62017e1dad1908987f0e
+    - repo: deepin-community/console-setup
+      tagsha: 133b571a5745b4c9b88169da3dfb8bc9765c1aec
+    - repo: deepin-community/faad2
+      tagsha: 64348c422ff9a598af969b795edb00443e700f01
+    - repo: deepin-community/libfile-mimeinfo-perl
+      tagsha: 858ee187aca096b5ab19c5ccb42eb23b41dce841
+    - repo: deepin-community/libepoxy
+      tagsha: 06f82277d42a7c3c8f36ed7406963b4b19da75aa
+    - repo: deepin-community/atkmm1.6
+      tagsha: 57c5d2fbd67e398cdfc2d6160f16d9141694096d
+    - repo: deepin-community/libbytesize
+      tagsha: 2c13503922099473c4412d15b0e07fe74bf9dc92
+    - repo: deepin-community/cairomm
+      tagsha: 96cfc76228f0cce487d1a7e25e01cbfa425f0c19
+    - repo: deepin-community/libexif
+      tagsha: 3f7e7b7941bf25cbf8e42ab3f96fed8c6e7b4d77
+    - repo: deepin-community/libdeflate
+      tagsha: 00e27849f0136b16dd7f0f72ef07440cb401dc74
+    - repo: deepin-community/libcap2
+      tagsha: d8432d46684e73f29f3e3b74d4f8996755a8014e
+    - repo: deepin-community/lapack
+      tagsha: 5f3a70b778ca0bf5d4076f8b2f59b1fb10996074
+    - repo: deepin-community/gssdp
+      tagsha: 22ed1f701eeb186dcbd4e89ea126caa5bd3649e6
+    - repo: deepin-community/hunspell
+      tagsha: 5093295f9f4a53893de788b3fbad9e0e271f990e
+    - repo: deepin-community/libidn2
+      tagsha: 352a74bda43541f34a951971c53a365cf97a0b2f
+    - repo: deepin-community/gupnp
+      tagsha: d77b2bd5e58e2d9b999f451fbedd307def73cc23
+    - repo: deepin-community/fribidi
+      tagsha: 8777346b30b289980052bb7f488dd0de7c7e5674
+    - repo: deepin-community/gnome-online-accounts
+      tagsha: 0523a435fdb787ec56affa3e79a92223ae73d132
+    - repo: deepin-community/liblc3
+      tagsha: f3b7b57714eae87d0ca10687bfa6afc2f4c1ddc6
+    - repo: deepin-community/libidn
+      tagsha: 59bcdb6acaee74a19aeb81681dae87049198c180
+    - repo: deepin-community/libfontenc
+      tagsha: a909d6ba7d99a6cfb8d86dcb1c54375f6f147099
+    - repo: deepin-community/mpclib3
+      tagsha: 5688282997467860c2e15d9e33e07d551df25c8b
+    - repo: deepin-community/newt
+      tagsha: 83ebadddcb16cdf2e76f45f77dc9c6b45543808f
+    - repo: deepin-community/modemmanager
+      tagsha: 164640556d9452ffc94f96b5bc3c6cde2ea4ed8e
+    - repo: deepin-community/pangomm
+      tagsha: f09d8e50fbc45d4e63cbe450bca384d81e037df1
+    - repo: deepin-community/libnl3
+      tagsha: 317912d189002e7ca8a016669e96a1b57162ed01
+    - repo: deepin-community/openal-soft
+      tagsha: d44715e59a85e4dcd4f910f03e30d98282a1001d
+    - repo: deepin-community/libmysofa
+      tagsha: 00911e1ee9af95081e40289bf20709c042d2641b
+    - repo: deepin-community/libnfnetlink
+      tagsha: c1093f0c0bf63c9aadf435e637268f644c11aa78
+    - repo: deepin-community/numactl
+      tagsha: f58da3d5a19c904534d1a8577702ec8ab97965f4
+    - repo: deepin-community/popt
+      tagsha: 4f363cee61eb7270498bbb2357cedf33f7f4d54e
+    - repo: deepin-community/pugixml
+      tagsha: 2a9db7efa3854e2204c3ad304f1a1832693f4fc4
+    - repo: deepin-community/librist
+      tagsha: bb56a7c4b125134e44d9ff5f09fac312b58d853a
+    - repo: deepin-community/libevdev
+      tagsha: e30bf5b06ea8addbbe865db8fd3ce5f649c875b6
+    - repo: deepin-community/libglu
+      tagsha: 725be9a4ee84290b815e51412514e98cd8adbbca
+    - repo: deepin-community/libgsm
+      tagsha: 8c7fcaba746b79ffe749e741bae914bc44270583
+    - repo: deepin-community/libinih
+      tagsha: 5907d4d4ddfead072e5a554aa7db758413c5814c
+    - repo: deepin-community/libmd
+      tagsha: 286fe164dae994a9456a74c9f812a0a8ce3ee0ba
+    - repo: deepin-community/libnotify
+      tagsha: 89155a4f75413ba39040bf8ea00476a3e58f79df
+    - repo: deepin-community/libpciaccess
+      tagsha: b0c54b456c9ac503a2a883cbf4cc1f5abf29feb0
+    - repo: deepin-community/lilv
+      tagsha: 2e84da41513e7d1f8bf35c4b2074f56c6ef119b3
+    - repo: deepin-community/libseccomp
+      tagsha: f9bacc541f38dbfc804cffbb7ef1ef42d4116aff
+    - repo: deepin-community/lz4
+      tagsha: 932216cfbec0bce9d26fe38f7280fb1fd06da19f
+    - repo: deepin-community/serd
+      tagsha: 283b7b6b2f490117b3e08268488fbac320f31fe7
+    - repo: deepin-community/libshout
+      tagsha: a2c9bbc1ed910c30438da32da21a9d44a71ec995
+    - repo: deepin-community/sndio
+      tagsha: 5a7ba00af415a3ee13262c1ca2edaa0ff2c0351c
+    - repo: deepin-community/libsndfile
+      tagsha: 9ad5416ead34560b7288013d3128da7ff17bb075
+    - repo: deepin-community/sratom
+      tagsha: a4d9c0f9335f8e3fa61baa36991f2833a1b8b68b
+    - repo: deepin-community/sord
+      tagsha: fbb8b76d54bd929b149268ce6bb19ef67dad3e3e
