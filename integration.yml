@@ -182,7 +182,7 @@ repos:
     - repo: deepin-community/logrotate
       tagsha: ad1d3e7baf2b3eacfcba5cbb69258468db13808c
     - repo: deepin-community/libxslt
-      tagsha: 0f6e34fc1c771bcbc9c03778495c1c22b9649013
+      tagsha: c04443a1344d8c7964cac2a2baa879d2fee8c67f
     - repo: deepin-community/media-types
       tagsha: be3076b3f61b92d7d6c10562b3d24cb29ac0ca33
     - repo: deepin-community/parted
@@ -201,8 +201,6 @@ repos:
       tagsha: 3b58515a0fc25b32d8e8bfb22003962939850752
     - repo: deepin-community/poppler-data
       tagsha: b9d603a18185db2b83018de10d70512794d13d60
-    - repo: deepin-community/python3-defaults
-      tagsha: 3e7e94d2782432fb84541ef134338783b146e54d
     - repo: deepin-community/rubberband
       tagsha: 6947bb72beab5b9af638bfb5d4d1e471467f080f
     - repo: deepin-community/rpcsvc-proto
@@ -251,3 +249,5 @@ repos:
       tagsha: 8328b8babaf6db678a4507c4450e0d26885f5a54
     - repo: deepin-community/zimg
       tagsha: 00ba719b055e2bdab89230cb0c81c00d915fee8c
+    - repo: deepin-community/fonts-dejavu
+      tagsha: 9abe0b36df4217420dcf7bc704e8bcf2eb65383e
