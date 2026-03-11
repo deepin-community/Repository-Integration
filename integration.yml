@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: pipewire-20260129 by @Zeno-sole to v25-Rele
 milestone: v25-Release
 repos:
     - repo: deepin-community/libcamera
-      tagsha: 9c5e980028c8f70782aec656581fee11726c2cd8
+      tagsha: ab9f4843ae4b1f311d3f57fd91767e494494a040
     - repo: deepin-community/pipewire
       tagsha: 530ceb48f31d7ab2585c6b58b8032d5f8e25c3f4
     - repo: deepin-community/roc-toolkit
@@ -20,7 +20,7 @@ repos:
     - repo: deepin-community/onnx
       tagsha: 758ded6b2311493afb80096a1d15b960bfef138b
     - repo: deepin-community/onnxruntime
-      tagsha: 26689835fa0203fd2fb44b680592ac5368f0f175
+      tagsha: 851c317a1d68d90323eeb7474ae00be0ba38f8dd
     - repo: deepin-community/cpuinfo
       tagsha: eb5278c3357a092a37205fb09d31681eed704878
     - repo: deepin-community/dlpack
@@ -46,8 +46,20 @@ repos:
     - repo: deepin-community/alsa-plugins
       tagsha: 320804d2f57796e7bdbdb5da7527c96be126bba3
     - repo: deepin-community/wireplumber
-      tagsha: 48a1cd831849ae1f46778621282cbc388490853a
+      tagsha: a5f340cc91c4d71fa02353b1a1aae3430946c056
     - repo: deepin-community/fdk-aac
       tagsha: 4427ec842fbcca0cd634a7cd574d51e5167864e3
     - repo: deepin-community/libsndfile
       tagsha: f8ce4fe6f47baddd01d9d10b57d845fe6780e4af
+    - repo: deepin-community/ruy
+      tagsha: 114c1effa342b2fa63a155f63b350492ee4009b9
+    - repo: deepin-community/neon-2-sse
+      tagsha: 4b6e41b5b604d60c4254721a116c3e289f1f77a3
+    - repo: deepin-community/gemmlowp
+      tagsha: 3e5b8d35e73c5cebee79dc28f347c16e2304f330
+    - repo: deepin-community/farmhash
+      tagsha: cc9ad632caa0bf71c72813d40073159c7621ee6d
+    - repo: deepin-community/oourafft
+      tagsha: b76d59c56a701f4ea46046e70b1ede25cb2cc95d
+    - repo: deepin-community/tensorflow
+      tagsha: 95cfaba036a211a4bf33cce6ce69bce62b669c09
