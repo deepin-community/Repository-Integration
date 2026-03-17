@@ -7,3 +7,9 @@ repos:
       tagsha: 5afc6d5def559467051b045ae4d170db1237f3c4
     - repo: deepin-community/libsoftware-copyright-perl
       tagsha: aa87e477827697b06c838c0965f8f78224690d13
+    - repo: deepin-community/cme
+      tagsha: 54af3e42decfd9a5b2e43bf4cd7472a45f1f2017
+    - repo: deepin-community/libconfig-model-backend-yaml-perl
+      tagsha: a27b078deaa23117c52fbb38dd2c6b78e05476aa
+    - repo: deepin-community/libconfig-model-tester-perl
+      tagsha: 535acb22bd481b01aed1f16bddbf67af108f4875
