@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Update gst-plugins-base1.0 to 1.24.13-0deepin1 by
+  UTsweetyfish@deepin-community/gst-plugins-base1.0
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/gst-plugins-base1.0
+    tagsha: 8d26b85c4d2efd9e89b0ccdc46db6f864515e3e5
+timestamp: 1774338998815
