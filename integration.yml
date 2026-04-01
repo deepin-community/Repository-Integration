@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: libsereal-perl-20260401 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libsereal-perl
+      tagsha: 6c1cef2a7131e8fd2615ffed2b30a42a5e6c677e
+    - repo: deepin-community/libsereal-encoder-perl
+      tagsha: f08beb451bf7633fc63b46dacb4c77143632124e
+    - repo: deepin-community/libsereal-decoder-perl
+      tagsha: c70b3044e6d008fafb6f7999f48650752acd991b
