@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: backport security fixes for multiple CVEs in webkit2gtk by
+  Zeno-sole@deepin-community/webkit2gtk
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/webkit2gtk
+    tagsha: 790320ac740ac1a15c8e1463301a8a1d2debb90c
+timestamp: 1775552578996
