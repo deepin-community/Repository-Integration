@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: blender-20260411-lhdjply by @lhdjply to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/blender
+      tagsha: cd523c64acb2cb614efac124f31d55bd6d421e86
+    - repo: deepin-community/opencolorio
+      tagsha: 8039ee23bb006b65d55322614d968eb74fa53627
+    - repo: deepin-community/pystring
+      tagsha: cc84dda73e8dce17b54f9fb6f433aa5f082d5c27
