@@ -7,3 +7,5 @@ repos:
       tagsha: 3ffb7b6cc0fbe2546bb2e2ef7590da71fa21fc9c
     - repo: deepin-community/gegl
       tagsha: ee7153de4f56bba706cf0335bddfdf6ad52120af
+    - repo: deepin-community/qoi
+      tagsha: 1871095e1130a7119be3f699063cf72b67dec4cf
