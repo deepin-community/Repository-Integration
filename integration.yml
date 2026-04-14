@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Fix CVE-2025-32728, CVE-2025-61984, CVE-2025-61985, CVE-2026-3497 by
+  UTsweetyfish@deepin-community/openssh
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/openssh
+    tagsha: aaf103692ccb34f2885b9b839748d679790ac9f8
+timestamp: 1776137312893
