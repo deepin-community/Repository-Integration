@@ -7,3 +7,7 @@ repos:
       tagsha: 8039ee23bb006b65d55322614d968eb74fa53627
     - repo: deepin-community/pystring
       tagsha: cc84dda73e8dce17b54f9fb6f433aa5f082d5c27
+    - repo: deepin-community/openimageio
+      tagsha: 4508837ca761318b92a436864a08a686a0bd96b4
+    - repo: deepin-community/minizip-ng
+      tagsha: c7bb0344f651fa720145e1b034207d5ac79ec64a
