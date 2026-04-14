@@ -2,7 +2,7 @@ message: 'Auto integrate from topic: gimp-20260411-lhdjply by @lhdjply to v25-Re
 milestone: v25-Release
 repos:
     - repo: deepin-community/gimp
-      tagsha: 2892648b66a5674c5b31915cda362eceb197fae2
+      tagsha: 2900592ed6fc7d38acef9f160c8219d3f9620e05
     - repo: deepin-community/babl
       tagsha: 3ffb7b6cc0fbe2546bb2e2ef7590da71fa21fc9c
     - repo: deepin-community/gegl
