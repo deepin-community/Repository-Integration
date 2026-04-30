@@ -2,6 +2,8 @@ message: 'Auto integrate from topic: libvirt-9.10 by @Zeno-sole to v25-Release'
 milestone: v25-Release
 repos:
     - repo: deepin-community/libvirt
-      tagsha: 8e043014da89bddc0d001ede1f76354fc4a0df4c
+      tagsha: d7cb802ac2664ea8ddab03d84b2429d420d2d68b
     - repo: deepin-community/libvirt-python
       tagsha: b47abe05ce34af0f90d812840ae4be52403a5113
+    - repo: deepin-community/libvirt
+      tagsha: d7cb802ac2664ea8ddab03d84b2429d420d2d68b
