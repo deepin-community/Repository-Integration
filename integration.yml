@@ -4,4 +4,4 @@ repos:
     - repo: deepin-community/libvirt
       tagsha: 8e043014da89bddc0d001ede1f76354fc4a0df4c
     - repo: deepin-community/libvirt-python
-      tagsha: e3fd278b3208f64ce090ef9d6bfaad6aa89c2d5c
+      tagsha: b47abe05ce34af0f90d812840ae4be52403a5113
