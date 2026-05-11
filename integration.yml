@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: CVE-2024-7883 Arm CMSE security vulnerability by
+  deepin-ci-robot@deepin-community/llvm-toolchain-19
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/llvm-toolchain-19
+    tagsha: cdf23e5ab63f0d6f4b71b2173016dbf9eefb2b54
+timestamp: 1778465048657
