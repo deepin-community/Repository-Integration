@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(libwebsockets): CVE-2025-11677, CVE-2025-11678, CVE-2025-1866 by
+  deepin-ci-robot@deepin-community/libwebsockets
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libwebsockets
+    tagsha: 2718e9a60fd8e02b8aa730cba2a8cda042c79795
+timestamp: 1779067740982
