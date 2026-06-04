@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: add parsekerneltimestamp and keepkerneltimestamp options to imklog
+  module to preserve kernel timestamp in kernel log messages. by
+  zengwei00@deepin-community/rsyslog
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/rsyslog
+    tagsha: 61f19b5571c8d45be4e5d52980fdbe9036d97a9d
+timestamp: 1780557222968
