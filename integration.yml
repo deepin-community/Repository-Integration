@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(openssl): Security fixes for CVE-2026-45446, CVE-2026-42766,
+  CVE-2026-42767, CVE-2026-42770 by deepin-ci-robot@deepin-community/openssl
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/openssl
+    tagsha: 0ef9091abf8b35757134da88d0faafa323b1fbb7
+timestamp: 1781760398544
