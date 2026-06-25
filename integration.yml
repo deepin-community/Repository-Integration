@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Fix CVE-2026-11822 and CVE-2026-11824: FTS5 memory corruption vulnerabilities
+  by deepin-ci-robot@deepin-community/sqlite3
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/sqlite3
+    tagsha: 615438ef531e964d035009b2df9cc51dbd0577a7
+timestamp: 1782387136000
