@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(ffmpeg): CVE-2026-8461 - Fix heap out-of-bounds write in MagicYUV decoder
+  (PixelSmash) by deepin-ci-robot@deepin-community/ffmpeg
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/ffmpeg
+    tagsha: 244abf2a0953d0a12189273feee6a32eaa5cc245
+timestamp: 1782352257061
