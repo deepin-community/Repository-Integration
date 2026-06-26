@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: CVE-2023-40547 and CVE-2023-40548 - Update signed binaries to shim 15.8
+  by deepin-ci-robot@deepin-community/shim-signed
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/shim-signed
+    tagsha: 3283115b33c03f703b5b8661619b192e99f10c12
+timestamp: 1782445415492
