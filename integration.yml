@@ -1,15 +1,91 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: libxcb-1.17.0 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libxcb
+      tagsha: 7c8f8e298920b5c0cb339e4ff67a346407167dcc
+    - repo: deepin-community/libxau
+      tagsha: b99bc3f4a8b37ac0ac76cab3356064a1c3af7d55
+    - repo: deepin-community/libpthread-stubs
+      tagsha: 32142b75f12c123fe07dd101902d5291f6b139a8
+    - repo: deepin-community/check
+      tagsha: 4104a91c93138df413ac32376d7e948b9fb444e7
+    - repo: deepin-community/subunit
+      tagsha: ba8885f8fee0d6cf2bcceddf67db757a755fb348
+    - repo: deepin-community/debhelper
+      tagsha: 790c8a0f3fd8893355eb3b3bd214886b0d28bd4c
+    - repo: deepin-community/mawk
+      tagsha: 071ab27511f4bd9bc2eb8114ab6f0f5cffebcbd9
+    - repo: deepin-community/autoconf
+      tagsha: e5fb51eaa8411c2e749c080e7c5c3c2385ae0636
+    - repo: deepin-community/libtool
+      tagsha: 24a5e103dc0bac53d701081b674cd1ebfa1193ca
+    - repo: deepin-community/libtest-pod-perl
+      tagsha: 80baad60d4327cd558d9558915094ce0dae6ae6f
+    - repo: deepin-community/man-db
+      tagsha: 331f36d25f57ff7b0abed0de1d9f79fe47a385ce
+    - repo: deepin-community/autoconf-dickey
+      tagsha: 3c9f66828f61aa0a1f9eb104337eb1952c0f9119
+    - repo: deepin-community/byacc
+      tagsha: 134ff74bdeb726278bde84c3bcfd3c8eb0a97c22
+    - repo: deepin-community/m4
+      tagsha: e889ad77964f5f9f26d5fd5bee541a1e534896e2
+    - repo: deepin-community/gettext
+      tagsha: 340f0d9e3a9805051488fcb53ec9b7db94239a61
+    - repo: deepin-community/flex
+      tagsha: cc411617e3d1c2414c22b1cd18460c4cdab9793f
+    - repo: deepin-community/groff
+      tagsha: 44ce8f4a54e42eb452c0d26cf06a418dc1bfb813
+    - repo: deepin-community/gdbm
+      tagsha: feff08fbb0a45370b0b4f3918cd00df4c6a0298e
+    - repo: deepin-community/libpipeline
+      tagsha: 0cb8214e56fab5778848aac181054f3482238359
+    - repo: deepin-community/libsigsegv
+      tagsha: 829fc01e54de915a7e4bd7bcb0c2aaad7f7fe566
+    - repo: deepin-community/dh-exec
+      tagsha: 8c95ea90da358999aa29298b630df2dd55061784
+    - repo: deepin-community/gawk
+      tagsha: 87715b9173592f87f8295f39a4715dd732f8ae0e
+    - repo: deepin-community/acl
+      tagsha: 1e9d4e6127051ec40b85b9b92d1329eb0fa3ba9d
+    - repo: deepin-community/attr
+      tagsha: 07e84ed01d4f3a7654fd87d87f19ecb7a0e3da1d
+    - repo: deepin-community/libunistring
+      tagsha: d09c47da6c6592afae66dc5e90ba36c79bad04eb
+    - repo: deepin-community/libxml2
+      tagsha: 9b1395bb265306873a7ceb554a7a7733c1f670d8
+    - repo: deepin-community/fonts-urw-base35
+      tagsha: 05c50b92680ed42fc15f0e7f83adbb4ec1e39e49
+    - repo: deepin-community/libx11
+      tagsha: cb680808ac4f7febb5fae576a313aabb4ed779e7
+    - repo: deepin-community/libxt
+      tagsha: 2544b11efa35e259d876f5bce18afe73fac69d71
+    - repo: deepin-community/psutils
+      tagsha: 7ceb9ef71942224fd1fcf69497bc9c84d108601f
+    - repo: deepin-community/cython
+      tagsha: 1db38285b3191ae1d4c926532d260995b6adff40
+    - repo: deepin-community/gperf
+      tagsha: 2ca05049ec52976ebc472a03cd124989d0d26bfe
+    - repo: deepin-community/bats
+      tagsha: 30a7da1b7b0291123fbc93b267320e7a7ec485f8
+    - repo: deepin-community/mpfr4
+      tagsha: 0c3bba02c6734c44d2d37457cb048408f06bff46
+    - repo: deepin-community/rename
+      tagsha: 1a18747489e8572a8fbada00898b55c1e9b25a4b
+    - repo: deepin-community/libsm
+      tagsha: 610175f45afe210f84742c2f7160392718448247
+    - repo: deepin-community/libice
+      tagsha: a3c09574c06196754fde1ce35e732e53fe914302
+    - repo: deepin-community/xmlto
+      tagsha: 0b017f13185ae9f7dfe4ac6f12c269276fedae44
+    - repo: deepin-community/gmp
+      tagsha: c67610f21a2203b3180ddbd8c308caa50a3231c2
+    - repo: deepin-community/autoconf-archive
+      tagsha: 3320f56c11f4e52e9ba9da1a5be6b827edda804b
+    - repo: deepin-community/libbsd
+      tagsha: 5ca7a1ddd93007195091dbb9254a4990789e24d2
+    - repo: deepin-community/docbook-xml
+      tagsha: 4a7643811aac5b814511a00e44c93f564e065522
+    - repo: deepin-community/docbook-xsl
+      tagsha: 77f7da54648f8b704c63d0dad1f1832e01e4a907
+    - repo: deepin-community/docbook5-xml
+      tagsha: de361e332fb616d2120778853143995f359a2fde
