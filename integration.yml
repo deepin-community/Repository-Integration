@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update sfnt2woff-zopfli to 1.3.1-2 by
+  deepin-community-bot[bot]@deepin-community/sfnt2woff-zopfli
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/sfnt2woff-zopfli
+    tagsha: 2892d77e60d07db4bea7f7dbda6d5a894fb44f98
+timestamp: 1782810000756
