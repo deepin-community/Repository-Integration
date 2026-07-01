@@ -59,10 +59,6 @@ repos:
       tagsha: cb680808ac4f7febb5fae576a313aabb4ed779e7
     - repo: deepin-community/libxt
       tagsha: 2544b11efa35e259d876f5bce18afe73fac69d71
-    - repo: deepin-community/psutils
-      tagsha: 7ceb9ef71942224fd1fcf69497bc9c84d108601f
-    - repo: deepin-community/cython
-      tagsha: 1db38285b3191ae1d4c926532d260995b6adff40
     - repo: deepin-community/gperf
       tagsha: 2ca05049ec52976ebc472a03cd124989d0d26bfe
     - repo: deepin-community/bats
