@@ -1,15 +1,27 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: xfce-4.20 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/exo
+      tagsha: c377e5df61d8c99f8be3c1e041a4c05de8261c25
+    - repo: deepin-community/garcon
+      tagsha: 2acd6ec9c0659087f5e649ca934d6ee2144cc6f6
+    - repo: deepin-community/libxfce4ui
+      tagsha: ff41e877d0f0cc4d631a17db0df394e9567936a0
+    - repo: deepin-community/thunar
+      tagsha: ea84b61679228acd35e7a4825ecda8089cf0c2c4
+    - repo: deepin-community/xfce4-appfinder
+      tagsha: 4a0ee42bc7c62655bd26b7e22e3dcb617b2115b3
+    - repo: deepin-community/xfce4
+      tagsha: 24c05888167d5263f8e2680fccefbdfb31ee52a9
+    - repo: deepin-community/xfce4-pulseaudio-plugin
+      tagsha: 520d233731632e0ec58ffc2f7cbbaa7ffa7ecffb
+    - repo: deepin-community/xfce4-panel
+      tagsha: 0db4c76b1d909c2e99f9bcee0851f9f6a38dbc8f
+    - repo: deepin-community/xfce4-session
+      tagsha: 3f9178bc015ec395c34082bc922741ed7d156091
+    - repo: deepin-community/xfce4-settings
+      tagsha: 49e91d6f5f0d845152434ba6a67c5db73d8f38a0
+    - repo: deepin-community/xfdesktop4
+      tagsha: 5d9bcf33012ac5d5987d8bc56ab7179f1975cdc3
+    - repo: deepin-community/xfwm4
+      tagsha: 6914af085fd5b758a70e23b09dfa7dd77a05e725
