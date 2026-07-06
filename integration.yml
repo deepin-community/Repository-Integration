@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update libcommons-lang3-java to 3.17.0-1+deb13u1 by
+  deepin-community-bot[bot]@deepin-community/libcommons-lang3-java
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libcommons-lang3-java
+    tagsha: d42e27cb22de292c8c87dae7e11fec9e231783fd
+timestamp: 1783315999277
