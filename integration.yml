@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update open-vm-tools to 2:12.5.0-2+deb13u1 by
+  deepin-community-bot[bot]@deepin-community/open-vm-tools
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/open-vm-tools
+    tagsha: 43f9388b8fd6d038184d8c0965ff62aac6f9d472
+timestamp: 1783307184906
