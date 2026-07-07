@@ -1,15 +1,45 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: llama-cpp by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/rocm-llvm
+      tagsha: 81bec8251c5f1da311e778c36d27d5ed15017d11
+    - repo: deepin-community/rocblas
+      tagsha: d707a8a965bdabe3d762f90a523703c0e0deec9f
+    - repo: deepin-community/sphinx-needs
+      tagsha: 0f4c3b365a0e7a039433f19771184b788dd9367e
+    - repo: deepin-community/ggml
+      tagsha: fec9043d48622c3bef50ac53a6456cd2ccd93f80
+    - repo: deepin-community/rocm-hipamd
+      tagsha: cfeddbf1e30efb2870dd147013f238a6a6993e97
+    - repo: deepin-community/roctracer
+      tagsha: e5ef8221b7bd2a789696e93d88d008fb4a3149ff
+    - repo: deepin-community/doxysphinx
+      tagsha: 26d1af386aaa274297735687870a5a83bfa418e8
+    - repo: deepin-community/sphinx-book-theme
+      tagsha: 2537af0b7aee158b2df630108ec84e8e2ccab4e8
+    - repo: deepin-community/sphinx-external-toc
+      tagsha: af98698e64e56f4b3e0fd6bdb6841dfea6092c59
+    - repo: deepin-community/rocminfo
+      tagsha: 1a445293261b5a3dfa1e4b1ad0f22609c4de6a38
+    - repo: deepin-community/rocr-runtime
+      tagsha: 0cd4211287c7f4c82f10df3b67ccf602cdb5ef87
+    - repo: deepin-community/rocm-docs-core
+      tagsha: 92d4461581405c76fbd568e9d434acf6b71cb6bd
+    - repo: deepin-community/mpire
+      tagsha: b2d838e74784ae19b212f38679507f09db0faf31
+    - repo: deepin-community/myst-nb
+      tagsha: a39b0ddc2c8ca30fb2bd8e5c71964aaff0d45efa
+    - repo: deepin-community/sphinx-data-viewer
+      tagsha: 50523527b1ae32c17934a756d84999f38495c71f
+    - repo: deepin-community/sphinx-tabs
+      tagsha: b17429e6c904209af98fa7539fe29a46c4d92134
+    - repo: deepin-community/rocm-cmake
+      tagsha: 8f5a26d1fc2097b8d02144797de6a0334ff8f83b
+    - repo: deepin-community/hipblas-common
+      tagsha: 9678d47bb165ee27ace2b4ed34474b9a63113d03
+    - repo: deepin-community/llama.cpp
+      tagsha: 0bff3ddb62f0e79f657bbd86201a19dc28e60e65
+    - repo: deepin-community/hipblas
+      tagsha: 7ad6ea0ea010944585e0af61b89332f0174ecac5
+    - repo: deepin-community/matplotlib
+      tagsha: 863734d33a7754106f19e7b2982b6ac2fed12768
