@@ -1,4 +1,4 @@
-message: 'Auto integrate from topic: llama-cpp by @Zeno-sole to v25-Release'
+message: 'Auto integrate from topic: llama-cpp by @YukariChiba to v25-Release'
 milestone: v25-Release
 repos:
     - repo: deepin-community/rocm-llvm
@@ -43,3 +43,5 @@ repos:
       tagsha: 7ad6ea0ea010944585e0af61b89332f0174ecac5
     - repo: deepin-community/matplotlib
       tagsha: 863734d33a7754106f19e7b2982b6ac2fed12768
+    - repo: deepin-community/roman-numerals
+      tagsha: 8c036654cc2cc42d1c7d75ce6c917c8cd9b7a5ad
