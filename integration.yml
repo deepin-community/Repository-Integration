@@ -30,7 +30,7 @@ repos:
     - repo: deepin-community/myst-nb
       tagsha: a39b0ddc2c8ca30fb2bd8e5c71964aaff0d45efa
     - repo: deepin-community/sphinx-data-viewer
-      tagsha: 50523527b1ae32c17934a756d84999f38495c71f
+      tagsha: 67ab21ece6ba32670cb684d12ddd34005f2fc6c8
     - repo: deepin-community/sphinx-tabs
       tagsha: b17429e6c904209af98fa7539fe29a46c4d92134
     - repo: deepin-community/rocm-cmake
@@ -45,3 +45,5 @@ repos:
       tagsha: 863734d33a7754106f19e7b2982b6ac2fed12768
     - repo: deepin-community/roman-numerals
       tagsha: 8c036654cc2cc42d1c7d75ce6c917c8cd9b7a5ad
+    - repo: deepin-community/pkg-rocm-tools
+      tagsha: 029e5cb536794152c2076cfd102bf9d5395ea919
