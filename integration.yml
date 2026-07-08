@@ -4,4 +4,4 @@ repos:
     - repo: deepin-community/jq
       tagsha: 3b804d216f140a5da961d131a1b66879d41804b9
     - repo: deepin-community/python-jq
-      tagsha: d713c76a02da4adf7f9c860aff5e446d2dd79722
+      tagsha: f85e5b4879e8ff1f3d28a00d6b521fe31731070b
