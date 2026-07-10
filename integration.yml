@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(pipewire): CVE-2026-14324 - fix unbounded Content-Length in RAOP module by
+  deepin-ci-robot@deepin-community/pipewire
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/pipewire
+    tagsha: 7cc9c0fc7c63d73f26d94f72a0984a594ca5d989
+timestamp: 1783653189311
