@@ -3,3 +3,35 @@ milestone: v25-Release
 repos:
     - repo: deepin-community/insserv
       tagsha: 038a35c8db9746d90c2a47f7ed418710eab38188
+    - repo: deepin-community/lsb-release-minimal
+      tagsha: 64c7f276992bf5fcb69f1a48ad1ec80eb2acdcf8
+    - repo: deepin-community/json-glib
+      tagsha: 8291be8d0d7cf76ff258ebae49183f00bc1d11dd
+    - repo: deepin-community/live-config
+      tagsha: 62e1ee1168f8ca4d34d8a6c8e55f73797fd2dea3
+    - repo: deepin-community/json-c
+      tagsha: 58a6224e73934d753c580cef110c9e75cf625fdc
+    - repo: deepin-community/lua5.4
+      tagsha: 1c5f3d9acd22f4ad7faf999ef4716757e3da6ceb
+    - repo: deepin-community/kmod
+      tagsha: b0fc60e10c755b954b2080055c37b93517df085b
+    - repo: deepin-community/lcms2
+      tagsha: a5519010bac453cea2946c4faadc648af161450c
+    - repo: deepin-community/lrzsz
+      tagsha: b9bc4a8ac3305e97a3205735b85d69d57517632d
+    - repo: deepin-community/isl
+      tagsha: 68bf82fecb0db375468dbe5bd673bdde73dc8772
+    - repo: deepin-community/lhasa
+      tagsha: b6681ba9c3a2f791720b15757de92e50c5d3b292
+    - repo: deepin-community/klibc
+      tagsha: 531b0aeae9778cf57688886f7067f65ba8354158
+    - repo: deepin-community/iso-codes
+      tagsha: 75a7ee3c992e47b47e97246f46833f89b8a0d698
+    - repo: deepin-community/hicolor-icon-theme
+      tagsha: b9bc2307d6911e976347c4539d27f99356e3b4b4
+    - repo: deepin-community/iio-sensor-proxy
+      tagsha: 6719f34b9c12e25f2dbb393a8b76ff4952745ed9
+    - repo: deepin-community/init-system-helpers
+      tagsha: c059a2f057de3a40dce16ab52bb213a34a92332c
+    - repo: deepin-community/iptables
+      tagsha: a5e0b02d10dfce2695954e5c5c8fbed762a2984b
