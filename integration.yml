@@ -35,3 +35,227 @@ repos:
       tagsha: c059a2f057de3a40dce16ab52bb213a34a92332c
     - repo: deepin-community/iptables
       tagsha: a5e0b02d10dfce2695954e5c5c8fbed762a2984b
+    - repo: deepin-community/libapt-pkg-perl
+      tagsha: c19f90400135ad08c41cf6a6a9c9180b3f317d69
+    - repo: deepin-community/libavif
+      tagsha: e226cb486f1a47862d2b0f0f7202df03d47aa0ee
+    - repo: deepin-community/lvm2
+      tagsha: 2f285ada3ad84b2f959f257ddc4cd8365c76d86b
+    - repo: deepin-community/libmanette
+      tagsha: f03d6c64b459d9ba7f080af69dd1d4d9373bc256
+    - repo: deepin-community/mujs
+      tagsha: b7a13880c5708dc2c808da1cb752d13f47bdd463
+    - repo: deepin-community/libregexp-assemble-perl
+      tagsha: a50796c36ae034f523909e474c3c90788d9bcfeb
+    - repo: deepin-community/libhttp-message-perl
+      tagsha: eac5e4df3739b1e583ab20a9ec6c8bf4a7c69e9b
+    - repo: deepin-community/libnet-http-perl
+      tagsha: 358ab264dcfcbd9749cf74eef7af3116e1e210a7
+    - repo: deepin-community/libhtml-tagset-perl
+      tagsha: 4cf5adb06d84a17746121e05af57d84020fa0433
+    - repo: deepin-community/libayatana-indicator
+      tagsha: 6b153a711edfdff434519ad638cdc67d32e83f22
+    - repo: deepin-community/libio-socket-ssl-perl
+      tagsha: 2ab2c2621119eea0888ea50e4a065a8bfe8ef4ba
+    - repo: deepin-community/libfile-listing-perl
+      tagsha: 990e40d3d2155c28df644a42fa09ce851f4c6a94
+    - repo: deepin-community/libfreeaptx
+      tagsha: 6b0fdd34377a8d35fcd0604f30310b48579c15f5
+    - repo: deepin-community/libhttp-date-perl
+      tagsha: cd4f7ee90df71e0084b0a910fef96ac7679e6697
+    - repo: deepin-community/netcat-openbsd
+      tagsha: 32e6e46fc73bff8a5dace6f940c3351d4ce3f3a8
+    - repo: deepin-community/libhtml-parser-perl
+      tagsha: 13d365b2fbbfcbbbd58abe2c47e25e50546aaffb
+    - repo: deepin-community/netbase
+      tagsha: 1545ec4ba817a46a5c10dbe58642c3f33d7259e6
+    - repo: deepin-community/libndp
+      tagsha: 54c0e0301ade7795e415dd177393d15825a93172
+    - repo: deepin-community/libdrm
+      tagsha: 92e8bc3f7a594c57b53d2e04e121cac014438330
+    - repo: deepin-community/libgusb
+      tagsha: 943770db125472df4f853e236deac60c49a9d134
+    - repo: deepin-community/libcap-ng
+      tagsha: 9d074ca231d032a93ed6ddac5f1e6af6cbf22fd5
+    - repo: deepin-community/libxpresent
+      tagsha: 07cc4ede8587cbffbcc74a99041f4f9baf39b72d
+    - repo: deepin-community/proxychains-ng
+      tagsha: 53bc80ec51178226db285ace86d395fc6eeb51ca
+    - repo: deepin-community/nghttp3
+      tagsha: c76e1d1d49892d86ab6f768a8e33c559a639c922
+    - repo: deepin-community/squashfuse
+      tagsha: 93242b1b90e34da54c8a9e49daea159629fd83e3
+    - repo: deepin-community/python-typing-extensions
+      tagsha: 613bf39276d041bc1b3bcdf9f9dc782f3956dbbd
+    - repo: deepin-community/netavark
+      tagsha: e4f97a40073fa138faf6e2a5b460a897504031a8
+    - repo: deepin-community/python-zipp
+      tagsha: 38207b0e1182bb5d4b75b277d8a24269c82888da
+    - repo: deepin-community/sstp-client
+      tagsha: 2a4c9a4d493adfae8b53267a4bcd64ffa9575adf
+    - repo: deepin-community/ncompress
+      tagsha: e0a25539731aa3116f1abcefa551d82867f93850
+    - repo: deepin-community/python-typeguard
+      tagsha: fea9502f19d51cae3f744d366625af5dca127f75
+    - repo: deepin-community/tcltk-defaults
+      tagsha: 3e0be6ec23a87f7e8791e979de8fee86b461a67e
+    - repo: deepin-community/what-is-python
+      tagsha: ca76627c4649b88c1ff20197246e1ae7854fe04e
+    - repo: deepin-community/more-itertools
+      tagsha: 36027e5c31509b8fcb54395770e52542332b3441
+    - repo: deepin-community/libnftnl
+      tagsha: 29c11f9a7eff01bd3548b06598104b020b018fbe
+    - repo: deepin-community/libonig
+      tagsha: 3596212d4fad5076d83f281992acde47c240ffa8
+    - repo: deepin-community/libxshmfence
+      tagsha: 6506a81ab7464fc5e0e5da16f16be6f3c1cdeda0
+    - repo: deepin-community/vpnc
+      tagsha: 8dcde62ae5d47433db9ab14de999ccd36278e4fd
+    - repo: deepin-community/python-apt
+      tagsha: 737545d901e66c6b2c0c3b7a8f9685a2649b39aa
+    - repo: deepin-community/libedit
+      tagsha: 465cde1500aa21ad7ef98d01a51d9b882a244bc1
+    - repo: deepin-community/semodule-utils
+      tagsha: ffb1794b237e8a181f0d84966fedf346d49cfbf3
+    - repo: deepin-community/libmaxminddb
+      tagsha: e9c626f430d62ed8e163957bc1eb435bd9c0241b
+    - repo: deepin-community/libyuv
+      tagsha: 8cd056db6ce8d4d152c5723c1f4de5d50fb28edf
+    - repo: deepin-community/network-manager-strongswan
+      tagsha: bd3dc198d0aab5ef4359cb1fb18a7a623ab31367
+    - repo: deepin-community/libtry-tiny-perl
+      tagsha: 6e78ce81ab9705e55b30af16c432447cea01a04a
+    - repo: deepin-community/libnetfilter-conntrack
+      tagsha: e5e38bcffac2c723f87f1313b2caa3aa40f1d36e
+    - repo: deepin-community/vpnc-scripts
+      tagsha: d0dc7fe0cecf23a07f9df3da3ea5629c90eeceab
+    - repo: deepin-community/libva
+      tagsha: ff8f164cf15b8d174931cdbdaf4084c2627d483e
+    - repo: deepin-community/ppp
+      tagsha: 7fccf5265369d1344bb7ab16c86e00f6a5b45d7c
+    - repo: deepin-community/python-click
+      tagsha: 078c9fb4c73a874881ab23dd1d134c5470174263
+    - repo: deepin-community/pcsc-lite
+      tagsha: 5d6f5adf3fe0311c0ca5db6539ae08d1f36d7d6b
+    - repo: deepin-community/upower
+      tagsha: 0064bfd9bf6f36ba1543a7e22de11326e5c71696
+    - repo: deepin-community/protobuf-c
+      tagsha: a4e9e6b331d79c55e40a4b5bb706074a523e8da7
+    - repo: deepin-community/xcb-util-cursor
+      tagsha: d62311b7d7853098e9b01dabaf39eac79fb3f98f
+    - repo: deepin-community/libksba
+      tagsha: a0f99801bb75592c6ed0234d3927ae753d13b31b
+    - repo: deepin-community/xcb-util-renderutil
+      tagsha: 47d17cf490762a18c75a3eafa39eec6c797eafd8
+    - repo: deepin-community/sysvinit
+      tagsha: bf264fa534c619fbc024cf86472b65e499a2fdaa
+    - repo: deepin-community/pycairo
+      tagsha: 8375ee8d64b4dd732c372d91f60a2b574c369a57
+    - repo: deepin-community/pango1.0
+      tagsha: fc98caf43ec13ac78d2af3a972a330acb5893f79
+    - repo: deepin-community/librabbitmq
+      tagsha: a64e971e26d0556b1ef2d33018cf300f611878a0
+    - repo: deepin-community/xdg-desktop-portal-gtk
+      tagsha: 8c0a97c060891500773bb2025a1283bed5e7213a
+    - repo: deepin-community/xcb-util
+      tagsha: 2981d2c227136e590135c1cb5ec0abde21c416bb
+    - repo: deepin-community/xserver-xorg-input-libinput
+      tagsha: c82aa7ccdf5ab21e055f0017affb2d95fbc96492
+    - repo: deepin-community/libffi
+      tagsha: 02c7659767cce23f14f78fef5a1ba4f895c6bbc1
+    - repo: deepin-community/opencore-amr
+      tagsha: 48bbe5c04edfb5d642103a817cb61fa316ecf86f
+    - repo: deepin-community/snappy
+      tagsha: fca756c100584a28042258b9c5a5f30b92d9ed38
+    - repo: deepin-community/xcb-util-wm
+      tagsha: e31ea2138d93b50777c5382d52fbd0d06765cce0
+    - repo: deepin-community/make-dfsg
+      tagsha: c75d952f4f19993f2bbe383cd3e9a9316e23f671
+    - repo: deepin-community/xcb-util-keysyms
+      tagsha: 837f7299fd8c2c4f5100d4f265580dcae47b8da3
+    - repo: deepin-community/wireless-regdb
+      tagsha: 5810eae97169c82a6a2be249a21b1fbf5215b921
+    - repo: deepin-community/libvncserver
+      tagsha: 70c3e8a27ee07aa9d3a8263a5d1e0bf555e40174
+    - repo: deepin-community/libgcrypt20
+      tagsha: 8ec80ff6f670a7877dfef3bea1a72e3ab33c6516
+    - repo: deepin-community/libgpg-error
+      tagsha: eee2414ac33b6889b780014d7189f54c6ec89892
+    - repo: deepin-community/libhttp-cookies-perl
+      tagsha: 05fd89df0659fef2c9dc4cb8d121115ed4beb3fa
+    - repo: deepin-community/liblwp-protocol-https-perl
+      tagsha: 762a9b5f5250ec24f03ac8f026691cfb28ba7dc9
+    - repo: deepin-community/libseccomp
+      tagsha: 8266e890a01c723af2c8d18e63e49de79bc3706e
+    - repo: deepin-community/libsecret
+      tagsha: 0045c534f6fcead380bcdc7511b4991d26e5953f
+    - repo: deepin-community/libtommath
+      tagsha: 6fdd648d90b5714e7d3c4623ff295726cfbebe5d
+    - repo: deepin-community/libxkbcommon
+      tagsha: 123bfccdcadd13ac6c568e53f135f7e582e72679
+    - repo: deepin-community/mokutil
+      tagsha: 052caff5837a897e15dd0ab46f79ce636147de13
+    - repo: deepin-community/mpv
+      tagsha: 5554159dc87fcf48540f217829df5bf1d17edff3
+    - repo: deepin-community/openconnect
+      tagsha: 40612b3e4c583dfb8a99fe67bf037a8c3c79a18e
+    - repo: deepin-community/python-colorama
+      tagsha: 39e2cc515eb5219983398a625169940da8fddf79
+    - repo: deepin-community/setools
+      tagsha: 16e64c9b4726e08578ceb27308c5cc4293bc5d3b
+    - repo: deepin-community/startpar
+      tagsha: 174bb5c06bc51a4ae0b7388f2f7e7d68f5aff016
+    - repo: deepin-community/strongswan
+      tagsha: e234090de77de71868470c96f8b3ae7144169339
+    - repo: deepin-community/tzdata
+      tagsha: 2a50a4a0bbe738e061fb15ff5c9ad7242090859d
+    - repo: deepin-community/vlc
+      tagsha: 0fd8839155c0b4ba143b7ab0a33c9ef59c35cb0f
+    - repo: deepin-community/vulkan-loader
+      tagsha: 0dc4b2209a9c83fb57dd1517288113defa1fece2
+    - repo: deepin-community/xxhash
+      tagsha: 515b0285824b6e16bbed78c3d98f3d3b4d3771b7
+    - repo: deepin-community/z3
+      tagsha: 780346434e37d6f268d3541086f5cc2f11110c57
+    - repo: deepin-community/xf86-input-wacom
+      tagsha: 691e235e980f6547e86950f849c7504afb47d817
+    - repo: deepin-community/socat
+      tagsha: f20a7a81bf45a7a0fce7df112075f34387b0bc45
+    - repo: deepin-community/pygobject
+      tagsha: af01d2375b5bb640455d6f214cf9cbabf2d66623
+    - repo: deepin-community/libtomcrypt
+      tagsha: 89630b89ea9499a226a8f8d2f8423ac2e0a5eba5
+    - repo: deepin-community/qca2
+      tagsha: 55c76eb5dbb69c05dc0c317a95314c4bb5d28c43
+    - repo: deepin-community/libunwind
+      tagsha: 92c7502ac8abfc514e0c709235501cf8951aec7d
+    - repo: deepin-community/libwebp
+      tagsha: 7b1e8c45c2275cd427f7646714647602260e2ce5
+    - repo: deepin-community/unar
+      tagsha: 66288846cecd6c83ae02b64e1da1e811698b9c5e
+    - repo: deepin-community/xfsprogs
+      tagsha: 6fb76df9cc70e1b9a27629df2b4a0d9f83921e4b
+    - repo: deepin-community/libzstd
+      tagsha: 35254161625cb8f56cfdcd0b8b54733d523f9831
+    - repo: deepin-community/libmediainfo
+      tagsha: 7dbac48e54448d1dcad874ca466fce9cce7f5401
+    - repo: deepin-community/opensc
+      tagsha: 624bb8565e400ef75d04da6a0d42656a0b3b97e2
+    - repo: deepin-community/xapian-core
+      tagsha: ac317732039c1bafa735c2ab23d479b57bfcd9e3
+    - repo: deepin-community/packagekit
+      tagsha: 72aff6c8a35b369c28f47e0fe7bae2378303fc11
+    - repo: deepin-community/network-manager-openvpn
+      tagsha: 77e085c5e3ef3f72dc139cf584d71e3425d2fdf7
+    - repo: deepin-community/nftables
+      tagsha: ef97115f7edbc6f44772362c9741826cb5fced34
+    - repo: deepin-community/sane-backends
+      tagsha: ccab2291fc60efcd03335a0333a878d89e429ea3
+    - repo: deepin-community/shared-mime-info
+      tagsha: 44c723fa657eea6a79f4baa3cc12ee140e03ecab
+    - repo: deepin-community/xl2tpd
+      tagsha: 7751c5b02f8179a1f95d3ba5246dc149ab248d82
+    - repo: deepin-community/libime
+      tagsha: 29901aa1eee890a07cfbab8464810c3ec70ed12a
+    - repo: deepin-community/librsvg
+      tagsha: cab10497448d618f0b4175dba576bed6af2fead1
