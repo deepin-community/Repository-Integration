@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(openvpn): batch fix 5 CVE vulnerabilities via quilt patches by
+  deepin-ci-robot@deepin-community/openvpn
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/openvpn
+    tagsha: eb637f1cd08547d01ead63a0c2d0d2a5b9e423a0
+timestamp: 1784525878548
