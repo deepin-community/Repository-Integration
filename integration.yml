@@ -1,10 +1,8 @@
 message: 'Auto integrate from topic: fonttools-4.57.0 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
 repos:
-    - repo: deepin-community/fonttools
-      tagsha: ca0f4a29219ef5ae520d9d4beb413e87852f20b1
     - repo: deepin-community/ufo2ft
-      tagsha: 7cad80b6f945e515db3aad20559dbba1b37318d2
+      tagsha: f1d6b0428205c51de41d72a099ac5b8337172003
     - repo: deepin-community/ufolib2
       tagsha: 088c5b27ca687039db82428a7297d9bdc3428855
     - repo: deepin-community/lxml
@@ -23,3 +21,5 @@ repos:
       tagsha: ce875eec5959f1ba908f2c526cbbe534df63b1a9
     - repo: deepin-community/python-cattrs
       tagsha: abe9cc5d3de1811835ee5e885885c08bfefee72a
+    - repo: deepin-community/fonttools
+      tagsha: d8921423108881bdf701a2b4cc115e310b081009
