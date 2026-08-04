@@ -21,3 +21,5 @@ repos:
       tagsha: b02d46eba0bfe3d62205321b2b4f57c80d3e2eb2
     - repo: deepin-community/cython
       tagsha: ce875eec5959f1ba908f2c526cbbe534df63b1a9
+    - repo: deepin-community/python-cattrs
+      tagsha: abe9cc5d3de1811835ee5e885885c08bfefee72a
