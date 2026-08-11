@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: remove fonts-noto-cjk fonts-wqy-zenhei fonts-wqy-microhei by
+  Zeno-sole@deepin-community/deepin-desktop-environment
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/deepin-desktop-environment
+    tagsha: b6111970a8e77de334843356fb1a1e7aad5dba6a
+timestamp: 1786454001694
