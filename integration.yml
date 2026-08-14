@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update cyrus-sasl2 to 2.1.28+dfsg1-10 by
+  deepin-community-bot[bot]@deepin-community/cyrus-sasl2
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/cyrus-sasl2
+    tagsha: 825963cc5c9ef10b5347cd601170f0676c8011a6
+timestamp: 1760606553656
