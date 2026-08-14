@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: Fix GVariant lifecycle in dde-filedialog patch to prevent browse… by
+  Zeno-sole@deepin-community/gtkplus2.0
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/gtkplus2.0
+    tagsha: e34aced27a35b9eb321add6a28ae110b91476ae1
+timestamp: 1786684416353
