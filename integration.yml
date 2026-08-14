@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(vips): CVE-2025-59933, CVE-2026-2913, CVE-2026-3145, CVE-2026-3146,
+  CVE-2026-3147, CVE-2026-3281, CVE-2026-3282, CVE-2026-3283, CVE-2026-3284 by
+  deepin-ci-robot@deepin-community/vips
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/vips
+    tagsha: b3ea0762552b7b175ac5a0f2d34e3059241cf641
+timestamp: 1779084295661
