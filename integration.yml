@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(openbabel): CVE-2025-10994, CVE-2025-10995, CVE-2025-10996,
+  CVE-2025-10997, CVE-2025-10998, CVE-2025-10999, CVE-2025-11000, CVE-2026-2704,
+  CVE-2026-2705 by deepin-ci-robot@deepin-community/openbabel
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/openbabel
+    tagsha: 0a26b923a7a537070b83e25f3fde30a3c371c45e
+timestamp: 1779846201646
