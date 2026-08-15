@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update node-tar-fs to 3.0.9+~cs2.0.4-1+deb13u1 by
+  deepin-community-bot[bot]@deepin-community/node-tar-fs
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/node-tar-fs
+    tagsha: 6e72c91d1f707f8ed9e71044a25e5bf9b19660a7
+timestamp: 1783073271069
