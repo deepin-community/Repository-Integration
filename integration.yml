@@ -1,15 +1,23 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: vk1.4 by @YukariChiba to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/vulkan-loader
+      tagsha: 0dc4b2209a9c83fb57dd1517288113defa1fece2
+    - repo: deepin-community/vulkan-utility-libraries
+      tagsha: c0f3649d235fb36312ce1957673a7d2ee52df9f4
+    - repo: deepin-community/shaderc
+      tagsha: 1327f8ff983cfeb772a6ae9bd4ea6e5e452c698e
+    - repo: deepin-community/spirv-tools
+      tagsha: 054afdc61776915b9d5f6e759f978f71458855df
+    - repo: deepin-community/glslang
+      tagsha: e01582f213d1764c36a7af873a219481978e678d
+    - repo: deepin-community/spirv-headers
+      tagsha: 17f9d40b13647af45eff3b5edd526d3d5eebe2cd
+    - repo: deepin-community/vulkan-validationlayers
+      tagsha: ef0e445c343b5a7a6fd8a9132527daea03c195c5
+    - repo: deepin-community/khronos-api
+      tagsha: ee3da0be4f59dc682f7f125582a6f20b93541f58
+    - repo: deepin-community/wine
+      tagsha: 8e926b3350e46d7e05210b7212431b508dbbddd3
+    - repo: deepin-community/mesa
+      tagsha: ea568ae3962302f36b61fe41a98b236a2f1e8d5b
