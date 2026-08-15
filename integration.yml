@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Cherry-pick patch from upstream GIT master to fix FTBFS against
+  python3-setuptools 73.0.1. Closes: #1079928 by
+  UTsweetyfish@deepin-community/gpgme1.0
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/gpgme1.0
+    tagsha: bbcc258f4701596812fa4a945f91303c2a5c1a8b
+timestamp: 1760621824679
