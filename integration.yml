@@ -6,10 +6,19 @@ milestone: v25-Release
 # Required
 repos: 
   # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: linuxdeepin/dtk6core
+    tag: 6.0.0
+  - repo: linuxdeepin/dtk6gui
+    tag: 6.0.0
+  - repo: linuxdeepin/dtk6widget
+    tag: 6.0.0
+  - repo: linuxdeepin/dtk6declarative
+    tag: 6.0.0    
+  - repo: linuxdeepin/dtkcommon
+    tag: 5.6.18
+  - repo: linuxdeepin/dtkcore
+    tag: 5.6.18
+  - repo: linuxdeepin/dtkgui
+    tag: 5.6.18
+  - repo: linuxdeepin/dtkwidget
+    tag: 5.6.18
