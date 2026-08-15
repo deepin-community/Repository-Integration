@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: musescore3 by @apr3vau to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/midicsv
+      tagsha: dc0efa50f240d9ed869efad488a1a08e23686462
+    - repo: deepin-community/pax
+      tagsha: f0002473113da29ada847a68ad9b66a6ffa63677
+    - repo: deepin-community/musescore-general-soundfont-small
+      tagsha: 9c2d5adbfcff289715815edb910e51ee8d952c4f
+    - repo: deepin-community/musescore3
+      tagsha: d778eb8386febd4088192427ef4b4a81ab3d2f69
