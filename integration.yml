@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update adwaita-icon-theme to 48.1-1 by
+  deepin-community-bot[bot]@deepin-community/adwaita-icon-theme
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/adwaita-icon-theme
+    tagsha: b15e0cfbb6a9340593fb71a74c1338e0c0f90d28
+timestamp: 1756174771660
