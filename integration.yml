@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: node-sha.js-20250917 by @lhdjply to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/node-sha.js
+      tagsha: 7bc182eaa3867c630703e7a76b806bc29f9b9b43
+    - repo: deepin-community/node-to-buffer
+      tagsha: e90d2ab2e94b88712c152deb6b1bd03fea5f826f
