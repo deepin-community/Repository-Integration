@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: sysdev-20251124 by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/plymouth
+      tagsha: 6783fc8267c4d797d7b61835b351c33793388026
+    - repo: deepin-community/initramfs-tools
+      tagsha: 6641ad0eb067e3b623840324c7547d67850d78dd
+    - repo: deepin-community/ncurses
+      tagsha: 3cdecd41a6c5f1d941661a4ed1afc9404b83108f
