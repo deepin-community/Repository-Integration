@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  pkcs11: avoid stack overwrite when initializing a token [CVE-2025-9820] by
+  UTsweetyfish@deepin-community/gnutls28
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/gnutls28
+    tagsha: 9251d8b8c1e9e087482197ec1b665e9e77266e43
+timestamp: 1770190797409
