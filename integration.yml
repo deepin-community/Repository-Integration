@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update libcpanel-json-xs-perl to 4.39-2 by
+  deepin-community-bot[bot]@deepin-community/libcpanel-json-xs-perl
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libcpanel-json-xs-perl
+    tagsha: 71e4f8a2e6d8981909148b3d0179e7b6ab9abdde
+timestamp: 1757929400517
