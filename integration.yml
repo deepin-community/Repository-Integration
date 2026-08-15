@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: sdcc-20250807-lhdjply by @lhdjply to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/sdcc
+      tagsha: e4d13af4db673a7e0614ae3f79225fd20b85fc68
+    - repo: deepin-community/lyx
+      tagsha: 3907706f1fd8329e4566778c879c31dd715b74d7
