@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: libssh-20250629 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libssh
+      tagsha: 7ab0121f97f80e0956c2a622903b19a21f8c177d
+    - repo: deepin-community/bird2
+      tagsha: c902382e5edc4865edc9bc9d818ef9f3bbc22840
+    - repo: deepin-community/ffmpeg
+      tagsha: c7472975fb3ca6fda5c26d126c2bcbe4ce5be543
