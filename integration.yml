@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Fix CVE-2026-28295 and CVE-2026-28296: FTP security vulnerabilities by
+  deepin-ci-robot@deepin-community/gvfs
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/gvfs
+    tagsha: ade580dafe3f850d5506b5c62b996480312d9873
+timestamp: 1778208542814
