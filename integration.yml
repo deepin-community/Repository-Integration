@@ -1,15 +1,27 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: fonttools-4.57.0 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/ufo2ft
+      tagsha: 2f58596e189e675bd8c6cd600c6399e72d589de0
+    - repo: deepin-community/ufolib2
+      tagsha: 088c5b27ca687039db82428a7297d9bdc3428855
+    - repo: deepin-community/lxml
+      tagsha: f37400a395ef974b2f069a8e4fabdabe1aaf182a
+    - repo: deepin-community/glyphslib
+      tagsha: 336f7bff5730af2c0fabf8c09fefa4a3c4c8d106
+    - repo: deepin-community/glyphsinfo
+      tagsha: be422804f80c0b9617cfbda81de178d96db3dda4
+    - repo: deepin-community/python-fs
+      tagsha: e68cd19bf0a31dd0ffd0bafa39b9d666bd8f3392
+    - repo: deepin-community/compreffor
+      tagsha: 740aba24b7a5b89ec1ef21634d6fea3e4c84f5bd
+    - repo: deepin-community/ufonormalizer
+      tagsha: b02d46eba0bfe3d62205321b2b4f57c80d3e2eb2
+    - repo: deepin-community/cython
+      tagsha: ce875eec5959f1ba908f2c526cbbe534df63b1a9
+    - repo: deepin-community/python-cattrs
+      tagsha: abe9cc5d3de1811835ee5e885885c08bfefee72a
+    - repo: deepin-community/fonttools
+      tagsha: d8921423108881bdf701a2b4cc115e310b081009
+    - repo: deepin-community/platformdirs
+      tagsha: 61a10e92756c343a96445570dbf72ef03443e58b
