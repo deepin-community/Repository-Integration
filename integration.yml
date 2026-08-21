@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: libconfig-model-perl-202603 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libconfig-model-perl
+      tagsha: 1fd6dc7dd45ac7b926dd9da8b828eda03cefdeb3
+    - repo: deepin-community/libconfig-model-dpkg-perl
+      tagsha: 5afc6d5def559467051b045ae4d170db1237f3c4
+    - repo: deepin-community/libsoftware-copyright-perl
+      tagsha: aa87e477827697b06c838c0965f8f78224690d13
+    - repo: deepin-community/cme
+      tagsha: 54af3e42decfd9a5b2e43bf4cd7472a45f1f2017
+    - repo: deepin-community/libconfig-model-backend-yaml-perl
+      tagsha: a27b078deaa23117c52fbb38dd2c6b78e05476aa
+    - repo: deepin-community/libconfig-model-tester-perl
+      tagsha: 535acb22bd481b01aed1f16bddbf67af108f4875
