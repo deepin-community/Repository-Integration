@@ -5,11 +5,20 @@ message: |
 milestone: v25-Release
 # Required
 repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+  - repo: deepin-community/mysql-defaults
+    tagsha: "6f6bf5c3e63ff37608a08235a4f232e8b01ee16c"
+
+  - repo: deepin-community/openssl
+    tagsha: "d426c8609dcb661d2ab0c597803b2310c25e0971"
+
+  - repo: deepin-community/libmongocrypt
+    tagsha: "88f14c8f1af720f2ca9700fe9976cbc6549619c4"
+
+  - repo: deepin-community/intelrdfpmath
+    tagsha: "9d82e713319ea59ae7c5b893b6dd3f5a21323bf1"
+
+  - repo: deepin-community/rsyslog
+    tagsha: "3a71dabf2de5ceb97e579bb23efc48be4733b10e"
+
+  - repo: deepin-community/mongo-c-driver
+    tagsha: "6b977a14a5294983567a3663953ea2369713f51e"
