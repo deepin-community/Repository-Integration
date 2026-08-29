@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
-milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: >-
+  feat: add ubuntu24.04 fedora42 support. by
+  xzl01@deepin-community/deepin-distrobox-runner
+milestone: v25-release
+repos:
+  - repo: deepin-community/deepin-distrobox-runner
+    tagsha: 798b778845fcc022bf5615060367eb43c6d5e223
+timestamp: 1748934880366
