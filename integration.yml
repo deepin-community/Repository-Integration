@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update unicap to 0.9.12+repack20150328.0.git2c600ae-6 by
+  deepin-community-bot[bot]@deepin-community/unicap
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/unicap
+    tagsha: 89a1aad231b6827a3bc7dcf3321ed1dc58aa3b33
+timestamp: 1763715680880
