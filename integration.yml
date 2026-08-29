@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: modemmanager-1.24.0 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libmbim
+      tagsha: 858918095203de18c73ae0a799c20762053162c8
+    - repo: deepin-community/libqmi
+      tagsha: 0760a465daedc820615286b504010db3be1d0cb0
+    - repo: deepin-community/modemmanager
+      tagsha: 773bc6b747b0d07774fd06c4bd06eb420fc9fc2b
