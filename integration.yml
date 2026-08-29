@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update golang-github-kubernetes-cri-api to 0.32.3-1 by
+  deepin-community-bot[bot]@deepin-community/golang-github-kubernetes-cri-api
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/golang-github-kubernetes-cri-api
+    tagsha: ddb726d061a3032a4407590ad2eff1bcc7e24b9c
+timestamp: 1783392766011
