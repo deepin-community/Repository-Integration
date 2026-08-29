@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: tpm-20260428 by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/tpm-udev
+      tagsha: 812f360eda0c38e6ff88b9fd317cd27511ba1c32
+    - repo: deepin-community/tpm2-tss
+      tagsha: f148812563525eb35e3b44039a1bb1d9f123ed0c
+    - repo: deepin-community/tpm2-abrmd
+      tagsha: bed5e1c8f421cf7b85e3c897fd0eba216a9febec
+    - repo: deepin-community/openconnect
+      tagsha: 45078e22422c69a0ed17231360531e6849acd58b
+    - repo: deepin-community/tpm2-tools
+      tagsha: 5d21105488f476dd96c0233573b8a8ef4d01e68d
