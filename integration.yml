@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update libglib-object-introspection-perl to 0.051-2 by
+  deepin-community-bot[bot]@deepin-community/libglib-object-introspection-perl
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libglib-object-introspection-perl
+    tagsha: bd975591099e5ef5db5334f0bd2adc1c96c856f2
+timestamp: 1784620615170
