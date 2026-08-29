@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: wolfssl by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/wolfssl
+      tagsha: 27aec333cc0c2a8c4e3a26bde1fb4db12f5d59de
+    - repo: deepin-community/sip-tester
+      tagsha: ebdb5ed0ef9bdce01506c1118cab5974e6e03217
+    - repo: deepin-community/lighttpd
+      tagsha: 7e5355523fcc5437dfd66e6c15444748f52078d5
