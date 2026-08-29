@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update pci.ids to 0.0~2026.04.09-1 by
+  deepin-community-bot[bot]@deepin-community/pci.ids
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/pci.ids
+    tagsha: 3cc5889b2a28b4d26b9be7bcad0d8ecdb1ce3496
+timestamp: 1776415491940
