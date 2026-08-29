@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update fonts-noto-color-emoji to 2.051-0+deb13u1 by
+  deepin-community-bot[bot]@deepin-community/fonts-noto-color-emoji
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/fonts-noto-color-emoji
+    tagsha: 7f8965b44bb2259dc4f8585e926d295e2cd6627c
+timestamp: 1783318521679
