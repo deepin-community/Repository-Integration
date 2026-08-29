@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update xfce4-screenshooter to 1.11.1-1 by
+  deepin-community-bot[bot]@deepin-community/xfce4-screenshooter
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/xfce4-screenshooter
+    tagsha: 68edae70870ba87a3e4cba742e5bf3d5196b928f
+timestamp: 1750145855583
