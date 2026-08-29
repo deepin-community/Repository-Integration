@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Drop Prevides & Replaces libcups{,image}2t64 and unused
+  package-name-doesnt-match-sonames in lintian-overrides by
+  UTsweetyfish@deepin-community/cups
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/cups
+    tagsha: 2acc414308670dd979e89192718f1852cef3278b
+timestamp: 1776406783246
