@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: fix SVC layer ID bounds checks (CVE-2026-56208, CVE-2026-56209,
+  CVE-2026-56210, CVE-2026-56211) by deepin-ci-robot@deepin-community/aom
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/aom
+    tagsha: e5b930c6fd7ed53508651cabce24fd8d69db5786
+timestamp: 1785724383940
