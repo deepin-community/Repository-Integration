@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update nodejs to 20.19.2+dfsg-1+deb13u2 by
+  deepin-community-bot[bot]@deepin-community/nodejs
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/nodejs
+    tagsha: 5302d9b434849780f7b906b2f94ee2efab3ab96b
+timestamp: 1778809139417
