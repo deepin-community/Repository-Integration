@@ -1,15 +1,35 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: upgrade-20260908 by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/gawk
+      tagsha: 17839893425763b8994699245c4f274aa5a87340
+    - repo: deepin-community/libxxf86dga
+      tagsha: 380465e0814e9e3abee2b89a3d8f75e9b7bbf426
+    - repo: deepin-community/ima-evm-utils
+      tagsha: 5f1690c63a76fe9516ebfc766924e5cbd9389ca7
+    - repo: deepin-community/gpgme1.0
+      tagsha: bdf2f9853a0263dc81f4ecee10574003d08e7db5
+    - repo: deepin-community/libpsl
+      tagsha: 870e4bf6c9e80f30c0e949035af08df9719201ab
+    - repo: deepin-community/libbpf
+      tagsha: c337d88ef1f9a4dc3a3789f7a8ba57f0c63d3ef4
+    - repo: deepin-community/libxres
+      tagsha: 7ab7ca16d0e93d7d77cbfe6bf94d2cb296664207
+    - repo: deepin-community/chrony
+      tagsha: 28807cab28081c2407302ba9df20e0f512ebb094
+    - repo: deepin-community/ndctl
+      tagsha: 561c47850cd3d82fc7b5b83da62519c8f9670756
+    - repo: deepin-community/libseccomp
+      tagsha: 93a22e5f4cf5a091f2b71fed20cdecb3ec5029af
+    - repo: deepin-community/nettle
+      tagsha: 29cc83e22f0ed7a3ae7ce0e655843ff0e3194574
+    - repo: deepin-community/lsscsi
+      tagsha: 66008af53671c23d80c24cd93ab9dbb583e0549a
+    - repo: deepin-community/whois
+      tagsha: d7e7e0d467885fd1aff7a4a5605405a701224e25
+    - repo: deepin-community/nfs-utils
+      tagsha: eae685a00258c9635cc7bf689cfe9523c62a8909
+    - repo: deepin-community/fuse3
+      tagsha: de887b37249884a52f0dba3e3a998d1652f4521a
+    - repo: deepin-community/gnutls28
+      tagsha: aa579817dafe07a5e86315c1dfad48c5a809d9f4
