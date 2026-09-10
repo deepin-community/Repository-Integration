@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-86145 - Fix DFA workspace overflows; see
+  GHSA-3r4p-g7gg-ppmf for details by deepin-ci-robot@deepin-community/pcre2
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/pcre2
+    tagsha: bc3a293282c39e676c4ee5dcd43e395d6a305f11
+timestamp: 1789007519328
