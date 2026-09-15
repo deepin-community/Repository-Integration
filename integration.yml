@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-18374 - [PATCH] libio: Fix CVE-2026-18374 heap buffer
+  overflow in ccs= handling by deepin-ci-robot@deepin-community/glibc
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/glibc
+    tagsha: b33465c8f3274ee43e5f2717cdfc692806fb50e4
+timestamp: 1789449683553
