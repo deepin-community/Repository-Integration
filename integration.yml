@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-85501 - - Fix CVE-2026-85501, Retrap: Novel Vulnerabilities
+  to launch Algorithmi by deepin-ci-robot@deepin-community/unbound
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/unbound
+    tagsha: d4a320c703308448958078a6cf1dbed1b0a8cdb8
+timestamp: 1789870307656
