@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: let libtss2-mu-4.0.1-0 provide libtss2-mu-4.0.1-0t64 by
+  Zeno-sole@deepin-community/tpm2-tss
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/tpm2-tss
+    tagsha: 959b2970cbd99a29726e455ab8f556e7460633bc
+timestamp: 1789991564844
