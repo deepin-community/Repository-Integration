@@ -4,5 +4,5 @@ message: >-
 milestone: v25-Release
 repos:
   - repo: deepin-community/bind9
-    tagsha: 16f8e5821094c8135c647c41c3a39bb3d2437b07
-timestamp: 1790092438386
+    tagsha: 6248a1161a6b244d8f5820f5dfff4bd1bf546d13
+timestamp: 1790092438387
