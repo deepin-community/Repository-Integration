@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-88807 - Check numSubpixel against numScreens to avoid OOB
+  writes (CVE-2026-88807 by deepin-ci-robot@deepin-community/libxrender
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libxrender
+    tagsha: 1163de573afba20332ae68c3a3cbc0fa72523c52
+timestamp: 1792070488114
