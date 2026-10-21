@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-107161 - digestmd5: fix heap overflow in add_to_challenge()
+  when value needs esca by deepin-ci-robot@deepin-community/cyrus-sasl2
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/cyrus-sasl2
+    tagsha: 0404659535fbe4beb15df0d16815be9a9b64e45e
+timestamp: 1792585866413
