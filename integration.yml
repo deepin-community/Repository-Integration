@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(build): make the build bit-reproducible (-no-pch for GCC PR 124811,
+  QT_HASH_SEED=0 for qch) by Zeno-sole@deepin-community/qtbase-opensource-src
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/qtbase-opensource-src
+    tagsha: 082ccf5e92c89459df3550127b7b7890737cd9aa
+timestamp: 1792808735475
