@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(test): make tst-support_descriptors pass when /dev/null and /dev are on
+  different filesystems (uos-debrebuild build failure) by
+  Zeno-sole@deepin-community/glibc
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/glibc
+    tagsha: 4a162b1f4afab74dbbfd7e37992b9d3bf3f10f2b
+timestamp: 1792858670167
