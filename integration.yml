@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
-milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: qt6-20261027 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/qt6-base
+      tagsha: 0327641a27847d8c6ac75e5e7d1257d8970bb88a
+    - repo: deepin-community/qt6-5compat
+      tagsha: 9110ea0e46d2629ba364b5c7e04a530a47ea320e
+    - repo: deepin-community/qt6-httpserver
+      tagsha: cf9a8234551bd6dc85066548895c7e3b514ba451
+    - repo: deepin-community/qt6-3d
+      tagsha: a20e0338ae2ae22b61d69e24b44b824be41abcb7
+    - repo: deepin-community/qtwayland-opensource-src
+      tagsha: 6b12ccc0d3c752c2d3439651554457b73cf01982
