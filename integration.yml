@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-85091 - Fix buffer overflow bug in non-blocking gzwrite. by
+  deepin-ci-robot@deepin-community/zlib
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/zlib
+    tagsha: 925bf7775d32561d82d3ef5933087ba53bf3d76c
+timestamp: 1793255643568
