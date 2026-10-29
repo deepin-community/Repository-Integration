@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
-milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: sysdev-cve-20261029 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/libxi
+      tagsha: d72c15db66941d0fd96d1691272dda5032f53191
+    - repo: deepin-community/libsoup3
+      tagsha: 6839cc1fa5c2a53a6f18fc5dc2211af4538b0277
+    - repo: deepin-community/zvbi
+      tagsha: b49c21ad11a8bc867470ae7b1175b3cffe5ed8aa
+    - repo: deepin-community/patch
+      tagsha: 349776a2dbb80474212d8c990d8fafde1a83d809
+    - repo: deepin-community/libmng
+      tagsha: 658291569d16be72ba610818d9bb5fafe92ef6a5
+    - repo: deepin-community/gnupg2
+      tagsha: a067344f4381615a6a24a14d4663595327204e99
+    - repo: deepin-community/xwayland
+      tagsha: d20765b31c8f59d9eae58ec2361a8c002fb7fc37
+    - repo: deepin-community/xorg-server
+      tagsha: cab1440a5ab7cef9987a534711818987f63fd03b
