@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-94284 - ximcp: bound XIM_REGISTER_TRIGGERKEYS keylist
+  lengths to the packet by deepin-ci-robot@deepin-community/libx11
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libx11
+    tagsha: cd213830e9e61ed6f4fc87a950bb383d2f394821
+timestamp: 1793281428502
