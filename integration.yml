@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-23949 - In tarfile.context, ensure that the default filter
+  honors the data filte by deepin-ci-robot@deepin-community/setuptools
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/setuptools
+    tagsha: 632d333dea98c328a2b2302de22ad51bd6121998
+timestamp: 1792585287150
