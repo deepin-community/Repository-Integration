@@ -158,19 +158,24 @@ jobs:
               const msresp = await github.rest.issues.listMilestones({
                 owner: owner,
                 repo: repo,
+                state: "all",
+                per_page: 100,
               });
 
-              let milestone = 0
+              let milestone
               core.debug("milestone resp: ", msresp, "milestonestr: ", milestonestr)
               msresp_content = msresp.data
               core.debug("msresp_content: ", msresp_content)
               for (var i = 0; i < msresp_content.length; i++) {
-                if (msresp_content[i].title.replace("'", "") == milestonestr) {
+                if (msresp_content[i].title == milestonestr) {
                   milestone = msresp_content[i].number
                   break
                 }
               }
               core.debug("milestone number: ", milestone)
+              if (milestone === undefined) {
+                core.warning(`Milestone '${milestonestr}' not found, continuing without milestone`)
+              }
               if (issueid == "undefined") {
                 // create a new issue
                 let issuse_content = "### Package information | 软件包信息\n\n"
@@ -182,15 +187,19 @@ jobs:
 
                 core.debug("start create issue: ", issuse_content)
 
-                const cresp = await github.rest.issues.create({
+                const issueParams = {
                   owner: owner,
                   repo: repo,
                   title: title,
                   body: issuse_content,
                   assignees: assignees,
-                  milestone: milestone,
                   labels: labels,
-                });
+                };
+                if (milestone !== undefined) {
+                  issueParams.milestone = milestone;
+                }
+
+                const cresp = await github.rest.issues.create(issueParams);
 
                 issueid = cresp.data.number
               } else {
@@ -210,7 +219,7 @@ jobs:
                 issuse_content += changelog + "\n"
                 core.debug("update issue body: ", issuse_content)
 
-                await github.rest.issues.update({
+                const issueParams = {
                   owner: owner,
                   repo: repo,
                   title: title,
@@ -218,9 +227,13 @@ jobs:
                   issue_number: issueid,
                   //assignees: assignees,
                   state: issuestate,
-                  milestone: milestone,
                   //labels: labels,
-                });
+                };
+                if (milestone !== undefined) {
+                  issueParams.milestone = milestone;
+                }
+
+                await github.rest.issues.update(issueParams);
               }
 
               //get issue node id
