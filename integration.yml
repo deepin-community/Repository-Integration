@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Skip the architecture-dependent XCF and EXR autotests as well by
+  UTsweetyfish@deepin-community/kf6-kimageformats
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/kf6-kimageformats
+    tagsha: d83b23a8dc160b8a3d3f1fb10695f079417a01e0
+timestamp: 1793352703747
