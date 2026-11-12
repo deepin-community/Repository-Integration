@@ -1,15 +1,25 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
-milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: sysdev-20261112 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/gst-plugins-base1.0
+      tagsha: 28acbc8ffcf1f9e6edc55e6296b191aa2a690e1b
+    - repo: deepin-community/gst-plugins-bad1.0
+      tagsha: 392b52b7719d3079793246a5707331050f146ce1
+    - repo: deepin-community/poppler
+      tagsha: 9ab190a30b6cc69b62a0e06296497b7d7ea83ea0
+    - repo: deepin-community/packagekit
+      tagsha: 9aeaefe253a0f18f0cb2b390245a6d938f342cf0
+    - repo: deepin-community/mpv
+      tagsha: 914f3064dad3f4e71f8ac5f7841a4fefeef68af7
+    - repo: deepin-community/xorg-server
+      tagsha: 63d173b50677868ccdf78c20d3648a8e2149bb45
+    - repo: deepin-community/xwayland
+      tagsha: aac6454e1a0cb13c333c6f221fe7c6247ff28ab5
+    - repo: deepin-community/ghostscript
+      tagsha: 9f5648dd0327bc237397efae7cbe5a41910e1bbd
+    - repo: deepin-community/ppp
+      tagsha: 54822e0e8f2819516da24f397d03453aed30f46c
+    - repo: deepin-community/popt
+      tagsha: 58887df7e4c7d05e9e9ab3fca60f8dd9002d207b
+    - repo: deepin-community/openssh
+      tagsha: ea214dd1d7e5e74eb2c1d1ab74ce61efcaa5ab48
