@@ -21,3 +21,5 @@ repos:
       tagsha: 54822e0e8f2819516da24f397d03453aed30f46c
     - repo: deepin-community/popt
       tagsha: 58887df7e4c7d05e9e9ab3fca60f8dd9002d207b
+    - repo: deepin-community/openssh
+      tagsha: ea214dd1d7e5e74eb2c1d1ab74ce61efcaa5ab48
