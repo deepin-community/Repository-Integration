@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  dde-filedialog: Don't crash when the file manager service is unavailable, fall
+  back to the native dialog. by UTsweetyfish@deepin-community/gtkplus3.0
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/gtkplus3.0
+    tagsha: be00eb37d69b0984f6b1be88b2c5817ec5ae9352
+timestamp: 1794564437909
