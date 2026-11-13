@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'fix: 修复壁纸软链接已存在时 postinst 报错退出 by Zeno-sole@linuxdeepin/default-settings'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: linuxdeepin/default-settings
+    tagsha: b039862e41e3695aca1917a898447c6d8cb718e0
+timestamp: 1794559092684
