@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: re-add ModelPressurePad quirk for Lenovo ThinkBook 14/16 G8+ IPH by
+  Zeno-sole@deepin-community/libinput
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libinput
+    tagsha: 07cdcc7bfbdba5f71b03b7c14484e598850b6e03
+timestamp: 1794827375649
