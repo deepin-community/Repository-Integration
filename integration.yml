@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: arch sw64 LARGEFILE = 0x8000 and DIRECTORY = 0x8000, causing a c… by
+  Zeno-sole@deepin-community/golang-github-hanwen-go-fuse
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/golang-github-hanwen-go-fuse
+    tagsha: 7366b7782a972d961f64aa0b9f7e3618390dc732
+timestamp: 1754033383487
