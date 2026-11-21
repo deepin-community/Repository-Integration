@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: rebuild-20251021 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/librist
+      tagsha: 003885b9f69f1de566f9e633b941b0843fed34b8
+    - repo: deepin-community/bctoolbox
+      tagsha: 13b898d1d0ff28f1400282980bba654c716456f8
+    - repo: deepin-community/libgit2
+      tagsha: 14996b976fa37ac21a7eb6e387d4be620cc63b0f
+    - repo: deepin-community/libgit2-glib
+      tagsha: 2d881111cb0c38f39573587b8af038adaf92e1d4
+    - repo: deepin-community/fritzing
+      tagsha: e43b7b51a75377657f5c15938c00ab720be76c7a
+    - repo: deepin-community/svgpp
+      tagsha: 1d1848318d77a8d61f3bde42154dc342f5d2a934
+    - repo: deepin-community/agg
+      tagsha: 8346990863846a1fdbfce759f4057dead1ba1346
