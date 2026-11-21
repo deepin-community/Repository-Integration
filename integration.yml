@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(angular.js): CVE-2024-8372 CVE-2024-8373 CVE-2025-0716 CVE-2025-2336
+  CVE-2025-4690 by deepin-ci-robot@deepin-community/angular.js
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/angular.js
+    tagsha: 5cd458845199de4b747e97cae69e8c5eb4480917
+timestamp: 1779930940604
