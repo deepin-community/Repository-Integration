@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update sof/intel_vpu/ish/ibt/iwlwifi/xe/mt76 firmware by
+  opsiff@deepin-community/linux-firmware
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/linux-firmware
+    tagsha: 9c47943d933b64fe5799c7c005d55c1aba584182
+timestamp: 1773645133626
