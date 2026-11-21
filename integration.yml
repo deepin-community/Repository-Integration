@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  CVE-2025-4476, CVE-2025-4945, CVE-2025-4948, CVE-2025-4969, CVE-2025-12105,
+  CVE-2025-46421, CVE-2026-1761 by UTsweetyfish@deepin-community/libsoup2.4
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libsoup2.4
+    tagsha: d20da1866438d110c7628c921cfd51c4da26f894
+timestamp: 1774232197576
