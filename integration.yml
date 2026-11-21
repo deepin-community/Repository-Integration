@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(xorg-server): CVE-2026-50256/50257/50258/50259/50260/50261/50264 security
+  fixes by deepin-ci-robot@deepin-community/xorg-server
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/xorg-server
+    tagsha: 600e0cf9e786d38146b9f4ff248e33f909dd9468
+timestamp: 1781073334639
