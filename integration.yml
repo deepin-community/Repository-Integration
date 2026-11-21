@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Fix use-after-free in 'ntfs_uppercase_mbs' (CVE-2023-52890) by
+  UTsweetyfish@deepin-community/ntfs-3g
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/ntfs-3g
+    tagsha: c1650f84fb8518cd0ccdef4c22f54c534ab9fdf4
+timestamp: 1770099456865
