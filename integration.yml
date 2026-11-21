@@ -1,15 +1,29 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: gnuradio by @YukariChiba to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libad9361-iio
+      tagsha: f3a2f10ad9df6ef41103e753df6bd765f23565d2
+    - repo: deepin-community/gnuradio
+      tagsha: 9dcd56649020f588cb87bf66f92ab7fba992c927
+    - repo: deepin-community/libcdk5
+      tagsha: 5041821ac750f288dd1aaef4d5dd6e97237dcd73
+    - repo: deepin-community/dpdk
+      tagsha: c3039d7de6c55731c2c8321b082dad617ace2a85
+    - repo: deepin-community/xdp-tools
+      tagsha: d28bdaf57b4f3cb7be53f34b848d3442a426e96d
+    - repo: deepin-community/libiio
+      tagsha: a084bc1521411d403ee00e94f50a451fbdff1d64
+    - repo: deepin-community/libxtrx
+      tagsha: 334d513d989ea4c3293ccf7dac554c8762426b16
+    - repo: deepin-community/bladerf
+      tagsha: c2b52608abdffa9accbc193e0fbc4e90b6027452
+    - repo: deepin-community/libxtrxll
+      tagsha: 5b770d039121a6aa286debc724a0d9dd209314a9
+    - repo: deepin-community/libtecla
+      tagsha: cb1571ac63a04aacfcafece1d7beb30dc7d45865
+    - repo: deepin-community/sphinx-qt-documentation
+      tagsha: ed2657f0cd38144b70127d1d73466092338b7795
+    - repo: deepin-community/libusb3380
+      tagsha: 98f185e0864c26a19f5d60ae228b8a19ab560b57
+    - repo: deepin-community/uhd
+      tagsha: 5b467da64300e0a525d2ef69a2a792a52fe2e579
