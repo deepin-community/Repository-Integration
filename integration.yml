@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: CVE-2026-34986 panic on KeyUnwrap of too-short slice by
+  deepin-ci-robot@deepin-community/golang-gopkg-square-go-jose.v2
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/golang-gopkg-square-go-jose.v2
+    tagsha: efb4900bf26f60c54eca9ff141c2b6dab9d92938
+timestamp: 1779171413426
