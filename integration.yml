@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update libcrypt-cbc-perl to 3.07-1 by
+  deepin-community-bot[bot]@deepin-community/libcrypt-cbc-perl
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libcrypt-cbc-perl
+    tagsha: e6bc2319f3e62283d8369cbb8b6595cc19075aa8
+timestamp: 1778156722154
