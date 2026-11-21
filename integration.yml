@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(inetutils): CVE-2026-24061, CVE-2026-28372, CVE-2026-32746, CVE-2026-32772
+  by deepin-ci-robot@deepin-community/inetutils
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/inetutils
+    tagsha: c42c61a9fc20955dbf84c3b86b88f721b05c7982
+timestamp: 1778729814662
