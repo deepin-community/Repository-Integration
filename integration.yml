@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update ruby-nio4r to 2.7.4-1 by
+  deepin-community-bot[bot]@deepin-community/ruby-nio4r
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/ruby-nio4r
+    tagsha: 661a288f0cb3c0cd8bc0c1af3a4f18680ee3ca6c
+timestamp: 1762327491110
