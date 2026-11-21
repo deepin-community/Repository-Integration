@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: Reduce pixel clock for specific displays to fix black screen by
+  helozht@deepin-community/xserver-xorg-video-amdgpu
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/xserver-xorg-video-amdgpu
+    tagsha: 8bbf3f1e2f19868ec0f0d77225b7d5bcfcd0d57a
+timestamp: 1788856436449
