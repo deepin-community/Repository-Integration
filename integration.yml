@@ -1,15 +1,45 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: nginx-abi-1.26.3 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/nginx
+      tagsha: a7c275927e7d4583fdedf05d81c4a3b1e9e84bfa
+    - repo: deepin-community/libnginx-mod-http-srcache-filter
+      tagsha: 1b9169b71b1fc01bea6e35a233ec8d7e6054b46a
+    - repo: deepin-community/libnginx-mod-http-subs-filter
+      tagsha: 62313e4d2fc6361144f7f77ff50c1052e5971684
+    - repo: deepin-community/libnginx-mod-http-echo
+      tagsha: 4d057702b04d3c1332b8d580ac90010d1620b78c
+    - repo: deepin-community/libnginx-mod-http-geoip2
+      tagsha: baf576e250e62270f402e843047fcbe8d49cad99
+    - repo: deepin-community/libnginx-mod-http-uploadprogress
+      tagsha: 1e04eddd95740842e0a2b879c22bf349edf5ed1e
+    - repo: deepin-community/libnginx-mod-rtmp
+      tagsha: 27ecc97bc5a8372fceb256f87ef2f3cd564a75ed
+    - repo: deepin-community/libnginx-mod-http-ndk
+      tagsha: d3a16b4894e6bfa86a37797df3af371d512f350d
+    - repo: deepin-community/libnginx-mod-nchan
+      tagsha: 717b9ffb02bd38b61224c53f7d991dce25286da3
+    - repo: deepin-community/libnginx-mod-http-set-misc
+      tagsha: 922edb9ae5cc0343fdca4506f06d735b7710ee14
+    - repo: deepin-community/libnginx-mod-http-lua
+      tagsha: 8e7c600a962b2fff80baa2a2865a817e4cf1d68d
+    - repo: deepin-community/libnginx-mod-http-headers-more-filter
+      tagsha: 7630f75df29309996d7f0ffbf4180e52154204bf
+    - repo: deepin-community/libnginx-mod-http-fancyindex
+      tagsha: 1d66e36bdebe421781e47ef0dbc5d45bcc969fcb
+    - repo: deepin-community/libnginx-mod-js
+      tagsha: 5376305d1abb8c898c306c8636ac460051c5b98a
+    - repo: deepin-community/libnginx-mod-http-auth-pam
+      tagsha: 6a1875ae70f1deea1752e77e6005dd6afd90e3c7
+    - repo: deepin-community/libnginx-mod-http-brotli
+      tagsha: b5c0dc352e22acc3bc82fdd4020e18f0e268562c
+    - repo: deepin-community/libnginx-mod-http-cache-purge
+      tagsha: bfd805ad8d373aed9314cbb3e49e76db1bdfe217
+    - repo: deepin-community/libnginx-mod-http-memc
+      tagsha: ed9a79e56f8fff54b3d7845e7f85b5b406f0daa9
+    - repo: deepin-community/libnginx-mod-http-upstream-fair
+      tagsha: b7f6b03754e2fc5b2a5598374320071f883beed5
+    - repo: deepin-community/libnginx-mod-http-dav-ext
+      tagsha: f1916a5633df608c38d4c56086fb532ce815ef32
+    - repo: deepin-community/libnginx-mod-http-modsecurity
+      tagsha: de6d2f1426761ba60b047ec1961c1530443e58bc
