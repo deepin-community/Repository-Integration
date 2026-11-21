@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(twitter-bootstrap4): CVE-2024-6484, CVE-2024-6531 by
+  deepin-ci-robot@deepin-community/twitter-bootstrap4
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/twitter-bootstrap4
+    tagsha: 2cadf7240ecf74079417de0f34094b11f434d66f
+timestamp: 1778205247600
