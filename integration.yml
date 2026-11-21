@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(golang-github-hashicorp-go-retryablehttp): CVE-2024-6104 by
+  deepin-ci-robot@deepin-community/golang-github-hashicorp-go-retryablehttp
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/golang-github-hashicorp-go-retryablehttp
+    tagsha: 24672aba7124ea5c089eb8ed7264506dcb6ee23a
+timestamp: 1777517365713
