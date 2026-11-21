@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update libwww-mechanize-perl to 2.19-1 by
+  deepin-community-bot[bot]@deepin-community/libwww-mechanize-perl
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libwww-mechanize-perl
+    tagsha: 6caf47d2a084e8262ed93e6c1ff5f6f2af64a006
+timestamp: 1782453156585
