@@ -1,15 +1,7 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: libvpl by @Avenger-285714 to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libvpl-tools
+      tagsha: 71d1ec2aa6bce3bfd0f885fd2ecefb1d63d55e8b
+    - repo: deepin-community/libvpl
+      tagsha: 227fb290e84dd3b1b36bf40d219341c1272b96e4
