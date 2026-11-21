@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update ntfs-3g to 1:2022.10.3-5+deb13u1deepin1 by
+  deepin-community-bot[bot]@deepin-community/ntfs-3g
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/ntfs-3g
+    tagsha: bc9d1d143df04b76ecb097d09035e5b6a36ed1ca
+timestamp: 1776851692502
