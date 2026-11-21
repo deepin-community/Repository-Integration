@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update nvidia-vaapi-driver to 0.0.14-1 by
+  deepin-community-bot[bot]@deepin-community/nvidia-vaapi-driver
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/nvidia-vaapi-driver
+    tagsha: 515cf5d835d963d6a05e10a37943215a7d5a05f1
+timestamp: 1764212985367
