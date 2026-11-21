@@ -1,15 +1,65 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: pipewire-20260129 by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/libcamera
+      tagsha: ab9f4843ae4b1f311d3f57fd91767e494494a040
+    - repo: deepin-community/pipewire
+      tagsha: 530ceb48f31d7ab2585c6b58b8032d5f8e25c3f4
+    - repo: deepin-community/roc-toolkit
+      tagsha: 87a2ea38ecae016521701c7e812e82b09011995f
+    - repo: deepin-community/openfec
+      tagsha: 1f92afcbfbffb3e0a6e54acd39b0a80130cb4705
+    - repo: deepin-community/alsa-lib
+      tagsha: e1a39a10b5c81193118a22d9511efc41699bc785
+    - repo: deepin-community/alsa-ucm-conf
+      tagsha: 84483ca1cc780bb4dd8b4de63a66f79235552168
+    - repo: deepin-community/alsa-utils
+      tagsha: 7bcc3d7ded799d376c424a04df8d109a58db63e9
+    - repo: deepin-community/sphinxcontrib-doxylink
+      tagsha: de0491999583fdd90d13db6f39a722c57b0bfc84
+    - repo: deepin-community/onnx
+      tagsha: 758ded6b2311493afb80096a1d15b960bfef138b
+    - repo: deepin-community/onnxruntime
+      tagsha: 851c317a1d68d90323eeb7474ae00be0ba38f8dd
+    - repo: deepin-community/cpuinfo
+      tagsha: eb5278c3357a092a37205fb09d31681eed704878
+    - repo: deepin-community/dlpack
+      tagsha: 3570cc964c121efa916acc09b216df71e7ebf9a2
+    - repo: deepin-community/ms-gsl
+      tagsha: 03b45001d94a6314fa36b9433532eb10a78d0ff5
+    - repo: deepin-community/pthreadpool
+      tagsha: 3ee6b2438f302a56777f953e0608c853d7ff536d
+    - repo: deepin-community/fxdiv
+      tagsha: b3e0c0640dfb7991026f475c42e8df890221cd9f
+    - repo: deepin-community/safeint
+      tagsha: fca9fe639459ec96256653899a4cbef9abf1adc8
+    - repo: deepin-community/onednn
+      tagsha: 88f0e1e879de29c5247214e3ee66536953609f80
+    - repo: deepin-community/xnnpack
+      tagsha: dde3e0582014b9e1ec42ed8a5925e9fdc30003f2
+    - repo: deepin-community/fp16
+      tagsha: 1703624b36616474e19b4e34aabec3f313a3772b
+    - repo: deepin-community/psimd
+      tagsha: 9130a5fd3564932cf0313f3bcafd039c0d74aab8
+    - repo: deepin-community/liblc3
+      tagsha: deff3dabdde0bd98092d1f4983d509b8416c08c5
+    - repo: deepin-community/alsa-plugins
+      tagsha: 320804d2f57796e7bdbdb5da7527c96be126bba3
+    - repo: deepin-community/wireplumber
+      tagsha: a5f340cc91c4d71fa02353b1a1aae3430946c056
+    - repo: deepin-community/fdk-aac
+      tagsha: 4427ec842fbcca0cd634a7cd574d51e5167864e3
+    - repo: deepin-community/libsndfile
+      tagsha: f8ce4fe6f47baddd01d9d10b57d845fe6780e4af
+    - repo: deepin-community/ruy
+      tagsha: 114c1effa342b2fa63a155f63b350492ee4009b9
+    - repo: deepin-community/neon-2-sse
+      tagsha: 4b6e41b5b604d60c4254721a116c3e289f1f77a3
+    - repo: deepin-community/gemmlowp
+      tagsha: 3e5b8d35e73c5cebee79dc28f347c16e2304f330
+    - repo: deepin-community/farmhash
+      tagsha: cc9ad632caa0bf71c72813d40073159c7621ee6d
+    - repo: deepin-community/oourafft
+      tagsha: b76d59c56a701f4ea46046e70b1ede25cb2cc95d
+    - repo: deepin-community/tensorflow
+      tagsha: 95cfaba036a211a4bf33cce6ce69bce62b669c09
