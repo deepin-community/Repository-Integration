@@ -1,15 +1,19 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: lazygit by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/lazygit
+      tagsha: 5e3b46ef902345eb2228ea53833e7b9093307556
+    - repo: deepin-community/golang-github-jesseduffield-gocui
+      tagsha: 788365ceff699ff806c6fffbb0a5403d7b9d0788
+    - repo: deepin-community/golang-github-ozeidan-fuzzy-patricia
+      tagsha: abe231881f4b4de48ccdb85bd30aaccda0b7b586
+    - repo: deepin-community/golang-github-jesseduffield-minimal
+      tagsha: e9f81a270ba6f99fa7729c698f7798278d9cdc17
+    - repo: deepin-community/golang-github-jesseduffield-generics
+      tagsha: f8299d8af715d106c53f8a9eb8055788ddfaf9a8
+    - repo: deepin-community/golang-github-fsmiamoto-git-todo-parser
+      tagsha: 55fbcd2803a5415a520534642abe417cd428df12
+    - repo: deepin-community/golang-github-humanlogio-humanlog
+      tagsha: e3d50321dad787895792c99fcda2c67de6c3109a
+    - repo: deepin-community/golang-github-jesseduffield-kill
+      tagsha: e97f758a6dc39b52ba4a78615769c2f5f8afd710
