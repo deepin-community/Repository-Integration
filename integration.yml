@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  security: Fix CVE-2023-49501 CVE-2023-49528 CVE-2024-35365 CVE-2024-36615 by
+  Zeno-sole@deepin-community/ffmpeg
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/ffmpeg
+    tagsha: 05552b4abd99e76f8328c5ab70dcea346676cabe
+timestamp: 1773230749268
