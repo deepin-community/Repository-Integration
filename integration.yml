@@ -1,15 +1,13 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: ansible-12.0.0 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/ansible
+      tagsha: 5aab361ad4baf441a7b98647369f65938866ecc0
+    - repo: deepin-community/ansible-core
+      tagsha: 402257f6df9e966324abbee4bc15ef2d8be1b511
+    - repo: deepin-community/ansible-lint
+      tagsha: 16b8fa96aad89ebeb18dea97f77b73162f78ce73
+    - repo: deepin-community/python-ansible-compat
+      tagsha: 23025f9d5332ff96738ee03ccced8d606e565b85
+    - repo: deepin-community/ansible-runner
+      tagsha: 17d0a6efd672d16b9e7041dfb1ed4c5d9f802afe
