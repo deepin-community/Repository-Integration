@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(opensc): CVE-2025-13763, CVE-2025-49010, CVE-2025-66037, CVE-2025-66038,
+  CVE-2025-66215 by deepin-ci-robot@deepin-community/opensc
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/opensc
+    tagsha: b9e8fcd000763cba3a7017bfc41f62decf00bc41
+timestamp: 1779067291789
