@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-93543 - [PATCH 3/7] size_classes/copy_classes: enforce XI2
+  per-type class payloa by deepin-ci-robot@deepin-community/libxi
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libxi
+    tagsha: 6fb19cabdaa49569c14e3acfa75910f5d4f4c78b
+timestamp: 1791436428469
