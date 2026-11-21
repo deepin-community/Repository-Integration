@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: ardour by @Cryolitia to V23-Beta3'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/ardour
+      tagsha: c32927e6c612cc47be9d53f16f10a5948973dc62
+    - repo: deepin-community/taglib
+      tagsha: eeea6d7f3a22d6e1555c7ad01a121f72291a3f4e
+    - repo: deepin-community/aubio
+      tagsha: 6719988b1735e4dc0ac77658a3c1159b1b341f2f
