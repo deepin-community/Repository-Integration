@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update usb-modeswitch-data to 20251207-1 by
+  deepin-community-bot[bot]@deepin-community/usb-modeswitch-data
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/usb-modeswitch-data
+    tagsha: 327bfddda32e3de0ce82cb4954a89c37aa674788
+timestamp: 1784610641378
