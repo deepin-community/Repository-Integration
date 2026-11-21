@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(golang-github-go-jose-go-jose): CVE-2025-27144, CVE-2026-34986 by
+  deepin-ci-robot@deepin-community/golang-github-go-jose-go-jose
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/golang-github-go-jose-go-jose
+    tagsha: 82a7cc5b883e958d23d92630f19d21a99c33d9da
+timestamp: 1779326367355
