@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'fix(libinput): CVE-2026-50292 by deepin-ci-robot@deepin-community/libinput'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libinput
+    tagsha: e138b1ca03de7ab487110579ed609781c2cd49b7
+timestamp: 1781072015345
