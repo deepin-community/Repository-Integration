@@ -1,15 +1,83 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: upgrade-20260622 by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/coreutils
+      tagsha: f88e66ba4041f8ed9f551b2bde5c9f6023417d48
+    - repo: deepin-community/acl
+      tagsha: 203f08fccd79c7778c2063351b807afd841d9b91
+    - repo: deepin-community/fprintd
+      tagsha: 106de31e2587e7c3f8dade23f8f08b2aa94dedad
+    - repo: deepin-community/golang-github-containers-image
+      tagsha: ff04cdca4cad4de50eb82883dc3c55d893d00461
+    - repo: deepin-community/cifs-utils
+      tagsha: 89e8c0645592bf467bc2209dacc925a61bfcdad9
+    - repo: deepin-community/dpkg-repack
+      tagsha: f264f537d0f45f8c5cffd4fc245a7eea80615030
+    - repo: deepin-community/cdebconf
+      tagsha: 6f720e7a99fe02ec9ebdc2c5d865f3144c6d9c27
+    - repo: deepin-community/distro-info-data
+      tagsha: 22d3fc46b0ea0ab10f01f635be81a3bb4d483c5a
+    - repo: deepin-community/crun
+      tagsha: f4c71e44541ce03824d71bd90cce8f6a1dded424
+    - repo: deepin-community/checkpolicy
+      tagsha: d9c8c4389e7e725fe8e68783beb4a7373e3185f3
+    - repo: deepin-community/ayatana-ido
+      tagsha: 029ec98e24a9b22017c5d0e78bb70eb633004186
+    - repo: deepin-community/erofs-utils
+      tagsha: dfb1297cfa0d5f9d7f709ec212e7fcad11a23430
+    - repo: deepin-community/dbus-python
+      tagsha: 5cfe3c1351d40d387a8855163cb2ea0abe6fc947
+    - repo: deepin-community/ccid
+      tagsha: 9be184c5416882db2ae6650dc18f700714039770
+    - repo: deepin-community/gle
+      tagsha: a43946b5c53e7633324b6ba381ca5cad9ce20772
+    - repo: deepin-community/gst-plugins-ugly1.0
+      tagsha: 33a1fa7a587bc354f50a93c706e54f7df130bbfb
+    - repo: deepin-community/double-conversion
+      tagsha: 439a2a75c78e86cf8633cb1c5521df7449f3918d
+    - repo: deepin-community/freetype
+      tagsha: a81c364511f34965576b80d379957c2388cc6337
+    - repo: deepin-community/distrobox
+      tagsha: 97cfe44c85e97eed761f48b6b0a2f00333151a5f
+    - repo: deepin-community/gawk
+      tagsha: 490b7254aa37f91ab30aead656cb32bffb8364da
+    - repo: deepin-community/golang-github-containers-common
+      tagsha: b6214f1e44cc86e03f7995baadb670f84dfd404c
+    - repo: deepin-community/enchant-2
+      tagsha: 01066a5db732f11a3823c6333b0a46b926832e09
+    - repo: deepin-community/gettext
+      tagsha: 68f7b2aabdcb24878f061dd4d3715fcaddf2dc74
+    - repo: deepin-community/gsettings-desktop-schemas
+      tagsha: 85207e932df425676f09a70390021f96ea6cb351
+    - repo: deepin-community/aom
+      tagsha: 137f40f725329acec47013ccac3d917607d96e5e
+    - repo: deepin-community/gobject-introspection
+      tagsha: 82baf00e5f30d2f517635114e710b482f931016d
+    - repo: deepin-community/dbus
+      tagsha: ef658a13ca5c08cdb31b9df5ce86643469a81cfc
+    - repo: deepin-community/dbus-glib
+      tagsha: 2d86dd8073db8e26775674002acdb4fd57696ea8
+    - repo: deepin-community/bash
+      tagsha: 776b997fc648b81d294c8963b4d101fe21d6aa73
+    - repo: deepin-community/attr
+      tagsha: 6fb1318d10ac08304edd0ff43fdbf225f0a3d300
+    - repo: deepin-community/avfs
+      tagsha: 48d29c833e1d6a44651335f9b66103319f842cbd
+    - repo: deepin-community/ddcutil
+      tagsha: a18bffb999c3487a2f2247327c5de7f81ca41c8e
+    - repo: deepin-community/base-passwd
+      tagsha: c7a65378416e2e1d90e83485a66e3948ff2fe591
+    - repo: deepin-community/appstream
+      tagsha: 8b4a363cfa77cb1cfc7c927d201d6e44bdd2154f
+    - repo: deepin-community/adduser
+      tagsha: b53fdbdff1c1d773b003a53ec27f6d29612ea564
+    - repo: deepin-community/gcr4
+      tagsha: 13c9f87375170cf8882e9b82fa39b7a610303409
+    - repo: deepin-community/geoclue-2.0
+      tagsha: c2340503a03e28da75d8e4d9345c2fdfeeb16ab4
+    - repo: deepin-community/gst-plugins-good1.0
+      tagsha: fc39ff843b4a65cda0f3a85ee1922968fb153e1a
+    - repo: deepin-community/gst-plugins-base1.0
+      tagsha: ccfc1d0d9580b2f1a8c89f4f09a3a8261ca2212d
+    - repo: deepin-community/gstreamer1.0
+      tagsha: 5ea09be081d66131f1e86cbac6946d2c5471282b
