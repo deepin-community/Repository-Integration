@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Limit bash-completion version and add README. by
+  apr3vau@deepin-community/bash-pinyin-completion-cpp
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/bash-pinyin-completion-cpp
+    tagsha: 5987f2b1e46e0ea0f72ec1ce35a65083c9fcf9ec
+timestamp: 1750065075201
