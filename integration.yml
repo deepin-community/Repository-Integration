@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(poppler): CVE-2024-6239, CVE-2025-43718, CVE-2025-43903, CVE-2025-50420,
+  CVE-2025-52885, CVE-2025-52886 by deepin-ci-robot@deepin-community/poppler
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/poppler
+    tagsha: 330e503a30da6f8e290b486799d3133e6a621393
+timestamp: 1779068172914
