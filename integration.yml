@@ -1,15 +1,15 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: dm-20260811 by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/wayland
+      tagsha: 2b92d8a5c68aa4f3d80a24c59c616cde8fb43292
+    - repo: deepin-community/libdisplay-info
+      tagsha: 130f734925b6559536062e41845ffb2de88c8e77
+    - repo: deepin-community/libdrm
+      tagsha: 53cb14339bad7fb220faea07dfb066ff6605e24e
+    - repo: deepin-community/libxkbcommon
+      tagsha: ac036e70b87a463a97b97820cc33df682150cf44
+    - repo: deepin-community/pixman
+      tagsha: 80c3091006b444ac7bd1f2020fd81f44c20c4953
+    - repo: deepin-community/wayland-protocols
+      tagsha: b47a28f512dcc2abc39f521f51c03c2b3de1606b
