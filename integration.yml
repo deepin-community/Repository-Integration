@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: /usr/lib/x86_64-linux-gnu/plymouth/two-step.so does not exist  a… by
+  Zeno-sole@deepin-community/plymouth-theme-deepin
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/plymouth-theme-deepin
+    tagsha: 52455aedcba7cf0df0c54b003c15e6fcbdd18051
+timestamp: 1766975277031
