@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix: Refactor mount.conf and update btrfs compression by
+  liweiganga@deepin-community/calamares-settings-deepin
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/calamares-settings-deepin
+    tagsha: e1a297ab7c908b98c1f5f8d3b057e94bc98a9ac3
+timestamp: 1784546400373
