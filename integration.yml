@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  libsoup3: Fix CVE-2026-102560: Bound outgoing permessage-deflate buffer growth
+  by deepin-ci-robot@deepin-community/libsoup3
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libsoup3
+    tagsha: 047b55d8523d47df85bed7c3e3e1949c1049dbc7
+timestamp: 1792677703828
