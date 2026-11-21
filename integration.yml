@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update x11-xserver-utils to 7.7+11 by
+  deepin-community-bot[bot]@deepin-community/x11-xserver-utils
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/x11-xserver-utils
+    tagsha: bc278594b2ef181d2c8127e11897d3bda76d66d2
+timestamp: 1764749372479
