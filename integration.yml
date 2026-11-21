@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-47766 - Do not follow rootfs /dev symlinks (CVE-2026-47766)
+  by deepin-ci-robot@deepin-community/crun
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/crun
+    tagsha: 1f42b05524611362ccfd1aff304f02d1a84d91c5
+timestamp: 1784254342396
