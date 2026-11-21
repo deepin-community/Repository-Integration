@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update libauthen-sasl-perl to 2.1900-1 by
+  deepin-community-bot[bot]@deepin-community/libauthen-sasl-perl
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libauthen-sasl-perl
+    tagsha: a2b4cfe4163d7f9f0fb5ec987d506ab91c98ba22
+timestamp: 1758276248958
