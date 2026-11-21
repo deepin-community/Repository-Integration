@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: 20250725-SW by @Zeno-sole to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/glibc
+      tagsha: 4cf86694784d3c1eb8472756eb1a76d83ee77a13
+    - repo: deepin-community/gcc-12
+      tagsha: 2bb0a9a7194057a19c302cb5e26603dbebf42239
+    - repo: deepin-community/binutils
+      tagsha: ad8cff9137807ad61bd9b2ce33b164588d228b05
