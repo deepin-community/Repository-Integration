@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  target/i386: Add AVX512 VP2INTERSECT, CPUID leaf 0x8000001A and XSAVES support
+  by xiemingjin123@deepin-community/qemu
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/qemu
+    tagsha: 0867cb476610b8c6fc8e8ab6e9755f3695143953
+timestamp: 1787550171704
