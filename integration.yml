@@ -1,15 +1,11 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: godot by @calsym456 to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/recastnavigation
+      tagsha: 3ffd3f9f6f53e4632e1fca4d10790385c4ceb609
+    - repo: deepin-community/wslay
+      tagsha: ece4a7738b6400eea48052b99d69daef60cf31bf
+    - repo: deepin-community/godot
+      tagsha: acee9f77f6f62beef3ed164c76d40ddc9eb99409
+    - repo: deepin-community/enet
+      tagsha: fd1079ee031a6dab5a5ab87c357c4fcfd49ae082
