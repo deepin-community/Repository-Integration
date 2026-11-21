@@ -1,15 +1,6 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: Update to 20250430.487f835 by connectionRst@deepin-community/generate-ninja
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/generate-ninja
+    tagsha: ed71c26e0b32a2bb8ad6bab965b5a894b503fe0a
+timestamp: 1760423719551
