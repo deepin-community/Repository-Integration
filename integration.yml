@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Fixed continuation octet limits in OID/RELATIVE-OID decoder (CVE-2026-23490)
+  by UTsweetyfish@deepin-community/pyasn1
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/pyasn1
+    tagsha: 0dd848603d4ecab565268308654f43fdad0af648
+timestamp: 1770021606609
