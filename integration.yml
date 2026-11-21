@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(cve): CVE-2026-105840, CVE-2026-105841, CVE-2026-105842 - lrz path
+  traversal, pipe-mode command injection, procheader overflow by
+  deepin-ci-robot@deepin-community/lrzsz
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/lrzsz
+    tagsha: a750de90f01a4cd6e3c5fcf0fee02def8ba128dc
+timestamp: 1792585086388
