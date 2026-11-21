@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: 20250616 by @UTsweetyfish to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/acl
+      tagsha: 800ef7da1bc427fdfa03311fc0a7828fdd0b0abc
+    - repo: deepin-community/arj
+      tagsha: a2e697362dbe92aafe546db986fe2bf3491889ab
+    - repo: deepin-community/aspell
+      tagsha: 0eafc1a78e73b29a67eb108de6e6df31419ab374
+    - repo: deepin-community/attr
+      tagsha: 3e1e542918bcf1ff679664ebe0e65764fcbec014
+    - repo: deepin-community/ccid
+      tagsha: 4e8201dc22cf006f0b693a0575a56a92ca2c3709
+    - repo: deepin-community/cmark
+      tagsha: b13f997c262dcb3ab8dfb7bc4b1d9e2b1de8007e
+    - repo: deepin-community/cron
+      tagsha: 57d54cc6ae543dba008e9df3582f510fb5175917
