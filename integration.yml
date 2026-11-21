@@ -1,15 +1,23 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: krita-20250806-lhdjply by @lhdjply to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/krita
+      tagsha: da52ddebc1c708869fe7a4d9556ff8a039fd45aa
+    - repo: deepin-community/immer
+      tagsha: ee6125b27f3b15779b7b26f3cd43f861997bb4be
+    - repo: deepin-community/kseexpr
+      tagsha: 4775ba8630ce25d1c4465cd99fdf2c18d8ccf0ce
+    - repo: deepin-community/libkdcraw
+      tagsha: 9278515f9b1625d042cea8d423bdafe2ff36b19a
+    - repo: deepin-community/zug
+      tagsha: b1a2c747d0c8da82a5e41d55f069b86e6c026064
+    - repo: deepin-community/lager
+      tagsha: ab4769737d7e831ecd4e76e3814f8e748da8a282
+    - repo: deepin-community/mlt
+      tagsha: 4567be402a236f0788f9191cd053b3b85eb93a23
+    - repo: deepin-community/libunibreak
+      tagsha: 005869564a0a63e9cc693622638df03304a1386e
+    - repo: deepin-community/sdl12-compat
+      tagsha: c54c5e750e1ac3419725df8407edbab768df93be
+    - repo: deepin-community/xine-lib-1.2
+      tagsha: 2a9ea264b9f60e1db666fab0ce39a04ab86b5f2a
