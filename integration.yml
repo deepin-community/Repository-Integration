@@ -1,15 +1,27 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: freecad-20250606-lhdjply by @lhdjply to V23-Beta3'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/freecad
+      tagsha: d42f71ea74fc29c4086cc3512e8aad7dd0215b99
+    - repo: deepin-community/libkdtreeplusplus
+      tagsha: b846cd733004e6dd1b98a90699a3358567a32db0
+    - repo: deepin-community/med-fichier
+      tagsha: f4299f617175de451b894cda99a5ca08837d4456
+    - repo: deepin-community/ms-gsl
+      tagsha: 78109923ede716250bb5ae7d36cfda85244eac36
+    - repo: deepin-community/ondselsolver
+      tagsha: 41c0e33976b1a1564b7878286f617634588bafe9
+    - repo: deepin-community/pivy
+      tagsha: 5f9c736477f557faff41a4cb630fd20b2de94906
+    - repo: deepin-community/pyside2
+      tagsha: f2be0c8cecccffbaddd63edebd49bf94d56d7543
+    - repo: deepin-community/zipiosplusplus
+      tagsha: 2fda98e8c40debe253276727f6895c6be9b3ee60
+    - repo: deepin-community/fonts-osifont
+      tagsha: 99cdb701f9da628656955b0f335eadefde38da45
+    - repo: deepin-community/swig
+      tagsha: b17637098cc6caa0aad63ba58cee08aeb86aaee5
+    - repo: deepin-community/simage
+      tagsha: d4f0ee0a1e4ebc1128e8d968f7c82de5a5fc874f
+    - repo: deepin-community/soqt
+      tagsha: 34777cf6402969c7ee7250b0f71bcb848f7f916e
