@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(gdcm): CVE-2025-11266, CVE-2025-48429, CVE-2025-52582, CVE-2025-53618,
+  CVE-2025-53619, CVE-2026-3650 by deepin-ci-robot@deepin-community/gdcm
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/gdcm
+    tagsha: 497546921b19d63d75efa9c44eb4f4e515ac8255
+timestamp: 1779158319308
