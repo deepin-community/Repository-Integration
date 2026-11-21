@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Fix CVE-2025-5455 in Qt 6.8: Handle missing charset value in qDecodeD… by
+  JWWTSL@deepin-community/qt6-base
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/qt6-base
+    tagsha: f78d32c5de86ef80683ef449305ad1023d11fb4f
+timestamp: 1749719660079
