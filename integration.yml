@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update libio-socket-ssl-perl to 2.089-1 by
+  deepin-community-bot[bot]@deepin-community/libio-socket-ssl-perl
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/libio-socket-ssl-perl
+    tagsha: 28a3e35c35f4d817c7aa48e788b6688716c7a8c7
+timestamp: 1782895784969
