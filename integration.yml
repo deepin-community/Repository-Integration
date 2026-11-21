@@ -1,15 +1,17 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: 'Auto integrate from topic: cherr-node-20250707 by @Cherrling to v25-Release'
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+    - repo: deepin-community/node-p-finally
+      tagsha: 15b0165abbdaad8607bf51ec3bf132cf13e40b5c
+    - repo: deepin-community/node-p-is-promise
+      tagsha: bc4fbe759d06fea660f03e4315bf41d8fa422bce
+    - repo: deepin-community/node-p-timeout
+      tagsha: c34eafff8c728776cd257156847ce490813bd0a0
+    - repo: deepin-community/node-package-preamble
+      tagsha: b9d07abb5ac234972d75c829b5de88fb875e7a36
+    - repo: deepin-community/node-parse-asn1
+      tagsha: f9d36376770ac17e59c0e2af67326dc2407880f1
+    - repo: deepin-community/node-parseurl
+      tagsha: 9d41e33e4c510affadbe4be1587c263be9776dbf
+    - repo: deepin-community/node-path-browserify
+      tagsha: ccc4cf5c2df09a303f0c048c857f184de9f98911
