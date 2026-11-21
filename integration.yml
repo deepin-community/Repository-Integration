@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Skip failed test EnchantGetUserLanguage_LocaleIsC_LocalIsEn by
+  UTsweetyfish@deepin-community/enchant-2
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/enchant-2
+    tagsha: 40b7aa4067bb10eb9ac6313bac56748c9f5e2d40
+timestamp: 1790089268227
