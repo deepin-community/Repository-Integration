@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Revert to 8f75174 baseline and backport CVE-2026-39044 fix by
+  Zeno-sole@deepin-community/gst-plugins-good1.0
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/gst-plugins-good1.0
+    tagsha: 4134843c253e57772ad12373538c520568ed0818
+timestamp: 1784803982101
