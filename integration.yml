@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  fix(capnproto): CVE-2026-32239, CVE-2026-32240 - HTTP body size integer
+  overflow by deepin-ci-robot@deepin-community/capnproto
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/capnproto
+    tagsha: 33027235aeef094cdbf50c5d781f817be2159d7b
+timestamp: 1778729678996
