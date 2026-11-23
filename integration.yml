@@ -1,15 +1,9 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
-milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: sysdev-20261123 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/systemd
+      tagsha: 6a724f83d698b6d870e31c46ec93e2c7bdf8dafa
+    - repo: deepin-community/wpa
+      tagsha: 399fe0c2736c5fe42cfd770c9a93caf8f9a47583
+    - repo: deepin-community/pulseaudio
+      tagsha: 9107beab19918b6a90998a721f3f846c310bbb74
