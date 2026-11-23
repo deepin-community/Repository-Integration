@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  Fix the build with Python 3.12, drop imp by
+  UTsweetyfish@deepin-community/qtwebengine-opensource-src
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/qtwebengine-opensource-src
+    tagsha: 266e792fdbd425ca48b02f612e8b760417d18d5e
+timestamp: 1795403021869
