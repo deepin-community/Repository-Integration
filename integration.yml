@@ -1,15 +1,41 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
-milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+message: 'Auto integrate from topic: sysdev-20261124 by @Zeno-sole to V23-Beta3'
+milestone: V23-Beta3
+repos:
+    - repo: deepin-community/cpio
+      tagsha: 30b41212efa41469202710c8c5306dac3832fd77
+    - repo: deepin-community/libslirp
+      tagsha: a631fe073425e527077adab70f8ceddb8fee50a6
+    - repo: deepin-community/krb5
+      tagsha: 5b6714259f7c198965cb5442f9e5b90965db1efe
+    - repo: deepin-community/libfontenc
+      tagsha: 1e51d0beb68ce33f0b4baef36c8d8d6ce14ebbdb
+    - repo: deepin-community/libxfont
+      tagsha: afeeb32afc35e3b75b77c415ce6fa8a37ce6aaa7
+    - repo: deepin-community/gnutls28
+      tagsha: 90b382f28cf387eaa1ec7fd4944ed0c2b20cd115
+    - repo: deepin-community/crun
+      tagsha: 8e9075f7986ad178edc7b96d63222dcb06e71253
+    - repo: deepin-community/gpgme1.0
+      tagsha: 5aa85eba09956a0bcd473c5722217e340ace398f
+    - repo: deepin-community/libio-socket-ssl-perl
+      tagsha: 40262d81123e365cf878796ff25698e65ab4b041
+    - repo: deepin-community/zip
+      tagsha: d28915efba2678fd8db4c6f50d663ced61b7a842
+    - repo: deepin-community/dbus
+      tagsha: 2d876f1c3f8d9e357cb85f7c0387436bd1d280a8
+    - repo: deepin-community/dpkg
+      tagsha: 58f34751476d492f273fde5dd42a2aa59185e298
+    - repo: deepin-community/avahi
+      tagsha: 1566cf5ec757f2a69094f2a6a44a227ed6023f11
+    - repo: deepin-community/podman
+      tagsha: 1993d9bc9cf3b352818429af371c5572c47ca72b
+    - repo: deepin-community/mtools
+      tagsha: c4432187551a53f75f271309af7cb6474e2f4684
+    - repo: deepin-community/poppler
+      tagsha: 516e8208a7163abb41bf1aee578009faf8cd3e05
+    - repo: deepin-community/dbus
+      tagsha: bf7e36300769930cf4cbed67d0ad51aa65219aac
+    - repo: deepin-community/jpeg-xl
+      tagsha: db6d88001ca07960956936f18b44fcae4770c0cc
+    - repo: deepin-community/libblockdev
+      tagsha: 7f464efbf4fe6d0282240d984b4e6b063caf4717
