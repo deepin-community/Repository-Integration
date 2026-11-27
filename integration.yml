@@ -1,15 +1,8 @@
-# Required
-message: |
-  Integrated for v25-Release
-# Not required, now default is v25-Release
+message: >-
+  feat: update pdns to 4.9.18-0+deb13u1 by
+  deepin-community-bot[bot]@deepin-community/pdns
 milestone: v25-Release
-# Required
-repos: 
-  # Required
-  - repo: linuxdeepin/examplerepo
-    # Not required
-    tag: 5.11.22
-    # Not required, but need one of tag and tagsha info
-    # When use tag info, integration workflow will check repository tag and build tag version
-    # When use tagsha info, interation workflow will build tagsha version, It doesn't matter whether the tag exists.
-    tagsha: "********************************"
+repos:
+  - repo: deepin-community/pdns
+    tagsha: 272c5b7f57f30803675f5cc74309720ac2817a49
+timestamp: 1795759203656
